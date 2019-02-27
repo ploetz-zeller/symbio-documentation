@@ -1,0 +1,56 @@
+- name: Getting Started
+  href: getting-started.md
+- name: REST API
+  items:
+  - name: How To
+    href: rest-api/how-to/toc.yml
+  - name: Reference
+    items:
+    - name: Storage Information
+      href: rest-api/reference/info.md
+    - name: Facets
+      href: rest-api/reference/facets.md
+    - name: Views
+      href: rest-api/reference/views.md
+    - name: Elements
+      items:
+      - name: List
+        href: rest-api/reference/elements-list.md
+      - name: Get
+        href: rest-api/reference/elements-get.md
+    - name: Attributes
+      items:
+      - name: List
+        href: rest-api/reference/attributes-list.md
+      - name: Get
+        href: rest-api/reference/attributes-get.md
+    - name: Related
+      items:
+      - name: List
+        href: rest-api/reference/related-list.md
+      - name: Get
+        href: rest-api/reference/related-get.md
+      - name: Children
+        href: rest-api/reference/children.md
+      - name: Content
+        href: rest-api/reference/content.md
+      - name: Element information
+        href: rest-api/reference/elementsinfo-get.md
+      - name: Configuration
+        href: rest-api/reference/config.md
+    - name: Release
+      items:
+      - name: Create version
+        href: rest-api/reference/release-create-version.md
+      - name: Transitions
+        href: rest-api/reference/release-transitions.md
+      - name: Change state
+        href: rest-api/reference/release-change-state.md
+- name: Event Grid
+  href: event-grid.md
+- name: Services
+  items:
+  - name: External Systems
+    href: services/external-systems.md
+  - name: External System Types
+    href: services/external-system-types.md

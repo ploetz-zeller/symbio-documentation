@@ -1,0 +1,10 @@
+{
+    "_appName": "Symbio",
+    "_appFooter": "<span>Copyright © 2018 Ploetz + Zeller GmbH</span>",
+    "_appLogoPath": "images/symbio_logo.png",
+    "_appFaviconPath": "images/favicon.ico",
+    "_pzName": "Ploetz + Zeller GmbH",
+    "_pzLink": "https://symbioworld.com",
+    "_pzLogoPath": "images/pz_logo.png",
+    "_enableSearch": true
+}

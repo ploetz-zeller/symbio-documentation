@@ -1,0 +1,20 @@
+- name: Installation
+  href: installation.md
+  topicHref: installation.md
+  items:
+    - name: Preliminaries
+      href: preliminaries.md
+    - name: RMS Scripted installation
+      href: rms-install-scripted.md
+    - name: RMS Manual installation
+      href: rms-install-manual.md
+- name: Configuration
+  href: configuration.md
+  topicHref: configuration.md
+  items:  
+    - name: SSRS Reports
+      href: SSRSDeployReports.md
+    - name: RMS Configuration
+      href: RMSconfiguration.md
+    - name: Troubleshooting
+      href: troubleshooting.md

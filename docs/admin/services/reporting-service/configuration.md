@@ -1,0 +1,1 @@
+# Configurations for RMS and SSRS

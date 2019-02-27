@@ -1,0 +1,24 @@
+- name: Installation
+  href: install-intro.md
+  topicHref: install-intro.md
+  items:
+    - name: General conditions
+      href: install-conditions.md
+    - name: Scripted installation
+      href: install-scripted.md
+    - name: Manual installation
+      href: install-manual.md
+    - name: Create token
+      href: install-create-token.md
+    - name: Gotchas
+      href: install-gotchas.md
+- name: Configuration
+  href: config-before-start.md
+  topicHref: config-before-start.md
+  items:
+    - name: Create ID Provider
+      href: config-create-provider.md
+    - name: Create ID Configuration
+      href: config-provider-config.md
+- name: Manual
+  href: manual-how-to-use.md

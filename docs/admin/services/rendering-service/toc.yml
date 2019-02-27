@@ -1,0 +1,14 @@
+- name: Installation
+  href: install-intro.md
+  topicHref: install-intro.md
+  items:
+    - name: Scripted Installation
+      href: installation-scripted.md
+    - name: Manual installation
+      href: installation-manual.md
+    - name: Verification
+      href: verification.md
+    - name: Troubleshooting
+      href: troubleshooting.md
+- name: Deinstallation
+  href: deinstallation-manual.md

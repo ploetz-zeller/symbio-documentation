@@ -1,0 +1,4 @@
+- name: Creating stereotypes
+  href: creating-stereotypes.md
+- name: Use stereotypes
+  href: use-stereotypes.md

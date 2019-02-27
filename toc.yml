@@ -1,0 +1,6 @@
+- name: Admin
+  href: docs/admin/
+- name: Developer
+  href: docs/developer/
+- name: Azure
+  href: docs/azure/

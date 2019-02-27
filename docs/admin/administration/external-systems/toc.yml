@@ -1,0 +1,8 @@
+- name: Creating external systems
+  href: creating-external-systems.md
+- name: Connect external systems
+  href: connect-external-systems.md
+  name: Disconnect external systems
+  href: disconnect-external-systems.md
+  name: Create token and inform external systems
+  href: create-token-and-inform-external-systems.md

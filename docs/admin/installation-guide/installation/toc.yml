@@ -1,0 +1,8 @@
+- name: Preparation
+  href: Requirements.md
+- name: Scripted Installation
+  href: Installation-Skripted.md
+- name: Manual Installation
+  href: Installation-Manual.md
+- name: First Steps
+  href: Finishing.md
