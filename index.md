@@ -33,7 +33,7 @@ docs.symbioworld.com is the home for Symbio technical documentation, API referen
 <p></p>
 </div>
 </div>
-</div>](~/docs/developer/)
+</div>](~/docs/azure/)
 
 </div>
 </div>
