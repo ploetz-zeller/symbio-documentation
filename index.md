@@ -1,7 +1,5 @@
 # Symbio Documentation
 
-docs.symbioworld.com is the home for Symbio technical documentation, API reference, code examples, quickstarts, and tutorials for developers and IT professionals.
-
 <br/>
 
 <div class="row">
