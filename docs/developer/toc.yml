@@ -46,8 +46,6 @@
         href: rest-api/reference/release-transitions.md
       - name: Change state
         href: rest-api/reference/release-change-state.md
-- name: Event Grid
-  href: event-grid.md
 - name: Services
   items:
   - name: External Systems
