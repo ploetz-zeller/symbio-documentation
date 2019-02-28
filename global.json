@@ -6,5 +6,9 @@
     "_pzName": "Ploetz + Zeller GmbH",
     "_pzLink": "https://symbioworld.com",
     "_pzLogoPath": "images/pz_logo.png",
-    "_enableSearch": true
+    "_enableSearch": true,
+    "_gitContribute": {
+        "repo": "https://github.com/ploetz-zeller/symbio-documentation",
+        "branch": "master"
+    }
 }
