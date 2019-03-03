@@ -1,0 +1,62 @@
+site_name: Symbio Documentation
+
+theme:
+  name: 'material'
+  font: false
+  palette:
+    primary: 'blue'
+  feature:
+    tabs: true
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - markdown_include.include:
+      base_path: docs
+
+nav:
+  - Admin:
+    - Installation Guide:
+      - Installation: admin/installation-guide/installation.md
+      - Configuration with SAML: admin/installation-guide/configuration-saml.md
+    - Services:
+      - Web Jobs Scheduler: admin/services/web-jobs-scheduler.md
+      - Unique ID Provider: admin/services/unique-id-provider.md
+      - SVG To Image Converter: admin/services/svg-to-image-converter.md
+      - Atlassian Connector: admin/services/atlassian-connector.md
+      - SAP Solution Manager Connector: admin/services/sap-solution-manager-connector.md
+      - Intrafind Connector: admin/services/intrafind-connector.md
+    - Administration:
+      - External Systems: admin/administration/external-systems.md
+      - Fact Sheets: admin/administration/fact-sheets.md
+      - Stereotypes: admin/administration/stereotypes.md
+  - Developer:
+    - Getting Started: developer/getting-started.md
+    - REST API:
+      - How To: developer/rest-api/how-to/toc.yml
+      - Reference:
+        - Storage Information: developer/rest-api/reference/info.md
+        - Facets: developer/rest-api/reference/facets.md
+        - Views: developer/rest-api/reference/views.md
+        - Elements:    
+          - List: developer/rest-api/reference/elements-list.md
+          - Get: developer/rest-api/reference/elements-get.md
+        - Attributes:   
+          - List: developer/rest-api/reference/attributes-list.md
+          - Get: developer/rest-api/reference/attributes-get.md
+        - Related:    
+          - List: developer/rest-api/reference/related-list.md
+          - Get: developer/rest-api/reference/related-get.md
+          - Children: developer/rest-api/reference/children.md
+          - Content: developer/rest-api/reference/content.md
+          - Element Information: developer/rest-api/reference/elementsinfo-get.md
+          - Configuration: developer/rest-api/reference/config.md
+        - Release:
+          - Create Version: developer/rest-api/reference/release-create-version.md
+          - Transitions: developer/rest-api/reference/release-transitions.md
+          - Change State: developer/rest-api/reference/release-change-state.md
+    - Services:
+      - External Systems: developer/services/external-systems.md
+      - External System Types: developer/services/external-system-types.md
+  - Azure:
+    - Runbooks: azure/runbooks.md
