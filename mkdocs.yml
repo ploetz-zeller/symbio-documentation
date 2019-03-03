@@ -16,24 +16,86 @@ markdown_extensions:
 
 nav:
   - Admin:
+    - Introduction: admin/index.md
     - Installation Guide:
-      - Installation: admin/installation-guide/installation.md
-      - Configuration with SAML: admin/installation-guide/configuration-saml.md
+      - Installation:
+        - Preparation: admin/installation-guide/installation/Requirements.md
+        - Scripted Installation: admin/installation-guide/installation/Installation-Skripted.md
+        - Manual Installation: admin/installation-guide/installation/Installation-Manual.md
+        - First Steps: admin/installation-guide/installation/Finishing.md
+      - Configuration with SAML:
+        - Introduction: admin/installation-guide/saml-configuration/1_introduction.md
+        - Setting Up SAML: admin/installation-guide/saml-configuration/2_setting-up-saml.md
+        - User & Rights Management: admin/installation-guide/saml-configuration/3_user-rights-management.md
+        - Example - Symbio & AD FS: admin/installation-guide/saml-configuration/4_example-adfs.md
+        - Example - Symbio & Azure AD: admin/installation-guide/saml-configuration/5_example-aad.md
+        - Checklist: admin/installation-guide/saml-configuration/6_checklist.md
     - Services:
+      - Atlassian Connector: 
+        - Installation guide: admin/services/atlassian-connector/installation_guide.md
+        - Using Symbio to Atlassian: admin/services/atlassian-connector/using_symbioatlassian.md
+      - Intrafind Indexer: 
+        - Installation: admin/services/intrafind-indexer/installation.md
+        - Configuration: admin/services/intrafind-indexer/configuration.md
+      - Intrafind Search Proxy:
+        - Installation: admin/services/intrafind-search-proxy/installation.md
+        - Configuration: admin/services/intrafind-search-proxy/configuration.md
       - Web Jobs Scheduler: admin/services/web-jobs-scheduler.md
-      - Unique ID Provider: admin/services/unique-id-provider.md
-      - SVG To Image Converter: admin/services/svg-to-image-converter.md
-      - Atlassian Connector: admin/services/atlassian-connector.md
-      - SAP Solution Manager Connector: admin/services/sap-solution-manager-connector.md
-      - Intrafind Connector: admin/services/intrafind-connector.md
+      - Reporting Service:
+        - Installation:
+          - Preliminaries: admin/services/reporting-service/preliminaries.md
+          - RMS Scripted installation: admin/services/reporting-service/rms-install-scripted.md
+          - RMS Manual installation: admin/services/reporting-service/rms-install-manual.md
+        - Configuration:
+            - SSRS Reports: admin/services/reporting-service/SSRSDeployReports.md
+            - RMS Configuration: admin/services/reporting-service/RMSconfiguration.md
+            - Troubleshooting: admin/services/reporting-service/troubleshooting.md      
+      - SAP Solution Manager Connector:
+        - Installation: admin/services/sap-solution-manager-connector/SolmanInterfaceSetUpGuide.md
+        - Symbio to SolMan synchronization: admin/services/sap-solution-manager-connector/SymbioToSolMansynchronization.md
+        - Symbio to SolMan diagram synchornization: admin/services/sap-solution-manager-connector/SymbioToSolManDiagramSynchronization.md
+        - Symbio to SolMan sub process diagram element synchornization: admin/services/sap-solution-manager-connector/SubProcessDiagramElementSync.md
+      - SVG To Image Converter:
+        - Installation:
+            - Scripted Installation: admin/services/rendering-service/installation-scripted.md
+            - Manual installation: admin/services/rendering-service/installation-manual.md
+            - Verification: admin/services/rendering-service/verification.md
+            - Troubleshooting: admin/services/rendering-service/troubleshooting.md
+        - Deinstallation: admin/services/rendering-service/deinstallation-manual.md
+      - Unique ID Provider:
+        - Installation:
+          - Intro: admin/services/unique-id-provider/install-intro.md
+          - General conditions: admin/services/unique-id-provider/install-conditions.md
+          - Scripted installation: admin/services/unique-id-provider/install-scripted.md
+          - Manual installation: admin/services/unique-id-provider/install-manual.md
+          - Create token: admin/services/unique-id-provider/install-create-token.md
+          - Gotchas: admin/services/unique-id-provider/install-gotchas.md
+        - Configuration:
+          - Before Start: admin/services/unique-id-provider/config-before-start.md
+          - Create ID Provider: admin/services/unique-id-provider/config-create-provider.md
+          - Create ID Configuration: admin/services/unique-id-provider/config-provider-config.md
+        - Manual: admin/services/unique-id-provider/manual-how-to-use.md
     - Administration:
-      - External Systems: admin/administration/external-systems.md
-      - Fact Sheets: admin/administration/fact-sheets.md
-      - Stereotypes: admin/administration/stereotypes.md
+      - External Systems:
+        - Creating external systems: admin/administration/external-systems/creating-external-systems.md
+        - Connect external systems: admin/administration/external-systems/connect-external-systems.md
+        - Disconnect external systems: admin/administration/external-systems/disconnect-external-systems.md
+        - Create token and inform external systems: admin/administration/external-systems/create-token-and-inform-external-systems.md      
+      - Fact Sheets: 
+        - Creating fact sheets: admin/administration/fact-sheets/creating-factsheets.md
+        - Use fact sheets: admin/administration/fact-sheets/use-factsheets.md
+      - Stereotypes:
+        - Creating stereotypes: admin/administration/stereotypes/creating-stereotypes.md
+        - Use stereotypes: admin/administration/stereotypes/use-stereotypes.md      
   - Developer:
+    - Introduction: developer/index.md
     - Getting Started: developer/getting-started.md
     - REST API:
-      - How To: developer/rest-api/how-to/toc.yml
+      - How To:
+        - Authentication Tokens: developer/rest-api/how-to/rest-symbio-auth-token-client-temp-example-documentation/rest-symbio-auth-token-client-temp-example-documentation.md
+        - How to get all released mainprocesses: developer/rest-api/how-to/quickstart-mainprocesses/quickstart-mainprocesses.md
+        - Filter: developer/rest-api/how-to/filter.md
+        - Errors: developer/rest-api/how-to/error.md
       - Reference:
         - Storage Information: developer/rest-api/reference/info.md
         - Facets: developer/rest-api/reference/facets.md
@@ -59,4 +121,7 @@ nav:
       - External Systems: developer/services/external-systems.md
       - External System Types: developer/services/external-system-types.md
   - Azure:
+    - Introduction: azure/index.md
     - Runbooks: azure/runbooks.md
+
+
