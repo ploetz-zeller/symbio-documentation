@@ -1,11 +1,9 @@
 site_name: Symbio Documentation
+repo_url: https://github.com/ploetz-zeller/symbio-documentation
+copyright: Ploetz + Zeller GmbH
 
 theme:
-  name: null
-  custom_dir: 'mkdocs-material/material'
-  language: 'en'
-  logo:
-    icon: 'cloud'
+  name: 'material'
   font: false
   palette:
     primary: 'blue'
