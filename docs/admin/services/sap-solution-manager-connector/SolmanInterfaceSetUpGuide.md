@@ -37,7 +37,7 @@ This document contains information on how to set-up **SolMan** service and confi
 1.  Go to Symbio System Administration home and switch to Editor mode.
 2.  Go to the admin menu, and navigate to the Extended configuration.
 3.  Create new type for an external system, and for the settings upload the SolMan.syex file from the XmlFiles/Bin folder of the service project (if file is missing run the build.ps1 in XmlFiles to create the file).
-4.  Check the &quot;Activate&quot; checkbox and click on the &quot;APPLY CHANGES&quot; button!!!
+4.  **Important**: Check the &quot;Activate&quot; checkbox and click on the &quot;APPLY CHANGES&quot; button.
 5.  Go to the External Systems page.
 6.  Create an new instance of the external system type that you created in Step 3.
 7.  In the Service URL field enter the url of the Solman interface microservice.
