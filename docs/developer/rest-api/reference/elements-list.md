@@ -1,6 +1,3 @@
----
-uid: elementslist
----
 # Elements
 
 **api-version**: 1.0

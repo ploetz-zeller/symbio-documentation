@@ -1,6 +1,3 @@
----
-uid: info
----
 # Facets
 
 **api-version**: 1.0

@@ -1,6 +1,3 @@
----
-uid: releasechangestate
----
 # Change state
 
 **api-version**: 1.0

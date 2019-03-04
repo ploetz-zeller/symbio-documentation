@@ -1,6 +1,3 @@
----
-uid: uniqueid-config-before-start
----
 # Configuration
 ## Before start
 After successful installation and connection of the ID Provider Service,

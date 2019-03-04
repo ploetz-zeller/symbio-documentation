@@ -1,6 +1,3 @@
----
-uid: releasecreateversion
----
 # Create version
 
 **api-version**: 1.0

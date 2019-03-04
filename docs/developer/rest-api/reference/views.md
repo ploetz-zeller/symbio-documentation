@@ -1,6 +1,3 @@
----
-uid: views
----
 # Views
 
 **api-version**: 1.0

@@ -1,6 +1,3 @@
----
-uid: manual-how-to-use
----
 # How to use ID Provider
 
 With the Symbio ID Provider it is possible to assign unique IDs. These

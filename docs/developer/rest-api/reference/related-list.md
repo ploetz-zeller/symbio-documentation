@@ -1,6 +1,3 @@
----
-uid: relatedlist
----
 # List
 
 **api-version**: 1.0

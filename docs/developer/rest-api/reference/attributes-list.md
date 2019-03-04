@@ -1,6 +1,3 @@
----
-uid: attributeslist
----
 # Attributes
 
 **api-version**: 1.0

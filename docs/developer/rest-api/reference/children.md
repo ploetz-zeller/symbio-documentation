@@ -1,6 +1,3 @@
----
-uid: children
----
 # Children
 
 **api-version**: 1.0

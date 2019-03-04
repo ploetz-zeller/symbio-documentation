@@ -1,6 +1,3 @@
----
-uid: attributesget
----
 # Attributes
 
 **api-version**: 1.0

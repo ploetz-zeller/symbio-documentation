@@ -1,6 +1,3 @@
----
-uid: element
----
 | Name | Type | Description |
 |---|---|---|
 | id | string | The ID of the element. |

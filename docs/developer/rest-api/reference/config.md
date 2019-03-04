@@ -1,6 +1,3 @@
----
-uid: content
----
 # Configuration
 
 **api-version**: 1.0

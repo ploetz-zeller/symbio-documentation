@@ -1,6 +1,3 @@
----
-uid: using
----
 # Using the Stereotypes
 
 Here you will learn how to use a created stereotype

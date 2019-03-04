@@ -1,6 +1,3 @@
----
-uid: authtoken
----
 # rest-symbio-auth-token-client
 
 This application showcases the use of Symbio REST authentication tokens to access Symbio data.
@@ -100,7 +97,7 @@ To get started with your full-fledged REST client application we demonstrate the
    `dotnet run`
 
    You should see something like this on the console:
-   
+
    ```json
    {
        "count": 19,

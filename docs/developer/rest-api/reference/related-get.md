@@ -1,6 +1,3 @@
----
-uid: relatedget
----
 # List
 
 **api-version**: 1.0

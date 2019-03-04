@@ -1,6 +1,3 @@
----
-uid: elementsget
----
 # Elements
 
 **api-version**: 1.0

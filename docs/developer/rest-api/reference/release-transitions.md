@@ -1,6 +1,3 @@
----
-uid: transitions
----
 # Change state
 
 **api-version**: 1.0

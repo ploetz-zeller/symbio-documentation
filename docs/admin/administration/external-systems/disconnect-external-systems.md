@@ -1,6 +1,3 @@
----
-uid: disconnect-external-systems
----
 # Disconnect the external systems
 
 Here you will learn how to disconnect added external system

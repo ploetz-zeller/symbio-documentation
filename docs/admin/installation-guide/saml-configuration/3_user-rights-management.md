@@ -1,6 +1,3 @@
----
-uid: user-rights-management
----
 # Symbio SSO
 
 ## User & Rights Management Considerations

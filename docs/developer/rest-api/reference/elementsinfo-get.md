@@ -1,6 +1,3 @@
----
-uid: attributesinfoget
----
 # Element information
 
 **api-version**: 1.0

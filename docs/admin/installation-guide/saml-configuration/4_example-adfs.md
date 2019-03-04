@@ -1,6 +1,3 @@
----
-uid: example-adfs
----
 # Symbio SSO
 
 ## Worked Example: Symbio & AD FS
