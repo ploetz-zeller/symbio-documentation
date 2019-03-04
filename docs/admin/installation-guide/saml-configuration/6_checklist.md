@@ -1,6 +1,3 @@
----
-uid: checklist
----
 # Symbio SSO
 
 ## Checklist
@@ -26,7 +23,7 @@ Please provide the IdP Metadata XML file to Ploetz + Zeller GmbH to get your Clo
 
 #### Claims Details
 
-| Additional Question                   | Answer (needed by P+Z for Cloud setups) | 
+| Additional Question                   | Answer (needed by P+Z for Cloud setups) |
 | ------------------------------------- | --------------------------------------- |
 | Claim Type users are identified by?   | (UPN preferred)                         |
 | Claim Type used for group membership? | (Group preferred)                       |

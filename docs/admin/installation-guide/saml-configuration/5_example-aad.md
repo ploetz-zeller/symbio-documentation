@@ -1,6 +1,3 @@
----
-uid: example-aad
----
 # Symbio SSO
 
 ## Worked Example: Symbio & Azure AD

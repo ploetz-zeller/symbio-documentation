@@ -1,12 +1,9 @@
----
-uid: uniqueid-config-provider-config
----
 # Create ID Provider Configuration
 
 There is a configuration to configure the ID provider, for example,
 which facets and objects it affects. A configuration is created under
 the service. Select the service and click on "New" to create the
-configuration. 
+configuration.
 
 ![Create new ID provider configuration a an element type](media/image8.png)
 

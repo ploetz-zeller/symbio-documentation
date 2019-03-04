@@ -1,6 +1,3 @@
----
-uid: setting-up-saml
----
 # Symbio SSO
 
 ## Setting Up SAML-based SSO

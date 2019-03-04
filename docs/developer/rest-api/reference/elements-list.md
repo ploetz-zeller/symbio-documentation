@@ -1,6 +1,3 @@
----
-uid: elementslist
----
 # Elements
 
 **api-version**: 1.0
@@ -281,8 +278,8 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/t
 
 ### Get the list of storage collections
 
-> [!NOTE] 
-> This call only works on the *_sysadmin* collection and *_admin* storage.
+!!! info
+    This call only works on the *_sysadmin* collection and *_admin* storage.
 
 #### Request
 ```
@@ -313,8 +310,8 @@ POST https://demo.symbioworld.com/_sysadmin/_admin/_api/rest/facets/collections/
 
 ### Get the list of storages of a specific collection
 
-> [!NOTE] 
-> This call only works on the *_admin* storage.
+!!! info
+    This call only works on the *_admin* storage.
 
 #### Request
 ```
@@ -369,10 +366,13 @@ POST https://demo.symbioworld.com/pz/_admin/_api/rest/facets/storages/views/deta
 ## Definitions
 
 ### Element
-[!include[](models\element.md)]
 
-### OperationResultType 
-[!include[](models\operationresulttype.md)]
+{!developer/rest-api/reference/models/element.md!}
+
+### OperationResultType
+
+{!developer/rest-api/reference/models/operationresulttype.md!}
 
 ### Error
-[!include[](models\error.md)]
+
+{!developer/rest-api/reference/models/error.md!}

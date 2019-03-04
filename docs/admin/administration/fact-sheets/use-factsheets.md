@@ -1,6 +1,3 @@
----
-uid: use-factsheets
----
 # Use fact sheets
 
 Here you will learn how to use a created fact sheet

@@ -1,6 +1,3 @@
----
-uid: introduction
----
 # Symbio SSO
 
 ## Introduction

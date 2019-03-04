@@ -1,11 +1,8 @@
----
-uid: uniqueid-install-manual
----
 # Manual installation
 ## Internet Information Services (IIS)
 
 Enable the Web Server (IIS) role and establish role services.
-- Windows Server 
+- Windows Server
 
 ### Windows desktop operating systems
 
@@ -44,7 +41,7 @@ Install the [.NET Core Windows Server Hosting Package](#NetCore) .NET Core Windo
    ![Configure Website](media/configure-website.png)
 
 8. In the **Application Pools** panel, open the **Edit Application Pool** window by right-clicking on the website's application pool and selecting **Basic Settings...** from the popup menu.
- 
+
    ![App Pool Basic Settings](media/app-pool-basic-settings.png)
 
 9. Set the **.NET CLR version** to **No Managed Code**.
