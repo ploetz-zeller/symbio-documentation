@@ -367,12 +367,12 @@ POST https://demo.symbioworld.com/pz/_admin/_api/rest/facets/storages/views/deta
 
 ### Element
 
-{!developer/rest-api/reference/models/element.md!!}
+{!developer/rest-api/reference/models/element.md!}
 
 ### OperationResultType
 
-{!developer/rest-api/reference/models/operationresulttype.md!!}
+{!developer/rest-api/reference/models/operationresulttype.md!}
 
 ### Error
 
-{!developer/rest-api/reference/models/error.md!!}
+{!developer/rest-api/reference/models/error.md!}

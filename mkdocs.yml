@@ -31,10 +31,10 @@ nav:
         - Example - Symbio & Azure AD: admin/installation-guide/saml-configuration/5_example-aad.md
         - Checklist: admin/installation-guide/saml-configuration/6_checklist.md
     - Services:
-      - Atlassian Connector: 
+      - Atlassian Connector:
         - Installation guide: admin/services/atlassian-connector/installation_guide.md
         - Using Symbio to Atlassian: admin/services/atlassian-connector/using_symbioatlassian.md
-      - Intrafind Indexer: 
+      - Intrafind Indexer:
         - Installation: admin/services/intrafind-indexer/installation.md
         - Configuration: admin/services/intrafind-indexer/configuration.md
       - Intrafind Search Proxy:
@@ -49,7 +49,7 @@ nav:
         - Configuration:
             - SSRS Reports: admin/services/reporting-service/SSRSDeployReports.md
             - RMS Configuration: admin/services/reporting-service/RMSconfiguration.md
-            - Troubleshooting: admin/services/reporting-service/troubleshooting.md      
+            - Troubleshooting: admin/services/reporting-service/troubleshooting.md
       - SAP Solution Manager Connector:
         - Installation: admin/services/sap-solution-manager-connector/SolmanInterfaceSetUpGuide.md
         - Symbio to SolMan synchronization: admin/services/sap-solution-manager-connector/SymbioToSolMansynchronization.md
@@ -80,13 +80,13 @@ nav:
         - Creating external systems: admin/administration/external-systems/creating-external-systems.md
         - Connect external systems: admin/administration/external-systems/connect-external-systems.md
         - Disconnect external systems: admin/administration/external-systems/disconnect-external-systems.md
-        - Create token and inform external systems: admin/administration/external-systems/create-token-and-inform-external-systems.md      
-      - Fact Sheets: 
+        - Create token and inform external systems: admin/administration/external-systems/create-token-and-inform-external-systems.md
+      - Fact Sheets:
         - Creating fact sheets: admin/administration/fact-sheets/creating-factsheets.md
         - Use fact sheets: admin/administration/fact-sheets/use-factsheets.md
       - Stereotypes:
         - Creating stereotypes: admin/administration/stereotypes/creating-stereotypes.md
-        - Use stereotypes: admin/administration/stereotypes/use-stereotypes.md      
+        - Use stereotypes: admin/administration/stereotypes/use-stereotypes.md
   - Developer:
     - Introduction: developer/index.md
     - Getting Started: developer/getting-started.md
@@ -100,13 +100,13 @@ nav:
         - Storage Information: developer/rest-api/reference/info.md
         - Facets: developer/rest-api/reference/facets.md
         - Views: developer/rest-api/reference/views.md
-        - Elements:    
+        - Elements:
           - List: developer/rest-api/reference/elements-list.md
           - Get: developer/rest-api/reference/elements-get.md
-        - Attributes:   
+        - Attributes:
           - List: developer/rest-api/reference/attributes-list.md
           - Get: developer/rest-api/reference/attributes-get.md
-        - Related:    
+        - Related:
           - List: developer/rest-api/reference/related-list.md
           - Get: developer/rest-api/reference/related-get.md
           - Children: developer/rest-api/reference/children.md
@@ -123,5 +123,3 @@ nav:
   - Azure:
     - Introduction: azure/index.md
     - Runbooks: azure/runbooks.md
-
-

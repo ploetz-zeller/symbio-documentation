@@ -148,7 +148,7 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/
 ## Definitions
 
 ### Facet
-{!developer/rest-api/reference/models/facets.md!}
+{!developer/rest-api/reference/models/facet.md!}
 
 ### OperationResultType
 {!developer/rest-api/reference/models/operationresulttype.md!}
