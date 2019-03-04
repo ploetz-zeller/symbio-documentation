@@ -112,10 +112,10 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/d
 ## Definitions
 
 ### ElementInfo
-[!include[](models\element.md)]
+{!developer/rest-api/reference/models/element.md!}
 
-### OperationResultType 
-[!include[](models\operationresulttype.md)]
+### OperationResultType
+{!developer/rest-api/reference/models/operationresulttype.md!}
 
 ### Error
-[!include[](models\error.md)]
+{!developer/rest-api/reference/models/error.md!}

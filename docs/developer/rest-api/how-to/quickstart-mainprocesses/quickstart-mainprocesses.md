@@ -13,7 +13,7 @@ uid: qsMainProcesses
 
 ### New Project
 
-In this example, a post request is made in the context of a C# console application, which returns JSON as the result. This JSON can be converted into objects and reused as required. 
+In this example, a post request is made in the context of a C# console application, which returns JSON as the result. This JSON can be converted into objects and reused as required.
 <!--
 > [!NOTE]
 
@@ -23,10 +23,10 @@ In this example, a post request is made in the context of a C# console applicati
 
 > [!Caution]
 -->
-> [!Important]
-A Post Request is required at the beginning. Here is an example:
+!!! info
+    A Post Request is required at the beginning. Here is an example:
 
-```c# 
+```c#
 private static Facets SendPost(Uri baseUri, string requestUri = null)
 {
     using (WebRequestHandler handler = new WebRequestHandler())
@@ -40,7 +40,7 @@ private static Facets SendPost(Uri baseUri, string requestUri = null)
             HttpResponseMessage hrm = hc.PostAsync(string.IsNullOrEmpty(requestUri) ? baseUri.AbsoluteUri : requestUri, null).Result;
             hrm.EnsureSuccessStatusCode();
             string returnString = hrm.Content.ReadAsStringAsync().Result;
-                    
+
             Facets facets = JsonConvert.DeserializeObject<Facets>(returnString, new JsonSerializerSettings() { Converters = new[] { new KeyValuePairConverter() } });
 
             return facets;
@@ -50,7 +50,7 @@ private static Facets SendPost(Uri baseUri, string requestUri = null)
 ```
 This example also shows a token that you need to be authenticated. It is appended to the request header.
 ```c#
-hc.DefaultRequestHeaders.Add("symbio-auth-token", "token key"); 
+hc.DefaultRequestHeaders.Add("symbio-auth-token", "token key");
 ```
 ### Add or create new Token
 The above mentioned token is created in Symbio by an administrator. For more information see [Authentication mit Tokens](xref:authtoken)
@@ -66,16 +66,16 @@ internal class Facets
 }
 ```
 Deserializing the response string:
-```c#                    
+```c#
 Facets facets = JsonConvert.DeserializeObject<Facets>(returnString, new JsonSerializerSettings  (){ Converters = new[] { new KeyValuePairConverter() } });
 ```
-Due to the Symbio JSON structure, it is important to create objects for different layers during deserialization. In this example, the primary goal should be the main process level. 
+Due to the Symbio JSON structure, it is important to create objects for different layers during deserialization. In this example, the primary goal should be the main process level.
 
 The target Uri contains the current layer and its child elements. Here is an example for the category `Management Processes` where all child elements are listed:
 ```c#
 Uri symbioUri = new Uri("https://Server/Collection/Database/_api/rest/facets/processes/views/tree/elements/Origin Key of Category/");
 ```
-Facets contain processes, processes contain views and views contain elements. 
+Facets contain processes, processes contain views and views contain elements.
 
 Objects must be created for each layer. For example:
 ```c#
@@ -274,48 +274,48 @@ Read more here: [Rest API error handling](xref:error)
 Impressum
 =======================================================================================================
 
- **publisher**         
-                          
- Ploetz + Zeller GmbH     
-                          
- Einsteinring 41-43       
-                          
- 85609 München            
-                          
- Tel.: +49 89 890635 – 0  
-                          
- Fax: +49 89 890635 – 55  
-                          
+ **publisher**
+
+ Ploetz + Zeller GmbH
+
+ Einsteinring 41-43
+
+ 85609 München
+
+ Tel.: +49 89 890635 – 0
+
+ Fax: +49 89 890635 – 55
+
  E-Mail: info@p-und-z.de  |
 |-------------------------|
 
 | **IMPRESSUM**                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 
+|
 Ploetz + Zeller GmbH accepts no liability for the correctness and completeness of the presentation/image in the document. The described and possible functionalities of the software refer to the respective version status. Customer-specific adaptations are not included. The information in this document is subject to change at any time. Ploetz + Zeller GmbH is not obliged to inform about the updates of the document.
- 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
- This documentation as well as all contributions, representations and illustrations contained therein are protected by copyright. Any use not expressly permitted by copyright law requires the prior consent of Ploetz + Zeller GmbH. This applies in particular to reproductions, adaptations, translations, microfilming as well as storage and processing in electronic systems.                                    
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
- Ploetz + Zeller GmbH regards the information, knowledge and illustrations contained in this documentation as its sole property. The documentation or the information, knowledge and illustrations contained therein may not be made available, published or otherwise disseminated to third parties, either in whole or in part, directly or indirectly, without the prior written consent of Ploetz + Zeller GmbH.           
-                                                                                                                                                                                                                                                                                                                                                                                                         Ploetz + Zeller GmbH reserves the right to assert all relevant rights, in particular in the event of patents being granted. The handing over of the documentation does not create any claim to a license or use.                                                                                                                                                                                                                            
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
- Subject to technical modifications. Product names used are trademarks or registered trademarks of their respective owners.                                                                                                                                                                                                                                                                                                                                        
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+
+
+ This documentation as well as all contributions, representations and illustrations contained therein are protected by copyright. Any use not expressly permitted by copyright law requires the prior consent of Ploetz + Zeller GmbH. This applies in particular to reproductions, adaptations, translations, microfilming as well as storage and processing in electronic systems.
+
+ Ploetz + Zeller GmbH regards the information, knowledge and illustrations contained in this documentation as its sole property. The documentation or the information, knowledge and illustrations contained therein may not be made available, published or otherwise disseminated to third parties, either in whole or in part, directly or indirectly, without the prior written consent of Ploetz + Zeller GmbH.
+                                                                                                                                                                                                                                                                                                                                                                                                         Ploetz + Zeller GmbH reserves the right to assert all relevant rights, in particular in the event of patents being granted. The handing over of the documentation does not create any claim to a license or use.
+
+ Subject to technical modifications. Product names used are trademarks or registered trademarks of their respective owners.
+
  Symbio® is a registered trademark of PLOETZ + ZELLER GmbH, Munich.                                                                                                                                                                                                                                                                                                                                                                                                     |
 
 
-| Ploetz + Zeller GmbH                                      
-                                                            
- Einsteinring 41-43                                         
-                                                            
+| Ploetz + Zeller GmbH
+
+ Einsteinring 41-43
+
  85609 München                                              |
-| Phone: +49 89 890635 – 0                                
-                                                            
- Fax: +49 89 890635 – 55                                    
-                                                            
- E-Mail: <info@p-und-z.de>                                  
-                                                            
+| Phone: +49 89 890635 – 0
+
+ Fax: +49 89 890635 – 55
+
+ E-Mail: <info@p-und-z.de>
+
  ©2018 Ploetz + Zeller GmbH                                 |
 
 

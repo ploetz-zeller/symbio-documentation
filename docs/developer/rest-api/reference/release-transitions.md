@@ -60,10 +60,10 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/release/664fd624-d341-45
 ## Definitions
 
 ### Transition
-[!include[](models\transition.md)]
+{!developer/rest-api/reference/models/transition.md!}
 
-### OperationResultType 
-[!include[](models\operationresulttype.md)]
+### OperationResultType
+{!developer/rest-api/reference/models/operationresulttype.md!}
 
 ### Error
-[!include[](models\error.md)]
+{!developer/rest-api/reference/models/error.md!}

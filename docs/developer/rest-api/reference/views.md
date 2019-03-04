@@ -22,7 +22,7 @@ POST  /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views
 ## Responses
 
 ### Success 200
- 
+
 | Name | Type | Description |
 |---|---|---|
 | count | integer | The number of returned values. |
@@ -72,10 +72,10 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views
 ## Definitions
 
 ### View
-[!include[](models\view.md)]
+{!developer/rest-api/reference/models/view.md!}
 
-### OperationResultType 
-[!include[](models\operationresulttype.md)]
+### OperationResultType
+{!developer/rest-api/reference/models/operationresulttype.md!}
 
 ### Error
-[!include[](models\error.md)]
+{!developer/rest-api/reference/models/error.md!}

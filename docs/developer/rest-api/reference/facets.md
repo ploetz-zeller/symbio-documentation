@@ -21,7 +21,7 @@ POST  /{collectionId}/{storageId}/_api/rest/facets
 ## Responses
 
 ### Success 200
- 
+
 | Name | Type | Description |
 |---|---|---|
 | count | integer | The number of returned values. |
@@ -151,10 +151,10 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/
 ## Definitions
 
 ### Facet
-[!include[](models\facet.md)]
+{!developer/rest-api/reference/models/facets.md!}
 
-### OperationResultType 
-[!include[](models\operationresulttype.md)]
+### OperationResultType
+{!developer/rest-api/reference/models/operationresulttype.md!}
 
 ### Error
-[!include[](models\error.md)]
+{!developer/rest-api/reference/models/error.md!}
