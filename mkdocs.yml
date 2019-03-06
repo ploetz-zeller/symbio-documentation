@@ -4,11 +4,16 @@ copyright: Ploetz + Zeller GmbH
 
 theme:
   name: 'material'
+  favicon: 'assets/images/favicon.ico'
+  logo: 'assets/images/logo.png'
   font: false
   palette:
     primary: 'blue'
   feature:
     tabs: true
+
+extra_css:
+  - 'assets/stylesheets/extra.css'
 
 markdown_extensions:
   - admonition
