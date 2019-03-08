@@ -39,7 +39,7 @@ nav:
         - Checklist: admin/installation-guide/saml-configuration/6_checklist.md
     - Services:
       - Atlassian Connector:
-        - Installation guide: admin/services/atlassian-connector/installation_guide.md
+        - Administration guide: admin/services/atlassian-connector/administration_guide.md
         - Using Symbio to Atlassian: admin/services/atlassian-connector/using_symbioatlassian.md
       - Intrafind Indexer:
         - Installation: admin/services/intrafind-indexer/installation.md
