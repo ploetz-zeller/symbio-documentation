@@ -40,20 +40,22 @@ All events from Symbio will be synchronized to adequate SolMan event:
 
 ---
 
-### Tasks
+### Local tasks
 
-Both **Local task** and **Global task** in Symbio can be synchronized in SolMan in two ways: as a *draft task* or as a *process step*.
-There is a checkbox option in the Detail Content, which if it is checked will be a sign for microservice to synchronize task as a process step, otherwise, task will be synchronized as a draft task. The defaulte value for the checkbox is true:
-
----
-
-![Test](media/CreateProcessStepCheckBox.png)
-
----
-
-If checkbox is **not** selected, a *draft task* will be creaed in the SolMan diagram,
+**Local task** created in Symbio will be synchornized to SolMan as a *draft tasks*.
 
 ![Test](media/LocalTask.png)
+
+### Global tasks
+
+Symbio **Global task** can be synchronized in SolMan in two ways: as a *draft task* or as a *process step*.
+There is a checkbox option in the Detail Content, which if it is checked will be a sign for microservice to synchronize global task as a process step, otherwise, global taks will be synchronized as if it is a local task, so as a draft task. The defaulte value for the checkbox is true:
+
+---
+
+![Test](media/CreateProcessStepCheckbox.png)
+
+---
 
 If checkbox is selected, Process Step will be created in ProcessStepLibrary, and reference to the Process Step will be created in the diagram. Also the new Process Step in Solman will be created for every instance of a global task in the diagram:
 
@@ -63,8 +65,8 @@ If checkbox is selected, Process Step will be created in ProcessStepLibrary, and
 
 ---
 
-You can see in the example above the draft task "DoNotCreatProcessStep". In Symbio, that is the Global Task, that has the flag for ProcessStep creation set to false. So because of that, it will be synchronized
-as a draft task, so no Process Step nor its reference will be created.
+You can see in the example above the draft task "DoNotCreatProcessStep". Actually in Symbio, that is the Global Task, that has the flag for ProcessStep creation set to false. So because of that, it will be synchronized
+as if it is a local task, so no Process Step nor its reference will be created.
 
 ##### Documants attached to global tasks
 
