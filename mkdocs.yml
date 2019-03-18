@@ -42,8 +42,11 @@ nav:
         - Administration guide: admin/services/atlassian-connector/administration_guide.md
         - Using Symbio to Atlassian: admin/services/atlassian-connector/using_symbioatlassian.md
       - Intrafind Indexer:
+        - Introduction: admin/services/intrafind-indexer/index.md
         - Installation: admin/services/intrafind-indexer/installation.md
         - Configuration: admin/services/intrafind-indexer/configuration.md
+        - About Logging: admin/services/intrafind-indexer/logging.md
+        - Technical Background: admin/services/intrafind-indexer/technical_description.md
       - Intrafind Search Proxy:
         - Installation: admin/services/intrafind-search-proxy/installation.md
         - Configuration: admin/services/intrafind-search-proxy/configuration.md
