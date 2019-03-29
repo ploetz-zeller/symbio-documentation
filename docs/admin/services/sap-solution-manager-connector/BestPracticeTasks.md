@@ -21,3 +21,11 @@ and after the import they are readonly. **Best Practice Tasks** are connected to
 synchronized as a reference to the *Process Step*, otherwise it will be synced as a *draft task*. 
 
 These elements can be reimported manually by clicking the ***Synchronize best practice tasks*** in the Processes architecture view, under the SAP menu.
+
+***
+---
+
+![Test](media/SyncBPTsButton.png)
+
+---
+***
