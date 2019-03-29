@@ -44,7 +44,7 @@ All events from Symbio will be synchronized to adequate SolMan event:
 
 Both **Local task** and **Global task** in Symbio can be synchronized in Solution Manager in two ways: as a *draft task* or as a *process step*.
 
-If a [Best Practice Task](bestPracticeTasks.md) is attached to the task element, microservice will synchronize that task as a Process Step.
+If a [Best Practice Task](BestPracticeTasks.md) is attached to the task element, microservice will synchronize that task as a Process Step.
 
 ---
 
