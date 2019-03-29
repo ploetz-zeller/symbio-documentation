@@ -1,6 +1,3 @@
----
-uid: info
----
 # Facets
 
 **api-version**: 1.0
@@ -21,7 +18,7 @@ POST  /{collectionId}/{storageId}/_api/rest/info
 ## Responses
 
 ### Success 200
- 
+
 | Name | Type | Description |
 |---|---|---|
 | type | string | The type of the storage: IStorageContext, IStorageCollectionContext or ISysAdminContext. |
@@ -116,8 +113,8 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/info/
 
 ## Definitions
 
-### OperationResultType 
-[!include[](models\operationresulttype.md)]
+### OperationResultType
+{!developer/rest-api/reference/models/operationresulttype.md!}
 
 ### Error
-[!include[](models\error.md)]
+{!developer/rest-api/reference/models/error.md!}

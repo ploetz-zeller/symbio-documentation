@@ -1,6 +1,3 @@
----
-uid: uniqueid-install-scripted
----
 # Scripted Installation
 
 ## Requirement

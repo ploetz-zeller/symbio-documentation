@@ -1,6 +1,3 @@
----
-uid: checklist
----
 # Symbio SSO
 
 ## Checklist
@@ -11,22 +8,23 @@ The following checklist aids you in collecting all necessary data to get started
 
 If you can answer every question with Yes, your infrastructure is Ready for Symbio SSO.
 
-| Question                                           | Answer                 |
-| -------------------------------------------------- | ---------------------- |
-| Symbio and IdP both reachable by browser?          | &#9744; Yes &#9744; No |
-| SAML 2.0-compliant IdP available?                  | &#9744; Yes &#9744; No |
-| SSO HTTP-REDIRECT endpoint supported?              | &#9744; Yes &#9744; No |
-| POST to ACS endpoint supported?                    | &#9744; Yes &#9744; No |
-| SHA-256 signatures supported?                      | &#9744; Yes &#9744; No |
-| IdP Metadata XML file available?                   | &#9744; Yes &#9744; No |
-| Metadata contains trustworthy certificate?         | &#9744; Yes &#9744; No |
-| (If on premise) Symbio installed on HTTPS binding? | &#9744; Yes &#9744; No |
+| Question                                              | Answer                 |
+| ----------------------------------------------------- | ---------------------- |
+| Symbio and IdP both reachable by browser?             | &#9744; Yes &#9744; No |
+| SAML 2.0-compliant IdP available?                     | &#9744; Yes &#9744; No |
+| SSO HTTP-REDIRECT endpoint supported?                 | &#9744; Yes &#9744; No |
+| POST to ACS endpoint supported?                       | &#9744; Yes &#9744; No |
+| SHA-256 signatures supported?                         | &#9744; Yes &#9744; No |
+| IdP Metadata XML file available?                      | &#9744; Yes &#9744; No |
+| Metadata contains trustworthy certificate?            | &#9744; Yes &#9744; No |
+| (If on premise) Symbio installed on HTTPS binding?    | &#9744; Yes &#9744; No |
+| If targeting Azure AD: Are you using Azure AD Premium | &#9744; Yes &#9744; No |
 
 Please provide the IdP Metadata XML file to Ploetz + Zeller GmbH to get your Cloud instance of Symbio configured for SSO.
 
 #### Claims Details
 
-| Additional Question                   | Answer (needed by P+Z for Cloud setups) | 
+| Additional Question                   | Answer (needed by P+Z for Cloud setups) |
 | ------------------------------------- | --------------------------------------- |
 | Claim Type users are identified by?   | (UPN preferred)                         |
 | Claim Type used for group membership? | (Group preferred)                       |

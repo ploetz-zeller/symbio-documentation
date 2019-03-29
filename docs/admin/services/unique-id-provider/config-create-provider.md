@@ -1,6 +1,3 @@
----
-uid: uniqueid-config-create-provider
----
 # Create ID Provider
 
 Navigate to a database in Symbio. Then click on the cogwheel at the top

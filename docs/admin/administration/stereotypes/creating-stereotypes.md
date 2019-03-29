@@ -1,6 +1,3 @@
----
-uid: creating
----
 # Creatig the Stereotypes
 
 The following example shows how to create and edit stereotypes for processes.

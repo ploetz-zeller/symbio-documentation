@@ -1,6 +1,3 @@
----
-uid: content
----
 # Configuration
 
 **api-version**: 1.0
@@ -2633,10 +2630,10 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/l
 ## Definitions
 
 ### Type
-[!include[](models\type.md)]
+{!developer/rest-api/reference/models/type.md!}
 
-### OperationResultType 
-[!include[](models\operationresulttype.md)]
+### OperationResultType
+{!developer/rest-api/reference/models/operationresulttype.md!}
 
 ### Error
-[!include[](models\error.md)]
+{!developer/rest-api/reference/models/error.md!}

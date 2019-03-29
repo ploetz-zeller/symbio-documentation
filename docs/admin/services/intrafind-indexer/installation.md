@@ -31,8 +31,6 @@
 1. Set the correct SQL connection string to the created database in II's appsettings.json
 1. Set TrustServerCertificate=True in the connection string if you are using a self-signed or no certificate
 
-**TODO: Add Hangfire Config Instructions**
-
 ## Scripted Installation
 
 ### Preparations
@@ -74,22 +72,21 @@
 | --- | --- |
 | ConfigStoreConnection | Your SQL-Server connection string
 | [SQLSERVER] | Name or address (including the port) of your database server
-| ConfigStoreTableName | The name of your configuration database.
-| UserAccounts | Array of entries with 'userName' & 'password' fields. 'Password' has to be the hashed version of your password as given by the '/register' call to the microservice webcall. Note: You have to manually add user & password to the appsettings.json file.
+| ConfigStoreTableName | The name of your configuration database. This is an optional setting.
 
 ### Running the Script
 
 If all settings are corretly set, please start a new powershell console as Administrator, change into the directory of the downloaded script, and run the following command:
 
 ```PowerShell
-.\Install.ps1 -ParametersFile .\symbio-service-intrafind.parameters.json
+.\Install.ps1 -ParametersFile .\symbio-service-intrafindindexer.parameters.json
 ```
 
 *`nice to know`*
 
 *- If you use a domain user. You must write [server]\\[user].*
 
-*- You can omit the specification of the Files parameter by renaming symbio-service-intrafind.parameters.json to parameter.json. The script detects the JSON itself, if they are in the same folder.*
+*- You can omit the specification of the Files parameter by renaming symbio-service-intrafindindexer.parameters.json to parameters.json. The script detects the JSON itself, if they are in the same folder.*
 
 *- If you already operate a fully configured IIS on the target machine, you can use the switch `-WithoutIIS`. This turns off the checking and installation of the IIS components.
 This is only recommended if you have already executed the script at least once with a successful IIS configuration.*

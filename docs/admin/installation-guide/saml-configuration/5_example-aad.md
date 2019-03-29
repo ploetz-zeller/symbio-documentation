@@ -1,7 +1,6 @@
----
-uid: example-aad
----
 # Symbio SSO
+
+___Azure AD Premium is required___
 
 ## Worked Example: Symbio & Azure AD
 

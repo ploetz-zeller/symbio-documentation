@@ -1,6 +1,3 @@
----
-uid: transition
----
 | Name | Type | Description |
 |---|---|---|
 | transitionId | string | The ID of the transition. |

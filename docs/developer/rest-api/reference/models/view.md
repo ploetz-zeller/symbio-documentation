@@ -1,6 +1,3 @@
----
-uid: view
----
 | Name | Type | Description |
 |---|---|---|
 | name | string | The name of the view. |

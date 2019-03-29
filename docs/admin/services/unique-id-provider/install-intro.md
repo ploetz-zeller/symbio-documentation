@@ -1,6 +1,3 @@
----
-uid: uniqueid-install-intro
----
 # Introduction
 The Unique ID service provides HTTP endpoints to get an unique identifier for a given request id. The request id is in form of a `GUID` and in case of Symbio the request id is corresponding to the origin key of the entity.
 

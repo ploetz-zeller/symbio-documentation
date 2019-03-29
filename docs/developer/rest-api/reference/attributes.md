@@ -1,4 +1,1 @@
----
-uid: attributes
----
 # Attributes

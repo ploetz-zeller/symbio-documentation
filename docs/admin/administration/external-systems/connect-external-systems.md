@@ -1,6 +1,3 @@
----
-uid: connect-external-systems
----
 # Connect the external systems
 
 Here you will learn how to connect a created external system to storage

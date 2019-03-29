@@ -1,8 +1,0 @@
-- name: Authentication Tokens
-  href: rest-symbio-auth-token-client-temp-example-documentation/rest-symbio-auth-token-client-temp-example-documentation.md
-- name: How to get all released mainprocesses
-  href: quickstart-mainprocesses/quickstart-mainprocesses.md
-- name: Filter
-  href: filter.md
-- name: Errors
-  href: error.md

@@ -1,6 +1,3 @@
----
-uid: operationresulttype
----
 | Name | Type |
 |---|---|
 | critical | string |

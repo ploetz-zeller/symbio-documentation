@@ -1,6 +1,3 @@
----
-uid: type
----
 | Name | Type | Description |
 |---|---|---|
 | key | string | The API name of the type. |

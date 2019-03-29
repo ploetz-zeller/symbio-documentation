@@ -1,6 +1,3 @@
----
-uid: example-adfs
----
 # Symbio SSO
 
 ## Worked Example: Symbio & AD FS
@@ -71,7 +68,7 @@ Add the following claim rules:
      => issue(claim = c);
      ```
 3. Basic Attributes:
-   * Send LDP Attributes as Claims
+   * Send LDAP Attributes as Claims
    * Claim rule name: Basic Attributes
    * Attribute Store: Active Directory
    * User-Principal-Name &rarr; UPN
@@ -119,7 +116,7 @@ If your Symbio web server can reach your AD FS server, consider adding the Metad
 
 ##### Symbio in Cloud
 
-Don't add the Metadata XML file as a URL. The cloud server will most likely have no access to the AD FS server which runs on your internal network; Symbio won't be able to access the metadata and therefore will fail on every SAML login attempt.
+Don't add the Metadata XML file as an URL. The cloud server will most likely have no access to the AD FS server which runs on your internal network; Symbio won't be able to access the metadata and therefore will fail on every SAML login attempt.
 
 #### Configure SAML User Groups and Permission Sets
 

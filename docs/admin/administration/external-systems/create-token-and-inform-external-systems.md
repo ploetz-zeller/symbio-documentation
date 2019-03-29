@@ -1,9 +1,6 @@
----
-uid: creating-token-and-inform-external-systems
----
 User can configure the **CreateTokenAndInformExternalSystem** converter step in the link converter file attached to the external system.
 
-The converter step has following settings 
+The converter step has following settings
 - AuthTokenOriginKey: The origin key of the auth token
 - AutomationParent: The origin key of the automation task
 - Role: Application role of the token
