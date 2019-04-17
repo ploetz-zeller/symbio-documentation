@@ -1,12 +1,12 @@
-# Symbio to SolMan diagram synchronization
+# Symbio to SAP Solution Manager diagram synchronization
 
-In this article you will be introduced with the basics of how Symbio diagram elements are synchronized to Solution Manager.
+In this article you will be introduced with the basics of how Symbio diagram elements are synchronized to SAP Solution Manager.
 ***
-## Synchronizing basic elements from Symbio to SolMan
+## Synchronizing basic elements from Symbio to SAP Solution Manager
 
 ### Events
 
-All events from Symbio will be synchronized to adequate SolMan event:
+All events from Symbio will be synchronized to adequate SAP Solution Manager event:
 
  1. StartEvent => StartEvent
  2. IntermediateEvent => IntermediateEvent
@@ -16,7 +16,7 @@ All events from Symbio will be synchronized to adequate SolMan event:
 
 ### Gateways
 
-**Symbio Gateway AND** will be synchronized as a *SolMans Gateway Parallel*: 
+**Symbio Gateway AND** will be synchronized as a *SAP Solution Managers Gateway Parallel*: 
 
 ---
 
@@ -24,7 +24,7 @@ All events from Symbio will be synchronized to adequate SolMan event:
 
 ---
 
-**Symbio Gateway OR** will be synchronized as a *SolMans Gateway Inclusive*. Since SolMan does not have *Condition* elements, conditions will be written on the connector arrows:
+**Symbio Gateway OR** will be synchronized as a *SAP Solution Managers Gateway Inclusive*. Since SAP Solution Manager does not have *Condition* elements, conditions will be written on the connector arrows:
 
 ---
 
@@ -32,7 +32,7 @@ All events from Symbio will be synchronized to adequate SolMan event:
 
 ---
 
-**Symbio Gateway Either-OR** will be synchronized as a *SolMans Gateway Exclusive*. Since SolMan does not have *Condition* elements, conditions will be written on the connector arrows:
+**Symbio Gateway Either-OR** will be synchronized as a *SAP Solution Managers Gateway Exclusive*. Since SAP Solution Manager does not have *Condition* elements, conditions will be written on the connector arrows:
 
 ---
 
@@ -42,7 +42,7 @@ All events from Symbio will be synchronized to adequate SolMan event:
 
 ### Tasks
 
-Both **Local task** and **Global task** in Symbio can be synchronized in Solution Manager in two ways: as a *draft task* or as a *process step*.
+Both **Local task** and **Global task** in Symbio can be synchronized in SAP Solution Manager in two ways: as a *draft task* or as a *process step*.
 
 If a [Best Practice Task](BestPracticeTasks.md) is attached to the task element, microservice will synchronize that task as a Process Step.
 
@@ -52,7 +52,7 @@ If a [Best Practice Task](BestPracticeTasks.md) is attached to the task element,
 
 ---
 
-If Best Practice Task is **not** connected to a task, a *draft task* will be created in the Solution Manager.
+If Best Practice Task is **not** connected to a task, a *draft task* will be created in the SAP Solution Manager.
 
 ![Test](media/LocalTask.png)
 

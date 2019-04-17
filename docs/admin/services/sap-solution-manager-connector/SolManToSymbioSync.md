@@ -1,9 +1,9 @@
-# Synchronizing structure and diagrams from Solution Manager to Symbio
+# Synchronizing structure and diagrams from SAP Solution Manager to Symbio
 ---
 ## Mapping of structure elements
 The elements are going to e synchronized following the table below:
 
-| Solution Manager | Symbio |
+| SAP Solution Manage | Symbio |
 | ------ | ------ |
 | Folder | Category |
 | Scenario | Main Process |
@@ -19,7 +19,7 @@ This way, if the process has multiple diagrams, all of them will be synchronized
 The diagram will be synced if the type is Process or Collaboration but only with one original pool.
 The diagram will be synced if the sub type is **"By Role"**, and if the sub type is **"By System"** the diagram will not be synchronized.
 
-| Solution Manager | Symbio |
+| SAP Solution Manage | Symbio |
 | ------ | ------ |
 | events (start,end,intermediary) | appropriate events |
 | gateways | appropriate gateways |
@@ -36,7 +36,7 @@ For the sub bprocess reference elements to be synchronized correctly some condit
 If the sub process reference doesn have a link to a concrete diagram, or it has more diagram attached but no default one the sub process will be synced like an interface ( empty placeholder).
 If the conditions are met the sub process reference will be synced like a sub process reference shape.
 ## Process of synchronization
-To synchronize the structure from Solution Manager to Symbio go to processes-> architecture and click on the SAP button. Click on the "Synchronize best practice package" button.
+To synchronize the structure from SAP Solution Manage to Symbio go to processes-> architecture and click on the SAP button. Click on the "Synchronize best practice package" button.
 ![Test](media/SolManSymbio1.png)
 
 A dialog will open.
