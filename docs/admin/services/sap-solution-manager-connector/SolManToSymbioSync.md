@@ -37,10 +37,10 @@ If the sub process reference doesn have a link to a concrete diagram, or it has 
 If the conditions are met the sub process reference will be synced like a sub process reference shape.
 ## Process of synchronization
 To synchronize the structrue from SolMan to Symbio go to processes-> architecture and click on the SAP button. Clik on the "Synchronize structure from SolMan to Symbio" button.
-![Test](media/SolManSymbio1.PNG)
+![Test](media/SolManSymbio1.png)
 
 A dialog will open.
 You can choose what scope you want ot sync, or if you leave it empry the whole structure will be synced.
-![Test](media/solManSymbio2.PNG)
+![Test](media/solManSymbio2.png)
  When the synchronization is done there will be a new category added to the process house element.The whole synchronized structure will be in this category.
  The elements will be released and not editable. For now you can copy only diagram elements to another structure.
