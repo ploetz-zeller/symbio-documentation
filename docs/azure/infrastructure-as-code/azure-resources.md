@@ -11,7 +11,7 @@ One hint on the Microsoft page is to arrange resources with the same life-cycle 
 
 Adding tags to your resources will help you to organize your resources. It can also be used to differentiate the resource for billing purposes.
 
-Most types of resources are supported. You can create the storage space for an Azure table, but not the table itself as an example. They are working on it and it may become available soon.
+Most types of resources are supported. You can create the storage space for an Azure table, but not the table itself as an example. The only subset of this that is working at the time of writing is for BLOLBs. They are working on it and it may become available soon.
 
 Resources across different resource groups can access each other and does not need to be in only one resource group.
 

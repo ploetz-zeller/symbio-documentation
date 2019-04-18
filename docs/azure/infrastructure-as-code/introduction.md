@@ -15,6 +15,10 @@ Achieved through creating and managing a descriptive model of the infrastructure
 * At scale
 * Repeatable
 * Includes security and compliance
+* Removes the infrastructure management away from a small team to the larger team with controls
+  * More transparency
+  * Improved process
+
 
 ![IaC overview](media\infraAsCode.png "IaC Overview")
 

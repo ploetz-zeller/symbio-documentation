@@ -21,3 +21,5 @@ Azure templates have been created to enable the creation of a model for the requ
 [Microsoft learning page - Resource templates](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-authoring-templates "Microsoft resource templates")
 
 [Azure template repository](https://github.com/Azure/azure-quickstart-templates "Azure template repository")
+
+[Azure template functions](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-template-functions "Azure template functions")
