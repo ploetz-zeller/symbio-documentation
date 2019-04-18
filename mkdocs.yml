@@ -67,6 +67,7 @@ nav:
         - Symbio to SolMan sub process diagram element synchronization: admin/services/sap-solution-manager-connector/SubProcessDiagramElementSync.md
         - Document Synchronization: admin/services/sap-solution-manager-connector/DocumentSynchronization.md
         - Best Practice Tasks: admin/services/sap-solution-manager-connector/BestPracticeTasks.md
+        - SolMan to Symbio synchronization: admin/services/sap-solution-manager-connector/SolManToSymbioSync.md
       - SVG To Image Converter:
         - Installation:
             - Scripted Installation: admin/services/rendering-service/installation-scripted.md
