@@ -130,3 +130,5 @@ nav:
   - Azure:
     - Introduction: azure/index.md
     - Runbooks: azure/runbooks.md
+    - Infrastructure as code: azure/infrastructure-as-code/introduction.md
+      - Azure resources: 
