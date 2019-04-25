@@ -3,7 +3,7 @@
 The service is currently made available as a stand alone service on Azure. It uses an Azure repository for the configuration.
 
 ## Configuration
-### Add the External System to the Symbio Repository
+### Add the External System
 1. Please ask your Ploetz and Zeller representative for the latest SYEX configuration file
 1. Log on to the \_sysadmin/_admin section of Symbio (Requires System Administration access)
 1. Switch to "Editor" mode
