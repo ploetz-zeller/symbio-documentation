@@ -42,8 +42,11 @@ nav:
         - Administration guide: admin/services/atlassian-connector/administration_guide.md
         - Using Symbio to Atlassian: admin/services/atlassian-connector/using_symbioatlassian.md
       - Intrafind Indexer:
+        - Introduction: admin/services/intrafind-indexer/index.md
         - Installation: admin/services/intrafind-indexer/installation.md
         - Configuration: admin/services/intrafind-indexer/configuration.md
+        - About Logging: admin/services/intrafind-indexer/logging.md
+        - Technical Background: admin/services/intrafind-indexer/technical_description.md
       - Intrafind Search Proxy:
         - Installation: admin/services/intrafind-search-proxy/installation.md
         - Configuration: admin/services/intrafind-search-proxy/configuration.md
@@ -60,8 +63,11 @@ nav:
       - SAP Solution Manager Connector:
         - Installation: admin/services/sap-solution-manager-connector/SolmanInterfaceSetUpGuide.md
         - Symbio to SolMan synchronization: admin/services/sap-solution-manager-connector/SymbioToSolMansynchronization.md
-        - Symbio to SolMan diagram synchornization: admin/services/sap-solution-manager-connector/SymbioToSolManDiagramSynchronization.md
-        - Symbio to SolMan sub process diagram element synchornization: admin/services/sap-solution-manager-connector/SubProcessDiagramElementSync.md
+        - Symbio to SolMan diagram synchronization: admin/services/sap-solution-manager-connector/SymbioToSolManDiagramSynchronization.md
+        - Symbio to SolMan sub process diagram element synchronization: admin/services/sap-solution-manager-connector/SubProcessDiagramElementSync.md
+        - Document Synchronization: admin/services/sap-solution-manager-connector/DocumentSynchronization.md
+        - Best Practice Tasks: admin/services/sap-solution-manager-connector/BestPracticeTasks.md
+        - SolMan to Symbio synchronization: admin/services/sap-solution-manager-connector/SolManToSymbioSync.md
       - SVG To Image Converter:
         - Installation:
             - Scripted Installation: admin/services/rendering-service/installation-scripted.md
@@ -117,9 +123,13 @@ nav:
           - List: developer/rest-api/reference/related-list.md
           - Get: developer/rest-api/reference/related-get.md
           - Children: developer/rest-api/reference/children.md
-          - Content: developer/rest-api/reference/content.md
           - Element Information: developer/rest-api/reference/elementsinfo-get.md
           - Configuration: developer/rest-api/reference/config.md
+        - Content:
+          - 1.0: developer/rest-api/reference/content.md
+          - 3.0:
+            - Get: developer/rest-api/reference/content-get-3.md
+            - Create: developer/rest-api/reference/content-create-3.md
         - Release:
           - Create Version: developer/rest-api/reference/release-create-version.md
           - Transitions: developer/rest-api/reference/release-transitions.md

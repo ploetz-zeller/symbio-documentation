@@ -1,5 +1,7 @@
 # Symbio SSO
 
+___Azure AD Premium is required___
+
 ## Worked Example: Symbio & Azure AD
 
 The Microsoft Azure Active Directory provides a SAML 2.0 Identity Provider (IdP) implementation, too, though it does not provide group claims of any kind (see "User & Rights Management Considerations"). The following example describes setting up Symbio as a Service Provider (SP) in and for Azure AD.
