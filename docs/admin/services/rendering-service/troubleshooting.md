@@ -1,6 +1,6 @@
 ##Troubleshooting
 
-**If the rendering service cannot be started, the following error 1053 in Services message probably occurs:**
+**If the rendering service cannot be started, the following error 1053 in Services message might occur:**
 
    ![image.png](media/SymbioRenderingService_Services_Error1053.png)
 
