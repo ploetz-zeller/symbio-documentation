@@ -1,3 +1,3 @@
 | Name | Type | Description |
 |---|---|---|
-| message | string | The error message. |
+| error | string | The error message. |

@@ -1,11 +1,11 @@
 # Content
 
-**api-version**: 1.0
+**api-version**: 2.0
 
 Retrieves the content of an element.
 
 ```
-POST /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/elements/{elementId}/content
+GET /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/elements/{elementId}/content
 ```
 
 ## Parameters
@@ -25,15 +25,16 @@ POST /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/eleme
 | Name | Type | Description |
 |---|---|---|
 | count | integer | The number of returned values. |
-| values | [Element[]](#element) | The list of elements. |
+| elements | [ElementCollection](#elementcollection) | The list of elements. |
 
 ### Error 4xx
 
 | Name | Type | Description |
 |---|---|---|
 | message | string | The error message |
+| output | [OperationResultOutput](#operationresultoutput) | The result output. |
 | type | [OperationResultType](#operationresulttype) | The result type. |
-| data | [Error[]](#error) | The list of errors. |
+| data | [OperationError](#operationerror) | The list of errors. |
 
 ## Examples
 
@@ -41,167 +42,382 @@ POST /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/eleme
 
 #### Request
 ```
-POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/detail/elements/1a526d30-f0c4-11df-4e21-001c25729284/content
+GET https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/detail/elements/664fd624-d341-4521-b430-897bb16399f4/content
 ```
 
-#### Reponse (200 OK)
+#### Response (200 OK)
 ```json
 {
-    "count": 12,
-    "values": [
+    "count": 10,
+    "elements": [
         {
-            "id": "c3f18a4b-7b03-4b53-888d-9961087ac6ba",
-            "type": "func",
-            "expandUri": "https://demo.symbioworld.com/pz/showcase/_api/data/Processes/c3f18a4b-7b03-4b53-888d-9961087ac6ba/TreeAndDiagram",
             "properties": {
                 "predecessors": [
                     {
-                        "id": "6c731872-da73-11de-7d13-0022681385fe",
-                        "type": "ruleXor"
+                        "properties": {
+                            "shapeId": "20e54882-843f-466d-901d-1bd97f4faa92"
+                        },
+                        "facetName": "processes",
+                        "id": "c306e185-d594-4d41-94ca-87062a978b26",
+                        "creationId": "c306e185-d594-4d41-94ca-87062a978b26",
+                        "type": "task",
+                        "expandUri": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/detail/elements/c306e185-d594-4d41-94ca-87062a978b26"
                     }
-                ]
+                ],
+                "shapeId": "f30dfae5-4230-496b-9098-9b6a334fd4ae"
+            },
+            "facetName": "processes",
+            "id": "74c8bc48-0aca-4973-90c0-146c16874475",
+            "creationId": "74c8bc48-0aca-4973-90c0-146c16874475",
+            "type": "task",
+            "attributes": {
+                "gotoUrl": {
+                    "1031": "https://demo.symbioworld.com/pz/showcase/1031/BasePlugin/GoTo/Processes/treeanddiagram//d1c46bcb-2fdd-430b-b155-671d21efbe2a/664fd624-d341-4521-b430-897bb16399f4/f30dfae5-4230-496b-9098-9b6a334fd4ae",
+                    "1033": "https://demo.symbioworld.com/pz/showcase/1033/BasePlugin/GoTo/Processes/treeanddiagram//d1c46bcb-2fdd-430b-b155-671d21efbe2a/664fd624-d341-4521-b430-897bb16399f4/f30dfae5-4230-496b-9098-9b6a334fd4ae"
+                },
+                "name": {
+                    "1031": "Ergebnisse\nkommunizieren",
+                    "1033": "Communicare results"
+                }
             }
         },
         {
-            "id": "a9e92cb2-c7cc-4b6b-886e-31df931fceb4",
-            "type": "func",
-            "expandUri": "https://demo.symbioworld.com/pz/showcase/_api/data/Processes/a9e92cb2-c7cc-4b6b-886e-31df931fceb4/TreeAndDiagram",
             "properties": {
                 "predecessors": [
                     {
-                        "id": "6c72f169-da73-11de-7d13-0022681385fe",
-                        "type": "ruleXor"
+                        "properties": {
+                            "shapeId": "c35d07bc-8569-4c7d-98e2-0a60e6515f65"
+                        },
+                        "facetName": "processes",
+                        "id": "8a64e2b1-7025-4465-8eae-e0b8d3c8eafc",
+                        "creationId": "8a64e2b1-7025-4465-8eae-e0b8d3c8eafc",
+                        "type": "ruleAnd",
+                        "expandUri": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/detail/elements/8a64e2b1-7025-4465-8eae-e0b8d3c8eafc"
                     }
-                ]
+                ],
+                "shapeId": "87414561-2b72-41c8-8ed7-bb5a34161c64"
+            },
+            "facetName": "processes",
+            "id": "26616754-1dc6-4a72-b701-ce9747102ad6",
+            "creationId": "26616754-1dc6-4a72-b701-ce9747102ad6",
+            "type": "task",
+            "attributes": {
+                "gotoUrl": {
+                    "1031": "https://demo.symbioworld.com/pz/showcase/1031/BasePlugin/GoTo/Processes/treeanddiagram//d1c46bcb-2fdd-430b-b155-671d21efbe2a/664fd624-d341-4521-b430-897bb16399f4/87414561-2b72-41c8-8ed7-bb5a34161c64",
+                    "1033": "https://demo.symbioworld.com/pz/showcase/1033/BasePlugin/GoTo/Processes/treeanddiagram//d1c46bcb-2fdd-430b-b155-671d21efbe2a/664fd624-d341-4521-b430-897bb16399f4/87414561-2b72-41c8-8ed7-bb5a34161c64"
+                },
+                "name": {
+                    "1031": "Kunden-\nanforderungen\nzusammenführen",
+                    "1033": "Consolidate customer requirements"
+                }
             }
         },
         {
-            "id": "99d51358-39e4-4b66-ab52-dd8066f7a9aa",
-            "type": "func",
-            "expandUri": "https://demo.symbioworld.com/pz/showcase/_api/data/Processes/99d51358-39e4-4b66-ab52-dd8066f7a9aa/TreeAndDiagram",
             "properties": {
                 "predecessors": [
                     {
-                        "id": "d1068af8-21df-4153-9d8d-e8d523ce148b",
-                        "type": "func"
+                        "properties": {
+                            "shapeId": "13957aa4-971c-46c3-bca2-35918fd7f002"
+                        },
+                        "facetName": "processes",
+                        "id": "d7abb4f9-e15d-4d6e-962a-a7b14c8f3746",
+                        "creationId": "d7abb4f9-e15d-4d6e-962a-a7b14c8f3746",
+                        "type": "evStart",
+                        "expandUri": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/detail/elements/d7abb4f9-e15d-4d6e-962a-a7b14c8f3746"
                     }
-                ]
+                ],
+                "shapeId": "c35d07bc-8569-4c7d-98e2-0a60e6515f65"
+            },
+            "facetName": "processes",
+            "id": "8a64e2b1-7025-4465-8eae-e0b8d3c8eafc",
+            "creationId": "8a64e2b1-7025-4465-8eae-e0b8d3c8eafc",
+            "type": "ruleAnd",
+            "attributes": {
+                "gotoUrl": {
+                    "1031": "https://demo.symbioworld.com/pz/showcase/1031/BasePlugin/GoTo/Processes/treeanddiagram//d1c46bcb-2fdd-430b-b155-671d21efbe2a/664fd624-d341-4521-b430-897bb16399f4/c35d07bc-8569-4c7d-98e2-0a60e6515f65",
+                    "1033": "https://demo.symbioworld.com/pz/showcase/1033/BasePlugin/GoTo/Processes/treeanddiagram//d1c46bcb-2fdd-430b-b155-671d21efbe2a/664fd624-d341-4521-b430-897bb16399f4/c35d07bc-8569-4c7d-98e2-0a60e6515f65"
+                },
+                "name": {
+                    "1031": "Und",
+                    "1033": "And"
+                }
             }
         },
         {
-            "id": "8cf4b9ff-361b-4e03-a6f8-73d2bcc59b8d",
-            "type": "func",
-            "expandUri": "https://demo.symbioworld.com/pz/showcase/_api/data/Processes/8cf4b9ff-361b-4e03-a6f8-73d2bcc59b8d/TreeAndDiagram",
             "properties": {
                 "predecessors": [
                     {
-                        "id": "6c731872-da73-11de-7d13-0022681385fe",
-                        "type": "ruleXor"
+                        "properties": {
+                            "shapeId": "c35d07bc-8569-4c7d-98e2-0a60e6515f65"
+                        },
+                        "facetName": "processes",
+                        "id": "8a64e2b1-7025-4465-8eae-e0b8d3c8eafc",
+                        "creationId": "8a64e2b1-7025-4465-8eae-e0b8d3c8eafc",
+                        "type": "ruleAnd",
+                        "expandUri": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/detail/elements/8a64e2b1-7025-4465-8eae-e0b8d3c8eafc"
                     }
-                ]
+                ],
+                "shapeId": "cfbcc10b-2b20-4766-84fb-d2ac82f4061d"
+            },
+            "facetName": "processes",
+            "id": "84a8eee0-8426-417b-9870-2f7365b3272b",
+            "creationId": "84a8eee0-8426-417b-9870-2f7365b3272b",
+            "type": "task",
+            "attributes": {
+                "gotoUrl": {
+                    "1031": "https://demo.symbioworld.com/pz/showcase/1031/BasePlugin/GoTo/Processes/treeanddiagram//d1c46bcb-2fdd-430b-b155-671d21efbe2a/664fd624-d341-4521-b430-897bb16399f4/cfbcc10b-2b20-4766-84fb-d2ac82f4061d",
+                    "1033": "https://demo.symbioworld.com/pz/showcase/1033/BasePlugin/GoTo/Processes/treeanddiagram//d1c46bcb-2fdd-430b-b155-671d21efbe2a/664fd624-d341-4521-b430-897bb16399f4/cfbcc10b-2b20-4766-84fb-d2ac82f4061d"
+                },
+                "name": {
+                    "1031": "Markt-\nanforderungen\nanalysieren",
+                    "1033": "Analyze market requirements"
+                }
             }
         },
         {
-            "id": "4ede9e9b-ae9f-4bf2-a52e-ca2347792f41",
-            "type": "evEnd",
-            "expandUri": "https://demo.symbioworld.com/pz/showcase/_api/data/Processes/4ede9e9b-ae9f-4bf2-a52e-ca2347792f41/TreeAndDiagram",
-            "properties": {
-                "predecessors": []
-            }
-        },
-        {
-            "id": "6c72f169-da73-11de-7d13-0022681385fe",
-            "type": "ruleXor",
-            "expandUri": "https://demo.symbioworld.com/pz/showcase/_api/data/Processes/6c72f169-da73-11de-7d13-0022681385fe/TreeAndDiagram",
             "properties": {
                 "predecessors": [
                     {
-                        "id": "2221e493-cde2-4c7f-9901-6f55bf736307",
-                        "type": "funcCondition"
+                        "properties": {
+                            "shapeId": "943ce351-d828-4287-913f-d9af31618299"
+                        },
+                        "facetName": "processes",
+                        "id": "be1291b0-5883-4b07-be8e-185dc917cd36",
+                        "creationId": "be1291b0-5883-4b07-be8e-185dc917cd36",
+                        "type": "ruleAnd",
+                        "expandUri": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/detail/elements/be1291b0-5883-4b07-be8e-185dc917cd36"
+                    }
+                ],
+                "shapeId": "20e54882-843f-466d-901d-1bd97f4faa92"
+            },
+            "facetName": "processes",
+            "id": "c306e185-d594-4d41-94ca-87062a978b26",
+            "creationId": "c306e185-d594-4d41-94ca-87062a978b26",
+            "type": "task",
+            "attributes": {
+                "gotoUrl": {
+                    "1031": "https://demo.symbioworld.com/pz/showcase/1031/BasePlugin/GoTo/Processes/treeanddiagram//d1c46bcb-2fdd-430b-b155-671d21efbe2a/664fd624-d341-4521-b430-897bb16399f4/20e54882-843f-466d-901d-1bd97f4faa92",
+                    "1033": "https://demo.symbioworld.com/pz/showcase/1033/BasePlugin/GoTo/Processes/treeanddiagram//d1c46bcb-2fdd-430b-b155-671d21efbe2a/664fd624-d341-4521-b430-897bb16399f4/20e54882-843f-466d-901d-1bd97f4faa92"
+                },
+                "name": {
+                    "1031": "Ergebnisse\nzusammenführen",
+                    "1033": "Consolidate results"
+                }
+            },
+            "related": {
+                "hasInput": [
+                    {
+                        "facetName": "inputsoutputs",
+                        "id": "56088292-6424-45b1-a82f-c8b344b1251a",
+                        "versionId": "3f8cd15f-c095-4538-b1c2-518784a02215",
+                        "type": "inOut",
+                        "state": "inEffect",
+                        "expandUri": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/inputsoutputs/views/detail/elements/3f8cd15f-c095-4538-b1c2-518784a02215"
                     },
                     {
-                        "id": "fc816519-f977-4114-bb8a-e924bf78c334",
-                        "type": "funcCondition"
+                        "facetName": "inputsoutputs",
+                        "id": "87fa70ad-5d3a-4311-9d6d-3b6494f06b4c",
+                        "versionId": "4468c587-6331-4229-be6b-8463372d96ce",
+                        "type": "inOut",
+                        "state": "inEffect",
+                        "expandUri": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/inputsoutputs/views/detail/elements/4468c587-6331-4229-be6b-8463372d96ce"
+                    }
+                ],
+                "hasOutput": [
+                    {
+                        "facetName": "inputsoutputs",
+                        "id": "11db4543-6950-4213-9704-08339138015f",
+                        "versionId": "12ee8876-31dc-4cde-8dc6-3374eda6cb02",
+                        "type": "inOut",
+                        "state": "inEffect",
+                        "expandUri": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/inputsoutputs/views/detail/elements/12ee8876-31dc-4cde-8dc6-3374eda6cb02"
+                    }
+                ],
+                "systems": [
+                    {
+                        "facetName": "it",
+                        "id": "fa23751e-9ce9-4b34-8125-7cc4f9580867",
+                        "versionId": "d5dfae5a-698c-4896-a1d3-8512e2c4e485",
+                        "type": "system",
+                        "state": "inEffect",
+                        "expandUri": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/it/views/detail/elements/d5dfae5a-698c-4896-a1d3-8512e2c4e485",
+                        "stereotype": "applicationSystem"
                     }
                 ]
             }
         },
         {
-            "id": "6c731872-da73-11de-7d13-0022681385fe",
-            "type": "ruleXor",
-            "expandUri": "https://demo.symbioworld.com/pz/showcase/_api/data/Processes/6c731872-da73-11de-7d13-0022681385fe/TreeAndDiagram",
             "properties": {
                 "predecessors": [
                     {
-                        "id": "4ede9e9b-ae9f-4bf2-a52e-ca2347792f41",
-                        "type": "evEnd"
+                        "properties": {
+                            "shapeId": "c35d07bc-8569-4c7d-98e2-0a60e6515f65"
+                        },
+                        "facetName": "processes",
+                        "id": "8a64e2b1-7025-4465-8eae-e0b8d3c8eafc",
+                        "creationId": "8a64e2b1-7025-4465-8eae-e0b8d3c8eafc",
+                        "type": "ruleAnd",
+                        "expandUri": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/detail/elements/8a64e2b1-7025-4465-8eae-e0b8d3c8eafc"
                     }
-                ]
+                ],
+                "shapeId": "b782450a-49a9-460c-b55c-ab35a3b12ca7"
+            },
+            "facetName": "processes",
+            "id": "f45698d5-2dfb-43a7-8a9d-98d1c8a1d829",
+            "creationId": "f45698d5-2dfb-43a7-8a9d-98d1c8a1d829",
+            "type": "task",
+            "attributes": {
+                "gotoUrl": {
+                    "1031": "https://demo.symbioworld.com/pz/showcase/1031/BasePlugin/GoTo/Processes/treeanddiagram//d1c46bcb-2fdd-430b-b155-671d21efbe2a/664fd624-d341-4521-b430-897bb16399f4/b782450a-49a9-460c-b55c-ab35a3b12ca7",
+                    "1033": "https://demo.symbioworld.com/pz/showcase/1033/BasePlugin/GoTo/Processes/treeanddiagram//d1c46bcb-2fdd-430b-b155-671d21efbe2a/664fd624-d341-4521-b430-897bb16399f4/b782450a-49a9-460c-b55c-ab35a3b12ca7"
+                },
+                "name": {
+                    "1031": "Ergebnisse \nInnovations-\nWorkshop\nintegrieren",
+                    "1033": "Integrate results of innovation workshop"
+                }
             }
         },
         {
-            "id": "2221e493-cde2-4c7f-9901-6f55bf736307",
-            "type": "funcCondition",
-            "expandUri": "https://demo.symbioworld.com/pz/showcase/_api/data/Processes/2221e493-cde2-4c7f-9901-6f55bf736307/TreeAndDiagram",
             "properties": {
                 "predecessors": [
                     {
-                        "id": "99d51358-39e4-4b66-ab52-dd8066f7a9aa",
-                        "type": "func"
+                        "properties": {
+                            "shapeId": "c35d07bc-8569-4c7d-98e2-0a60e6515f65"
+                        },
+                        "facetName": "processes",
+                        "id": "8a64e2b1-7025-4465-8eae-e0b8d3c8eafc",
+                        "creationId": "8a64e2b1-7025-4465-8eae-e0b8d3c8eafc",
+                        "type": "ruleAnd",
+                        "expandUri": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/detail/elements/8a64e2b1-7025-4465-8eae-e0b8d3c8eafc"
                     }
-                ]
+                ],
+                "shapeId": "f099f80f-abfa-4b4d-af0c-c31a48a99000"
+            },
+            "facetName": "processes",
+            "id": "e31e33f2-8d0e-4009-862d-3802866ef152",
+            "creationId": "e31e33f2-8d0e-4009-862d-3802866ef152",
+            "type": "task",
+            "attributes": {
+                "gotoUrl": {
+                    "1031": "https://demo.symbioworld.com/pz/showcase/1031/BasePlugin/GoTo/Processes/treeanddiagram//d1c46bcb-2fdd-430b-b155-671d21efbe2a/664fd624-d341-4521-b430-897bb16399f4/f099f80f-abfa-4b4d-af0c-c31a48a99000",
+                    "1033": "https://demo.symbioworld.com/pz/showcase/1033/BasePlugin/GoTo/Processes/treeanddiagram//d1c46bcb-2fdd-430b-b155-671d21efbe2a/664fd624-d341-4521-b430-897bb16399f4/f099f80f-abfa-4b4d-af0c-c31a48a99000"
+                },
+                "name": {
+                    "1031": "Wettbewerb\nanalysieren",
+                    "1033": "Analyse competition"
+                }
             }
         },
         {
-            "id": "fc816519-f977-4114-bb8a-e924bf78c334",
-            "type": "funcCondition",
-            "expandUri": "https://demo.symbioworld.com/pz/showcase/_api/data/Processes/fc816519-f977-4114-bb8a-e924bf78c334/TreeAndDiagram",
             "properties": {
                 "predecessors": [
                     {
-                        "id": "8388a2b7-bf25-4cda-a8ef-50e3779091aa",
-                        "type": "func"
+                        "properties": {
+                            "shapeId": "f30dfae5-4230-496b-9098-9b6a334fd4ae"
+                        },
+                        "facetName": "processes",
+                        "id": "74c8bc48-0aca-4973-90c0-146c16874475",
+                        "creationId": "74c8bc48-0aca-4973-90c0-146c16874475",
+                        "type": "task",
+                        "expandUri": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/detail/elements/74c8bc48-0aca-4973-90c0-146c16874475"
                     }
-                ]
+                ],
+                "shapeId": "f93c340a-1d40-49e3-b837-fad884bc93da"
+            },
+            "facetName": "processes",
+            "id": "a21001f1-740b-492a-8aa0-ef9d87098f5e",
+            "creationId": "a21001f1-740b-492a-8aa0-ef9d87098f5e",
+            "type": "evEnd",
+            "attributes": {
+                "gotoUrl": {
+                    "1031": "https://demo.symbioworld.com/pz/showcase/1031/BasePlugin/GoTo/Processes/treeanddiagram//d1c46bcb-2fdd-430b-b155-671d21efbe2a/664fd624-d341-4521-b430-897bb16399f4/f93c340a-1d40-49e3-b837-fad884bc93da",
+                    "1033": "https://demo.symbioworld.com/pz/showcase/1033/BasePlugin/GoTo/Processes/treeanddiagram//d1c46bcb-2fdd-430b-b155-671d21efbe2a/664fd624-d341-4521-b430-897bb16399f4/f93c340a-1d40-49e3-b837-fad884bc93da"
+                },
+                "name": {
+                    "1031": "Ende",
+                    "1033": "End"
+                }
             }
         },
         {
-            "id": "96d62177-da6c-4df3-999c-38e6573b328e",
+            "properties": {
+                "predecessors": [
+                    {
+                        "properties": {
+                            "shapeId": "87414561-2b72-41c8-8ed7-bb5a34161c64"
+                        },
+                        "facetName": "processes",
+                        "id": "26616754-1dc6-4a72-b701-ce9747102ad6",
+                        "creationId": "26616754-1dc6-4a72-b701-ce9747102ad6",
+                        "type": "task",
+                        "expandUri": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/detail/elements/26616754-1dc6-4a72-b701-ce9747102ad6"
+                    },
+                    {
+                        "properties": {
+                            "shapeId": "b782450a-49a9-460c-b55c-ab35a3b12ca7"
+                        },
+                        "facetName": "processes",
+                        "id": "f45698d5-2dfb-43a7-8a9d-98d1c8a1d829",
+                        "creationId": "f45698d5-2dfb-43a7-8a9d-98d1c8a1d829",
+                        "type": "task",
+                        "expandUri": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/detail/elements/f45698d5-2dfb-43a7-8a9d-98d1c8a1d829"
+                    },
+                    {
+                        "properties": {
+                            "shapeId": "f099f80f-abfa-4b4d-af0c-c31a48a99000"
+                        },
+                        "facetName": "processes",
+                        "id": "e31e33f2-8d0e-4009-862d-3802866ef152",
+                        "creationId": "e31e33f2-8d0e-4009-862d-3802866ef152",
+                        "type": "task",
+                        "expandUri": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/detail/elements/e31e33f2-8d0e-4009-862d-3802866ef152"
+                    },
+                    {
+                        "properties": {
+                            "shapeId": "cfbcc10b-2b20-4766-84fb-d2ac82f4061d"
+                        },
+                        "facetName": "processes",
+                        "id": "84a8eee0-8426-417b-9870-2f7365b3272b",
+                        "creationId": "84a8eee0-8426-417b-9870-2f7365b3272b",
+                        "type": "task",
+                        "expandUri": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/detail/elements/84a8eee0-8426-417b-9870-2f7365b3272b"
+                    }
+                ],
+                "shapeId": "943ce351-d828-4287-913f-d9af31618299"
+            },
+            "facetName": "processes",
+            "id": "be1291b0-5883-4b07-be8e-185dc917cd36",
+            "creationId": "be1291b0-5883-4b07-be8e-185dc917cd36",
+            "type": "ruleAnd",
+            "attributes": {
+                "gotoUrl": {
+                    "1031": "https://demo.symbioworld.com/pz/showcase/1031/BasePlugin/GoTo/Processes/treeanddiagram//d1c46bcb-2fdd-430b-b155-671d21efbe2a/664fd624-d341-4521-b430-897bb16399f4/943ce351-d828-4287-913f-d9af31618299",
+                    "1033": "https://demo.symbioworld.com/pz/showcase/1033/BasePlugin/GoTo/Processes/treeanddiagram//d1c46bcb-2fdd-430b-b155-671d21efbe2a/664fd624-d341-4521-b430-897bb16399f4/943ce351-d828-4287-913f-d9af31618299"
+                },
+                "name": {
+                    "1031": "Und",
+                    "1033": "And"
+                }
+            }
+        },
+        {
+            "properties": {
+                "predecessors": [],
+                "shapeId": "13957aa4-971c-46c3-bca2-35918fd7f002"
+            },
+            "facetName": "processes",
+            "id": "d7abb4f9-e15d-4d6e-962a-a7b14c8f3746",
+            "creationId": "d7abb4f9-e15d-4d6e-962a-a7b14c8f3746",
             "type": "evStart",
-            "expandUri": "https://demo.symbioworld.com/pz/showcase/_api/data/Processes/96d62177-da6c-4df3-999c-38e6573b328e/TreeAndDiagram",
-            "properties": {
-                "predecessors": [
-                    {
-                        "id": "a9e92cb2-c7cc-4b6b-886e-31df931fceb4",
-                        "type": "func"
-                    }
-                ]
-            }
-        },
-        {
-            "id": "8388a2b7-bf25-4cda-a8ef-50e3779091aa",
-            "type": "func",
-            "expandUri": "https://demo.symbioworld.com/pz/showcase/_api/data/Processes/8388a2b7-bf25-4cda-a8ef-50e3779091aa/TreeAndDiagram",
-            "properties": {
-                "predecessors": [
-                    {
-                        "id": "c3f18a4b-7b03-4b53-888d-9961087ac6ba",
-                        "type": "func"
-                    }
-                ]
-            }
-        },
-        {
-            "id": "d1068af8-21df-4153-9d8d-e8d523ce148b",
-            "type": "func",
-            "expandUri": "https://demo.symbioworld.com/pz/showcase/_api/data/Processes/d1068af8-21df-4153-9d8d-e8d523ce148b/TreeAndDiagram",
-            "properties": {
-                "predecessors": [
-                    {
-                        "id": "8cf4b9ff-361b-4e03-a6f8-73d2bcc59b8d",
-                        "type": "func"
-                    }
-                ]
+            "attributes": {
+                "gotoUrl": {
+                    "1031": "https://demo.symbioworld.com/pz/showcase/1031/BasePlugin/GoTo/Processes/treeanddiagram//d1c46bcb-2fdd-430b-b155-671d21efbe2a/664fd624-d341-4521-b430-897bb16399f4/13957aa4-971c-46c3-bca2-35918fd7f002",
+                    "1033": "https://demo.symbioworld.com/pz/showcase/1033/BasePlugin/GoTo/Processes/treeanddiagram//d1c46bcb-2fdd-430b-b155-671d21efbe2a/664fd624-d341-4521-b430-897bb16399f4/13957aa4-971c-46c3-bca2-35918fd7f002"
+                },
+                "name": {
+                    "1031": "Start",
+                    "1033": "Start"
+                }
             }
         }
     ]
@@ -213,8 +429,14 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/d
 ### Element
 {!developer/rest-api/reference/models/element.md!}
 
+### ElementCollection
+{!developer/rest-api/reference/models/elementcollection.md!}
+
+### OperationResultOutput
+{!developer/rest-api/reference/models/operationresultoutput.md!}
+
 ### OperationResultType
 {!developer/rest-api/reference/models/operationresulttype.md!}
 
-### Error
-{!developer/rest-api/reference/models/error.md!}
+### OperationError
+{!developer/rest-api/reference/models/operationerror.md!}

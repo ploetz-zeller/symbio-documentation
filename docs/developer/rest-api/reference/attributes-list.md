@@ -1,4 +1,4 @@
-# Attributes
+# Attributes list
 
 **api-version**: 1.0
 
@@ -40,8 +40,9 @@ POST /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/eleme
 | Name | Type | Description |
 |---|---|---|
 | message | string | The error message |
+| output | [OperationResultOutput](#operationresultoutput) | The result output. |
 | type | [OperationResultType](#operationresulttype) | The result type. |
-| data | [Error[]](#error) | The list of errors. |
+| data | [OperationError](#operationerror) | The list of errors. |
 
 ## Examples
 
@@ -49,30 +50,41 @@ POST /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/eleme
 
 #### Request
 ```
-POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/detail/elements/168c8bc4-779e-4697-8334-0026411d52f1/attributes
+POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/detail/elements/f4f3943d-6b3b-42a9-8a3a-30acf42ce7d5/attributes
 ```
 
-#### Reponse (200 OK)
+#### Response (200 OK)
 ```json
 {
-    "count": 12,
+    "count": 14,
     "values": {
+        "authorNote": {
+            "1031": "Ein oder mehrere Autoren wurden gesetzt. Nur Architekten und die angegebenen Autoren dürfen das aktuelle Element bearbeiten.",
+            "1033": "The author was set. Only architects and the defined authors are allowed to edit the current element."
+        },
         "changedOn": {
-            "127": "2018-03-07T10:15:40"
+            "127": "2018-10-03T15:34:19"
         },
         "createdOn": {
-            "127": "2007-12-03T00:00:00"
+            "127": "2018-10-03T15:34:11"
         },
         "description": {
             "1031": "<?xml version=\"1.0\" encoding=\"utf-8\"?><div><p>Der Innovations- und Anforderungsprozess gliedert sich in drei Phasen:</p><ul>\n<li>Impulsphase: Beobachtung von Trends, Ideenfindung, Brainstorming von Anforderungen, Kundenanforderungen</li>\n<li>Bewertungsphase: Prüfung auf Tauglichkeit der Idee für das jeweilige Produkt und den Marktanforderungen</li>\n<li>Technologietransfer: Anforderungen in die Release-Planung überführen</li>\n</ul></div>",
             "1033": "<?xml version=\"1.0\" encoding=\"utf-8\"?><div><p>The Innovation and request process is divided into three phases:</p><ul>\n<li>Pulse phase: review of trends, ideas, brainstorming of requirements, customer requirements</li>\n<li>Evaluation phase: testing for suitability of the idea for the product and market requirements</li>\n<li>Technology transfer: transfer requirements in the release planning</li>\n</ul></div>"
+        },
+        "gotoUrl": {
+            "1031": "https://localhost/pz/showcase/1031/BasePlugin/GoTo/Processes/treeanddiagram/f4f3943d-6b3b-42a9-8a3a-30acf42ce7d5",
+            "1033": "https://localhost/pz/showcase/1033/BasePlugin/GoTo/Processes/treeanddiagram/f4f3943d-6b3b-42a9-8a3a-30acf42ce7d5"
+        },
+        "isReleased": {
+            "127": false
         },
         "name": {
             "1031": "Ideen/Innovationen",
             "1033": "Idea/Innovation"
         },
         "processMaturity": {
-            "127": "processIsLived"
+            "127": "isLived"
         },
         "purp": {
             "1031": "Qualifizierung eingegangener Ideen und Anforderungen. Unter dem Begriff Qualifizierung versteht man den Vorgang zur Erlangung von Fähigkeiten (Qualifikationen), um eine bestimmte Aufgabe oder Anforderung erfüllen zu können. Ebenso die Überprüfung dieser Fähigkeiten wird als Qualifizierung bezeichnet. Die Überprüfung, dass die Fähigkeiten ausreichen, um im praktischen Einsatz reproduzierbar die gestellten Anforderungen zu erfüllen, ist Inhalt der so genannten Validierung.",
@@ -85,21 +97,17 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/d
         "state1": {
             "127": "inProcess"
         },
-        "validFrom": {
-            "127": "2015-12-01T18:39:48"
-        },
-        "validFromUntilPastMessage": {
-            "1031": "The date \"01.12.2015\" for \"Gültigkeitsstart\" is in the past.\r\nThe date \"31.03.2016\" for \"Gültigkeitsende\" is in the past.\r\n",
-            "1033": "The date \"12/1/2015\" for \"Start of Validity\" is in the past.\r\nThe date \"3/31/2016\" for \"End of Validity\" is in the past.\r\n"
-        },
         "validUntil": {
-            "127": "2016-03-31T00:00:00"
+            "127": "2019-10-03T00:00:00"
+        },
+        "version": {
+            "127": "2.1"
         },
         "workshopImages": {
             "127": [
                 {
                     "address": "18077efd-e887-4b26-841d-f2374d8da7c1",
-                    "fullAddress": "https://demo.symbioworld.com/pz/showcase/Master/editor/1033/BasePlugin/File/GetFile/18077efd-e887-4b26-841d-f2374d8da7c1.Storage.html",
+                    "fullAddress": "https://localhost/pz/showcase/editor/1033/BasePlugin/File/GetFile/18077efd-e887-4b26-841d-f2374d8da7c1.Storage.html",
                     "mimeType": "image/jpeg",
                     "protocol": "Storage",
                     "title": "Idea-Innovation_klein"
@@ -114,10 +122,10 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/d
 
 #### Request
 ```
-POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/detail/elements/168c8bc4-779e-4697-8334-0026411d52f1/attributes?$select=name,description
+POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/detail/elements/f4f3943d-6b3b-42a9-8a3a-30acf42ce7d5/attributes?$select=name,description
 ```
 
-#### Reponse (200 OK)
+#### Response (200 OK)
 ```json
 {
     "count": 2,
@@ -136,11 +144,11 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/d
 
 ## Definitions
 
-### Element
-{!developer/rest-api/reference/models/element.md!}
+### OperationResultOutput
+{!developer/rest-api/reference/models/operationresultoutput.md!}
 
 ### OperationResultType
 {!developer/rest-api/reference/models/operationresulttype.md!}
 
-### Error
-{!developer/rest-api/reference/models/error.md!}
+### OperationError
+{!developer/rest-api/reference/models/operationerror.md!}

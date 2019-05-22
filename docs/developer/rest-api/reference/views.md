@@ -1,4 +1,4 @@
-# Views
+# Views get
 
 **api-version**: 1.0
 
@@ -23,15 +23,16 @@ POST  /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views
 | Name | Type | Description |
 |---|---|---|
 | count | integer | The number of returned values. |
-| values | [View[]](#view) | The list of views. |
+| values | [FacetView[]](#facetview) | The list of views. |
 
 ### Error 4xx
 
 | Name | Type | Description |
 |---|---|---|
 | message | string | The error message |
+| output | [OperationResultOutput](#operationresultoutput) | The result output. |
 | type | [OperationResultType](#operationresulttype) | The result type. |
-| data | [Error[]](#error) | The list of errors. |
+| data | [OperationError](#operationerror) | The list of errors. |
 
 ## Examples
 
@@ -42,24 +43,69 @@ POST  /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views
 POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views
 ```
 
-#### Reponse (200 OK)
+#### Response (200 OK)
 ```json
 {
-    "count": 3,
+    "count": 10,
     "values": [
         {
             "name": "detail",
             "displayName": "All information on processes",
+            "isHierarchical": false,
             "elements": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/detail/elements"
+        },
+        {
+            "name": "detail",
+            "displayName": "All information on processes",
+            "isHierarchical": false,
+            "elements": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/detail/elements"
+        },
+        {
+            "name": "diagram",
+            "displayName": "Graphic",
+            "isHierarchical": false,
+            "elements": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/diagram/elements"
+        },
+        {
+            "name": "diagram",
+            "displayName": "Graphic",
+            "isHierarchical": false,
+            "elements": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/diagram/elements"
+        },
+        {
+            "name": "diagram",
+            "displayName": "Graphic",
+            "isHierarchical": false,
+            "elements": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/diagram/elements"
+        },
+        {
+            "name": "documentContent",
+            "displayName": "Document content",
+            "isHierarchical": true,
+            "elements": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/documentContent/elements"
+        },
+        {
+            "name": "documentContent",
+            "displayName": "Document content",
+            "isHierarchical": false,
+            "elements": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/documentContent/elements"
         },
         {
             "name": "list",
             "displayName": "List",
+            "isHierarchical": false,
             "elements": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/list/elements"
+        },
+        {
+            "name": "reporting",
+            "displayName": "Report data",
+            "isHierarchical": true,
+            "elements": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/reporting/elements"
         },
         {
             "name": "tree",
             "displayName": "Architecture",
+            "isHierarchical": true,
             "elements": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/tree/elements"
         }
     ]
@@ -68,11 +114,14 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views
 
 ## Definitions
 
-### View
-{!developer/rest-api/reference/models/view.md!}
+### FacetView
+{!developer/rest-api/reference/models/facetview.md!}
+
+### OperationResultOutput
+{!developer/rest-api/reference/models/operationresultoutput.md!}
 
 ### OperationResultType
 {!developer/rest-api/reference/models/operationresulttype.md!}
 
-### Error
-{!developer/rest-api/reference/models/error.md!}
+### OperationError
+{!developer/rest-api/reference/models/operationerror.md!}

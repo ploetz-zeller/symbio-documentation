@@ -1,11 +1,11 @@
-# Content - Create
+# Content create
 
 **api-version**: 3.0
 
 Create content of an element.
 
 ```
-POST /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/elements/{elementId}/content
+POST /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/diagram/elements/{elementId}/content
 ```
 
 ## Parameters
@@ -39,8 +39,9 @@ POST /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/eleme
 | Name | Type | Description |
 |---|---|---|
 | message | string | The error message |
+| type | [OperationResultOutput](#operationresultoutput) | The result output. |
 | type | [OperationResultType](#operationresulttype) | The result type. |
-| data | [Error[]](#error) | The list of errors. |
+| data | [OperationError[]](#operationerror) | The list of errors. |
 
 ## Examples
 
@@ -49,7 +50,7 @@ POST /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/eleme
 #### Request
 
 ```
-POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/diagram/elements/1a526d30-f0c4-11df-4e21-001c25729284/content
+POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/diagram/elements/db313e1c-9a5f-400e-add9-6282e3058dca/content
 ```
 
 ### Request Body
@@ -106,13 +107,26 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/d
 }
 ```
 
-#### Reponse (200 OK)
+#### Response (200 OK)
 
 ```json
 {
-    "message": "",
-    "output": "Volatile",
-    "type": "Success"
+    "values":
+    [
+        {
+            "id":"a2c0abae-6fbd-42a8-a7a9-931f41ac187d",
+            "index":0
+        },
+            
+        {
+            "id":"fb92ff40-a84b-4879-bce0-0aa24982f23e",
+            "index":1
+        },
+        {
+            "id":"9807501f-e1da-41cf-9c31-91e4fa38be43",
+            "index":2
+        }
+    ]
 }
 ```
 
@@ -121,7 +135,7 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/d
 #### Request
 
 ```
-POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/diagram/elements/1a526d30-f0c4-11df-4e21-001c25729284/content
+POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/diagram/elements/db313e1c-9a5f-400e-add9-6282e3058dca/content
 ```
 
 ### Request Body
@@ -132,7 +146,7 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/d
         {
             "shapeInfo": {
                 "index": 0,
-                "id": "a7bbe7cb-c8a1-412c-822c-770ce4854fb7"
+                "id": "a2c0abae-6fbd-42a8-a7a9-931f41ac187d"
             }
         },
         {
@@ -155,13 +169,21 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/d
 }
 ```
 
-#### Reponse (200 OK)
+#### Response (200 OK)
 
 ```json
 {
-    "message": "",
-    "output": "Volatile",
-    "type": "Success"
+    "values":
+        [
+            {
+                "id": "fc1388c1-9956-4028-9603-2954a24a377d",
+                "index": 0
+            },
+            {
+                "id": "ec10b6fd-1e47-4c90-9992-f3654166d444",
+                "index": 
+            }
+        ]
 }
 ```
 
@@ -170,7 +192,7 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/d
 #### Request
 
 ```
-POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/diagram/elements/1a526d30-f0c4-11df-4e21-001c25729284/content
+POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/diagram/elements/db313e1c-9a5f-400e-add9-6282e3058dca/content
 ```
 
 ### Request Body
@@ -181,7 +203,7 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/d
         {
             "shapeInfo": {
                 "index": 0,
-                "id": "a7bbe7cb-c8a1-412c-822c-770ce4854fb7"
+                "id": "a2c0abae-6fbd-42a8-a7a9-931f41ac187d"
             }
         },
         {
@@ -193,7 +215,7 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/d
             },
             "element": {
                 "type": "subProcess",
-                "id": "e7774de1-9af3-40f0-9c66-58603e887993"
+                "id": "db313e1c-9a5f-400e-add9-6282e3058dca"
             }
         }
     ]
@@ -204,9 +226,17 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/d
 
 ```json
 {
-    "message": "",
-    "output": "Volatile",
-    "type": "Success"
+    "values":
+        [
+            {
+                "id": "fc1388c1-9956-4028-9603-2954a24a377d",
+                "index": 0
+            },
+            {
+                "id": "db313e1c-9a5f-400e-add9-6282e3058dca",
+                "index": 
+            }
+        ]
 }
 ```
 
@@ -220,14 +250,18 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/d
 
 {!developer/rest-api/reference/models/contentmodel.md!}
 
-### ShapeInfo
+### ContentShapeInfo
 
-{!developer/rest-api/reference/models/shapeinfo.md!}
+{!developer/rest-api/reference/models/contentshapeinfo.md!}
+
+### OperationResultOutput
+
+{!developer/rest-api/reference/models/operationresultoutput.md!}
 
 ### OperationResultType
 
 {!developer/rest-api/reference/models/operationresulttype.md!}
 
-### Error
+### OperationError
 
-{!developer/rest-api/reference/models/error.md!}
+{!developer/rest-api/reference/models/operationerror.md!}
