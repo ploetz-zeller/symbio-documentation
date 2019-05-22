@@ -41,7 +41,7 @@ POST /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/diagram/elemen
 | message | string | The error message |
 | type | [OperationResultOutput](#operationresultoutput) | The result output. |
 | type | [OperationResultType](#operationresulttype) | The result type. |
-| data | [OperationError[]](#operationerror) | The list of errors. |
+| data | [OperationError](#operationerror) | The list of errors. |
 
 ## Examples
 
@@ -222,7 +222,7 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/d
 }
 ```
 
-#### Reponse (200 OK)
+#### Response (200 OK)
 
 ```json
 {

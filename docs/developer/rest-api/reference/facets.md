@@ -50,207 +50,207 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/
         {
             "name": "automation",
             "displayName": "Automation",
-            "views": "https://localhost/pz/showcase/_api/rest/facets/automation/views"
+            "views": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/automation/views"
         },
         {
             "name": "bestPracticeTasks",
             "displayName": "Best practice tasks",
-            "views": "https://localhost/pz/showcase/_api/rest/facets/bestPracticeTasks/views"
+            "views": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/bestPracticeTasks/views"
         },
         {
             "name": "capability",
             "displayName": "Capability",
-            "views": "https://localhost/pz/showcase/_api/rest/facets/capability/views"
+            "views": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/capability/views"
         },
         {
             "name": "cultures",
             "displayName": "Languages",
-            "views": "https://localhost/pz/showcase/_api/rest/facets/cultures/views"
+            "views": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/cultures/views"
         },
         {
             "name": "customerjourneystages",
             "displayName": "Customer journey stages",
-            "views": "https://localhost/pz/showcase/_api/rest/facets/customerjourneystages/views"
+            "views": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/customerjourneystages/views"
         },
         {
             "name": "customerstructure",
             "displayName": "Customers",
-            "views": "https://localhost/pz/showcase/_api/rest/facets/customerstructure/views"
+            "views": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/customerstructure/views"
         },
         {
             "name": "docContent",
             "displayName": "DocContent",
-            "views": "https://localhost/pz/showcase/_api/rest/facets/docContent/views"
+            "views": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/docContent/views"
         },
         {
             "name": "docTemplates",
             "displayName": "Document Templates",
-            "views": "https://localhost/pz/showcase/_api/rest/facets/docTemplates/views"
+            "views": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/docTemplates/views"
         },
         {
             "name": "globaltasks",
             "displayName": "Task repository",
-            "views": "https://localhost/pz/showcase/_api/rest/facets/globaltasks/views"
+            "views": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/globaltasks/views"
         },
         {
             "name": "groups",
             "displayName": "Groups",
-            "views": "https://localhost/pz/showcase/_api/rest/facets/groups/views"
+            "views": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/groups/views"
         },
         {
             "name": "inputsoutputs",
             "displayName": "Inputs/Outputs",
-            "views": "https://localhost/pz/showcase/_api/rest/facets/inputsoutputs/views"
+            "views": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/inputsoutputs/views"
         },
         {
             "name": "it",
             "displayName": "Systems",
-            "views": "https://localhost/pz/showcase/_api/rest/facets/it/views"
+            "views": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/it/views"
         },
         {
             "name": "knowledge",
             "displayName": "Documents",
-            "views": "https://localhost/pz/showcase/_api/rest/facets/knowledge/views"
+            "views": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/knowledge/views"
         },
         {
             "name": "kpi",
             "displayName": "Key Performance Indicators",
-            "views": "https://localhost/pz/showcase/_api/rest/facets/kpi/views"
+            "views": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/kpi/views"
         },
         {
             "name": "learning",
             "displayName": "Learning",
-            "views": "https://localhost/pz/showcase/_api/rest/facets/learning/views"
+            "views": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/learning/views"
         },
         {
             "name": "locations",
             "displayName": "Locations",
-            "views": "https://localhost/pz/showcase/_api/rest/facets/locations/views"
+            "views": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/locations/views"
         },
         {
             "name": "measures",
             "displayName": "Measures",
-            "views": "https://localhost/pz/showcase/_api/rest/facets/measures/views"
+            "views": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/measures/views"
         },
         {
             "name": "milestones",
             "displayName": "Milestones",
-            "views": "https://localhost/pz/showcase/_api/rest/facets/milestones/views"
+            "views": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/milestones/views"
         },
         {
             "name": "organization",
             "displayName": "Organization",
-            "views": "https://localhost/pz/showcase/_api/rest/facets/organization/views"
+            "views": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/organization/views"
         },
         {
             "name": "overviewpages",
             "displayName": "Overview pages",
-            "views": "https://localhost/pz/showcase/_api/rest/facets/overviewpages/views"
+            "views": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/overviewpages/views"
         },
         {
             "name": "permissionsets",
             "displayName": "Permission sets",
-            "views": "https://localhost/pz/showcase/_api/rest/facets/permissionsets/views"
+            "views": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/permissionsets/views"
         },
         {
             "name": "personas",
             "displayName": "Personas",
-            "views": "https://localhost/pz/showcase/_api/rest/facets/personas/views"
+            "views": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/personas/views"
         },
         {
             "name": "processes",
             "displayName": "Processes",
-            "views": "https://localhost/pz/showcase/_api/rest/facets/processes/views"
+            "views": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views"
         },
         {
             "name": "products",
             "displayName": "Products",
-            "views": "https://localhost/pz/showcase/_api/rest/facets/products/views"
+            "views": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/products/views"
         },
         {
             "name": "projects",
             "displayName": "Projects",
-            "views": "https://localhost/pz/showcase/_api/rest/facets/projects/views"
+            "views": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/projects/views"
         },
         {
             "name": "reportsources",
             "displayName": "Reporting",
-            "views": "https://localhost/pz/showcase/_api/rest/facets/reportsources/views"
+            "views": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/reportsources/views"
         },
         {
             "name": "requirements",
             "displayName": "Requirements",
-            "views": "https://localhost/pz/showcase/_api/rest/facets/requirements/views"
+            "views": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/requirements/views"
         },
         {
             "name": "risks",
             "displayName": "Risks",
-            "views": "https://localhost/pz/showcase/_api/rest/facets/risks/views"
+            "views": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/risks/views"
         },
         {
             "name": "roles",
             "displayName": "Roles",
-            "views": "https://localhost/pz/showcase/_api/rest/facets/roles/views"
+            "views": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/roles/views"
         },
         {
             "name": "saleschannels",
             "displayName": "Sales channels",
-            "views": "https://localhost/pz/showcase/_api/rest/facets/saleschannels/views"
+            "views": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/saleschannels/views"
         },
         {
             "name": "search",
             "displayName": "Search",
-            "views": "https://localhost/pz/showcase/_api/rest/facets/search/views"
+            "views": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/search/views"
         },
         {
             "name": "stakeholders",
             "displayName": "Stakeholders",
-            "views": "https://localhost/pz/showcase/_api/rest/facets/stakeholders/views"
+            "views": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/stakeholders/views"
         },
         {
             "name": "standards",
             "displayName": "Standards",
-            "views": "https://localhost/pz/showcase/_api/rest/facets/standards/views"
+            "views": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/standards/views"
         },
         {
             "name": "stereotypes",
             "displayName": "Stereotypes",
-            "views": "https://localhost/pz/showcase/_api/rest/facets/stereotypes/views"
+            "views": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/stereotypes/views"
         },
         {
             "name": "strategy",
             "displayName": "Strategy",
-            "views": "https://localhost/pz/showcase/_api/rest/facets/strategy/views"
+            "views": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/strategy/views"
         },
         {
             "name": "tags",
             "displayName": "Tags",
-            "views": "https://localhost/pz/showcase/_api/rest/facets/tags/views"
+            "views": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/tags/views"
         },
         {
             "name": "touchpoints",
             "displayName": "Touch Points",
-            "views": "https://localhost/pz/showcase/_api/rest/facets/touchpoints/views"
+            "views": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/touchpoints/views"
         },
         {
             "name": "transactions",
             "displayName": "Application services",
-            "views": "https://localhost/pz/showcase/_api/rest/facets/transactions/views"
+            "views": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/transactions/views"
         },
         {
             "name": "usergroups",
             "displayName": "User groups",
-            "views": "https://localhost/pz/showcase/_api/rest/facets/usergroups/views"
+            "views": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/usergroups/views"
         },
         {
             "name": "users",
             "displayName": "User",
-            "views": "https://localhost/pz/showcase/_api/rest/facets/users/views"
+            "views": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/users/views"
         },
         {
             "name": "voiceofcustomers",
             "displayName": "Voice of customers",
-            "views": "https://localhost/pz/showcase/_api/rest/facets/voiceofcustomers/views"
+            "views": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/voiceofcustomers/views"
         }
     ]
 }

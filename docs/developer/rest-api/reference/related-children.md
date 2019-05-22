@@ -75,7 +75,7 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/t
                         "id": "a364f30b-a126-4a74-9e1a-1df87f2a6074",
                         "creationId": "a364f30b-a126-4a74-9e1a-1df87f2a6074",
                         "type": "user",
-                        "expandUri": "https://localhost/pz/showcase/_api/rest/facets/users/views/detail/elements/a364f30b-a126-4a74-9e1a-1df87f2a6074"
+                        "expandUri": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/users/views/detail/elements/a364f30b-a126-4a74-9e1a-1df87f2a6074"
                     }
                 ],
                 "owner": [
@@ -84,7 +84,7 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/t
                         "id": "30fe276f-5312-45e2-ac9d-937437dcbc28",
                         "creationId": "30fe276f-5312-45e2-ac9d-937437dcbc28",
                         "type": "user",
-                        "expandUri": "https://localhost/pz/showcase/_api/rest/facets/users/views/detail/elements/30fe276f-5312-45e2-ac9d-937437dcbc28"
+                        "expandUri": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/users/views/detail/elements/30fe276f-5312-45e2-ac9d-937437dcbc28"
                     }
                 ]
             }
@@ -114,7 +114,7 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/t
                         "id": "ab01a052-80f2-4fbf-8e21-698cb7095b34",
                         "creationId": "ab01a052-80f2-4fbf-8e21-698cb7095b34",
                         "type": "user",
-                        "expandUri": "https://localhost/pz/showcase/_api/rest/facets/users/views/detail/elements/ab01a052-80f2-4fbf-8e21-698cb7095b34"
+                        "expandUri": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/users/views/detail/elements/ab01a052-80f2-4fbf-8e21-698cb7095b34"
                     }
                 ],
                 "owner": [
@@ -123,7 +123,7 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/t
                         "id": "30fe276f-5312-45e2-ac9d-937437dcbc28",
                         "creationId": "30fe276f-5312-45e2-ac9d-937437dcbc28",
                         "type": "user",
-                        "expandUri": "https://localhost/pz/showcase/_api/rest/facets/users/views/detail/elements/30fe276f-5312-45e2-ac9d-937437dcbc28"
+                        "expandUri": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/users/views/detail/elements/30fe276f-5312-45e2-ac9d-937437dcbc28"
                     }
                 ]
             }
@@ -153,7 +153,7 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/t
                         "id": "a364f30b-a126-4a74-9e1a-1df87f2a6074",
                         "creationId": "a364f30b-a126-4a74-9e1a-1df87f2a6074",
                         "type": "user",
-                        "expandUri": "https://localhost/pz/showcase/_api/rest/facets/users/views/detail/elements/a364f30b-a126-4a74-9e1a-1df87f2a6074"
+                        "expandUri": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/users/views/detail/elements/a364f30b-a126-4a74-9e1a-1df87f2a6074"
                     }
                 ],
                 "owner": [
@@ -162,7 +162,7 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/t
                         "id": "30fe276f-5312-45e2-ac9d-937437dcbc28",
                         "creationId": "30fe276f-5312-45e2-ac9d-937437dcbc28",
                         "type": "user",
-                        "expandUri": "https://localhost/pz/showcase/_api/rest/facets/users/views/detail/elements/30fe276f-5312-45e2-ac9d-937437dcbc28"
+                        "expandUri": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/users/views/detail/elements/30fe276f-5312-45e2-ac9d-937437dcbc28"
                     }
                 ]
             }
@@ -192,7 +192,7 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/t
                         "id": "ab01a052-80f2-4fbf-8e21-698cb7095b34",
                         "creationId": "ab01a052-80f2-4fbf-8e21-698cb7095b34",
                         "type": "user",
-                        "expandUri": "https://localhost/pz/showcase/_api/rest/facets/users/views/detail/elements/ab01a052-80f2-4fbf-8e21-698cb7095b34"
+                        "expandUri": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/users/views/detail/elements/ab01a052-80f2-4fbf-8e21-698cb7095b34"
                     }
                 ],
                 "owner": [
@@ -201,7 +201,7 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/t
                         "id": "30fe276f-5312-45e2-ac9d-937437dcbc28",
                         "creationId": "30fe276f-5312-45e2-ac9d-937437dcbc28",
                         "type": "user",
-                        "expandUri": "https://localhost/pz/showcase/_api/rest/facets/users/views/detail/elements/30fe276f-5312-45e2-ac9d-937437dcbc28"
+                        "expandUri": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/users/views/detail/elements/30fe276f-5312-45e2-ac9d-937437dcbc28"
                     }
                 ]
             }

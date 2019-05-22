@@ -34,7 +34,7 @@ POST /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/eleme
 | message | string | The error message |
 | output | [OperationResultOutput](#operationresulttype) | The result output. |
 | type | [OperationResultType](#operationresulttype) | The result type. |
-| data | [OperationError[]](#opertionerror) | The list of errors. |
+| data | [OperationError](#opertionerror) | The list of errors. |
 
 ## Examples
 

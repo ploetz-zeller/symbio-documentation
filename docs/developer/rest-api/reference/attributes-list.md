@@ -73,8 +73,8 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/d
             "1033": "<?xml version=\"1.0\" encoding=\"utf-8\"?><div><p>The Innovation and request process is divided into three phases:</p><ul>\n<li>Pulse phase: review of trends, ideas, brainstorming of requirements, customer requirements</li>\n<li>Evaluation phase: testing for suitability of the idea for the product and market requirements</li>\n<li>Technology transfer: transfer requirements in the release planning</li>\n</ul></div>"
         },
         "gotoUrl": {
-            "1031": "https://localhost/pz/showcase/1031/BasePlugin/GoTo/Processes/treeanddiagram/f4f3943d-6b3b-42a9-8a3a-30acf42ce7d5",
-            "1033": "https://localhost/pz/showcase/1033/BasePlugin/GoTo/Processes/treeanddiagram/f4f3943d-6b3b-42a9-8a3a-30acf42ce7d5"
+            "1031": "https://demo.symbioworld.com/pz/showcase/1031/BasePlugin/GoTo/Processes/treeanddiagram/f4f3943d-6b3b-42a9-8a3a-30acf42ce7d5",
+            "1033": "https://demo.symbioworld.com/pz/showcase/1033/BasePlugin/GoTo/Processes/treeanddiagram/f4f3943d-6b3b-42a9-8a3a-30acf42ce7d5"
         },
         "isReleased": {
             "127": false
@@ -107,7 +107,7 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/d
             "127": [
                 {
                     "address": "18077efd-e887-4b26-841d-f2374d8da7c1",
-                    "fullAddress": "https://localhost/pz/showcase/editor/1033/BasePlugin/File/GetFile/18077efd-e887-4b26-841d-f2374d8da7c1.Storage.html",
+                    "fullAddress": "https://demo.symbioworld.com/pz/showcase/editor/1033/BasePlugin/File/GetFile/18077efd-e887-4b26-841d-f2374d8da7c1.Storage.html",
                     "mimeType": "image/jpeg",
                     "protocol": "Storage",
                     "title": "Idea-Innovation_klein"

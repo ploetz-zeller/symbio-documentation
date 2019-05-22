@@ -1168,7 +1168,7 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/t
             "versionId": "f4f3943d-6b3b-42a9-8a3a-30acf42ce7d5",
             "type": "subProcess",
             "state": "inProcess",
-            "expandUri": "https://localhost/pz/showcase/_api/rest/facets/processes/views/detail/elements/f4f3943d-6b3b-42a9-8a3a-30acf42ce7d5",
+            "expandUri": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/detail/elements/f4f3943d-6b3b-42a9-8a3a-30acf42ce7d5",
             "rootPath": [
                 {
                     "facetName": "processes",
@@ -1176,20 +1176,20 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/t
                     "versionId": "d8aa3b14-4b9f-41ae-8991-be9fc47dcef0",
                     "type": "mainProcess",
                     "state": "inEffect",
-                    "expandUri": "https://localhost/pz/showcase/_api/rest/facets/processes/views/tree/elements/d8aa3b14-4b9f-41ae-8991-be9fc47dcef0"
+                    "expandUri": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/tree/elements/d8aa3b14-4b9f-41ae-8991-be9fc47dcef0"
                 },
                 {
                     "facetName": "processes",
                     "id": "20e369c5-f0f8-491b-9e7f-f15db6a0fb80",
                     "type": "subCategory",
-                    "expandUri": "https://localhost/pz/showcase/_api/rest/facets/processes/views/tree/elements/20e369c5-f0f8-491b-9e7f-f15db6a0fb80"
+                    "expandUri": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/tree/elements/20e369c5-f0f8-491b-9e7f-f15db6a0fb80"
                 },
                 {
                     "facetName": "processes",
                     "id": "ab2835f8-da30-4e36-a863-456e1105bb58",
                     "creationId": "ab2835f8-da30-4e36-a863-456e1105bb58",
                     "type": "processHouse",
-                    "expandUri": "https://localhost/pz/showcase/_api/rest/facets/processes/views/tree/elements/ab2835f8-da30-4e36-a863-456e1105bb58"
+                    "expandUri": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/tree/elements/ab2835f8-da30-4e36-a863-456e1105bb58"
                 }
             ]
         }
