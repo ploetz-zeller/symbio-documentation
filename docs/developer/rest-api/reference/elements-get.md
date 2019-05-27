@@ -1,6 +1,6 @@
 # Elements get
 
-**api-version**: 2.0
+**api-version**: 4.0
 
 Retrieves a specific element.
 
@@ -25,7 +25,7 @@ POST /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/eleme
 | elementId | path | true | string | The ID of the element. |
 | $filter | query | | string | |
 | $expandRelated | query | | string | A comma separated list of names of the related contexts to expand. |
-| $resources | query | | string ["attributes", "related", "children", "content", "rootPath"] | The resources to include. If not specified all resources will be included. |
+| $resources | query | | string ["attributes", "related", "children", "content", "displayNames", "rootPath"] | The resources to include. If not specified all resources will be included. |
 | $select | query | | string | A comma separated list of namesof the attributes/related contexts to include. |
 | $expandRelated | query | | string | A comma separated list of names of the related contexts to expand. |
 
@@ -67,6 +67,10 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/d
             "versionId": "a2d5b2ae-8c41-424f-aca1-9710b3d9f2bf",
             "type": "subProcess",
             "state": "inProcess",
+            "displayNames": {
+            "1031": "Sub Process",
+            "1033": "sub process"
+            },
             "attributes": {
                 "authorNote": {
                     "1031": "Ein oder mehrere Autoren wurden gesetzt. Nur Architekten und die angegebenen Autoren dürfen das aktuelle Element bearbeiten.",
@@ -175,6 +179,10 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/d
             "versionId": "f4f3943d-6b3b-42a9-8a3a-30acf42ce7d5",
             "type": "subProcess",
             "state": "inProcess",
+            "displayNames": {
+            "1031": "Sub Process",
+            "1033": "sub process"
+            },
             "attributes": {
                 "authorNote": {
                     "1031": "Ein oder mehrere Autoren wurden gesetzt. Nur Architekten und die angegebenen Autoren dürfen das aktuelle Element bearbeiten.",
@@ -729,6 +737,10 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/t
             "versionId": "f4f3943d-6b3b-42a9-8a3a-30acf42ce7d5",
             "type": "subProcess",
             "state": "inProcess",
+            "displayNames": {
+            "1031": "Sub Process",
+            "1033": "sub process"
+            },
             "attributes": {
                 "name": {
                     "1031": "Ideen/Innovationen",
@@ -948,6 +960,10 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/t
             "versionId": "f4f3943d-6b3b-42a9-8a3a-30acf42ce7d5",
             "type": "subProcess",
             "state": "inProcess",
+            "displayNames": {
+            "1031": "Sub Process",
+            "1033": "sub process"
+            },
             "related": {
                 "requirements": [
                     {
@@ -1168,6 +1184,10 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/t
             "versionId": "f4f3943d-6b3b-42a9-8a3a-30acf42ce7d5",
             "type": "subProcess",
             "state": "inProcess",
+            "displayNames": {
+            "1031": "Sub Process",
+            "1033": "sub process"
+            },
             "expandUri": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/detail/elements/f4f3943d-6b3b-42a9-8a3a-30acf42ce7d5",
             "rootPath": [
                 {
@@ -1214,6 +1234,10 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/it/views/tree/ele
             "versionId": "7c9b6b04-2a73-4557-97b6-d9b1e490bd5a",
             "type": "system",
             "state": "released",
+            "displayNames": {
+            "1031": "Sub Process",
+            "1033": "sub process"
+            },
             "expandUri": "https://demo.symbioworld.com/pz/showcase/_api/rest/facets/it/views/detail/elements/7c9b6b04-2a73-4557-97b6-d9b1e490bd5a",
             "stereotype": {
                 "id": "48e09f27-e392-4b25-b335-9eefb5410af0",

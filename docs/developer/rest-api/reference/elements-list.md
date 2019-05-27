@@ -1,6 +1,6 @@
 # Elements list
 
-**api-version**: 2.0
+**api-version**: 4.0
 
 Retrieves the list of elements.
 
@@ -24,7 +24,7 @@ POST /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/eleme
 | viewId | path | true | string | The name of the view. |
 | elementId | path | true | string | The ID of the element. |
 | $filter | query | | string | |
-| $resources | query | | string ["attributes", "related", "children", "content", "rootPath"] | The resources to include. If not specified all resources will be included. |
+| $resources | query | | string ["attributes", "related", "children", "content", "displayNames", "rootPath"] | The resources to include. If not specified all resources will be included. |
 | $select | query | | string | A comma separated list of namesof the attributes/related contexts to include. |
 | $expandRelated | query | | string | A comma separated list of names of the related contexts to expand. |
 | $page | query | | integer| The page number. |

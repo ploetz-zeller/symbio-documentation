@@ -32,7 +32,7 @@ POST /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/eleme
 | Name | Type | Description |
 |---|---|---|
 | message | string | The error message |
-| type | [OperationResultOutput](#operationresultoutput) | The result output. |
+| output | [OperationResultOutput](#operationresultoutput) | The result output. |
 | type | [OperationResultType](#operationresulttype) | The result type. |
 | data | [OperationError](#operationerror) | The list of errors. |
 

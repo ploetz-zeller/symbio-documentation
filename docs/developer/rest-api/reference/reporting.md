@@ -1,6 +1,6 @@
 # Reporting
 
-**api-version**: 1.0
+**api-version**: 4.0
 
 Get the reporting for whole facet
 
@@ -27,7 +27,7 @@ GET  /{collectionId}/{storageId}/_api/rest/facets/{facetId}/reporting/{elementId
 | elementId | path | true | string | The ID of the element. |
 | $filter | query | | string | |
 | $expandRelated | query | | string | A comma separated list of names of the related contexts to expand. |
-| $resources | query | | string ["attributes", "related", "children", "content", "rootPath"] | The resources to include. If not specified all resources will be included. |
+| $resources | query | | string ["attributes", "related", "children", "content", "displayNames", "rootPath"] | The resources to include. If not specified all resources will be included. |
 | $select | query | | string | A comma separated list of namesof the attributes/related contexts to include. |
 | $expandRelated | query | | string | A comma separated list of names of the related contexts to expand. |
 
@@ -802,6 +802,10 @@ GET https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/reportin
             "versionId": "6a50a65b-ba4f-4691-a6c5-e912e6d4063b",
             "type": "subProcess",
             "state": "inEffect",
+            "displayNames": {
+            "1031": "Sub Process",
+            "1033": "sub process"
+            },
             "attributes": {
                 "changedOn": {
                     "127": "2018-04-07T12:58:07"

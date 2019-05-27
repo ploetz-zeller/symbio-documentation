@@ -111,8 +111,12 @@ nav:
         - Errors: developer/rest-api/how-to/error.md
       - Reference:
         - Storage Information: developer/rest-api/reference/storage-info.md
-        - Facets: developer/rest-api/reference/facets.md
-        - Views: developer/rest-api/reference/views.md
+        - Facets: 
+            - 1.0: developer/rest-api/reference/facets.md
+            - 4.0: developer/rest-api/reference/facets-4.md
+        - Views: 
+            - 1.0: developer/rest-api/reference/views.md
+            - 4.0: developer/rest-api/reference/views-4.md
         - Permission sets: developer/rest-api/reference/permission-sets.md
         - Reporting: developer/rest-api/reference/reporting.md
         - Versioning: developer/rest-api/reference/versioning.md

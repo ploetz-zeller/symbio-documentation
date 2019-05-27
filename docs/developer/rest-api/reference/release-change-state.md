@@ -1,6 +1,6 @@
 # Change state
 
-**api-version**: 1.0
+**api-version**: 4.0
 
 Change the state of a specific element.
 
@@ -58,6 +58,10 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/release/664fd624-d341-45
             "versionId": "40045b2b-413c-4289-a919-11f89af037fb",
             "type": "subProcess",
             "state": "released",
+            "displayNames": {
+            "1031": "Sub Process",
+            "1033": "sub process"
+            },
             "attributes": {
                 "authorNote": {
                     "1031": "Ein oder mehrere Autoren wurden gesetzt. Nur Architekten und die angegebenen Autoren dürfen das aktuelle Element bearbeiten.",

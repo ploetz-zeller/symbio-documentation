@@ -1,6 +1,6 @@
 # Elements update
 
-**api-version**: 2.0
+**api-version**: 4.0
 
 Update existing element
 
@@ -54,6 +54,10 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/d
             "versionId": "7a8660bc-3935-44dd-9c3c-98fbd7ca8425",
             "type": "subProcess",
             "state": "inProcess",
+            "displayNames": {
+            "1031": "Sub Process",
+            "1033": "sub process"
+            },
             "attributes": {
                 "changedOn": {
                     "127": "2019-05-22T11:12:36"
@@ -174,6 +178,10 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/d
             "versionId": "7a8660bc-3935-44dd-9c3c-98fbd7ca8425",
             "type": "subProcess",
             "state": "inProcess",
+            "displayNames": {
+            "1031": "Sub Process",
+            "1033": "sub process"
+            },
             "attributes": {
                 "authorNote": {
                     "1031": "Ein oder mehrere Autoren wurden gesetzt. Nur Architekten und die angegebenen Autoren dürfen das aktuelle Element bearbeiten.",

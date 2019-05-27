@@ -1,6 +1,6 @@
 # Children
 
-**api-version**: 2.0
+**api-version**: 4.0
 
 Retrieves the children of an element.
 
@@ -56,6 +56,10 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/t
             "versionId": "e1da5e04-beea-46f7-93ad-b65b80caf0a3",
             "type": "mainProcess",
             "state": "inEffect",
+            "displayNames": {
+            "1031": "Main Process",
+            "1033": "main process"
+            },
             "attributes": {
                 "name": {
                     "1031": "Customer/Partner Care",
@@ -95,6 +99,10 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/t
             "versionId": "352f13f2-8ce5-4aec-a4ca-5b096f47e6a2",
             "type": "mainProcess",
             "state": "inEffect",
+            "displayNames": {
+            "1031": "Main Process",
+            "1033": "main process"
+            },
             "attributes": {
                 "name": {
                     "1031": "Sales Planning",
@@ -134,6 +142,10 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/t
             "versionId": "5cb4fae5-06e0-4efe-a5fd-27b904dc9736",
             "type": "mainProcess",
             "state": "inEffect",
+            "displayNames": {
+            "1031": "Main Process",
+            "1033": "main process"
+            },
             "attributes": {
                 "name": {
                     "1031": "Sell Products/Solutions",
@@ -173,6 +185,10 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/t
             "versionId": "7ae0c5dc-7e49-44c2-8ed3-9982e4079ad8",
             "type": "mainProcess",
             "state": "inEffect",
+            "displayNames": {
+            "1031": "Main Process",
+            "1033": "main process"
+            },
             "attributes": {
                 "name": {
                     "1031": "Understand Market/Customer",

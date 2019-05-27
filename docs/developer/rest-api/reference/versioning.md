@@ -1,6 +1,6 @@
 # Versioning
 
-**api-version**: 2.0
+**api-version**: 4.0
 
 Retrieves a version for specific element.
 
@@ -25,7 +25,7 @@ GET /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/elemen
 | elementId | path | true | string | The ID of the element. |
 | $filter | query | | string | |
 | $expandRelated | query | | string | A comma separated list of names of the related contexts to expand. |
-| $resources | query | | string ["attributes", "related", "children", "content", "rootPath"] | The resources to include. If not specified all resources will be included. |
+| $resources | query | | string ["attributes", "related", "children", "content", "displayNames", "rootPath"] | The resources to include. If not specified all resources will be included. |
 | $select | query | | string | A comma separated list of namesof the attributes/related contexts to include. |
 | $expandRelated | query | | string | A comma separated list of names of the related contexts to expand. |
 
@@ -67,6 +67,10 @@ GET https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/de
             "versionId": "ed0b7953-ab87-4194-ada6-60e64dc41d74",
             "type": "subProcess",
             "state": "expired",
+            "displayNames": {
+            "1031": "Sub Process",
+            "1033": "sub process"
+            },
             "attributes": {
                 "authorNote": {
                     "1031": "Ein oder mehrere Autoren wurden gesetzt. Nur Architekten und die angegebenen Autoren dürfen das aktuelle Element bearbeiten.",
@@ -180,6 +184,10 @@ GET https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/de
             "versionId": "a309faa0-ac93-4cd2-a4f0-59d7d7988aec",
             "type": "subProcess",
             "state": "released",
+            "displayNames": {
+            "1031": "Sub Process",
+            "1033": "sub process"
+            },
             "attributes": {
                 "authorNote": {
                     "1031": "Ein oder mehrere Autoren wurden gesetzt. Nur Architekten und die angegebenen Autoren dürfen das aktuelle Element bearbeiten.",
@@ -293,6 +301,10 @@ GET https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/de
             "versionId": "1b154523-68ad-4138-9a24-9076062a51b7",
             "type": "subProcess",
             "state": "inProcess",
+            "displayNames": {
+            "1031": "Sub Process",
+            "1033": "sub process"
+            },
             "attributes": {
                 "authorNote": {
                     "1031": "Ein oder mehrere Autoren wurden gesetzt. Nur Architekten und die angegebenen Autoren dürfen das aktuelle Element bearbeiten.",
@@ -406,6 +418,10 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/t
             "versionId": "ed0b7953-ab87-4194-ada6-60e64dc41d74",
             "type": "subProcess",
             "state": "expired",
+            "displayNames": {
+            "1031": "Sub Process",
+            "1033": "sub process"
+            },
             "attributes": {
                 "name": {
                     "1031": "Sub1",
@@ -430,6 +446,10 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/t
             "versionId": "a309faa0-ac93-4cd2-a4f0-59d7d7988aec",
             "type": "subProcess",
             "state": "released",
+            "displayNames": {
+            "1031": "Sub Process",
+            "1033": "sub process"
+            },
             "attributes": {
                 "name": {
                     "1031": "Sub1",
@@ -454,6 +474,10 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/t
             "versionId": "1b154523-68ad-4138-9a24-9076062a51b7",
             "type": "subProcess",
             "state": "inProcess",
+            "displayNames": {
+            "1031": "Sub Process",
+            "1033": "sub process"
+            },
             "attributes": {
                 "name": {
                     "1031": "Sub1",

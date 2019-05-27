@@ -10,6 +10,7 @@
 | children | Element[] | The list of child elements. |
 | content | Element[] | The list of content elements. |
 | rootPath | Element[] | The list of hierarchical parent elements to the root element. |
+| displayNames | Dictionary<int, string>> | Gets the display names of multiple languages. |
 | expandUri | string | Gets or sets the expand Uri to get full information about element |
 | facetName | string | Name of the facet |
 | setReadOnly | bool? | Gets or sets the read only of the element |

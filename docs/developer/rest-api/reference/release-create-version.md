@@ -1,6 +1,6 @@
 # Create version
 
-**api-version**: 1.0
+**api-version**: 4.0
 
 Create a new version of a specific element.
 
@@ -52,6 +52,10 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/release/40045b2b-413c-42
             "versionId": "d6411daa-f3f7-41c7-8ae0-db088bc0095c",
             "type": "subProcess",
             "state": "inProcess",
+            "displayNames": {
+            "1031": "Sub Process",
+            "1033": "sub process"
+            },
             "attributes": {
                 "authorNote": {
                     "1031": "Ein oder mehrere Autoren wurden gesetzt. Nur Architekten und die angegebenen Autoren dürfen das aktuelle Element bearbeiten.",
