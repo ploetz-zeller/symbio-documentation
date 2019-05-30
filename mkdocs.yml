@@ -107,6 +107,7 @@ nav:
         - Storage Information: developer/rest-api/reference/info.md
         - Facets: developer/rest-api/reference/facets.md
         - Views: developer/rest-api/reference/views.md
+        - Configuration: developer/rest-api/reference/config.md
         - Elements:
           - List: developer/rest-api/reference/elements-list.md
           - Get: developer/rest-api/reference/elements-get.md
@@ -119,7 +120,6 @@ nav:
           - Children: developer/rest-api/reference/children.md
           - Content: developer/rest-api/reference/content.md
           - Element Information: developer/rest-api/reference/elementsinfo-get.md
-          - Configuration: developer/rest-api/reference/config.md
         - Release:
           - Create Version: developer/rest-api/reference/release-create-version.md
           - Transitions: developer/rest-api/reference/release-transitions.md
