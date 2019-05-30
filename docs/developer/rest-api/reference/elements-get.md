@@ -25,7 +25,7 @@ POST /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/eleme
 | elementId | path | true | string | The ID of the element. |
 | $filter | query | | string | |
 | $resources | query | | string ["attributes", "related", "children", "content", "rootPath"] | The resources to include. If not specified all resources will be included. |
-| $select | query | | string | A comma separated list of namesof the attributes/related contexts to include. |
+| $select | query | | string | A comma separated list of names of the attributes/related contexts to include. |
 | $expandRelated | query | | string | A comma separated list of names of the related contexts to expand. |
 
 ## Responses
