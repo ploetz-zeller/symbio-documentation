@@ -2627,6 +2627,188 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/l
 }
 ```
 
+### Get the configuration of the process graphic
+
+#### Request
+```
+POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/diagram/config
+```
+
+#### Reponse (200 OK)
+```json
+{
+    "count": 5,
+    "values": [
+        {
+            "key": "processHouse",
+            "displayNames": {
+                "1031": "Prozesshaus",
+                "1033": "Process House"
+            },
+            "descriptions": {
+                "1031": "",
+                "1033": ""
+            },
+            "properties": [
+                {
+                    "key": "name",
+                    "displayNames": {
+                        "1031": "Name",
+                        "1033": "Name"
+                    },
+                    "descriptions": {
+                        "1031": "Name des Elements.",
+                        "1033": "Name of element."
+                    },
+                    "tooltips": {
+                        "1031": "Name des Elements.",
+                        "1033": "Name of element."
+                    },
+                    "attribute": {
+                        "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                        "dataType": "MultiLineText",
+                        "isInvariantCulture": false
+                    }
+                }
+            ]
+        },
+        {
+            "key": "subCategory",
+            "displayNames": {
+                "1031": "Kategorie",
+                "1033": "Category"
+            },
+            "descriptions": {
+                "1031": "",
+                "1033": ""
+            },
+            "properties": [
+                {
+                    "key": "name",
+                    "displayNames": {
+                        "1031": "Name",
+                        "1033": "Name"
+                    },
+                    "descriptions": {
+                        "1031": "Name des Elements.",
+                        "1033": "Name of element."
+                    },
+                    "tooltips": {
+                        "1031": "Name des Elements.",
+                        "1033": "Name of element."
+                    },
+                    "attribute": {
+                        "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                        "dataType": "MultiLineText",
+                        "isInvariantCulture": false
+                    }
+                }
+            ]
+        },
+        {
+            "key": "mainProcess",
+            "displayNames": {
+                "1031": "Main Process",
+                "1033": "Main Process"
+            },
+            "descriptions": {
+                "1031": "",
+                "1033": ""
+            },
+            "properties": [
+                {
+                    "key": "name",
+                    "displayNames": {
+                        "1031": "Name",
+                        "1033": "Name"
+                    },
+                    "descriptions": {
+                        "1031": "Name des Elements.",
+                        "1033": "Name of element."
+                    },
+                    "tooltips": {
+                        "1031": "Name des Elements.",
+                        "1033": "Name of element."
+                    },
+                    "attribute": {
+                        "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                        "dataType": "MultiLineText",
+                        "isInvariantCulture": false
+                    }
+                }
+            ]
+        },
+        {
+            "key": "subProcess",
+            "displayNames": {
+                "1031": "Sub Process",
+                "1033": "Sub Process"
+            },
+            "descriptions": {
+                "1031": "",
+                "1033": ""
+            },
+            "properties": [
+                {
+                    "key": "name",
+                    "displayNames": {
+                        "1031": "Name",
+                        "1033": "Name"
+                    },
+                    "descriptions": {
+                        "1031": "Name des Elements.",
+                        "1033": "Name of element."
+                    },
+                    "tooltips": {
+                        "1031": "Name des Elements.",
+                        "1033": "Name of element."
+                    },
+                    "attribute": {
+                        "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                        "dataType": "MultiLineText",
+                        "isInvariantCulture": false
+                    }
+                }
+            ]
+        },
+        {
+            "key": "view",
+            "displayNames": {
+                "1031": "View",
+                "1033": "View"
+            },
+            "descriptions": {
+                "1031": "",
+                "1033": ""
+            },
+            "properties": [
+                {
+                    "key": "name",
+                    "displayNames": {
+                        "1031": "Name",
+                        "1033": "Name"
+                    },
+                    "descriptions": {
+                        "1031": "Name des Elements.",
+                        "1033": "Name of element."
+                    },
+                    "tooltips": {
+                        "1031": "Name des Elements.",
+                        "1033": "Name of element."
+                    },
+                    "attribute": {
+                        "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                        "dataType": "MultiLineText",
+                        "isInvariantCulture": false
+                    }
+                }
+            ]
+        }
+    ]
+}
+```
+
+
 ## Definitions
 
 ### Type
