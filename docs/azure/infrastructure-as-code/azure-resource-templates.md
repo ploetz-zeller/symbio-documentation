@@ -8,7 +8,7 @@ Azure templates have been created to enable the creation of a model for the requ
   * Templates for common resource types can be found within Visual Studio by adding a resource and selecting the type or they can be found on the portal and used as a base to create your own.
   *  Not all resources are on the list in VS and it is advisable to search the repository on Github if you do not find what you are looking for.
 * Editing templates
-  * Azure portal “Build your own template in the editor” when adding a resource
+  * Azure portal Build your own template in the editor when adding a resource
   * Visual studio code
   * Visual studio
   * Extensions for Visual Studio + VS Code exist
