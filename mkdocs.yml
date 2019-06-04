@@ -117,6 +117,7 @@ nav:
         - Views: 
             - 1.0: developer/rest-api/reference/views.md
             - 4.0: developer/rest-api/reference/views-4.md
+        - Configuration: developer/rest-api/reference/config.md
         - Permission sets: developer/rest-api/reference/permission-sets.md
         - Reporting: developer/rest-api/reference/reporting.md
         - Versioning: developer/rest-api/reference/versioning.md
@@ -133,7 +134,6 @@ nav:
           - Get: developer/rest-api/reference/related-get.md
           - Children: developer/rest-api/reference/related-children.md
           - Element Information: developer/rest-api/reference/elementsinfo-get.md
-          - Configuration: developer/rest-api/reference/config.md
         - Content:
           - Get: developer/rest-api/reference/content.md
           - Create: developer/rest-api/reference/content-create.md
@@ -143,6 +143,8 @@ nav:
         - Release:
           - Create Version: developer/rest-api/reference/release-create-version.md
           - Change State: developer/rest-api/reference/release-change-state.md
+        - Graphic:
+          - Get: developer/rest-api/reference/graphic-get.md
     - Services:
       - External Systems: developer/services/external-systems.md
       - External System Types: developer/services/external-system-types.md
