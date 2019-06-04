@@ -3,7 +3,7 @@
 Azure resources are the types of infrastructure that can be added to your Azure instance. You can structure your resources on Azure into Resource groups to show resources that are supposed to belong together.
 
 ## Working with resources 
-Existing resources can be extracted into resource templates. This can help to use existing resources from your current Azure portal. Important to note: Even if you select only one resource, the whole resource group is ALWAYS extracted in it’s entirety, and not only the selected resource.
+Existing resources can be extracted into resource templates. This can help to use existing resources from your current Azure portal. Important to note: Even if you select only one resource, the whole resource group is ALWAYS extracted in it's entirety, and not only the selected resource.
 
 Some resource groups in the current PZ Azure portal has been grouped into one resource group. This will change going forward, where each micro-service as an example will have it's own resource group.
 
