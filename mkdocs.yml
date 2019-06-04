@@ -142,7 +142,8 @@ nav:
   - Azure:
     - Introduction: azure/index.md
     - Runbooks: azure/runbooks.md
-    - Infrastructure as code: azure/infrastructure-as-code/introduction.md
+    - Infrastructure as code: 
+      - Introduction: azure/infrastructure-as-code/introduction.md
       - Azure resources: azure/infrastructure-as-code/azure-resources.md
       - Azure resource templates: azure/infrastructure-as-code/azure-resource-templates.md
       - Azure IaC Deployments: azure/infrastructure-as-code/azure-deployments.md
