@@ -1,4 +1,4 @@
-# Facets
+# Storage Information
 
 **api-version**: 1.0
 
@@ -36,8 +36,9 @@ POST  /{collectionId}/{storageId}/_api/rest/info
 | Name | Type | Description |
 |---|---|---|
 | message | string | The error message. |
+| output | [OperationResultOutput](#operationresultoutput) | The result output. |
 | type | [OperationResultType](#operationresulttype) | The result type. |
-| data | [Error[]](#error) | The list of errors. |
+| data | [OperationError](#operationerror) | The list of errors. |
 
 ## Examples
 
@@ -48,18 +49,27 @@ POST  /{collectionId}/{storageId}/_api/rest/info
 POST https://demo.symbioworld.com/pz/showcase/_api/rest/info/
 ```
 
-#### Reponse (200 OK)
+#### Response (200 OK)
 ```json
 {
     "type": "IStorageContext",
-    "tenant": "e3f435b3-b1e4-4178-afde-f067027d2113",
-    "baseTenant": "0d398b8c-5601-4288-969a-b4eb0d36ffea",
+    "tenant": "3ecb1df0-39c6-4816-b5fb-2cb902f3d3e1",
+    "title": "showcase",
+    "description": "",
+    "baseTenant": "069bea6b-a7d4-4fb2-9b50-54f9ff07168c",
+    "apiUrl": "https://demo.symbioworld.com/pz/showcase/_api/",
+    "appUrl": "https://demo.symbioworld.com/pz/showcase/",
     "template": "Symbio Web Standard (BPMN)",
     "dataCultures": [
-        "de-DE",
-        "en-US"
+        1031,
+        1033
     ],
-    "defaultDataCulture": "en-US",
+    "defaultDataCulture": 1033,
+    "mandatoryCultures": [
+        1031,
+        1033
+    ],
+    "optionalCultures": [],
     "isValid": true,
     "region": {
         "name": "DE",
@@ -113,8 +123,11 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/info/
 
 ## Definitions
 
+### OperationResultOutput
+{!developer/rest-api/reference/models/operationresultoutput.md!}
+
 ### OperationResultType
 {!developer/rest-api/reference/models/operationresulttype.md!}
 
-### Error
-{!developer/rest-api/reference/models/error.md!}
+### OperationError
+{!developer/rest-api/reference/models/operationerror.md!}

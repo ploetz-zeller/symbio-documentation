@@ -110,29 +110,38 @@ nav:
         - Filter: developer/rest-api/how-to/filter.md
         - Errors: developer/rest-api/how-to/error.md
       - Reference:
-        - Storage Information: developer/rest-api/reference/info.md
-        - Facets: developer/rest-api/reference/facets.md
-        - Views: developer/rest-api/reference/views.md
+        - Storage Information: developer/rest-api/reference/storage-info.md
+        - Facets: 
+            - 1.0: developer/rest-api/reference/facets.md
+            - 4.0: developer/rest-api/reference/facets-4.md
+        - Views: 
+            - 1.0: developer/rest-api/reference/views.md
+            - 4.0: developer/rest-api/reference/views-4.md
+        - Permission sets: developer/rest-api/reference/permission-sets.md
+        - Reporting: developer/rest-api/reference/reporting.md
+        - Versioning: developer/rest-api/reference/versioning.md
         - Elements:
           - List: developer/rest-api/reference/elements-list.md
           - Get: developer/rest-api/reference/elements-get.md
+          - Update: developer/rest-api/reference/elements-update.md
+          - Delete: developer/rest-api/reference/elements-delete.md
         - Attributes:
           - List: developer/rest-api/reference/attributes-list.md
           - Get: developer/rest-api/reference/attributes-get.md
         - Related:
           - List: developer/rest-api/reference/related-list.md
           - Get: developer/rest-api/reference/related-get.md
-          - Children: developer/rest-api/reference/children.md
+          - Children: developer/rest-api/reference/related-children.md
           - Element Information: developer/rest-api/reference/elementsinfo-get.md
           - Configuration: developer/rest-api/reference/config.md
         - Content:
-          - 1.0: developer/rest-api/reference/content.md
-          - 3.0:
-            - Get: developer/rest-api/reference/content-get-3.md
-            - Create: developer/rest-api/reference/content-create-3.md
+          - Get: developer/rest-api/reference/content.md
+          - Create: developer/rest-api/reference/content-create.md
+        - Transitions:
+          - InProcess transitions: developer/rest-api/reference/transitions-inprocess.md
+          - Release transitions: developer/rest-api/reference/transitions-release.md
         - Release:
           - Create Version: developer/rest-api/reference/release-create-version.md
-          - Transitions: developer/rest-api/reference/release-transitions.md
           - Change State: developer/rest-api/reference/release-change-state.md
     - Services:
       - External Systems: developer/services/external-systems.md
@@ -140,7 +149,8 @@ nav:
   - Azure:
     - Introduction: azure/index.md
     - Runbooks: azure/runbooks.md
-    - Infrastructure as code: azure/infrastructure-as-code/introduction.md
+    - Infrastructure as code:
+      - Introduction: azure/infrastructure-as-code/introduction.md
       - Azure resources: azure/infrastructure-as-code/azure-resources.md
       - Azure resource templates: azure/infrastructure-as-code/azure-resource-templates.md
       - Azure IaC Deployments: azure/infrastructure-as-code/azure-deployments.md

@@ -1,17 +1,11 @@
-# Attributes get
+# Elements delete
 
-**api-version**: 1.0
+**api-version**: 2.0
 
-Retrieves a specific attribute.
-
-```
-POST /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/elements/{elementId}/attributes/{attributeId}
-```
-
-With optional parameters
+Delete a specific element.
 
 ```
-POST /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/elements/{elementId}/attributes?$filter={filter}&$select={select}
+POST /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/elements/{elementId}/delete
 ```
 
 ## Parameters
@@ -23,7 +17,6 @@ POST /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/eleme
 | facetId | path | true | string | The name of the facet. |
 | viewId | path | true | string | The name of the view. |
 | elementId | path | true | string | The ID of the element. |
-| attributeId | path | true | string | The name of the attribute. |
 
 ## Responses
 
@@ -32,40 +25,42 @@ POST /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/eleme
 | Name | Type | Description |
 |---|---|---|
 | count | integer | The number of returned values. |
-| values | [Attribute[]](#attribute) | The list of attributes. |
+| values | [OperationResult](#operationresult) | The list of elements. |
 
 ### Error 4xx
 
 | Name | Type | Description |
 |---|---|---|
 | message | string | The error message |
-| output | [OperationResultOutput](#operationresultoutput) | The result output. |
+| output | [OperationResultOutput](#operationresulttype) | The result output. |
 | type | [OperationResultType](#operationresulttype) | The result type. |
-| data | [OperationError](#operationerror) | The list of errors. |
+| data | [OperationError](#opertionerror) | The list of errors. |
 
 ## Examples
 
-### Get the *name* attribute
+### Delete a specific element from the *detail* view of the *processes* facet
 
 #### Request
 ```
-POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/detail/elements/f4f3943d-6b3b-42a9-8a3a-30acf42ce7d5/attributes/name
+POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/detail/elements/2d60031c-e501-47dc-9b50-76ef5f433878/delete
 ```
 
 #### Response (200 OK)
 ```json
 {
-    "count": 1,
-    "values": {
-        "name": {
-            "1031": "Ideen/Innovationen",
-            "1033": "Idea/Innovation"
-        }
-    }
+    "message": "Element has been deleted.",
+    "output": "Volatile",
+    "type": "Success"
 }
 ```
 
 ## Definitions
+
+### Element
+{!developer/rest-api/reference/models/element.md!}
+
+### OperationResult
+{!developer/rest-api/reference/models/operationresult.md!}
 
 ### OperationResultOutput
 {!developer/rest-api/reference/models/operationresultoutput.md!}

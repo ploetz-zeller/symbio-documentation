@@ -1,4 +1,4 @@
 | Name | Type | Description |
 |---|---|---|
-| shapeInfo | [ShapeInfo](#shapeinfo) | Information about the shape. |
+| shapeInfo | [ContentShapeInfo](#contentshapeinfo) | Information about the shape. |
 | element | [Element](#element) | The element. |

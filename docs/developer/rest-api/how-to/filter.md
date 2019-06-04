@@ -1,5 +1,5 @@
 
-| Status: March 2018   | ©2018 Ploetz + Zeller GmbH   |
+| Status: March 2019   | ©2019 Ploetz + Zeller GmbH   |
 |--------------------|------------------------------|
 
 # Symbio API Filter

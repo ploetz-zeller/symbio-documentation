@@ -1,8 +1,8 @@
-# Change state
+# Transitions release
 
 **api-version**: 1.0
 
-Retrieves transitions of a specific element.
+Retrieves transitions of a specific element which is in "Release" state. 
 
 ```
 POST /{collectionId}/{storageId}/_api/release/{elementId}/transitions
@@ -30,8 +30,9 @@ POST /{collectionId}/{storageId}/_api/release/{elementId}/transitions
 | Name | Type | Description |
 |---|---|---|
 | message | string | The error message |
+| output | [OperationResultOutput](#operationresultoutput) | The result output. |
 | type | [OperationResultType](#operationresulttype) | The result type. |
-| data | [Error[]](#error) | The list of errors. |
+| data | [OperationError](#operationerror) | The list of errors. |
 
 ## Examples
 
@@ -40,7 +41,7 @@ POST /{collectionId}/{storageId}/_api/release/{elementId}/transitions
 POST https://demo.symbioworld.com/pz/showcase/_api/rest/release/664fd624-d341-4521-b430-897bb16399f4/transitions
 ```
 
-#### Reponse (200 OK)
+#### Response (200 OK)
 ```json
 {
     "count": 1,
@@ -59,8 +60,11 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/release/664fd624-d341-45
 ### Transition
 {!developer/rest-api/reference/models/transition.md!}
 
+### OperationResultOutput
+{!developer/rest-api/reference/models/operationresultoutput.md!}
+
 ### OperationResultType
 {!developer/rest-api/reference/models/operationresulttype.md!}
 
-### Error
-{!developer/rest-api/reference/models/error.md!}
+### OperationError
+{!developer/rest-api/reference/models/operationerror.md!}
