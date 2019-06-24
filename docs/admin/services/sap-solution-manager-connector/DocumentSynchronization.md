@@ -27,7 +27,7 @@ You have to choose one of those stereotypes for your document so that it can be 
 ![Test](media/symbioDocument2.png)
 
 Then you have to add an attachment to the document.
-For now only links to online documents will be synchrnoized, not the physical documents.
+Both links to online documents and the physical documents can be synchrnoized.
 
 ![Test](media/symbioDocument3.png)
 
@@ -57,3 +57,19 @@ On a document in Symbio you can see two administrative attributes: *Symbio owner
 | true             | without ID                    | This document is from Symbio and it is not yet synchronized to Solution Manager. Next time whe document is synced it will get an ID attribute.|
 | false            | has ID                        | This is a document that came from the Solution Manager. On synchronization only document reference will be synced. |
 | false            | without ID                    | This is a special case when document is created before the Symbio was connected to the interface. This document will have both attributes set on its first synchornization. |
+
+## Synchronizing documents to Symbio form SAP Solution Manager
+
+The interface can sync documents from SAP Solution Manager to Symbio. The documents that are attached to the Process Step Originals, Proces Step References, Scenario or Process will be synchronized to Symbio. 
+
+Documents synced from SAP Solution Manager will be stored in a catergory called **SAP Documents**.
+They will have *Symbio ownership* attribute set to **false** and *Solution Mangaer Document ID* set to **ID of the document in the SAP Solution Manager**.
+
+![Test](media/docHierarchy.PNG)
+
+The documents are synced from SAP Solution Manager in two cases:
+
+1. On the update of global elements all document elements that are attached to Process Step Originals, Process Step References, Scenarios or Processes will be synchronized.
+2. On the synchronization of the selected scope, document related to that scope will be synchronized.
+
+Documents from SAP Solution Manager that are synchronized to Symbio are owned by SAP Solution Manager and therefore they are read-only in Symbio.
