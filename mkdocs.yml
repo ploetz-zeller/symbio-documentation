@@ -61,6 +61,7 @@ nav:
             - RMS Configuration: admin/services/reporting-service-beta/RMSconfiguration.md
             - Troubleshooting: admin/services/reporting-service-beta/troubleshooting.md
       - Reporting Service:
+        - Overview: admin/services/reporting-service/overview.md
         - Installation:
           - SSRS & Reports: admin/services/reporting-service/deploy-ssrs.md
           - Connector Web Service & Console Application: admin/services/reporting-service/deploy-connector-console.md
