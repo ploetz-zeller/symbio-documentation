@@ -51,15 +51,22 @@ nav:
         - Installation: admin/services/intrafind-search-proxy/installation.md
         - Configuration: admin/services/intrafind-search-proxy/configuration.md
       - Web Jobs Scheduler: admin/services/web-jobs-scheduler.md
+      - Reporting Service (beta):
+        - Installation:
+          - Preliminaries: admin/services/reporting-service-beta/preliminaries.md
+          - RMS Scripted installation: admin/services/reporting-service-beta/rms-install-scripted.md
+          - RMS Manual installation: admin/services/reporting-service-beta/rms-install-manual.md
+        - Configuration:
+            - SSRS Reports: admin/services/reporting-service-beta/SSRSDeployReports.md
+            - RMS Configuration: admin/services/reporting-service-beta/RMSconfiguration.md
+            - Troubleshooting: admin/services/reporting-service-beta/troubleshooting.md
       - Reporting Service:
         - Installation:
-          - Preliminaries: admin/services/reporting-service/preliminaries.md
-          - RMS Scripted installation: admin/services/reporting-service/rms-install-scripted.md
-          - RMS Manual installation: admin/services/reporting-service/rms-install-manual.md
+          - SSRS & Reports: admin/services/reporting-service/deploy-ssrs.md
+          - Connector Web Service & Console Application: admin/services/reporting-service/deploy-connector-console.md
         - Configuration:
-            - SSRS Reports: admin/services/reporting-service/SSRSDeployReports.md
-            - RMS Configuration: admin/services/reporting-service/RMSconfiguration.md
-            - Troubleshooting: admin/services/reporting-service/troubleshooting.md
+          - Connector Web Service & Console Application: admin/services/reporting-service/config-connector-console.md
+          - Symbio Report Pool & Symbio Reporting:  admin/services/reporting-service/config-symbio.md
       - SAP Solution Manager Connector:
         - Installation: admin/services/sap-solution-manager-connector/SolmanInterfaceSetUpGuide.md
         - Symbio to SolMan synchronization: admin/services/sap-solution-manager-connector/SymbioToSolMansynchronization.md
