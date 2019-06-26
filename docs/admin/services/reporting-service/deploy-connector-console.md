@@ -1,4 +1,4 @@
-# Reporting Connector & Console
+# Reporting Connector & Console - Installation
 
 ## Requirements
 
