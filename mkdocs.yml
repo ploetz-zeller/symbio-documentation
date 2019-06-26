@@ -68,6 +68,7 @@ nav:
         - Configuration:
           - Connector Web Service & Console Application: admin/services/reporting-service/config-connector-console.md
           - Symbio Report Pool & Symbio Reporting:  admin/services/reporting-service/config-symbio.md
+        - Operation: admin/services/reporting-service/operation.md
       - SAP Solution Manager Connector:
         - Installation: admin/services/sap-solution-manager-connector/SolmanInterfaceSetUpGuide.md
         - Symbio to SolMan synchronization: admin/services/sap-solution-manager-connector/SymbioToSolMansynchronization.md
