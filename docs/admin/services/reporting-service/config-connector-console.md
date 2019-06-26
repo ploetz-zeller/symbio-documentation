@@ -6,7 +6,7 @@ Connector / Console is already [set up](deploy-connector-console.md).
 
 ## Configuration
 
-### Reporting Connector
+### Reporting Connector<a name="connector"></a>
 
 The Connector service has several values that need to be configured for it to function properly. These values can be set in its appsettings.config file (IIS) or the app service settings of Azure.
 
@@ -22,6 +22,6 @@ The Connector service has several values that need to be configured for it to fu
 | global:ssrsPassword | The password of the user named above. |
 | global:templateName | The name of the template folder in the root path given above as noted during SSRS workspace template setup, e.g. __Template_. |
 
-### Reporting Console
+### Reporting Console<a name="console"></a>
 
 Currently, no special configuration is necessary.

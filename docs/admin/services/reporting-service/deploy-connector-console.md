@@ -8,7 +8,7 @@ To set up the **Reporting Console** you will need a machine with a current versi
 
 ## Setup 
 
-### Reporting Connector on IIS
+### Reporting Connector on IIS<a name="connector"></a>
 
 1. Create a directory to host the files of the connector service, e.g. _C:\SymbioServices\Reporting\Connector_
 2. Copy all files and folders of the service into this directory
@@ -27,7 +27,7 @@ To set up the **Reporting Console** you will need a machine with a current versi
 4. Configure the [Connector](config-connector-console.md#connector) by editing its app service settings
 5. Test connection to service by navigating to the noted URL
 
-### Reporting Console on a Windows machine
+### Reporting Console on a Windows machine<a name="console"></a>
 
 1. Create a directory to host the files of the console application, e.g. _C:\SymbioServices\Reporting\Console_
 2. Copy all files and folders of the application into this directory
