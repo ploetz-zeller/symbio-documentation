@@ -1,1 +1,0 @@
-# Installations for RMS and SSRS

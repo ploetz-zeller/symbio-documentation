@@ -52,14 +52,14 @@ nav:
         - Configuration: admin/services/intrafind-search-proxy/configuration.md
       - Web Jobs Scheduler: admin/services/web-jobs-scheduler.md
       - Reporting Service:
+        - Overview: admin/services/reporting-service/overview.md
         - Installation:
-          - Preliminaries: admin/services/reporting-service/preliminaries.md
-          - RMS Scripted installation: admin/services/reporting-service/rms-install-scripted.md
-          - RMS Manual installation: admin/services/reporting-service/rms-install-manual.md
+          - SSRS & Reports: admin/services/reporting-service/deploy-ssrs.md
+          - Connector Web Service & Console Application: admin/services/reporting-service/deploy-connector-console.md
         - Configuration:
-            - SSRS Reports: admin/services/reporting-service/SSRSDeployReports.md
-            - RMS Configuration: admin/services/reporting-service/RMSconfiguration.md
-            - Troubleshooting: admin/services/reporting-service/troubleshooting.md
+          - Connector Web Service & Console Application: admin/services/reporting-service/config-connector-console.md
+          - Symbio Report Pool & Symbio Reporting:  admin/services/reporting-service/config-symbio.md
+        - Operation: admin/services/reporting-service/operation.md
       - SAP Solution Manager Connector:
         - Installation: admin/services/sap-solution-manager-connector/SolmanInterfaceSetUpGuide.md
         - Symbio to SolMan synchronization: admin/services/sap-solution-manager-connector/SymbioToSolMansynchronization.md
