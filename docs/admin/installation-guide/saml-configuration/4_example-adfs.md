@@ -112,7 +112,7 @@ Switch to the Admin section and there to Authentication Providers. Make sure tha
 
 __Hint__
 
-If you like to hide a specific login, e.g. for external non-AD users, by switching "Visible" from Yes to No, you can still reach the site by using the auth provider login explicately. 
+If you like to hide a specific login, e.g. for external non-AD users, by switching "Visible" from Yes to No, you can still reach the site by using the auth provider login explicitely. 
 Example: https://processes.example.com/Collection/Storage/viewer/1033/Auth/Custom/SamlLegacy
 where "SamlLegacy" is your SamlAuthProviderId in Symbio.
 
