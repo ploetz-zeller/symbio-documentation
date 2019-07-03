@@ -110,6 +110,12 @@ Switch to the Admin section and there to Authentication Providers. Make sure tha
 * Enabled: Yes
 * Visible: Yes
 
+__Hint__
+
+If you like to hide a specific login, e.g. for external non-AD users, by switching "Visible" from Yes to No, you can still reach the site by using the auth provider login explicately. 
+Example: https://processes.example.com/Collection/Storage/viewer/1033/Auth/Custom/SamlLegacy
+where "SamlLegacy" is your SamlAuthProviderId in Symbio.
+
 ##### Symbio on Premise
 
 If your Symbio web server can reach your AD FS server, consider adding the Metadata XML file as a URL (see above) instead of downloading it from AD FS and then uploading it to Symbio. That way changes to the metadata (e.g. a new certficate) don't require manual updates to Symbio.
