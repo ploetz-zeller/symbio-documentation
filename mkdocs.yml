@@ -149,7 +149,7 @@ nav:
         - Graphic:
           - Get: developer/rest-api/reference/graphic-get.md
         - Maintain: 
-          - Get:developer/rest-api/reference/maintain.md
+          - Get: developer/rest-api/reference/maintain.md
     - Services:
       - External Systems: developer/services/external-systems.md
       - External System Types: developer/services/external-system-types.md
