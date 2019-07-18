@@ -148,7 +148,8 @@ nav:
           - Change State: developer/rest-api/reference/release-change-state.md
         - Graphic:
           - Get: developer/rest-api/reference/graphic-get.md
-        - Maintain: developer/rest-api/reference/maintain.md
+        - Maintain: 
+          - Get:developer/rest-api/reference/maintain.md
     - Services:
       - External Systems: developer/services/external-systems.md
       - External System Types: developer/services/external-system-types.md
