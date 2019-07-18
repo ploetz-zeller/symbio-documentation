@@ -5,7 +5,7 @@
 Retrieves the list of pools.
 
 ```
-POST  /_sysadmin/_admin/_api/rest/maintain/{pool}
+GET  /_sysadmin/_admin/_api/rest/maintain/{pool}
 ```
 
 ## Parameters
@@ -34,11 +34,11 @@ POST  /_sysadmin/_admin/_api/rest/maintain/{pool}
 
 ## Examples
 
-### Get the list of pools
+### Maintain all available pools
 
 #### Request
 ```
-POST https://sampleinstance.symbioweb.com/_sysadmin/_admin/_api/rest/maintain/
+GET https://demo.symbioworld.com/_sysadmin/_admin/_api/rest/maintain/
 ```
 
 #### Response (200 OK)
