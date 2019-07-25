@@ -22,3 +22,19 @@ Creating an extract of your data, crawls through your entire process facet and e
 1. When the export is complete, you will be able to download the exported content by clicking on the "export" link ![Download export](media/exportFinished.png)
 
 ## Using the data in the Single Page Application
+
+After having downloaded the ZIP file, you can extract the file and place into the offline Single Page Application folder structure.
+
+1. [Download](https://...) the current release of the offline Single Page Application.
+1. Unzip the SPA package
+1. Download the process exporter export
+1. Unzip the process exporter export
+1. Place the data folder to the SPA folder
+
+    ![Place data folder](media/dataFolder.png)
+
+1. Use one of the .bat files to show the exported process portal archive in a browser. 
+
+    *Currently only Google Chrome, Firefox, and Opera are supported for displaying the process portal locally. Displaying in  browsers requires in general to turn off browser security functionalities, such as open local files.*
+
+    ![Process portal](media/processPortal.png)
