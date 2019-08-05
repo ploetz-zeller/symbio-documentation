@@ -67,3 +67,9 @@ Some system settings might affect all users and should be tested in different da
 In Symbio, users can be consolidated so that all references from one user are transferred to another user. Depending on database size and Symbio version, this can be a very time-consuming step.
 + Do not consolidate users referenced in many processes/master data during peak business hours.
 + Up to Symbio 5.9, we do not recommend user consolidation if no current backup of the database has been created and no test in a copy of the database has been successfully performed. 
+
+### 1.4.5 User group consolidation
+
+In Symbio, user groups can be consolidated so that all references from one user group are transferred to another user group. Depending on database size and Symbio version, this can be a very time-consuming step.
++ Do not consolidate user groups referenced in many processes/master data during peak business hours.
++ We do not recommend user group consolidation if no current backup of the database has been created and no test in a copy of the database has been successfully performed. 
