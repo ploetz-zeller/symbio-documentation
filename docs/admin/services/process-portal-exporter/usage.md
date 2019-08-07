@@ -14,12 +14,12 @@ Creating an extract of your data, crawls through your entire process facet and e
 1. Go to the "architecture" view of the process facet
 1. Select the "Process House"
 1. Choose Export -> "Export process portal" from the Toolbar ![Run export](media/runExport.png)
-1. (Optional) Enter the base URL for the relative paths ![Run details](media/runScreen.png)
+1. (Optional) Enter the base URL for the relative paths ![Run details](media/ProcessPortalDialog_Not_Started.png)
     
     *Replaces url's in links stored in Symbio. This should match the target environment for the Single Page Application.*
-1. Start the export using the "Start" button
+1. Start the export using the "Start" button. The window will show that the process has started. ![Running](media/ProcessPortalDialog_Running.png)
 1. Press the refresh button to update the status of the exporter
-1. When the export is complete, you will be able to download the exported content by clicking on the "export" link ![Download export](media/exportFinished.png)
+1. When the export is complete, you will be able to download the exported content by clicking on the "export" link ![Running](media/ProcessPortalDialog_Finished.png)
 
 ## Using the data in the Single Page Application
 
