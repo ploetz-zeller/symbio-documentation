@@ -1,10 +1,13 @@
 # 6 Administration settings
 
-## 6.1 User
 
-Click the User tile to launch the user administration section.
+## 6.1 Users
 
-### 6.1.1 Set up users
+This chapter shows user administration, their assignment to individual user groups and permission sets.
+
+### 6.1.1 User
+
+#### 6.1.1.1 Set up users
 
 By clicking on New, please enter a name for each new user and assign a password to each user (in the Detail Content).
 You will also need to define the appropriate user roles for each user in the Detail Content by specifying if the user acts as Viewer, Author and/or Approver.
@@ -12,7 +15,7 @@ You can assign a user to a number of user groups.
 
 In the case of an AD connection via SAML users are automatically created with Viewer rights.
 
-### 6.1.2 Consolidate users
+#### 6.1.1.2 Consolidate users
 
 Users can be consolidated via the consolidate button: 
 
@@ -22,7 +25,9 @@ In the dialog which then appears, please choose the elements you want to consoli
 
 The process of consolidating users cannot be reversed.
 
-## 6.2 User groups
+### 6.1.2 User groups
+
+#### 6.1.2.1 Set up user groups
 
 You set up user groups in the same way as you create users. Click the User groups tile.
 After you have created the user group using the New option and have assigned a name to the group, you can select the users for this group in the Detail Content area. Click the hamburger icon on the Users screen to display a list with all users. Select the required users and click OK. 
@@ -31,7 +36,15 @@ After you have created the user group using the New option and have assigned a n
 
 SAML user groups additionally have Application Roles which sets the Application roles of their user/members if SAML group management is activated.
 
-## 6.3 Permissions
+#### 6.1.2.2 Consolidate user groups
+
+Users can be consolidated in the same way es users - via the consolidate button. 
+
+In the dialog which then appears, please choose the elements you want to consolidate with the master element and click OK.
+
+The process of consolidating user groups cannot be reversed.
+
+### 6.1.3 Permissions
 
 Until Symbio 1807 permissions can be set to Viewer to make the content visible only for a certain group or to author the content for editing.  
 If the user group has been defined for the viewer, only the corresponding users are allowed seeing the contents. The following applies to the authors: only registered users of the group are authorized to edit this content and to view.
@@ -40,7 +53,7 @@ Since Symbio 1808 the permissions feature has been heavily extended by introduci
 
 The following chapter describes Symbio 1808 permission sets feature.
 
-### 6.3.1 Application roles
+#### 6.1.3.1 Application roles
 
 When creating users in Symbio it is important that you define application roles for each user. Symbio supports following application roles:
 
@@ -86,7 +99,7 @@ For details about each of these roles please refer to Symbio Manual.
 
 Application roles work together with permissions which will be in detailed explained in this document.
 
-### 6.3.2 Permission sets
+#### 6.1.3.2 Permission sets
 
 Permission sets allow you to quickly and easily provide common levels of permissions for one user or group of users. Permission sets define permissions that apply to processes and other elements that use permissions in Symbio. Available permissions are: New element. Edit element, Show element, Delete element, Open element, Approve element.
 
@@ -104,20 +117,20 @@ Examples:
 
 2. Application role Author has defined rule that he cannot edit processes that other authors created. Adding permission that has Editing permission to the user won't change this rule that was defined by application role Author.
 
-#### 6.3.2.1 Overview permissions and inheritance
+##### 6.1.3.2.1 Overview permissions and inheritance
 
 When working in Symbio you deal with lot of different types of objects: Processes (main processes, sub processes, categories), Risks, Organizations, Products, Systems, Documents, Customers, Projects etc. Some of these objects are organized into hierarchies and on top of every hierarchy lays top-level object. These top-level elements are called root objects. For example, top level object of processes hierarchy is Process house. Permissions can be applied to any element in object hierarchy except the root element that should be accessible to all users.
 
-#### 6.3.2.2 Inheritance
+##### 6.1.3.2.2 Inheritance
 
 An important concept to understand is permissions inheritance. By design, all object that exist in process hierarchies inherit the permissions settings of the parent element in hierarchy. When you assign unique permissions to objects that are lower in hierarchy those objects no longer inherit permissions from their parent object. Instead of that they have their own permissions and inheritance can be applied for their children, too.
 
-#### 6.3.2.3 Permission sets administration
+##### 6.1.3.2.3 Permission sets administration
 
 Administration of Permission sets is in Admin area of Symbio storage. 
 If user log in as Administrator, and switches in Editor mode, he needs to go to Admin panel in right upper corner. 
 
-![screen](./media/6.4.png)
+![screen](./media/6.4_factsheets.png)
 
 After opening admin panel, you can see all groups (Picture 2) that you can administrate. In this case you need Users group. Administration of permissions is done through tree menu items: 
 1.	User, 
@@ -130,7 +143,7 @@ Administration of user groups provide options for creating new and modifying exi
 
 Administration of permission sets provide options for creating new and modifying existing permission sets. Selected permissions can be grouped together into permission sets to make administration of permissions easier. After you define permission sets they can be added to users or to user groups.
 
-#### 6.3.2.4 Administration of users
+##### 6.1.3.2.4 Administration of users
 
 Administration of users can be found in administration area of Symbio storage. If user is logged in as Administrator, and connected to Editor mode, he can access Admin panel in right upper corner.
 
@@ -159,7 +172,7 @@ After clicking on User groups, new dialog box will be opened, and new user group
 
 More than one User group can be assigned to the User. That means that one User can be assigned to more different User groups that have different Permission sets. Each User group will give User some specific permissions in the system, and they can, but don’t have to, exclude themselves  . In other chapters it will be seen how users can have different permissions depending on membership in User groups.
 
-#### 6.3.2.5 Administration of User groups
+##### 6.1.3.2.5 Administration of User groups
 
 To edit user group and add or edit Permission sets of the user group, you need to select desired row and clicks on Change permission button. Change permission button is located in the toolbar, and it opens dialog box for editing permission sets of user group. 
 
@@ -175,7 +188,7 @@ One or more users can be added by selecting hamburger on the right side of Users
 
 User groups are used to set special permissions to the object, and that will be explained below in chapter “Permissions on objects”.
 
-#### 6.3.2.6 Administration of permission sets
+##### 6.1.3.2.6 Administration of permission sets
 
 Permission sets can be created, edited or deleted. All permission sets are showed in list when user is logged in as Administrator.
 
@@ -207,7 +220,7 @@ For creating new permission set, you enter the name of Permission set and click 
 Procedure for adding new permission sets is the same as editing permission sets, that is explained above.
 It is also possible to leave Permission set without selecting any options - user can create empty permission set. 
 
-#### 6.3.2.7	Permissions on objects
+##### 6.1.3.2.7 Permissions on objects
 
 Permission sets can be assigned to object in every element, as for example category, process, sub process etc.. on all types of object in Symbio.
 Selecting desired element for what Permissions should be changed, in toolbar button Change permissions will be shown. After clicking on it, new dialog box will be open, and it will be possible to changes permissions for that selected element.
@@ -225,7 +238,7 @@ If the option is not set, the users of the user group get *only* the permissions
 
 Permission mode – For this option, one of two options can be chosen. Default option, that is selected when dialog box is opened first time is Exclude users from other user groups. That means that only users from chosen User groups will be able to see selected object. Other option is Standard permissions for other users. If this option is selected, all users (if their rights allow them) will see that object, but only users, from chosen user groups for that object, will have permissions from that are assigned to chosen User group.
 
-#### 6.3.2.8	User scenarios
+##### 6.1.3.2.8 User scenarios
 
 -	Human resources user
 
@@ -300,11 +313,628 @@ Using this example Administrator could create any User group with necessary Perm
 
       ![screen](./media/6.27.png)
 
-## 6.4 Dynamic attributes
 
-Feature to use dynamic/user-defined attributes in processes. If you consider using those, please contact us.
+## 6.2 Settings
 
-## 6.5 Create web-templates for documents
+### 6.2.1 Facets
+
+In Symbio, facets are used to display processes, organization, repository items, etc. It is possible to set permissions so that only specific user groups can add or edit processes, roles, etc. 
+
+![screen](./media/6.44.png)
+
+### 6.2.2 Variants
+
+Global and local variants are set up via the tile Variants on the administration page.
+
+![screen](./media/6.45.png)
+
+Additionally, the administrator can define tags via the tile Tags to be used together with variants.
+
+### 6.2.3 Tags
+
+Only users with administration rights can create tags. Tags can be used in the user fly out menu to filter processes and repository items in list views (e.g. start page). Existing tags be connected to processes and repository items.
+
+### 6.2.4 Languages
+
+In Symbio, English (1033) and German (1031) are supported. The entire user interface (UI) is localized and the process data culture is activated for both languages. Releasing a process/repository item is only allowed if mandatory attributes are set for both cultures and in case of importing process data only configured cultures will be imported.
+English (1033) is the default language.
+Other languages can be added as well. It is also possible to remove a language here, except the default language.
+Note: If the Symbio installation administrator has activated the translation feature via the Web.config, language-dependent attributes are automatically translated online, whereby the source language corresponds to the set default language. As delivered, the default language is English, i.e. the user can only translate from English to German, but not vice versa.
+
+### 6.2.5 System settings
+
+The following is a short description of the Symbio system settings.
+
+![screen](./media/7.1.png)
+
+#### 6.2.5.1 Disclaimer settings
+
+The disclaimer is disabled in Symbio default settings. 
+Activate the checkbox Disclaimer activated to enable the disclaimer in the header bar and press F5 to refresh the Browser window. 
+To add a disclaimer text, please use the disclaimer input box.
+
+#### 6.2.5.2 Notifications
+
+Feature to enable the following notifications. Customized mail template text can be configured.
+
+Example for notification - notification after creating a feedback:
+
+![screen](./media/7.2.png)
+
+![screen](./media/7.3.png)
+
+#### 6.2.5.3 Outgoing Email settings
+
+Outgoing email settings need to be configured to make use of email task/request notifications. Mandatory fields are highlighted. Nevertheless, username and password for a mail server account should be used under Authentication instead of using an anonymous authentication mode.
+Example:
+
+![screen](./media/7.4.png)
+
+#### 6.2.5.4 Privacy settings
+
+The privacy settings currently consist of two settings which can be disabled if company guidelines require it because of work council or other reasons.
+
+- Request enables the option for users to provide feedback on process elements like main/sub processes and repository items. Even in Viewer mode.
+
+  ![screen](./media/7.5.png)
+
+- Global feedback enables the option to provide general Symbio Web application feedback via survey by using the smiley in header bar.
+
+  ![screen](./media/7.6.png)
+
+  ![screen](./media/7.7.png)
+
+#### 6.2.5.5 Process released notification of external systems
+
+Feature to enable e-mail notifications about tasks. Customized mail template text can be configured.
+
+#### 6.2.5.6 Region settings
+
+The region settings are not set in Symbio default settings so the web server´s regional setting (region and time zone) are used. If regional settings are set, then time stamps in the user interface will reflect these, e.g. in attributes of processes or release tasks. The user can still overwrite these settings by setting user-dependent regional settings in the user’s profile in Symbio users management.
+
+#### 6.2.5.7 Theme settings
+
+The default Symbio theme can be customized by changing the colors of the header and navigation bars. It is also possible to replace the Symbio logo with your own logo.
+To activate new theme settings, please press on Compile button and then press F5 to refresh the browser window to make the changes visible. To reset the theme back to the Symbio theme, press the Reset button.
+We recommend, for example, embedding the corporate identity only in the productive database in order to make a clear difference to the testing system.
+
+![screen](./media/7.10.png)
+
+#### 6.2.5.8 SAP WPB connection
+
+Feature to enable a plug-in which synchronizes SAP Workforce Performance Builder eLearning items to Symbio training repository objects. If you consider using this plug-in, please contact us.
+
+#### 6.2.5.9 Task notifications
+
+Feature to enable the following notifications about tasks. The notifications are enabled within Symbio and the email setting here has no effect.
+
+- Task notification after completing a feedback
+- Task notification after creating a feedback
+- Task notification after declining the expiry of an element
+- Task notification after declining the release of an element 
+- Task notification after evaluating a feedback
+- Task notification after expiring an element
+- Task notification after negative quality assurance of an element
+- Task notification after releasing an element
+- Task notification after successful quality assurance of an element
+- Task notification after usage of an authentication token
+- Task notification before expiring an element
+- Task notification before quality assurance of an element
+- Task notification before releasing an element
+- Task notification on approval of feedbacks
+- Task notification on validation of feedbacks
+
+Example for task notification - Task notification after releasing an element:
+
+![screen](./media/7.11.png)
+
+
+## 6.3 Services
+
+### 6.3.1 Automation
+
+Automation tasks are used for example:
+- importing of Active Directory users (useful to have all users in the database at once) 
+- running of maintenance database tasks in case of configuration/method changes to avoid an extra Symbio Web update deployment
+- rendering and storing of all existing diagrams for better performance especially in viewer mode
+- handle events of Symbio using Automation hooks
+
+![screen](./media/6.46.png)
+
+#### 6.3.1.1 Set up an automation task
+
+1. Please open the menu New, enter a name and click on New.
+
+      ![screen](./media/6.47.png)
+
+2. You can now describe the automation tasks.
+
+3. Add the automation file to the group Automation actions. You can choose one of the following types:
+
+   a. Task file (XML format): Plugins can be executed
+
+   b. Conversion file (XML format): Here you can change units in the database
+
+#### 6.3.1.2 Requirements for automation tasks via PowerShell etc.
+
+If you do not want to start the automation task via the Symbio surface but via a link like e.g. PowerShell, an authentication token is necessary for the automation task to authorize the caller.
+
+1. Please open the menu New, enter a name and click on New.
+
+      ![screen](./media/6.48.png)
+
+2. Furthermore, the token must have the appropriate rights. 
+Please adjust the application roles in the detail area:
+
+      ![screen](./media/6.49.png)
+
+3. Due to safety reasons, the validity of the token must be configured, too. 
+By default, the validity is 90 days. When the validity of the token has run out, the automation task cannot be started.  
+
+      ![screen](./media/6.50.png)
+
+      a. If emails are activated, the Symbio Administrator will receive an email as soon as the automation task is started from a new IP address for the first time
+
+      b.	The token can be revoked for an IP address as well
+
+      ![screen](./media/6.51.png)
+
+#### 6.3.1.3 Run automation object
+
+There are two ways to start an automation object:
+- directly in Symbio
+- Outside of Symbio via PowerShell, C# or JavaScript
+
+##### 6.3.1.3.1 Run automation object in Symbio
+
+Please click on Run automation to start it directly in Symbio.
+
+![screen](./media/6.52.png)
+
+##### 6.3.1.3.2 Run automation object outside of Symbio
+
+The group Automation API offers some information for starting the action outside of Symbio. 
+1. Automation via PowerShell is started as follows:
+Please copy the text you see in the grey PowerShell box in a PowerShell and run it.
+
+      ![screen](./media/6.53.png)
+
+2. The automation is started and the export file can be downloaded via the closed task.
+
+      a. It is also possible to see the result directly in the PowerShell or export it to save the way to Symbio. For this, the last line in the PowerShell has to be adjusted:
+
+      Invoke-WebRequest -Uri $uri -Headers $headers -Method POST | select -expand Content
+
+      b.	For an export into a file please use:
+
+      Invoke-WebRequest -Uri $uri -Headers $headers -Method POST | select -expand Content | Out-File D:\temp\export.xml
+
+      Note: Please adjust target directory and target file. 
+      As the export of larger databases into a separate file can take some time, the default PowerShell TimeOut of 100 should be increased. See c.
+
+      c. For an export from large databases which takes longer than 100 seconds please use:
+
+      Invoke-WebRequest -Uri $uri -Headers $headers -Method POST -TimeoutSec [int]::MaxValue | select -expand Content | Out-File D:\temp\export.xml
+
+3. As soon as the automation task has been started via the token, the IP address of the caller will be saved. In this case it is the local host address (IPv6).
+
+      ![screen](./media/6.54.png)
+
+#### 6.3.1.4 Examples of automation tasks
+
+##### 6.3.1.4.1 Generating diagram graphics for caching in the database
+
+An automation task can be used to generate diagram graphics for caching in the database. For this, please create an automation task as explained in Fehler! Verweisquelle konnte nicht gefunden werden. and link it to the example “Set_all_diagram_saved__svg_attributes.xml“.
+
+![screen](./media/6.55.png)
+
+The automation task can now be started as explained above.
+
+Attention: All graphs are generated for all languages and diagrams, which can take a long time depending on the number of diagrams and their complexity. Therefore, it can be useful to generate the diagrams in several steps or only on one part of the diagrams. To do this, edit the task file or connect a customized file to the automation object. 
+
+1. Possible restrictions/subdivisions are: By deleting diagram types in the line:
+
+       <Setting Name="DiagramTypes" Value="MTX_PROCESS_HOUSE MTX_SUB_CATEGORY MTX_MAIN_PROCESS MTX_MID_PROCESS MTX_SUB_PROCESS MTX_DETAIL_PROCESS MTX_RISK_STRUCTURE_ARCHITECTURE MTX_REQ_ARCHITECTURE MT_ORG_CHRT MTX_IT_ARCHITECTURE MTX_KNOWLEDGE_STRUCTURE_ARCHITECTURE" />
+      Generating can be limited to specific diagram types
+
+2. By entering and editing the list of LCIDs in line:
+
+       <Setting Name="Lcids" Value="1031 1033" />
+
+      Generating can be limited to specific languages.
+
+3. It is possible to select the diagrams for which the generation is to be carried out. For example, the following task content will be used to generate a generation for all released diagrams:
+
+      ![screen](./media/6.55b.png)
+
+### 6.3.2 Converter
+
+Feature to convert an existing process database (e.g. ARIS) into a Symbio database. Architecture, processes and objects are adopted or dropped according to predefined logic. Please contact us if you consider using that feature.
+
+### 6.3.3 Selection list services
+
+- will be published soon -
+
+### 6.3.4 Storage connections
+
+In case of specific company organizational structures, it is useful to “split” databases. For example, the master database can send released items to a slave database. A HTTPS connection is required.
+
+By distributing data from the master to the slave, standardized contents can be maintained in the master and distributed to the slave DB. To do this, the databases must first be set up and then linked with each other. 
+
+In the admin area under "Database Connections" the administrator creates a new slave database (IMPORTANT THE URL OF THE SLAVE DB AS ID e. g. https://url/Pundz/Slave1). The connection to the slave DB is then requested in Detail Content. In the same view the Admin of the Slave-DB accepts this request and both DBs are linked with each other. All released contents can now be copied to the slavedb by the admin by clicking on "Distribute". All contents of the master DB cannot be edited by the subordinate DBs.
+
+![screen](./media/6.67.png)
+
+### 6.3.5 Service Hooks
+
+Service hooks are configured callbacks for specific events. The events are defined in Symbio and depend on the service hook type.
+
+#### 6.3.5.1 Application Hooks
+
+In case of an application hook the custom callback is a selected automation task. To create an application hook to the following steps:
+
+1. Open the New menu, enter a name and click on New:
+
+    ![screen](./media/6.56.png)
+
+2. Define the event. The hook has to be a callback. You can select one of the following events:
+
+    a. Process released
+
+    b. Document released
+3. Define the time of the execution, after or before the state change
+
+4. Add the automation task in the Automation tasks group 
+
+Once you have configured the settings the hook is active for the selected event. This means when you release a process all hooks of this event type Process released will be executed parallel during the state change phase.
+
+### 6.3.6 ID Providers
+
+#### 6.3.6.1 Before you start
+
+After successful installation and connection of the ID Provider Service, a table with 2 columns is created in the ID Provider database. In this table, a new entry should be added for each consuming Symbio instance.
+
+Simply use the following statement and replace the colored fields with your data:
+insert into enter ID Provider Name.Subscribers (subscriber, token) values (NEWID (),'enter desired token name')
+
+Now note the name of your token from the database and the URL to your ID provider services. For example, if you install the service under 'IDProvider' and create the token named "myToken", the script would look like this:
+insert into IDProvider.Subscribers (subscriber, token) values (NEWID (),'myToken')
+
+URL = https://IDProvider.com/
+Token = myToken
+
+#### 6.3.6.2 Create ID Provider
+
+Navigate to a database in Symbio. Then click on the cogwheel at the top right into the admin area of Symbio.
+
+![screen](./media/6.91.png)
+
+Here you will find a tile with the name 'ID Providers'.
+
+![screen](./media/6.92.png)
+
+Now you are in the overview of your ID provider. Click New and choose a name for your ID provider.
+
+![screen](./media/6.93.png)
+
+Click on New to create it. In the next step, please select the provider you have created and enter the URL and token from chapter 1.1 on the right side of the detail content.
+
+![screen](./media/6.94.png)
+
+![screen](./media/6.95.png)
+
+#### 6.3.6.3 Create ID Provider Configuration
+
+There is a configuration to configure the ID provider, for example, which facets and objects it affects. A configuration is created under the service. Select the service and click on New to create the configuration.
+
+![screen](./media/6.96.png)
+
+If you select this created configuration, you can define in the detail content how this ID should look like and which facets or objects it concerns.
+
+###### Format:
+
+![screen](./media/6.97.png)
+
+This item describes how the composite unique ID should look like.
+In this field you can use various placeholders to create an individual ID. You will find hints and examples below in the detailed content.
+
+ ![screen](./media/6.98.png)
+
+To illustrate this, a prefix 'Role-ID-' is selected and '{0}' is set behind it.
+
+![screen](./media/6.99.png)
+
+Thus, for example, this prefix is always used with each newly created ID for a role, followed by an ascending number.
+
+###### Facet and Type:
+
+You can also configure under "Facet" and "Type" for which facet and underlying object this ID should be generated. For example, roles.
+
+![screen](./media/6.100.png)
+
+###### Valid for Attribute Type:
+
+The field "Valid for Attribute Type" defines for which attribute this ID is entered in a role. In this example, the created ID is to be written to the ID attribute of the object.
+
+![screen](./media/6.101.png)
+
+It could also be written in the name field or some others. Clicking on the field displays all options.
+
+###### Allow refresh:
+
+Select this option if you want to allow this ID to be updated automatically after changing the connected objects in the ID.
+
+![screen](./media/6.102.png)
+
+###### Get ID on Creation:
+
+This option should be selected if you want an ID to be assigned automatically when a new object is created.
+
+![screen](./media/6.103.png)
+
+#### 6.3.6.4 Last but not least
+
+The configuration of your ID provider is successfully completed by automatically saving and entering all parameters.
+
+Note: The ID provider must be installed separately. Details can be found under the following link:
+http://docs.symbioworld.com/content/Articles/UniqueID/install-intro.html
+
+### 6.3.7 Authentication providers
+
+If the user management should be managed by the Microsoft Active Directory, then SAML settings need to be configured here. For SAML and ADFS configuration instructions, please refer to our Symbio Web installation manual and the SAML Check-List.
+If the SAML group management is activated, the user’s application roles depend on the SAML user group where the user is member of. If the user is member of more than one group then highest role will win.
+
+![screen](./media/7.9.png)
+
+
+## 6.4 Configure
+
+### 6.4.1 Extended Configuration
+
+Additional configuration options are available for the administrator in the tile "extended configuration". This includes hiding various information, renaming the standard interface and adding new attributes. 
+
+To use the advanced configuration, please proceed as follows:
+- In the admin area, open the tile 'Advanced configuration'
+
+  ![screen](./media/6.68.png)
+
+- Create a new type with one of the configuration options
+
+  ![screen](./media/6.69.png)
+
+The next sections describe some of the configurations in more detail.
+
+#### 6.4.1.1 Hide
+
+To apply all changes, the configuration has to be activated and applied afterwards.
+
+![screen](./media/6.70.png)
+
+##### 6.4.1.1.1 Hide graphic options
+
+The configuration "Hide graphics options" allows the administrator to minimize the graphical selection in processes. All standard graphics in Symbio and the user-defined fact sheets can be managed with this configuration. 
+
+1. Select type „Hide graphics options“
+2. Enter name for configuration entry (e.g. detailed view Sub Process)
+3. Define settings 
+4. Activate configuration entry
+
+      ![screen](./media/6.71.png)
+
+      ![screen](./media/6.72.png)
+
+5. Apply changes (this only works for configuration entries which are activated in the Detail Content; all configuration entries are always applied).
+
+      ![screen](./media/6.73.png)
+
+##### 6.4.1.1.2 Collapse views
+
+With this configuration, individual areas such as Detail Content or the navigation tree can be collapsed for Viewer and/or Editor.
+
+![screen](./media/6.74.png)
+
+![screen](./media/6.75.png)
+
+##### 6.4.1.1.3 Hide attributes
+
+The configuration Hide attributes allows you to delete content in the Detail Content, e. g. 'Risk assessment'.
+
+![screen](./media/6.76.png)
+
+##### 6.4.1.1.4 Hide referenced objects
+
+The configuration Hide referenced objects you can hide certain elements you do not need for modeling.
+Example: Hide 'Requirements' in Detail Content 
+1.	Create configuration entry with meaningful name (e.g. Requirements DC)
+2.	Define settings: Valid for facet= requirements; valid for type= requirements
+
+      ![screen](./media/6.77.png)
+
+3. Check Activate
+4. Apply changes
+
+##### 6.4.1.1.5 Hide global groups
+
+Hides complete groups, e.g. 'Responsible Role', in detail Content.
+Hiding can be done for all users or only for the viewer mode.
+
+##### 6.4.1.1.6 Hide navigation element
+
+Entire navigation elements can be hidden. These include e.g. systems 
+or input/output.
+
+![screen](./media/6.78.png)
+
+#### 6.4.1.2 Rename
+
+The administrator renames the information names using this configuration. The new name replaces the selection and is now used throughout the system. 
+You can also use this function to rename user attribute groups.
+
+![screen](./media/6.79.png)
+
+![screen](./media/6.80.png)
+
+#### 6.4.1.3 Add
+
+1. The Administrator can set up user-defined attributes.
+
+      ![screen](./media/6.81.png)
+
+2. In Detail Content, the administrator can select the element types to which the user-defined attribute is to be added. 
+Multiple selection allows you to assign the configured attributes to the required types.
+
+      ![screen](./media/6.82.png)
+
+3. To any of the new configurated attributes there is the possibility to add “tooltips” to describe the attribute or give hints. The administrator can also use "edit custom attributes" to add the user-defined attributes to the editing of released elements. Thus the user-defined attributes for released attributes can be changed afterwards without versioning. These changes are displayed in the lifecycle.
+The following user-defined attribute groups are available:
+
+      ![screen](./media/6.83.png)
+
+      User-defined attribute groups can be renamed using the configuration option Rename.
+
+      ![screen](./media/6.84.png)
+
+4. By activating “Hide for Viewer” this custom attribute will only be displayed for the editors
+
+5. By activating “Available for reporting” the custom attribute will be analyzed in the estandard reports as well. If this is not activated, this attribute won´t be a part of the reporting
+
+6. By activating “language independent”, this attribute will be for every language and can´t be translated.
+
+7. To apply all changes, the configuration has to be activated and applied afterwards.
+
+      ![screen](./media/6.85.png)
+
+Here, there are some examples explained in detail:
+
+##### 6.4.1.3.1 Add single line attribute
+
+1. Select attribute type 
+
+2. Define ID and set up configuration entry via New.
+Defining the ID in capital letters determines the last part of the API name.
+Please do not use special characters or '-'.
+
+      ![screen](./media/6.86.png)
+
+      The API name for reusing in for example manuals would then be:
+'ATX_CUSTOM_SHORT_DESCRIPTION'
+
+3. Define settings in the Detail Content 
+Check the chapter 6.20.3 Add for the details
+
+      ![screen](./media/6.87.png)
+
+      Name: must be maintained in all languages. You can use the Translate button
+
+      Tool Tip: if maintained the attribute will appear with an info symbol and a note when using the mouse over.
+      Sorting: if there are several user-defined attributes per user group, the order can be determined here.
+
+      Activate: must be checked; otherwise the attribute is not considered when changes are applied.
+
+      Settings: Valid for facet, valid for type, group, language independent, maximal length.
+
+##### 6.4.1.3.2 Add selection list attribute
+
+In addition, the following is to be observed here:
+- Language independent should be checked
+- Apply the changes bevor assigning values
+
+##### 6.4.1.3.3 Add selection list value attribute
+
+In addition, the following is to be observed here:
+- When a new value attribute is created (ID is VALUE) the API name AVTX_CUSTOM_VALUE 
+- The selection list attribute must be assigned
+
+#### 6.4.1.4 Change
+
+By configuring 'Change', the administrator can change settings in Symbio. To apply all changes, the configuration has to be activated and applied afterwards.
+
+![screen](./media/6.88.png)
+
+##### 6.4.1.4.1 Make an attribute mandatory
+
+The admin can make any attribute mandatory. For this, the type 'make an attribute mandatory' needs to be selected and in detail content the settings can be defined. After applying this, all user has to manage the mandatory fields. For example you can set a description to mandatory so any author has to fill in a description for the process.
+
+![screen](./media/6.89.png)
+
+##### 6.4.1.4.2 Make an attribute informative
+
+The administrator can use this extension to store certain content as informative and thus define it as read-only. This means that these contents cannot be edited. For example, systems can be set as write-protected by this configuration and the content can be retrieved from the BCM interface.
+
+##### 6.4.1.4.3 Change user selection
+
+The admin adjusts the users in Symbio and can activate or deactivate the inheritance of the persons responsible. 
+You can also set that only the selected user types are allowed to edit the process.
+
+![screen](./media/6.90.png)
+
+### 6.4.2 Features
+
+Updates and new features will be available in the Symbio Cloud on a continuous basis. Thus, the Symbio version numbers are now omitted.  
+
+As soon as features have been made available you can test the functions and activate or deactivate them yourself. 
+
+NOTE: New features are flagged as deactivated by default. 
+
+There are different 'periods' of features:
+
+- Experimental: this feature is in an experimental stage. It is recommended to use this exclusively in a test environment.
+- Preview: the development of this feature is completed, but it is still in a comprehensive internal test phase. Please use only in a test environment.
+- Released: this feature is completely tested and finally released. It may be used in a productive environment.
+
+#### 6.4.2.1 Activate and deactivate features
+
+Highlight feature in the list and select required value (Deactivated or Activated) in 'Activation' dropdown of Detail Content.
+
+#### 6.4.2.2 Is obsolete / Is one way
+
+Features flagged up as 'Is one way' can only be activated. Once the feature is activated, it cannot be deactivated again.
+
+In case a feature is out of use, it is flagged 'Is obsolete'.
+
+### 6.4.3 Release cycle 
+
+Individual settings can be made for the release cycle of processes and objects.
+
+First, create a new Type in the list. Then, go to Detail Content and select a type (or types) for which your settings should be applied.
+
+There are following options:
+
+Option 1: 
+Set the number of days after which the process receives the state 'Valid' (after release) in field 'Valid from day span'.
+
+Option 2:
+Activate 'Prohibit direct release' if the workflow should be started in any case. The state 'Released' will then never be selectable in release dialogue.
+
+Activate your settings by checkbox and click on 'Apply changes' in the toolbar.
+
+### 6.4.4 Fact sheets
+
+Please navigate to fact sheets [here](docs\admin\sysadministration\fact-sheets\creating-factsheets.md) 
+
+### 6.4.5 Stereotypes
+
+- will be pusblished soon -
+
+### 6.4.6 Manuals
+
+Default manuals are available. Customized manual templates can be added here.
+
+![screen](./media/6.57.png)
+
+### 6.4.7 Reporting
+
+- will be pusblihed soon -
+
+### 6.4.8 Navigation
+
+With this feature the help function can be specified in the header (question mark icon). 
+
+Create a new Category with a help entry below in the list. Specify the new help entry in the Detail Content,defining your required target and type of help. Then specify the facet and sub type for which it should be applied to. 
+
+- content will follow soon - 
+
+### 6.4.9 Document Templates
 
 With the document templates you can define templates for certain elements (e.g. processes, documents, risks, requirements, etc.), which the editor then adds content to. The administrator has the function to define the structure and the layout.
 
@@ -338,186 +968,23 @@ For all chapters, sections or modules, the administrator can set the check mark 
 
 After the document template has been created and the structure has been set up, the editor can use this template. However, the template must first be released in a release workflow. A document is available for editing in the editor as soon as the template has been released.
 
-## 6.6 Fact Sheets
+### 6.4.10 Validation rules
 
-Please navigate to fact sheets [here](docs\admin\sysadministration\fact-sheets\creating-factsheets.md)
+- will be pusblished soon - 
 
-## 6.7 Facets
+### 6.4.11 Dynamic attributes 
 
-In Symbio, facets are used to display processes, organization, repository items, etc. It is possible to set permissions so that only specific user groups can add or edit processes, roles, etc. 
+Custom-designed feature to use dynamic/user-defined attributes in processes. If you consider using those, please contact us.
 
-![screen](./media/6.44.png)
 
-## 6.8 Variants
+## 6.5 Importer
 
-Global and local variants are set up via the tile Variants on the administration page.
-
-![screen](./media/6.45.png)
-
-Additionally, the administrator can define tags via the tile Tags to be used together with variants.
-
-## 6.9 Tags
-
-Only users with administration rights can create tags. Tags can be used in the user fly out menu to filter processes and repository items in list views (e.g. start page). Existing tags be connected to processes and repository items.
-
-## 6.10 Languages
-
-In Symbio, English (1033) and German (1031) are supported. The entire user interface (UI) is localized and the process data culture is activated for both languages. Releasing a process/repository item is only allowed if mandatory attributes are set for both cultures and in case of importing process data only configured cultures will be imported.
-English (1033) is the default language.
-Other languages can be added as well. It is also possible to remove a language here, except the default language.
-Note: If the Symbio installation administrator has activated the translation feature via the Web.config, language-dependent attributes are automatically translated online, whereby the source language corresponds to the set default language. As delivered, the default language is English, i.e. the user can only translate from English to German, but not vice versa.
-
-## 6.11 Automation
-
-Automation tasks are used for example:
-- importing of Active Directory users (useful to have all users in the database at once) 
-- running of maintenance database tasks in case of configuration/method changes to avoid an extra Symbio Web update deployment
-- rendering and storing of all existing diagrams for better performance especially in viewer mode
-- handle events of Symbio using Automation hooks
-
-![screen](./media/6.46.png)
-
-### 6.11.1 Set up an automation task
-
-1. Please open the menu New, enter a name and click on New.
-
-      ![screen](./media/6.47.png)
-
-2. You can now describe the automation tasks.
-
-3. Add the automation file to the group Automation actions. You can choose one of the following types:
-
-   a. Task file (XML format): Plugins can be executed
-
-   b. Conversion file (XML format): Here you can change units in the database
-
-#### 6.11.1.1	Requirements for automation tasks via PowerShell etc.
-
-If you do not want to start the automation task via the Symbio surface but via a link like e.g. PowerShell, an authentication token is necessary for the automation task to authorize the caller.
-
-1. Please open the menu New, enter a name and click on New.
-
-      ![screen](./media/6.48.png)
-
-2. Furthermore, the token must have the appropriate rights. 
-Please adjust the application roles in the detail area:
-
-      ![screen](./media/6.49.png)
-
-3. Due to safety reasons, the validity of the token must be configured, too. 
-By default, the validity is 90 days. When the validity of the token has run out, the automation task cannot be started.  
-
-      ![screen](./media/6.50.png)
-
-      a. If emails are activated, the Symbio Administrator will receive an email as soon as the automation task is started from a new IP address for the first time
-
-      b.	The token can be revoked for an IP address as well
-
-      ![screen](./media/6.51.png)
-
-### 6.11.2 Run automation object
-
-There are two ways to start an automation object:
-- directly in Symbio
-- Outside of Symbio via PowerShell, C# or JavaScript
-
-#### 6.11.2.1	Run automation object in Symbio
-
-Please click on Run automation to start it directly in Symbio.
-
-![screen](./media/6.52.png)
-
-#### 6.11.2.2 Run automation object outside of Symbio
-
-The group Automation API offers some information for starting the action outside of Symbio. 
-1. Automation via PowerShell is started as follows:
-Please copy the text you see in the grey PowerShell box in a PowerShell and run it.
-
-      ![screen](./media/6.53.png)
-
-2. The automation is started and the export file can be downloaded via the closed task.
-
-      a. It is also possible to see the result directly in the PowerShell or export it to save the way to Symbio. For this, the last line in the PowerShell has to be adjusted:
-
-      Invoke-WebRequest -Uri $uri -Headers $headers -Method POST | select -expand Content
-
-      b.	For an export into a file please use:
-
-      Invoke-WebRequest -Uri $uri -Headers $headers -Method POST | select -expand Content | Out-File D:\temp\export.xml
-
-      Note: Please adjust target directory and target file. 
-      As the export of larger databases into a separate file can take some time, the default PowerShell TimeOut of 100 should be increased. See c.
-
-      c. For an export from large databases which takes longer than 100 seconds please use:
-
-      Invoke-WebRequest -Uri $uri -Headers $headers -Method POST -TimeoutSec [int]::MaxValue | select -expand Content | Out-File D:\temp\export.xml
-
-3. As soon as the automation task has been started via the token, the IP address of the caller will be saved. In this case it is the local host address (IPv6).
-
-      ![screen](./media/6.54.png)
-
-### 6.11.3 Examples of automation tasks
-
-#### 6.11.3.1	Generating diagram graphics for caching in the database
-
-An automation task can be used to generate diagram graphics for caching in the database. For this, please create an automation task as explained in Fehler! Verweisquelle konnte nicht gefunden werden. and link it to the example “Set_all_diagram_saved__svg_attributes.xml“.
-
-![screen](./media/6.55.png)
-
-The automation task can now be started as explained above.
-
-Attention: All graphs are generated for all languages and diagrams, which can take a long time depending on the number of diagrams and their complexity. Therefore, it can be useful to generate the diagrams in several steps or only on one part of the diagrams. To do this, edit the task file or connect a customized file to the automation object. 
-
-1. Possible restrictions/subdivisions are: By deleting diagram types in the line:
-
-       <Setting Name="DiagramTypes" Value="MTX_PROCESS_HOUSE MTX_SUB_CATEGORY MTX_MAIN_PROCESS MTX_MID_PROCESS MTX_SUB_PROCESS MTX_DETAIL_PROCESS MTX_RISK_STRUCTURE_ARCHITECTURE MTX_REQ_ARCHITECTURE MT_ORG_CHRT MTX_IT_ARCHITECTURE MTX_KNOWLEDGE_STRUCTURE_ARCHITECTURE" />
-      Generating can be limited to specific diagram types
-
-2. By entering and editing the list of LCIDs in line:
-
-       <Setting Name="Lcids" Value="1031 1033" />
-
-      Generating can be limited to specific languages.
-
-3. It is possible to select the diagrams for which the generation is to be carried out. For example, the following task content will be used to generate a generation for all released diagrams:
-
-      ![screen](./media/6.55b.png)
-
-## 6.12 Service Hooks
-
-Service hooks are configured callbacks for specific events. The events are defined in Symbio and depend on the service hook type.
-
-### 6.12.1 Application Hooks
-
-In case of an application hook the custom callback is a selected automation task. To create an application hook to the following steps:
-
-1. Open the New menu, enter a name and click on New:
-
-    ![screen](./media/6.56.png)
-
-2. Define the event. The hook has to be a callback. You can select one of the following events:
-
-    a. Process released
-
-    b. Document released
-3. Define the time of the execution, after or before the state change
-
-4. Add the automation task in the Automation tasks group 
-
-Once you have configured the settings the hook is active for the selected event. This means when you release a process all hooks of this event type Process released will be executed parallel during the state change phase.
-
-## 6.13 Export templates for manuals
-
-Default manuals are available. Customized manual templates can be added here.
-
-![screen](./media/6.57.png)
-
-## 6.14 6.14	AML converting import config files
+### 6.5.1 AML import
 
 In Symbio, it is possible to import processes from ARIS. Importing of ARIS data mostly needs a customized config file to import ARIS data successfully.
 ARIS data should be imported to an empty database unless you are absolutely sure that the GUIDs which will be imported do not exist in the target database already.  
 
-### 6.14.1 Configuration for AML import
+#### 6.5.1.1 Configuration for AML import
 
 To import ARIS data, it is required to set up the AML-import converter first. To do so navigate to administration page and choose AML import.
 
@@ -532,7 +999,7 @@ After the new configuration has been created, click on Add in the detail content
 ![screen](./media/6.60.png)
 ![screen](./media/6.61.png)
 
-## 6.14.2 Import AML data
+#### 6.5.1.2 Import AML data
 
 When previous steps are completed, Symbio is ready to import data from ARIS. Choose Processes > Architecture in navigation menu and proceed to import setup. ARIS import is available in the toolbar with additional administration functionality.
 
@@ -554,300 +1021,23 @@ After successful import you will find imported processes under Processes > Orpha
 
 ![screen](./media/6.65.png)
 
-## 6.15 Symbio data import config files
+### 6.5.2 Symbio data import
 
 Mapping files to import Symbio data (.symx) can be added here. For instance, repository data can be managed between the testing database and working database. The import will be done in the toolbar with the additional administration functionality.
 
-## 6.16 Docment import config files
+### 6.5.3 Docment import config files
 
 Feature to import Microsoft Word documents which require specific config files.
 
-## 6.17 Visio import config files
+### 6.5.4 Visio import
 
 Feature to import Microsoft Visio files. Default converter for BPMN/EPC exist but specific config files are required to import customer’s Visio files. The data type of for migration must be in VSDX.
 
-## 6.18 Excel import config files
+### 6.5.5 Excel import 
 
 Feature to import Microsoft Excel files from external systems (e.g. MEGA) which require specific config files to map items as required.
 
 ![screen](./media/6.66.png)
 
-## 6.19 Storage connections
 
-In case of specific company organizational structures, it is useful to “split” databases. For example, the master database can send released items to a slave database. A HTTPS connection is required.
 
-By distributing data from the master to the slave, standardized contents can be maintained in the master and distributed to the slave DB. To do this, the databases must first be set up and then linked with each other. 
-
-In the admin area under "Database Connections" the administrator creates a new slave database (IMPORTANT THE URL OF THE SLAVE DB AS ID e. g. https://url/Pundz/Slave1). The connection to the slave DB is then requested in Detail Content. In the same view the Admin of the Slave-DB accepts this request and both DBs are linked with each other. All released contents can now be copied to the slavedb by the admin by clicking on "Distribute". All contents of the master DB cannot be edited by the subordinate DBs.
-
-![screen](./media/6.67.png)
-
-## 6.20 Extended Configuration
-
-Additional configuration options are available for the administrator in the tile "extended configuration". This includes hiding various information, renaming the standard interface and adding new attributes. 
-
-To use the advanced configuration, please proceed as follows:
-- In the admin area, open the tile 'Advanced configuration'
-
-  ![screen](./media/6.68.png)
-
-- Create a new type with one of the configuration options
-
-  ![screen](./media/6.69.png)
-
-The next sections describe some of the configurations in more detail.
-
-### 6.20.1 Hide
-
-To apply all changes, the configuration has to be activated and applied afterwards.
-
-![screen](./media/6.70.png)
-
-#### 6.20.1.1	Hide graphic options
-
-The configuration "Hide graphics options" allows the administrator to minimize the graphical selection in processes. All standard graphics in Symbio and the user-defined fact sheets can be managed with this configuration. 
-
-1. Select type „Hide graphics options“
-2. Enter name for configuration entry (e.g. detailed view Sub Process)
-3. Define settings 
-4. Activate configuration entry
-
-      ![screen](./media/6.71.png)
-
-      ![screen](./media/6.72.png)
-
-5. Apply changes (this only works for configuration entries which are activated in the Detail Content; all configuration entries are always applied).
-
-      ![screen](./media/6.73.png)
-
-#### 6.20.1.2	Collapse views
-
-With this configuration, individual areas such as Detail Content or the navigation tree can be collapsed for Viewer and/or Editor.
-
-![screen](./media/6.74.png)
-
-![screen](./media/6.75.png)
-
-#### 6.20.1.3	Hide attributes
-
-The configuration Hide attributes allows you to delete content in the Detail Content, e. g. 'Risk assessment'.
-
-![screen](./media/6.76.png)
-
-#### 6.20.1.4	Hide referenced objects
-
-The configuration Hide referenced objects you can hide certain elements you do not need for modeling.
-Example: Hide 'Requirements' in Detail Content 
-1.	Create configuration entry with meaningful name (e.g. Requirements DC)
-2.	Define settings: Valid for facet= requirements; valid for type= requirements
-
-      ![screen](./media/6.77.png)
-
-3. Check Activate
-4. Apply changes
-
-#### 6.20.1.5	Hide global groups
-
-Hides complete groups, e.g. 'Responsible Role', in detail Content.
-Hiding can be done for all users or only for the viewer mode.
-
-#### 6.20.1.6	Hide navigation element
-
-Entire navigation elements can be hidden. These include e.g. systems 
-or input/output.
-
-![screen](./media/6.78.png)
-
-### 6.20.2 Rename
-
-The administrator renames the information names using this configuration. The new name replaces the selection and is now used throughout the system. 
-You can also use this function to rename user attribute groups.
-
-![screen](./media/6.79.png)
-
-![screen](./media/6.80.png)
-
-### 6.20.3 Add
-
-1. The Administrator can set up user-defined attributes.
-
-      ![screen](./media/6.81.png)
-
-2. In Detail Content, the administrator can select the element types to which the user-defined attribute is to be added. 
-Multiple selection allows you to assign the configured attributes to the required types.
-
-      ![screen](./media/6.82.png)
-
-3. To any of the new configurated attributes there is the possibility to add “tooltips” to describe the attribute or give hints. The administrator can also use "edit custom attributes" to add the user-defined attributes to the editing of released elements. Thus the user-defined attributes for released attributes can be changed afterwards without versioning. These changes are displayed in the lifecycle.
-The following user-defined attribute groups are available:
-
-      ![screen](./media/6.83.png)
-
-      User-defined attribute groups can be renamed using the configuration option Rename.
-
-      ![screen](./media/6.84.png)
-
-4. By activating “Hide for Viewer” this custom attribute will only be displayed for the editors
-
-5. By activating “Available for reporting” the custom attribute will be analyzed in the estandard reports as well. If this is not activated, this attribute won´t be a part of the reporting
-
-6. By activating “language independent”, this attribute will be for every language and can´t be translated.
-
-7. To apply all changes, the configuration has to be activated and applied afterwards.
-
-      ![screen](./media/6.85.png)
-
-Here, there are some examples explained in detail:
-
-#### 6.20.3.1	Add single line attribute
-
-1. Select attribute type 
-
-2. Define ID and set up configuration entry via New.
-Defining the ID in capital letters determines the last part of the API name.
-Please do not use special characters or '-'.
-
-      ![screen](./media/6.86.png)
-
-      The API name for reusing in for example manuals would then be:
-'ATX_CUSTOM_SHORT_DESCRIPTION'
-
-3. Define settings in the Detail Content 
-Check the chapter 6.20.3 Add for the details
-
-      ![screen](./media/6.87.png)
-
-      Name: must be maintained in all languages. You can use the Translate button
-
-      Tool Tip: if maintained the attribute will appear with an info symbol and a note when using the mouse over.
-      Sorting: if there are several user-defined attributes per user group, the order can be determined here.
-
-      Activate: must be checked; otherwise the attribute is not considered when changes are applied.
-
-      Settings: Valid for facet, valid for type, group, language independent, maximal length.
-
-#### 6.20.3.2	Add selection list attribute
-
-In addition, the following is to be observed here:
-- Language independent should be checked
-- Apply the changes bevor assigning values
-
-#### 6.20.3.3	Add selection list value attribute
-
-In addition, the following is to be observed here:
-- When a new value attribute is created (ID is VALUE) the API name AVTX_CUSTOM_VALUE 
-- The selection list attribute must be assigned
-
-### 6.20.4 Change
-
-By configuring 'Change', the administrator can change settings in Symbio. To apply all changes, the configuration has to be activated and applied afterwards.
-
-![screen](./media/6.88.png)
-
-#### 6.20.4.1	Make an attribute mandatory
-
-The admin can make any attribute mandatory. For this, the type 'make an attribute mandatory' needs to be selected and in detail content the settings can be defined. After applying this, all user has to manage the mandatory fields. For example you can set a description to mandatory so any author has to fill in a description for the process.
-
-![screen](./media/6.89.png)
-
-#### 6.20.4.2	Make an attribute informative
-
-The administrator can use this extension to store certain content as informative and thus define it as read-only. This means that these contents cannot be edited. For example, systems can be set as write-protected by this configuration and the content can be retrieved from the BCM interface.
-
-#### 6.20.4.3	Change user selection
-
-The admin adjusts the users in Symbio and can activate or deactivate the inheritance of the persons responsible. 
-You can also set that only the selected user types are allowed to edit the process.
-
-![screen](./media/6.90.png)
-
-## 6.21 Configuration ID Provider
-
-### 6.21.1 Before you start
-
-After successful installation and connection of the ID Provider Service, a table with 2 columns is created in the ID Provider database. In this table, a new entry should be added for each consuming Symbio instance.
-
-Simply use the following statement and replace the colored fields with your data:
-insert into enter ID Provider Name.Subscribers (subscriber, token) values (NEWID (),'enter desired token name')
-
-Now note the name of your token from the database and the URL to your ID provider services. For example, if you install the service under 'IDProvider' and create the token named "myToken", the script would look like this:
-insert into IDProvider.Subscribers (subscriber, token) values (NEWID (),'myToken')
-
-URL = https://IDProvider.com/
-Token = myToken
-
-### 6.21.2 Create ID Provider
-
-Navigate to a database in Symbio. Then click on the cogwheel at the top right into the admin area of Symbio.
-
-![screen](./media/6.91.png)
-
-Here you will find a tile with the name 'ID Providers'.
-
-![screen](./media/6.92.png)
-
-Now you are in the overview of your ID provider. Click New and choose a name for your ID provider.
-
-![screen](./media/6.93.png)
-
-Click on New to create it. In the next step, please select the provider you have created and enter the URL and token from chapter 1.1 on the right side of the detail content.
-
-![screen](./media/6.94.png)
-
-![screen](./media/6.95.png)
-
-### 6.21.3 Create ID Provider Configuration
-
-There is a configuration to configure the ID provider, for example, which facets and objects it affects. A configuration is created under the service. Select the service and click on New to create the configuration.
-
-![screen](./media/6.96.png)
-
-If you select this created configuration, you can define in the detail content how this ID should look like and which facets or objects it concerns.
-
-##### Format:
-
-![screen](./media/6.97.png)
-
-This item describes how the composite unique ID should look like.
-In this field you can use various placeholders to create an individual ID. You will find hints and examples below in the detailed content.
-
- ![screen](./media/6.98.png)
-
-To illustrate this, a prefix 'Role-ID-' is selected and '{0}' is set behind it.
-
-![screen](./media/6.99.png)
-
-Thus, for example, this prefix is always used with each newly created ID for a role, followed by an ascending number.
-
-##### Facet and Type:
-
-You can also configure under "Facet" and "Type" for which facet and underlying object this ID should be generated. For example, roles.
-
-![screen](./media/6.100.png)
-
-##### Valid for Attribute Type:
-
-The field "Valid for Attribute Type" defines for which attribute this ID is entered in a role. In this example, the created ID is to be written to the ID attribute of the object.
-
-![screen](./media/6.101.png)
-
-It could also be written in the name field or some others. Clicking on the field displays all options.
-
-##### Allow refresh:
-
-Select this option if you want to allow this ID to be updated automatically after changing the connected objects in the ID.
-
-![screen](./media/6.102.png)
-
-##### Get ID on Creation:
-
-This option should be selected if you want an ID to be assigned automatically when a new object is created.
-
-![screen](./media/6.103.png)
-
-### 6.21.4 Last but not least
-
-The configuration of your ID provider is successfully completed by automatically saving and entering all parameters.
-
-Note: The ID provider must be installed separately. Details can be found under the following link:
-http://docs.symbioworld.com/content/Articles/UniqueID/install-intro.html
