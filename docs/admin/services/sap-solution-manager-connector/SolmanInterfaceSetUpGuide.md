@@ -1,8 +1,9 @@
+
 # SAP Solution Manager Interface Set-up Documentation
 
 This document contains information on how to set-up **SAP Solution Manager** service and configure Symbio so it can use it.
 
-# Service set-up   
+# 1. Service set-up   
 
 ***
 
@@ -29,8 +30,68 @@ This document contains information on how to set-up **SAP Solution Manager** ser
 ```
     4. (Optional) Set sensitive data in user secrets. (in development "ConfigStoreConnection").
     5. (Optional) Change Serilog settings in appsetting.json if needed.
-    
-# Set up Symbio to use the service   
+
+
+# 2. Setting SolMan interface run on premise 
+Step two is needed only if the solman microservice is isntalled on premise.
+Here it will be explained how to set up the solman microservice on IIS to run on an on premise solution.
+
+## 2.1 Get zip file of a microservice build
+
+You can get it on the ftp 
+
+## 2.2 Configure the parameters json to create application site
+
+Download the parameters json from here:
+http://operations.symbioworld.com/
+Parameters.json will be used by the powershell sciprt called Install.ps1. 
+
+Open the paramaters.json
+
+The following parameters should be changed:
+
+    "SourcePath": - path to your zip file of the microservice 
+    "BaseTargetPath": - path to where the script will unziped
+    "InstanceName" : - should be Symbio-Service-SolMan
+    "IISSettings":
+            "SiteName": - should be Symbio-Service-SolMan
+            "ApplicationPoolName": - should be Symbio-Service-SolMan
+            "ApplicationPoolUser": - should be the current user example (INT\username)
+            "ApplicationPoolPassword": - should be the user password
+            "Bindings": 
+                "Protocol": "https"
+                "Port": - use available port
+                "HostName": - give it a wanted hostname
+                "CertificateHash": - provide the certificate hash you want to use ( found in the iis -Server Certificates. It should be in local machine , personal or trusted root )
+                "CertificateCN" : - provide name of certificate (found in the iis -Server Certificates)
+                
+    "AppSettings":-
+        "ConfigStoreConnection": - give right connection string to the database( you have to create the database yourself)
+        
+## 2.3 Run the scipt
+Turn on powershell.
+Navigate to the folder where you scipt is.
+Run the command :
+Set-ExecutionPolicy
+Provide the parameter called Execution policy : unrestricted.
+
+Then run the following line:
+ ./Install.ps1 -ParametersFile symbio-service-solman.parameters.json
+ 
+ This will create the application pool and site for the microservice.
+ 
+ To check if the site is working your can call this request from your browser
+ https://{domain}:{port}/api/values.
+ it should return a simple response just to make sure its working.
+ 
+## 2.4 Set the SolMan certificate to be trusted
+ The client should provide te valid certificates for the solman microservice and for the solman API.
+ 
+ If for some reason the client cant provide the certificates, in order for the microservice to work he has to comunicate with SolMan api.
+ SolMan API could have a certificate that is not trusted so you  have to export it to your computer and then put it into the MMC -> Certificates-> Trusted Root Certification Authorities. This way the connection will be safe.
+ 
+ 
+# 3. Set up Symbio to use the service   
 
 ***
 <pre><code>
@@ -81,3 +142,5 @@ This document contains information on how to set-up **SAP Solution Manager** ser
 ![Test](media/Storage.PNG)
 
 ***
+
+
