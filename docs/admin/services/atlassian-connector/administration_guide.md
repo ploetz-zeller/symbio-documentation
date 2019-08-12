@@ -23,6 +23,7 @@ The service is currently made available as a stand alone service on Azure. It us
 1. Add the values that is relevant for your Jira instance
    1. ![activate](media/extSysConfig2.png)
    1. (Optional) Add additional configuration to the external system in the settings box in JSON format. Here you can "map" the Symbio stereotypes for your requirements to the equivalent issue types in Jira, as well as the attributes you wish to map between the two systems. Example:
+
     ```json
         {"ObjectTypes":[
             {   "Active": true,
@@ -52,21 +53,22 @@ The service is currently made available as a stand alone service on Azure. It us
             }]
         }
     ```
+
 1. The default conversion settings are the following:
 Object Types:
-| Symbio requirement stereotype 	| Jira issue type 	|
-|-------------------------------	|-----------------	|
-| Epic                          	| Epic            	|
-| User Story                    	| Story           	|
-| Feature                       	| Epic            	|
-| PBI                           	| Story           	|
+| Symbio requirement stereotype | Jira issue type |
+|--- |--- |
+| Epic | Epic
+| User Story | Story
+| Feature | Epic
+| PBI | Story
 
 Attributes:
-| Symbio attribute 	    | Jira attribute 	|
-|------------------	    |----------------	|
-| Name                  | Summary           |
-| Description           | Description       |
-| Custom Jira Status    | status            |
+| Symbio attribute 	    | Jira attribute
+|--- |--- |
+| Name                  | Summary
+| Description           | Description
+| Custom Jira Status    | status
 
    *Please note that the system requires an admin user type on the Jira and Symbio systems for the interface to function correctly*
 
@@ -93,7 +95,6 @@ WARNING: You can remove the external system from the repository, but it may have
 1. Select Storage Collection and select "Storages" to view the list of storages in the Storage Collection
 1. Select the storage where the external system is loaded
 1. Click on the selected external system and set the drop-down to "Choose" ![choose external system](media/ExtSys_Choose.png)
-1. Note: you can also choose to delete the repository, when doing so it will also remove all the configurations
 
 ### Removal result
 
