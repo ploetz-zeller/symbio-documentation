@@ -23,7 +23,7 @@ Select the sub process you want to synchronize, and select the button in the exp
 Once the button is clicked the synchronization is started. 
 In a few seconds you can navigate to the SAP Solution Manager branch and check if the structure is synchronized.
 ***
-![Test](media/SAP Solution Manager-structure-simple.png)
+![Test](media/symbioSolManSync.png)
 ***
 
 #### Synchronization of documents
@@ -39,7 +39,7 @@ Go to processes-architecture. Select the sub process and add the created documen
 ***
 Synchronize the sub process, and the document will be shown.
 ***
-![Test](media/doc-SAP Solution Manager.png)
+![Test](media/symbioSolManSync2.png)
 ***
 The document will be synchronize only if:
 1. In has the link attached to it.
