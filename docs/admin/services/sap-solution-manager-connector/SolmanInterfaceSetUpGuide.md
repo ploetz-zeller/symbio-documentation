@@ -32,16 +32,16 @@ This document contains information on how to set-up **SAP Solution Manager** ser
 5. (Optional) Change Serilog settings in appsetting.json if needed.
 
 
-## 2. Setting SolMan interface run on premise 
-Step two is needed only if the solman microservice is isntalled on premise.
-Here it will be explained how to set up the solman microservice on IIS to run on an on premise solution.
-Prerequisites for setting solman interface on premise:
-* Running symbio instance(1904 or higher)
-* Valid relational database connection string for a database the microservice can use. An empty database has to be created manually.
-* Accessible SolMan instance ***https://{ip}:{port}/sap/opu/odata/sap/processmanagement/*** with provided valid certificate
-* Provided valid cefitficate for solman interface. Who is responsible for this?
-* For the machine where the microservie will run we need .Net Core Hosting bundle (for .Net core 2.2 applications) installed
-* Powershell version 5 or higher (so we can run the install script)
+## 2. Setting SAP Solution Manager run on premise 
+Step two is needed only if the SAP Solution Manager microservice is isntalled on premise.
+Here it will be explained how to set up the SAP Solution Manager microservice on IIS to run on an on premise solution.
+Prerequisites for setting SAP Solution Manager interface on premise:
+1. Running symbio instance(1904 or higher)
+2. Valid relational database connection string for a database the microservice can use. An empty database has to be created manually.
+3. Accessible SAP Solution Manager instance ***https://{ip}:{port}/sap/opu/odata/sap/processmanagement/*** with provided valid certificate
+4. Provided valid cefitficate for SAP Solution Manager interface. Who is responsible for this?
+5. For the machine where the microservie will run we need .Net Core Hosting bundle (for .Net core 2.2 applications) installed
+6. Powershell version 5 or higher (so we can run the install script)
 
 ### 2.1 Get zip file of a microservice build
 
@@ -92,11 +92,11 @@ Then run the following line:
  ***https://{domain}:{port}/api/values***.
  it should return a simple response just to make sure its working.
  
-### 2.4 Set the SolMan certificate to be trusted
- The client should provide te valid certificates for the solman microservice and for the solman API.
+### 2.4 Set the SAP Solution Manager certificate to be trusted
+ The client should provide te valid certificates for the SAP Solution Manager microservice and for the SAP Solution Manager API.
  
- If for some reason the client cant provide the certificates, in order for the microservice to work he has to comunicate with SolMan api.
- SolMan API could have a certificate that is not trusted so you  have to export it to your computer and then put it into the MMC -> Certificates-> Trusted Root Certification Authorities. This way the connection will be safe.
+ If for some reason the client cant provide the certificates, in order for the microservice to work he has to comunicate with SAP Solution Manager api.
+ SAP Solution Manager API could have a certificate that is not trusted so you  have to export it to your computer and then put it into the MMC -> Certificates-> Trusted Root Certification Authorities. This way the connection will be safe.
  
  
 ## 3. Set up Symbio to use the service   
