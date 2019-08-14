@@ -33,7 +33,7 @@ After synchronizing the interface should look like this
 
 ---
 
-![Test](media/interfaceSAP Solution Manager.png)
+![Test](media/interface.png)
 
 ---
 
@@ -49,9 +49,6 @@ In Symbio the user can create an empty sub process. That is a sub process that d
 
 When this element is synchronized to SAP Solution Manager it will also be an empty sub process.
 
----
-
-![Test](media/emptySubProcess SAP Solution Manager.png)
 
 ---
 
@@ -76,7 +73,7 @@ In SAP Solution Manager one sub process cannot have another sub process as a chi
 
 ---
 
-![Test](media/subProcessNested SAP Solution Manager1.png)
+![Test](media/subProcessNestedSolMan1.png)
 
 ---
 
@@ -84,11 +81,11 @@ The nested diagram element should have a reference to a nested diagram.
 
 ---
 
-![Test](media/subProcessNestedSAP Solution Manager2.png)
+![Test](media/subProcessNestedSolMan2.png)
 
 ---
 
-![Test](media/subProcessNestedSAP Solution Manager3.png)
+![Test](media/subProcessNestedSolMan3.png)
 
 ---
 
@@ -120,7 +117,7 @@ Wehn this element is synchronized in SAP Solution Manager it will also be a sub 
 
 ---
 
-![Test](media/SubProcessReference SAP Solution Manager1.png)
+![Test](media/SubProcessReferenceSolMan1.png)
 
 ---
 
@@ -128,7 +125,7 @@ The diagram element should contain also a reference to the referenced sub proces
 
 ---
 
-![Test](media/SubProcessReference SAP Solution Manager2.png)
+![Test](media/SubProcessReferenceSolMan2.png)
 
 ---
 
