@@ -36,6 +36,7 @@ This document contains information on how to set-up **SAP Solution Manager** ser
 Step two is needed only if the SAP Solution Manager microservice is isntalled on premise.
 Here it will be explained how to set up the SAP Solution Manager microservice on IIS to run on an on premise solution.
 Prerequisites for setting SAP Solution Manager interface on premise:
+
 1. Running symbio instance(1904 or higher)
 2. Valid relational database connection string for a database the microservice can use. An empty database has to be created manually.
 3. Accessible SAP Solution Manager instance ***https://{ip}:{port}/sap/opu/odata/sap/processmanagement/*** with provided valid certificate
