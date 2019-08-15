@@ -54,12 +54,12 @@ Download the parameters json from here:
 http://operations.symbioworld.com/
 Parameters.json will be used by the powershell sciprt called Install.ps1. 
 
-Open the paramaters.json
+Open the parameters.json
 
 The following parameters should be changed:
 ```json
 "SourcePath": - path to your zip file of the microservice 
-"BaseTargetPath": - path to where the script will unziped
+"BaseTargetPath": - path to where the script will be unzipped
 "InstanceName" : - should be Symbio-Service-SolMan
 "IISSettings":
         "SiteName": - should be Symbio-Service-SolMan
@@ -77,9 +77,10 @@ The following parameters should be changed:
     "ConfigStoreConnection": - give right connection string to the database( you have to create the database yourself)
 ```
         
-### 2.3 Run the scipt
-Turn on powershell.
-Navigate to the folder where you scipt is.
+### 2.3 Run the script
+
+Turn on Powershell.
+Navigate to the folder where you script is.
 Run the command :
 Set-ExecutionPolicy
 Provide the parameter called Execution policy : unrestricted.
@@ -96,57 +97,8 @@ Then run the following line:
 ### 2.4 Set the SAP Solution Manager certificate to be trusted
  The client should provide te valid certificates for the SAP Solution Manager microservice and for the SAP Solution Manager API.
  
- If for some reason the client cant provide the certificates, in order for the microservice to work he has to comunicate with SAP Solution Manager api.
+ If for some reason the client cant provide the certificates, in order for the microservice to work he has to communicate with SAP Solution Manager API.
  SAP Solution Manager API could have a certificate that is not trusted so you  have to export it to your computer and then put it into the MMC -> Certificates-> Trusted Root Certification Authorities. This way the connection will be safe.
- 
- 
-## 3. Set up Symbio to use the service   
-
-1.  Go to Symbio System Administration home and switch to Editor mode.
-2.  Go to the admin menu, and navigate to the Extended configuration.
-3.  Create new type for an external system, and for the settings upload the SAP Solution Manager.syex file from the XmlFiles/Bin folder of the service project (if file is missing run the build.ps1 in XmlFiles to create the file).
-4.  **Important**: Check the &quot;Activate&quot; checkbox and click on the &quot;APPLY CHANGES&quot; button.
-5.  Go to the External Systems page.
-6.  Create an new instance of the external system type that you created in Step 3.
-7.  In the Service URL field enter the url of the SAP Solution Manager interface microservice.
-8.  In the SAP Solution Manager URL field enter the base url of the SAP Solution Manager API.
-9.  In the Username field enter your username for the SAP Solution Manager API.
-10. In In the Password field enter your password for the SAP Solution Manager API.
-11. If everything is configured correctly you can now select a SAP Solution Manager solution from the dropdown list.
-12. After you have selected the solution,  you can select a branch and the configuration is done.
-13. When you select storage collection, open Admin menu, open External Configuration an click on the &quot;APPLY CHANGES&quot; button.    
-14. Now, when you create new storage, you can select your SAP Solution Manager external system in External Systems. During this process Symbio will be linked to the microservice, and auth token will be created.   
-15. When storage is created, switch to an Editor mode, open Admin menu, open External Configuration an click on the &quot;APPLY CHANGES&quot; button.
-
-
-**Picutre 1 - New type for external system**   
-
-![Test](media/extConf1.PNG)
-
-
-
-**Picture 2 - Upload .SYEX file**   
-
-![Test](media/extConf2.PNG)
-
-
-
-**Picture 3 - Create new instance of SAP Solution Manager external system type**   
-
-![Test](media/extSystem1.PNG)
-
-
-
-**Picture 4 - Enter settings for SAP Solution Manager external system type**   
-
-![Test](media/extSystem2.PNG)
-
-
-
-**Picture 5 - Configure storage**  
-
-![Test](media/Storage.PNG)
-
 
 
 
