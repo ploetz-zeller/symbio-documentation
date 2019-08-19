@@ -61,13 +61,22 @@ nav:
           - Symbio Report Pool & Symbio Reporting:  admin/services/reporting-service/config-symbio.md
         - Operation: admin/services/reporting-service/operation.md
       - SAP Solution Manager Connector:
-        - Installation: admin/services/sap-solution-manager-connector/SolmanInterfaceSetUpGuide.md
-        - Symbio to SolMan synchronization: admin/services/sap-solution-manager-connector/SymbioToSolMansynchronization.md
-        - Symbio to SolMan diagram synchronization: admin/services/sap-solution-manager-connector/SymbioToSolManDiagramSynchronization.md
-        - Symbio to SolMan sub process diagram element synchronization: admin/services/sap-solution-manager-connector/SubProcessDiagramElementSync.md
+        - Introduction: 
+          - Overview: admin/services/sap-solution-manager-connector/Introduction_Overview.md
+          - Basic HowTo: admin/services/sap-solution-manager-connector/Introduction_BasicHowTo.md
+          - Recommended usage: admin/services/sap-solution-manager-connector/Introduction_RecommendedUse.md
+        - Installation:
+          - Service installation: admin/services/sap-solution-manager-connector/Installation_ServiceInstallation.md
+          - Configuration: admin/services/sap-solution-manager-connector/Installation_Configuration.md
+        - SAP Solution Manager to Symbio synchronization:
+          - Process structure synchronization: admin/services/sap-solution-manager-connector/SolManToSymbio_ProcessSync.md
+          - Library objects synchronization: admin/services/sap-solution-manager-connector/SolManToSymbio_LibraryObjectsSync.md
+        - Symbio to SAP Solution Manager synchronization:
+          - Process structure synchronization: admin/services/sap-solution-manager-connector/SymbioToSolMan_ProcessSync.md
+          - Diagram synchronization: admin/services/sap-solution-manager-connector/SymbioToSolMan_DiagramSync.md
+          - Subprocess diagram element synchronization: admin/services/sap-solution-manager-connector/SymbioToSolMan_SubProcessDiagramElementSync.md
         - Document Synchronization: admin/services/sap-solution-manager-connector/DocumentSynchronization.md
-        - Best Practice Tasks: admin/services/sap-solution-manager-connector/BestPracticeTasks.md
-        - SolMan to Symbio synchronization: admin/services/sap-solution-manager-connector/SolManToSymbioSync.md
+        - Task Consolidation: admin/services/sap-solution-manager-connector/TaskReferenceConsolidation.md
       - SVG To Image Converter:
         - Installation:
             - Scripted Installation: admin/services/rendering-service/installation-scripted.md
