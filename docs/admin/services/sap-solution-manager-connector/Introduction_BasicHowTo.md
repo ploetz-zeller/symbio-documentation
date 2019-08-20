@@ -4,6 +4,8 @@ The basics of how you can use the SAP Solution Manager Connector service, are ex
 
 ## How to use interface (basic)
 
+The user has to have the architect rights to be able to use the Solution Manager connector.
+
 Under *PROCESSES* facet, in the *architecture* view, there is **SAP** menu bar item.
 
 ![Test](media/HowToUse1.png)
