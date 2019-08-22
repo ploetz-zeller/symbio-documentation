@@ -33,32 +33,33 @@ This document contains information on how to set-up **SAP Solution Manager** ser
 
 
 ## 2. Setting SAP Solution Manager run on premise 
-Step two is needed only if the SAP Solution Manager microservice is isntalled on premise.
-Here it will be explained how to set up the SAP Solution Manager microservice on IIS to run on an on premise solution.
+Step two is needed only if the SAP Solution Manager micro-service is installed on premise.
+Here it will be explained how to set up the SAP Solution Manager micro-service on IIS to run on an on premise solution.
 Prerequisites for setting SAP Solution Manager interface on premise:
 
-1. Running symbio instance(1904 or higher)
-2. Valid relational database connection string for a database the microservice can use. An empty database has to be created manually.
+1. Running Symbio instance(1904 or higher)
+2. Valid relational database connection string for a database the micro-service can use. An empty database has to be created manually.
 3. Accessible SAP Solution Manager instance ***https://{ip}:{port}/sap/opu/odata/sap/processmanagement/*** with provided valid certificate
-4. Provided valid cefitficate for SAP Solution Manager interface. Who is responsible for this?
-5. For the machine where the microservie will run we need .Net Core Hosting bundle (for .Net core 2.2 applications) installed
+4. Provided valid certificate for SAP Solution Manager interface. Who is responsible for this?
+5. For the machine where the micro-service will run we need .Net Core Hosting bundle (for .Net core 2.2 applications) installed
 6. Powershell version 5 or higher (so we can run the install script)
 
-### 2.1 Get zip file of a microservice build
+### 2.1 Get zip file of a micro-service build
 
-You can get it on the ftp server: ***https://symbioworld.com/download/symbio/solmanconnector.zip***
+You can get it on the Symbio world FTP server.
+
 
 ### 2.2 Configure the parameters json to create application site
 
 Download the parameters json from here:
 http://operations.symbioworld.com/
-Parameters.json will be used by the powershell sciprt called Install.ps1. 
+Parameters.json will be used by the powershell script called Install.ps1. 
 
 Open the parameters.json
 
 The following parameters should be changed:
 ```json
-"SourcePath": - path to your zip file of the microservice 
+"SourcePath": - path to your zip file of the micro-service 
 "BaseTargetPath": - path to where the script will be unzipped
 "InstanceName" : - should be Symbio-Service-SolMan
 "IISSettings":
@@ -88,16 +89,16 @@ Provide the parameter called Execution policy : unrestricted.
 Then run the following line:
  ./Install.ps1 -ParametersFile symbio-service-solman.parameters.json
  
- This will create the application pool and site for the microservice.
+ This will create the application pool and site for the micro-service.
  
  To check if the site is working your can call this request from your browser
  ***https://{domain}:{port}/api/values***.
  it should return a simple response just to make sure its working.
  
 ### 2.4 Set the SAP Solution Manager certificate to be trusted
- The client should provide te valid certificates for the SAP Solution Manager microservice and for the SAP Solution Manager API.
+ The client should provide te valid certificates for the SAP Solution Manager micro-service and for the SAP Solution Manager API.
  
- If for some reason the client cant provide the certificates, in order for the microservice to work he has to communicate with SAP Solution Manager API.
+ If for some reason the client cant provide the certificates, in order for the micro-service to work he has to communicate with SAP Solution Manager API.
  SAP Solution Manager API could have a certificate that is not trusted so you  have to export it to your computer and then put it into the MMC -> Certificates-> Trusted Root Certification Authorities. This way the connection will be safe.
 
 
