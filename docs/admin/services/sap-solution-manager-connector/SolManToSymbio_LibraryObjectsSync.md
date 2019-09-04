@@ -32,10 +32,11 @@ synchronized as a reference to the *Process Step*, otherwise it will be linked t
 
 These elements can be reimported manually by clicking the ***Synchronize SAP Step Library Objects to Symbio*** in the Processes architecture view, under the SAP menu.
 
+Additionally, if a synchronized *Task* has an attached *Best Practice Task*, the *Application* and *Application service* that are attached to that *Best Practice Task* are also visible in the detail content of the *Task*:
+
+![Test](media/ConnectedApplications.png)
+
 ***
----
+## Synchronize SAP Step Library Objects to Symbio button
 
 ![Test](media/HowToUse2.png)
-
----
-***
