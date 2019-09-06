@@ -6,7 +6,7 @@ This document contains information on how to configure Symbio to use **SAP Solut
 
 1.  Go to Symbio System Administration home and switch to Editor mode.
 2.  Go to the Administration menu, and navigate to the Extended configuration.
-3.  Create new *Type for an external system*, and for the settings upload the SAP Solution     Manager **.syex** file from the XmlFiles/Bin folder of the service project (if file is missing run the build.ps1 in XmlFiles to create the file).
+3.  Create new *Type for an external system*, and for the settings upload the SAP Solution     Manager **.syex** file from the XmlFiles/Bin folder of the service project. See Versioning page to see which .syex file to use.
 
     ![Test](media/extConf1.PNG)
     ![Test](media/extConf2.PNG)

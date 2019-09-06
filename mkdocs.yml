@@ -68,6 +68,7 @@ nav:
         - Installation:
           - Service installation: admin/services/sap-solution-manager-connector/Installation_ServiceInstallation.md
           - Configuration: admin/services/sap-solution-manager-connector/Installation_Configuration.md
+          - Versioning: admin/services/sap-solution-manager-connector/Versioning.md
         - SAP Solution Manager to Symbio synchronization:
           - Process structure synchronization: admin/services/sap-solution-manager-connector/SolManToSymbio_ProcessSync.md
           - Library objects synchronization: admin/services/sap-solution-manager-connector/SolManToSymbio_LibraryObjectsSync.md
