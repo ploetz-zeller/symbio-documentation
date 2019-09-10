@@ -65,6 +65,7 @@ nav:
           - Overview: admin/services/sap-solution-manager-connector/Introduction_Overview.md
           - Basic HowTo: admin/services/sap-solution-manager-connector/Introduction_BasicHowTo.md
           - Recommended usage: admin/services/sap-solution-manager-connector/Introduction_RecommendedUse.md
+          - Limitations: admin/services/sap-solution-manager-connector/Introduction_Limitations.md
         - Installation:
           - Service installation: admin/services/sap-solution-manager-connector/Installation_ServiceInstallation.md
           - Configuration: admin/services/sap-solution-manager-connector/Installation_Configuration.md

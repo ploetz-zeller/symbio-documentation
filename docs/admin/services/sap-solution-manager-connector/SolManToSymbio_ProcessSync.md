@@ -44,3 +44,8 @@ You can choose what scope you want to sync, or if you leave it empty the whole s
 ![Test](media/solManSymbio2.png)
  When the synchronization is done there will be a new category added to the process house element.The whole synchronized structure will be in this category.
  The elements will be released and not editable. For now you can copy only diagram elements to another structure.
+
+ If a synchronized *Task* has an attached *Best Practice Task*, the *Application* and *Application service* that are attached to that *Best Practice Task* are also visible in the detail content of the *Task*:
+
+![Test](media/ConnectedApplications.png)
+ 
