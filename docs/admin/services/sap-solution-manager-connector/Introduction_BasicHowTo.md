@@ -51,10 +51,34 @@ Under **SAP** menu bar, there are 3 relevant menu items for the SAP Solution Man
 
 3. *Synchronize subprocess to SAP Solution Manager* button
 
-    When you have selected a subprocess in Symbio, by clicking this button you will trigger the synchronization of that subprocess and its hierarchy to SAP Solution Manager.
-
-    The same effect can be achieved by releasing the subprocess which has the attribute 'Sync on release' set to true:
-
+    This button should be used when you want to synchronize sub process from Symbio to SAP Solution Manager. It is important to select a sub process you want to synchronize and then click on the button "Synchronize sub process to SAP Solution Manager"
+	
+    ![Test](media/subprocesssync1.png)
+	 
+    ![Test](media/subprocesssync2.png)
+    If you select another element that is not a sub process you will get the following message:
+	
+    ![Test](media/subprocesssync3.png)
+	
+    When you click on the start synchronization button the synchronization is started and the button will be hidden.
+	
+    When the synchronization is finished you will get the following message:
+	
+    ![Test](media/subprocesssync4.png)
+	
+    The is a rule that if you start a synchronization of a sub process you will not be able to start a new one until the started synchronization is finished. The following message will appear:
+	
+    ![Test](media/subprocesssync5.png)
+	
+    If in the process of synchronation there is an error a messag will appear on the window:
+	
+    ![Test](media/subprocesssync6.png)
+	
+    Also the messages about the synchronization status will be written in the detail content of the sub process( if it is not released)
+	
     ![Test](media/SyncOnRelease.png)
+	
+    When you release a sub process and the attribute called Sync to SAP Solution Manager is checked then automaticaly after the release the sub process will be synchronized to SAP Solution Manager
+
 
 
