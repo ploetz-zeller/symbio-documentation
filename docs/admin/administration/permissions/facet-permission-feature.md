@@ -1,3 +1,16 @@
+### Purpose of the Feature "Facet Permissions"
+
+After activating the feature, you can assign permissions to each facet as you would for other elements. 
+Once you did so, these permissions are the defaults for elements within the facet and are added to 
+the default permissions of the user. In addition to the normal consequences of permissions for elements,
+the facet is completely hidden if the user does not have "Show" permission for the facet, i.e. the facet is not 
+visible, for example, in the navigation or in relations in the detail content of another element.
+
+If you only want to hide a facet in the navigation (e.g. in viewer mode), but want to grant "Show" 
+(and more) permissions for the elements of the facet, you cannot use the facet permissions for this. 
+For this purpose, you should use the "Hide Navigation" customization.   
+
+
 ### Activating the Feature "Facet Permissions"
 
 __You need to be an Administrator to activate this feature.__
