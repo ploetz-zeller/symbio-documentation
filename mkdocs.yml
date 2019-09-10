@@ -109,6 +109,7 @@ nav:
       - Permissions:
         - Permission levels explained: admin/administration/permissions/permission-levels-explained.md
         - Creating and assigning permission sets: admin/administration/permissions/create-assign-permissionsets.md
+        - The facet permissions feature: admin/administration/permissions/facet-permission-feature.md
       - Stereotypes:
         - Creating stereotypes: admin/administration/stereotypes/creating-stereotypes.md
         - Use stereotypes: admin/administration/stereotypes/use-stereotypes.md
