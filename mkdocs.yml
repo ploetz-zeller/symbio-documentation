@@ -89,6 +89,10 @@ nav:
           - Create ID Configuration: admin/services/unique-id-provider/config-provider-config.md
         - Manual: admin/services/unique-id-provider/manual-how-to-use.md
     - Administration:
+      - Getting Started:
+        - Introduction: admin/administration/introduction.md
+        - Database Pools: admin/administration/database-pools.md
+        - Storage Collections and-Storages: storage-collections-and-storages.md
       - External Systems:
         - Creating external systems: admin/administration/external-systems/creating-external-systems.md
         - Connect external systems: admin/administration/external-systems/connect-external-systems.md

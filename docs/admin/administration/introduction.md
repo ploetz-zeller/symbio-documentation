@@ -22,7 +22,7 @@ Generally specific admin tasks like configurable system settings, e.g. Document 
 
 #### 1.4.1.1 Import/Export (Data Migration)
 
-+  First always import a test import into a test database.
++  First always import a test import into a sandbox database.
 +  Use the Excel mass data export/import for translations. New objects will not be generated. If a released/expired version already exists, a new version will be generated. 
 +  Use the Excel-Importer to import from data from other systems, for example. The import includes only newly generated objects or refreshes of objects and does not include the deleting of objects.     
      - How attributes are refreshed can be configured (OVERRIDE, RETAIN or APPEND); how relations are refreshed can be configured, too (PredecessorSupportsMultipleSuccessors, SuccessorSupportsMultiplePredecessors and SuccessorDeleteDifferentOldPredecessors) 
@@ -79,3 +79,29 @@ In Symbio, user groups can be consolidated so that all references from one user 
 + Do not consolidate user groups if no regular database backup exists.
 + Do not consolidate user groups if you didn't perform an user consolidation test in a copy of productive database successfully. 
 + Do not consolidate user groups referenced in many processes/master data during peak business hours.
+
+
+# 2 Symbio Administration
+
+To enter the configuration area for the Symbio Administrator please click on the clog wheel symbol in the upper right corner:
+
+![screen](./media/5.1.png)
+
+The following is a short description of the various administration and configuration possibilities in the administration area.
+
+For Symbio version info, navigate to the bottom of the page. The version number includes the build date, the commit ID and the commit date of last code changes.
+Please reference to it in case of incidents if on-premise.
+
+![screen](./media/5.2.png)
+
+## 2.1 Log files
+
+Log files from Symbio application folder can be retrieved here. By default, only errors will be logged. Please contact your Symbio IT Administrator if the logging level needs to be increased to include warnings and informational log messages by changing settings in the Web.config file during downtime.
+
+## 2.2 Apply new configuration
+
+If the configuration/method (SYTX) has been changed only and the changes are not directly visible, the Admin can force the configuration change here but it should not be necessary.
+
+## 2.3 Generate reporting scripts
+
+SQL Reporting Services Database relevant only. Please contact us if you like to use Reporting within Symbio.
