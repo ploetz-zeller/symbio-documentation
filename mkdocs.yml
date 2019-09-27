@@ -92,7 +92,22 @@ nav:
       - Getting Started:
         - Introduction: admin/administration/introduction.md
         - Database Pools: admin/administration/database-pools.md
-        - Storage Collections and-Storages: storage-collections-and-storages.md
+        - Storage collections and databases: storage-collections-and-databases.md
+      - Home site:
+        - Configuration: admin/administration/home-site/home-site.md
+      - User Management:
+        - Users and user groups: admin/administration/user-management/users.md
+      - Permissions:
+        - Introduction: admin/administration/permissions/permissions.md
+        - Permission levels explained: admin/administration/permissions/permission-levels-explained.md
+        - Creating and assigning permission sets: admin/administration/permissions/create-assign-permissionsets.md
+      - Storage configuration:
+        - Settings: admin/administration/storage-settings/storage-settings.md
+        - Services: admin/administration/storage-services/storage-services.md
+        - Configuration: admin/administration/storage-configuration/storage-configuration.md
+      - Data Management:
+        - Introduction: admin/administration/data-management/data-management.md
+        - Importer: admin/administration/data-management/importer.md
       - External Systems:
         - Creating external systems: admin/administration/external-systems/creating-external-systems.md
         - Connect external systems: admin/administration/external-systems/connect-external-systems.md
@@ -101,9 +116,6 @@ nav:
       - Fact Sheets:
         - Creating fact sheets: admin/administration/fact-sheets/creating-factsheets.md
         - Use fact sheets: admin/administration/fact-sheets/use-factsheets.md
-      - Permissions:
-        - Permission levels explained: admin/administration/permissions/permission-levels-explained.md
-        - Creating and assigning permission sets: admin/administration/permissions/create-assign-permissionsets.md
       - Stereotypes:
         - Creating stereotypes: admin/administration/stereotypes/creating-stereotypes.md
         - Use stereotypes: admin/administration/stereotypes/use-stereotypes.md
