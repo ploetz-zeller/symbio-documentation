@@ -100,6 +100,26 @@ nav:
           - Create ID Configuration: admin/services/unique-id-provider/config-provider-config.md
         - Manual: admin/services/unique-id-provider/manual-how-to-use.md
     - Administration:
+      - Getting Started:
+        - Introduction: admin/administration/introduction.md
+        - Database Pools: admin/administration/database-pools.md
+        - Storage collections and databases: storage-collections-and-databases.md
+      - Home site:
+        - Configuration: admin/administration/home-site/home-site.md
+      - User Management:
+        - Users and user groups: admin/administration/user-management/users.md
+      - Permissions:
+        - Introduction: admin/administration/permissions/permissions.md
+        - Permission levels explained: admin/administration/permissions/permission-levels-explained.md
+        - Creating and assigning permission sets: admin/administration/permissions/create-assign-permissionsets.md
+        - The facet permissions feature: admin/administration/permissions/facet-permission-feature.md
+      - Storage configuration:
+        - Settings: admin/administration/storage-settings/storage-settings.md
+        - Services: admin/administration/storage-services/storage-services.md
+        - Configuration: admin/administration/storage-configuration/storage-configuration.md
+      - Data Management:
+        - Introduction: admin/administration/data-management/data-management.md
+        - Importer: admin/administration/data-management/importer.md
       - External Systems:
         - Creating external systems: admin/administration/external-systems/creating-external-systems.md
         - Connect external systems: admin/administration/external-systems/connect-external-systems.md
@@ -108,10 +128,6 @@ nav:
       - Fact Sheets:
         - Creating fact sheets: admin/administration/fact-sheets/creating-factsheets.md
         - Use fact sheets: admin/administration/fact-sheets/use-factsheets.md
-      - Permissions:
-        - Permission levels explained: admin/administration/permissions/permission-levels-explained.md
-        - Creating and assigning permission sets: admin/administration/permissions/create-assign-permissionsets.md
-        - The facet permissions feature: admin/administration/permissions/facet-permission-feature.md
       - Stereotypes:
         - Creating stereotypes: admin/administration/stereotypes/creating-stereotypes.md
         - Use stereotypes: admin/administration/stereotypes/use-stereotypes.md
