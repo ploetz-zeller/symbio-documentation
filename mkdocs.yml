@@ -103,7 +103,7 @@ nav:
       - Getting Started:
         - Introduction: admin/administration/introduction.md
         - Database Pools: admin/administration/database-pools.md
-        - Storage collections and databases: storage-collections-and-databases.md
+        - Storage collections and databases: admin/administration/storage-collections-and-databases.md
       - Home site:
         - Configuration: admin/administration/home-site/home-site.md
       - User Management:
