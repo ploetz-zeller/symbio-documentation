@@ -22,9 +22,9 @@ Generally specific admin tasks like configurable system settings, e.g. Document 
 
 #### 1.4.1.1 Import/Export (Data Migration)
 
-+  First always import a test import into a sandbox database.
-+  Use the Excel mass data export/import for translations. New objects will not be generated. If a released/expired version already exists, a new version will be generated. 
-+  Use the Excel-Importer to import from data from other systems, for example. The import includes only newly generated objects or refreshes of objects and does not include the deleting of objects.     
+-  First always import a test import into a sandbox database.
+-  Use the Excel mass data export/import for translations. New objects will not be generated. If a released/expired version already exists, a new version will be generated. 
+-  Use the Excel-Importer to import from data from other systems, for example. The import includes only newly generated objects or refreshes of objects and does not include the deleting of objects.     
      - How attributes are refreshed can be configured (OVERRIDE, RETAIN or APPEND); how relations are refreshed can be configured, too (PredecessorSupportsMultipleSuccessors, SuccessorSupportsMultiplePredecessors and SuccessorDeleteDifferentOldPredecessors) 
     - Elements which are NOT imported again by a new import will get the status “expired “
     - Deletions and Merges must be done manually using the import log
@@ -52,10 +52,10 @@ We currently do not recommend executing the following tasks:
 #### 1.4.2.2 Export
 
 In large databases it’s not recommended to execute the following tasks during business hours: 
-+ Do not export all processes via Massdata because of performance/memory issues on Web server. 
-+ The Excel-Importer only support files with plain data tables, so it explicitly does not support external data sources, macros, pivot tables or calculated fields/cells.  
-+ Do not use the Symbio Data export (SYMX) on the Process House or in large categories due to size of exporting data. 
-+ Do not use the Storage export (SYMX) in Storage Collection due to size of the database.  
+- Do not export all processes via Massdata because of performance/memory issues on Web server. 
+- The Excel-Importer only support files with plain data tables, so it explicitly does not support external data sources, macros, pivot tables or calculated fields/cells.  
+- Do not use the Symbio Data export (SYMX) on the Process House or in large categories due to size of exporting data. 
+- Do not use the Storage export (SYMX) in Storage Collection due to size of the database.  
 
 #### 1.4.2.3 Feature activation
 
@@ -64,21 +64,21 @@ Before you activate any feature, you have to verify it's correct usage in a sand
 ### 1.4.3 System settings
 
 Some system settings might affect all users and should be tested in a sandbox database before:
-+ Do not change SAML settings without any reason if it previously works. Please make use of multiple authentication providers in a sandbox database in same environment before.
+- Do not change SAML settings without any reason if it previously works. Please make use of multiple authentication providers in a sandbox database in same environment before.
 
 ### 1.4.4 User consolidation
 
 In Symbio, users can be consolidated so that all references from one user are transferred to another user. Depending on database size and Symbio version, this can be a very time-consuming step.
-+ Do not consolidate users if no regular database backup exists.
-+ Do not consolidate users if you didn't perform an user consolidation test in a copy of productive database successfully. 
-+ Do not consolidate users referenced in many processes/master data during peak business hours.
+- Do not consolidate users if no regular database backup exists.
+- Do not consolidate users if you didn't perform an user consolidation test in a copy of productive database successfully. 
+- Do not consolidate users referenced in many processes/master data during peak business hours.
 
 ### 1.4.5 User group consolidation
 
 In Symbio, user groups can be consolidated so that all references from one user group are transferred to another user group. Depending on database size and Symbio version, this can be a very time-consuming step.
-+ Do not consolidate user groups if no regular database backup exists.
-+ Do not consolidate user groups if you didn't perform an user consolidation test in a copy of productive database successfully. 
-+ Do not consolidate user groups referenced in many processes/master data during peak business hours.
+- Do not consolidate user groups if no regular database backup exists.
+- Do not consolidate user groups if you didn't perform an user consolidation test in a copy of productive database successfully. 
+- Do not consolidate user groups referenced in many processes/master data during peak business hours.
 
 
 # 2 Symbio Administration
