@@ -6,6 +6,7 @@ Three important componentes have to be choosen properly when installing on premi
  3..syex configuration file
  
 The rules when one of the three componets updates:
+Rule: No update of Symbio or SolMan interface without updating the other!
 
 Update of Symbio
 - If Symbio is updated also SolMan interface has to be updated
