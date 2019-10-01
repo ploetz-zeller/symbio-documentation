@@ -6,17 +6,17 @@ Three important componentes have to be choosen properly when installing on premi
  3..syex configuration file
  
 The rules when one of the three componets updates:
-Rule: No update of Symbio or SolMan interface without updating the other!
+Rule: No update of Symbio or SAP Solution Manager interface without updating the other!
 
 Update of Symbio
-- If Symbio is updated also SolMan interface has to be updated
+- If Symbio is updated also SAP Solution Manager interface has to be updated
 - Test custom attributes update (new custom attribute)
 
-Update of SolMan interface
-- if a new version of SolMan interface is using a new endpoint from Rest API then Symbio has to be updated (if there is a change like this inform admin and he knows that he has to update Symbio)
+Update of SAP Solution Manager interface
+- if a new version of SAP Solution Manager interface is using a new endpoint from Rest API then Symbio has to be updated (if there is a change like this inform admin and he knows that he has to update Symbio)
 
-Update of SolMan
-- SolMan interface has to be updated, Symbio should not be updated
+Update of SAP Solution Manager
+- SAP Solution Manager interface has to be updated, Symbio should not be updated
 
 All of the tree components have to be choosen right in order for the SAP Solution Manager interface to work properly.
 Before installing symbio and SAP Solution Manager to the customers on premise machine please contact some of the developers from msg (Luka or Vukasin) to tell you what version is best to install.
