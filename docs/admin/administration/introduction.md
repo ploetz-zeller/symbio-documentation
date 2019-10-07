@@ -53,7 +53,7 @@ We currently do not recommend executing the following tasks:
 
 In large databases it’s not recommended to execute the following tasks during business hours: 
 - Do not export all processes via Massdata because of performance/memory issues on Web server. 
-- The Excel-Importer only support files with plain data tables, so it explicitly does not support external data sources, macros, pivot tables or calculated fields/cells.  
+- The Excel-Importer only supports files with plain data tables, so it explicitly does not support external data sources, macros, pivot tables or calculated fields/cells.  
 - Do not use the Symbio Data export (SYMX) on the Process House or in large categories due to size of exporting data. 
 - Do not use the Storage export (SYMX) in Storage Collection due to size of the database.  
 
@@ -81,27 +81,27 @@ In Symbio, user groups can be consolidated so that all references from one user 
 - Do not consolidate user groups referenced in many processes/master data during peak business hours.
 
 
-# 2 Symbio Administration
+# Symbio Administration
 
-To enter the configuration area for the Symbio Administrator please click on the clog wheel symbol in the upper right corner:
+To enter the configuration area for the Symbio Administrator, please switch into Editor mode and click on the gear icon in the top right corner:
 
 ![screen](./media/5.1.png)
 
 The following is a short description of the various administration and configuration possibilities in the administration area.
 
-For Symbio version info, navigate to the bottom of the page. The version number includes the build date, the commit ID and the commit date of last code changes.
-Please reference to it in case of incidents if on-premise.
+For Symbio version info, navigate to the bottom of the page. The version number includes the build date, the commit ID and the commit date of last code changes. Please reference to it in case of incidents if on-premise.
 
 ![screen](./media/5.2.png)
 
-## 2.1 Log files
+## Log files
 
 Log files from Symbio application folder can be retrieved here. By default, only errors will be logged. Please contact your Symbio IT Administrator if the logging level needs to be increased to include warnings and informational log messages by changing settings in the Web.config file during downtime.
 
-## 2.2 Apply new configuration
+## Apply new configuration
 
 If the configuration/method (SYTX) has been changed only and the changes are not directly visible, the Admin can force the configuration change here but it should not be necessary.
+- By applying the new configuration this also forces to perform Symbio maintenance tasks which may take a while. Don't do it during business hours.
 
-## 2.3 Generate reporting scripts
+## Generate reporting scripts
 
 SQL Reporting Services Database relevant only. Please contact us if you like to use Reporting within Symbio.
