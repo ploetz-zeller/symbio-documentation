@@ -1,4 +1,4 @@
-# Attributes
+# Attributes get
 
 **api-version**: 1.0
 
@@ -39,8 +39,9 @@ POST /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/eleme
 | Name | Type | Description |
 |---|---|---|
 | message | string | The error message |
+| output | [OperationResultOutput](#operationresultoutput) | The result output. |
 | type | [OperationResultType](#operationresulttype) | The result type. |
-| data | [Error[]](#error) | The list of errors. |
+| data | [OperationError](#operationerror) | The list of errors. |
 
 ## Examples
 
@@ -48,10 +49,10 @@ POST /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/eleme
 
 #### Request
 ```
-POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/detail/elements/168c8bc4-779e-4697-8334-0026411d52f1/attributes/name
+POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/detail/elements/f4f3943d-6b3b-42a9-8a3a-30acf42ce7d5/attributes/name
 ```
 
-#### Reponse (200 OK)
+#### Response (200 OK)
 ```json
 {
     "count": 1,
@@ -66,11 +67,11 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/d
 
 ## Definitions
 
-### Element
-{!developer/rest-api/reference/models/element.md!}
+### OperationResultOutput
+{!developer/rest-api/reference/models/operationresultoutput.md!}
 
 ### OperationResultType
 {!developer/rest-api/reference/models/operationresulttype.md!}
 
-### Error
-{!developer/rest-api/reference/models/error.md!}
+### OperationError
+{!developer/rest-api/reference/models/operationerror.md!}

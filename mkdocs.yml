@@ -52,20 +52,33 @@ nav:
         - Configuration: admin/services/intrafind-search-proxy/configuration.md
       - Web Jobs Scheduler: admin/services/web-jobs-scheduler.md
       - Reporting Service:
+        - Overview: admin/services/reporting-service/overview.md
         - Installation:
-          - Preliminaries: admin/services/reporting-service/preliminaries.md
-          - RMS Scripted installation: admin/services/reporting-service/rms-install-scripted.md
-          - RMS Manual installation: admin/services/reporting-service/rms-install-manual.md
+          - SSRS & Reports: admin/services/reporting-service/deploy-ssrs.md
+          - Connector Web Service & Console Application: admin/services/reporting-service/deploy-connector-console.md
         - Configuration:
-            - SSRS Reports: admin/services/reporting-service/SSRSDeployReports.md
-            - RMS Configuration: admin/services/reporting-service/RMSconfiguration.md
-            - Troubleshooting: admin/services/reporting-service/troubleshooting.md
+          - Connector Web Service & Console Application: admin/services/reporting-service/config-connector-console.md
+          - Symbio Report Pool & Symbio Reporting:  admin/services/reporting-service/config-symbio.md
+        - Operation: admin/services/reporting-service/operation.md
       - SAP Solution Manager Connector:
-        - Installation: admin/services/sap-solution-manager-connector/SolmanInterfaceSetUpGuide.md
-        - Symbio to SolMan synchronization: admin/services/sap-solution-manager-connector/SymbioToSolMansynchronization.md
-        - Symbio to SolMan diagram synchronization: admin/services/sap-solution-manager-connector/SymbioToSolManDiagramSynchronization.md
-        - Symbio to SolMan sub process diagram element synchronization: admin/services/sap-solution-manager-connector/SubProcessDiagramElementSync.md
+        - Introduction: 
+          - Overview: admin/services/sap-solution-manager-connector/Introduction_Overview.md
+          - Basic HowTo: admin/services/sap-solution-manager-connector/Introduction_BasicHowTo.md
+          - Recommended usage: admin/services/sap-solution-manager-connector/Introduction_RecommendedUse.md
+          - Limitations: admin/services/sap-solution-manager-connector/Introduction_Limitations.md
+        - Installation:
+          - Service installation: admin/services/sap-solution-manager-connector/Installation_ServiceInstallation.md
+          - Configuration: admin/services/sap-solution-manager-connector/Installation_Configuration.md
+          - Versioning: admin/services/sap-solution-manager-connector/Versioning.md
+        - SAP Solution Manager to Symbio synchronization:
+          - Process structure synchronization: admin/services/sap-solution-manager-connector/SolManToSymbio_ProcessSync.md
+          - Library objects synchronization: admin/services/sap-solution-manager-connector/SolManToSymbio_LibraryObjectsSync.md
+        - Symbio to SAP Solution Manager synchronization:
+          - Process structure synchronization: admin/services/sap-solution-manager-connector/SymbioToSolMan_ProcessSync.md
+          - Diagram synchronization: admin/services/sap-solution-manager-connector/SymbioToSolMan_DiagramSync.md
+          - Subprocess diagram element synchronization: admin/services/sap-solution-manager-connector/SymbioToSolMan_SubProcessDiagramElementSync.md
         - Document Synchronization: admin/services/sap-solution-manager-connector/DocumentSynchronization.md
+        - Task Consolidation: admin/services/sap-solution-manager-connector/TaskReferenceConsolidation.md
       - SVG To Image Converter:
         - Installation:
             - Scripted Installation: admin/services/rendering-service/installation-scripted.md
@@ -87,6 +100,26 @@ nav:
           - Create ID Configuration: admin/services/unique-id-provider/config-provider-config.md
         - Manual: admin/services/unique-id-provider/manual-how-to-use.md
     - Administration:
+      - Getting Started:
+        - Introduction: admin/administration/introduction.md
+        - Database Pools: admin/administration/database-pools.md
+        - Storage collections and databases: admin/administration/storage-collections-and-databases.md
+      - Home site:
+        - Configuration: admin/administration/home-site/home-site.md
+      - User Management:
+        - Users and user groups: admin/administration/user-management/users.md
+      - Permissions:
+        - Introduction: admin/administration/permissions/permissions.md
+        - Permission levels explained: admin/administration/permissions/permission-levels-explained.md
+        - Creating and assigning permission sets: admin/administration/permissions/create-assign-permissionsets.md
+        - The facet permissions feature: admin/administration/permissions/facet-permission-feature.md
+      - Storage configuration:
+        - Settings: admin/administration/storage-settings/storage-settings.md
+        - Services: admin/administration/storage-services/storage-services.md
+        - Configuration: admin/administration/storage-configuration/storage-configuration.md
+      - Data Management:
+        - Introduction: admin/administration/data-management/data-management.md
+        - Importer: admin/administration/data-management/importer.md
       - External Systems:
         - Creating external systems: admin/administration/external-systems/creating-external-systems.md
         - Connect external systems: admin/administration/external-systems/connect-external-systems.md
@@ -108,29 +141,52 @@ nav:
         - Filter: developer/rest-api/how-to/filter.md
         - Errors: developer/rest-api/how-to/error.md
       - Reference:
-        - Storage Information: developer/rest-api/reference/info.md
-        - Facets: developer/rest-api/reference/facets.md
-        - Views: developer/rest-api/reference/views.md
+        - Storage Information: developer/rest-api/reference/storage-info.md
+        - Facets: 
+            - 1.0: developer/rest-api/reference/facets.md
+            - 4.0: developer/rest-api/reference/facets-4.md
+        - Views: 
+            - 1.0: developer/rest-api/reference/views.md
+            - 4.0: developer/rest-api/reference/views-4.md
+        - Configuration: developer/rest-api/reference/config.md
+        - Permission sets: developer/rest-api/reference/permission-sets.md
+        - Reporting: developer/rest-api/reference/reporting.md
+        - Versioning: developer/rest-api/reference/versioning.md
         - Elements:
           - List: developer/rest-api/reference/elements-list.md
           - Get: developer/rest-api/reference/elements-get.md
+          - Update: developer/rest-api/reference/elements-update.md
+          - Delete: developer/rest-api/reference/elements-delete.md
         - Attributes:
           - List: developer/rest-api/reference/attributes-list.md
           - Get: developer/rest-api/reference/attributes-get.md
         - Related:
           - List: developer/rest-api/reference/related-list.md
           - Get: developer/rest-api/reference/related-get.md
-          - Children: developer/rest-api/reference/children.md
-          - Content: developer/rest-api/reference/content.md
+          - Children: developer/rest-api/reference/related-children.md
           - Element Information: developer/rest-api/reference/elementsinfo-get.md
-          - Configuration: developer/rest-api/reference/config.md
+        - Content:
+          - Get: developer/rest-api/reference/content.md
+          - Create: developer/rest-api/reference/content-create.md
+        - Transitions:
+          - InProcess transitions: developer/rest-api/reference/transitions-inprocess.md
+          - Release transitions: developer/rest-api/reference/transitions-release.md
         - Release:
           - Create Version: developer/rest-api/reference/release-create-version.md
-          - Transitions: developer/rest-api/reference/release-transitions.md
           - Change State: developer/rest-api/reference/release-change-state.md
+        - Graphic:
+          - Get: developer/rest-api/reference/graphic-get.md
+        - Maintain: 
+          - Get: developer/rest-api/reference/maintain.md
     - Services:
       - External Systems: developer/services/external-systems.md
       - External System Types: developer/services/external-system-types.md
   - Azure:
     - Introduction: azure/index.md
     - Runbooks: azure/runbooks.md
+    - Infrastructure as code:
+      - Introduction: azure/infrastructure-as-code/introduction.md
+      - Azure resources: azure/infrastructure-as-code/azure-resources.md
+      - Azure resource templates: azure/infrastructure-as-code/azure-resource-templates.md
+      - Azure IaC Deployments: azure/infrastructure-as-code/azure-deployments.md
+      - Creating a project in Visual Studio: azure/infrastructure-as-code/creating-vs-project.md
