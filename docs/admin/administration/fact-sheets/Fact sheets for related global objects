@@ -1,0 +1,31 @@
+# Fact sheet: Related global objects
+
+Similar to a Fact sheet, the content of this process view displaying global objects on top of a process can be set up by help of individually designed widges.
+
+Please procede as follows:
+
+1. Go to Admin area an click on the "Fact sheet" tile. 
+
+2. Create a new Fact sheet.
+
+  ![screen](./media/Global_objects_new.png)
+
+3. Make settings in Detail Content. 
+
+  It is recommended to start with "Type settings" and select Processes => Main or Sub Process, then go to "Settings" to activate checkbox and choose required Diagram layout.
+
+  ![screen](./media/Global_objects_settings.png)
+  
+4. Create a new List widget and select "Global dependencies" in Seetings.
+
+  ![screen](./media/Global_objects_listwidget.png)
+  
+  ![screen](./media/Global_objects_globaldep.png)
+
+5. Verify graphical view.
+
+  Go to a process containing related global objects and select corresponding graphic view in the Toolbar. See related global objects on top of the process. Make changes to the layout if necessary.
+  
+  ![screen](./media/Global_objects_toolbar.png)
+  
+  ![screen](./media/Factsheet_global_objects.png)
