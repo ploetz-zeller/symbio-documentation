@@ -1,0 +1,7 @@
+# Fact sheet: Related global objects
+
+With this feature, a specific view of processes can be created. It allows to display attached global objects (like KPIs, measures etc.) aggregated on top of a Main or Sub Process. The user benefits from a clear presentation of all relevant information at a glance.
+
+![screen](./media/Factsheet_global_objects.png)
+
+For more information please refer to [Fact sheets for related global objects](../fact-sheets/fact-sheets_global_objects.md)
