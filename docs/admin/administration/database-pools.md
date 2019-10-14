@@ -1,6 +1,6 @@
-# 2 Database pools
+# Database pools
 
-## 2.1 Create database pools in Symbio
+## Create database pools in Symbio
 
 If everything is configured correctly,the the Database Pools tab will be available. 
 
@@ -13,7 +13,7 @@ Create a new database pool for a production system, for example.
 Note:
 Our general recommendation is to create a separate pool for each productive database. This makes it easier to recover data.
 
-## 2.2 Set up database pools in Symbio
+## Set up database pools in Symbio
 
 By default, a standard database pool is created, which contains the connection string from the WebConfig. 
 A connection string must be entered for the database pool in the detail content. This connection string points to the database in which future connected storages will be stored.
@@ -24,7 +24,7 @@ Each database pool has its own status, which can be found in the detail content 
 
 ![screen](./media/2.4.png)
 
-## 2.3 Assign a database pool to storages or storage collection
+## Assign a database pool to storages or storage collection
 
 Once the database pool has been created, a storage collection can be created. Select a database pool in the detail content. If no specific database pool shall be used, its recommended to use the standard database pool for the collection.
 
