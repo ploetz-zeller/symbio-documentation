@@ -1,6 +1,11 @@
-# 3 Storage collections and databases
+# Storage collections and databases
 
-The browser is started with …../_sysadmin/_admin. You log in as Administrator. 
+Please open the browser and call up the configured website.
+
+The link /_sysadmin/_admin will get you into the central administration.
+Example : https://localhost/_sysadmin/_admin
+
+You log in as Administrator.
 
 Existing storage collections are displayed and you can create new collections by clicking.
 
@@ -19,9 +24,9 @@ A new database is created in the storage collection under Tabular Views => Stora
 
 ![screen](./media/3.3.png)
 
-## 3.1 Configuration templates
+## Configuration templates
 
-### 3.1.1 Embed configuration template
+### Embed configuration template
 
 Before you create a database, it is absolutely necessary to select a configuration template and then integrate it. Please select the configuration template in the detail area of the database to be created and select a corresponding template.
 
@@ -31,7 +36,7 @@ Before you create a database, it is absolutely necessary to select a configurati
 
 Symbio comes with predefined configuration templates after installation. However, the configuration may differ from the standard. If there is a special configuration, please navigate via the home page to the tile "Configuration Templates".
 
-## 3.2 Add new configuration template (optional)
+### Add new configuration template (optional)
 
 ![screen](./media/3.6.png)
 
