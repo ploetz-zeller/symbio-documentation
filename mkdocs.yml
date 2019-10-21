@@ -133,15 +133,15 @@ nav:
         - Use stereotypes: admin/administration/stereotypes/use-stereotypes.md
     - Features:
       - General design:
-        - Architectural Permissions:
-        - Facet Permissions:
-        - Document digitalization:
-        - Document digitalization on all facets:
-        - Group management for favorites:
-        - Multiselect list feature:
-        - User filters:
+        - Architectural Permissions: admin/features/general-design/architectural-permissions.md
+        - Facet Permissions: admin/features/general-design/facet-permissions.md
+        - Document digitalization: admin/features/general-design/document-digitalization.md
+        - Document digitalization on all facets: admin/features/general-design/document-digitalization-all-facets.md
+        - Group management for favorites: admin/features/general-design/group-management-for-favorites.md
+        - Multiselect list feature: admin/features/general-design/multiselect-list-feature.md
+        - User filters: admin/features/general-design/user-filters.md
       - Process design:
-        - Best practice tasks:
+        - Best practice tasks: admin/features/process-design/best-practice-tasks.md
         - BPMN Icons: admin/features/process-design/bpmn-icons.md
         - Copy and move shapes: admin/features/process-design/copy-and-move-shapes.md
         - Enhancement of detailed modeling: admin/features/process-design/enhancement-of-detailed-modeling.md
@@ -149,10 +149,10 @@ nav:
         - Graphical comparison: admin/features/process-design/graphical-comparison.md
         - RACI instead of RASCI: admin/features/process-design/raci-instead-of-rasci.md
       - Repository design:
-        - ArchiMate Conversions:
+        - ArchiMate Conversions: admin/features/repository-design/archimate-conversions.md
         - Classification of information: admin/features/repository-design/classification-of-information.md
-        - Measure status: 
-        - Skill Feature:  
+        - Measure status: admin/features/repository-design/measure-status.md
+        - Skill Feature: admin/features/repository-design/skill-feature.md
   - Developer:
     - Introduction: developer/index.md
     - Getting Started: developer/getting-started.md
