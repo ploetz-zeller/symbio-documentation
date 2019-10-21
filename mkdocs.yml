@@ -131,6 +131,28 @@ nav:
       - Stereotypes:
         - Creating stereotypes: admin/administration/stereotypes/creating-stereotypes.md
         - Use stereotypes: admin/administration/stereotypes/use-stereotypes.md
+    - Features:
+      - General design:
+        - Architectural Permissions:
+        - Facet Permissions:
+        - Document digitalization:
+        - Document digitalization on all facets:
+        - Group management for favorites:
+        - Multiselect list feature:
+        - User filters:
+      - Process design:
+        - Best practice tasks:
+        - BPMN Icons: admin/features/process-design/bpmn-icons.md
+        - Copy and move shapes: admin/features/process-design/copy-and-move-shapes.md
+        - Enhancement of detailed modeling: admin/features/process-design/enhancement-of-detailed-modeling.md
+        - Fact sheet - Related global objects: admin/features/process-design/fact-sheet_related-global-objects.md
+        - Graphical comparison: admin/features/process-design/graphical-comparison.md
+        - RACI instead of RASCI: admin/features/process-design/raci-instead-of-rasci.md
+      - Repository design:
+        - ArchiMate Conversions:
+        - Classification of information: admin/features/repository-design/classification-of-information.md
+        - Measure status: 
+        - Skill Feature:  
   - Developer:
     - Introduction: developer/index.md
     - Getting Started: developer/getting-started.md
