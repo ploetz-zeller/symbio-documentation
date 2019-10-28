@@ -74,7 +74,7 @@ Attributes:
 1. Go to Admin -> Apply new configuration
 1. Select "Storages" on the top menu ![choose storage](media/storages.png)
 1. Choose an existing storage or create a new one
-1. Under the external systems group, select the configured external system under the "Atlassian" external systems ![choose external system](media/ExtSys_Choose.png)
+1. Under the external systems group, select the configured external system under the "Atlassian" external systems ![choose external system](media/ExtSys_choose.png)
 
 ### Result after adding the external system
 - Adding the external system to your repository will result in the following
@@ -91,7 +91,7 @@ WARNING: You can remove the external system from the repository, but it may have
 1. Log on to the _sysadmin/_admin area of your Symbio instance
 1. Select Storage Collection and select "Storages" to view the list of storages in the Storage Collection
 1. Select the storage where the external system is loaded
-1. Click on the selected external system and set the drop-down to "Choose" ![choose external system](media/ExtSys_Choose.png)
+1. Click on the selected external system and set the drop-down to "Choose" ![choose external system](media/ExtSys_choose.png)
 1. Note: you can also choose to delete the repository, when doing so it will also remove all the configurations
 
 ### Removal result
