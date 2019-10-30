@@ -53,6 +53,7 @@ nav:
         - Installation: admin/services/intrafind-search-proxy/installation.md
         - Configuration: admin/services/intrafind-search-proxy/configuration.md
       - Process Portal Exporter:
+        - Installation manual: admin/services/process-portal-exporter/install-service-manual.md
         - Configuration: admin/services/process-portal-exporter/configuration.md
         - Usage: admin/services/process-portal-exporter/usage.md
       - Reporting Service:
