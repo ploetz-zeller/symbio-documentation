@@ -52,7 +52,9 @@ nav:
       - Intrafind Search Proxy:
         - Installation: admin/services/intrafind-search-proxy/installation.md
         - Configuration: admin/services/intrafind-search-proxy/configuration.md
-      - Web Jobs Scheduler: admin/services/web-jobs-scheduler.md
+      - Process Portal Exporter:
+        - Configuration: admin/services/process-portal-exporter/configuration.md
+        - Usage: admin/services/process-portal-exporter/usage.md
       - Reporting Service:
         - Overview: admin/services/reporting-service/overview.md
         - Installation:
@@ -101,6 +103,7 @@ nav:
           - Create ID Provider: admin/services/unique-id-provider/config-create-provider.md
           - Create ID Configuration: admin/services/unique-id-provider/config-provider-config.md
         - Manual: admin/services/unique-id-provider/manual-how-to-use.md
+      - Web Jobs Scheduler: admin/services/web-jobs-scheduler.md
     - Administration:
       - Getting Started:
         - Introduction: admin/administration/introduction.md
