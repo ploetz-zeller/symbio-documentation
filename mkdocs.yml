@@ -137,7 +137,7 @@ nav:
       - General design:
         - Architectural Permissions: admin/features/general-design/architectural-permissions/architectural-permissions.md
         - Facet Permissions: admin/features/general-design/facet-permissions/facet-permissions.md
-        - Document digitalization: admin/features/general-design/document-digitalization.md
+        - Document digitalization: admin/features/general-design/document-digitalization/document-digitalization.md
         - Document digitalization on all facets: admin/features/general-design/document-digitalization-on-all-facets/document-digitalization-all-facets.md
         - Group management for favorites: admin/features/general-design/group-management-for-favorites/group-management-for-favorites.md
         - Multiselect list feature: admin/features/general-design/multiselect-list-feature/multiselect-list-feature.md
