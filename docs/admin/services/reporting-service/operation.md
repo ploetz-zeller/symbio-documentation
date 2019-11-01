@@ -43,3 +43,14 @@ dotnet Symbio.Service.Reporting.Console.dll <command> -u https://localhost/SYMBI
 Generally, you want to integrate changes made in Symbio on a regular basis into the ODS database. This is done by using the _crud_ command. It is a good idea to _schedule-crud_ for each connected storage so you don't need to execute that manually. Choose an appropriate interval, e.g. 15 minutes.
 
 The same is true for a _fullfetch_, consider to _schedule-fullfetch_ with an interval of one week for each connected storage.
+
+### Additional Parameters for Troubleshooting
+
+#### --timeout
+
+The --timeout parameter is available for
+* applyschema
+* fullfetch & schedule-fullfetch
+* crud & schedule-crud
+
+It defines (in seconds) how long the console will wait for Symbio to respond. For big databases and/or busy systems it will be necessary to increase this value by providing this parameter. Consider using *--timeout 1200* if you get timeout errors during your operations. This will increase the timeout from the default value to 1200 seconds / 20 minutes.

@@ -1,5 +1,9 @@
 # Creating fact sheets
 
+The fact sheet function allows the administrator to configure individual views for users. 
+
+The configuration of a fact sheet is like the start page configuration, except that for the descriptions there are only the text, list and placeholder widgets available as building blocks.
+
 The following example shows how to create and edit fact sheet for processes. Fact sheets can only be created by administrators.
 
 ---
@@ -47,7 +51,8 @@ A text widget is a widget that displays are user-defined text.
 
 ### List Widget
 
-A list widget provides an enumeration of related elements. In **List widget settings** you can set
+A list widget provides an enumeration of related elements. Please note that each list widget which is configured for built-in facets will decrease the overall performance.
+In **List widget settings** you can set
 
 - **Limit**: Maximum number of displayed related elements.
 - **Valid for related type**: The related element type you would like to enumerate.
