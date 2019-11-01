@@ -18,16 +18,16 @@ The service is currently made available as a service on Azure cloud. It uses an 
 
 ### Add a configured external system linked to the active service
 1. Select "External systems" on the main navigation bar
-1. Add a new external system with Type of "Process Portal Exporter" ![Add system](media/config-addExtSysOfType.png)
+1. Add a new external system with Type of "Process Portal Exporter" ![Add system](media/config-addextsysoftype.png)
    1. Name the External System "Process Portal Exporter"
-1. Add the URL for the instance of the micro-service ![settings](media/ppeSettings.png)
+1. Add the URL for the instance of the micro-service ![settings](media/ppesettings.png)
 
 ### Connect the external system on the storage
 *Note: only one storage can be connected to one instance of the service*
 1. Go Home -> Select the Storage Collection or create a new one
 1. Select "Storages" on the main navigation menu ![choose storage](media/storages.png)
 1. Choose an existing storage or create a new one
-1. Under the external systems group, select the configured external system under the "Process Portal Exporter" drop down items ![choose external system](media/chooseExtSys.png)
+1. Under the external systems group, select the configured external system under the "Process Portal Exporter" drop down items ![choose external system](media/chooseextsys.png)
 
 ### Result after adding the external system
 - Adding the external system to your repository will result in the following
@@ -45,7 +45,7 @@ The service is currently made available as a service on Azure cloud. It uses an 
 1. Go to Home -> select Storage Collection
 1. Select "Storages" to view the list of storages in the Storage Collection from the main navigation bar
 1. Select the storage where the external system is loaded
-1. Click on the selected external system and set the drop-down to "Choose" ![choose external system](media/chooseExtSys.png)
+1. Click on the selected external system and set the drop-down to "Choose" ![choose external system](media/chooseextsys.png)
 
 ### Removal result
 
