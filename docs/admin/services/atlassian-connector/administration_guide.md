@@ -77,7 +77,7 @@ Attributes:
 1. Go to Admin -> Apply new configuration
 1. Select "Storages" on the main menu bar ![choose storage](media/storages.png)
 1. Choose an existing storage or create a new one
-1. Under the external systems group, select the configured external system under the "Atlassian" external systems ![choose external system](media/ExtSys_Choose.png)
+1. Under the external systems group, select the configured external system under the "Atlassian" external systems ![choose external system](media/ExtSys_choose.png)
 
 ### Result after adding the external system
 - Adding the external system to your repository will result in the following
