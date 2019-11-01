@@ -75,6 +75,6 @@
 ```
 
 1. Restart site in IIS
-2. Check if the service / site is working by typing https://localhost:port(e.g. https://localhost:1234) - If all is OK, browser should open: ![ppstate](media/ppStatus.png)
+2. Check if the service / site is working by typing https://localhost:port(e.g. https://localhost:1234) - If all is OK, browser should open: ![ppstate](media/ppstatus.png)
 3. Service is now ready to be connected like external system... Please continue with [Configuration](configuration.md)
 
