@@ -66,8 +66,6 @@ The group Automation API offers some information for starting the action outside
 
 1. Automation via PowerShell is started as follows:
 
-      Please copy the text you see in the grey PowerShell box in a PowerShell and run it.
-
       ![screen](../media/6.53.png)
 
 2. The automation is started and the export file can be downloaded via the closed task.
