@@ -63,8 +63,10 @@ Please click on Run automation to start it directly in Symbio.
 #### Run automation object outside of Symbio
 
 The group Automation API offers some information for starting the action outside of Symbio. 
+
 1. Automation via PowerShell is started as follows:
-Please copy the text you see in the grey PowerShell box in a PowerShell and run it.
+
+      Please copy the text you see in the grey PowerShell box in a PowerShell and run it.
 
       ![screen](../media/6.53.png)
 

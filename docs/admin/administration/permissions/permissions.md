@@ -132,7 +132,7 @@ More than one User group can be assigned to the User. That means that one User c
 
 To edit user group and add or edit Permission sets of the user group, you need to select desired row and clicks on Change permission button. Change permission button is located in the toolbar, and it opens dialog box for editing permission sets of user group. 
 
-![screen](./media/chnage-permissions-user-groups.png)
+![screen](./media/change-permissions-user-groups.png)
 
 Dialog box for administrating User group, is similar to dialog box for editing Permission sets with similar options. There are two options that can be added or changed. Permission Sets and Users. To add new permission sets, you need to click on hamburger on the right side of permission sets part, and new dialog for selecting permission sets will be open. 
 
