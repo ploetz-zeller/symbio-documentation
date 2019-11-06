@@ -4,4 +4,4 @@ Activating this feature enables the Author to copy or move process flow objects.
 
 It is recommended to deactivate this feature in case of performance issues. As long it is deactivated, the corresponding icons do not appear in the Toolbar of the Main Content.
 
-![screen](Copymoveshapes./media/.png)
+![screen](../media/Copymove_shapes.png)
