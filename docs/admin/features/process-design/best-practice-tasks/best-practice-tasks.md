@@ -4,6 +4,6 @@ By activating this feature, the Sub Navigation 'best practice tasks' is added be
 
 Best practice tasks imported via the SAP Solution Manager interface are listed here and can be referenced to a process task. Editing a best practice task is not possible.
 
-![screen](./media/best_practice_tasks.png)   
+![screen](../media/best_practice_tasks.png)   
 
-Please refer to chapter [SAP Solution Manager Connector](/sap-solution-manager-connector/) to learn more details.  
+Please refer to chapter [SAP Solution Manager Connector](/docs/admin/services/sap-solution-manager-connector/introduction_overview.md) to learn more details.  

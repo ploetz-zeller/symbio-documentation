@@ -4,4 +4,4 @@ This feature allows to add the section "Measure status" in the Detail Content of
 
 The suitable status value can be selected from dropdown and is also available in the filter bar.
 
-![screen](./media/measure_status.png)
+![screen](../media/measure_status.png)

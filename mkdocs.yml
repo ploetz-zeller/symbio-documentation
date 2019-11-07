@@ -38,7 +38,6 @@ nav:
         - Example - Symbio & Azure AD: admin/installation-guide/saml-configuration/5_example-aad.md
         - Checklist: admin/installation-guide/saml-configuration/6_checklist.md
     - Services:
-      - Archiving process portal: admin/services/archiving-process-portal/archiving-process-portal.md
       - Atlassian Connector:
         - Administration guide: admin/services/atlassian-connector/administration_guide.md
         - Using Symbio to Atlassian: admin/services/atlassian-connector/using_symbioatlassian.md
@@ -149,11 +148,11 @@ nav:
       - Process design:
         - Best practice tasks: admin/features/process-design/best-practice-tasks/best-practice-tasks.md
         - BPMN Icons: admin/features/process-design/bpmn2.0-icons/bpmn-icons.md
-        - Copy and move shapes: admin/features/process-design/copy-and-move-shapes/copy-and-move-shapes.md
+        - Copy and move shapes: admin/features/process-design/copy-move-shapes/copy-and-move-shapes.md
         - Enhancement of detailed modeling: admin/features/process-design/enhancement-detailed-modeling/enhancement-of-detailed-modeling.md
         - Fact sheet - Related global objects: admin/features/process-design/fact_sheet_related-global-objects/fact-sheet_related-global-objects.md
         - Graphical comparison: admin/features/process-design/graphical_comparison/graphical-comparison.md
-        - RACI instead of RASCI: admin/features/process-design/raci_instead-rasci/raci-instead-of-rasci.md
+        - RACI instead of RASCI: admin/features/process-design/raci_instead_rasci/raci-instead-of-rasci.md
       - Repository design:
         - ArchiMate Conversions: admin/features/repository-design/archimate-conversions/archimate-conversions.md
         - Classification of information: admin/features/repository-design/classification-of-info/classification-of-information.md
