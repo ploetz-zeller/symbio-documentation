@@ -55,9 +55,9 @@ Invoke-RestMethod
 
 ## Example script to get released processes or documents
 ```powershell
-	function RS_Data {
+	function Fetch_Data {
 		[CmdletBinding()]
-		# Parameters for collecting data for R&S
+		# Parameters for collecting data
 		param(
 			# Server address parameter
 			[Parameter(Mandatory=$true, HelpMessage="Please enter the server address!", Position=1)]
@@ -93,10 +93,6 @@ Invoke-RestMethod
 		{
 			try
 			{
-				#$token = 'rbmeb89rqn6nm3bhwd0hg4x470'
-				#$collection = "SC1"
-				#$storage = "10Sept"
-			
 				# Depend of data type parameter, REST API request will call processes or documents facet
 				$data_type = $dataType
 				if($dataType -eq 1)
@@ -197,7 +193,7 @@ The script can output the json directly, or create a file with the same content,
 						 "1033":  "Sub Process 2",
 						 "1031":  "Teilprozess 2"
 					 },
-			"State":  null,
+			"State":  "InProgress",
 			"Type":  "subProcess",
 			"LinkAddress":  null,
 			"LinkTitle":  null
