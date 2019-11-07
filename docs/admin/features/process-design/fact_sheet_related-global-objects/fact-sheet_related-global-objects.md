@@ -4,4 +4,4 @@ By this feature, a specific process view can be selected in the ‘Graphic’ dr
 
 The graphical layout is defined by the Admin, similar to a fact sheet.
 
-Please refer to chapter [SAP Solution Manager Connector](/docs/admin/services/sap-solution-manager-connector/introduction_overview.md) for more details.  
+Please refer to [Fact sheet - global objects](/docs/admin/administration/fact-sheets/factsheet-global-objects.md) for more details.  
