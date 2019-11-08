@@ -5,3 +5,4 @@ This feature affects the DOCUMENTS facet. After activation a new section "Classi
 There are there are 3 different values to choose from the dropdown. If none of these values is selected, the corresponding document is seen as "public".
 
 ![screen](../media/Classification_information.png)
+

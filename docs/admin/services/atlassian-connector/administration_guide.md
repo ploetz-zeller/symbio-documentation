@@ -94,7 +94,7 @@ WARNING: You can remove the external system from the repository, but it may have
 1. Log on to the **/_sysadmin/_admin** area of your Symbio instance
 1. Select Storage Collection and select "Storages" to view the list of storages in the Storage Collection
 1. Select the storage where the external system is loaded
-1. Click on the selected external system and set the drop-down to "Choose" ![choose external system](media/ExtSys_Choose.png)
+1. Click on the selected external system and set the drop-down to "Choose" ![choose external system](media/ExtSys_choose.png)
 
 ### Removal result
 
