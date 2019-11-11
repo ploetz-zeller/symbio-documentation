@@ -46,7 +46,7 @@ After successful import you will find imported processes under Processes > Orpha
 
 Mapping files to import Symbio data (.symx) can be added here. For instance, repository data can be managed between the testing database and working database. The import will be done in the toolbar with the additional administration functionality.
 
-## Docment import config files
+## Document import config files
 
 Feature to import Microsoft Word documents which require specific config files.
 
@@ -59,6 +59,3 @@ Feature to import Microsoft Visio files. Default converter for BPMN/EPC exist bu
 Feature to import Microsoft Excel files from external systems (e.g. MEGA) which require specific config files to map items as required.
 
 ![screen](./media/6.66.png)
-
-
-
