@@ -67,8 +67,8 @@ Some permissions are part of Symbio application roles functionalities. These spe
 2. Rules that define what user can do – this can be additionally altered with permissions sets.
 
 Examples:
-1. Application role Author has defined rule that Author role cannot create Categories or Main Processes. This cannot be modified with New Element permissions defined in permission set for user. Application role Author has also rule, that sub process can be created, but this rule can be altered with permissions, if we remove New Element from permission set then, user won't be able to create Sub process as well.
 
+1. Application role Author has defined rule that Author role cannot create Categories or Main Processes. This cannot be modified with New Element permissions defined in permission set for user. Application role Author has also rule, that sub process can be created, but this rule can be altered with permissions, if we remove New Element from permission set then, user won't be able to create Sub process as well.
 2. Application role Author has defined rule that he cannot edit processes that other authors created. Adding permission that has Editing permission to the user won't change this rule that was defined by application role Author.
 
 #### Overview permissions and inheritance
@@ -132,7 +132,7 @@ More than one User group can be assigned to the User. That means that one User c
 
 To edit user group and add or edit Permission sets of the user group, you need to select desired row and clicks on Change permission button. Change permission button is located in the toolbar, and it opens dialog box for editing permission sets of user group. 
 
-![screen](./media/chnage-permissions-user-groups.png)
+![screen](./media/change-permissions-user-groups.png)
 
 Dialog box for administrating User group, is similar to dialog box for editing Permission sets with similar options. There are two options that can be added or changed. Permission Sets and Users. To add new permission sets, you need to click on hamburger on the right side of permission sets part, and new dialog for selecting permission sets will be open. 
 

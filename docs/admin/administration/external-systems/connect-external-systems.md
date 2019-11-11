@@ -16,4 +16,3 @@ Now, navigate to **Admin area** and then select **Service Hooks**.
 Expand the Service Hooks and you will see added external system.
 
 ![Added external system](./media/AddedExternalSystem.PNG "Added external system")
-
