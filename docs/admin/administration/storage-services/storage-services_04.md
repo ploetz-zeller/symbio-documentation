@@ -116,7 +116,7 @@ Attention: All graphs are generated for all languages and diagrams, which can ta
 
 3. It is possible to select the diagrams for which the generation is to be carried out. For example, the following task content will be used to generate a generation for all released diagrams:
 
-      ![screen](./media/6.55b.png)
+      ![screen](./media/6.55b.PNG)
 
 ### 6.4.2 Converter
 
