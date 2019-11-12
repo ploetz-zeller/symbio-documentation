@@ -6,13 +6,13 @@ Here you will learn how to disconnect added external system
 
 Navigate as an Editor to **SysAdmin area**, choose storage collection and click on the **Storages** tile.
 
-![Navigate to storages](./media/NavigateToStoragesv2.png)
+![Navigate to storages](./media/NavigateToStorages.png)
 
 Select a storage for which you want to disconnect a external system. In detail content **External systems** remove added external system.
 
-![Remove external system](./media/RemoveExternalSystemv2.png)
+![Remove external system](./media/RemoveExternalSystem.png)
 
 Now, navigate to **Admin area** and then select **Service Hooks**.
 Expand the Service Hooks and external system will not be visible any more.
 
-![Removed external system](./media/RemovedExternalSystemv2.png)
+![Removed external system](./media/RemovedExternalSystem.png)
