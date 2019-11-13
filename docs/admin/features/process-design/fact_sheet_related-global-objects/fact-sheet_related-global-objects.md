@@ -4,4 +4,6 @@ By this feature, a specific process view can be selected in the ‘Graphic’ dr
 
 The graphical layout is defined by the Admin, similar to a fact sheet.
 
-Please refer to [Fact sheet - global objects](/docs/admin/administration/fact-sheets/factsheet-global-objects.md) for more details.  
+![screen](../media/Factsheet_global_objects.png)
+
+Please refer to [Fact sheet - global objects](https://docs.symbioworld.com/admin/administration/fact-sheets/factsheet-global-objects) for more details.  

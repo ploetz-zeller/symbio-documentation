@@ -134,6 +134,7 @@ nav:
       - Fact Sheets:
         - Creating fact sheets: admin/administration/fact-sheets/creating-factsheets.md
         - Use fact sheets: admin/administration/fact-sheets/use-factsheets.md
+        - Fact sheet - Related global objects: admin/administration/fact-sheets/factsheet-global-objects.md
       - Stereotypes:
         - Creating stereotypes: admin/administration/stereotypes/creating-stereotypes.md
         - Use stereotypes: admin/administration/stereotypes/use-stereotypes.md
