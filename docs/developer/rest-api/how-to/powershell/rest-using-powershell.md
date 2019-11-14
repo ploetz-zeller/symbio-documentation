@@ -42,13 +42,8 @@ For more information please have a look at the documentation on Microsoft: [Micr
 			[ValidateNotNullOrEmpty()]
 			[string]$token,
 		
-			# Data type parameter 1. Processes 2. Documents
-			[Parameter(Mandatory=$true, HelpMessage="Please enter the data type - 1. Processes 2. Documents", Position=5)]
-			[ValidateNotNullOrEmpty()]
-			[int]$dataType,
-		
 			# Export data to file parameter. False is default. Parameter is not mandatory
-			[Parameter(Mandatory=$false, HelpMessage="Export result in json file?", Position=6)]
+			[Parameter(Mandatory=$false, HelpMessage="Export result in json file?", Position=5)]
 			[bool]$fileExport = $false
 		)
 
@@ -56,25 +51,11 @@ For more information please have a look at the documentation on Microsoft: [Micr
 		{
 			try
 			{
-				# Depend of data type parameter, REST API request will call processes or documents facet
-				$data_type = $dataType
-				if($dataType -eq 1)
-				{
-					$params = @{
-					Uri = "https://$($address)/$($collection)/$($storage)/_api/rest/facets/processes/views/lastReleasedProcesses/elements"
-					Headers = @{ 'symbio-auth-token' =  $token; 'api-version' = '2.0' }
-					Method = 'GET'
-					ContentType = 'application/json'
-					}
-				}
-				else
-				{
-					$params = @{
-					Uri = "https://$($address)/$($collection)/$($storage)/_api/rest/facets/knowledge/views/documentNewsGrid/elements"
-					Headers = @{ 'symbio-auth-token' =  $token; 'api-version' = '2.0' }
-					Method = 'GET'
-					ContentType = 'application/json'
-					}
+				$params = @{
+				    Uri = "https://$($address)/$($collection)/$($storage)/_api/rest/facets/processes/views/lastReleasedProcesses/elements"
+				    Headers = @{ 'symbio-auth-token' =  $token; 'api-version' = '2.0' }
+				    Method = 'GET'
+				    ContentType = 'application/json'
 				}
 
 				# Response of the API request. Data will be taken with depth of 10 levels
@@ -120,8 +101,7 @@ For more information please have a look at the documentation on Microsoft: [Micr
                     $today = Get-Date -Format yyyy-MM-ddTHH-mm-ss-ff
                     if($file_export -eq $true) 
                     {
-                        if($dataType -eq 1) { $arrayOfElements | ConvertTo-Json | Out-File ".\processes$($today).json" }
-                        else { $arrayOfElements | ConvertTo-Json | Out-File ".\documents$($today).json" }
+                        $arrayOfElements | ConvertTo-Json | Out-File ".\processes$($today).json"
                     }
                     else { $arrayOfElements | ConvertTo-Json }
 				}
@@ -185,7 +165,6 @@ The parameters are:
 1. Storage collection name
 1. Storage name
 1. Authentication token
-1. Data type (1 = Processes, 2 = Document)
 1. File export (true/false) (Optional parameter)
 
 ### Running it with user input
