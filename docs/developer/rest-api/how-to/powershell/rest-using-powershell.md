@@ -12,46 +12,9 @@
 ## Executing a REST command using Powershell
 The Invoke-RestMethod cmdlet sends HTTP and HTTPS requests to Representational State Transfer (REST) web services that returns richly structured data.
 
-PowerShell formats the response based to the data type. For an RSS or ATOM feed, PowerShell returns the Item or Entry XML nodes. For JavaScript Object Notation (JSON) or XML, PowerShell converts (or deserializes) the content into objects.
+PowerShell formats the response based to the data type. 
 
-Invoke-RestMethod
-- -Method &lt;WebRequestMethod&gt;
-- -FollowRelLink
-- -MaximumFollowRelLink &lt;Int32&gt;
-- -ResponseHeadersVariable &lt;String&gt;
-- -UseBasicParsing
-- -Uri &lt;Uri&gt;
-- -WebSession &lt;WebRequestSession&gt;
-- -SessionVariable &lt;String&gt;
-- -AllowUnencryptedAuthentication
-- -Authentication &lt;WebAuthenticationType&gt;
-- -Credential &lt;PSCredential&gt;
-- -UseDefaultCredentials
-- -CertificateThumbprint &lt;String&gt;
-- -Certificate &lt;X509Certificate&gt;
-- -SkipCertificateCheck
-- -SslProtocol &lt;WebSslProtocol&gt;
-- -Token &lt;SecureString&gt;
-- -UserAgent &lt;String&gt;
-- -DisableKeepAlive
-- -TimeoutSec &lt;Int32&gt;
-- -Headers &lt;IDictionary&gt;
-- -MaximumRedirection &lt;Int32&gt;
-- -MaximumRetryCount &lt;Int32&gt;
-- -RetryIntervalSec &lt;Int32&gt;
-- -Proxy &lt;Uri&gt;
-- -ProxyCredential &lt;PSCredential&gt;
-- -ProxyUseDefaultCredentials
-- -Body &lt;Object&gt;
-- -Form &lt;IDictionary&gt;
-- -ContentType &lt;String&gt;
-- -TransferEncoding &lt;String&gt;
-- -InFile &lt;String&gt;
-- -OutFile &lt;String&gt;
-- -PassThru
-- -Resume
-- -PreserveAuthorizationOnRedirect
-- -SkipHeaderValidationExtract from: [Microsoft documentation](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/invoke-restmethod?view=powershell-6)
+For more information please have a look at the documentation on Microsoft: [Microsoft documentation](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/invoke-restmethod?view=powershell-6)
 
 ## Example script to get released processes or documents
 ```powershell
@@ -98,7 +61,7 @@ Invoke-RestMethod
 				if($dataType -eq 1)
 				{
 					$params = @{
-					Uri = 'https://' + $address + '/' + $collection + '/' + $storage + '/_api/rest/facets/processes/views/lastReleasedProcesses/elements'
+					Uri = "https://$($address)/$($collection)/$($storage)/_api/rest/facets/processes/views/lastReleasedProcesses/elements"
 					Headers = @{ 'symbio-auth-token' =  $token; 'api-version' = '2.0' }
 					Method = 'GET'
 					ContentType = 'application/json'
@@ -107,7 +70,7 @@ Invoke-RestMethod
 				else
 				{
 					$params = @{
-					Uri = 'https://' + $address + '/' + $collection + '/' + $storage + '/_api/rest/facets/processes/views/documentNewsGrid/elements'
+					Uri = "https://$($address)/$($collection)/$($storage)/_api/rest/facets/knowledge/views/documentNewsGrid/elements"
 					Headers = @{ 'symbio-auth-token' =  $token; 'api-version' = '2.0' }
 					Method = 'GET'
 					ContentType = 'application/json'
@@ -152,11 +115,15 @@ Invoke-RestMethod
 				}
 				else
 				{
-					# If the data isn't empty, it's checking if parameter export to file is True
-					$file_export = $fileExport
-					$today = Get-Date -Format yyyy-MM-ddTHH-mm-ss-ff
-					if($file_export -eq $true) { $arrayOfElements | ConvertTo-Json | Out-File ".\data$($today).json" }
-					else { $arrayOfElements | ConvertTo-Json }
+                    # If the data isn't empty, it's checking if parameter export to file is True
+                    $file_export = $fileExport
+                    $today = Get-Date -Format yyyy-MM-ddTHH-mm-ss-ff
+                    if($file_export -eq $true) 
+                    {
+                        if($dataType -eq 1) { $arrayOfElements | ConvertTo-Json | Out-File ".\processes$($today).json" }
+                        else { $arrayOfElements | ConvertTo-Json | Out-File ".\documents$($today).json" }
+                    }
+                    else { $arrayOfElements | ConvertTo-Json }
 				}
 			}
 			catch [System.Management.Automation.CommandNotFoundException]
