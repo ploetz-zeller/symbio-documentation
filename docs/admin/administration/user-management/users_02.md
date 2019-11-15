@@ -18,7 +18,7 @@ In the case of an AD connection via SAML users are automatically created with Vi
 
 Users can be consolidated via the consolidate button: 
 
-![screen](./media/6.1.png)
+![screen](UserConsolidateButton.png)
 
 In the dialog which then appears, please choose the elements you want to consolidate with the master element and click OK.
 
@@ -29,9 +29,7 @@ The process of consolidating users cannot be reversed.
 #### 6.2.2.1 Set up user groups
 
 You set up user groups in the same way as you create users. Click the User groups tile.
-After you have created the user group using the New option and have assigned a name to the group, you can select the users for this group in the Detail Content area. Click the hamburger icon on the Users screen to display a list with all users. Select the required users and click OK. 
-
-![screen](./media/6.2.png)
+After you have created the user group using the New option and have assigned a name to the group, you can select the users for this group in the Detail Content area. Click the hamburger icon on the Users screen to display a list with all users. Select the required users and click OK.
 
 SAML user groups additionally have Application Roles which sets the Application roles of their user/members if SAML group management is activated.
 
@@ -45,4 +43,4 @@ The process of consolidating user groups cannot be reversed.
 
 ### 6.2.3 Permissions
 
-Please refer to [Permissions](./admin-manual-en-06-admin-settings-02-3-permissions.md)
+Please refer to [Permissions](../permissions/permissions.md)
