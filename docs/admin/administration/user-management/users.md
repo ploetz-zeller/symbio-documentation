@@ -17,7 +17,7 @@ You can assign a user to a number of user groups.
 
 In the case of an AD connection via SAML users are automatically created with Viewer rights by default if not changed.
 
-![screen](../media/user-insert-panel.png)
+![screen](../media/user-insert-panel.PNG)
 
 ### Consolidate users
 

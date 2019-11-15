@@ -59,7 +59,7 @@ Permission sets allow you to quickly and easily provide common levels of permiss
 
 Symbio provides several default permissions sets that can be used for most scenarios. Default permission sets with its permissions are shown in table below:
 
-![screen](./media/permission-set.png)
+![screen](./media/permission-set.PNG)
 
 Some permissions are part of Symbio application roles functionalities. These special permissions always force their rules as they are defined in application roles. There are two type of rules.
 
