@@ -114,7 +114,7 @@ Attention: All graphs are generated for all languages and diagrams, which can ta
 
 3. It is possible to select the diagrams for which the generation is to be carried out. For example, the following task content will be used to generate a generation for all released diagrams:
 
-      ![screen](../media/6.55b.png)
+      ![screen](../media/6.55b.PNG)
 
 ## Converter
 
@@ -246,7 +246,7 @@ This option should be selected if you want an ID to be assigned automatically wh
 The configuration of your ID provider is successfully completed by automatically saving and entering all parameters.
 
 Note: The ID provider must be installed separately. Details can be found under the following link:
-http://docs.symbioworld.com/content/Articles/UniqueID/install-intro.html
+https://docs.symbioworld.com/admin/services/unique-id-provider/install-intro/
 
 ## Authentication providers
 

@@ -26,7 +26,7 @@ After you choose facet and element type you can move to the middle part of the s
 In the toolbar click on  **New**, and **choose** from the dropdown list the desired widget.
 
 In our example, we will choose **Text Widget**, **Picture Widget** and **List Widget**.
-![Choose from dropdown list](./media/Dropdown.png "Choose from dropdown list")
+![Choose from dropdown list](./media/DropDown.png "Choose from dropdown list")
 ![Result from dropdown list](./media/Result.png "Result from dropdown list")
 
 ---
@@ -90,5 +90,5 @@ A report widget will embed an report you set up in the Reporting view in the adm
 - **Reports**: Connect a report you would like to display in the fact sheet.
 
 ---
-After setting up a fact sheet you can [use the fact sheet](xref:usw-factsheets)
+After setting up a fact sheet you can [use the fact sheet](use-factsheets.md)
 
