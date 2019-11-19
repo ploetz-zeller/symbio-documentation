@@ -1,4 +1,4 @@
-# Creatig the Stereotypes
+# Creating the Stereotypes
 
 The following example shows how to create and edit stereotypes for processes.
 
@@ -18,4 +18,4 @@ Now you can enter a description on the right side like an image.
 
 *`Note: The image must be transparent and have a size of 100 * 250 pixels.`*
 
-Thus you have successfully created a stereotype
+Thus you have successfully created a stereotype.

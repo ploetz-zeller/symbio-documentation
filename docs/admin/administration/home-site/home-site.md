@@ -74,3 +74,9 @@ Here, please find an example of a table widget.
 ## Permit home sites
 
 Symbio supports the configuration of home sites for different user groups. In the Navigation tree, the admin creates a new site and creates the page as described above. After the page has been configured, an authorization group is assigned to the page. According to this principle, the administrator constructs the home sites for the groups and then authorizes the page in detail content.
+
+## Import home sites
+
+If you have modified our default home site, you need to remove our default home site in new storages before import.
+
+Moreover please use XML export and not SYMX for Startpages.

@@ -38,6 +38,7 @@ nav:
         - Example - Symbio & Azure AD: admin/installation-guide/saml-configuration/5_example-aad.md
         - Checklist: admin/installation-guide/saml-configuration/6_checklist.md
     - Services:
+      - Introduction: admin/services/introduction/introduction.md
       - Atlassian Connector:
         - Administration guide: admin/services/atlassian-connector/administration_guide.md
         - Using Symbio to Atlassian: admin/services/atlassian-connector/using_symbioatlassian.md
@@ -133,10 +134,12 @@ nav:
       - Fact Sheets:
         - Creating fact sheets: admin/administration/fact-sheets/creating-factsheets.md
         - Use fact sheets: admin/administration/fact-sheets/use-factsheets.md
+        - Fact sheet - Related global objects: admin/administration/fact-sheets/factsheet-global-objects.md
       - Stereotypes:
         - Creating stereotypes: admin/administration/stereotypes/creating-stereotypes.md
         - Use stereotypes: admin/administration/stereotypes/use-stereotypes.md
     - Features:
+      - Introduction: admin/features/introduction/introduction.md
       - General design:
         - Architectural Permissions: admin/features/general-design/architectural-permissions/architectural-permissions.md
         - Facet Permissions: admin/features/general-design/facet-permissions/facet-permissions.md
