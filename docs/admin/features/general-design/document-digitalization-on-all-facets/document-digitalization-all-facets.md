@@ -4,4 +4,4 @@ This feature allows to to define document templates for all futher facets. Edito
 
 If an activation for the PROCESSES and ORGANIZATION facets are required, please also activate the __Document digitalization__ feature.
 
-Please refer to [Configuration - Document Templates](/docs/admin/administration/storage-configuration/storage-configuration.md) for more details.
+Please refer to [Configuration - Document Templates](https://docs.symbioworld.com/admin/administration/storage-configuration/storage-configuration/) for more details.

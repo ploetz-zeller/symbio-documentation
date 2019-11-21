@@ -6,4 +6,4 @@ Best practice tasks imported via the SAP Solution Manager interface are listed h
 
 ![screen](../media/best_practice_tasks.png)   
 
-Please refer to chapter [SAP Solution Manager Connector](/docs/admin/services/sap-solution-manager-connector/introduction_overview.md) for more details.  
+Please refer to chapter [SAP Solution Manager Connector](https://docs.symbioworld.com/admin/services/sap-solution-manager-connector/Introduction_Overview/) for more details.  

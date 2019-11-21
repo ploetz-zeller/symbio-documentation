@@ -4,4 +4,4 @@ An important extension of the Continuous Delivery method is the option for custo
 
 In the following sections you will find a short description of all features. 
 
-For the management of features, please refer to [Configuration - Features](/docs/admin/administration/storage-configuration/storage-configuration.md) for more details.
+For the management of features, please refer to [Configuration - Features](https://docs.symbioworld.com/admin/administration/storage-configuration/storage-configuration/) for more details.

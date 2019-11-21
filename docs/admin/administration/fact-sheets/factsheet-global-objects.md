@@ -1,4 +1,4 @@
-# Fact sheet - related global objects
+# Fact sheet - Related global objects
 
 With this feature, the Administrator designs a layout to represent global objects on top of a Main Process or Sub Process. 
 
