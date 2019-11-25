@@ -9,22 +9,22 @@ ARIS data should be imported to an empty database unless you are absolutely sure
 
 To import ARIS data, it is required to set up the AML-import converter first. To do so navigate to administration page and choose AML import.
 
-![screen](./media/6.58.png)
+![screen](./media/aml_import.png)
 
 Create a new AML-import configuration. Enter name and click on New. 
 
-![screen](./media/6.59.png)
+![screen](./media/aml_import_config.png)
 
 After the new configuration has been created, click on Add in the detail content and follow the dialogue window to add the file. Custom configuration file is important for ARIS data to be imported successfully.
 
-![screen](./media/6.60.png)
-![screen](./media/6.61.png)
+![screen](./media/aml_add.png)
+![screen](./media/aml_configure_data.png)
 
 ### Import AML data
 
 When previous steps are completed, Symbio is ready to import data from ARIS. Choose Processes > Architecture in navigation menu and proceed to import setup. ARIS import is available in the toolbar with additional administration functionality.
 
-![screen](./media/6.62.png)
+![screen](./media/aris_import.png)
 
 Dialogue window will be opened where import process can be set up. 
 To start the importing process please follow these steps.
@@ -32,15 +32,15 @@ To start the importing process please follow these steps.
 - Choose configuration file (created in previous step)   
 - Start the import process by clicking OK
 
-![screen](./media/6.63.png)
+![screen](./media/aris_import_settings.png)
 
 The process will run in background and will take some time depending on ARIS xml file size. You can watch the event log, as well as download the report of the process in Info-board.
 
-![screen](./media/6.64.png)
+![screen](./media/import_info.png)
 
 After successful import you will find imported processes under Processes > Orphaned. If processes are not visible, please refresh the list. It can be also customized that imported Aris processes are part of the process house.
 
-![screen](./media/6.65.png)
+![screen](./media/import_orphaned.png)
 
 ## Symbio data import
 
@@ -58,4 +58,4 @@ Feature to import Microsoft Visio files. Default converter for BPMN/EPC exist bu
 
 Feature to import Microsoft Excel files from external systems (e.g. MEGA) which require specific config files to map items as required.
 
-![screen](./media/6.66.png)
+![screen](./media/excel_import.png)

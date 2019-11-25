@@ -222,11 +222,11 @@ Activate your settings by checkbox and click on 'Apply changes' in the toolbar.
 
 ## Fact sheets
 
-Please navigate to Fact sheets [here](/docs/admin/administration/fact-sheets/creating-factsheets.md).
+Please navigate to Fact sheets [here](https://docs.symbioworld.com/admin/administration/fact-sheets/creating-factsheets/).
 
 ## Stereotypes
 
-Please navigate to Stereotypes [here](/docs/admin/administration/stereotypes/creating-stereotypes.md).
+Please navigate to Stereotypes [here](https://docs.symbioworld.com/admin/administration/stereotypes/creating-stereotypes/).
 
 ## Manuals
 
