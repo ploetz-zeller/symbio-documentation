@@ -236,15 +236,15 @@ Default manuals are available. Customized manual templates can be added here.
 
 ## Reporting
 
-- will be pusblihed soon -
+Please refer to [Reporting Service](https://docs.symbioworld.com/admin/services/reporting-service/overview/).
 
 ## Navigation
 
 With this feature the help function can be specified in the header (question mark icon). 
 
-Create a new Category with a help entry below in the list. Specify the new help entry in the Detail Content,defining your required target and type of help. Then specify the facet and sub type for which it should be applied to. 
+Create a new Category with a help entry below in the list. Specify the new help entry in the Detail Content, defining your required target and type of help. Then specify the facet and sub type for which it should be applied to and confirm you activation by the checkbox.
 
-- content will follow soon - 
+Besides, for the Toolbar, you can create an Execute hook button for service hooks and an Open dialog button for an URL. Make your Navigation settings for which facet and type they should be valid and klick on the checkbox to activate. 
 
 ## Document Templates
 
@@ -282,7 +282,16 @@ After the document template has been created and the structure has been set up, 
 
 ## Validation rules
 
-- will be pusblished soon - 
+This functionality allows to set or modify validation rules that are checked by default before the release workflow of a process or object is started.
+
+![screen](../media/validation_rules.png)
+
+The validation rules are based on the BPMN 2.0 methodology but may be activated or deactivated as required. It is also possible to add new validation rules for specific facets, types etc. and to define a corresponding error message.
+
+Please be aware that if the Result type __Error__ is selected, the release workflow cannot be started, whereas a __Warning__ may be ignored via click on the checkbox in the dialog window. 
+
+![screen](../media/validation_rule_settings.png)
+
 
 ## Dynamic attributes 
 

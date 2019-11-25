@@ -245,8 +245,8 @@ This option should be selected if you want an ID to be assigned automatically wh
 
 The configuration of your ID provider is successfully completed by automatically saving and entering all parameters.
 
-Note: The ID provider must be installed separately. Details can be found under the following link:
-https://docs.symbioworld.com/admin/services/unique-id-provider/install-intro/
+Note: The ID provider must be installed separately. Details can be found under the following [link]
+(https://docs.symbioworld.com/admin/services/unique-id-provider/install-intro/).
 
 ## Authentication providers
 
