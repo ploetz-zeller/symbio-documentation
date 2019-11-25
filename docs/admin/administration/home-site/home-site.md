@@ -2,7 +2,7 @@
 
 Administrators can create different home sites and adjust the design of the widgets on the home site. 
 
-![screen](./media/4.0.png)
+![screen](./media/home_site.png)
 
 ## Create and edit home sites
 
@@ -11,13 +11,13 @@ Administrators can create and edit overview pages and embedded pages.
 Using the pen in the lower right corner of the home site or the button configuration in the sub navigation bar you will enter the editing mode of the page you are currently on. 
 If you want to create a completely new home site, please click on the + in the sub navigation or click on New.
 
-![screen](./media/4.1.png)
+![screen](./media/create_home_site.png)
 
 Each start page can be configured for a specific audience by using permission on user groups (see 'Permit home sites'). 
 
 In the editing mode, you can adjust the background color of the home site.
 
-![screen](./media/4.2.png)
+![screen](./media/edit_home_site.png)
 
 Please save your changes by clicking on the green pen in the lower right corner.
 
@@ -27,7 +27,7 @@ Administrators can create, edit and move widgets.
 
 The following widgets are available via the button New:
 
-![screen](./media/4.3.png)
+![screen](./media/widgets.png)
 
 By clicking on the widget, the Detail Content appears where you can determine the design and the content (i.e. maturity level analysis) of the widget. 
 You can also choose name, description, size, background and text color. 
@@ -39,37 +39,37 @@ Moving widgets to another position on the page is done by clicking on them and t
 
 Here, please find an example of a text widget.
 
-![screen](./media/4.4.png)
+![screen](./media/textwidget.png)
 
 ### Link widget
 
 Here, please find an example of a link widget.
 
-![screen](./media/4.5.png)
+![screen](./media/linkwidget.png)
 
 ### List widget
 
 Here, please find an example of a list widget.
 
-![screen](./media/4.6.png)
+![screen](./media/listwidget.png)
 
 ### Chart widget
 
 Here, please find an example of a chart widget.
 
-![screen](./media/4.7.png)
+![screen](./media/chartwidget.png)
 
 ### Diagram widget
 
 Here, please find an example of a diagram widget.
 
-![screen](./media/4.8.png)
+![screen](./media/diagramwidget.png)
 
 ### Table widget
 
 Here, please find an example of a table widget.
 
-![screen](./media/4.9.png)
+![screen](./media/tablewidget.png)
 
 ## Permit home sites
 
