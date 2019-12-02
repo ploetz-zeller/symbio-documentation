@@ -2,14 +2,14 @@
 
 To enter the configuration area for the Symbio Administrator please click on the clog wheel symbol in the upper right corner:
 
-![screen](./media/5.1.png)
+![screen](./media/wheel.png)
 
 The following is a short description of the various administration and configuration possibilities in the administration area.
 
 For Symbio version info, navigate to the bottom of the page. The version number includes the build date, the commit ID and the commit date of last code changes.
 Please reference to it in case of incidents if on-premise.
 
-![screen](./media/5.2.png)
+![screen](./media/admin_area.png)
 
 ## Log files
 
