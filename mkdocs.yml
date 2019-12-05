@@ -119,6 +119,7 @@ nav:
         - Permission levels explained: admin/administration/permissions/permission-levels-explained.md
         - Creating and assigning permission sets: admin/administration/permissions/create-assign-permissionsets.md
         - The facet permissions feature: admin/administration/permissions/facet-permission-feature.md
+        - Permissions maintenance extension: admin/administration/permissions/permissions-maintenance-extension.md
       - Storage configuration:
         - Settings: admin/administration/storage-settings/storage-settings.md
         - Services: admin/administration/storage-services/storage-services.md
@@ -143,9 +144,11 @@ nav:
       - General design:
         - Architectural Permissions: admin/features/general-design/architectural-permissions/architectural-permissions.md
         - Facet Permissions: admin/features/general-design/facet-permissions/facet-permissions.md
+        - Permissions maintenance extension: admin/features/general-design/permissions-maintenance-extension/permissions-maintenance-extension.md
         - Document digitalization: admin/features/general-design/document-digitalization/document-digitalization.md
         - Document digitalization on all facets: admin/features/general-design/document-digitalization-on-all-facets/document-digitalization-all-facets.md
         - Group management for favorites: admin/features/general-design/group-management-for-favorites/group-management-for-favorites.md
+        - Group management for favorites - sharing favorites: admin/features/general-design/group-management-for-favorites-sharing/group-management-for-favorites-sharing.md
         - Multiselect list feature: admin/features/general-design/multiselect-list-feature/multiselect-list-feature.md
         - User filters: admin/features/general-design/user-filters/user-filters.md
       - Process design:

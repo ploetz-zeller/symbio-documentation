@@ -20,6 +20,7 @@ When creating users in Symbio it is important that you define application roles 
 Each application role has rights that are specific for that role and must be considered when working with permissions.
 
 Viewer:
+
 - Has right to navigate process landscape in process portal
 - Has right to navigate repository
 - Has right to search for content
@@ -27,6 +28,7 @@ Viewer:
 - Has right to create link to processes
 
 Author:
+
 - Has right to model sub processes (create sub processes)
 - Has right to make sub processes and repositories available for release
 - Can modify only processes that he created or processes where he is defined as additional author. Processes which don't have author defined can also be edited
@@ -34,17 +36,20 @@ Author:
 - Has right to connect existing repository objects to process
 
 Approver:
+
 - Has right to delegate decision about releasing or rejecting process or object to another person
 - Has right to reject the release
 - Has right to accept process or repository object to release it
 
 Architect:
+
 - Has right to create processes with Categories and Main Processes
 - Has right to create repository objects 
 - Has right to setup process house
 - Has right to modify and create objects with a hierarchical structure (organization, it, guidelines), repository objects with tabular structure (roles, input/output) and global tasks
 
 Administrator:
+
 - Has right to change every process and object in Symbio
 - Has right to administer users, user groups and permission sets
 - Has right to administer every aspect of Symbio configuration
