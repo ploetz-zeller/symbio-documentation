@@ -6,4 +6,4 @@ By this new feature, the assignment of permissions is made more comfortable. The
 
 ![screen](../media/permissions-maintenance-extension.png)
 
-Please refer to [Permissions maintenance extension](https://docs.symbioworld.com/admin/administration/permissions/permissiions-maintenance-extension/) for more details.
+Please refer to [Permissions maintenance extension](https://docs.symbioworld.com/admin/administration/permissions/permissions-maintenance-extension/) for more details.
