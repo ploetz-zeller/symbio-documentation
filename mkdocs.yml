@@ -174,6 +174,7 @@ nav:
         - Filter: developer/rest-api/how-to/filter.md
         - Errors: developer/rest-api/how-to/error.md
         - Symbio REST using Powershell: developer/rest-api/how-to/powershell/rest-using-powershell.md
+        - Using Javascript: developer/rest-api/how-to/javascript/index.md
       - Reference:
         - Storage Information: developer/rest-api/reference/storage-info.md
         - Facets: 
