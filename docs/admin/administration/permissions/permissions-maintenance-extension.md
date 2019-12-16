@@ -65,24 +65,49 @@ Finally, confirm with OK.
 
 ### 1. Human resources user
 
-    This scenario will show how the access rights of a specific business unit of the company can be specified in detail.
+This scenario will show how the access rights of a specific business unit of the company can be specified in detail.
 
-    Steps:
+Please proceed as follows:
 
-    a. Navigate to __User__ tile and create a new HR user, fill in Application role (e.g. Architect); alternatively create a user group for several HR users.
+a. Navigate to __User__ tile and create a new HR user, fill in Application role (e.g. Architect); alternatively create a user group for several HR users.
 
-    b. Navigate to __Permission sets__ tile and create HR specific permission sets (e.g. "HR Architect", "HR Author" etc.), defining for each set how elements can be edited.
+b. Navigate to __Permission sets__ tile and create HR specific permission sets (e.g. "HR Architect", "HR Author" etc.), defining for each set how elements can be edited.
 
-    c. Navigate to __Process House__ and set up a new Category or Main Process "HR" (or just select, if existent). 
+c. Navigate to __Process House__ and set up a new Category or Main Process "HR" (or just select, if existent). 
 
-    d. Select __Change permissions__ in the Toolbar; choose "Inherit from parent" and "Other users have no permissions" from dropdown
+d. Select __Change permissions__ in the Toolbar; choose "Inherit from parent" and "Other users have no permissions" from dropdown.
 
-    e. Create new __Permission types__, e.g. "Author permissions", and go to Detail content to assign corresponding HR permission set and HR user or user group.
+e. Create new __Permission types__, e.g. "Author permissions", and go to Detail Content to assign corresponding HR permission set as well as HR user or user group.
 
-    f. After click on __OK__ button, changes are applied; as the Admin is still logged in, he does not have any permission to see HR Category or Main Process
+f. After click on __OK__ button, changes are applied; as the Admin is still logged in, he does not have any permission to see HR Category or Main Process.
 
 
 ### 2. External user
 
-- will be published soon -
+In this scenario it will be explained how users (or user groups) should have limited access to a specific part of the Process House, e.g. a specific project in which external partners are involved. Permissions of the other users should remain unchanged.
+
+Please proceed as follows:
+
+a. Navigate to __User__ tile and create a new External user, select "Viewer" as Application role; alternatively create an External user group.
+
+b. Navigate to __Permission sets__ tile and create an External user-specific permission set, allowing just to open and to show an element.
+
+c. Navigate to __Process House__ and set up a new Category "Project XY" (or just select, if existent). 
+
+d. Select __Change permissions__ in the Toolbar; choose "Inherit from parent" and "Permissions of other users unchanged" from dropdown.
+
+e. Create new __Permission types__, e.g. "External Viewer permissions", and go to Detail Content to assign corresponding External permission set as well as External user or user group.
+
+f. After click on __OK__ button, changes are applied; and because standard permissions remain unchanged, the Admin has full access to Category "Project XY".
+
+e. Create __Permalink__ of Category "Project XY" and send it to External user or user group, who may now open and see Category "Project XY" by click on this link. 
+
+
+
+
+
+
+
+
+
 
