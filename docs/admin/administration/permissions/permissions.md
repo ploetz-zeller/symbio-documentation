@@ -275,17 +275,40 @@ Using this example Administrator could create any User group with necessary Perm
 
     ![screen](./media/user-scen2-h.png)
 
-#### Standard user with architectural rights only for a certain Category
+#### Project user
 
-The user has the application role "Architect" for a certain Category, whereas for the remaining Process House, he should only have Viewer rights.
+The user has the application role "Architect" for a certain Project Category or Process, whereas for the remaining Process House, he should only have "Viewer" rights.
 
-Please keep in mind:
+Please keep in mind that the user needs a default permission set which restricts the user's application role:
 
-1.	Restriction: You need to limit the permissions of the user by assigning a default permission set with View only.
+- Restriction: You need to limit the permissions of the user by assigning a default permission set with View only.
 
-2.	Extention: Then you need to assign this user to an user group which has architect permissions.
+- Extention: Then you need to assign this user to an user group which has architect permissions.
 
+Procedure as follows:
 
+1.  Create an user and grant editor application role, eg. Architect, so that this user is able to modify.
+
+2.	Go to Permission Sets and create a Permission Set for Viewer
+    -	Show Element
+    - Open Element
+
+3.	Create another permission set for Architects
+    - Activate all Permissions
+
+4.	Restrict the user permissions by using default permission set(s) for users!
+    -	Assign Viewer permission set to the user from step 1
+    -> Now this user cannot modify anything although user has editor application role
+
+5.	Extention of restriction:
+    - Go to user groups and create an user group which you need for processes/categories 
+    - Add user from step 1 to this user group
+    - Add permission set from step 3 to this user group
+
+6.	Allow certain category:
+    - Go to processes/categories:
+    - Assign user group from step 5 to your certain category -> permission calculation starts
+7.	Once permisssion calculation has been completed (after a few minutes), user from step 1 can modify your certain category.
 
 
 
