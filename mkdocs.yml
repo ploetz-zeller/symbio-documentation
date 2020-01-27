@@ -145,6 +145,7 @@ nav:
         - Architectural Permissions: admin/features/general-design/architectural-permissions/architectural-permissions.md
         - Facet Permissions: admin/features/general-design/facet-permissions/facet-permissions.md
         - Permissions maintenance extension: admin/features/general-design/permissions-maintenance-extension/permissions-maintenance-extension.md
+        - Permissions get copied from comparable user instead of recalculated: admin/features/general-design/permissions-copied/permissions-copied.md
         - Document digitalization: admin/features/general-design/document-digitalization/document-digitalization.md
         - Document digitalization on all facets: admin/features/general-design/document-digitalization-on-all-facets/document-digitalization-all-facets.md
         - Group management for favorites: admin/features/general-design/group-management-for-favorites/group-management-for-favorites.md
@@ -164,6 +165,7 @@ nav:
         - Classification of information: admin/features/repository-design/classification-of-info/classification-of-information.md
         - Measure status: admin/features/repository-design/measure-status/measure-status.md
         - Skill Feature: admin/features/repository-design/skill-feature/skill-feature.md
+        - Requirements at Main Processes: admin/features/repository-design/requirements-main-processes/requirements-main-processes.md
   - Developer:
     - Introduction: developer/index.md
     - Getting Started: developer/getting-started.md
