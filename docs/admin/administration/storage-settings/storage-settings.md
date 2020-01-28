@@ -26,13 +26,9 @@ In Symbio, English (1033) and German (1031) are supported. The entire user inter
 English (1033) is the default language.
 Other languages can be added as well. It is also possible to remove a language here, except the default language.
 
-Note: If the Symbio installation administrator has activated the translation feature via the Web.config, language-dependent attributes are **NOT** automatically translated online. Please use the Translate button in the Detail Content. The source language corresponds to the user's language settings.
+Note: If the Symbio installation administrator has activated the translation feature via the Web.config, language-dependent attributes are **NOT automatically translated** online. Please use the Translate button in the Detail Content. The source language corresponds to the user's language settings.
 
-After adding a new language it's required to apply the new configuration so that out-of-the-box JavaScript strings are being compiled. Alternately, a restart of the application pool over night would work as well.
-
-![screen](../media/apply-new-config.png)
-
-Please note that if you add new languages you will have to apply new configuration afterwards. 
+After adding a new language it's required to __apply the new configuration__ so that out-of-the-box JavaScript strings are being compiled. Alternately, a restart of the application pool over night would work as well.
 
 ![screen](../media/apply_new_config.png)
 
