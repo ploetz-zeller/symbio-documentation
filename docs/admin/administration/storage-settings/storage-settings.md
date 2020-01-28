@@ -32,6 +32,10 @@ After adding a new language it's required to apply the new configuration so that
 
 ![screen](../media/apply-new-config.png)
 
+Please note that if you add new languages you will have to apply new configuration afterwards. 
+
+![screen](../media/apply_new_config.png)
+
 ## System settings
 
 The following is a short description of the Symbio system settings.
