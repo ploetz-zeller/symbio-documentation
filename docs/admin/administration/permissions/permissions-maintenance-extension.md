@@ -49,9 +49,9 @@ Regarding the effect on other users, there are two possibilities:
 
     Example: The permissions of a new branch in the process structure should be differentiated for specific users or user groups. The existing access rights (e.g. Viewer rights) of the remaining employees remain unchanged.
 
-### 3. Create permission types
+### 3. Create specific permission types
 
-Click on __New__ to create new permission types, of course only usable for the selected element. It is recommended to create a permission type for each applicable permission set.
+Click on __New__ to create specific permission types, of course only usable for the selected element. It is recommended to create a specific permission type for each applicable permission set.
 
 ![screen](./media/permission-types.png)
 
