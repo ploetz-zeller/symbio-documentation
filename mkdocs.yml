@@ -45,8 +45,8 @@ nav:
         - Introduction: admin/services/intrafind-indexer/index.md
         - Installation: admin/services/intrafind-indexer/installation.md
         - Configuration: admin/services/intrafind-indexer/configuration.md
+        - Console Application: admin/services/intrafind-indexer/consoleapplication.md
         - About Logging: admin/services/intrafind-indexer/logging.md
-        - Technical Background: admin/services/intrafind-indexer/technical_description.md
       - Intrafind Search Proxy:
         - Installation: admin/services/intrafind-search-proxy/installation.md
         - Configuration: admin/services/intrafind-search-proxy/configuration.md
