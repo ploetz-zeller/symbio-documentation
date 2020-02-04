@@ -79,10 +79,10 @@
 If all settings are corretly set, please start a new powershell console as Administrator, change into the directory of the downloaded script, and run the following command:
 
 ```PowerShell
-.\Install.ps1 -ParametersFile .\symbio-service-intrafindindexer.parameters.json
+.\Install.ps1 -ParametersFile .\symbio-service-intrafind.parameters.json
 ```
 
-*`nice to know`*
+*nice to know*
 
 *- If you use a domain user. You must write [server]\\[user].*
 
