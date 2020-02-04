@@ -37,6 +37,9 @@ nav:
         - Example - Symbio & AD FS: admin/installation-guide/saml-configuration/4_example-adfs.md
         - Example - Symbio & Azure AD: admin/installation-guide/saml-configuration/5_example-aad.md
         - Checklist: admin/installation-guide/saml-configuration/6_checklist.md
+      - Symbio Apps Authentication:
+        - Azure AD: admin/installation-guide/symbio-apps-auth/azure-ad.md
+        - OneLogin: admin/installation-guide/symbio-apps-auth/onelogin.md
     - Services:
       - Introduction: admin/services/introduction/introduction.md
       - Atlassian Connector:
