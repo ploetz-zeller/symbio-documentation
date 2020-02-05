@@ -1,4 +1,4 @@
-# Configuring Azure AD for use with Symbio Apps
+# Configuring OneLogin for use with Symbio Apps
 
 1. In your OneLogin Administration, under "Applications" select "Add App"
    ![](media/onelogin-1.png)
