@@ -69,7 +69,7 @@ This scenario will show how the access rights of a specific business unit of the
 
 Please proceed as follows:
 
-1. Navigate to __User__ tile and create a new HR user, fill in Application role (e.g. Architect); alternatively create a user group for several HR users.
+1. Navigate to __User__ tile and create a new HR user, fill in Application role (e.g. Architect, _use the "Change permissions" dialog to set that in newer versions of Symbio_); alternatively create a user group for several HR users.
 
 2. Navigate to __Permission sets__ tile and create HR specific permission sets (e.g. "HR Architect", "HR Author" etc.), defining for each set how elements can be edited.
 
@@ -88,7 +88,7 @@ In this scenario it will be explained how users (or user groups) should have lim
 
 Please proceed as follows:
 
-1. Navigate to __User__ tile and create a new External user, select "Viewer" as Application role; alternatively create an External user group.
+1. Navigate to __User__ tile and create a new External user, select "Viewer" as Application role _(use the "Change permissions" dialog to set that in newer versions of Symbio)_; alternatively create an External user group.
 
 2. Navigate to __Permission sets__ tile and create an External user-specific permission set, allowing just to open and to show an element.
 

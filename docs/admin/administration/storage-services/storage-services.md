@@ -33,7 +33,7 @@ If you do not want to start the automation task via the Symbio surface but via a
       ![screen](../media/autom_task1.png)
 
 2. Furthermore, the token must have the appropriate rights. 
-Please adjust the application roles in the detail area:
+Please adjust the application roles in the detail area _(use the "Change permissions" dialog to set that in newer versions of Symbio)_:
 
       ![screen](../media/autom_task2.png)
 
