@@ -2,7 +2,7 @@
 
 ## Requirements
 
-Symbio-Version: 1812 or higher
+Symbio-Version: Release-Build 25th January 2020 or newer
 
 ## Configuring Symbio
 
