@@ -100,6 +100,8 @@ After opening admin panel, you can see all groups that you can administrate. In 
 
 Administration of users provide options for creating new or modifying existing Symbio users. All information for users is entered here: personal data, password, application roles etc.
 
+_Beginning with the February 2020 Release of Symbio you maintain a user's application role using the "Change permissions" dialog._
+
 Administration of user groups provide options for creating new and modifying existing user groups. User groups are used to group users with same permissions to groups, to make administration of permissions easier. User groups are connected to permission sets as well as users, making the connection between them.
 
 Administration of permission sets provide options for creating new and modifying existing permission sets. Selected permissions can be grouped together into permission sets to make administration of permissions easier. After you define permission sets they can be added to users or to user groups.
@@ -211,7 +213,7 @@ Steps:
 
      ![screen](./media/user-scen1-a.png)
 
-  2. Administrator create user ‘HR assistant’. User role is Architect. All other attributes that are needed are filled in. 
+  2. Administrator create user ‘HR assistant’. User role is Architect _(use the "Change permissions" dialog to set that in newer versions of Symbio)_. All other attributes that are needed are filled in. 
 
       ![screen](./media/user-scen1-b.png)
 
@@ -246,7 +248,7 @@ Steps:
 
 1. Administrator creates Permission sets “External user permission set”, which has none permission selected. This Permission set will later be added to External Users. Administrator then creates new Permission set "Viewer user permissions" which has Open and Show element permission selected. This Permission set will later be added to External User group.
 
-2. Administrator create user ‘External user’. User role is Viewer. All other attributes that are needed are filled in.
+2. Administrator create user ‘External user’. User role is Viewer _(use the "Change permissions" dialog to set that in newer versions of Symbio)_. All other attributes that are needed are filled in.
 
     ![screen](./media/user-scen2-b.png)
 
@@ -287,7 +289,7 @@ Please keep in mind that the user needs a default permission set which restricts
 
 Procedure as follows:
 
-1.  Create an user and grant editor application role, eg. Architect, so that this user is able to modify.
+1.  Create an user and grant editor application role, eg. Architect _(use the "Change permissions" dialog to set that in newer versions of Symbio)_, so that this user is able to modify.
 
 2.	Go to Permission Sets and create a Permission Set for Viewer
     -	Show Element
