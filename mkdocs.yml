@@ -60,7 +60,9 @@ nav:
         - Configuration: admin/services/process-portal-exporter/configuration.md
         - Usage: admin/services/process-portal-exporter/usage.md
       - Reporting Service:
-        - Overview: admin/services/reporting-service/overview.md
+        - Overview: 
+          - Introduction: admin/services/reporting-service/overview.md
+          - Authentication Token IsPermittedEverywhere: developer/is-permitted-everywhere.md
         - Installation:
           - SSRS & Reports: admin/services/reporting-service/deploy-ssrs.md
           - Connector Web Service & Console Application: admin/services/reporting-service/deploy-connector-console.md
@@ -135,6 +137,7 @@ nav:
         - Connect external systems: admin/administration/external-systems/connect-external-systems.md
         - Disconnect external systems: admin/administration/external-systems/disconnect-external-systems.md
         - Create token and inform external systems: admin/administration/external-systems/create-token-and-inform-external-systems.md
+        - Authentication Token IsPermittedEverywhere: developer/is-permitted-everywhere.md
       - Fact Sheets:
         - Creating fact sheets: admin/administration/fact-sheets/creating-factsheets.md
         - Use fact sheets: admin/administration/fact-sheets/use-factsheets.md
@@ -175,6 +178,7 @@ nav:
     - REST API:
       - How To:
         - Authentication Tokens: developer/rest-api/how-to/rest-symbio-auth-token-client-temp-example-documentation/rest-symbio-auth-token-client-temp-example-documentation.md
+        - Authentication Token IsPermittedEverywhere: developer/is-permitted-everywhere.md
         - How to get all released mainprocesses: developer/rest-api/how-to/quickstart-mainprocesses/quickstart-mainprocesses.md
         - Filter: developer/rest-api/how-to/filter.md
         - Errors: developer/rest-api/how-to/error.md
