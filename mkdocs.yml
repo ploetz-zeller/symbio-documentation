@@ -37,10 +37,15 @@ nav:
         - Example - Symbio & AD FS: admin/installation-guide/saml-configuration/4_example-adfs.md
         - Example - Symbio & Azure AD: admin/installation-guide/saml-configuration/5_example-aad.md
         - Checklist: admin/installation-guide/saml-configuration/6_checklist.md
+      - Symbio Apps Authentication:
+        - Azure AD: admin/installation-guide/symbio-apps-auth/azure-ad.md
+        - OneLogin: admin/installation-guide/symbio-apps-auth/onelogin.md
     - Services:
+      - Introduction: admin/services/introduction/introduction.md
       - Atlassian Connector:
         - Administration guide: admin/services/atlassian-connector/administration_guide.md
         - Using Symbio to Atlassian: admin/services/atlassian-connector/using_symbioatlassian.md
+      - Import of vsdx files: admin/services/import-of-vsdx-files/import-of-vsdx-files.md
       - Intrafind Indexer:
         - Introduction: admin/services/intrafind-indexer/index.md
         - Installation: admin/services/intrafind-indexer/installation.md
@@ -50,7 +55,10 @@ nav:
       - Intrafind Search Proxy:
         - Installation: admin/services/intrafind-search-proxy/installation.md
         - Configuration: admin/services/intrafind-search-proxy/configuration.md
-      - Web Jobs Scheduler: admin/services/web-jobs-scheduler.md
+      - Process Portal Exporter:
+        - Installation manual: admin/services/process-portal-exporter/install-service-manual.md
+        - Configuration: admin/services/process-portal-exporter/configuration.md
+        - Usage: admin/services/process-portal-exporter/usage.md
       - Reporting Service:
         - Overview: admin/services/reporting-service/overview.md
         - Installation:
@@ -69,7 +77,7 @@ nav:
         - Installation:
           - Service installation: admin/services/sap-solution-manager-connector/Installation_ServiceInstallation.md
           - Configuration: admin/services/sap-solution-manager-connector/Installation_Configuration.md
-          - Versioning: admin/services/sap-solution-manager-connector/Versioning.md
+          - Versioning: admin/services/sap-solution-manager-connector/Installation_Versioning.md
         - SAP Solution Manager to Symbio synchronization:
           - Process structure synchronization: admin/services/sap-solution-manager-connector/SolManToSymbio_ProcessSync.md
           - Library objects synchronization: admin/services/sap-solution-manager-connector/SolManToSymbio_LibraryObjectsSync.md
@@ -99,6 +107,7 @@ nav:
           - Create ID Provider: admin/services/unique-id-provider/config-create-provider.md
           - Create ID Configuration: admin/services/unique-id-provider/config-provider-config.md
         - Manual: admin/services/unique-id-provider/manual-how-to-use.md
+      - Web Jobs Scheduler: admin/services/web-jobs-scheduler.md
     - Administration:
       - Getting Started:
         - Introduction: admin/administration/introduction.md
@@ -113,6 +122,7 @@ nav:
         - Permission levels explained: admin/administration/permissions/permission-levels-explained.md
         - Creating and assigning permission sets: admin/administration/permissions/create-assign-permissionsets.md
         - The facet permissions feature: admin/administration/permissions/facet-permission-feature.md
+        - Permissions maintenance extension: admin/administration/permissions/permissions-maintenance-extension.md
       - Storage configuration:
         - Settings: admin/administration/storage-settings/storage-settings.md
         - Services: admin/administration/storage-services/storage-services.md
@@ -128,9 +138,37 @@ nav:
       - Fact Sheets:
         - Creating fact sheets: admin/administration/fact-sheets/creating-factsheets.md
         - Use fact sheets: admin/administration/fact-sheets/use-factsheets.md
+        - Fact sheet - Related global objects: admin/administration/fact-sheets/factsheet-global-objects.md
       - Stereotypes:
         - Creating stereotypes: admin/administration/stereotypes/creating-stereotypes.md
         - Use stereotypes: admin/administration/stereotypes/use-stereotypes.md
+    - Features:
+      - Introduction: admin/features/introduction/introduction.md
+      - General design:
+        - Architectural Permissions: admin/features/general-design/architectural-permissions/architectural-permissions.md
+        - Facet Permissions: admin/features/general-design/facet-permissions/facet-permissions.md
+        - Permissions maintenance extension: admin/features/general-design/permissions-maintenance-extension/permissions-maintenance-extension.md
+        - Permissions get copied from comparable user instead of recalculated: admin/features/general-design/permissions-copied/permissions-copied.md
+        - Document digitalization: admin/features/general-design/document-digitalization/document-digitalization.md
+        - Document digitalization on all facets: admin/features/general-design/document-digitalization-on-all-facets/document-digitalization-all-facets.md
+        - Group management for favorites: admin/features/general-design/group-management-for-favorites/group-management-for-favorites.md
+        - Group management for favorites - sharing favorites: admin/features/general-design/group-management-for-favorites-sharing/group-management-for-favorites-sharing.md
+        - Multiselect list feature: admin/features/general-design/multiselect-list-feature/multiselect-list-feature.md
+        - User filters: admin/features/general-design/user-filters/user-filters.md
+      - Process design:
+        - Best practice tasks: admin/features/process-design/best-practice-tasks/best-practice-tasks.md
+        - BPMN Icons: admin/features/process-design/bpmn2.0-icons/bpmn-icons.md
+        - Copy and move shapes: admin/features/process-design/copy-move-shapes/copy-and-move-shapes.md
+        - Enhancement of detailed modeling: admin/features/process-design/enhancement-detailed-modeling/enhancement-of-detailed-modeling.md
+        - Fact sheet - Related global objects: admin/features/process-design/fact_sheet_related-global-objects/fact-sheet_related-global-objects.md
+        - Graphical comparison: admin/features/process-design/graphical_comparison/graphical-comparison.md
+        - RACI instead of RASCI: admin/features/process-design/raci_instead_rasci/raci-instead-of-rasci.md
+      - Repository design:
+        - ArchiMate Conversions: admin/features/repository-design/archimate-conversions/archimate-conversions.md
+        - Classification of information: admin/features/repository-design/classification-of-info/classification-of-information.md
+        - Measure status: admin/features/repository-design/measure-status/measure-status.md
+        - Skill Feature: admin/features/repository-design/skill-feature/skill-feature.md
+        - Requirements at Main Processes: admin/features/repository-design/requirements-main-processes/requirements-main-processes.md
   - Developer:
     - Introduction: developer/index.md
     - Getting Started: developer/getting-started.md
@@ -140,6 +178,8 @@ nav:
         - How to get all released mainprocesses: developer/rest-api/how-to/quickstart-mainprocesses/quickstart-mainprocesses.md
         - Filter: developer/rest-api/how-to/filter.md
         - Errors: developer/rest-api/how-to/error.md
+        - Symbio REST using Powershell: developer/rest-api/how-to/powershell/rest-using-powershell.md
+        - Using Javascript: developer/rest-api/how-to/javascript/index.md
       - Reference:
         - Storage Information: developer/rest-api/reference/storage-info.md
         - Facets: 

@@ -75,5 +75,5 @@ The expected result should look like this
 3. Verify and test basic settings of configured Symbio website
 4. If Symbio website is not running, please start it (Manage Website/Start)
 
-Continue with the installation of the required and optional Symbio services [Preparation](./Requirements.html). For first steps see [First Steps](./Finishing.html).
+Continue with the installation of the required and optional Symbio services [Preparation](Requirements.md). For first steps see [First Steps](Finishing.md).
 

@@ -1,8 +1,6 @@
-# 6.4 Administration settings - Services
+# Services
 
-## 6.4 Services
-
-### 6.4.1 Automation
+## Automation
 
 Automation tasks are used for example:
 - importing of Active Directory users (useful to have all users in the database at once) 
@@ -10,13 +8,13 @@ Automation tasks are used for example:
 - rendering and storing of all existing diagrams for better performance especially in viewer mode
 - handle events of Symbio using Automation hooks
 
-![screen](./media/6.46.png)
+![screen](../media/automation.png)
 
-#### 6.4.1.1 Set up an automation task
+### Set up an automation task
 
 1. Please open the menu New, enter a name and click on New.
 
-      ![screen](./media/6.47.png)
+      ![screen](../media/setup_autom_task.png)
 
 2. You can now describe the automation tasks.
 
@@ -26,49 +24,49 @@ Automation tasks are used for example:
 
    b. Conversion file (XML format): Here you can change units in the database
 
-#### 6.4.1.2 Requirements for automation tasks via PowerShell etc.
+### Requirements for automation tasks via PowerShell etc.
 
 If you do not want to start the automation task via the Symbio surface but via a link like e.g. PowerShell, an authentication token is necessary for the automation task to authorize the caller.
 
 1. Please open the menu New, enter a name and click on New.
 
-      ![screen](./media/6.48.png)
+      ![screen](../media/autom_task1.png)
 
 2. Furthermore, the token must have the appropriate rights. 
-Please adjust the application roles in the detail area:
+Please adjust the application roles in the detail area _(use the "Change permissions" dialog to set that in newer versions of Symbio)_:
 
-      ![screen](./media/6.49.png)
+      ![screen](../media/autom_task2.png)
 
 3. Due to safety reasons, the validity of the token must be configured, too. 
 By default, the validity is 90 days. When the validity of the token has run out, the automation task cannot be started.  
 
-      ![screen](./media/6.50.png)
+      ![screen](../media/autom_task3.png)
 
       a. If emails are activated, the Symbio Administrator will receive an email as soon as the automation task is started from a new IP address for the first time
 
       b.	The token can be revoked for an IP address as well
 
-      ![screen](./media/6.51.png)
+      ![screen](../media/autom_task4.png)
 
-#### 6.4.1.3 Run automation object
+### Run automation object
 
 There are two ways to start an automation object:
 - directly in Symbio
 - Outside of Symbio via PowerShell, C# or JavaScript
 
-##### 6.4.1.3.1 Run automation object in Symbio
+#### Run automation object in Symbio
 
 Please click on Run automation to start it directly in Symbio.
 
-![screen](./media/6.52.png)
+![screen](../media/run_autom_object.png)
 
-##### 6.4.1.3.2 Run automation object outside of Symbio
+#### Run automation object outside of Symbio
 
 The group Automation API offers some information for starting the action outside of Symbio. 
-1. Automation via PowerShell is started as follows:
-Please copy the text you see in the grey PowerShell box in a PowerShell and run it.
 
-      ![screen](./media/6.53.png)
+1. Automation via PowerShell is started as follows:
+
+      ![screen](../media/run_autom_object_out1.png)
 
 2. The automation is started and the export file can be downloaded via the closed task.
 
@@ -89,17 +87,17 @@ Please copy the text you see in the grey PowerShell box in a PowerShell and run 
 
 3. As soon as the automation task has been started via the token, the IP address of the caller will be saved. In this case it is the local host address (IPv6).
 
-      ![screen](./media/6.54.png)
+      ![screen](../media/run_autom_object_out2.png)
 
-#### 6.4.1.4 Examples of automation tasks
+### Examples of automation tasks
 
-##### 6.4.1.4.1 Generating diagram graphics for caching in the database
+#### Generating diagram graphics for caching in the database
 
 An automation task can be used to generate diagram graphics for caching in the database. For this, please create an automation task as explained in Fehler! Verweisquelle konnte nicht gefunden werden. and link it to the example “Set_all_diagram_saved__svg_attributes.xml“.
 
-![screen](./media/6.55.png)
+![screen](../media/autom_task_example.png)
 
-The automation task can now be started as explained above.
+The automation task can be started as explained above.
 
 Attention: All graphs are generated for all languages and diagrams, which can take a long time depending on the number of diagrams and their complexity. Therefore, it can be useful to generate the diagrams in several steps or only on one part of the diagrams. To do this, edit the task file or connect a customized file to the automation object. 
 
@@ -116,17 +114,17 @@ Attention: All graphs are generated for all languages and diagrams, which can ta
 
 3. It is possible to select the diagrams for which the generation is to be carried out. For example, the following task content will be used to generate a generation for all released diagrams:
 
-      ![screen](./media/6.55b.png)
+      ![screen](../media/6.55b.PNG)
 
-### 6.4.2 Converter
+## Converter
 
 Feature to convert an existing process database (e.g. ARIS) into a Symbio database. Architecture, processes and objects are adopted or dropped according to predefined logic. Please contact us if you consider using that feature.
 
-### 6.4.3 Selection list services
+## Selection list services
 
 - will be published soon -
 
-### 6.4.4 Storage connections
+## Storage connections
 
 In case of specific company organizational structures, it is useful to “split” databases. For example, the master database can send released items to a slave database. A HTTPS connection is required.
 
@@ -134,19 +132,19 @@ By distributing data from the master to the slave, standardized contents can be 
 
 In the admin area under "Database Connections" the administrator creates a new slave database (IMPORTANT THE URL OF THE SLAVE DB AS ID e. g. https://url/Pundz/Slave1). The connection to the slave DB is then requested in Detail Content. In the same view the Admin of the Slave-DB accepts this request and both DBs are linked with each other. All released contents can now be copied to the slavedb by the admin by clicking on "Distribute". All contents of the master DB cannot be edited by the subordinate DBs.
 
-![screen](./media/6.67.png)
+![screen](../media/storage_connections.png)
 
-### 6.4.5 Service Hooks
+## Service Hooks
 
 Service hooks are configured callbacks for specific events. The events are defined in Symbio and depend on the service hook type.
 
-#### 6.4.5.1 Application Hooks
+### Application Hooks
 
 In case of an application hook the custom callback is a selected automation task. To create an application hook to the following steps:
 
 1. Open the New menu, enter a name and click on New:
 
-    ![screen](./media/6.56.png)
+    ![screen](../media/application_hooks.png)
 
 2. Define the event. The hook has to be a callback. You can select one of the following events:
 
@@ -159,9 +157,9 @@ In case of an application hook the custom callback is a selected automation task
 
 Once you have configured the settings the hook is active for the selected event. This means when you release a process all hooks of this event type Process released will be executed parallel during the state change phase.
 
-### 6.4.6 ID Providers
+## ID Providers
 
-#### 6.4.6.1 Before you start
+### Before you start
 
 After successful installation and connection of the ID Provider Service, a table with 2 columns is created in the ID Provider database. In this table, a new entry should be added for each consuming Symbio instance.
 
@@ -174,85 +172,85 @@ insert into IDProvider.Subscribers (subscriber, token) values (NEWID (),'myToken
 URL = https://IDProvider.com/
 Token = myToken
 
-#### 6.4.6.2 Create ID Provider
+### Create ID Provider
 
 Navigate to a database in Symbio. Then click on the cogwheel at the top right into the admin area of Symbio.
 
-![screen](./media/6.91.png)
+![screen](../media/create_id_provider1.png)
 
 Here you will find a tile with the name 'ID Providers'.
 
-![screen](./media/6.92.png)
+![screen](../media/create_id_provider2.png)
 
 Now you are in the overview of your ID provider. Click New and choose a name for your ID provider.
 
-![screen](./media/6.93.png)
+![screen](../media/create_id_provider3.png)
 
 Click on New to create it. In the next step, please select the provider you have created and enter the URL and token from chapter 1.1 on the right side of the detail content.
 
-![screen](./media/6.94.png)
+![screen](../media/create_id_provider4.png)
 
-![screen](./media/6.95.png)
+![screen](../media/create_id_provider5.png)
 
-#### 6.4.6.3 Create ID Provider Configuration
+### Create ID Provider Configuration
 
 There is a configuration to configure the ID provider, for example, which facets and objects it affects. A configuration is created under the service. Select the service and click on New to create the configuration.
 
-![screen](./media/6.96.png)
+![screen](../media/create_id_provider6.png)
 
 If you select this created configuration, you can define in the detail content how this ID should look like and which facets or objects it concerns.
 
-###### Format:
+#### Format:
 
-![screen](./media/6.97.png)
+![screen](../media/format1.png)
 
 This item describes how the composite unique ID should look like.
 In this field you can use various placeholders to create an individual ID. You will find hints and examples below in the detailed content.
 
- ![screen](./media/6.98.png)
+ ![screen](../media/format2.png)
 
 To illustrate this, a prefix 'Role-ID-' is selected and '{0}' is set behind it.
 
-![screen](./media/6.99.png)
+![screen](../media/format3.png)
 
 Thus, for example, this prefix is always used with each newly created ID for a role, followed by an ascending number.
 
-###### Facet and Type:
+##### Facet and Type:
 
 You can also configure under "Facet" and "Type" for which facet and underlying object this ID should be generated. For example, roles.
 
-![screen](./media/6.100.png)
+![screen](../media/format4.png)
 
-###### Valid for Attribute Type:
+##### Valid for Attribute Type:
 
 The field "Valid for Attribute Type" defines for which attribute this ID is entered in a role. In this example, the created ID is to be written to the ID attribute of the object.
 
-![screen](./media/6.101.png)
+![screen](../media/format5.png)
 
 It could also be written in the name field or some others. Clicking on the field displays all options.
 
-###### Allow refresh:
+##### Allow refresh:
 
 Select this option if you want to allow this ID to be updated automatically after changing the connected objects in the ID.
 
-![screen](./media/6.102.png)
+![screen](../media/format6.png)
 
-###### Get ID on Creation:
+##### Get ID on Creation:
 
 This option should be selected if you want an ID to be assigned automatically when a new object is created.
 
-![screen](./media/6.103.png)
+![screen](../media/format7.png)
 
-#### 6.4.6.4 Last but not least
+### Last but not least
 
 The configuration of your ID provider is successfully completed by automatically saving and entering all parameters.
 
-Note: The ID provider must be installed separately. Details can be found under the following link:
-http://docs.symbioworld.com/content/Articles/UniqueID/install-intro.html
+Note: The ID provider must be installed separately. Details can be found under the following [link]
+(https://docs.symbioworld.com/admin/services/unique-id-provider/install-intro/).
 
-### 6.4.7 Authentication providers
+## Authentication providers
 
 If the user management should be managed by the Microsoft Active Directory, then SAML settings need to be configured here. For SAML and ADFS configuration instructions, please refer to our Symbio Web installation manual and the SAML Check-List.
 If the SAML group management is activated, the user’s application roles depend on the SAML user group where the user is member of. If the user is member of more than one group then highest role will win.
 
-![screen](./media/7.9.png)
+![screen](../media/authent_providers.png)

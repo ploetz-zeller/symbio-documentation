@@ -13,9 +13,9 @@ Azure AD and IdP will be used interchangeably, the same holds true for Symbio an
 Before actually configuring Symbio in Azure AD, decide which EntityID you will give to Symbio and under which URL Symbio will be available. For this example we use the following values:
 
 * Symbio EntityID: urn:symbio.example.com:adfs-example
-* Symbio URL: https://processes.example.com/symbio-test/
+* Symbio URL: https://processes.example.com/
 
-In this case Symbio is available via a virtual subdirectory "/symbio-test/" and not directly on the subdomain root level. Append "AuthServices/Acs" to get the ACS URL of your Symbio instance.
+Append "AuthServices/Acs" to get the ACS URL of your Symbio instance.
 
 #### Creating a new Application and Defining Claims
 
@@ -26,7 +26,7 @@ In your Azure Portal select Azure Active Directory / Enterprise applications - A
 * Choose "Manual Provisioning"
 * Choose "SAML-based Sign-on"
 * Enter Identifier (Entity ID): urn:symbio.example.com:adfs-example
-* Enter Reply URL (Assertion Consumer Service URL): https://processes.example.com/symbio-test/AuthServices/Acs
+* Enter Reply URL (Assertion Consumer Service URL): https://processes.example.com/AuthServices/Acs
 * Select User Identifier: user.userprincipalname
 * View and edit all other user attributes:
   * givenname &rarr; user.givename &rarr; http://schemas.xmlsoap.org/ws/2005/05/identity/claims
@@ -50,7 +50,7 @@ Location: https://login.microsoftonline.com/0ee05e8d-dd1c-4065-a51c-840902926d66
 
 #### Setting up a new SAML Authentication Provider in Symbio
 
-Login as an administrator to the database or collection for which you want to activate SAML login. For this example we will set up SAML login for database "GreenField" in collection "Testing", the corresponding URL is https://processes.example.com/symbio-test/Testing/GreenField/editor/1033/
+Login as an administrator to the database or collection for which you want to activate SAML login. For this example we will set up SAML login for database "GreenField" in collection "Testing", the corresponding URL is https://processes.example.com/Testing/GreenField/editor/1033/
 
 Switch to the Admin section and there to Authentication Providers. Make sure that the root node is set to "Use local" and then add a new SAML Authentication Provider with ID "AAD". Select it and adjust its details:
 
@@ -60,7 +60,7 @@ Switch to the Admin section and there to Authentication Providers. Make sure tha
 * Standard role: Viewer
 * Group management: No
 * Symbio EntityID: urn:symbio.example.com:adfs-example
-* Symbio Host URL: https://processes.example.com/symbio-test/
+* Symbio Host URL: https://processes.example.com
 * IdP EntityID: https://sts.windows.net/0ee05e8d-dd1c-4065-a51c-840902926d66/
 * IdP Metadata: (upload the XML file or link to it, see below)
 * IdP SSO service URL: https://login.microsoftonline.com/0ee05e8d-dd1c-4065-a51c-840902926d66/saml2

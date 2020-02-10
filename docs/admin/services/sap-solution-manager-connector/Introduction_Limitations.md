@@ -3,7 +3,7 @@
 Here the limits of SAP Solution Manager connector will be listed and explained.
 Limits can be some actions from the end user that can lead to data loss.
 
-## 1.Deleting attached Best practice task to a task in Symbio
+## 1. Deleting attached Best practice task to a task in Symbio
 
 In Symbio an sub process is created with simple content.
 ![Test](media/SymbioBPTConnection0.png)
@@ -12,9 +12,11 @@ There are two possibilities, to attach an best practice task to a task or to not
 
 ### Task has a bpt attached in Symbio
  
- ![Test](media/SymbioBPTConnection1.png)
+![Test](media/SymbioBPTConnection1.png)
+
 Then the sub process is synchronized to SAP Solution Manager.
- ![Test](media/SymbioBPTConnection3.png)
+
+![Test](media/SymioBPTConnection3.png)
 
 ![Test](media/SymbioBPTConnection2.png)
  

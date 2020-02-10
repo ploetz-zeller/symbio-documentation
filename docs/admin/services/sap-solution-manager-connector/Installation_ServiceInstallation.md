@@ -41,7 +41,7 @@ Prerequisites for setting SAP Solution Manager interface on premise:
 2. Valid relational database connection string for a database the micro-service can use. An empty database has to be created manually.
 3. Accessible SAP Solution Manager instance ***https://{ip}:{port}/sap/opu/odata/sap/processmanagement/*** with provided valid certificate
 4. Provided valid certificate for SAP Solution Manager interface. Who is responsible for this?
-5. For the machine where the micro-service will run we need .Net Core Hosting bundle (for .Net core 2.2 applications) installed
+5. For the machine where the micro-service will run we need .Net Core Hosting bundle (for .Net core 3.1 applications) installed
 6. Powershell version 5 or higher (so we can run the install script)
 
 ### 2.1 Get zip file of a micro-service build
