@@ -5,8 +5,8 @@
 - OS-Version: Windows Server 2012 or higher
 - IIS-Version: 7.5 or higher
 - SQL-Server-Version: 2016 or higher
-- .NET Core Version: 3.1 or higher
-- .NET Core Windows Server Hosting-Version: 3.1 or higher
+- .NET Core Version: 3.1
+- .NET Core Windows Server Hosting-Version: 3.1
 - Processors: 4 or higher
 - Memory: 4 or higher
 
@@ -18,7 +18,7 @@
 
 ### Setting up a new site on IIS
 
-1. Download and install [.NET Core Windows Server Hosting](https://download.visualstudio.microsoft.com/download/pr/c9206d6d-a11a-4b0b-834b-6320c44d0a2d/993571f75a96b6a64f8bca001797c4f0/dotnet-hosting-3.1.1-win.exe)  (3.1.1 or later)
+1. Download and install [.NET Core Windows Server Hosting Bundle 3.1](https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-aspnetcore-3.1.1-windows-hosting-bundle-installer)
 1. Download the IFSP artifact or ask Symbio support for the IFSP package
 1. Extract it to the installation folder of the service
 1. Create a new site in IIS (bindings depending on you infrastructure)
@@ -36,7 +36,7 @@
 ### Preparations
 
 - Ensure Powershell Version 5.0 or higher is available. Download [WMF 5.0](https://www.microsoft.com/en-us/download/details.aspx?id=50395)
-- Download and install [.NET Core Windows Server Hosting Package](https://download.visualstudio.microsoft.com/download/pr/c9206d6d-a11a-4b0b-834b-6320c44d0a2d/993571f75a96b6a64f8bca001797c4f0/dotnet-hosting-3.1.1-win.exe) (3.1.1 or later)
+- Download and install [.NET Core Windows Server Hosting Bundle 3.1](https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-aspnetcore-3.1.1-windows-hosting-bundle-installer)
 - Download the Install.ps1 file from the [Operations Page](http://operations.symbioworld.com/).
 - Download the symbio-service-searchproxy-intrafind.parameters.json file from the [Operations Page](http://operations.symbioworld.com/).
 - Ensure a database for configuration information is available (see *Setting up an SQL database* above)
