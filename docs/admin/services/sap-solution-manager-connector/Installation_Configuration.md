@@ -22,7 +22,7 @@ This document contains information on how to configure Symbio to use **SAP Solut
 8.  In the SAP Solution Manager URL field enter the base URL of the SAP Solution Manager API.
 9.  In the Username field enter your username for the SAP Solution Manager API.
 10. In the Password field enter your password for the SAP Solution Manager API.
-11. Set the flag sync process references. When sub process are synchronized from Symbio to SAP Solution Manager this flag will decide if it will synchronize all sub process references and its diagrams as well or not. If it is set to true it will synchronize all sub process references with their diagrams. If it is set to false only the sub process that you selected will be synchronized. The sub process references will be represented as empty sub processes in SAP Solution Manager. 
+11. Enable the option to synchronize process references. When sub processes are synchronized from Symbio to SAP Solution Manager this option will decide if it will synchronize all sub process references and their diagrams as well or not. In case it is disabled the sub process references will be represented as empty sub processes in SAP Solution Manager. 
 12. If everything is configured correctly you can now select a SAP Solution Manager solution from the dropdown list. If not, then please check url and password again.
 13. After you have selected the solution, you can select a branch and the configuration is done.
 
