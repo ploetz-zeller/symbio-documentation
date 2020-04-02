@@ -37,6 +37,11 @@ nav:
         - Example - Symbio & AD FS: admin/installation-guide/saml-configuration/4_example-adfs.md
         - Example - Symbio & Azure AD: admin/installation-guide/saml-configuration/5_example-aad.md
         - Checklist: admin/installation-guide/saml-configuration/6_checklist.md
+      - Symbio Apps Authentication:
+        - Azure AD: admin/installation-guide/symbio-apps-auth/azure-ad.md
+        - OneLogin: admin/installation-guide/symbio-apps-auth/onelogin.md
+      - OAuth Configuration:
+        - Setting Up OAuth: admin/installation-guide/oauth-configuration/setting-up-oauth.md
     - Services:
       - Introduction: admin/services/introduction/introduction.md
       - Atlassian Connector:
@@ -47,8 +52,8 @@ nav:
         - Introduction: admin/services/intrafind-indexer/index.md
         - Installation: admin/services/intrafind-indexer/installation.md
         - Configuration: admin/services/intrafind-indexer/configuration.md
+        - Console Application: admin/services/intrafind-indexer/consoleapplication.md
         - About Logging: admin/services/intrafind-indexer/logging.md
-        - Technical Background: admin/services/intrafind-indexer/technical_description.md
       - Intrafind Search Proxy:
         - Installation: admin/services/intrafind-search-proxy/installation.md
         - Configuration: admin/services/intrafind-search-proxy/configuration.md
@@ -57,7 +62,9 @@ nav:
         - Configuration: admin/services/process-portal-exporter/configuration.md
         - Usage: admin/services/process-portal-exporter/usage.md
       - Reporting Service:
-        - Overview: admin/services/reporting-service/overview.md
+        - Overview: 
+          - Introduction: admin/services/reporting-service/overview.md
+          - Authentication Token IsPermittedEverywhere: developer/is-permitted-everywhere.md
         - Installation:
           - SSRS & Reports: admin/services/reporting-service/deploy-ssrs.md
           - Connector Web Service & Console Application: admin/services/reporting-service/deploy-connector-console.md
@@ -132,6 +139,7 @@ nav:
         - Connect external systems: admin/administration/external-systems/connect-external-systems.md
         - Disconnect external systems: admin/administration/external-systems/disconnect-external-systems.md
         - Create token and inform external systems: admin/administration/external-systems/create-token-and-inform-external-systems.md
+        - Authentication Token IsPermittedEverywhere: developer/is-permitted-everywhere.md
       - Fact Sheets:
         - Creating fact sheets: admin/administration/fact-sheets/creating-factsheets.md
         - Use fact sheets: admin/administration/fact-sheets/use-factsheets.md
@@ -172,6 +180,7 @@ nav:
     - REST API:
       - How To:
         - Authentication Tokens: developer/rest-api/how-to/rest-symbio-auth-token-client-temp-example-documentation/rest-symbio-auth-token-client-temp-example-documentation.md
+        - Authentication Token IsPermittedEverywhere: developer/is-permitted-everywhere.md
         - How to get all released mainprocesses: developer/rest-api/how-to/quickstart-mainprocesses/quickstart-mainprocesses.md
         - Filter: developer/rest-api/how-to/filter.md
         - Errors: developer/rest-api/how-to/error.md

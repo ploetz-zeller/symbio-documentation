@@ -22,8 +22,10 @@ When setting permission levels select the desired permissions and then click "OK
 
 ## User Default Permissions
 
-To assign default permission to a use select them and ensure that the correct role is set (e.g. to be able to actually "Edit element" you must be able to switch into "Editor" mode), then click on "Permissions":
+To assign default permissions to a user select them and ensure that the correct role is set (e.g. to be able to actually "Edit element" you must be able to switch into "Editor" mode), then click on "Permissions":
 ![](media/manage-user-permissions-1.png)
+
+_Beginning with the February 2020 Release of Symbio you maintain a user's application role using the "Change permissions" dialog._
 
 In the dialog "Change Permissions" select the 'burger' button after "Permissions Sets" and in the dialog "Permissions Sets" select the permission set to add; click "OK" to add the selected permission set and "OK" again to apply the changes to the user:
 ![](media/manage-user-permissions-2.png)

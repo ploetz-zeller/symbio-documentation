@@ -1,3 +1,4 @@
+
 # SAP Solution Manager Connector Configuration
 
 This document contains information on how to configure Symbio to use **SAP Solution Manager Connector** service.
@@ -21,20 +22,17 @@ This document contains information on how to configure Symbio to use **SAP Solut
 8.  In the SAP Solution Manager URL field enter the base URL of the SAP Solution Manager API.
 9.  In the Username field enter your username for the SAP Solution Manager API.
 10. In the Password field enter your password for the SAP Solution Manager API.
-11. If everything is configured correctly you can now select a SAP Solution Manager solution from the dropdown list. If not, then please check url and password again.
-12. After you have selected the solution, you can select a branch and the configuration is done.
+11. Enable the option to synchronize process references. When sub processes are synchronized from Symbio to SAP Solution Manager this option will decide if it will synchronize all sub process references and their diagrams as well or not. In case it is disabled the sub process references will be represented as empty sub processes in SAP Solution Manager. 
+12. If everything is configured correctly you can now select a SAP Solution Manager solution from the dropdown list. If not, then please check url and password again.
+13. After you have selected the solution, you can select a branch and the configuration is done.
 
-    ![Test](media/extSystem2.PNG)
+    ![Test](media/ExternalSystemSettings.png)
 
-13. Navigate into the storage collection, open Admin menu, open Extended Configuration and click on the &quot;APPLY CHANGES&quot; button. 
-14. Create a Symbio storage. 
-15. When storage is created, switch into Editor mode, open Admin menu, open Features menu, and enable the BestPracticeTasks feature.  
-16. Go back to the storage collection. You can select your SAP Solution Manager external system for you storage. During this process Symbio will be linked to the micro-service, and auth token will be created.  
+14. Navigate into the storage collection, open Admin menu, open Extended Configuration and click on the &quot;APPLY CHANGES&quot; button. 
+15. Create a Symbio storage. 
+16. When storage is created, switch into Editor mode, open Admin menu, open Features menu, and enable the BestPracticeTasks feature.  
+17. Go back to the storage collection. You can select your SAP Solution Manager external system for you storage. During this process Symbio will be linked to the micro-service, and auth token will be created.  
 
     ![Test](media/Storage.PNG)
 
-17. When linking process is completed, enter the storage, switch into Editor mode, open Admin menu, open Extended Configuration and click on the &quot;APPLY CHANGES&quot; button.
-
-
-
-
+18. When linking process is completed, enter the storage, switch into Editor mode, open Admin menu, open Extended Configuration and click on the &quot;APPLY CHANGES&quot; button.
