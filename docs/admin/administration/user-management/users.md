@@ -13,11 +13,11 @@ In the Detail Content, add user's e-mail address and assign a password.
 
 You will also need to define the appropriate application roles for each user by specifying if the user acts as Viewer, Author and/or Approver.
 
-You can assign a user to a number of user groups.
+You can assign a user to a number of user groups by using the Permissions button in the toolbar.
 
 In the case of an AD connection via SAML users are automatically created with Viewer rights by default if not changed.
 
-![screen](../media/user-insert-panel.png)
+![screen](../media/user-insert-panel.PNG)
 
 ### Consolidate users
 

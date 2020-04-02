@@ -20,6 +20,7 @@ When creating users in Symbio it is important that you define application roles 
 Each application role has rights that are specific for that role and must be considered when working with permissions.
 
 Viewer:
+
 - Has right to navigate process landscape in process portal
 - Has right to navigate repository
 - Has right to search for content
@@ -27,6 +28,7 @@ Viewer:
 - Has right to create link to processes
 
 Author:
+
 - Has right to model sub processes (create sub processes)
 - Has right to make sub processes and repositories available for release
 - Can modify only processes that he created or processes where he is defined as additional author. Processes which don't have author defined can also be edited
@@ -34,17 +36,20 @@ Author:
 - Has right to connect existing repository objects to process
 
 Approver:
+
 - Has right to delegate decision about releasing or rejecting process or object to another person
 - Has right to reject the release
 - Has right to accept process or repository object to release it
 
 Architect:
+
 - Has right to create processes with Categories and Main Processes
 - Has right to create repository objects 
 - Has right to setup process house
 - Has right to modify and create objects with a hierarchical structure (organization, it, guidelines), repository objects with tabular structure (roles, input/output) and global tasks
 
 Administrator:
+
 - Has right to change every process and object in Symbio
 - Has right to administer users, user groups and permission sets
 - Has right to administer every aspect of Symbio configuration
@@ -59,7 +64,7 @@ Permission sets allow you to quickly and easily provide common levels of permiss
 
 Symbio provides several default permissions sets that can be used for most scenarios. Default permission sets with its permissions are shown in table below:
 
-![screen](./media/permission-set.png)
+![screen](./media/permission-set.PNG)
 
 Some permissions are part of Symbio application roles functionalities. These special permissions always force their rules as they are defined in application roles. There are two type of rules.
 
@@ -67,8 +72,8 @@ Some permissions are part of Symbio application roles functionalities. These spe
 2. Rules that define what user can do – this can be additionally altered with permissions sets.
 
 Examples:
-1. Application role Author has defined rule that Author role cannot create Categories or Main Processes. This cannot be modified with New Element permissions defined in permission set for user. Application role Author has also rule, that sub process can be created, but this rule can be altered with permissions, if we remove New Element from permission set then, user won't be able to create Sub process as well.
 
+1. Application role Author has defined rule that Author role cannot create Categories or Main Processes. This cannot be modified with New Element permissions defined in permission set for user. Application role Author has also rule, that sub process can be created, but this rule can be altered with permissions, if we remove New Element from permission set then, user won't be able to create Sub process as well.
 2. Application role Author has defined rule that he cannot edit processes that other authors created. Adding permission that has Editing permission to the user won't change this rule that was defined by application role Author.
 
 #### Overview permissions and inheritance
@@ -94,6 +99,8 @@ After opening admin panel, you can see all groups that you can administrate. In 
 3.	Permission sets. 
 
 Administration of users provide options for creating new or modifying existing Symbio users. All information for users is entered here: personal data, password, application roles etc.
+
+_Beginning with the February 2020 Release of Symbio you maintain a user's application role using the "Change permissions" dialog._
 
 Administration of user groups provide options for creating new and modifying existing user groups. User groups are used to group users with same permissions to groups, to make administration of permissions easier. User groups are connected to permission sets as well as users, making the connection between them.
 
@@ -132,7 +139,7 @@ More than one User group can be assigned to the User. That means that one User c
 
 To edit user group and add or edit Permission sets of the user group, you need to select desired row and clicks on Change permission button. Change permission button is located in the toolbar, and it opens dialog box for editing permission sets of user group. 
 
-![screen](./media/chnage-permissions-user-groups.png)
+![screen](./media/change-permissions-user-groups.png)
 
 Dialog box for administrating User group, is similar to dialog box for editing Permission sets with similar options. There are two options that can be added or changed. Permission Sets and Users. To add new permission sets, you need to click on hamburger on the right side of permission sets part, and new dialog for selecting permission sets will be open. 
 
@@ -194,78 +201,116 @@ If the option is not set, the users of the user group get *only* the permissions
 
 __Permission mode__ – For this option, one of two options can be chosen. Default option, that is selected when dialog box is opened first time is Exclude users from other user groups. That means that only users from chosen User groups will be able to see selected object. Other option is Standard permissions for other users. If this option is selected, all users (if their rights allow them) will see that object, but only users, from chosen user groups for that object, will have permissions from that are assigned to chosen User group.
 
-#### User scenarios
+### User scenarios
 
-__1. Human resources user__
+#### Human resources user
 
   In this scenario it will be explained how user groups and permission sets can be used, and how can user groups and permission sets help to hide or show only specific part of the system from specific user or user group. This will be shown on example of Human resources, and how only HR group can see some categories.
 
 Steps:
 
-  a. Administrator creates Permission sets “HR permission set”, which has all permission selected. This Permission set will later be added to users and user groups. 
+  1. Administrator creates Permission sets “HR permission set”, which has all permission selected. This Permission set will later be added to users and user groups. 
 
-![screen](./media/user-scen1-a.png)
+     ![screen](./media/user-scen1-a.png)
 
-  b. Administrator create user ‘HR assistant’. User role is Architect. All other attributes that are needed are filled in. 
+  2. Administrator create user ‘HR assistant’. User role is Architect _(use the "Change permissions" dialog to set that in newer versions of Symbio)_. All other attributes that are needed are filled in. 
 
-![screen](./media/user-scen1-b.png)
+      ![screen](./media/user-scen1-b.png)
 
-  c. Administrator changes permissions on user that he has created. For permission sets he selects Permission set that he created in step one “HR permission set”, and user group will be added after he creates new User group.
+  3. Administrator changes permissions on user that he has created. For permission sets he selects Permission set that he created in step one “HR permission set”, and user group will be added after he creates new User group.
 
-  d. Administrator creates new User group “HR” from Admin panel. In Change permission dialog box, he chooses for Permission sets permission set that he created in step a. “HR permission set”, and in User part he adds new user “HR assistant” that he created in step b.
+  4. Administrator creates new User group “HR” from Admin panel. In Change permission dialog box, he chooses for Permission sets permission set that he created in step a. “HR permission set”, and in User part he adds new user “HR assistant” that he created in step b.
 
-![screen](./media/user-scen1-d.png)
+      ![screen](./media/user-scen1-d.png)
 
-  e. After he created all necessary steps for using permission sets correctly on object Administrator navigates to Processes and select Category “HR Processes”, where are all processes that are involved with HR team. In toolbar Administrator goes on Changes Permission button. 
+  5. After he created all necessary steps for using permission sets correctly on object Administrator navigates to Processes and select Category “HR Processes”, where are all processes that are involved with HR team. In toolbar Administrator goes on Changes Permission button. 
 
-  f. On Change Permission dialog box he chooses User group “HR” for permitted groups, select option for Inheritance and select option “Exclude users from other user groups”. 
+  6. On Change Permission dialog box he chooses User group “HR” for permitted groups, select option for Inheritance and select option “Exclude users from other user groups”. 
 
-![screen](./media/user-scen1-f.png)
+      ![screen](./media/user-scen1-f.png)
 
-  g. After click on ok button, changes are applied and because Admin user is still logged in, he does not have permission to see HR Processes Category, Category in graphic view is disabled, and all processes inside it are not visible. In Tree view nothing is visible.
+  7. After click on ok button, changes are applied and because Admin user is still logged in, he does not have permission to see HR Processes Category, Category in graphic view is disabled, and all processes inside it are not visible. In Tree view nothing is visible.
 
-![screen](./media/user-scen1-g.png)
+      ![screen](./media/user-scen1-g.png)
 
-  h. Next step is to log out as Administrator and log in as new HR user and go in Editor mode. Navigate to processes as HR user. Category for HR Processes is visible and usable. User can see, open, add new and edit all elements, which Admin user couldn’t do after settings permission to HR Category. 
+  8. Next step is to log out as Administrator and log in as new HR user and go in Editor mode. Navigate to processes as HR user. Category for HR Processes is visible and usable. User can see, open, add new and edit all elements, which Admin user couldn’t do after settings permission to HR Category. 
 
-![screen](./media/user-scen1-h.png)
+      ![screen](./media/user-scen1-h.png)
 
 Using this example Administrator could create any User group with necessary Permission sets, assign to the group specific Users. Different kinds of group, with different Permission sets could provide to specific users to only they can see and/or modify some parts of system.
 
 
-__2. External user__
+#### External user
 
   In this scenario it will be explained how user groups and permission sets of the user will provide possibility for some user to just see some specific part of the system. This will be shown on example of External user and how External user can see only specific part of the system.
 
 Steps:
 
-a. Administrator creates Permission sets “External user permission set”, which has none permission selected. This Permission set will later be added to External Users. Administrator then creates new Permission set "Viewer user permissions" which has Open and Show element permission selected. This Permission set will later be added to External User group.
+1. Administrator creates Permission sets “External user permission set”, which has none permission selected. This Permission set will later be added to External Users. Administrator then creates new Permission set "Viewer user permissions" which has Open and Show element permission selected. This Permission set will later be added to External User group.
 
-b. Administrator create user ‘External user’. User role is Viewer. All other attributes that are needed are filled in.
+2. Administrator create user ‘External user’. User role is Viewer _(use the "Change permissions" dialog to set that in newer versions of Symbio)_. All other attributes that are needed are filled in.
 
-![screen](./media/user-scen2-b.png)
+    ![screen](./media/user-scen2-b.png)
 
-c. Administrator changes permissions on user that he has created by selecting on Change permissions button. In dialog box for permission sets he selects Permission set that he created in step one “External user permission set”, and user group will be added after he creates new User group. After this step, if user would logged in, nothing will be shown to the user, only navigation bar. 
+3. Administrator changes permissions on user that he has created by selecting on Change permissions button. In dialog box for permission sets he selects Permission set that he created in step one “External user permission set”, and user group will be added after he creates new User group. After this step, if user would logged in, nothing will be shown to the user, only navigation bar. 
 Administrator creates new User group “External” from Admin panel. In Change permission dialog box, he chooses for Permission sets permission set that he created in step a. “Viewer user permissions”, and in User part he adds new user “External user” that he created in step b. 
 
-![screen](./media/user-scen2-c1.png)
+    ![screen](./media/user-scen2-c1.png)
 
-![screen](./media/user-scen2-c2.png)
+    ![screen](./media/user-scen2-c2.png)
 
-d. After he created all necessary steps for using permission sets correctly on object Administrator navigates to Processes and select Category “External Processes”, where are all processes that External user should have permissions to see and open. In toolbar Administrator goes on Changes Permission button 
+4. After he created all necessary steps for using permission sets correctly on object Administrator navigates to Processes and select Category “External Processes”, where are all processes that External user should have permissions to see and open. In toolbar Administrator goes on Changes Permission button 
 
-![screen](./media/user-scen2-d.png)
+    ![screen](./media/user-scen2-d.png)
 
-e. On Change Permission dialog box, he chooses User group “External” for permitted groups, select option for Inheritance and select option “Standard user permissions”.
+5. On Change Permission dialog box, he chooses User group “External” for permitted groups, select option for Inheritance and select option “Standard user permissions”.
 
-f. After click on ok button, changes are applied and because Admin user is still logged in, he has permission to see External Processes Category, because Standard user permission has been chosen.
+6. After click on ok button, changes are applied and because Admin user is still logged in, he has permission to see External Processes Category, because Standard user permission has been chosen.
 
-g. After Setting permission to the External processes, Administrator must get Permalink of that category, so he would send direct link to the External user. Permalink icon is located in toolbar of category, or any process. Dialog box for Link creation is opened, and there is a button create link, on what Administrator clicks on, and below new link is created. Next to the link, after Administrator hover on the link, Copy icon is shown. 
+7. After Setting permission to the External processes, Administrator must get Permalink of that category, so he would send direct link to the External user. Permalink icon is located in toolbar of category, or any process. Dialog box for Link creation is opened, and there is a button create link, on what Administrator clicks on, and below new link is created. Next to the link, after Administrator hover on the link, Copy icon is shown. 
 After clicking on the icon, user gets the message that Link is copied to the clip board. Administrator can paste that link directly to the External user or save it in some document.
 
-![screen](./media/user-scen2-g.png)
+    ![screen](./media/user-scen2-g.png)
 
-h. Administrator pasted link to the External user and next step is to log out as Administrator and log in as new External user. External user paste link that he got, from Administrator, in to the browser. After he presses enter button, process category that he is allowed to see and open are loaded. User can see and open, but this user cannot see any other part of the system. 
+8. Administrator pasted link to the External user and next step is to log out as Administrator and log in as new External user. External user paste link that he got, from Administrator, in to the browser. After he presses enter button, process category that he is allowed to see and open are loaded. User can see and open, but this user cannot see any other part of the system. 
 Using this example Administrator could create any User group with necessary Permission sets, assign to the group specific Users. Different kinds of group, with different Permission sets could provide to specific users to only they can see and/or modify some parts of system.
 
-![screen](./media/user-scen2-h.png)
+    ![screen](./media/user-scen2-h.png)
+
+#### Project user
+
+The user has the application role "Architect" for a certain Project Category or Process, whereas for the remaining Process House, he should only have "Viewer" rights.
+
+Please keep in mind that the user needs a default permission set which restricts the user's application role:
+
+- Restriction: You need to limit the permissions of the user by assigning a default permission set with View only.
+
+- Extention: Then you need to assign this user to an user group which has architect permissions.
+
+Procedure as follows:
+
+1.  Create an user and grant editor application role, eg. Architect _(use the "Change permissions" dialog to set that in newer versions of Symbio)_, so that this user is able to modify.
+
+2.	Go to Permission Sets and create a Permission Set for Viewer
+    -	Show Element
+    - Open Element
+
+3.	Create another permission set for Architects
+    - Activate all Permissions
+
+4.	Restrict the user permissions by using default permission set(s) for users!
+    -	Assign Viewer permission set to the user from step 1
+    -> Now this user cannot modify anything although user has editor application role
+
+5.	Extention of restriction:
+    - Go to user groups and create an user group which you need for processes/categories 
+    - Add user from step 1 to this user group
+    - Add permission set from step 3 to this user group
+
+6.	Allow certain category:
+    - Go to processes/categories:
+    - Assign user group from step 5 to your certain category -> permission calculation starts
+7.	Once permisssion calculation has been completed (after a few minutes), user from step 1 can modify your certain category.
+
+
+

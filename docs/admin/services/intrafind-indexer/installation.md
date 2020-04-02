@@ -5,8 +5,8 @@
 - OS-Version: Windows Server 2012 or higher
 - IIS-Version: 7.5 or higher
 - SQL-Server-Version: 2016 or higher
-- .NET Core Version: 2.1.4 or higher
-- .NET Core Windows Server Hosting-Version: 2.1.4 or higher
+- .NET Core Version: 3.1
+- .NET Core Windows Server Hosting-Version: 3.1
 - Processors: 4 or higher
 - Memory: 4 or higher
 
@@ -18,7 +18,7 @@
 
 ### Setting up a new site on IIS
 
-1. Download and install [.NET Core Windows Server Hosting](https://www.microsoft.com/net/download/dotnet-core/2.1)  (2.1.4 or later)
+1. Download and install [.NET Core Windows Server Hosting Bundle 3.1](https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-aspnetcore-3.1.1-windows-hosting-bundle-installer)
 1. Download the II artifact or ask Symbio support for the II package
 1. Extract it to the installation folder of the service
 1. Create a new site in IIS (bindings depending on you infrastructure)
@@ -36,7 +36,7 @@
 ### Preparations
 
 - Ensure Powershell Version 5.0 or higher is available. Download [WMF 5.0](https://www.microsoft.com/en-us/download/details.aspx?id=50395)
-- Download and install [.NET Core Windows Server Hosting Package](https://www.microsoft.com/net/download/dotnet-core/2.1) (2.1.4 or later)
+- Download and install [.NET Core Windows Server Hosting Bundle 3.1](https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-aspnetcore-3.1.1-windows-hosting-bundle-installer)
 - Download the Install.ps1 file from the [Operations Page](http://operations.symbioworld.com/).
 - Download the symbio-service-intrafind.parameters.json file from the [Operations Page](http://operations.symbioworld.com/).
 - Ensure a database for configuration information is available (see *Setting up an SQL database* above)
@@ -79,10 +79,10 @@
 If all settings are corretly set, please start a new powershell console as Administrator, change into the directory of the downloaded script, and run the following command:
 
 ```PowerShell
-.\Install.ps1 -ParametersFile .\symbio-service-intrafindindexer.parameters.json
+.\Install.ps1 -ParametersFile .\symbio-service-intrafind.parameters.json
 ```
 
-*`nice to know`*
+*nice to know*
 
 *- If you use a domain user. You must write [server]\\[user].*
 
