@@ -42,6 +42,10 @@ nav:
       - Atlassian Connector:
         - Administration guide: admin/services/atlassian-connector/administration_guide.md
         - Using Symbio to Atlassian: admin/services/atlassian-connector/using_symbioatlassian.md
+      - Celonis Importer:
+        - Installation manual: admin/services/celonis-importer/install-service-manual.md
+        - Configuration: admin/services/celonis-importer/configuration.md
+        - Usage: admin/services/celonis-importer/usage.md
       - Import of vsdx files: admin/services/import-of-vsdx-files/import-of-vsdx-files.md
       - Intrafind Indexer:
         - Introduction: admin/services/intrafind-indexer/index.md
