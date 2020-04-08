@@ -22,4 +22,4 @@ Every imported best practice task is related with one of the application types.
 1. If chosen excel file isn't Celonis activities, notification error will appear. ![Error notification](media/celonis-window-error.png)
 1. If chosen excel file is Celonis activities, process will start and notification line will inform for status. ![In process notification](media/celonis-window-in-process.png)
 1. If process is finished successfully, notification line will show finish status. ![Finished notification](media/celonis-window-finished.png)
-1. When whole process is finished, browser should be refreshed, and all imported best practice tasks will be visible in list view. ![Imported bpt's](media/bpt-imported-elements.png)
+1. When whole process is finished, browser should be refreshed, and all imported best practice tasks will be visible in list view. ![Imported bpt's](media/bpt-imported-elements.PNG)
