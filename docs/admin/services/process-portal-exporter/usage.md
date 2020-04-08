@@ -36,6 +36,6 @@ After having downloaded the ZIP file, you can extract the file and place into th
 
 1. Use one of the .bat files to show the exported process portal archive in a browser. 
 
-    *Currently only Google Chrome, Firefox, and Opera are supported for displaying the process portal locally. Displaying in  browsers requires in general to turn off browser security functionalities, such as open local files.*
+    *Currently only Google Chrome, Firefox, Opera and Egde with Chromium support (version 80 +) are supported for displaying the process portal locally. Displaying in browsers requires in general to turn off browser security functionalities, such as open local files.*
 
     ![Process portal](media/processportal.png)
