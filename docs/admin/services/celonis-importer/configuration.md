@@ -12,7 +12,7 @@ The service is currently made available as a service on Azure cloud. It uses an 
 1. Set the following attributes
    1. **Name:** Celonis Importer
    1. **Description:** The importer is used to import best practice tasks in Symbio from Celonis activities excel files.
-1. Select the SYEX file under the settings "data" group with the Title: "CelonisImporter" ![Select Add](media/addsyex.png)
+1. Select the SYEX file under the settings "data" group with the Title: "CelonisImporter" ![Select Add](media/addsyex.PNG)
 1. Make the external configuration active ![activate](media/addsyex3.png)
 1. Apply changes ![Apply changes](media/apply.png)
 
@@ -20,7 +20,7 @@ The service is currently made available as a service on Azure cloud. It uses an 
 1. Select "External systems" on the main navigation bar
 1. Add a new external system with Type of "Celonis Importer" ![Add system](media/external-systems.png)
    1. Name the External System "Celonis Importer"
-1. Add the URL for the instance of the micro-service ![settings](media/celonis-settings.png)
+1. Add the URL for the instance of the micro-service ![settings](media/celonis-settings.PNG)
 
 ### Connect the external system on the storage
 *Note: multiple storages can be connected to one instance of the service*
