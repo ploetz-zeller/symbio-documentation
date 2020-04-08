@@ -2,19 +2,19 @@
 
 ## Installation
 
-### System Requirements for PPES
+### System Requirements for Celonis Importer
 - OS-Version: Windows Server 2014 or comparable/ higher
-- Dot Net Core Versions: 2.2.0 or comparable/ higher
+- Dot Net Core Versions: 3.1 or comparable/ higher
 - IIS-Version: 7.5 or comparable/ higher
 - Processors: 4 or higher
 - Memory: 4 or higher
 
-### Required Software for PPES
+### Required Software for Celonis Importer
 - IIS has to be installed, same preliminaries as Symbio
 - .NET Core has to be installed (3.1 or later)
 - .NET Core Windows Server Hosting (3.1 or later)
 
-### Other requirements for PPES
+### Other requirements for Celonis Importer
 - The PPES user set up in the IIS has to own appropriate rights
 
 ### Installation
