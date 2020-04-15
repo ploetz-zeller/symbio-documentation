@@ -165,6 +165,7 @@ nav:
         - Multiselect list feature: admin/features/general-design/multiselect-list-feature/multiselect-list-feature.md
         - User filters: admin/features/general-design/user-filters/user-filters.md
       - Process design:
+        - Activate exclusive process editing: admin/features/process-design/activate-exclusive-process-editing/activate-exclusive-process-editing.md
         - Best practice tasks: admin/features/process-design/best-practice-tasks/best-practice-tasks.md
         - BPMN Icons: admin/features/process-design/bpmn2.0-icons/bpmn-icons.md
         - Copy and move shapes: admin/features/process-design/copy-move-shapes/copy-and-move-shapes.md
@@ -172,6 +173,7 @@ nav:
         - Fact sheet - Related global objects: admin/features/process-design/fact_sheet_related-global-objects/fact-sheet_related-global-objects.md
         - Graphical comparison: admin/features/process-design/graphical_comparison/graphical-comparison.md
         - RACI instead of RASCI: admin/features/process-design/raci_instead_rasci/raci-instead-of-rasci.md
+        - Swimlane for Applications: admin/features/process-design/swimlane-for-applications/swimlane-for-applications.md
       - Repository design:
         - ArchiMate Conversions: admin/features/repository-design/archimate-conversions/archimate-conversions.md
         - Classification of information: admin/features/repository-design/classification-of-info/classification-of-information.md
