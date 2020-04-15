@@ -26,7 +26,7 @@ Creating an extract of your data, crawls through your entire process facet and e
 
 After having downloaded the ZIP file, you can extract the file and place into the offline Single Page Application folder structure.
 
-1. Get the current release of the offline Single Page Application.
+1. [Download](https://...) the current release of the offline Single Page Application.
 1. Unzip the SPA package
 1. Download the process exporter export
 1. Unzip the process exporter export
@@ -36,6 +36,6 @@ After having downloaded the ZIP file, you can extract the file and place into th
 
 1. Use one of the .bat files to show the exported process portal archive in a browser. 
 
-    *Currently only Google Chrome, Firefox, and Opera are supported for displaying the process portal locally. Displaying in  browsers requires in general to turn off browser security functionalities, such as open local files.*
+    *Currently only Google Chrome, Firefox, Opera and Egde with Chromium support (version 80 +) are supported for displaying the process portal locally. Displaying in browsers requires in general to turn off browser security functionalities, such as open local files.*
 
     ![Process portal](media/processportal.png)
