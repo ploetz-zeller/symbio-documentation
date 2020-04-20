@@ -1,4 +1,4 @@
-# Requirements at Main Processes
+# Method: 'Requirements' for Main Processes
 
 This feature allows to add the section "Requirements" in the Detail Content of Main Processes. 
 

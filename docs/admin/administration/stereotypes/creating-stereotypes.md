@@ -1,16 +1,15 @@
 # Creating the Stereotypes
 
-The following example shows how to create and edit stereotypes for processes.
+The following example shows how to create and edit stereotypes for processes or objects.
 
----
-Navigate as an editor in processes and there in stereotypes.
+In the Admin area, go to the __Stereotype__ tile in the section 'Configure'.
 
-![Navigate into stereotypes](./media/navigate-to-stereotypes.PNG "Navigate into stereotypes")
+Go to the dropdown to select the process or object to which a stereotype should be added:
 
-From the drop-down list, select the desired process type for which the stereotype is to apply.
-Assign a desired name and click the New button or confirm with the Enter key.
+From the drop-down list, select the desired __Type__ for which the stereotype should be applicable.
+Assign a name and click the New button or confirm with the Enter key.
 
-![Select the desired process type](./media/select-desired-process-type.PNG "Select the desired process type")
+![Screenshot](../media/stereotypes_new.png)
 
 Now you can enter a description on the right side like an image.
 
