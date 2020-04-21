@@ -155,13 +155,13 @@ nav:
       - Introduction: admin/features/introduction/introduction.md
       - General design:
         - Architectural Permissions: admin/features/general-design/architectural-permissions/architectural-permissions.md
-        - Facet Permissions: admin/features/general-design/facet-permissions/facet-permissions.md
-        - Permissions maintenance extension: admin/features/general-design/permissions-maintenance-extension/permissions-maintenance-extension.md
+        - Permissions for facets: admin/features/general-design/facet-permissions/facet-permissions.md
+        - Permissions for objects made more flexible: admin/features/general-design/permissions-maintenance-extension/permissions-maintenance-extension.md
         - Permissions get copied from comparable user instead of recalculated: admin/features/general-design/permissions-copied/permissions-copied.md
         - Document digitalization: admin/features/general-design/document-digitalization/document-digitalization.md
         - Document digitalization on all facets: admin/features/general-design/document-digitalization-on-all-facets/document-digitalization-all-facets.md
-        - Group management for favorites: admin/features/general-design/group-management-for-favorites/group-management-for-favorites.md
-        - Group management for favorites - sharing favorites: admin/features/general-design/group-management-for-favorites-sharing/group-management-for-favorites-sharing.md
+        - Favorite management Grouping favorites: admin/features/general-design/group-management-for-favorites/group-management-for-favorites.md
+        - Favorite management Sharing favorites: admin/features/general-design/group-management-for-favorites-sharing/group-management-for-favorites-sharing.md
         - Multiselect list feature: admin/features/general-design/multiselect-list-feature/multiselect-list-feature.md
         - User filters: admin/features/general-design/user-filters/user-filters.md
       - Process design:
@@ -177,9 +177,9 @@ nav:
       - Repository design:
         - ArchiMate Conversions: admin/features/repository-design/archimate-conversions/archimate-conversions.md
         - Classification of information: admin/features/repository-design/classification-of-info/classification-of-information.md
-        - Measure status: admin/features/repository-design/measure-status/measure-status.md
+        - Method Maintain Measures status: admin/features/repository-design/measure-status/measure-status.md
         - Skill Feature: admin/features/repository-design/skill-feature/skill-feature.md
-        - Requirements at Main Processes: admin/features/repository-design/requirements-main-processes/requirements-main-processes.md
+        - Method Requirements for Main Processes: admin/features/repository-design/requirements-main-processes/requirements-main-processes.md
   - Developer:
     - Introduction: developer/index.md
     - Getting Started: developer/getting-started.md

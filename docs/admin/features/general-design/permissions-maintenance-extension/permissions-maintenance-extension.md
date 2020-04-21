@@ -1,4 +1,4 @@
-# Permissions maintenance extension
+# Permissions for objects made more flexible
 
 Please note that this feature can only be activated once (__Is one way__)!
 
