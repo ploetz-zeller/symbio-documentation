@@ -48,6 +48,11 @@ To add a disclaimer text, please use the disclaimer input box.
 
 Feature to enable the following notifications. Customized mail template text can be configured.
 
+Please note:
+
+- Text can be added or removed
+- Elements in square brackets [] should not be changed - copying of these blocks is not supported
+
 Example for notification - notification after creating a feedback:
 
 ![screen](../media/notification1.png)

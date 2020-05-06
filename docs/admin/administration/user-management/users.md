@@ -9,15 +9,17 @@ If these are to receive specific rights, please refer to [Permissions](../permis
 
 By clicking on New, please enter a name for each new user and confirm. 
 
+![screen](../media/user-insert-panel.PNG)
+
 In the Detail Content, add user's e-mail address and assign a password. 
 
-You will also need to define the appropriate application roles for each user by specifying if the user acts as Viewer, Author and/or Approver.
+You will also need to define the appropriate __Application roles__ for each user by specifying if the user acts as Viewer, Author or Approver etc. For this, please select __Change permissions__ in the Toolbar.
 
-You can assign a user to a number of user groups by using the Permissions button in the toolbar.
+![screen](../media/Appl_roles.png)
+
+You can assign a user to a number of user groups, if required.
 
 In the case of an AD connection via SAML users are automatically created with Viewer rights by default if not changed.
-
-![screen](../media/user-insert-panel.PNG)
 
 ### Consolidate users
 
