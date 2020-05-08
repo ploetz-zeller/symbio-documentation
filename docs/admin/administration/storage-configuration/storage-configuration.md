@@ -212,11 +212,21 @@ First, create a new Type in the list. Then, go to Detail Content and select a ty
 
 There are following options:
 
-Option 1: 
+__Option 1:__ 
+
 Set the number of days after which the process receives the state 'Valid' (after release) in field 'Valid from day span'.
 
-Option 2:
+__Option 2:__
+
 Activate 'Prohibit direct release' if the workflow should be started in any case. The state 'Released' will then never be selectable in release dialogue.
+
+__Option 3:__
+
+This functionality allows to add further Approvers or Approver groups to the release cycle. Furthermore, the state 'Ready for Approval' is added to the dialog window.
+
+![screen](../media/approver_workflow.png)
+
+The new order of participants of the release cycle will then be: QA (if set) – Approver/Approver group – Responsible. 
 
 Activate your settings by checkbox and click on 'Apply changes' in the toolbar.
 

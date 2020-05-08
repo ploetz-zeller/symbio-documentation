@@ -51,7 +51,7 @@ Here, please find an example of a link widget.
 
 Here, please find an example of a list widget.
 
-![screen](./media/listwidget.png)
+![screen](./media/listwidget2.png)
 
 ### Chart widget
 
