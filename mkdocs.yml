@@ -95,6 +95,10 @@ nav:
           - Subprocess diagram element synchronization: admin/services/sap-solution-manager-connector/SymbioToSolMan_SubProcessDiagramElementSync.md
         - Document Synchronization: admin/services/sap-solution-manager-connector/DocumentSynchronization.md
         - Task Consolidation: admin/services/sap-solution-manager-connector/TaskReferenceConsolidation.md
+        - For developers:
+          - SAP Solution Manager to Symbio mapping: admin/services/sap-solution-manager-connector/Symbio_SolutionManager_StructureMapping.md
+          - SAP Solution Manager API explained: admin/services/sap-solution-manager-connector/SolutionManagerAPIExplained.md
+          - SAP Solution Manager microservice architecture: admin/services/sap-solution-manager-connector/SolManConnectorArchitecture.md
       - SVG To Image Converter:
         - Installation:
             - Scripted Installation: admin/services/rendering-service/installation-scripted.md
