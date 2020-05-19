@@ -1,8 +1,5 @@
 # SAP Solution Manager 7.2 API explained
 
-Detailed documentation of the SAP Solution Manager 7.2 API can be found here:
-https://ploetzzeller.sharepoint.com/:b:/s/msgpz/EVEqPn6wnHBDp-Xz0vcma8gBNL4gVBhy4tbeq2ycXVD-Iw?e=PobMBH
-
 In this document there will be only additional information about the API that don't exist in the official documentation but are very important.
 
 
@@ -26,7 +23,7 @@ Branch content json has four importatn nodes:
 4. ELEMENT-NAMES - names of all nodes
 
 In the picture below an model that represents the structure of the BranchContent will be shown.
-![Test](media/SolManAPIModel.PNG)
+![Test](media/SolManAPIModel.png)
 
 What is important to notice is that in SAP Solution Manager APi the structure is represented with and additional hidden levels that have the sufix GRP witch means that this is only a container level that groups the children by type. This level is not visible in the UI but it exists in the json that is retrieved in the json response.
 
@@ -61,7 +58,7 @@ When a sub process shape in a diagram references another sub process the model i
 Note that if you have an interface or an empty sub process shape, only Sub Process element has to be created.
 
 Below is the picture of the connections between the elements.
-![Test](media/SubProcessReferenceModel.PNG)
+![Test](media/SubProcessReferenceModel.png)
 
 At the end the Artifact id should reference the REF_PROC node in the structure, and the Artifact Ref id should reference the id of the PROC node.
 

@@ -1,10 +1,10 @@
 # SAP Solution Manager microservice architecture
 
 SAP Solution Manager connector solution has 4 projects:
-		 • SolManConnector (main project)
-		• SapSolManTest
-		• SapSolManIntegrationTest
-		• MockServiceSolMan
+		* SolManConnector (main project)
+		* SapSolManTest
+		* SapSolManIntegrationTest
+		* MockServiceSolMan
 
 MockServiceSolMan is a mock SolMan APi which is used by SapSolManIntegrationTest. 
 
@@ -12,24 +12,24 @@ SolManConnector is the main project. It is a .net core 3.1 application.
 It uses the symbio-service-core application as an submodule.
 ## Accessing SolManConnector
 
-SolManConnector can be called in two ways
-			 • With event handlers ( they come from symbio-service-core)
-		     • With mvc controllers 
+SolManConnector can be called in two ways:
+		* With event handlers ( they come from symbio-service-core)
+		* With mvc controllers 
 Event handlers are triggered on linking and unlinking and on sub process releasing.
 Contrllers are called from the IFrame that opens from Symbio. This iFrame has te view from SolManConnector.
 All the calls that come are processed by the SapBLFacade.
-![Test](media/SolManConnectorEntrancePoint.PNG)
+![Test](media/SolManConnectorEntrancePoint.png)
 
 Some important folders n the project are:
 
- •SapSolManService
- •SymbioServiceBL
- • SapSolManBL
-* Import logic
-			* Structure import
-			* Diagram import
-			* Corona elements import
-* Export logic
+ * SapSolManService
+ * SymbioServiceBL
+ * SapSolManBL
+ * Import logic
+	* Structure import
+	* Diagram import
+	* Corona elements import
+ * Export logic
 	* Structure export
 	* Diagram export
 	* Library export
@@ -44,7 +44,7 @@ Currently it is possible to import only a single sub process with its diagram an
 
 The diagram shows the import architecture.
 
-![Test](media/SolManImportArchitecture.PNG)
+![Test](media/SolManImportArchitecture.png)
 
 The starting point is the SAPBlFacade. It calls the SolManImportBl which is responsible for the creation of structure that will be imported to SAP Solution Manager.
 
@@ -58,12 +58,12 @@ SolManImportBl  and SapDiagramBL can call the CoronaService which is responsible
 
 Export logic deals with exporting data from SAP Solution Manager to Symbio.
 Export includes:
-		1. Export of library elements
-		2. Export of structure
-		3. Consolidation
+		* Export of library elements
+		* Export of structure
+		* Consolidation
 
 The diagram shows the export architecture.
-![Test](media/SolManExportArchitecture.PNG)
+![Test](media/SolManExportArchitecture.png)
 
 The starting point is the SAPBlFacade. It calls the SolManStructureExportBL which is responsible for the creation of structure that will be exported from SAP Solution Manager.
 
