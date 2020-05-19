@@ -22,7 +22,7 @@ Contrllers are called from the IFrame that opens from Symbio. This iFrame has te
 All the calls that come are processed by the SapBLFacade.
 ![Test](media/SolManConnectorEntrancePoint.png)
 
-Some important folders n the project are:
+Some important folders in the project are:
 
  * SapSolManService
  * SymbioServiceBL
