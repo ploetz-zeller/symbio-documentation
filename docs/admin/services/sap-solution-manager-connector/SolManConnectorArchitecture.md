@@ -1,6 +1,7 @@
 # SAP Solution Manager microservice architecture
 
 SAP Solution Manager connector solution has 4 projects:
+
  * SolManConnector (main project)
  * SapSolManTest
  * SapSolManIntegrationTest
@@ -13,6 +14,7 @@ It uses the symbio-service-core application as an submodule.
 ## Accessing SolManConnector
 
 SolManConnector can be called in two ways:
+
  * With event handlers ( they come from symbio-service-core)
  * With mvc controllers 
 Event handlers are triggered on linking and unlinking and on sub process releasing.
@@ -58,6 +60,7 @@ SolManImportBl  and SapDiagramBL can call the CoronaService which is responsible
 
 Export logic deals with exporting data from SAP Solution Manager to Symbio.
 Export includes:
+
  * Export of library elements
  * Export of structure
  * Consolidation
