@@ -1,10 +1,10 @@
 # SAP Solution Manager microservice architecture
 
 SAP Solution Manager connector solution has 4 projects:
-		* SolManConnector (main project)
-		* SapSolManTest
-		* SapSolManIntegrationTest
-		* MockServiceSolMan
+ * SolManConnector (main project)
+ * SapSolManTest
+ * SapSolManIntegrationTest
+ * MockServiceSolMan
 
 MockServiceSolMan is a mock SolMan APi which is used by SapSolManIntegrationTest. 
 
@@ -13,8 +13,8 @@ It uses the symbio-service-core application as an submodule.
 ## Accessing SolManConnector
 
 SolManConnector can be called in two ways:
-		* With event handlers ( they come from symbio-service-core)
-		* With mvc controllers 
+ * With event handlers ( they come from symbio-service-core)
+ * With mvc controllers 
 Event handlers are triggered on linking and unlinking and on sub process releasing.
 Contrllers are called from the IFrame that opens from Symbio. This iFrame has te view from SolManConnector.
 All the calls that come are processed by the SapBLFacade.
@@ -58,9 +58,9 @@ SolManImportBl  and SapDiagramBL can call the CoronaService which is responsible
 
 Export logic deals with exporting data from SAP Solution Manager to Symbio.
 Export includes:
-		* Export of library elements
-		* Export of structure
-		* Consolidation
+ * Export of library elements
+ * Export of structure
+ * Consolidation
 
 The diagram shows the export architecture.
 ![Test](media/SolManExportArchitecture.png)
