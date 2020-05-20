@@ -1,4 +1,4 @@
-### Purpose of the Feature "Facet Permissions"
+### Purpose of the Feature "Permissions for Facets"
 
 After activating the feature, you can assign permissions to each facet as you would for other elements. 
 Once you did so, these permissions are the defaults for elements within the facet and are added to 
@@ -11,7 +11,7 @@ If you only want to hide a facet in the navigation (e.g. in viewer mode), but wa
 For this purpose, you should use the "Hide Navigation" customization.   
 
 
-### Activating the Feature "Facet Permissions"
+### Activating the Feature "Permissions for Facets"
 
 __You need to be an Administrator to activate this feature.__
 
@@ -31,7 +31,7 @@ _Please note the consequences of activating this feature; read the explanation u
 * Select facet to change permissions for and open Permissions menu from the toolbar
 ![](media/activating-feature-facet-permissions-4.png)
 
-_Please note that Permissions menu in the toolbar was deactivated when Feature "Facet permission" is not active._
+_Please note that Permissions menu in the toolbar was deactivated when Feature "Permissions for Facets" is not active._
 
 After selecting the Permissions menu item, new Permissions dialog will be opened. Permission dialog allows following options for defining permissions.
 
