@@ -37,22 +37,38 @@ nav:
         - Example - Symbio & AD FS: admin/installation-guide/saml-configuration/4_example-adfs.md
         - Example - Symbio & Azure AD: admin/installation-guide/saml-configuration/5_example-aad.md
         - Checklist: admin/installation-guide/saml-configuration/6_checklist.md
+      - Symbio Apps Authentication:
+        - Azure AD: admin/installation-guide/symbio-apps-auth/azure-ad.md
+        - OneLogin: admin/installation-guide/symbio-apps-auth/onelogin.md
+      - OAuth Configuration:
+        - Setting Up OAuth: admin/installation-guide/oauth-configuration/setting-up-oauth.md
     - Services:
+      - Introduction: admin/services/introduction/introduction.md
       - Atlassian Connector:
         - Administration guide: admin/services/atlassian-connector/administration_guide.md
         - Using Symbio to Atlassian: admin/services/atlassian-connector/using_symbioatlassian.md
+      - Celonis Importer:
+        - Installation manual: admin/services/celonis-importer/install-service-manual.md
+        - Configuration: admin/services/celonis-importer/configuration.md
+        - Usage: admin/services/celonis-importer/usage.md
+      - Import of vsdx files: admin/services/import-of-vsdx-files/import-of-vsdx-files.md
       - Intrafind Indexer:
         - Introduction: admin/services/intrafind-indexer/index.md
         - Installation: admin/services/intrafind-indexer/installation.md
         - Configuration: admin/services/intrafind-indexer/configuration.md
+        - Console Application: admin/services/intrafind-indexer/consoleapplication.md
         - About Logging: admin/services/intrafind-indexer/logging.md
-        - Technical Background: admin/services/intrafind-indexer/technical_description.md
       - Intrafind Search Proxy:
         - Installation: admin/services/intrafind-search-proxy/installation.md
         - Configuration: admin/services/intrafind-search-proxy/configuration.md
-      - Web Jobs Scheduler: admin/services/web-jobs-scheduler.md
+      - Process Portal Exporter:
+        - Installation manual: admin/services/process-portal-exporter/install-service-manual.md
+        - Configuration: admin/services/process-portal-exporter/configuration.md
+        - Usage: admin/services/process-portal-exporter/usage.md
       - Reporting Service:
-        - Overview: admin/services/reporting-service/overview.md
+        - Overview: 
+          - Introduction: admin/services/reporting-service/overview.md
+          - Authentication Token IsPermittedEverywhere: developer/is-permitted-everywhere.md
         - Installation:
           - SSRS & Reports: admin/services/reporting-service/deploy-ssrs.md
           - Connector Web Service & Console Application: admin/services/reporting-service/deploy-connector-console.md
@@ -61,13 +77,28 @@ nav:
           - Symbio Report Pool & Symbio Reporting:  admin/services/reporting-service/config-symbio.md
         - Operation: admin/services/reporting-service/operation.md
       - SAP Solution Manager Connector:
-        - Installation: admin/services/sap-solution-manager-connector/SolmanInterfaceSetUpGuide.md
-        - Symbio to SolMan synchronization: admin/services/sap-solution-manager-connector/SymbioToSolMansynchronization.md
-        - Symbio to SolMan diagram synchronization: admin/services/sap-solution-manager-connector/SymbioToSolManDiagramSynchronization.md
-        - Symbio to SolMan sub process diagram element synchronization: admin/services/sap-solution-manager-connector/SubProcessDiagramElementSync.md
+        - Introduction: 
+          - Overview: admin/services/sap-solution-manager-connector/Introduction_Overview.md
+          - Basic HowTo: admin/services/sap-solution-manager-connector/Introduction_BasicHowTo.md
+          - Recommended usage: admin/services/sap-solution-manager-connector/Introduction_RecommendedUse.md
+          - Limitations: admin/services/sap-solution-manager-connector/Introduction_Limitations.md
+        - Installation:
+          - Service installation: admin/services/sap-solution-manager-connector/Installation_ServiceInstallation.md
+          - Configuration: admin/services/sap-solution-manager-connector/Installation_Configuration.md
+          - Versioning: admin/services/sap-solution-manager-connector/Installation_Versioning.md
+        - SAP Solution Manager to Symbio synchronization:
+          - Process structure synchronization: admin/services/sap-solution-manager-connector/SolManToSymbio_ProcessSync.md
+          - Library objects synchronization: admin/services/sap-solution-manager-connector/SolManToSymbio_LibraryObjectsSync.md
+        - Symbio to SAP Solution Manager synchronization:
+          - Process structure synchronization: admin/services/sap-solution-manager-connector/SymbioToSolMan_ProcessSync.md
+          - Diagram synchronization: admin/services/sap-solution-manager-connector/SymbioToSolMan_DiagramSync.md
+          - Subprocess diagram element synchronization: admin/services/sap-solution-manager-connector/SymbioToSolMan_SubProcessDiagramElementSync.md
         - Document Synchronization: admin/services/sap-solution-manager-connector/DocumentSynchronization.md
-        - Best Practice Tasks: admin/services/sap-solution-manager-connector/BestPracticeTasks.md
-        - SolMan to Symbio synchronization: admin/services/sap-solution-manager-connector/SolManToSymbioSync.md
+        - Task Consolidation: admin/services/sap-solution-manager-connector/TaskReferenceConsolidation.md
+        - For developers:
+          - SAP Solution Manager to Symbio mapping: admin/services/sap-solution-manager-connector/Symbio_SolutionManager_StructureMapping.md
+          - SAP Solution Manager API explained: admin/services/sap-solution-manager-connector/SolutionManagerAPIExplained.md
+          - SAP Solution Manager microservice architecture: admin/services/sap-solution-manager-connector/SolManConnectorArchitecture.md
       - SVG To Image Converter:
         - Installation:
             - Scripted Installation: admin/services/rendering-service/installation-scripted.md
@@ -88,30 +119,83 @@ nav:
           - Create ID Provider: admin/services/unique-id-provider/config-create-provider.md
           - Create ID Configuration: admin/services/unique-id-provider/config-provider-config.md
         - Manual: admin/services/unique-id-provider/manual-how-to-use.md
+      - Web Jobs Scheduler: admin/services/web-jobs-scheduler.md
     - Administration:
+      - Getting Started:
+        - Introduction: admin/administration/introduction.md
+        - Database Pools: admin/administration/database-pools.md
+        - Storage collections and databases: admin/administration/storage-collections-and-databases.md
+      - Home site:
+        - Configuration: admin/administration/home-site/home-site.md
+      - User Management:
+        - Users and user groups: admin/administration/user-management/users.md
+      - Permissions:
+        - Introduction: admin/administration/permissions/permissions.md
+        - Permission levels explained: admin/administration/permissions/permission-levels-explained.md
+        - Creating and assigning permission sets: admin/administration/permissions/create-assign-permissionsets.md
+        - The facet permissions feature: admin/administration/permissions/facet-permission-feature.md
+        - Permissions maintenance extension: admin/administration/permissions/permissions-maintenance-extension.md
+      - Storage configuration:
+        - Settings: admin/administration/storage-settings/storage-settings.md
+        - Services: admin/administration/storage-services/storage-services.md
+        - Configuration: admin/administration/storage-configuration/storage-configuration.md
+      - Data Management:
+        - Introduction: admin/administration/data-management/data-management.md
+        - Importer: admin/administration/data-management/importer.md
       - External Systems:
         - Creating external systems: admin/administration/external-systems/creating-external-systems.md
         - Connect external systems: admin/administration/external-systems/connect-external-systems.md
         - Disconnect external systems: admin/administration/external-systems/disconnect-external-systems.md
         - Create token and inform external systems: admin/administration/external-systems/create-token-and-inform-external-systems.md
+        - Authentication Token IsPermittedEverywhere: developer/is-permitted-everywhere.md
       - Fact Sheets:
         - Creating fact sheets: admin/administration/fact-sheets/creating-factsheets.md
         - Use fact sheets: admin/administration/fact-sheets/use-factsheets.md
-      - Permissions:
-        - Permission levels explained: admin/administration/permissions/permission-levels-explained.md
-        - Creating and assigning permission sets: admin/administration/permissions/create-assign-permissionsets.md
+        - Fact sheet - Related global objects: admin/administration/fact-sheets/factsheet-global-objects.md
       - Stereotypes:
         - Creating stereotypes: admin/administration/stereotypes/creating-stereotypes.md
         - Use stereotypes: admin/administration/stereotypes/use-stereotypes.md
+    - Features:
+      - Introduction: admin/features/introduction/introduction.md
+      - General design:
+        - Architectural Permissions: admin/features/general-design/architectural-permissions/architectural-permissions.md
+        - Permissions for facets: admin/features/general-design/facet-permissions/facet-permissions.md
+        - Permissions for objects made more flexible: admin/features/general-design/permissions-maintenance-extension/permissions-maintenance-extension.md
+        - Permissions get copied from comparable user instead of recalculated: admin/features/general-design/permissions-copied/permissions-copied.md
+        - Document digitalization: admin/features/general-design/document-digitalization/document-digitalization.md
+        - Document digitalization on all facets: admin/features/general-design/document-digitalization-on-all-facets/document-digitalization-all-facets.md
+        - Favorite management Grouping favorites: admin/features/general-design/group-management-for-favorites/group-management-for-favorites.md
+        - Favorite management Sharing favorites: admin/features/general-design/group-management-for-favorites-sharing/group-management-for-favorites-sharing.md
+        - Multiselect list feature: admin/features/general-design/multiselect-list-feature/multiselect-list-feature.md
+        - User filters: admin/features/general-design/user-filters/user-filters.md
+      - Process design:
+        - Activate exclusive process editing: admin/features/process-design/activate-exclusive-process-editing/activate-exclusive-process-editing.md
+        - Best practice tasks: admin/features/process-design/best-practice-tasks/best-practice-tasks.md
+        - BPMN Icons: admin/features/process-design/bpmn2.0-icons/bpmn-icons.md
+        - Copy and move shapes: admin/features/process-design/copy-move-shapes/copy-and-move-shapes.md
+        - Enhancement of detailed modeling: admin/features/process-design/enhancement-detailed-modeling/enhancement-of-detailed-modeling.md
+        - Fact sheet - Related global objects: admin/features/process-design/fact_sheet_related-global-objects/fact-sheet_related-global-objects.md
+        - Graphical comparison: admin/features/process-design/graphical_comparison/graphical-comparison.md
+        - RACI instead of RASCI: admin/features/process-design/raci_instead_rasci/raci-instead-of-rasci.md
+        - Swimlane for Applications: admin/features/process-design/swimlane-for-applications/swimlane-for-applications.md
+      - Repository design:
+        - ArchiMate Conversions: admin/features/repository-design/archimate-conversions/archimate-conversions.md
+        - Classification of information: admin/features/repository-design/classification-of-info/classification-of-information.md
+        - Method Maintain Measures status: admin/features/repository-design/measure-status/measure-status.md
+        - Skill Feature: admin/features/repository-design/skill-feature/skill-feature.md
+        - Method Requirements for Main Processes: admin/features/repository-design/requirements-main-processes/requirements-main-processes.md
   - Developer:
     - Introduction: developer/index.md
     - Getting Started: developer/getting-started.md
     - REST API:
       - How To:
         - Authentication Tokens: developer/rest-api/how-to/rest-symbio-auth-token-client-temp-example-documentation/rest-symbio-auth-token-client-temp-example-documentation.md
+        - Authentication Token IsPermittedEverywhere: developer/is-permitted-everywhere.md
         - How to get all released mainprocesses: developer/rest-api/how-to/quickstart-mainprocesses/quickstart-mainprocesses.md
         - Filter: developer/rest-api/how-to/filter.md
         - Errors: developer/rest-api/how-to/error.md
+        - Symbio REST using Powershell: developer/rest-api/how-to/powershell/rest-using-powershell.md
+        - Using Javascript: developer/rest-api/how-to/javascript/index.md
       - Reference:
         - Storage Information: developer/rest-api/reference/storage-info.md
         - Facets: 

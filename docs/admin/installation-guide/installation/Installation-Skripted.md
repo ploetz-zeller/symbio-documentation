@@ -4,7 +4,7 @@ Symbio can be initially installed by using a PowerShell script.
 
 ## Preparation
 
-- Please download the installation script (Install.ps1) and the configuration file (parameters.json) off the following internet site: http://operations.symbioworld.com/
+- Please download the installation script (Install.ps1) and the configuration file (parameters.json) on the following internet site: http://operations.symbioworld.com/
 
 - Please check if you have access to the Symbio download file or download the installation data before.
 
@@ -17,12 +17,12 @@ Please make sure that PowerShell can run scripts.
 
 ## Adjust Parameter.json
 
-Please open the **Parmater.json** with a text editor and adjust the contained parameters.
+Please open the **Parameter.json** with a text editor and adjust the contained parameters.
 
 | **Parameter** | **Example** | **Description** |
 | --- | --- | --- |
 | **Symbio - allgemein** |   |   |
-| SourcePath | https://www.symbioworld.com/download/symbio/Symbio1807.zip | The path to the installation files. Can be an URL to the installation package, a path to the local installation package or a path to a local folder containing the already extracted installation package. |
+| SourcePath | https://www.symbioworld.com/download/symbio/symbio-master.zip | The path to the installation files. Can be an URL to the installation package, a path to the local installation package or a path to a local folder containing the already extracted installation package. |
 | BaseTargetPath | C:\\SymbioWeb\\Test | Target directory for the Symbio application. Please note the double backslashes. |
 | BaseBackupPath | C:\\Backups | Compressed backups of an instance are stored in this directory. |
 | InstanceName | SymbioTest | The name of the Symbio instance. This name is used as a subfolder in the backup and destination path. |
@@ -75,5 +75,5 @@ The expected result should look like this
 3. Verify and test basic settings of configured Symbio website
 4. If Symbio website is not running, please start it (Manage Website/Start)
 
-Continue with the installation of the required and optional Symbio services [Preparation](./Requirements.html). For first steps see [First Steps](./Finishing.html).
+Continue with the installation of the required and optional Symbio services [Preparation](Requirements.md). For first steps see [First Steps](Finishing.md).
 

@@ -71,10 +71,10 @@
 
 1. set sql connectionstring to database in appsettings.json
 1. TrustServerCertificate=True in connectionstring if there is self signed or no certificate
-1. call service with browser so that the tables will be ceated
-1. fill configstore table with Key "token , username and password" and the values <br> ![configtable values](media/Values.png)
+1. call service within browser so that the tables will be created
+1. fill configstore table with Key "token , username and password" and the values <br> ![configtable values](media/config-store.png) Please note that the password hash value needs to be overwritten in next steps.
 1. restart site in IIS
-1. call servicelink/register and type in name and clear password to get hashed passwort. after that save the hash result in configstore table for passwort value
+1. call servicelink/register and type in name and clear password to get hashed password. after that save the hash result in configstore table for password value
 1. in Symbio navigate to external systems on SysAdmin page
 1. create WebJobService by using user-defined value and URL plus authToken fro configstore table
 ![external systems](media/external-systems.png)
