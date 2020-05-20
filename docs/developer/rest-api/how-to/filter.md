@@ -18,7 +18,7 @@ https://Server/Collection/Database/_api/rest/facets/processes/views/tree/element
 
 | Name | Syntax | Type | Description | Example |
 |---|---|---|---|---|
-| Equal | Equal | string | The Boolean equality operator. | ?$filter=name -eq string |
+| Equal | -eq | string | The Boolean equality operator. | ?$filter=name -eq string |
 | Like | Like | string | Determines whether a specific character string matches a specified pattern or not. | ?$filter=name Like '%string' or 'string%' or '%string%' |
 
 ### Function Operators
