@@ -58,8 +58,11 @@ We currently do not recommend executing the following tasks:
 In large databases it’s not recommended to execute the following tasks during business hours:
 
 - Do not export all processes via Massdata because of performance/memory issues on Web server. 
+
 - The Excel-Importer only support files with plain data tables, so it explicitly does not support external data sources, macros, pivot tables or calculated fields/cells.  
+
 - Do not use the Symbio Data export (SYMX) on the Process House or in large categories due to size of exporting data. 
+
 - Do not use the Storage export (SYMX) in Storage Collection due to size of the database.  
 
 #### Feature activation
@@ -70,6 +73,7 @@ Before you activate any feature, you have to verify its correct usage in a sandb
 
 Some system settings might affect all users and should be tested in a sandbox database before:
 
+
 - Do not change SAML settings without any reason if it previously works. Please make use of multiple authentication providers in a sandbox database in same environment before.
 
 #### Consolidation of users and user groups
@@ -77,5 +81,7 @@ Some system settings might affect all users and should be tested in a sandbox da
 In Symbio, users and user groups can be consolidated so that all references from one user are transferred to another user or user group. Depending on database size and Symbio version, this can be a very time-consuming step.
 
 - Do not consolidate users or user groups if no regular database backup exists.
+
 - Do not consolidate users or user groups if you didn't perform an user consolidation test in a copy of productive database successfully. 
+
 - Do not consolidate users or user groups referenced in many processes/master data during peak business hours.
