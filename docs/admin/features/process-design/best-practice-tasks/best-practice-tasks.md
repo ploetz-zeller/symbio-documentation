@@ -12,7 +12,7 @@ Currently Best practice tasks are used by SAP Solution Manager Connector interfa
 
 ## Usage of Best practice tasks in SAP Solution Manager Connector interface
 
- In the use case of SAP Solution Manager interface, Process Step Originals from the connected SAP Solution Manager branch will be imported via the SAP Solution Manager Connector interface. Once imported are available in Symbio and can be referenced to a process Task. Imported Best practice tasks have a stereotype 'SAP Best Practice', they are in a 'Released' and read-only state and therefore editing or removal of such Best practice task is not possible.
+ In the use case of SAP Solution Manager interface, Process Step Originals from the connected SAP Solution Manager branch will be imported via the SAP Solution Manager Connector interface. Once imported they are available in Symbio and can be referenced to a process Task. Imported Best practice tasks have a stereotype 'SAP Best Practice', they are in a 'Released' and read-only state and therefore editing or removal of such Best practice tasks is not possible.
 
 For more details, please refer to chapter [SAP Solution Manager Connector](https://docs.symbioworld.com/admin/services/sap-solution-manager-connector/Introduction_Overview/).  
 
