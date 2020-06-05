@@ -18,6 +18,6 @@ For more details, please refer to chapter [SAP Solution Manager Connector](https
 
 ## Usage of Best practice tasks in Celonis Importer
 
-In the use case of Celonis Importer, the Celonis Activities will be imported as a Best practice tasks in Symbio. Once imported are available in Symbio and can be referenced to a process Task. Imported Best practice tasks have a stereotype 'Celonis Activity', they are in a 'In Process' but read-only state. That means that the editing is prohibited, but the removal of these elements is allowed.
+In the use case of Celonis Importer, the Celonis Activities will be imported as a Best practice tasks in Symbio. Once imported they are available in Symbio and can be referenced to a process Task. Imported Best practice tasks have a stereotype 'Celonis Activity', they are in a 'In Process' but read-only state. That means that the editing is prohibited, but the removal of these elements is allowed.
 
 For more details, please refer to chapter [Celonis Importer](https://docs.symbioworld.com/admin/services/celonis-importer/usage/).
