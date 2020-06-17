@@ -36,3 +36,4 @@ This document contains information on how to configure Symbio to use **SAP Solut
     ![Test](media/Storage.PNG)
 
 18. When linking process is completed, enter the storage, switch into Editor mode, open Admin menu, open Extended Configuration and click on the &quot;APPLY CHANGES&quot; button.
+19. If storage is not new (already has some data), the converter file "Update CreationID for diagram elements" should be executed. **IMPORTANT NOTE: Be aware that this converter can take a up to a few hours to finish. No synchronization should be done until the converter is finished.**

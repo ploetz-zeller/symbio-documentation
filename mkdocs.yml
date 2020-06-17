@@ -175,7 +175,7 @@ nav:
         - Copy and move shapes: admin/features/process-design/copy-move-shapes/copy-and-move-shapes.md
         - Enhancement of detailed modeling: admin/features/process-design/enhancement-detailed-modeling/enhancement-of-detailed-modeling.md
         - Fact sheet - Related global objects: admin/features/process-design/fact_sheet_related-global-objects/fact-sheet_related-global-objects.md
-        - Graphical comparison: admin/features/process-design/graphical_comparison/graphical-comparison.md
+        - Graphical version comparison : admin/features/process-design/graphical_comparison/graphical-comparison.md
         - RACI instead of RASCI: admin/features/process-design/raci_instead_rasci/raci-instead-of-rasci.md
         - Swimlane for Applications: admin/features/process-design/swimlane-for-applications/swimlane-for-applications.md
       - Repository design:
