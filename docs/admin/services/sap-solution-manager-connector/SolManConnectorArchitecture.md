@@ -18,7 +18,7 @@ SolManConnector can be called in two ways:
  * With event handlers ( they come from symbio-service-core)
  * With mvc controllers 
 Event handlers are triggered on linking and unlinking and on sub process releasing.
-Controllers are called from the IFrame that opens from Symbio. This iFrame has te view from SolManConnector.
+Controllers are called from the IFrame that opens from Symbio. This IFrame has the view from SolManConnector.
 All the calls that come are processed by the SapBLFacade.
 ![Test](media/SolManConnectorEntrancePoint.png)
 
