@@ -8,7 +8,7 @@ In this document there will be only additional information about the API that do
 Here the list of all important endpoints will be listed:
 
  1. Branch Content-GET ( getting whole structure of SAP Solution Manager Branch, including library elements )
- 2. Branch Content Importer-PUT ( inserting/updating/deleting the structure)
+ 2. Branch Content Importer-PUT (inserting/updating/deleting the structure)
  3. Solution -GET (getting all solutions of the SAP Solution Manager system)
  4. Branch - GET (getting all branches of specific solution)
  5. Scope- GET ( getting all scopes of the branch)
