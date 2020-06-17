@@ -15,7 +15,7 @@ It uses the symbio-service-core application as a submodule.
 
 SolManConnector can be called in two ways:
 
- * With event handlers ( they come from symbio-service-core)
+ * With event handlers (they come from symbio-service-core)
  * With mvc controllers 
 Event handlers are triggered on linking and unlinking and on sub process releasing.
 Controllers are called from the IFrame that opens from Symbio. This IFrame has the view from SolManConnector.
