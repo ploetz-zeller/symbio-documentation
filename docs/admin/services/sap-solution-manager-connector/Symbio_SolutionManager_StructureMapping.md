@@ -28,7 +28,7 @@ Task shape in a sub process diagram can be directly connected to the best practi
 The task shape will reference a Process step Reference (PRS) that is included in the SolMan structure. Then the PSR will reference the real Process Step Original (PSO) that is located in the Library part of SAP Solution Manager.
 
 ## Mapping of the library elements
-In SAP Solution Manager the library elements are similar to the corona connections in Symbio. Elements like system aplication and aplication services are stored in the library in SAP Solution Manager.
+In SAP Solution Manager the library elements are similar to the corona connections in Symbio. Elements like system application and application services are stored in the library in SAP Solution Manager.
 The table shows the mapping between these elements. 
 
 | Symbio| SAP Solution Manager          
