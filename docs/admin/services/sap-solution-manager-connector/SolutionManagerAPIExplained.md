@@ -1,14 +1,14 @@
 # SAP Solution Manager 7.2 API explained
 
-In this document there will be only additional information about the API that don't exist in the official documentation but are very important.
+In this document there will be only additional information about the API that don't exist in the official documentation but are very important. Official documentation for the Solution Manager API can be found [here](https://wiki.scn.sap.com/wiki/display/SM/Process+Management+API#ProcessManagementAPI-ProcessManagementAPI).
 
 
 ## Endpoints
 
 Here the list of all important endpoints will be listed:
 
- 1. Brannch Content-GET ( getting whole structure of SAP Solution Manager Branch, including library elements )
- 2. Branch Content Importer-PUT ( insertig/updating/deleting the structure)
+ 1. Branch Content-GET ( getting whole structure of SAP Solution Manager Branch, including library elements )
+ 2. Branch Content Importer-PUT ( inserting/updating/deleting the structure)
  3. Solution -GET (getting all solutions of the SAP Solution Manager system)
  4. Branch - GET (getting all branches of specific solution)
  5. Scope- GET ( getting all scopes of the branch)
@@ -17,7 +17,7 @@ Here the list of all important endpoints will be listed:
 
 ## Branch content model
 
-Branch content json has four importatn nodes:
+Branch content json has four important nodes:
 
  1. NODES - structure element definitions
  2. NODE-STRUCTURE - parent-children relationship
@@ -27,12 +27,12 @@ Branch content json has four importatn nodes:
 In the picture below an model that represents the structure of the BranchContent will be shown.
 ![Test](media/SolManAPIModel.png)
 
-What is important to notice is that in SAP Solution Manager APi the structure is represented with and additional hidden levels that have the sufix GRP witch means that this is only a container level that groups the children by type. This level is not visible in the UI but it exists in the json that is retrieved in the json response.
+What is important to notice is that in SAP Solution Manager APi the structure is represented with and additional hidden levels that have the suffix GRP witch means that this is only a container level that groups the children by type. This level is not visible in the UI but it exists in the json that is retrieved in the json response.
 
 **Important thing about branch content is that there is no way still to request a specific node by its id. Only the whole structure can be requested for.**
 
-## Branch Conent Graphic
-Graphic node holde the collection of all diagrams. 
+## Branch Content Graphic
+Graphic node hold the collection of all diagrams. 
 It has two important nodes:
 
  1. Diagram
