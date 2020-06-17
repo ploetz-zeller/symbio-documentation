@@ -10,15 +10,15 @@ SAP Solution Manager connector solution has 4 projects:
 MockServiceSolMan is a mock SolMan APi which is used by SapSolManIntegrationTest. 
 
 SolManConnector is the main project. It is a .net core 3.1 application.
-It uses the symbio-service-core application as an submodule.
+It uses the symbio-service-core application as a submodule.
 ## Accessing SolManConnector
 
 SolManConnector can be called in two ways:
 
- * With event handlers ( they come from symbio-service-core)
+ * With event handlers (they come from symbio-service-core)
  * With mvc controllers 
 Event handlers are triggered on linking and unlinking and on sub process releasing.
-Contrllers are called from the IFrame that opens from Symbio. This iFrame has te view from SolManConnector.
+Controllers are called from the IFrame that opens from Symbio. This IFrame has the view from SolManConnector.
 All the calls that come are processed by the SapBLFacade.
 ![Test](media/SolManConnectorEntrancePoint.png)
 
@@ -52,7 +52,7 @@ The starting point is the SAPBlFacade. It calls the SolManImportBl which is resp
 
 SolManImportBl  calls SapDiagramBL class which is responsible for the diagram creation.
 For every shape in the diagram SapDiagramBL calls DiagramElementFactory which creates an instance of the DiagramElement class. 
-DiagramElemet class is the base class for all classes that represent shapes.
+DiagramElement class is the base class for all classes that represent shapes.
 
 SolManImportBl  and SapDiagramBL can call the CoronaService which is responsible for creating and instance of type ICoronaCreator which is representing a specific corona type to be created for the import into SAP Solution Manager.
 
