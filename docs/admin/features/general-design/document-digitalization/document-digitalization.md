@@ -1,4 +1,4 @@
-# Document digitalization 
+# Document digitalization (Preview feature)
 
 This feature allows to to define document templates exclusively for the PROCESSES and ORGANIZATION facet. Editors can thus add additional content to these facets.
 

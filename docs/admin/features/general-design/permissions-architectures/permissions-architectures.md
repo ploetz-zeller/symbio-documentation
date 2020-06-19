@@ -1,4 +1,4 @@
-# Permissions for architectures
+# Permissions for architectures (Released feature)
 
 This feature allows to dynamically assgin the role of the Architect to different users for individual areas. 
 

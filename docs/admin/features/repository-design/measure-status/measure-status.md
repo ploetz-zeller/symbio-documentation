@@ -1,4 +1,4 @@
-# Method: Maintain 'Measures' status
+# Method: Maintain 'Measures' status (Preview feature)
 
 This feature allows to add the section "Measure status" in the Detail Content of Sub Navigation "measures" (below STRATEGY). 
 

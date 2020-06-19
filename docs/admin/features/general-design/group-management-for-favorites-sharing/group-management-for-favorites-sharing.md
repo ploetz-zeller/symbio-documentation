@@ -1,4 +1,4 @@
-# Favorite management: Sharing favorites
+# Favorite management: Sharing favorites (Preview feature)
 
 This feature can be seen as an extenion the feature 'Favorite management: Grouping favorites'. It offers the possibility to share your favorite groups with other Users or User groups. 
 

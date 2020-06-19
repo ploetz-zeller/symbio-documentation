@@ -1,4 +1,4 @@
-# Permissions for objects made more flexible
+# Permissions for objects made more flexible (Preview feature)
 
 Please note that this feature can only be activated once (__Is one way__)!
 

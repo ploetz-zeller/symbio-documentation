@@ -1,4 +1,4 @@
-# Document digitalization on all facets
+# Document digitalization on all facets (Preview feature)
 
 This feature allows to to define document templates for all futher facets. Editors can thus add additional content to these facets.
 
