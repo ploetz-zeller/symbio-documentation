@@ -29,6 +29,7 @@ Generally specific admin tasks like configurable system settings, e.g. Document 
 - First always import a test import into a sandbox database.
 - Use the Excel mass data export/import for translations. New objects will not be generated. If a released/expired version already exists, a new version will be generated. 
 - Use the Excel-Importer to import from data from other systems, for example. The import includes only newly generated objects or refreshes of objects and does not include the deleting of objects.
+__NOTE:__in order to obtain a satisfactory result, we strongly recommend to consider the Excel import/export exclusively as a project and to perform it only with the help of our support.
 - How attributes are refreshed can be configured (OVERRIDE, RETAIN or APPEND); how relations are refreshed can be configured, too (PredecessorSupportsMultipleSuccessors, SuccessorSupportsMultiplePredecessors and SuccessorDeleteDifferentOldPredecessors) 
 - Elements which are NOT imported again by a new import will get the status “expired “
 - Deletions and Merges must be done manually using the import log

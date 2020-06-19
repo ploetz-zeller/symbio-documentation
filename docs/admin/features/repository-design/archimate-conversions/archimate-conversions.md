@@ -1,4 +1,4 @@
-# ArchiMate Conversions
+# Method: System ArchiMate Converting (Preview feature)
 
 This feature allows to depict the IT landscape by the ArchiMate 3.0 nomenclature and thus takes an important step towards the design and control of a comprehensive Enterprise Architecture (EAM).
 
