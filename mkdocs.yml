@@ -158,7 +158,7 @@ nav:
     - Features:
       - Introduction: admin/features/introduction/introduction.md
       - General design:
-        - Authentication Provider OAuth: admin/features/general-design/autenthentication-provider/autentication-provider.md
+        - Authentication Provider OAuth: admin/features/general-design/authentication-provider/autentication-provider.md
         - Deactivate architecture in system facet: admin/features/general-design/deactivate_architecture-systems/deactivate-architecture-systems.md
         - Permissions for architectures: admin/features/general-design/permissions-architectures/permissions-architectures.md
         - Permissions for facets: admin/features/general-design/facet-permissions/facet-permissions.md
@@ -175,7 +175,7 @@ nav:
         - Activate exclusive process editing: admin/features/process-design/activate-exclusive-process-editing/activate-exclusive-process-editing.md
         - Best practice tasks: admin/features/process-design/best-practice-tasks/best-practice-tasks.md
         - BPMN Icons shown on process flow objects: admin/features/process-design/bpmn2.0-icons/bpmn-icons.md
-        - Method - Changed evaluation groups for processes: admin/features/process-design/bpmn2.0-icons/bpmn-icons.md
+        - Method - Changed evaluation groups for processes: admin/features/process-design/changed-evaluation-groups-processes/changed-evaluation-groups-processes.md
         - Copy and move shapes: admin/features/process-design/copy-move-shapes/copy-and-move-shapes.md
         - Enhancement of detailed modeling: admin/features/process-design/enhancement-detailed-modeling/enhancement-of-detailed-modeling.md
         - Fact sheet - Related global objects: admin/features/process-design/fact_sheet_related-global-objects/fact-sheet_related-global-objects.md
