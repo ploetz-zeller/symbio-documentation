@@ -158,9 +158,11 @@ nav:
     - Features:
       - Introduction: admin/features/introduction/introduction.md
       - General design:
-        - Architectural Permissions: admin/features/general-design/architectural-permissions/architectural-permissions.md
+        - Authentication Provider OAuth: admin/features/general-design/autenthentication-provider/autentication-provider.md
+        - Deactivate architecture in system facet: admin/features/general-design/deactivate_architecture-systems/deactivate-architecture-systems.md
+        - Permissions for architectures: admin/features/general-design/permissions-architectures/permissions-architectures.md
         - Permissions for facets: admin/features/general-design/facet-permissions/facet-permissions.md
-        - Permissions for objects made more flexible: admin/features/general-design/permissions-maintenance-extension/permissions-maintenance-extension.md
+        - Permissions for objects made more flexible: admin/features/general-design/permissions-more-flexible/permissions-more-flexible.md
         - Permissions get copied from comparable user instead of recalculated: admin/features/general-design/permissions-copied/permissions-copied.md
         - Document digitalization: admin/features/general-design/document-digitalization/document-digitalization.md
         - Document digitalization on all facets: admin/features/general-design/document-digitalization-on-all-facets/document-digitalization-all-facets.md
@@ -168,22 +170,24 @@ nav:
         - Favorite management Sharing favorites: admin/features/general-design/group-management-for-favorites-sharing/group-management-for-favorites-sharing.md
         - Multiselect list feature: admin/features/general-design/multiselect-list-feature/multiselect-list-feature.md
         - User filters: admin/features/general-design/user-filters/user-filters.md
+        - Subscriptions for categories: admin/features/general-design/subscriptions-for-categories/subscriptions-for-categories.md
       - Process design:
         - Activate exclusive process editing: admin/features/process-design/activate-exclusive-process-editing/activate-exclusive-process-editing.md
         - Best practice tasks: admin/features/process-design/best-practice-tasks/best-practice-tasks.md
-        - BPMN Icons: admin/features/process-design/bpmn2.0-icons/bpmn-icons.md
+        - BPMN Icons shown on process flow objects: admin/features/process-design/bpmn2.0-icons/bpmn-icons.md
+        - Method - Changed evaluation groups for processes: admin/features/process-design/bpmn2.0-icons/bpmn-icons.md
         - Copy and move shapes: admin/features/process-design/copy-move-shapes/copy-and-move-shapes.md
         - Enhancement of detailed modeling: admin/features/process-design/enhancement-detailed-modeling/enhancement-of-detailed-modeling.md
         - Fact sheet - Related global objects: admin/features/process-design/fact_sheet_related-global-objects/fact-sheet_related-global-objects.md
-        - Graphical version comparison : admin/features/process-design/graphical_comparison/graphical-comparison.md
+        - Graphical version comparison: admin/features/process-design/graphical_comparison/graphical-comparison.md
         - RACI instead of RASCI: admin/features/process-design/raci_instead_rasci/raci-instead-of-rasci.md
         - Swimlane for Applications: admin/features/process-design/swimlane-for-applications/swimlane-for-applications.md
       - Repository design:
         - ArchiMate Conversions: admin/features/repository-design/archimate-conversions/archimate-conversions.md
         - Classification of information: admin/features/repository-design/classification-of-info/classification-of-information.md
-        - Method Maintain Measures status: admin/features/repository-design/measure-status/measure-status.md
+        - Method - Maintain Measures status: admin/features/repository-design/measure-status/measure-status.md
         - Skill Feature: admin/features/repository-design/skill-feature/skill-feature.md
-        - Method Requirements for Main Processes: admin/features/repository-design/requirements-main-processes/requirements-main-processes.md
+        - Method - Requirements for Main Processes: admin/features/repository-design/requirements-main-processes/requirements-main-processes.md
   - Developer:
     - Introduction: developer/index.md
     - Getting Started: developer/getting-started.md
