@@ -93,12 +93,12 @@ For a for a better understanding, the tasks of a user with the role 'Architect' 
 
 ### Dos
 
-#### Administratetion of the process architecture
+#### Administration of the process architecture
 -	Set up and modify categories (including permissions)
 -	Create, modify and version main processes
 -	Release and expire main processes and sub processes
 -	Delete and move main and sub processes within their architecture
-#### Administrateion of objects 
+#### Administration of objects 
 -	Create, modify and version objects in tabular or hierarchical structure
 -	Release and expire objects
 -	Delete and move objects within their hierarchy
