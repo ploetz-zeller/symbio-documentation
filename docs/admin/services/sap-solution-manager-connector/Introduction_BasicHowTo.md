@@ -33,7 +33,7 @@ Under **SAP** menu bar, there are 3 relevant menu items for the SAP Solution Man
 
 2. *Initial import of SAP process structure* button
 
-    This button should be used when you want to synchronize the non best practice SAP Solution Manager processes to Symbio. Along with the process structure, library elements that are connected to the objects in the process structure will also be synchronized. These processes would be in version 1.0 Released, but user is able to create a new version a edit the processes. 
+    This button should be used when you want to synchronize the non best practice SAP Solution Manager processes to Symbio. Along with the process structure, library elements that are connected to the objects in the process structure will also be synchronized. These processes would be in version 1.0 Released, but a user is able to create a new version and edit the processes. 
     
     When you click the button, a dialog will appear. In this dialog, you must choose a scope that you want to synchronize. You should choose the Solution Manager scope which contains your non best practice processes. Once you have selected the Scope you wish to synchronize, you can start the synchronization process.
 
@@ -95,6 +95,5 @@ Under **SAP** menu bar, there are 3 relevant menu items for the SAP Solution Man
     ![Test](media/SyncOnRelease.png)
 	
     When you release a sub process and the attribute called Sync to SAP Solution Manager is checked then automaticaly after the release the sub process will be synchronized to SAP Solution Manager
-
 
 
