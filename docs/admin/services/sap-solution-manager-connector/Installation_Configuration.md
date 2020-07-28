@@ -44,11 +44,10 @@ From the **Release 194** of the **SAP Solution Manager Connector** service it is
 
 1. Make sure that **SAP Solution Manager Connector** is connected to your Symbio storage and that all configuration steps are done.
 
-2. In your Solution Manager, check the Responsible user and get it's "Team Member ID":
+2. In your Solution Manager, check the Responsible user and get its "Team Member ID":
 
     ![Test](media/solman_responsible.png) 
 
 3. In your Symbio storage go to User management page. Find the corresponding user that you want to map. For this user, set the value of the attribute "SAP User ID" to the value you got in the step 2:
 
     ![Test](media/symbio_sapUserId.png) 
-
