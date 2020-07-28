@@ -39,7 +39,7 @@ Under **SAP** menu bar, there are 3 relevant menu items for the SAP Solution Man
 
     There is also some additional information:
 
-    *Last synchronization*: The name of the Scope - Time of the latest latest successful synchronization of processes - Result of the synchronization process
+    *Last synchronization*: The name of the scope - Time of the latest latest successful synchronization of processes - Result of the synchronization process
 
     *Last successful synchronization*: The name of the Scope - Time of the latest successful synchronization of processes
 
@@ -95,4 +95,3 @@ Under **SAP** menu bar, there are 3 relevant menu items for the SAP Solution Man
     ![Test](media/SyncOnRelease.png)
 	
     When you release a sub process and the attribute called Sync to SAP Solution Manager is checked then automaticaly after the release the sub process will be synchronized to SAP Solution Manager
-
