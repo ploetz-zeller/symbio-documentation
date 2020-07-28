@@ -31,7 +31,23 @@ Under **SAP** menu bar, there are 3 relevant menu items for the SAP Solution Man
 
     If synchronization is already in progress, a message will appear and you will not be able to synchronize until the previous process is completed.
 
-2. *Synchronize SAP practice templates* button
+2. *Initial import of SAP process structure* button
+
+    This button should be used when you want to synchronize the non best practice SAP Solution Manager processes to Symbio. Along with the process structure, library elements that are connected to the objects in the process structure will also be synchronized. These processes would be in version 1.0 Released, but a user is able to create a new version and edit the processes. 
+    
+    When you click the button, a dialog will appear. In this dialog, you must choose a scope that you want to synchronize. You should choose the Solution Manager scope which contains your non best practice processes. Once you have selected the scope you wish to synchronize, you can start the synchronization process.
+
+    There is also some additional information:
+
+    *Last synchronization*: The name of the scope - Time of the latest latest successful synchronization of processes - Result of the synchronization process
+
+    *Last successful synchronization*: The name of the scope - Time of the latest successful synchronization of processes
+
+    If you do not close the window after synchronization has started, a message with the synchronization result will appear, once the process has finished.
+
+    If synchronization is already in progress, a message will appear and you will not be able to synchronize until the previous process is completed.
+
+3. *Synchronize SAP practice templates* button
 
     This button should be used when you want to synchronize the SAP Solution Manager processes to Symbio. Along with the process structure, library elements that are connected to the objects in the process structure will also be synchronized. When you click the button, a dialog will appear:
 
@@ -41,15 +57,15 @@ Under **SAP** menu bar, there are 3 relevant menu items for the SAP Solution Man
 
     There is also some additional information:
 
-    *Last synchronization*: The name of the Scope - Time of the latest SAP Solution Library object synchronization - Result of the synchronization process
+    *Last synchronization*: The name of the Scope - Time of the latest successful synchronization of processes - Result of the synchronization process
 
-    *Last successful synchronization*: The name of the Scope - Time of the latest SAP Solution Library objects successful synchronization
+    *Last successful synchronization*: The name of the Scope - Time of the latest successful synchronization of processes
 
     If you do not close the window after synchronization has started, a message with the synchronization result will appear, once the process has finished.
 
     If synchronization is already in progress, a message will appear and you will not be able to synchronize until the previous process is completed.
 
-3. *Synchronize subprocess to SAP Solution Manager* button
+4. *Synchronize subprocess to SAP Solution Manager* button
 
     This button should be used when you want to synchronize sub process from Symbio to SAP Solution Manager. It is important to select a sub process you want to synchronize and then click on the button "Synchronize sub process to SAP Solution Manager"
 	
@@ -79,6 +95,3 @@ Under **SAP** menu bar, there are 3 relevant menu items for the SAP Solution Man
     ![Test](media/SyncOnRelease.png)
 	
     When you release a sub process and the attribute called Sync to SAP Solution Manager is checked then automaticaly after the release the sub process will be synchronized to SAP Solution Manager
-
-
-
