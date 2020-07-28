@@ -41,7 +41,7 @@ Under **SAP** menu bar, there are 3 relevant menu items for the SAP Solution Man
 
     *Last synchronization*: The name of the scope - Time of the latest latest successful synchronization of processes - Result of the synchronization process
 
-    *Last successful synchronization*: The name of the Scope - Time of the latest successful synchronization of processes
+    *Last successful synchronization*: The name of the scope - Time of the latest successful synchronization of processes
 
     If you do not close the window after synchronization has started, a message with the synchronization result will appear, once the process has finished.
 
