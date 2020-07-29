@@ -23,11 +23,13 @@ In the case of an AD connection via SAML users are automatically created with Vi
 
 ### Consolidate users
 
-Users can be consolidated via the consolidate button: 
+Users can be consolidated if there are redundancies. 
+
+To start consolidation, please select the target user and click the consolidate button of the toolbar.
 
 ![screen](../media/consolidate.png)
 
-In the dialog which then appears, please choose the elements you want to consolidate with the master element and click OK.
+In the following dialogue please choose all source users you wish to consolidate with the target and click OK. You will be prompted with a confirmation dialog showing information about your selected elements before the actual consolidation will be performed. By clicking OK, the consolidation is executed, clicking on “Cancel” leads you back to the source selection dialog.
 
 The process of consolidating users cannot be reversed.
 
@@ -47,6 +49,6 @@ SAML user groups additionally have Application Roles which sets the Application 
 
 Users can be consolidated in the same way es users - via the consolidate button. 
 
-In the dialog which then appears, please choose the elements you want to consolidate with the master element and click OK.
+In the dialog which then appears, please choose the elements you want to consolidate with the target element and click OK.
 
 The process of consolidating user groups cannot be reversed.
