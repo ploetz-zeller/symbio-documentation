@@ -145,6 +145,7 @@ nav:
       - External Systems:
         - Creating external systems: admin/administration/external-systems/creating-external-systems.md
         - Connect external systems: admin/administration/external-systems/connect-external-systems.md
+        - Update external systems: admin/administration/external-systems/update-external-systems.md
         - Disconnect external systems: admin/administration/external-systems/disconnect-external-systems.md
         - Create token and inform external systems: admin/administration/external-systems/create-token-and-inform-external-systems.md
         - Authentication Token IsPermittedEverywhere: developer/is-permitted-everywhere.md
