@@ -1,11 +1,8 @@
 # Global responsible role for sub processes
 
-Please note: This feature will be automatically enabled in all future versions and cannot be disabled. 
+Activating this feature enables the author of a sub process to define a global responsible role. This assigned role is shown automatically in the swimlane view, when the sub process is referenced as interface in other sub processes. 
+An author who uses the reference to the sub process additionally could add another role who is responsible of the sub process interface in the current process. 
 
-This feature aims that an update of a process graphic will only be triggered once the User clicks the refresh button in the Toolbar.
+![screen](../media/global_responsible_role.png)
 
-Performance is improved considerably because the process graphic is no longer updated automatically when objects are added or changed.
-
-![screen](../media/Enhancement_detailed_modeling.png)
-
-Modelling or deleting processes or objects, however, are still updated automatically, since these changes have consequences for the structure of the process. The changes between two updates are automatically cached as before. 
+The global responsible role is also changeable on a released sub process via the "Edit attributes" dialog. 
