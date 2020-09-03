@@ -31,7 +31,7 @@ The format is in form of a very flat object with unique property names for easie
         }
     ]
 }
-```
+````
 
 It is easy to use now e. g. in Power Automate. In the following example you can see the selection a value in a `Create HTML table` action:
 
