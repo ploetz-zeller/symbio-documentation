@@ -196,6 +196,7 @@ nav:
     - REST API:
       - Overview:
         - Permalinks API: developer/rest-api/overview/permalinks-api.md
+        - Power Platform API: developer/rest-api/overview/powerplatform-api.md
       - How To:
         - Authentication Tokens: developer/rest-api/how-to/rest-symbio-auth-token-client-temp-example-documentation/rest-symbio-auth-token-client-temp-example-documentation.md
         - Authentication Token IsPermittedEverywhere: developer/is-permitted-everywhere.md
