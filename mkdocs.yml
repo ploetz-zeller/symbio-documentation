@@ -145,6 +145,7 @@ nav:
       - External Systems:
         - Creating external systems: admin/administration/external-systems/creating-external-systems.md
         - Connect external systems: admin/administration/external-systems/connect-external-systems.md
+        - Update external systems: admin/administration/external-systems/update-external-systems.md
         - Disconnect external systems: admin/administration/external-systems/disconnect-external-systems.md
         - Create token and inform external systems: admin/administration/external-systems/create-token-and-inform-external-systems.md
         - Authentication Token IsPermittedEverywhere: developer/is-permitted-everywhere.md
@@ -182,6 +183,7 @@ nav:
         - Graphical version comparison: admin/features/process-design/graphical_comparison/graphical-comparison.md
         - RACI instead of RASCI: admin/features/process-design/raci_instead_rasci/raci-instead-of-rasci.md
         - Swimlane for Applications: admin/features/process-design/swimlane-for-applications/swimlane-for-applications.md
+        - Global responsible role for sub processes: admin/features/process-design/global-responsible-role/global-responsible-role.md
       - Repository design:
         - ArchiMate Conversions: admin/features/repository-design/archimate-conversions/archimate-conversions.md
         - Classification of information: admin/features/repository-design/classification-of-info/classification-of-information.md
@@ -192,6 +194,9 @@ nav:
     - Introduction: developer/index.md
     - Getting Started: developer/getting-started.md
     - REST API:
+      - Overview:
+        - Permalinks API: developer/rest-api/overview/permalinks-api.md
+        - Power Platform API: developer/rest-api/overview/powerplatform-api.md
       - How To:
         - Authentication Tokens: developer/rest-api/how-to/rest-symbio-auth-token-client-temp-example-documentation/rest-symbio-auth-token-client-temp-example-documentation.md
         - Authentication Token IsPermittedEverywhere: developer/is-permitted-everywhere.md
