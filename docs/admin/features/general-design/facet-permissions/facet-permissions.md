@@ -1,4 +1,4 @@
-# Permissions for facets (Released feature)
+# Permissions for facets 
 
 With this feature, you can assign permissions to facets, just like it is normally done for processes or objects.  
 

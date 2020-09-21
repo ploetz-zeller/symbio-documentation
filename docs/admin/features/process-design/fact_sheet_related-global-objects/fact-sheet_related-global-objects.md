@@ -1,4 +1,4 @@
-# Fact sheet: related global objects
+# Fact Sheets: Global related objects
 
 By this feature, a specific process view can be selected in the ‘Graphic’ dropdown of the Toolbar. It shows connected global objects within the currently opened Main or Sub Process - directly above the process flow. 
 
