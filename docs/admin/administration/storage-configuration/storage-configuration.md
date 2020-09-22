@@ -180,6 +180,19 @@ You can also set that only the selected user types are allowed to edit the proce
 
 ![screen](../media/change_selection.png)
 
+#### Adapt shape display text format / name display format
+
+This is to show the ID as a prefix in the navigation tree as well as in the graphic:
+
+![screen](../media/extended_config_name_shape_display.png)
+![screen](../media/dropdown_adapt_display.png)
+
+Configuration examples:
+
+![screen](../media/settings_shape.png)
+
+![screen](../media/settings_name.png)
+
 ## Features
 
 Updates and new features will be available in the Symbio Cloud on a continuous basis. Thus, the Symbio version numbers are now omitted.  
