@@ -1,5 +1,9 @@
 # Versioning
 
+Supported versions of Solution Manager:
+
+**In order for interface to work, Solution Manager 7.2 instance has to be on SP 7 or above.**
+
 Three important components have to be chosen properly when installing on premise for the SAP Solution Manager interface to work properly:
  1. Symbio
  2. SAP Solution Manager interface
