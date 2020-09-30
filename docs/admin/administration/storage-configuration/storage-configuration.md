@@ -70,9 +70,9 @@ Example: Hide 'Requirements' in Detail Content
 Hides complete groups, e.g. 'Responsible Role', in detail Content.
 Hiding can be done for all users or only for the viewer mode.
 
-#### Hide navigation element
+#### Hide navigation member
 
-Entire navigation elements can be hidden. These include e.g. systems 
+Entire navigation members can be hidden. These include e.g. systems 
 or input/output.
 
 ![screen](../media/hide_nav_element.png)
@@ -180,18 +180,27 @@ You can also set that only the selected user types are allowed to edit the proce
 
 ![screen](../media/change_selection.png)
 
-#### Adapt shape display text format / name display format
+#### Adapt name display format 
 
-This is to show the ID as a prefix in the navigation tree as well as in the graphic:
+This is to show the ID as a prefix in the navigation tree in front of process name:
 
-![screen](../media/extended_config_name_shape_display.png)
-![screen](../media/dropdown_adapt_display.png)
+![screen](../media/extended_config_name_display.png)
+
+Configuration example:
+
+![screen](../media/settings_name.png)
+
+#### Adapt shape display text format 
+
+This is to show the ID as a prefix in the shape in front of process name (currently only available for Sub Processes):
+
+![screen](../media/extended_config_shape_display.png)
 
 Configuration examples:
 
 ![screen](../media/settings_shape.png)
 
-![screen](../media/settings_name.png)
+
 
 ## Features
 
