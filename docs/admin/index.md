@@ -118,6 +118,8 @@ For a for a better understanding, the tasks of a user with the role 'Architect' 
 
 ### Don’ts
 
-#### No more than one architect should consolidate objects in the same navigation at the same time, otherwise there is a risk of consolidating objects mutually, which can lead to data inconsistencies
-#### No more than one architect should move or delete elements in architectures/hierarchies (of processes or objects) at the same time (e.g. categories or processes/objects that have not yet been released) - under no circumstances should elements be moved in parallel in the same branch. This also applies to moving from the ‘orphaned’ view
-#### When deleting subtrees (processes, objects, categories or similar), all child elements should have been deleted or moved before. The same applies to setting the status to ‘expired’
+No more than one architect should consolidate objects in the same navigation at the same time, otherwise there is a risk of consolidating objects mutually, which can lead to data inconsistencies
+
+No more than one architect should move or delete elements in architectures/hierarchies (of processes or objects) at the same time (e.g. categories or processes/objects that have not yet been released) - under no circumstances should elements be moved in parallel in the same branch. This also applies to moving from the ‘orphaned’ view
+
+When deleting subtrees (processes, objects, categories or similar), all child elements should have been deleted or moved before. The same applies to setting the status to ‘expired’

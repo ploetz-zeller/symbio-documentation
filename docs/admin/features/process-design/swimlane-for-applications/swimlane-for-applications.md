@@ -1,4 +1,4 @@
-# Diagram mode: Application Swimlane (Preview feature)
+# Diagram mode: Application Swimlane 
 
 By activating this feature, a __new Graphic view__ is provided, showing the process steps sorted by applications in vertical or horizontal swimlanes. 
 

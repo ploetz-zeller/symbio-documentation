@@ -1,4 +1,4 @@
-# Subscriptions on categories feature
+# Subscriptions for categories
 
 This feature allows subscriptions on categories. Currently, only subscriptions on document categories are available.
 
