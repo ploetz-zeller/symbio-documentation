@@ -2,24 +2,27 @@
 
 ## Extended Configuration
 
-Additional configuration options are available for the administrator in the tile "extended configuration". This includes hiding various information, renaming the standard interface and adding new attributes. 
+Additional configuration options are available in the Admin area. This includes hiding various information, renaming the standard interface, adding new attributes or changing them. 
 
 To use the advanced configuration, please proceed as follows:
-- In the admin area, open the tile 'Advanced configuration'
+
+- Navigate to the Admin area and open the tile 'Extended configuration'
 
   ![screen](../media/extended_config.png)
 
-- Create a new type with one of the configuration options
+- Create a new type with one of the configuration options __Hide, Rename, Add__ or __Change__. 
 
   ![screen](../media/tooltip.png)
 
-The next sections describe some of the configurations in more detail.
+The next sections describe these configurations in more detail.
+
+__NOTE__: To apply all changes, the configuration has to be activated and applied afterwards.
+
+![screen](../media/hide.png)
 
 ### Hide
 
-To apply all changes, the configuration has to be activated and applied afterwards.
-
-![screen](../media/hide.png)
+This configuration allows to hide views or specific attributes in the Detail Content. If this should be hidden for viewers only, please activate the checkbox 'Only for viewer' accordingly.
 
 #### Hide graphic layout
 
