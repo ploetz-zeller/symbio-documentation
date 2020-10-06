@@ -21,11 +21,11 @@ To apply all changes, the configuration has to be activated and applied afterwar
 
 ![screen](../media/hide.png)
 
-#### Hide graphic options
+#### Hide graphic layout
 
 The configuration "Hide graphics options" allows the administrator to minimize the graphical selection in processes. All standard graphics in Symbio and the user-defined fact sheets can be managed with this configuration. 
 
-1. Select type „Hide graphics options“
+1. Select type „Hide graphic layout“
 2. Enter name for configuration entry (e.g. detailed view Sub Process)
 3. Define settings 
 4. Activate configuration entry
@@ -70,6 +70,11 @@ Example: Hide 'Requirements' in Detail Content
 Hides complete groups, e.g. 'Responsible Role', in detail Content.
 Hiding can be done for all users or only for the viewer mode.
 
+#### List widget: Hide global corona types
+
+TO BE REVIEWED:
+In the list widgets for fact sheets, global objects, e.g. documents, can be hidden.
+
 #### Hide navigation member
 
 Entire navigation members can be hidden. These include e.g. systems 
@@ -106,7 +111,7 @@ The following user-defined attribute groups are available:
 
       ![screen](../media/add4.png)
 
-4. By activating “Hide for Viewer” this custom attribute will only be displayed for the editors
+4. By activating “Only for Viewer” this custom attribute will only be displayed for the viewers
 
 5. By activating “Available for reporting” the custom attribute will be analyzed in the estandard reports as well. If this is not activated, this attribute won´t be a part of the reporting
 
@@ -118,7 +123,7 @@ The following user-defined attribute groups are available:
 
 Here, there are some examples explained in detail:
 
-#### Add single line attribute
+#### Add single line text attribute
 
 1. Select attribute type 
 
@@ -132,7 +137,6 @@ Please do not use special characters or '-'.
 'ATX_CUSTOM_SHORT_DESCRIPTION'
 
 3. Define settings in the Detail Content 
-Check the chapter 6.20.3 Add for the details
 
       ![screen](../media/add_single_line2.png)
 
@@ -145,13 +149,53 @@ Check the chapter 6.20.3 Add for the details
 
       Settings: Valid for facet, valid for type, group, language independent, maximal length.
 
-#### Add selection list attribute
+#### Add multiline text attribute
+
+- will be published soon -
+
+#### Add masked text attribute
+
+- will be published soon -
+
+#### Add formattable multiline text attribute
+
+- will be published soon -
+
+#### Add link attribute
+
+- will be published soon -
+
+#### Add check-box attribute
+
+- will be published soon -
+
+#### Add integer number attribute
+
+- will be published soon -
+
+#### Add flowting number attribute
+
+- will be published soon -
+
+#### Add date attribute
+
+- will be published soon -
+
+#### Add static note attribute
+
+- will be published soon -
+
+#### Add dropdown attribute
+
+- will be published soon -
+
+#### Add multi selection attribute
 
 In addition, the following is to be observed here:
 - Language independent should be checked
 - Apply the changes bevor assigning values
 
-#### Add selection list value attribute
+#### Add dropdwon value
 
 In addition, the following is to be observed here:
 - When a new value attribute is created (ID is VALUE) the API name AVTX_CUSTOM_VALUE 
