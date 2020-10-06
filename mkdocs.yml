@@ -166,31 +166,32 @@ nav:
         - Permissions get copied from comparable user instead of recalculated: admin/features/general-design/permissions-copied/permissions-copied.md
         - Document digitalization: admin/features/general-design/document-digitalization/document-digitalization.md
         - Document digitalization on all facets: admin/features/general-design/document-digitalization-on-all-facets/document-digitalization-all-facets.md
-        - Favorite management_Grouping favorites: admin/features/general-design/group-management-for-favorites/group-management-for-favorites.md
-        - Favorite management_Sharing favorites: admin/features/general-design/group-management-for-favorites-sharing/group-management-for-favorites-sharing.md
+        - "Favorite management: Grouping favorites": admin/features/general-design/group-management-for-favorites/group-management-for-favorites.md
+        - "Favorite management: Sharing favorites": admin/features/general-design/group-management-for-favorites-sharing/group-management-for-favorites-sharing.md
         - Multiselect in Lists: admin/features/general-design/multiselect-list-feature/multiselect-list-feature.md
-        - Method_Glossary: admin/features/general-design/method-glossary/method-glossary.md
-        - Method_Systems as a list (instead of architecture): admin/features/general-design/deactivate_architecture-systems/deactivate-architecture-systems.md
+        - "Method: Glossary": admin/features/general-design/method-glossary/method-glossary.md
+        - "Method: Systems as a list (instead of architecture)": admin/features/general-design/deactivate_architecture-systems/deactivate-architecture-systems.md
         - Subscriptions for categories: admin/features/general-design/subscriptions-for-categories/subscriptions-for-categories.md
       - Process design:
-        - Modeling_Exclusive process editing: admin/features/process-design/activate-exclusive-process-editing/activate-exclusive-process-editing.md
-        - Modeling_Copy and move process flow objects: admin/features/process-design/copy-move-shapes/copy-and-move-shapes.md
+        - "Modeling: Exclusive process editing": admin/features/process-design/activate-exclusive-process-editing/activate-exclusive-process-editing.md
+        - "Modeling: Copy and move process flow objects": admin/features/process-design/copy-move-shapes/copy-and-move-shapes.md
         - BPMN Icons on process flow objects: admin/features/process-design/bpmn2.0-icons/bpmn-icons.md
-        - Performance_Accelerated loading time of process graphics: admin/features/process-design/enhancement-detailed-modeling/enhancement-of-detailed-modeling.md
-        - Method_Best Practice Tasks: admin/features/process-design/best-practice-tasks/best-practice-tasks.md
-        - Method_RASCI vs. RACI in detail content: admin/features/process-design/raci_instead_rasci/raci-instead-of-rasci.md
-        - Method_Changed evaluation groups for processes: admin/features/process-design/changed-evaluation-groups-processes/changed-evaluation-groups-processes.md
-        - Fact Sheets_Global related objects: admin/features/process-design/fact_sheet_related-global-objects/fact-sheet_related-global-objects.md
+        - "Performance: Accelerated loading time of process graphics": admin/features/process-design/enhancement-detailed-modeling/enhancement-of-detailed-modeling.md
+        - "Method: Best Practice Tasks": admin/features/process-design/best-practice-tasks/best-practice-tasks.md
+        - "Method: RASCI vs. RACI in detail content": admin/features/process-design/raci_instead_rasci/raci-instead-of-rasci.md
+        - "Method: Changed evaluation groups for processes": admin/features/process-design/changed-evaluation-groups-processes/changed-evaluation-groups-processes.md
+        - "Fact Sheets: Global related objects": admin/features/process-design/fact_sheet_related-global-objects/fact-sheet_related-global-objects.md
         - Graphical version comparison: admin/features/process-design/graphical_comparison/graphical-comparison.md
-        - Diagram mode_Application Swimlane: admin/features/process-design/swimlane-for-applications/swimlane-for-applications.md
-        - Method_Global responsible role for sub processes: admin/features/process-design/global-responsible-role/global-responsible-role.md
+        - "Diagram mode: Application Swimlane": admin/features/process-design/swimlane-for-applications/swimlane-for-applications.md
+        - "Method: Global responsible role for sub processes": admin/features/process-design/global-responsible-role/global-responsible-role.md
       - Repository design:
-        - Method_System ArchiMate Converting: admin/features/repository-design/archimate-conversions/archimate-conversions.md
-        - Method_Classification of information for Documents: admin/features/repository-design/classification-of-info/classification-of-information.md
-        - Method_Maintain Measures status: admin/features/repository-design/measure-status/measure-status.md
-        - Method_Skills: admin/features/repository-design/skill-feature/skill-feature.md
-        - Method_KPI and Inputs/Outputs to Interface Placeholders: admin/features/repository-design/kpi-inoutput-interface/method-inoutput-interface.md
-        - Method_Requirements for Main Processes: admin/features/repository-design/requirements-main-processes/requirements-main-processes.md
+        - "Method: System ArchiMate Converting": admin/features/repository-design/archimate-conversions/archimate-conversions.md
+        - "Method: Classification of information for Documents": admin/features/repository-design/classification-of-info/classification-of-information.md
+        - "Method: Maintain Measures status": admin/features/repository-design/measure-status/measure-status.md
+        - "Method: Skills": admin/features/repository-design/skill-feature/skill-feature.md
+        - "Method: KPI and Inputs/Outputs to Interface Placeholders": admin/features/repository-design/kpi-inoutput-interface/method-inoutput-interface.md
+        - "Method: Requirements for Main Processes": admin/features/repository-design/requirements-main-processes/requirements-main-processes.md
+        - "Method: Assignment of processes to documents": admin/features/repository-design/assignment-of-processes-to-document/assignment-of-processes-to-document.md
   - Developer:
     - Introduction: developer/index.md
     - Getting Started: developer/getting-started.md
