@@ -16,7 +16,7 @@ To use the advanced configuration, please proceed as follows:
 
 The next sections describe these configurations in more detail.
 
-__NOTE__: To apply all changes, the configuration has to be activated and applied afterwards.
+__NOTE__: To apply all changes, the configuration has to be activated by click on check box and additionally applied afterwards.
 
 ![screen](../media/hide.png)
 
@@ -75,8 +75,7 @@ Hiding can be done for all users or only for the viewer mode.
 
 #### List widget: Hide global corona types
 
-TO BE REVIEWED:
-In the list widgets for fact sheets, global objects, e.g. documents, can be hidden.
+- will be published soon -
 
 #### Hide navigation member
 
@@ -118,13 +117,19 @@ The following user-defined attribute groups are available:
 
 5. By activating “Available for reporting” the custom attribute will be analyzed in the estandard reports as well. If this is not activated, this attribute won´t be a part of the reporting
 
-6. By activating “language independent”, this attribute will be for every language and can´t be translated.
+6. By activating "Searchable" this attribute will be considered in the Symbio standard search. 
 
-7. To apply all changes, the configuration has to be activated and applied afterwards.
+7. By activating “language independent”, this attribute will be for every language and can´t be translated.
+
+8. By activating "Editable in Released state", this attribute may be edited even afterwards in released state.
+
+9. NOTE: We recommend to enter a Max text length, otherwise the default length of 81 characters will be automatically set. 
+
+10. To apply all changes, the configuration has to be activated and applied afterwards.
 
       ![screen](../media/add5.png)
 
-Here, there are some examples explained in detail:
+Please find more details below: 
 
 #### Add single line text attribute
 
@@ -154,7 +159,7 @@ Please do not use special characters or '-'.
 
 #### Add multiline text attribute
 
-- will be published soon -
+This is to add a multiline text attribute. Please see description above re. "single line text attribute" - and don't forget to enter the Max text length. Otherwise, 81 characters are set by default.
 
 #### Add masked text attribute
 
@@ -162,43 +167,47 @@ Please do not use special characters or '-'.
 
 #### Add formattable multiline text attribute
 
-- will be published soon -
+This is to add a multiline text attribute that allows HTML formating, similiar to the "Description" field.
 
 #### Add link attribute
 
-- will be published soon -
+This allows to add links, similar to the "Attachments" section. We recommend to activate "Language independent".
 
 #### Add check-box attribute
 
-- will be published soon -
+This is to add an additional check-box. If the check-box should be activated by default, select the option "Default value". We also recommend to activate "Language independent".
 
 #### Add integer number attribute
 
-- will be published soon -
+This is to add a field for editing integer numbers. As an option, a Min and Max value can be specified. If you enter integer or decimal numbers outside this range, they are rounded down to the Max value or rounded up to the Min value. Furthermore, a "Default value" number can be set, that appears by default. We also recommend to activate "Language independent".
 
 #### Add flowting number attribute
 
-- will be published soon -
+This is to add a field for editing flowting numbers, i.e. decimal numbers, with +/- sign etc. As an option, a Min and Max value can be specified. If you enter number outside this range, they are rounded down to the Max value or rounded up to the Min value. Furthermore, a "Default value" number can be set, that appears by default. We also recommend to activate "Language independent".
 
 #### Add date attribute
 
-- will be published soon -
+This is to add a date attribute. We recommend to activate "Language independent" as well as the "Editable in released state" option. NOTE: If the field "Default value" remains empty, the date 01.01.0001 is automatically set for new created elements (for existing elements, however, no default value is displayed).
 
 #### Add static note attribute
 
-- will be published soon -
+This is to add a static and unchangeable note, e.g. as a specific hint or comment for the process modeler.
 
 #### Add dropdown attribute
 
-- will be published soon -
-
-#### Add multi selection attribute
-
-In addition, the following is to be observed here:
+This is to add an additional dropdown field. Suitable dropdown values can only be added after activiation by "Adding dropdown values".
+NOTE: the following is to be observed here:
 - Language independent should be checked
 - Apply the changes bevor assigning values
 
-#### Add dropdwon value
+#### Add multi selection attribute
+
+This is to add an additional multi selection field. Suitable values can be added after activation by "Adding dropdown values".
+NOTE: the following is to be observed here:
+- Language independent should be checked
+- Apply the changes bevor assigning values
+
+#### Add dropdown value
 
 In addition, the following is to be observed here:
 - When a new value attribute is created (ID is VALUE) the API name AVTX_CUSTOM_VALUE 
