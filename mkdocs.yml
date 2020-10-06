@@ -190,6 +190,7 @@ nav:
         - Method - Maintain Measures status: admin/features/repository-design/measure-status/measure-status.md
         - Skill Feature: admin/features/repository-design/skill-feature/skill-feature.md
         - Method - Requirements for Main Processes: admin/features/repository-design/requirements-main-processes/requirements-main-processes.md
+        - Method - Assignment of processes to documents: admin/features/repository-design/assignment-of-processes-to-document/assignment-of-processes-to-document.md
   - Developer:
     - Introduction: developer/index.md
     - Getting Started: developer/getting-started.md
