@@ -75,7 +75,12 @@ Hiding can be done for all users or only for the viewer mode.
 
 #### List widget: Hide global corona types
 
-- will be published soon -
+This configuration is related to the feature __Fact Sheets: Global related objects__ that allows to display global (sub process-related) information aggregated on top of a process.
+
+Here you have the option to hide specific global objects, e.g. Inputs/Outputs, for reasons of a clearer presentation.
+
+Please refer to [Features - Process design](https://docs.symbioworld.com/admin/features/introduction/introduction/) for more details.
+
 
 #### Hide navigation member
 
@@ -163,7 +168,7 @@ This is to add a multiline text attribute. Please see description above re. "sin
 
 #### Add masked text attribute
 
-- will be published soon -
+This is to configure a single line text attribute that allows to hidden entries for your own password management.
 
 #### Add formattable multiline text attribute
 
@@ -236,6 +241,10 @@ You can also set that only the selected user types are allowed to edit the proce
 
 ![screen](../media/change_selection.png)
 
+#### Change shape type
+
+- will be published soon -
+
 #### Adapt name display format 
 
 This is to show the ID as a prefix in the navigation tree in front of process name:
@@ -255,6 +264,22 @@ This is to show the ID as a prefix in the shape in front of process name (curren
 Configuration examples:
 
 ![screen](../media/settings_shape.png)
+
+#### Change default layout
+
+Generally, the default layout for processes is 'Vertical'. If you like to change this, you can set your individual default layout here. This is also applicable for further facets, e.g. Organizational units, where you can choose between Graphic/Detailed view. 
+
+#### Show shape numbers
+
+This setting is a prerequisite for using the Feature __Method: Numeration of process flow objects__that allows to display shape numbers on shapes in different graphical views.
+
+Please add a new type __Show shape numbers__ in the 'Change' section and, in the Detail Content, select the layouts for which it should be applied.
+
+![screen](../media/extconfig_shape_numbers.png)
+
+After configuration, the feature activation will follow.  
+
+Please refer to [Features - Process design](https://docs.symbioworld.com/admin/features/introduction/introduction/) for more details.
 
 
 
