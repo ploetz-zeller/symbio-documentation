@@ -188,7 +188,7 @@ nav:
         - "Method: Additional relationships for documents": admin/features/repository-design/additional-relations-documents/additional-relations-documents.md
         - "Method: System ArchiMate Converting": admin/features/repository-design/archimate-conversions/archimate-conversions.md
         - "Method: Classification of information for Documents": admin/features/repository-design/classification-of-info/classification-of-information.md
-        - "Method: 'Documents to be considered' for organizational units": admin/features/repository-design/documents-org-units/documents-org-units.md
+        - 'Method: "Documents to be considered" for organizational units': admin/features/repository-design/documents-org-units/documents-org-units.md
           "Method: Maintain Measures status": admin/features/repository-design/measure-status/measure-status.md
         - "Method: Skills": admin/features/repository-design/skill-feature/skill-feature.md
         - "Method: KPI and Inputs/Outputs to Interface Placeholders": admin/features/repository-design/kpi-inoutput-interface/method-inoutput-interface.md
