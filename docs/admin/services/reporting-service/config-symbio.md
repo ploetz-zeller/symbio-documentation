@@ -22,7 +22,9 @@ In Symbio follow these steps to create and configure a report pool:
 | Service endpoint url | Enter the URL of the connector service as noted during its setup. |
 | Authentication token | Enter the security:authToken that was defined in the connector service's settings. |
 | Administrative connection string | Enter a connection string to the ODS database that allows full access to the database. |
-| Rea-only connection string | Enter a connection string the the ODS database that allows read-only access to the database. |
+| Read-only connection string | Enter a connection string the the ODS database that allows read-only access to the database. |
+| SSRS root folder path | The SSRS root folder path for this connector instance as noted during SSRS worksapce template setup, e.g. SymbioReporting. |
+| Report template folder | The name of the template folder in the root path given above as noted during SSRS workspace template setup, e.g. _Template. |
 | SSRS enabled | Mark this checkbox if you want to support SSRS reports with this report pool. |
 | Power BI enabled | Mark this checkbox if you want to support Power BI reports with this report pool. |
 
@@ -30,10 +32,10 @@ In Symbio follow these steps to create and configure a report pool:
 
 In Symbio follow these steps to connect a storage to a report pool:
 
-1. Login as an admin user to the _collection_ where the storage is located
+1. Login as an admin user to the _Collection_ where the storage is located
 2. Switch to _Storages_
 3. Select the storage to connect to a report pool
-4. Select the desired report pool from the drop down
+4. Select the desired _Report pool_ from the drop down
 
 ![](media/config-symbio-2.png)
 
