@@ -1,4 +1,4 @@
-# Method: Maintain 'Measures' status
+# Method: "Measures" status
 
 This feature allows to add the section "Measure status" in the Detail Content of Sub Navigation "measures" (below STRATEGY). 
 

@@ -1,4 +1,4 @@
-# Permissions maintenance extension
+# Permissions directly on process/object 
 
 Please note that this feature can only be activated once (__Is one way__)!
 

@@ -1,4 +1,4 @@
-# Enhancement of detailed modeling
+# Performance: Accelerated loading time of process graphics
 
 Please note: This feature will be automatically enabled in all future versions and cannot be disabled. 
 

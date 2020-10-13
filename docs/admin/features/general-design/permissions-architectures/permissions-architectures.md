@@ -1,4 +1,4 @@
-# Architectural permissions
+# Permissions for architectures 
 
 This feature allows to dynamically assgin the role of the Architect to different users for individual areas. 
 

@@ -1,4 +1,4 @@
-# Activate exclusive process editing
+# Modeling: Exclusive process editing
 
 Please note that activating this feature causes a change in the common modelling procedure!
 

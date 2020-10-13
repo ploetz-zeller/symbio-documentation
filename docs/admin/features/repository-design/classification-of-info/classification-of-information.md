@@ -1,4 +1,4 @@
-# Classification of information
+# Method: Classification of information for Documents
 
 This feature affects the DOCUMENTS facet. After activation a new section "Classification of Information" appears in the Detail Content of a document.
 

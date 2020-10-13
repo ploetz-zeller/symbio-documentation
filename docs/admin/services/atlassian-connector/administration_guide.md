@@ -10,8 +10,8 @@ The service is currently made available as a stand alone service on Azure. It us
 1. Go to the "Extended configuration" ![extended configuration](media/extendedcfg.png)
 1. Select "New" and add a type for an external system named "Atlassian"
 1. Set the following attributes
-   1. **Name:** Atlassian
-   1. **Description:** Symbio to Jira configuration items required for the integration
+    1. **Name:** Atlassian
+    1. **Description:** Symbio to Jira configuration items required for the integration
 1. Select the SYEX file under the data tab with the Title: "external_system_types - atlassianinterface.syex" and click OK. You can use the search / filter bar to shorten the list ![Select Add](media/addsyexdata.png)
 1. Make the external configuration active ![activate](media/addsyex3.png)
 1. Apply changes ![activate](media/apply.png)
@@ -19,10 +19,10 @@ The service is currently made available as a stand alone service on Azure. It us
 ### Add a configured external system linked to the active service
 1. Select "External systems" on the main menu bar
 1. Add a new external system with "Type" of "Atlassian" ![activate](media/extSysConfig1.png)
-   1. Name the External System "SymbioToJira"
-1. Add the values that is relevant for your Jira instance
-   1. ![activate](media/extSysConfig2.png)
-   1. (Optional) Add additional configuration to the external system in the settings box in JSON format. Here you can "map" the Symbio stereotypes for your requirements to the equivalent issue types in Jira, as well as the attributes you wish to map between the two systems. Example:
+    1. Name the External System "SymbioToJira"
+1. Add the values that is relevant for your Jira instance. Note that the URL values should not end with a "/".
+    1. ![activate](media/extSysConfig2.png)
+    1. (Optional) Add additional configuration to the external system in the settings box in JSON format. Here you can "map" the Symbio stereotypes for your requirements to the equivalent issue types in Jira, as well as the attributes you wish to map between the two systems. Example:
 
     ```json
         {"ObjectTypes":[
@@ -56,19 +56,20 @@ The service is currently made available as a stand alone service on Azure. It us
 
 1. The default conversion settings are the following:
 Object Types:
+
 | Symbio requirement stereotype | Jira issue type |
 |--- |--- |
-| Epic | Epic
-| User Story | Story
-| Feature | Epic
-| PBI | Story
+| Epic | Epic |
+| User Story | Story |
+| Feature | Epic |
+| PBI | Story |
 
 Attributes:
-| Symbio attribute 	    | Jira attribute
+| Symbio attribute 	    | Jira attribute |
 |--- |--- |
-| Name                  | Summary
-| Description           | Description
-| Custom Jira Status    | status
+| Name                  | Summary |
+| Description           | Description |
+| Custom Jira Status    | status |
 
    *Please note that the system requires an admin user type on the Jira and Symbio systems for the interface to function correctly*
 

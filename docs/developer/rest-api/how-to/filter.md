@@ -10,16 +10,15 @@ Filters can be part of the Uri and cause the server to return a filtered amount 
 
 The filters are part of the Uri.
 ```
-https://Server/Collection/Database/_api/rest/facets/processes/views/tree/elements/Origin Key of Category?$filter=name Equal 'mainProcess'
+https://Server/Collection/Database/_api/rest/facets/processes/views/tree/elements/Origin Key of Category?$filter=name -eq 'mainProcess'
 ```
-## Arten von Filtern/ Operatoren
+## Type of filters / operations
 
 ### Binary Operators
 
 | Name | Syntax | Type | Description | Example |
 |---|---|---|---|---|
-| Equal | Equal | string | The Boolean equality operator. | ?$filter=name Equal string |
-| Like | Like | string | Determines whether a specific character string matches a specified pattern or not. | ?$filter=name Like '%string' or 'string%' or '%string%' |
+| Equal | -eq | string | The Boolean equality operator. | ?$filter=name -eq string |
 
 ### Function Operators
 
@@ -56,7 +55,7 @@ It is possible to create a query in which filters are used in combination. An ex
 
 ### Query example
 ```
-https://Server/Collection/Database/_api/rest/facets/processes/views/tree/elements/Origin Key of Category?$filter=name Equal 'mainProcess' AND state1 Equal 'in progress'
+https://Server/Collection/Database/_api/rest/facets/processes/views/tree/elements/Origin Key of Category?$filter=name -eq 'mainProcess' AND state1 -eq 'in progress'
 ```
 
 Other combinations are also possible.
