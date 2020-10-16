@@ -17,7 +17,9 @@ Please secure your Report Service with an HTTPS endpoint, choose a valid and acc
 
 ### Database
 
-This is the internal SSRS management database, _this is **not** the ODS Database!_
+The Report server stores all report server content and application data in a database. This is the internal SSRS management database, _this is **not** the ODS Database!_
+
+![](media/deploy-ssrs-1b.png)
 
 ### Web Portal URL
 
