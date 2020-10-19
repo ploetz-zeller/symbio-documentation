@@ -65,15 +65,14 @@ nav:
         - Installation manual: admin/services/process-portal-exporter/install-service-manual.md
         - Configuration: admin/services/process-portal-exporter/configuration.md
         - Usage: admin/services/process-portal-exporter/usage.md
-      - Reporting Service:
-        - Overview: 
-          - Introduction: admin/services/reporting-service/overview.md
-          - Authentication Token IsPermittedEverywhere: developer/is-permitted-everywhere.md
+      - Reporting:
+        - Overview: admin/services/reporting-service/overview.md
         - Setup:
           - SSRS & Reports: admin/services/reporting-service/ssrs-and-reports.md
           - Connector: admin/services/reporting-service/reporting-connector.md
-          - Console: admin/services/reporting-service/reporting-console.md
           - Symbio: admin/services/reporting-service/config-symbio.md
+          - Authentication Token IsPermittedEverywhere: developer/is-permitted-everywhere.md
+          - Console: admin/services/reporting-service/reporting-console.md
         - Operation: admin/services/reporting-service/operation.md
         - FAQ: admin/services/reporting-service/faq.md
       - SAP Solution Manager Connector:
