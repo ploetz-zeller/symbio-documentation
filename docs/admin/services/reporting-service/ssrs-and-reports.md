@@ -13,7 +13,7 @@ Choose appropriate settings and keep an eye on the parts listed below.
 
 ![](media/deploy-ssrs-1.png)
 
-Please secure your Report Service with an HTTPS endpoint, choose a valid and accepted certificate, and note the resulting URL for later use. Remember that this URL must be available to the [Reporting Connector](deploy-connector-console.md#connector) (for managing workspaces).
+Please secure your Report Service with an HTTPS endpoint, choose a valid and accepted certificate, and note the resulting URL for later use. Remember that this URL must be available to the [Reporting Connector](reporting-connector.md) (for managing workspaces).
 
 ### Database
 
