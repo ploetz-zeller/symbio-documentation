@@ -29,7 +29,7 @@ Please secure your Report Service with an HTTPS endpoint and choose a valid and 
 
 ## Workspace Template
 
-The [Reporting Connector](deploy-connector-console.md#connector) is expecting a template directory in SSRS that will be used to create workspaces for different report pools configured in Symbio.
+The [Reporting Connector](reporting-connector.md) is expecting a template directory in SSRS that will be used to create workspaces for different report pools configured in Symbio.
 
 It is recommended that you create one root folder in SSRS per Reporting Connector that will use that SSRS instance. In the image below this root folder has been named _SymbioReporting_. If you create a root folder (which is optional), please note its name (or path using forward slashes if you create a deeper nested structure).
 
