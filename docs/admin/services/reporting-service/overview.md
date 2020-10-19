@@ -19,10 +19,10 @@ To use Symbio Reporting, the following requirements must be fullfilled:
 
 - Symbio set up and running
 - SQL Server or Azure SQL set up and running
-- Either [SSRS](deploy-ssrs.md) (requires SQL server) or Power BI set up and running
+- Either [SSRS](ssrs-and-reports.md) (requires SQL server) or Power BI set up and running
 - An ODS database on SQL Server or Azure SQL created and running, with appropriate logins for read (reporting) and write (connector & console) access
-- The [Reporting Connector](deploy-connector-console.md#connector) set up and running as web service on IIS or as an Azure App Service
-- The [Reporting Console](deploy-connector-console.md#console) set up on an appropriate machine
+- The [Reporting Connector](reporting-connector.md) set up and running as web service on IIS or as an Azure App Service
+- The [Reporting Console](reporting-console.md) set up on an appropriate machine
 
 The following communication directions must be available for the system to work:
 
