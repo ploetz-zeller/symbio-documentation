@@ -69,13 +69,13 @@ nav:
         - Overview: 
           - Introduction: admin/services/reporting-service/overview.md
           - Authentication Token IsPermittedEverywhere: developer/is-permitted-everywhere.md
-        - Installation:
-          - SSRS & Reports: admin/services/reporting-service/deploy-ssrs.md
-          - Connector Web Service & Console Application: admin/services/reporting-service/deploy-connector-console.md
-        - Configuration:
-          - Connector Web Service & Console Application: admin/services/reporting-service/config-connector-console.md
-          - Symbio Report Pool & Symbio Reporting:  admin/services/reporting-service/config-symbio.md
+        - Setup:
+          - SSRS & Reports: admin/services/reporting-service/ssrs-and-reports.md
+          - Connector: admin/services/reporting-service/reporting-connector.md
+          - Console: admin/services/reporting-service/reporting-console.md
+          - Symbio: admin/services/reporting-service/reporting-symbio.md
         - Operation: admin/services/reporting-service/operation.md
+        - FAQ: admin/service/reporting-service/faq.md
       - SAP Solution Manager Connector:
         - Introduction: 
           - Overview: admin/services/sap-solution-manager-connector/Introduction_Overview.md

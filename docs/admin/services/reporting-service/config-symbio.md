@@ -1,8 +1,8 @@
-# Symbio Reporting - Configuration
+# Symbio Reporting
 
 ## Requirements
 
-Reporting Connector & Console are already [set up](deploy-connector-console.md).
+Reporting [Connector](reporting-connector.md) & [Console](reporting-console.md) are already set up.
 
 ## Configuration
 

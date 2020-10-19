@@ -2,7 +2,7 @@
 
 ## Requirements
 
-The Console application is already [set up](deploy-connector-console.md#console).
+The Console application is already [set up](reporting-console.md).
 
 ## Using the Console application on the command line
 
