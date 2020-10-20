@@ -18,3 +18,9 @@
 - Which connection string is used for what actions?
   - Administrative connection string?
   - Read-only connection string?
+
+- How do I monitor the correct operation of the Symbio Reporting system?
+  ...
+
+- How to start investigation, if I suspect data to be wrong or missing?
+  ...
