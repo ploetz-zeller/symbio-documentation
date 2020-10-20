@@ -33,7 +33,7 @@ The [Reporting Connector](reporting-connector.md) is expecting a template direct
 
 It is recommended that you create one root folder in SSRS per Reporting Connector that will use that SSRS instance. In the image below this root folder has been named _SymbioReporting_. If you create a root folder (which is optional), please note its name (or path using forward slashes if you create a deeper nested structure).
 
-In your Reporting Connector's root folder create a template folder and note its name. In the example below this folder has been named _Template_. For each report pool in Symbio, the connector will create a copy of the template folder and assign it the ID of the report pool as its name.
+In your Reporting Connector's root folder create a template folder and note its name. In the example below this folder has been named __Template_. For each report pool in Symbio, the connector will create a copy of the template folder and assign it the ID of the report pool as its name.
 
 ![](media/deploy-ssrs-3.png)
 
