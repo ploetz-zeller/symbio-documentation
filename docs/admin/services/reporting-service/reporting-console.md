@@ -2,7 +2,7 @@
 
 ## Requirements
 
-To set up the **Reporting Console** you will need a machine with a current version of the .NET Core runtime installed. This machine needs access to Symbio and the ODS database.
+To set up the **Reporting Console** you will need a machine with a current version of the .NET Core runtime installed. This machine needs access to [Symbio](config-symbio.md), connection to the [Reporting Connector](reporting-connector.md) and the ODS database.
 
 ## Installation on a Windows machine
 
