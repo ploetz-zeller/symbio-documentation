@@ -2,9 +2,13 @@
 
 ## Requirements
 
-Reporting [Connector](reporting-connector.md) & [Console](reporting-console.md) are already set up.
+[Reporting Connector](reporting-connector.md) is already set up.
 
 ## Configuration
+
+1. Create and configure a report pool if it does not exist. You may reuse an existing report pool for different storages.
+1. Assign a report pool to a storage. After successful assignment, you can find the authorization token on the admin page's 'Automation' tile.
+1. Enable those reports from the report set you want to use in your connected storage.
 
 ### Report Pool
 
@@ -26,7 +30,7 @@ In Symbio follow these steps to create and configure a report pool:
 | SSRS root folder path | The SSRS root folder path for this connector instance as noted during SSRS worksapce template setup, e.g. SymbioReporting. |
 | Report template folder | The name of the template folder in the root path given above as noted during SSRS workspace template setup, e.g. _Template. |
 | SSRS enabled | Mark this checkbox if you want to support SSRS reports with this report pool. |
-| Power BI enabled | Mark this checkbox if you want to support Power BI reports with this report pool. |
+| Power BI enabled | This is not supported yet. |
 
 ### Connecting a storage to a report pool
 
@@ -40,6 +44,14 @@ In Symbio follow these steps to connect a storage to a report pool:
 ![](media/config-symbio-2.png)
 
 This will trigger the creation of reports in Symbio (if at least one of SSRS or Power BI has been enabled on the pool, and the workspace contains reports to link to).
+
+#### IsPermittedEverywhere
+Please keep in mind that you can set the Symbio authorization token to be permitted everywhere,
+with end end date until this permission set is valid.
+This permission set may be valid for operations or objects it was not intended for,
+and may have an impact on Symbio's behaviour.
+
+![screen](./media/is-permitted-everywhere.png)
 
 ### Activating reports in a storage
 
@@ -55,3 +67,5 @@ In Symbio follow these steps to activate reports in a storage:
 The report is now available in the reporting dropdown:
 
 ![](media/config-symbio-4.png)
+
+
