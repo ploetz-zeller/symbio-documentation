@@ -2,7 +2,7 @@
 
 ## Requirements
 
-Reporting [Connector](reporting-connector.md) & [Console](reporting-console.md) are already set up.
+Reporting [Connector](reporting-connector.md) is already set up.
 
 ## Configuration
 
@@ -26,7 +26,6 @@ In Symbio follow these steps to create and configure a report pool:
 | SSRS root folder path | The SSRS root folder path for this connector instance as noted during SSRS worksapce template setup, e.g. SymbioReporting. |
 | Report template folder | The name of the template folder in the root path given above as noted during SSRS workspace template setup, e.g. _Template. |
 | SSRS enabled | Mark this checkbox if you want to support SSRS reports with this report pool. |
-| Power BI enabled | Mark this checkbox if you want to support Power BI reports with this report pool. |
 
 ### Connecting a storage to a report pool
 
@@ -34,12 +33,12 @@ In Symbio follow these steps to connect a storage to a report pool:
 
 1. Login as an admin user to the _Collection_ where the storage is located
 2. Switch to _Storages_
-3. Select the storage to connect to a report pool
-4. Select the desired _Report pool_ from the drop down
+3. Select the storage to connect to a Report pool
+4. Select the desired Report pool from the drop down
 
 ![](media/config-symbio-2.png)
 
-This will trigger the creation of reports in Symbio (if at least one of SSRS or Power BI has been enabled on the pool, and the workspace contains reports to link to).
+This will trigger the creation of reports in Symbio (if SSRS has been enabled on the pool, and the workspace contains reports to link to).
 
 ### Activating reports in a storage
 

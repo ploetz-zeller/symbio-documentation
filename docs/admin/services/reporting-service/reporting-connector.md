@@ -3,7 +3,7 @@
 
 ## Requirements
 
-To set up the **Reporting Connector** you will need either an IIS installation with a current version of the ASP.NET Core Hosting package installed or an Azure App Service ready for deployment. In both cases the service will need access to Symbio, SSRS/Power BI, and the ODS database. It must also be reachable by the server side component of Symbio.
+To set up the **Reporting Connector** you will need either an IIS installation with a current version of the ASP.NET Core Hosting package installed or an Azure App Service ready for deployment. In both cases the service will need access to Symbio, SSRS and the ODS database. It must also be reachable by the server side component of Symbio.
 
 ## Installation
 
@@ -41,7 +41,7 @@ The Connector service has several values that need to be configured for it to fu
 | global:ssrsUserName | The name of a user which has management access to the SSRS root folder path given above. |
 | global:ssrsPassword | The password of the user named above. |
 | global:ssrsRootFolderPath | The SSRS root folder path for this connector instance as noted during SSRS worksapce template setup, e.g. _SymbioReporting_.  |
-| global:templateName | The name of the template folder in the root path given above as noted during SSRS workspace template setup, e.g. __Template_. |
+| global:templateName | The name of the template folder in the root path given above as noted during SSRS workspace template setup, e.g. *_Template*. |
 | global:sqlCommandExecutionTimeoutInSeconds | The SQL command execution timeout in seconds, e.g. 7200. |
 
 
