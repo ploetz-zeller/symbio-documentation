@@ -112,12 +112,23 @@ If error messages indicate a connection problem, try the following (depending on
 - May the configured accounts access these URLs?
 
 ### Check token validity
-  
-  - On the Admin page, is there a valid token for the Reporting system (under data-rest api)
-    - Report Pool entry correct - compare with sysadmin/external systems, name and id of report pool (Ctrl+Alt+D)
-    - Test with Postman, URL (https://localhost/Symbio/(collection)/(storage)/_api/rest/info/reporting), Token
-      - example image
-    - Is Symbio accessible from the connector server?
+
+- On the SysAdmin page of Symbio Core, under "External Systems", select the connected Report Pool and hit Ctrl+Alt+D.
+  - Note the displayed *ContextKey* and the name of the Report Pool.
+- On the Admin page of the connected storage, click on the tile "Automation".
+  - Expand the the automation task node "data, Rest-API endpoint".
+  - Select the automation token node with same name as the connected Report Pool.
+    - Is Application Role correct?
+    - Is Validity correctly set?
+    - Is the token Permitted everywhere?
+    - Does the PowerShell command snippet under "Information" work?
+    - Note the value under ID.
+- Connect to Report Connector Config Store.
+  - Look for rows with a value equal to the noted *ContextKey*.
+    - The key of these rows should be "some-id.AssociatedReportPoolId".
+  - Look for rows with keys corresponding to "some-id.SymbioApiUrl" and "some-id.AuthorizationTokenString".
+    - These should match the URL of the Symbio storage and the noted token ID.
+      ![](media/reporting-connector-config-store-token-check.png)
 
 ### Other checks
 
@@ -129,11 +140,10 @@ If error messages indicate a connection problem, try the following (depending on
     - ReportPortal contains folder with name = id of report pool (Ctrl+Alt+D)
       - Data Source exists and correctly configured?
       - Reports exist?
+- On the SysAdmin page of Symbio Core, under "External Systems", selected the connected Reporting Pool and hit Ctrl+Alt+D.
+  - Note the displayed *ContextKey* and the name of the Report Pool.
   - Symbio Admin Page / Reporting
     - Reports there
     - Reports activated
     - those reports listed on reports page in drop-down
     - compare id of report pool (Ctrl+Alt+D)
-  - check Symbio logs
-  - check other logs
-  - contact support
