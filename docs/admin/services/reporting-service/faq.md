@@ -1,38 +1,55 @@
 # FAQ
 
-- What about Power BI?
+## What is an "ODS" database?
+
+**ODS** stands for **Operational Data Store**, see https://en.wikipedia.org/wiki/Operational_data_store for details.
+
+Symbio Reporting uses the ODS database to store its data in a way friendly to reporting while Symbio Core has its data organized in a different way to better support its interactive and presentational usage patterns.
+
+The ODS database contains a snapshot of a past state of Symbio Core. There are several mechanisms to keep it in synch so it is not older than a specified time span.
+
+## How to setup an ODS database?
   
-  --> should be removed from all documents
+The Symbio Reporting ODS database is a normal SQL Server database independent of other Symbio databases and SSRS' ReportServer databases. One ODS database can be used for several Symbio storages as the data within is separated by tenant.
 
-- What is an "ODS" database?
+For administrative and read-only connection strings the creation of corresponding users is advised:
+- **OdsReader** for the read-only connection string should be a member of the role *db_datareader*
+- **OdsWriter** for the administrative connection string should be a member of the roles *db_datawriter* and *db_owner*
+
+## How to keep the ODS database and Symbio Core in synch?
+
+The **Reporting Connector** listens to change events sent by Symbio Core. These are stored in the ODS database for later processing.
+
+The **Reporting Console** provides two mechanisms to update the ODS database:
+
+- **Fullfetch** creates a new snapshot of Symbio Core and updates the ODS database to that snapshot. This is typically done once a week during the weekend, either triggered manually or scheduled for automatic execution using a task scheduler.
+- **CRUD** collects the change events stored in the ODS database and applies them to the stored data. This is typically scheduled to be executed once per hour using a task scheduler.
+
+## What are appropriate rights for the IIS Application Pool account used for the Reporting Connector
   
-  --> Operational Data Store https://en.wikipedia.org/wiki/Operational_data_store
+The application pool account needs to be able to read and execute the content of the app's directory. Additionally, it needs to be able to write log files. Setting "Full Access" to the app's directory and inheriting that to all files and sub folders will ensure all necessary permissions are available.
 
-- How to setup an ODS database?
+## What to set "global:sqlCommandExecutionTimeoutInSeconds" to?
   
-  --> explain
+This value is typically set to 7200 (i.e. two hours) to ensure that large amounts of CRUD jobs can be executed in one console CRUD command run without getting an SQL Server timeout error.
 
-- What are appropriate rights for the IIS Application Pool account used for the Reporting Connector
-  
-  --> e.g. R/W for logging
+If you don't have many CRUD events and/or are running CRUD commands regularly using scheduled tasks (e.g. every hour/every 15 minutes) then you can try to use a lower value for this setting.
 
-- **What to set for "global:sqlCommandExecutionTimeoutInSeconds"?**
-  
-  This value is typically set to 7200 (i.e. two hours) to ensure that large amounts of CRUD jobs can be executed in one console CRUD command run without getting a SQL Server timeout error.
-  If you don't have many CRUD events and/or are running CRUD commands regularly using scheduled tasks (e.g. every hour/every 15 minutes) then you can try to use a lower value for this setting.
+## Which connection string is used for what purpose?
 
-- Which connection string is used for what actions?
-  - Administrative connection string?
-  - Read-only connection string?
+### Administrative connection string
 
-  --> see note in Symbio
+The administrative connection string will be used for DB operations and manipulations, e.g. a fullfecth. DBO rights are required.
 
-- How do I monitor the correct operation of the Symbio Reporting system?
-  
-  - Check Connector logs for errors
-  - Check Console logs for errors
+### Read-only connection string
 
-- How to start investigation, if I suspect data to be wrong or missing?
+The read-only connection string will be used for read access by reports. Only read permissions are required. 
+
+## How do I monitor the correct operation of the Symbio Reporting system?
+
+**Reporting Connector** and **Reporting Console** write log files of their operation. These files should be checked regularly for errors.
+
+## How to start investigation, if I suspect data to be wrong or missing?
   
   - On the Admin page, is there a valid token for the Reporting system (under data-rest api)
     - Report Pool entry correct - compare with sysadmin/external systems, name and id of report pool (Ctrl+Alt+D)
