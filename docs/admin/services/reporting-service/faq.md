@@ -130,20 +130,22 @@ If error messages indicate a connection problem, try the following (depending on
     - These should match the URL of the Symbio storage and the noted token ID.
       ![](media/reporting-connector-config-store-token-check.png)
 
-### Other checks
+### SSRS correctly setup and connected?
 
-  - SSRS website accessible ReportServer & ReportPortal
-    - from Symbio server
-    - from connector server
-    - Template folder not empty
-      - Reports can be opened and show something. e.g. hierarchy report (check before stating)
-    - ReportPortal contains folder with name = id of report pool (Ctrl+Alt+D)
-      - Data Source exists and correctly configured?
-      - Reports exist?
 - On the SysAdmin page of Symbio Core, under "External Systems", selected the connected Reporting Pool and hit Ctrl+Alt+D.
-  - Note the displayed *ContextKey* and the name of the Report Pool.
-  - Symbio Admin Page / Reporting
-    - Reports there
-    - Reports activated
-    - those reports listed on reports page in drop-down
-    - compare id of report pool (Ctrl+Alt+D)
+  - Note the displayed *ContextKey*, the Report Pool's "SSRS root folder path" and "Report template folder"
+- Navigate to the SSRS ReportPortal website
+  - Does the configured root folder exist?
+    - Does the configured root folder contain the configured template folder?
+      - Does the configured template folder contain a working data source?
+      - Does the configured template folder contain reports?
+        - Can the report "ProcessesHierarchyDetails" be opened with errors and displaying an empty result?
+    - Does the configured root folder contain a folder for the connected Report Pool (the name is equal to the noted *ContextKey*)?
+      - Does the Report Pool folder contain a working data source?
+      - Does the Report Pool folder contain reports?
+- On the Symbio Admin Page of the connected storage, click the tile "Reporting".
+  - Are the same reports listed here?
+  - Have they been activated?
+  - Is there URL containing the ReportPortal root folder path + *ContextKey* as seen on the SSRS portal?
+- Navigate to the Reports/reports facet of the connected storage.
+  - Does the "Report" dropdown contain the activated reports?
