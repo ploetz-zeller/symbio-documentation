@@ -29,6 +29,7 @@ You can use the _schedule-fullfetch_ command to set up a scheduled task.
 
 #### crud
 
+Used to be run between fullfetches to keep ODS database uptodate.
 Any changes in the database are accumulated by the _Reporting Connector_ and stored as events in the ODS database. You use this command to apply all changes
 so far at once to the ODS database. 
 You can use the _schedule-crud_ command to set up a scheduled task for this command.
@@ -86,21 +87,3 @@ To run the command with token and URL (as copied from the example above) write t
 Symbio.Service.Reporting.Console.exe <command> -u https://localhost/SYMBIO/pMaster/dShowCase/_api -t fc4frk32msxnx0bz0h7rqg0qy1
 ```
 
-### Common Tasks
-
-Generally, you want to integrate changes made in Symbio on a regular basis into the ODS database. This is done by using the _crud_ command. It is a good idea to _schedule-crud_ for each connected storage so you don't need to execute that manually. Choose an appropriate interval, e.g. 15 minutes.
-
-The same is true for a _fullfetch_, consider to _schedule-fullfetch_ with a per-day interval, for each connected storage.
-
-
-
-### Additional Parameters for Troubleshooting
-
-#### --timeout
-
-The --timeout parameter is available for
-* applyschema
-* fullfetch & schedule-fullfetch
-* crud & schedule-crud
-
-It defines (in seconds) how long the console will wait for Symbio to respond. For big databases and/or busy systems it will be necessary to increase this value by providing this parameter. Consider using *--timeout 1200* if you get timeout errors during your operations. This will increase the timeout from the default value to 1200 seconds / 20 minutes.
