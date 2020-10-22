@@ -2,9 +2,13 @@
 
 ## Requirements
 
-Reporting [Connector](reporting-connector.md) is already set up.
+[Reporting Connector](reporting-connector.md) is already set up.
 
-## Configuration
+## Configuration steps
+
+1. Create and configure a report pool if it does not exist. You may reuse an existing report pool for different storages.
+1. Assign a report pool to a storage. After successful assignment, you can find the authorization token on the admin page's 'Automation' tile.
+1. Enable those reports from the report set you want to use in your connected storage.
 
 ### Report Pool
 
@@ -25,7 +29,7 @@ In Symbio follow these steps to create and configure a report pool:
 | Read-only connection string | Enter a connection string the the ODS database that allows read-only access to the database. |
 | SSRS root folder path | The SSRS root folder path for this connector instance as noted during SSRS worksapce template setup, e.g. SymbioReporting. |
 | Report template folder | The name of the template folder in the root path given above as noted during SSRS workspace template setup, e.g. _Template. |
-| SSRS enabled | Mark this checkbox if you want to support SSRS reports with this report pool. |
+| SSRS enabled | This is not supported yet. |
 
 ### Connecting a storage to a report pool
 
@@ -34,11 +38,19 @@ In Symbio follow these steps to connect a storage to a report pool:
 1. Login as an admin user to the _Collection_ where the storage is located
 2. Switch to _Storages_
 3. Select the storage to connect to a Report pool
-4. Select the desired Report pool from the drop down
+4. Select the desired _Report pool_ from the drop down
 
 ![](media/config-symbio-2.png)
 
 This will trigger the creation of reports in Symbio (if SSRS has been enabled on the pool, and the workspace contains reports to link to).
+
+#### IsPermittedEverywhere
+Please keep in mind that you can set the Symbio authorization token to be permitted everywhere,
+with end end date until this permission set is valid.
+This permission set may be valid for operations or objects it was not intended for,
+and may have an impact on Symbio's behaviour.
+
+![screen](./media/is-permitted-everywhere.png)
 
 ### Activating reports in a storage
 
