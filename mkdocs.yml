@@ -199,8 +199,12 @@ nav:
     - Getting Started: developer/getting-started.md
     - REST API:
       - Overview:
+        - BPMN API: developer/rest-api/overview/bpmn-api.md
+        - Element Subscriptions API: developer/rest-api/overview/element-subscriptions-api.md
+        - Feature Flags API: developer/rest-api/overview/feature-flags-api.md
         - Permalinks API: developer/rest-api/overview/permalinks-api.md
         - Power Platform API: developer/rest-api/overview/powerplatform-api.md
+        - Storages API: developer/rest-api/overview/storages-api.md
       - How To:
         - Authentication Tokens: developer/rest-api/how-to/rest-symbio-auth-token-client-temp-example-documentation/rest-symbio-auth-token-client-temp-example-documentation.md
         - Authentication Token IsPermittedEverywhere: developer/is-permitted-everywhere.md
