@@ -71,7 +71,6 @@ nav:
           - SSRS & Reports: admin/services/reporting-service/ssrs-and-reports.md
           - Connector: admin/services/reporting-service/reporting-connector.md
           - Symbio: admin/services/reporting-service/config-symbio.md
-          - Authentication Token IsPermittedEverywhere: developer/is-permitted-everywhere.md
           - Console: admin/services/reporting-service/reporting-console.md
         - Operation: admin/services/reporting-service/operation.md
         - FAQ: admin/services/reporting-service/faq.md

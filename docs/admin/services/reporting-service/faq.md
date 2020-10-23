@@ -149,3 +149,11 @@ If error messages indicate a connection problem, try the following (depending on
   - Is there URL containing the ReportPortal root folder path + *ContextKey* as seen on the SSRS portal?
 - Navigate to the Reports/reports facet of the connected storage.
   - Does the "Report" dropdown contain the activated reports?
+
+### Which versions are compatible?
+Symbio should be compatible with Symbio Reporting.
+#### Braking changes:
+ 
+| no. | Symbio version| Symbio Reporting release number | Description |
+| ------- | ------- | ------- | ------- |
+| 1 | R52 | 8658a6f6d06b646a494eec63624f8a16356f8bf3 | New lastVersions parameter was introduced |
