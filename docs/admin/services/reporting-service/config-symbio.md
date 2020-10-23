@@ -28,7 +28,7 @@ In Symbio follow these steps to create and configure a report pool:
 | Administrative connection string | Enter a connection string to the ODS database that allows full access to the database. |
 | Read-only connection string | Enter a connection string the the ODS database that allows read-only access to the database. |
 | SSRS root folder path | The SSRS root folder path for this connector instance as noted during SSRS worksapce template setup, e.g. SymbioReporting. |
-| Report template folder | The name of the template folder in the root path given above as noted during SSRS workspace template setup, e.g. _Template. |
+| Report template folder | The name of the template folder in the root path given above as noted during SSRS workspace template setup, e.g. Template. |
 | SSRS enabled | This is not supported yet. |
 
 ### Connecting a storage to a report pool
