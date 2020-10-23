@@ -152,8 +152,8 @@ If error messages indicate a connection problem, try the following (depending on
 
 ### Which versions are compatible?
 Symbio should be compatible with Symbio Reporting.
-#### Braking changes:
+#### Breaking changes:
  
-| no. | Symbio version| Symbio Reporting release number | Description |
-| ------- | ------- | ------- | ------- |
-| 1 | R52 | 8658a6f6d06b646a494eec63624f8a16356f8bf3 | New lastVersions parameter was introduced |
+| no. | Symbio version | Symbio release number | Reporting version | Reporting release number | Description |
+| ------- | ------- | ------- | ------- | ------- | ------- |
+| 1 | R52 (11th October 2020) | 6bcf71f | R264 (8th October 2020) | 8658a6f | New lastVersions parameter was introduced |
