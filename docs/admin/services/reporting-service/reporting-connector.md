@@ -20,10 +20,9 @@ To set up the **Reporting Connector** you will need either an IIS installation w
 #### Reporting Connector as Azure App Service
 
 1. Deploy the service package
-2. Ensure that the resulting web.config is not automatically set to the version V2 of the AspNetCoreModule
-3. Note the URL of the deployed service
-4. Configure the Connector by editing its app service settings
-5. Test connection to service by navigating to the noted URL
+2. Note the URL of the deployed service
+3. Configure the Connector by editing its app service settings
+4. Test connection to service by navigating to the noted URL
 
 
 ## Configuration
@@ -40,8 +39,8 @@ The Connector service has several values that need to be configured for it to fu
 | global:ssrsEndpointUrl | The SSRS reporting service endpoint URL noted during SSRS setup with _/ReportService2010.asmx_ appended, e.g. _https://example.com/ReportServer/ReportService2010.asmx_. |
 | global:ssrsUserName | The name of a user which has management access to the SSRS root folder path given above. |
 | global:ssrsPassword | The password of the user named above. |
-| global:ssrsRootFolderPath | The SSRS root folder path for this connector instance as noted during SSRS worksapce template setup, e.g. _SymbioReporting_.  |
-| global:templateName | The name of the template folder in the root path given above as noted during SSRS workspace template setup, e.g. *Template*. |
+| global:ssrsRootFolderPath | Obsolete, should not be used anymore and will be overwritten by Symbio report pool configuration.  |
+| global:templateName | Obsolete, should not be used anymore and will be overwritten by Symbio report pool configuration. |
 | global:sqlCommandExecutionTimeoutInSeconds | The SQL command execution timeout in seconds, e.g. 7200. |
 
 
