@@ -243,7 +243,9 @@ You can also set that only the selected user types are allowed to edit the proce
 
 #### Change shape type
 
-- will be published soon -
+This offers the possibility to make geometry adaptions of the shapes. Example: shape type: ST_FUNC, Geometry: 
+&lt;rect x="$?X$" y="$?Y$" rx="0" ry="0" width="$?W$" height="$?H$" style="fill:$?BC3$; stroke-width:$?LW1$px"/&gt; &lt;rect x="$?X+14$" y="$?Y+14$" rx="0" ry="0" width="$?W-95$" height="$?H-28$" style="fill:$?BC2$; stroke:none"/&gt;
+Please contact us if required.
 
 #### Adapt name display format 
 
