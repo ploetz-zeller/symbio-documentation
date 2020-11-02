@@ -243,7 +243,7 @@ You can also set that only the selected user types are allowed to edit the proce
 
 #### Change shape type
 
-- will be published soon -
+This offers the possibility to make geometry and colour adaptions of the process flow objects. Please contact us for more details.
 
 #### Adapt name display format 
 
@@ -329,7 +329,9 @@ This functionality allows to add further Approvers or Approver groups to the rel
 
 ![screen](../media/approver_workflow.png)
 
-The new order of participants of the release cycle will then be: QA (if set) – Approver/Approver group – Responsible. 
+The new order of participants of the release cycle will then be: QA (if set) – Approver/Approver group – Responsible.
+
+Please note that this field Approver/Approver group is obligatory by default. In case it should be a mandatory field, this has to be set up via the Extended Configuration ('Change' dialog).
 
 Activate your settings by checkbox and click on 'Apply changes' in the toolbar.
 
