@@ -202,6 +202,7 @@ nav:
         - Feature Flags API: developer/rest-api/overview/feature-flags-api.md
         - Permalinks API: developer/rest-api/overview/permalinks-api.md
         - Power Platform API: developer/rest-api/overview/powerplatform-api.md
+        - Reporting API: developer/rest-api/overview/reporting-api.md
         - Storages API: developer/rest-api/overview/storages-api.md
       - How To:
         - Authentication Tokens: developer/rest-api/how-to/rest-symbio-auth-token-client-temp-example-documentation/rest-symbio-auth-token-client-temp-example-documentation.md
