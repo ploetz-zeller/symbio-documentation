@@ -154,6 +154,10 @@ nav:
       - Stereotypes:
         - Creating stereotypes: admin/administration/stereotypes/creating-stereotypes.md
         - Use stereotypes: admin/administration/stereotypes/use-stereotypes.md
+      - Navigation: 
+        - Introduction: admin/administration/navigation/navigation.md
+        - How to create a button to show a location in Google Maps: admin/administration/navigation/googlemaps.md
+        - How to create a button to show a location in Bing Maps: admin/administration/navigation/bingmaps.md
     - Features:
       - Introduction: admin/features/introduction/introduction.md
       - General design:
