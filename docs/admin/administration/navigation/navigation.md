@@ -13,5 +13,5 @@ You can find the settings for the navigation in the admin area:
 
 We collected the following examples how you can create bring a button into the toolbar:
 
-- [How to create a button to show a location in Bing Maps](./bingmaps)
-- [How to create a button to show a location in Google Maps](./googlemaps)
+- [How to create a button to show a location in Bing Maps](../bingmaps)
+- [How to create a button to show a location in Google Maps](../googlemaps)
