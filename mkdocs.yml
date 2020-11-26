@@ -51,6 +51,10 @@ nav:
         - Installation manual: admin/services/celonis-importer/install-service-manual.md
         - Configuration: admin/services/celonis-importer/configuration.md
         - Usage: admin/services/celonis-importer/usage.md
+      - Celonis Process Mining Connector:
+        - Configuration: admin/services/celonis-process-mining-connector/configuration.md
+        - Process Export: admin/services/celonis-process-mining-connector/usage_push.md
+        - Process Import: admin/services/celonis-process-mining-connector/usage_pull.md
       - Import of vsdx files: admin/services/import-of-vsdx-files/import-of-vsdx-files.md
       - Intrafind Indexer:
         - Introduction: admin/services/intrafind-indexer/index.md

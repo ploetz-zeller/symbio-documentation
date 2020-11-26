@@ -11,7 +11,7 @@ With all the prerequisites above, you should now be able to pull processes from 
 1. Login to Symbio
 1. Navigate into the Storage Collection and the Storage for which you activated the service
 1. Select the "Processes" menu item on the main navigation bar
-1. Select or create a Subprocess
+1. Select or create a subprocess / a scenario
 1. Open the "Services"-dialog in the toolbar ![select services](media/select-services.png)
 1. Click on "Pull from Celonis Team 'Celonis Process Mining Connector'"
 
@@ -25,4 +25,4 @@ With all the prerequisites above, you should now be able to pull processes from 
     3. If you have selected the processes you wish to import, click on the "Pull selected Processes" button below (**Marking 3** on the Screenshot)
     4. The service will now start to import the processes from Celonis into Symbio
     5. When the import is finished, you will get a green notification on th upper right side of the dialog
-1. After closing the dialog, you can find the imported processes in the selected subprocess ![pull processes result](media/pull-processes-result.png)
+1. After closing the dialog, you can find the imported processes in the selected subprocess or scenario ![pull processes result](media/pull-processes-result.png)
