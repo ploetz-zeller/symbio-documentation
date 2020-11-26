@@ -236,8 +236,9 @@ The administrator can use this extension to store certain content as informative
 
 #### Change user selection
 
-The admin adjusts the users in Symbio and can activate or deactivate the inheritance of the persons responsible. 
-You can also set that only the selected user types are allowed to edit the process.
+The admin adjusts the users in Symbio and can activate or deactivate the inheritance of the persons responsible. By click on the check box, he can define that Responsibles are automatically taken over from the upper hierarchical level.
+
+It is also possible to set that only the selected user types are allowed to edit the inherited person responsible.
 
 ![screen](../media/change_selection.png)
 
