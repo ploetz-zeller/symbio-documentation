@@ -12,7 +12,7 @@
    1. **Name:** (Preferred Name, e.g. Celonis Process Mining Connector)
    1. **Description:** This service is used to export Symbio processes to Celonis and/or vice versa
 1. Upload the SYEX file under the settings "upload" group with the Title: "Celonis"
-1. Make the external configuration active ![activate](media/addsyex3.png)
+1. Activate the external configuration ![activate](media/addsyex3.png)
 1. Apply changes ![Apply changes](media/apply.png)
 
 ### Add a configured external system linked to the active service
