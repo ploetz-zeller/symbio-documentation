@@ -2,7 +2,7 @@
 
 ## Prerequisites for the Celonis Process Mining Connector
 - The micro-service must be accessible
-- The configured external system must be loaded on the storage where the system will be used
+- The configured external system must be connected to the storage where the system will be used
 - A valid Celonis API Key should have been set
 
 With all the prerequisites above, you should now be able to pull processes from Celonis into Symbio or update them if they already exist. See the steps below to learn how.
