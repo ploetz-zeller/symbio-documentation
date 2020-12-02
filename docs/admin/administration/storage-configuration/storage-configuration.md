@@ -312,29 +312,37 @@ In case a feature is out of use, it is flagged 'Is deprecated'.
 
 Individual settings can be made for the release cycle of processes and objects.
 
-First, create a new Type in the list. Then, go to Detail Content and select a type (or types) for which your settings should be applied.
+First, create a new Type of Release cycle setting in the list. Then, go to Detail Content and select a type (or types) for which your settings should be applied, e.g. Main Processes and Sub Processes.
 
-There are following options:
+For individual configuration, the following options are available:
 
-__Option 1:__ 
+__Option 1: Valid from day span__
 
-Set the number of days after which the process receives the state 'Valid' (after release) in field 'Valid from day span'.
+Set the number of days after which the process finally has the state 'Valid' (after release). So the state changes from "Released" to "Valid". 
 
-__Option 2:__
+__Option 2: Prohibit direct release__
 
-Activate 'Prohibit direct release' if the workflow should be started in any case. The state 'Released' will then never be selectable in release dialogue.
+Activate this checkbox if the workflow should be started in any case, even if the same User is entered as Respoonsible and Author. The state 'Released' will then never be selectable in the release dialogue.
 
-__Option 3:__
+__Option 3: Approver users / Approver user groups__
 
-This functionality allows to add further Approvers or Approver groups to the release cycle. Furthermore, the state 'Ready for Approval' is added to the dialog window.
+This functionality allows to add further single Approver users or Approver user groups to the release cycle. Furthermore, the state 'Ready for Approval' is added to the dialog window.
 
 ![screen](../media/approver_workflow.png)
 
-The new order of participants of the release cycle will then be: QA (if set) – Approver/Approver group – Responsible.
+The new order of participants of the release cycle will then be: Author - QA (if set) – Approver/Approver group – Responsible.
 
-Please note that this field Approver/Approver group is obligatory by default. In case it should be a mandatory field, this has to be set up via the Extended Configuration ('Change' dialog).
+Please note that this field Approver/Approver group is optional by default. In case it should be a mandatory field, this has to be set up via the Extended Configuration (in the 'Change' dialog).
 
-Activate your settings by checkbox and click on 'Apply changes' in the toolbar.
+Please note that is also required to make settings in the User Management. This is also relevant if a group of Quality Managers has to approve instead of one single Quality Manager.
+
+Find more about the User Management [here](https://docs.symbioworld.com/admin/administration/user-management/users/).
+
+__Option 4: Approval count__
+
+Set the number of Users of an Approver group or a Quality Manager group that has to approve a process or objects before the request for approval is sent to the next instance of the release cycle. As soon the number of approvals is reached, the tasks for the remaining members of this group are removed.
+
+Finally, activate your settings by checkbox and don't forget to click on 'Apply changes' in the toolbar.
 
 ## Fact sheets
 
