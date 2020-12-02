@@ -51,6 +51,10 @@ nav:
         - Installation manual: admin/services/celonis-importer/install-service-manual.md
         - Configuration: admin/services/celonis-importer/configuration.md
         - Usage: admin/services/celonis-importer/usage.md
+      - Celonis Process Mining Connector:
+        - Configuration: admin/services/celonis-process-mining-connector/configuration.md
+        - Push to Celonis: admin/services/celonis-process-mining-connector/usage_push.md
+        - Pull from Celonis: admin/services/celonis-process-mining-connector/usage_pull.md
       - Import of vsdx files: admin/services/import-of-vsdx-files/import-of-vsdx-files.md
       - Intrafind Indexer:
         - Introduction: admin/services/intrafind-indexer/index.md
@@ -154,6 +158,10 @@ nav:
       - Stereotypes:
         - Creating stereotypes: admin/administration/stereotypes/creating-stereotypes.md
         - Use stereotypes: admin/administration/stereotypes/use-stereotypes.md
+      - Navigation: 
+        - Introduction: admin/administration/navigation/navigation.md
+        - How to create a button to show a location in Google Maps: admin/administration/navigation/googlemaps.md
+        - How to create a button to show a location in Bing Maps: admin/administration/navigation/bingmaps.md
     - Features:
       - Introduction: admin/features/introduction/introduction.md
       - General design:
@@ -202,6 +210,7 @@ nav:
         - Feature Flags API: developer/rest-api/overview/feature-flags-api.md
         - Permalinks API: developer/rest-api/overview/permalinks-api.md
         - Power Platform API: developer/rest-api/overview/powerplatform-api.md
+        - Reporting API: developer/rest-api/overview/reporting-api.md
         - Storages API: developer/rest-api/overview/storages-api.md
       - How To:
         - Authentication Tokens: developer/rest-api/how-to/rest-symbio-auth-token-client-temp-example-documentation/rest-symbio-auth-token-client-temp-example-documentation.md
