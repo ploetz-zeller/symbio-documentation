@@ -1,4 +1,4 @@
-# Filter function: Filter by users (Released feature)
+# Filter function: Filter by users 
 
 With this feature, Users can easily search for specific attributes (name, type, version etc.) in all list views. 
 

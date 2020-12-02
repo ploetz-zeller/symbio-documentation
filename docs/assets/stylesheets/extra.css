@@ -1,17 +1,17 @@
 button[data-md-color-primary=blue]{
-    background-color:#00457d
+    background-color:#106ebe
 }
 [data-md-color-primary=blue] .md-typeset a{
-    color:#00457d
+    color:#106ebe
 }
 [data-md-color-primary=blue] .md-header{
-    background-color:#00457d
+    background-color:#106ebe
 }
 [data-md-color-primary=blue] .md-hero{
-    background-color:#00457d
+    background-color:#106ebe
 }
 [data-md-color-primary=blue] .md-nav__link--active,[data-md-color-primary=blue] .md-nav__link:active{
-    color:#00457d
+    color:#106ebe
 }
 [data-md-color-primary=blue] .md-nav__item--nested>.md-nav__link{
     color:inherit
@@ -53,8 +53,8 @@ button[data-md-color-accent=blue]{
     background-color:rgba(26,119,193,.9675)
 }
 html [data-md-color-primary=blue] .md-nav--primary .md-nav__title--site{
-    background-color:#00457d
+    background-color:#106ebe
 }
 [data-md-color-primary=blue] .md-tabs{
-    background-color:#00457d
+    background-color:#106ebe
 }
