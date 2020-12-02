@@ -31,12 +31,13 @@
 
 ### Connect the external system on the storage
 *Note: multiple storages can be connected to one instance of the service*
+
 1. Select "Home" on the main navigation bar
-1. Select a Storage Collection or create a new one
-1. Select "Storages" on the main navigation menu
-1. Choose an existing storage or create a new one
-1. Under the external systems group, select the configured external system under the "Celonis Synchronization Service" drop down items ![choose external system](media/storage-celonis-team-selection.png)
-1. Note that you can connect multiple Celonis Teams to the Storage if you want to
+2. Select a Storage Collection or create a new one
+3. Select "Storages" on the main navigation menu
+4. Choose an existing storage or create a new one
+5. Under the external systems group, select the configured external system under the "Celonis Synchronization Service" drop down items ![choose external system](media/storage-celonis-team-selection.png)
+6. Note that you can connect multiple Celonis Teams to the Storage if you want to
 
 ### Setting an API Key
 1. Select "Home" on the main navigation bar
