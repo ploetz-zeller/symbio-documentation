@@ -1,4 +1,4 @@
-# Deactivate architecture in SYSTEMS facet (Preview feature)
+# Method: Systems as a list (instead of architecture) 
 
 This feature is made for performance optimization. Once activated, the 'architecture' view in the SYSTEMS facet is deactivated.
 

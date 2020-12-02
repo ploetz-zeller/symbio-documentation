@@ -1,4 +1,4 @@
-# Copy and move shapes
+# Modeling: Copy and move process flow objects
 
 Activating this feature enables the Author to copy or move process flow objects. Selected objects can be copied or moved either within a process or to another existing process of the Process House. 
 
