@@ -185,7 +185,6 @@ nav:
         - Skill Feature: admin/features/repository-design/skill-feature/skill-feature.md
         - Method Requirements for Main Processes: admin/features/repository-design/requirements-main-processes/requirements-main-processes.md
         - Extended filter bar: individual scope filter selection: admin/features/repository-design/extension-of-statusbar/classification-of-information.md
-
   - Developer:
     - Introduction: developer/index.md
     - Getting Started: developer/getting-started.md
