@@ -4,5 +4,5 @@ This feature affects all repository facets. After activation a new group "Techni
 
 Both attributes are hiddenable, group and attributes are renameable.
 
-![screen](../media/tehnical-ids.png)
+![screen](../media/tehnical-id.png)
 
