@@ -178,6 +178,8 @@ nav:
         - "Method: Glossary": admin/features/general-design/method-glossary/method-glossary.md
         - "Method: Systems as a list (instead of architecture)": admin/features/general-design/deactivate_architecture-systems/deactivate-architecture-systems.md
         - Subscriptions for categories: admin/features/general-design/subscriptions-for-categories/subscriptions-for-categories.md
+        - "Extended filter bar: individual scope filter selection": admin/features/general-design/extension-of-statusbar/extension-of-statusbar.md
+        - "Method: show technical IDs": admin/features/general-design/technical-id/technical-id.md
       - Process design:
         - "Modeling: Exclusive process editing": admin/features/process-design/activate-exclusive-process-editing/activate-exclusive-process-editing.md
         - "Modeling: Copy and move process flow objects": admin/features/process-design/copy-move-shapes/copy-and-move-shapes.md
