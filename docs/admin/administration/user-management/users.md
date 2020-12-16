@@ -52,3 +52,11 @@ Users can be consolidated in the same way es users - via the consolidate button.
 In the dialog which then appears, please choose the elements you want to consolidate with the target element and click OK.
 
 The process of consolidating user groups cannot be reversed.
+
+### Configure user groups for release cycle
+
+In case the selected user group should be part of the release cycle, either as additional Approver user group or Quality manager group, please activate the corresponding checkbox.
+
+![screen](../media/user-group-release-cycle.png)
+
+Please also refer to the chapter 'Release cycle configuration' [here](https://docs.symbioworld.com/admin/administration/storage-configuration/storage-configuration/).

@@ -2,30 +2,33 @@
 
 ## Extended Configuration
 
-Additional configuration options are available for the administrator in the tile "extended configuration". This includes hiding various information, renaming the standard interface and adding new attributes. 
+Additional configuration options are available in the Admin area. This includes hiding various information, renaming the standard interface, adding new attributes or changing them. 
 
 To use the advanced configuration, please proceed as follows:
-- In the admin area, open the tile 'Advanced configuration'
+
+- Navigate to the Admin area and open the tile 'Extended configuration'
 
   ![screen](../media/extended_config.png)
 
-- Create a new type with one of the configuration options
+- Create a new type with one of the configuration options __Hide, Rename, Add__ or __Change__. 
 
   ![screen](../media/tooltip.png)
 
-The next sections describe some of the configurations in more detail.
+The next sections describe these configurations in more detail.
 
-### Hide
-
-To apply all changes, the configuration has to be activated and applied afterwards.
+__NOTE__: To apply all changes, the configuration has to be activated by click on check box and additionally applied afterwards.
 
 ![screen](../media/hide.png)
 
-#### Hide graphic options
+### Hide
+
+This configuration allows to hide views or specific attributes in the Detail Content. If this should be hidden for viewers only, please activate the checkbox 'Only for viewer' accordingly.
+
+#### Hide graphic layout
 
 The configuration "Hide graphics options" allows the administrator to minimize the graphical selection in processes. All standard graphics in Symbio and the user-defined fact sheets can be managed with this configuration. 
 
-1. Select type „Hide graphics options“
+1. Select type „Hide graphic layout“
 2. Enter name for configuration entry (e.g. detailed view Sub Process)
 3. Define settings 
 4. Activate configuration entry
@@ -70,9 +73,18 @@ Example: Hide 'Requirements' in Detail Content
 Hides complete groups, e.g. 'Responsible Role', in detail Content.
 Hiding can be done for all users or only for the viewer mode.
 
-#### Hide navigation element
+#### List widget: Hide global corona types
 
-Entire navigation elements can be hidden. These include e.g. systems 
+This configuration is related to the feature __Fact Sheets: Global related objects__ that allows to display global (sub process-related) information aggregated on top of a process.
+
+Here you have the option to hide specific global objects, e.g. Inputs/Outputs, for reasons of a clearer presentation.
+
+Please refer to [Features - Process design](https://docs.symbioworld.com/admin/features/introduction/introduction/) for more details.
+
+
+#### Hide navigation member
+
+Entire navigation members can be hidden. These include e.g. systems 
 or input/output.
 
 ![screen](../media/hide_nav_element.png)
@@ -106,19 +118,25 @@ The following user-defined attribute groups are available:
 
       ![screen](../media/add4.png)
 
-4. By activating “Hide for Viewer” this custom attribute will only be displayed for the editors
+4. By activating “Only for Viewer” this custom attribute will only be displayed for the viewers
 
 5. By activating “Available for reporting” the custom attribute will be analyzed in the estandard reports as well. If this is not activated, this attribute won´t be a part of the reporting
 
-6. By activating “language independent”, this attribute will be for every language and can´t be translated.
+6. By activating "Searchable" this attribute will be considered in the Symbio standard search. 
 
-7. To apply all changes, the configuration has to be activated and applied afterwards.
+7. By activating “language independent”, this attribute will be for every language and can´t be translated.
+
+8. By activating "Editable in Released state", this attribute may be edited even afterwards in released state.
+
+9. NOTE: We recommend to enter a Max text length, otherwise the default length of 81 characters will be automatically set. 
+
+10. To apply all changes, the configuration has to be activated and applied afterwards.
 
       ![screen](../media/add5.png)
 
-Here, there are some examples explained in detail:
+Please find more details below: 
 
-#### Add single line attribute
+#### Add single line text attribute
 
 1. Select attribute type 
 
@@ -132,7 +150,6 @@ Please do not use special characters or '-'.
 'ATX_CUSTOM_SHORT_DESCRIPTION'
 
 3. Define settings in the Detail Content 
-Check the chapter 6.20.3 Add for the details
 
       ![screen](../media/add_single_line2.png)
 
@@ -145,13 +162,57 @@ Check the chapter 6.20.3 Add for the details
 
       Settings: Valid for facet, valid for type, group, language independent, maximal length.
 
-#### Add selection list attribute
+#### Add multiline text attribute
 
-In addition, the following is to be observed here:
+This is to add a multiline text attribute. Please see description above re. "single line text attribute" - and don't forget to enter the Max text length. Otherwise, 81 characters are set by default.
+
+#### Add masked text attribute
+
+This is to configure a single line text attribute that allows to hidden entries for your own password management.
+
+#### Add formattable multiline text attribute
+
+This is to add a multiline text attribute that allows HTML formating, similiar to the "Description" field.
+
+#### Add link attribute
+
+This allows to add links, similar to the "Attachments" section. We recommend to activate "Language independent".
+
+#### Add check-box attribute
+
+This is to add an additional check-box. If the check-box should be activated by default, select the option "Default value". We also recommend to activate "Language independent".
+
+#### Add integer number attribute
+
+This is to add a field for editing integer numbers. As an option, a Min and Max value can be specified. If you enter integer or decimal numbers outside this range, they are rounded down to the Max value or rounded up to the Min value. Furthermore, a "Default value" number can be set, that appears by default. We also recommend to activate "Language independent".
+
+#### Add flowting number attribute
+
+This is to add a field for editing flowting numbers, i.e. decimal numbers, with +/- sign etc. As an option, a Min and Max value can be specified. If you enter number outside this range, they are rounded down to the Max value or rounded up to the Min value. Furthermore, a "Default value" number can be set, that appears by default. We also recommend to activate "Language independent".
+
+#### Add date attribute
+
+This is to add a date attribute. We recommend to activate "Language independent" as well as the "Editable in released state" option. NOTE: If the field "Default value" remains empty, the date 01.01.0001 is automatically set for new created elements (for existing elements, however, no default value is displayed).
+
+#### Add static note attribute
+
+This is to add a static and unchangeable note, e.g. as a specific hint or comment for the process modeler.
+
+#### Add dropdown attribute
+
+This is to add an additional dropdown field. Suitable dropdown values can only be added after activiation by "Adding dropdown values".
+NOTE: the following is to be observed here:
 - Language independent should be checked
 - Apply the changes bevor assigning values
 
-#### Add selection list value attribute
+#### Add multi selection attribute
+
+This is to add an additional multi selection field. Suitable values can be added after activation by "Adding dropdown values".
+NOTE: the following is to be observed here:
+- Language independent should be checked
+- Apply the changes bevor assigning values
+
+#### Add dropdown value
 
 In addition, the following is to be observed here:
 - When a new value attribute is created (ID is VALUE) the API name AVTX_CUSTOM_VALUE 
@@ -175,23 +236,53 @@ The administrator can use this extension to store certain content as informative
 
 #### Change user selection
 
-The admin adjusts the users in Symbio and can activate or deactivate the inheritance of the persons responsible. 
-You can also set that only the selected user types are allowed to edit the process.
+The admin adjusts the users in Symbio and can activate or deactivate the inheritance of the persons responsible. By click on the check box, he can define that Responsibles are automatically taken over from the upper hierarchical level.
+
+It is also possible to set that only the selected user types are allowed to edit the inherited person responsible.
 
 ![screen](../media/change_selection.png)
 
-#### Adapt shape display text format / name display format
+#### Change shape type
 
-This is to show the ID as a prefix in the navigation tree as well as in the graphic:
+This offers the possibility to make geometry and colour adaptions of the process flow objects. Please contact us for more details.
 
-![screen](../media/extended_config_name_shape_display.png)
-![screen](../media/dropdown_adapt_display.png)
+#### Adapt name display format 
+
+This is to show the ID as a prefix in the navigation tree in front of process name:
+
+![screen](../media/extended_config_name_display.png)
+
+Configuration example:
+
+![screen](../media/settings_name.png)
+
+#### Adapt shape display text format 
+
+This is to show the ID as a prefix in the shape in front of process name (currently only available for Sub Processes):
+
+![screen](../media/extended_config_shape_display.png)
 
 Configuration examples:
 
 ![screen](../media/settings_shape.png)
 
-![screen](../media/settings_name.png)
+#### Change default layout
+
+Generally, the default layout for processes is 'Vertical'. If you like to change this, you can set your individual default layout here. This is also applicable for further facets, e.g. Organizational units, where you can choose between Graphic/Detailed view. 
+
+#### Show shape numbers
+
+This setting is a prerequisite for using the Feature __Method: Numeration of process flow objects__that allows to display shape numbers on shapes in different graphical views.
+
+Please add a new type __Show shape numbers__ in the 'Change' section and, in the Detail Content, select the layouts for which it should be applied.
+
+![screen](../media/extconfig_shape_numbers.png)
+
+After configuration, the feature activation will follow.  
+
+Please refer to [Features - Process design](https://docs.symbioworld.com/admin/features/introduction/introduction/) for more details.
+
+
 
 ## Features
 
@@ -221,27 +312,41 @@ In case a feature is out of use, it is flagged 'Is deprecated'.
 
 Individual settings can be made for the release cycle of processes and objects.
 
-First, create a new Type in the list. Then, go to Detail Content and select a type (or types) for which your settings should be applied.
+First, create a new Type of Release cycle setting in the list. Then, go to Detail Content and select a type (or types) for which your settings should be applied, e.g. Main Processes and Sub Processes.
 
-There are following options:
+For individual configuration, the following options are available:
 
-__Option 1:__ 
+__Option 1: Valid from day span__
 
-Set the number of days after which the process receives the state 'Valid' (after release) in field 'Valid from day span'.
+Set the number of days after which the process finally has the state 'Valid' (after release). So the state changes from "Released" to "Valid". 
 
-__Option 2:__
+__Option 2: Prohibit direct release__
 
-Activate 'Prohibit direct release' if the workflow should be started in any case. The state 'Released' will then never be selectable in release dialogue.
+Activate this checkbox if the workflow should be started in any case, even if the same User is entered as Responsible and Author. The state 'Released' will then never be selectable in the release dialogue.
 
-__Option 3:__
+__Option 3: Approver users / Approver user groups__
 
-This functionality allows to add further Approvers or Approver groups to the release cycle. Furthermore, the state 'Ready for Approval' is added to the dialog window.
+This functionality allows to add further single Approver users or Approver user groups to the release cycle. Furthermore, the state 'Ready for Approval' is added to the dialog window.
 
 ![screen](../media/approver_workflow.png)
 
-The new order of participants of the release cycle will then be: QA (if set) – Approver/Approver group – Responsible. 
+The new order of participants of the release cycle will then be: Author - QA (if set) – Approver/Approver group – Responsible.
 
-Activate your settings by checkbox and click on 'Apply changes' in the toolbar.
+Please note that this field Approver/Approver group is optional by default. In case it should be a mandatory field, this has to be set up via the Extended Configuration (in the 'Change' dialog).
+
+__Option 4: Quality Manager users / user groups__
+
+This functionality can be used to restrict the usage of single quality manager users and/or quality manager user groups in the release cycle. If disabled, the corresponding dialog views in detail content will be deactivated.
+
+NOTE: If you have maintained Approvers or Quality Managers before and set up the customizations, so that their maintenance is no longer possible, you are not able to see them any longer in any detail content or dialog!
+
+__Option 5: Approval count__
+
+For both the Approver and Quality manager settings you are able to set the number of users that have to approve a process or objects before the next release cycle state can be reached. As soon as the number of approvals is reached, the tasks for the remaining members of this group are automatically closed. This is also visible in the lifecycle diagram of the element.
+
+It is also required to make settings in the User Management. Please find more information [here](https://docs.symbioworld.com/admin/administration/user-management/users/).
+
+Finally, activate your settings by checkbox and don't forget to click on 'Apply changes' in the toolbar.
 
 ## Fact sheets
 
