@@ -1,4 +1,4 @@
-# Best practice tasks
+# Method: Best Practice Tasks
 
 _Best practice tasks_ are repository objects belonging to the _Processes_ facet.
 By activating this feature, the sub navigation 'best practice tasks' is shown under the _Processes_ facet:

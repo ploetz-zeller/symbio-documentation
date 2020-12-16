@@ -37,3 +37,17 @@ This document contains information on how to configure Symbio to use **SAP Solut
 
 18. When linking process is completed, enter the storage, switch into Editor mode, open Admin menu, open Extended Configuration and click on the &quot;APPLY CHANGES&quot; button.
 19. If storage is not new (already has some data), the converter file "Update CreationID for diagram elements" should be executed. **IMPORTANT NOTE: Be aware that this converter can take a up to a few hours to finish. No synchronization should be done until the converter is finished.**
+
+## Configure user mapping (Solution Manager to Symbio)
+
+From the **Release 194** of the **SAP Solution Manager Connector** service it is possible to set the Responsible user for processes in Solution Manager to Symbio synchronization. This option is available for *Scenario*, *Process* and *Diagram* elements. To enable this option, users have to be manually mapped using these instruction steps:
+
+1. Make sure that **SAP Solution Manager Connector** is connected to your Symbio storage and that all configuration steps are done.
+
+2. In your Solution Manager, check the Responsible user and get its "Team Member ID":
+
+    ![Test](media/solman_responsible.png) 
+
+3. In your Symbio storage go to User management page. Find the corresponding user that you want to map. For this user, set the value of the attribute "SAP User ID" to the value you got in the step 2:
+
+    ![Test](media/symbio_sapUserId.png) 
