@@ -192,7 +192,7 @@ nav:
         - Graphical version comparison: admin/features/process-design/graphical_comparison/graphical-comparison.md
         - "Diagram mode: Application Swimlane": admin/features/process-design/swimlane-for-applications/swimlane-for-applications.md
         - "Method: Global responsible role for sub processes": admin/features/process-design/global-responsible-role/global-responsible-role.md
-        - "Method: hide secondary application connections as inputs and outputs": admin/features/general-design/hide-secondary-application-connections/hide-secondary-application-connections.md
+        - "Method: hide secondary application connections as inputs and outputs": admin/features/process-design/hide-secondary-application-connections/hide-secondary-application-connections.md
       - Repository design:
         - "Method: Additional relationships for documents": admin/features/repository-design/additional-relations-documents/additional-relations-documents.md
         - "Method: System ArchiMate Converting": admin/features/repository-design/archimate-conversions/archimate-conversions.md
