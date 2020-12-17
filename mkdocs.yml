@@ -180,10 +180,10 @@ nav:
         - Subscriptions for categories: admin/features/general-design/subscriptions-for-categories/subscriptions-for-categories.md
         - "Extended filter bar: individual scope filter selection": admin/features/general-design/extension-of-statusbar/extension-of-statusbar.md
         - "Method: show technical IDs": admin/features/general-design/technical-id/technical-id.md
-        - "Method: hide secondary application connections as inputs and outputs": admin/features/general-design/hide-secondary-application-connections/hide-secondary-application-connections.md
       - Process design:
         - "Modeling: Exclusive process editing": admin/features/process-design/activate-exclusive-process-editing/activate-exclusive-process-editing.md
         - "Modeling: Copy and move process flow objects": admin/features/process-design/copy-move-shapes/copy-and-move-shapes.md
+        - "Method: hide secondary application connections as inputs and outputs": admin/features/general-design/hide-secondary-application-connections/hide-secondary-application-connections.md
         - BPMN Icons on process flow objects: admin/features/process-design/bpmn2.0-icons/bpmn-icons.md
         - "Performance: Accelerated loading time of process graphics": admin/features/process-design/enhancement-detailed-modeling/enhancement-of-detailed-modeling.md
         - "Method: Best Practice Tasks": admin/features/process-design/best-practice-tasks/best-practice-tasks.md
