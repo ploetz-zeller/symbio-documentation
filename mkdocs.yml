@@ -183,7 +183,6 @@ nav:
       - Process design:
         - "Modeling: Exclusive process editing": admin/features/process-design/activate-exclusive-process-editing/activate-exclusive-process-editing.md
         - "Modeling: Copy and move process flow objects": admin/features/process-design/copy-move-shapes/copy-and-move-shapes.md
-        - "Method: hide secondary application connections as inputs and outputs": admin/features/general-design/hide-secondary-application-connections/hide-secondary-application-connections.md
         - BPMN Icons on process flow objects: admin/features/process-design/bpmn2.0-icons/bpmn-icons.md
         - "Performance: Accelerated loading time of process graphics": admin/features/process-design/enhancement-detailed-modeling/enhancement-of-detailed-modeling.md
         - "Method: Best Practice Tasks": admin/features/process-design/best-practice-tasks/best-practice-tasks.md
@@ -191,6 +190,7 @@ nav:
         - "Method: Changed evaluation groups for processes": admin/features/process-design/changed-evaluation-groups-processes/changed-evaluation-groups-processes.md
         - "Fact Sheets: Global related objects": admin/features/process-design/fact_sheet_related-global-objects/fact-sheet_related-global-objects.md
         - Graphical version comparison: admin/features/process-design/graphical_comparison/graphical-comparison.md
+        - "Method: hide secondary application connections as inputs and outputs": admin/features/general-design/hide-secondary-application-connections/hide-secondary-application-connections.md
         - "Diagram mode: Application Swimlane": admin/features/process-design/swimlane-for-applications/swimlane-for-applications.md
         - "Method: Global responsible role for sub processes": admin/features/process-design/global-responsible-role/global-responsible-role.md
       - Repository design:
