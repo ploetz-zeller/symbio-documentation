@@ -12,7 +12,7 @@ In this section, main features of the service are explained:
 
 1. **Synchronize processes for SAP Solution Manager to Symbio**
 
-    It is possible to synchronize process structure from SAP Solution Manager to Symbio. Users are able to select a SAP Solution Manager scope, and synchronize it to Symbio. When synchronizing scope some library elements that are connected to the structure or diagram elements will also be synchronized.
+    It is possible to synchronize process structure from SAP Solution Manager to Symbio. Users are able to select a SAP Solution Manager scope, and synchronize it to Symbio. When synchronizing scope some library elements that are connected to the structure or diagram elements will also be synchronized. It is possible to do a synchronization of user processes that are created in SAP Solution Manager and also the best practice template processes.
 
 2. **Synchronize Library elements from SAP Solution Manager to Symbio**
 

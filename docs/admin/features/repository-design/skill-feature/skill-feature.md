@@ -1,4 +1,4 @@
-# Skill feature
+# Method: Skills
 
 By this feature, the new Sub navigation __skills__ is added below ORGANIZATION. 
 
