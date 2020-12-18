@@ -7,10 +7,15 @@ This document contains information on how to set up **SAP Solution Manager** ser
 ## 1. Using Windows Task Scheduler for on premise installations  
 
 **PREREQUISITES:** 
+
 1. *On premise Symbio* installed.
+
 2. *On premise Solman Connector* service installed and linked to the storage.
+
 3. [PowerShell 7.0.3 or greater](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-7.1) installed and configured in the System variable PATH.
+
 4. **Administrator user** for the Windows where the scheduled task is set up.
+
 5. (Optional) Windows computers can be set up to block the external scripts. If this is the case, you have to set the ExecutionPolicy to "Bypass" so the script can be executed. See more information about this process [here](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-7.1).
 
 
