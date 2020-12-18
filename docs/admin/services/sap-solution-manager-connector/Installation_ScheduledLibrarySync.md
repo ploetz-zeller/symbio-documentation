@@ -2,7 +2,7 @@
 
 # How to set up scheduled library sync
 
-This document contains information on how to set-up **SAP Solution Manager** service to run a scheduled library synchronization.
+This document contains information on how to set up **SAP Solution Manager** service to run a scheduled library synchronization.
 
 ## 1. Using Windows Task Scheduler for on premise installations  
 
@@ -77,7 +77,7 @@ This document contains information on how to set-up **SAP Solution Manager** ser
 5. Set arguments to: '-command &{"C:\Scripts\Trigger-SolManSync.ps1" -BaseUri '/*your service url*/' -TenantId '/*your tenant id*/'}'
 6. Confirm the action and finalize setting your task.
 
-### 1.3. Troubleshooting
+
 
 ## 2. Using Azure Logic App for cloud versions
 
@@ -85,6 +85,35 @@ This document contains information on how to set-up **SAP Solution Manager** ser
 1. Cloud version of Symbio.
 2. Cloud version of Solution Manager Connector service linked to the cloud Symbio storage.
 
+For cloud version of the Solution Manager Connector service, the Schedule mechanism is already included in the Resource Group of the service.
 
+### How to set up the scheduled synchronization
+
+1. On Azure portal, open the Resource Group of the Solution Manager Connector service.
+2. Open the resource of type Logic app named 'RunLibrarySync' and **Enable** it.
+3. Open the resource of type Storage Account named 'librarysync'.
+4. Use the Storage Explorer to open the table 'SyncSchedule'.
+5. Add a new row to the table with these necessary columns:
+
+    * PARTITIONKEY: "Sync"
+    * ROWKEY: {*your tenant id*}
+    * INTERVALHRS: {*set the repeat interval for the task in hours*} (integer value)
+    * LASTRUNDATE: null (this column must exist, starting value is null but this value will be updated by the Azure Logic App)
+
+    **Example**
+
+    * PARTITIONKEY: "Sync"
+    * ROWKEY: "298c7d61-9050-4ba7-aca9-9740f8c3a630"
+    * INTERVALHRS: 24
+    * LASTRUNDATE: null
+
+
+**Update**
+
+To update the scheduled tasks, just change the values in the Storage Account table.
+
+**Deletion**
+
+TO remove the scheduled task, just delete the appropriate row in the Storage Account table.
 
 
