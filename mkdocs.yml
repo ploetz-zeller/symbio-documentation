@@ -88,6 +88,7 @@ nav:
           - Service installation: admin/services/sap-solution-manager-connector/Installation_ServiceInstallation.md
           - Configuration: admin/services/sap-solution-manager-connector/Installation_Configuration.md
           - Versioning: admin/services/sap-solution-manager-connector/Installation_Versioning.md
+          - Scheduled Library synchronization: admin/services/sap-solution-manager-connector/Installation_ScheduledLibrarySync.md
         - SAP Solution Manager to Symbio synchronization:
           - Process structure synchronization: admin/services/sap-solution-manager-connector/SolManToSymbio_ProcessSync.md
           - Library objects synchronization: admin/services/sap-solution-manager-connector/SolManToSymbio_LibraryObjectsSync.md
@@ -178,6 +179,8 @@ nav:
         - "Method: Glossary": admin/features/general-design/method-glossary/method-glossary.md
         - "Method: Systems as a list (instead of architecture)": admin/features/general-design/deactivate_architecture-systems/deactivate-architecture-systems.md
         - Subscriptions for categories: admin/features/general-design/subscriptions-for-categories/subscriptions-for-categories.md
+        - "Extended filter bar: individual scope filter selection": admin/features/general-design/extension-of-statusbar/extension-of-statusbar.md
+        - "Method: show technical IDs": admin/features/general-design/technical-id/technical-id.md
       - Process design:
         - "Modeling: Exclusive process editing": admin/features/process-design/activate-exclusive-process-editing/activate-exclusive-process-editing.md
         - "Modeling: Copy and move process flow objects": admin/features/process-design/copy-move-shapes/copy-and-move-shapes.md
@@ -190,6 +193,7 @@ nav:
         - Graphical version comparison: admin/features/process-design/graphical_comparison/graphical-comparison.md
         - "Diagram mode: Application Swimlane": admin/features/process-design/swimlane-for-applications/swimlane-for-applications.md
         - "Method: Global responsible role for sub processes": admin/features/process-design/global-responsible-role/global-responsible-role.md
+        - "Method: hide secondary application connections as inputs and outputs": admin/features/process-design/hide-secondary-application-connections/hide-secondary-application-connections.md
       - Repository design:
         - "Method: Additional relationships for documents": admin/features/repository-design/additional-relations-documents/additional-relations-documents.md
         - "Method: System ArchiMate Converting": admin/features/repository-design/archimate-conversions/archimate-conversions.md
