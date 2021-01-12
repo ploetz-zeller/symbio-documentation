@@ -51,6 +51,10 @@ nav:
         - Installation manual: admin/services/celonis-importer/install-service-manual.md
         - Configuration: admin/services/celonis-importer/configuration.md
         - Usage: admin/services/celonis-importer/usage.md
+      - Celonis Process Mining Connector:
+        - Configuration: admin/services/celonis-process-mining-connector/configuration.md
+        - Push to Celonis: admin/services/celonis-process-mining-connector/usage_push.md
+        - Pull from Celonis: admin/services/celonis-process-mining-connector/usage_pull.md
       - Import of vsdx files: admin/services/import-of-vsdx-files/import-of-vsdx-files.md
       - Intrafind Indexer:
         - Introduction: admin/services/intrafind-indexer/index.md
@@ -65,17 +69,15 @@ nav:
         - Installation manual: admin/services/process-portal-exporter/install-service-manual.md
         - Configuration: admin/services/process-portal-exporter/configuration.md
         - Usage: admin/services/process-portal-exporter/usage.md
-      - Reporting Service:
-        - Overview: 
-          - Introduction: admin/services/reporting-service/overview.md
-          - Authentication Token IsPermittedEverywhere: developer/is-permitted-everywhere.md
-        - Installation:
-          - SSRS & Reports: admin/services/reporting-service/deploy-ssrs.md
-          - Connector Web Service & Console Application: admin/services/reporting-service/deploy-connector-console.md
-        - Configuration:
-          - Connector Web Service & Console Application: admin/services/reporting-service/config-connector-console.md
-          - Symbio Report Pool & Symbio Reporting:  admin/services/reporting-service/config-symbio.md
+      - Reporting:
+        - Overview: admin/services/reporting-service/overview.md
+        - Setup:
+          - SSRS & Reports: admin/services/reporting-service/ssrs-and-reports.md
+          - Connector: admin/services/reporting-service/reporting-connector.md
+          - Symbio: admin/services/reporting-service/config-symbio.md
+          - Console: admin/services/reporting-service/reporting-console.md
         - Operation: admin/services/reporting-service/operation.md
+        - FAQ: admin/services/reporting-service/faq.md
       - SAP Solution Manager Connector:
         - Introduction: 
           - Overview: admin/services/sap-solution-manager-connector/Introduction_Overview.md
@@ -86,6 +88,7 @@ nav:
           - Service installation: admin/services/sap-solution-manager-connector/Installation_ServiceInstallation.md
           - Configuration: admin/services/sap-solution-manager-connector/Installation_Configuration.md
           - Versioning: admin/services/sap-solution-manager-connector/Installation_Versioning.md
+          - Scheduled Library synchronization: admin/services/sap-solution-manager-connector/Installation_ScheduledLibrarySync.md
         - SAP Solution Manager to Symbio synchronization:
           - Process structure synchronization: admin/services/sap-solution-manager-connector/SolManToSymbio_ProcessSync.md
           - Library objects synchronization: admin/services/sap-solution-manager-connector/SolManToSymbio_LibraryObjectsSync.md
@@ -156,6 +159,10 @@ nav:
       - Stereotypes:
         - Creating stereotypes: admin/administration/stereotypes/creating-stereotypes.md
         - Use stereotypes: admin/administration/stereotypes/use-stereotypes.md
+      - Navigation: 
+        - Introduction: admin/administration/navigation/navigation.md
+        - How to create a button to show a location in Google Maps: admin/administration/navigation/googlemaps.md
+        - How to create a button to show a location in Bing Maps: admin/administration/navigation/bingmaps.md
     - Features:
       - Introduction: admin/features/introduction/introduction.md
       - General design:
@@ -172,6 +179,8 @@ nav:
         - "Method: Glossary": admin/features/general-design/method-glossary/method-glossary.md
         - "Method: Systems as a list (instead of architecture)": admin/features/general-design/deactivate_architecture-systems/deactivate-architecture-systems.md
         - Subscriptions for categories: admin/features/general-design/subscriptions-for-categories/subscriptions-for-categories.md
+        - "Extended filter bar: individual scope filter selection": admin/features/general-design/extension-of-statusbar/extension-of-statusbar.md
+        - "Method: show technical IDs": admin/features/general-design/technical-id/technical-id.md
       - Process design:
         - "Modeling: Exclusive process editing": admin/features/process-design/activate-exclusive-process-editing/activate-exclusive-process-editing.md
         - "Modeling: Copy and move process flow objects": admin/features/process-design/copy-move-shapes/copy-and-move-shapes.md
@@ -184,9 +193,18 @@ nav:
         - Graphical version comparison: admin/features/process-design/graphical_comparison/graphical-comparison.md
         - "Diagram mode: Application Swimlane": admin/features/process-design/swimlane-for-applications/swimlane-for-applications.md
         - "Method: Global responsible role for sub processes": admin/features/process-design/global-responsible-role/global-responsible-role.md
+<<<<<<< HEAD
       - Repository design:
         - "Method: System ArchiMate Converting": admin/features/repository-design/archimate-conversions/archimate-conversions.md
         - "Method: Classification of information for Documents": admin/features/repository-design/classification-of-info/classification-of-information.md
+=======
+        - "Method: hide secondary application connections as inputs and outputs": admin/features/process-design/hide-secondary-application-connections/hide-secondary-application-connections.md
+      - Repository design:
+        - "Method: Additional relationships for documents": admin/features/repository-design/additional-relations-documents/additional-relations-documents.md
+        - "Method: System ArchiMate Converting": admin/features/repository-design/archimate-conversions/archimate-conversions.md
+        - "Method: Classification of information for Documents": admin/features/repository-design/classification-of-info/classification-of-information.md
+        - "Method: 'Documents to be considered' for organizational units": admin/features/repository-design/documents-org-units/documents-org-units.md
+>>>>>>> 78a3b1f25eaf79d66c6c9599104161a03849e548
         - "Method: Maintain Measures status": admin/features/repository-design/measure-status/measure-status.md
         - "Method: Skills": admin/features/repository-design/skill-feature/skill-feature.md
         - "Method: KPI and Inputs/Outputs to Interface Placeholders": admin/features/repository-design/kpi-inoutput-interface/method-inoutput-interface.md
@@ -197,8 +215,13 @@ nav:
     - Getting Started: developer/getting-started.md
     - REST API:
       - Overview:
+        - BPMN API: developer/rest-api/overview/bpmn-api.md
+        - Element Subscriptions API: developer/rest-api/overview/element-subscriptions-api.md
+        - Feature Flags API: developer/rest-api/overview/feature-flags-api.md
         - Permalinks API: developer/rest-api/overview/permalinks-api.md
         - Power Platform API: developer/rest-api/overview/powerplatform-api.md
+        - Reporting API: developer/rest-api/overview/reporting-api.md
+        - Storages API: developer/rest-api/overview/storages-api.md
       - How To:
         - Authentication Tokens: developer/rest-api/how-to/rest-symbio-auth-token-client-temp-example-documentation/rest-symbio-auth-token-client-temp-example-documentation.md
         - Authentication Token IsPermittedEverywhere: developer/is-permitted-everywhere.md
