@@ -1,11 +1,14 @@
 # Method: hide secondary application connections as inputs and outputs feature
 
-With this feature activated secondary application connection will be hidden. 
+This feature enables a simplification of the used method in relation to the assignment of applications to processes or tasks. 
 
-Example for secondary applications:
+![screen](../media/comparison_application_assignment.png)
 
-When feature is not activated 
-![screen](../media/no-feature-activated.png)
+If the feature is activated, only the simplified assignment is displayed for main and sub processes as well as for tasks, repository tasks and best practice tasks. 
 
-When feature is activated
-![screen](../media/hidden-secondary-app.png)
+**Please be aware:**
+
+On activating the feature, no data conversion is done automatically. If there are already existing data for Secondary applications (input) or Secondary applications (output) in the database, they are not converted automatically to the primary assignment. They remain in the database, but are no longer displayed. 
+When the feature is deactivated again, the data will be displayed as before. 
+
+If you decide to activate the feature, it should be ensured that any existing relationships are automatically or manually migrated to the primary relationship beforehand. 
