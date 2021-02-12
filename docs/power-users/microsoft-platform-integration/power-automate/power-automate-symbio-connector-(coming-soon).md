@@ -6,10 +6,7 @@ To create a connection with Symbio you need a connection string. To get the conn
 
 
   
-<img src="media/ConnectionString.jpg"
-     alt="Power Automate Connection String"
-   />
-
+![Power Automate Connection String](media/ConnectionString.jpg)
      
 &nbsp;
 &nbsp;
@@ -18,10 +15,7 @@ To create a connection with Symbio you need a connection string. To get the conn
 
 Copy the connection string and paste it into the Power Automate Connection String settings window after giving your connection an appropriate name. 
 
-<img src="media/SymbioConnection.jpg"
-     alt="Symbio Connector Connection"
-      />
-
+![Symbio Connector Connection](media/SymbioConnection.jpg)
 
 # Symbio Connector Trigger
 
