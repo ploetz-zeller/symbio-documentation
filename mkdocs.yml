@@ -65,8 +65,6 @@ nav:
       - Intrafind Search Proxy:
         - Installation: admin/services/intrafind-search-proxy/installation.md
         - Configuration: admin/services/intrafind-search-proxy/configuration.md
-      - Power Automate Connector:
-        - Configuration and Usage: admin/services/power-automate-connector/power-automate-symbio-connector-(coming-soon).md
       - Process Portal Exporter:
         - Installation manual: admin/services/process-portal-exporter/install-service-manual.md
         - Configuration: admin/services/process-portal-exporter/configuration.md
@@ -276,3 +274,7 @@ nav:
       - Azure resource templates: azure/infrastructure-as-code/azure-resource-templates.md
       - Azure IaC Deployments: azure/infrastructure-as-code/azure-deployments.md
       - Creating a project in Visual Studio: azure/infrastructure-as-code/creating-vs-project.md
+  - Power Users:
+    - Microsoft Power Platform Integration:
+      - Power Automate: 
+         - Connector Configuration and Usage: power-users/microsoft-platform-integration/power-automate/power-automate-symbio-connector-(coming-soon).md
