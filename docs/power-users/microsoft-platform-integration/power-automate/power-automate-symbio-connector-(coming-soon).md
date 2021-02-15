@@ -37,8 +37,8 @@ You can find more information about each trigger and how to adjust their setting
 ###### Parameters
 |Name|Type |Is required| Description|
 |--------|--------|--------|--------|
-|  Facet  |  string    |Yes|The Symbio facet name e.g "Systems" (it), "Customers" (customerstructure), etc.|
-|  Type  |    string    | No|The type of the element that the trigger will fire for e.g SubProcess , Main process, etc.|
+|  Facet  |  string    |Yes|The Symbio facet name e.g. "Systems" (it), "Customers" (customerstructure), etc.|
+|  Type  |    string    | No|The type of the element that the trigger will fire for e.g. SubProcess , Main process, etc.|
 |  State  |    string    | No|The state of the created Symbio element.|
 
 ###### Returns
@@ -46,8 +46,8 @@ You can find more information about each trigger and how to adjust their setting
 |--------|--------|
 |  Element id   |The id of the created Element.|
 |  Element Name | The name of the created Element.|
-|  Type Name  | The type name of the created Element e.g "Main process", "Risk", .etc.|
-|  Type Key  | The type key of the created Element e.g "mainProcess", "risk", .etc.|
+|  Type Name  | The type name of the created Element e.g. "Main process", "Risk", .etc.|
+|  Type Key  | The type key of the created Element e.g. "mainProcess", "risk", .etc.|
 |  Source URL   |The base link to the created Element.|
 |  State Name | The State of the created Element.|
 |  Created-by Name  | The name of the user who created the element.|
@@ -66,8 +66,8 @@ You can find more information about each trigger and how to adjust their setting
 ###### Parameters
 |Name|Type |Is required| Description|
 |--------|--------|--------|--------|
-|  Facet  |  string    | Yes|The Symbio facet name e.g "Systems" (it), "Customers" (customerstructure), etc.|
-|  Type  |    string    | No|The type of the element that trigger will fire for e.g SubProcess , Main process, etc.|
+|  Facet  |  string    | Yes|The Symbio facet name e.g. "Systems" (it), "Customers" (customerstructure), etc.|
+|  Type  |    string    | No|The type of the element that trigger will fire for e.g. SubProcess , Main process, etc.|
 |  State  |    string    | No|The state of the changed Symbio element.|
 
 
@@ -76,8 +76,8 @@ You can find more information about each trigger and how to adjust their setting
 |--------|--------|
 |  Element id   |The id of the changed Element.|
 |  Element Name | The name of the changed Element.|
-|  Type Name  | The type name of the created Element e.g "Main process", "Risk", .etc.|
-|  Type Key  | The type key of the created Element e.g "mainProcess", "risk", .etc.|
+|  Type Name  | The type name of the created Element e.g. "Main process", "Risk", .etc.|
+|  Type Key  | The type key of the created Element e.g. "mainProcess", "risk", .etc.|
 |  Source URL   |The base link to the changed Element.|
 |  State Name | The State of the changed Element.|
 |  Created-by Name  | The name of the user who changed the element.|
@@ -96,8 +96,8 @@ You can find more information about each trigger and how to adjust their setting
 ###### Parameters
 |Name|Type | Is required| Description|
 |--------|--------|--------|--------|
-|  Facet  |  string    | Yes|The Symbio facet name e.g "Systems" (it), "Customers" (customerstructure), etc.|
-|  Type  |    string    | No|The type of the element that trigger will fire for e.g SubProcess , Main process, etc.|
+|  Facet  |  string    | Yes|The Symbio facet name e.g. "Systems" (it), "Customers" (customerstructure), etc.|
+|  Type  |    string    | No|The type of the element that trigger will fire for e.g. SubProcess , Main process, etc.|
 |  State  |    string    | No|The state of the deleted Symbio element.|
 
 
@@ -106,8 +106,8 @@ You can find more information about each trigger and how to adjust their setting
 |--------|--------|
 |  Element id   |The id of the deleted Element.|
 |  Element Name | The name of the deleted Element.|
-|  Type Name  | The type name of the created Element e.g "Main process", "Risk", .etc.|
-|  Type Key  | The type key of the created Element e.g "mainProcess", "risk", .etc.|
+|  Type Name  | The type name of the created Element e.g. "Main process", "Risk", .etc.|
+|  Type Key  | The type key of the created Element e.g. "mainProcess", "risk", .etc.|
 |  Source URL   |The base link to the deleted Element.|
 |  State Name | The State of the deleted Element.|
 |  Created-by Name  | The name of the user who deleted the element.|
@@ -127,8 +127,8 @@ You can find more information about each trigger and how to adjust their setting
 ###### Parameters
 |Name|Type |Is required| Description|
 |--------|--------|--------|--------|
-|  Facet  |  string    | Yes|The Symbio facet name e.g "Systems" (it), "Customers" (customerstructure), etc.|
-|  Type  |    string    | No|The type of the element that trigger will fire for e.g SubProcess , Main process, etc.|
+|  Facet  |  string    | Yes|The Symbio facet name e.g. "Systems" (it), "Customers" (customerstructure), etc.|
+|  Type  |    string    | No|The type of the element that trigger will fire for e.g. SubProcess , Main process, etc.|
 
 
 
@@ -137,8 +137,8 @@ You can find more information about each trigger and how to adjust their setting
 |--------|--------|
 |  Element id   |The id of the released Element.|
 |  Element Name | The name of the released Element.|
-|  Type Name  | The type name of the created Element e.g "Main process", "Risk", .etc.|
-|  Type Key  | The type key of the created Element e.g "mainProcess", "risk", .etc.|
+|  Type Name  | The type name of the created Element e.g. "Main process", "Risk", .etc.|
+|  Type Key  | The type key of the created Element e.g. "mainProcess", "risk", .etc.|
 |  Source URL   |The base link to the released Element.|
 |  State Name | The State of the released Element.|
 |  Created-by Name  | The name of the user who released the element.|
@@ -167,8 +167,8 @@ You can find more information about each trigger and how to adjust their setting
 |Name|Type |Is required| Description|
 |--------|--------|--------| --------|
 |   Name |  string    | yes| The name of the Symbio element.|
-|  Facet   |  string    | yes|The name of the Facet e.g "Systems" (it), "Customers" (customerstructure), etc.|
-|   Type |  string    | yes|The type name of the created element e.g Risk, Process, Category, etc.|
+|  Facet   |  string    | yes|The name of the Facet e.g. "Systems" (it), "Customers" (customerstructure), etc.|
+|   Type |  string    | yes|The type name of the created element e.g. Risk, Process, Category, etc.|
 |  Description  |  string    | no| The description of the created element.|
 |  parentId  |  string    | no| The ID of the parent of the created element (if not given the element will be created as an orphaned element).|
 |  Created On  |  date    | no|The date of the created element. |
@@ -183,8 +183,8 @@ The outputs of this operation will represent the created element.
 ###### Parameters
 |Name|Type |Is required| Description|
 |--------|--------|--------| --------|
-|  Facet   |  string    | yes|The name of the Facet e.g "Systems" (it), "Customers" (customerstructure), etc.|
-|  Type |  string    | yes|The type name of the created element e.g Risk, Process, Category, etc.|
+|  Facet   |  string    | yes|The name of the Facet e.g. "Systems" (it), "Customers" (customerstructure), etc.|
+|  Type |  string    | yes|The type name of the created element e.g. Risk, Process, Category, etc.|
 |  Attribute  |  string    | yes|The attribute name that you want to change. This value will be provided to you after specifying the facet and the type of the element|
 |  Value  |  string    | yes|The value of what you want to change the specified attribute to|
 |  id  |  string    | yes|The id of the element you want to change|
@@ -205,8 +205,8 @@ The outputs of this operation are dynamic.
 ###### Parameters
 |Name|Type |Is required| Description|
 |--------|--------|--------| --------|
-|  Facet |  string    | yes|  The Symbio facet name e.g "Systems" (it), "Customers" (customerstructure), etc.|
-|  View |  string    | no |The name of the facet e.g "Systems" (it), "Customers" (customerstructure), etc.|
+|  Facet |  string    | yes|  The Symbio facet name e.g. "Systems" (it), "Customers" (customerstructure), etc.|
+|  View |  string    | no |The name of the facet e.g. "Systems" (it), "Customers" (customerstructure), etc.|
 |  lcid |  string    | no |The specific language ID (1033 English, 1031 German).|
 |  Filter  |  string    | no| A specific filter query used when retrieving the result. E.g. *name -eq 'symbio'* |
 |  Order By  |  string    | no| The order by expression. (Mostly relevant when iterating through pages) |
@@ -223,9 +223,9 @@ An array of elements that each have the following dynamic content:
 |--------|--------|
 |  id | The id of the  element.|
 |  name | The name of the  element.|
-|  Type key  | The key of the type of the  element e.g process, domain, SubProcess,  etc.|
-|  Type Name  | The type name of the created Element e.g "Main process", "Risk", .etc.|
-|  Type Key  | The type key of the created Element e.g "mainProcess", "risk", .etc.|
+|  Type key  | The key of the type of the  element e.g. process, domain, SubProcess,  etc.|
+|  Type Name  | The type name of the created Element e.g. "Main process", "Risk", .etc.|
+|  Type Key  | The type key of the created Element e.g. "mainProcess", "risk", .etc.|
 |  Source URL   |The base link to the  element.|
 |  State Name | The State of the element.|
 |  Created-by Name  | The name of the user who created the element.|
