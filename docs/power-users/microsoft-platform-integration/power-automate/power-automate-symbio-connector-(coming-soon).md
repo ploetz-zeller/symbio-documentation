@@ -39,19 +39,19 @@ You can find more information about each trigger and how to adjust their setting
 |--------|--------|--------|--------|
 |  Facet  |  string    |Yes|The Symbio facet name e.g. "Systems" (it), "Customers" (customerstructure), etc.|
 |  Type  |    string    | No|The Symbio type of the element that the trigger will fire for e.g. "Sub process" (subProcess) , "Risk" (risk), etc.|
-|  State  |    string    | No|The state of the created Symbio element.|
+|  State  |    string    | No|The state of the created Symbio element e.g. "inProcess".|
 
 ###### Returns
 |Name | Description|
 |--------|--------|
-|  Element id   |The id of the created Element.|
-|  Element Name | The name of the created Element.|
-|  Type Name  | The type name of the created Element e.g. "Main process", "Risk", .etc.|
-|  Type Key  | The type key of the created Element e.g. "mainProcess", "risk", .etc.|
-|  Source URL   |The base link to the created Element.|
-|  State Name | The State of the created Element.|
+|  Element id   |The id of the created element.|
+|  Element Name | The name of the created element.|
+|  Type Name  | The type name of the created element e.g. "Main process", "Risk", .etc.|
+|  Type Key  | The type key of the created element e.g. "mainProcess", "risk", .etc.|
+|  Source URL   |The base link to the created element.|
+|  State Name | The state of the created Symbio element e.g. "inProcess"|
 |  Created-by Name  | The name of the user who created the element.|
-|  Created on   |The time the Element was created.|
+|  Created on   |The time the element was created.|
 |  Changed by Name | The last user who changed the element.|
 |  Changed on  | The last time that the current element has been changed.|
 |  Author Name  | The name of the user who created the element.|
@@ -74,14 +74,14 @@ You can find more information about each trigger and how to adjust their setting
 ###### Returns
 |Name | Description|
 |--------|--------|
-|  Element id   |The id of the changed Element.|
-|  Element Name | The name of the changed Element.|
-|  Type Name  | The type name of the created Element e.g. "Main process", "Risk", .etc.|
-|  Type Key  | The type key of the created Element e.g. "mainProcess", "risk", .etc.|
-|  Source URL   |The base link to the changed Element.|
-|  State Name | The State of the changed Element.|
+|  Element id   |The id of the changed element.|
+|  Element Name | The name of the changed element.|
+|  Type Name  | The type name of the created element e.g. "Main process", "Risk", .etc.|
+|  Type Key  | The type key of the created element e.g. "mainProcess", "risk", .etc.|
+|  Source URL   |The base link to the changed element.|
+|  State Name | The State of the changed element e.g. "inProcess".|
 |  Created-by Name  | The name of the user who changed the element.|
-|  Created on   |The time the Element was changed.|
+|  Created on   |The time the element was changed.|
 |  Changed by Name | The last user who changed the element.|
 |  Changed on  | The last time that the current element has been changed.|
 |  Author Name  | The name of the user who changed the element.|
@@ -98,20 +98,20 @@ You can find more information about each trigger and how to adjust their setting
 |--------|--------|--------|--------|
 |  Facet  |  string    | Yes|The Symbio facet name e.g. "Systems" (it), "Customers" (customerstructure), etc.|
 |  Type  |    string    | No|The Symbio type of the element that the trigger will fire for e.g. "Sub process" (subProcess) , "Risk" (risk), etc.|
-|  State  |    string    | No|The state of the deleted Symbio element.|
+|  State  |    string    | No|The state of the deleted Symbio element e.g. "inProcess".|
 
 
 ###### Returns
 |Name | Description|
 |--------|--------|
-|  Element id   |The id of the deleted Element.|
-|  Element Name | The name of the deleted Element.|
-|  Type Name  | The type name of the created Element e.g. "Main process", "Risk", .etc.|
-|  Type Key  | The type key of the created Element e.g. "mainProcess", "risk", .etc.|
-|  Source URL   |The base link to the deleted Element.|
-|  State Name | The State of the deleted Element.|
+|  Element id   |The id of the deleted element.|
+|  Element Name | The name of the deleted element.|
+|  Type Name  | The type name of the created element e.g. "Main process", "Risk", .etc.|
+|  Type Key  | The type key of the created element e.g. "mainProcess", "risk", .etc.|
+|  Source URL   |The base link to the deleted element.|
+|  State Name | The State of the deleted element e.g. "inProcess".|
 |  Created-by Name  | The name of the user who deleted the element.|
-|  Created on   |The time the Element was deleted.|
+|  Created on   |The time the element was deleted.|
 |  Changed by Name | The last user who changed the element.|
 |  Changed on  | The last time that the current element has been changed.|
 |  Author Name  | The name of the user who deleted the element.|
@@ -135,14 +135,14 @@ You can find more information about each trigger and how to adjust their setting
 ###### Returns
 |Name | Description|
 |--------|--------|
-|  Element id   |The id of the released Element.|
-|  Element Name | The name of the released Element.|
-|  Type Name  | The type name of the created Element e.g. "Main process", "Risk", .etc.|
-|  Type Key  | The type key of the created Element e.g. "mainProcess", "risk", .etc.|
-|  Source URL   |The base link to the released Element.|
-|  State Name | The State of the released Element.|
+|  Element id   |The id of the released element.|
+|  Element Name | The name of the released element.|
+|  Type Name  | The type name of the created element e.g. "Main process", "Risk", .etc.|
+|  Type Key  | The type key of the created element e.g. "mainProcess", "risk", .etc.|
+|  Source URL   |The base link to the released element.|
+|  State Name | The State of the released element e.g. "inProcess".|
 |  Created-by Name  | The name of the user who released the element.|
-|  Created on   |The time the Element was released.|
+|  Created on   |The time the element was released.|
 |  Changed by Name | The last user who changed the element.|
 |  Changed on  | The last time that the current element has been changed.|
 |  Author Name  | The name of the user who released the element.|
@@ -224,10 +224,10 @@ An array of elements that each have the following dynamic content:
 |  id | The id of the  element.|
 |  name | The name of the  element.|
 |  Type key  | The key of the type of the  element e.g. process, domain, SubProcess,  etc.|
-|  Type Name  | The type name of the created Element e.g. "Main process", "Risk", .etc.|
-|  Type Key  | The type key of the created Element e.g. "mainProcess", "risk", .etc.|
+|  Type Name  | The type name of the created element e.g. "Main process", "Risk", .etc.|
+|  Type Key  | The type key of the created element e.g. "mainProcess", "risk", .etc.|
 |  Source URL   |The base link to the  element.|
-|  State Name | The State of the element.|
+|  State Name | The State of the element e.g. "inProcess".|
 |  Created-by Name  | The name of the user who created the element.|
 |  CreatedByID  | The id of the user who created the element.|
 |  CreatedOn   |The time of when the element was created.|
