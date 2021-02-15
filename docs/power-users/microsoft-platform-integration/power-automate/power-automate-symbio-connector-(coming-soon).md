@@ -26,10 +26,10 @@ Copy the connection string and paste it into the Power Automate Connection Strin
 
 |Trigger||
 |--------|--------|
-|  [When an element is created](##when-an-element-is-created)  |    The trigger will fire when a Symbio element is created   |
-|  [When an element is changed](##when-an-element-is-changed)  |    The trigger will fire when a Symbio element is changed    |
-|  [When an element is deleted](##when-an-element-is-deleted)  |    The trigger will fire when a Symbio element is deleted   |
-|  [When an element is released](##when-an-element-is-released) |    The trigger will fire when a Symbio element is released    |
+|  [When an element is created](#when-an-element-is-created)  |    The trigger will fire when a Symbio element is created   |
+|  [When an element is changed](#when-an-element-is-changed)  |    The trigger will fire when a Symbio element is changed    |
+|  [When an element is deleted](#when-an-element-is-deleted)  |    The trigger will fire when a Symbio element is deleted   |
+|  [When an element is released](#when-an-element-is-released) |    The trigger will fire when a Symbio element is released    |
 
 You can find more information about each trigger and how to adjust their settings below. Note that the display names of the parameters is usually shown. However, that display name is then resolved to it's API name internally.  
 
@@ -156,10 +156,10 @@ You can find more information about each trigger and how to adjust their setting
 
 |Action||
 |--------|--------|
-|  [Create element](##create-element)  |   Create a new Symbio element  |
-|  [Change element](##change-element)  |   Change the properties of a given Symbio element   |
-|  [Get element by id](##get-element-by-id)  |  Get a Symbio element using its ID (ContextKey) |
-|  [Get all elements](##get-all-elements) |   Get all Symbio elements of a specified view|
+|  [Create element](#create-element)  |   Create a new Symbio element  |
+|  [Change element](#change-element)  |   Change the properties of a given Symbio element   |
+|  [Get element by id](#get-element-by-id)  |  Get a Symbio element using its ID (ContextKey) |
+|  [Get all elements](#get-all-elements) |   Get all Symbio elements of a specified view|
 
 
 #### Create element
