@@ -168,7 +168,7 @@ You can find more information about each trigger and how to adjust their setting
 |--------|--------|--------| --------|
 |   Name |  string    | yes| The name of the Symbio element.|
 |  Facet   |  string    | yes|The name of the Facet e.g. "Systems" (it), "Customers" (customerstructure), etc.|
-|   Type |  string    | yes|The type name of the created element e.g. Risk, Process, Category, etc.|
+|   Type |  string    | yes| The type name of the created element e.g. "Sub process" (subProcess) , "Risk" (risk), etc.|
 |  Description  |  string    | no| The description of the created element.|
 |  parentId  |  string    | no| The ID of the parent of the created element (if not given the element will be created as an orphaned element).|
 |  Created On  |  date    | no|The date of the created element. |
@@ -184,7 +184,7 @@ The outputs of this operation will represent the created element.
 |Name|Type |Is required| Description|
 |--------|--------|--------| --------|
 |  Facet   |  string    | yes|The name of the Facet e.g. "Systems" (it), "Customers" (customerstructure), etc.|
-|  Type |  string    | yes|The type name of the created element e.g. Risk, Process, Category, etc.|
+|  Type |  string    | yes|The type name of the changed element e.g. "Sub process" (subProcess) , "Risk" (risk), etc.|
 |  Attribute  |  string    | yes|The attribute name that you want to change. This value will be provided to you after specifying the facet and the type of the element|
 |  Value  |  string    | yes|The value of what you want to change the specified attribute to|
 |  id  |  string    | yes|The id of the element you want to change|
@@ -223,12 +223,11 @@ An array of elements that each have the following dynamic content:
 |--------|--------|
 |  id | The id of the  element.|
 |  name | The name of the  element.|
-|  Type key  | The key of the type of the  element e.g. process, domain, SubProcess,  etc.|
 |  Type Name  | The type name of the created element e.g. "Main process", "Risk", .etc.|
 |  Type Key  | The type key of the created element e.g. "mainProcess", "risk", .etc.|
 |  Source URL   |The base link to the  element.|
 |  State Name | The State of the element e.g. "inProcess".|
-|  Created-by Name  | The name of the user who created the element.|
+|  Created by Name  | The name of the user who created the element.|
 |  CreatedByID  | The id of the user who created the element.|
 |  CreatedOn   |The time of when the element was created.|
 |  Changed by Name | The last user who changed the element.|
