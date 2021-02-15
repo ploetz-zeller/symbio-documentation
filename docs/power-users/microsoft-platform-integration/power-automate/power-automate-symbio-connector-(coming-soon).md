@@ -38,7 +38,7 @@ You can find more information about each trigger and how to adjust their setting
 |Name|Type |Is required| Description|
 |--------|--------|--------|--------|
 |  Facet  |  string    |Yes|The Symbio facet name e.g. "Systems" (it), "Customers" (customerstructure), etc.|
-|  Type  |    string    | No|The type of the element that the trigger will fire for e.g. SubProcess , Main process, etc.|
+|  Type  |    string    | No|The Symbio type of the element that the trigger will fire for e.g. "Sub process" (subProcess) , "Risk" (risk), etc.|
 |  State  |    string    | No|The state of the created Symbio element.|
 
 ###### Returns
@@ -67,8 +67,8 @@ You can find more information about each trigger and how to adjust their setting
 |Name|Type |Is required| Description|
 |--------|--------|--------|--------|
 |  Facet  |  string    | Yes|The Symbio facet name e.g. "Systems" (it), "Customers" (customerstructure), etc.|
-|  Type  |    string    | No|The type of the element that trigger will fire for e.g. SubProcess , Main process, etc.|
-|  State  |    string    | No|The state of the changed Symbio element.|
+|  Type  |    string    | No|The Symbio type of the element that the trigger will fire for e.g. "Sub process" (subProcess) , "Risk" (risk), etc.|
+|  State  |    string    | No|The state of the changed Symbio element e.g. "inProcess", "readyForRelease".|
 
 
 ###### Returns
@@ -97,7 +97,7 @@ You can find more information about each trigger and how to adjust their setting
 |Name|Type | Is required| Description|
 |--------|--------|--------|--------|
 |  Facet  |  string    | Yes|The Symbio facet name e.g. "Systems" (it), "Customers" (customerstructure), etc.|
-|  Type  |    string    | No|The type of the element that trigger will fire for e.g. SubProcess , Main process, etc.|
+|  Type  |    string    | No|The Symbio type of the element that the trigger will fire for e.g. "Sub process" (subProcess) , "Risk" (risk), etc.|
 |  State  |    string    | No|The state of the deleted Symbio element.|
 
 
@@ -128,7 +128,7 @@ You can find more information about each trigger and how to adjust their setting
 |Name|Type |Is required| Description|
 |--------|--------|--------|--------|
 |  Facet  |  string    | Yes|The Symbio facet name e.g. "Systems" (it), "Customers" (customerstructure), etc.|
-|  Type  |    string    | No|The type of the element that trigger will fire for e.g. SubProcess , Main process, etc.|
+|  Type  |    string    | No|The Symbio type of the element that the trigger will fire for e.g. "Sub process" (subProcess) , "Risk" (risk), etc.|
 
 
 
