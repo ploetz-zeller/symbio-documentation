@@ -41,13 +41,13 @@ granted from scratch. The Symbio standard application roles will not be consider
 
 Regarding the effect on other users, there are two possibilities to set inside the attribute "Permission of other users":
 
-- __permission set without any permissions__: In this case you may select a permission set without any mermissions, see image below; which means the permissions on the selected process/object are exclusively set for a specific user or user group. Other users have no access to the selected process/object.
+- __permission set without any permissions__: In this case you may select a permission set without any mermissions, see image below; therfore, if the selected process/object is starting without any permissions and you select a permission set without any permissions then other users have no access to the selected process/object.
 
     Example: A new branch in the process structure should only be available for a newly set up project team (user group). The remaining employees of the company should not have access, not even Viewer rights.
 
 ![screen](./media/no_permissionsset.png)
 
-- __no permission sets at all__: Already granted permissions of other users remain unaffected.
+- __no permission sets at all__: In this case you may select a permission set without any mermissions, see image below; which means, if the process/object inherits from parent or starting from default permissions the granted permission of other users remains unaffected.
 
     Example: The permissions of a new branch in the process structure should be differentiated for specific users or user groups. The existing access rights (e.g. Viewer rights) of the remaining employees remain unchanged.
 
