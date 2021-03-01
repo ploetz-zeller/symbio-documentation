@@ -137,7 +137,7 @@ nav:
         - Permission levels explained: admin/administration/permissions/permission-levels-explained.md
         - Creating and assigning permission sets: admin/administration/permissions/create-assign-permissionsets.md
         - Permissions for facets feature: admin/administration/permissions/facet-permission-feature.md
-        - Permissions for objects made more flexible: admin/administration/permissions/permissions-maintenance-extension.md
+        - Permissions directly on process/object: admin/administration/permissions/permissions-maintenance-extension.md
       - Storage configuration:
         - Settings: admin/administration/storage-settings/storage-settings.md
         - Services: admin/administration/storage-services/storage-services.md
@@ -276,3 +276,7 @@ nav:
       - Azure resource templates: azure/infrastructure-as-code/azure-resource-templates.md
       - Azure IaC Deployments: azure/infrastructure-as-code/azure-deployments.md
       - Creating a project in Visual Studio: azure/infrastructure-as-code/creating-vs-project.md
+  - Power Users:
+    - Microsoft Power Platform Integration:
+      - Power Automate: 
+         - Connector Configuration and Usage: power-users/microsoft-platform-integration/power-automate/power-automate-symbio-connector-(coming-soon).md
