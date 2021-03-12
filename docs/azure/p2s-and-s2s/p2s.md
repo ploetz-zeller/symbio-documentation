@@ -4,18 +4,18 @@
 
 The first thing you need is an Azure Virtual Network to be deposited their resources.  
 Configure it with e.g the following values.  
-|Address space|Address range|Address count
-|--|--|--|  
-|10.10.0.0/25|10.10.0.0 - 10.10.0.127|128|
+| Address space | Address range | Address count |
+| --- | --- | --- |  
+| 10.10.0.0/25 | 10.10.0.0 - 10.10.0.127 | 128 |
 
 ## Subnets
 
 In the VNet you need different subnets. In our example, we will create the following three subnets.
-|Type|Name|IPv4|
-|--|--|--|  
-|Gateway subnet|GatewaySubnet|10.10.0.96/27|
-|Subnet|VM-Subnet|10.10.0.0/29|
-|Subnet|App-Services|10.10.0.64/27|
+| Type | Name | IPv4 |
+| --- | --- | --- |  
+| Gateway subnet | GatewaySubnet | 10.10.0.96/27 |
+| Subnet | VM-Subnet | 10.10.0.0/29 |
+| Subnet | App-Services | 10.10.0.64/27 |
 
 ## Connect the Service
 
