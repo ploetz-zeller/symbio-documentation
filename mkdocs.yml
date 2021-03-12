@@ -270,6 +270,10 @@ nav:
   - Azure:
     - Introduction: azure/index.md
     - Runbooks: azure/runbooks.md
+    - P2S and S2S: 
+      - Introduction: azure/p2s-and-s2s/introduction.md
+      - Point-to-Side: azure/p2s-and-s2s/p2s.md
+      - Side-to-Side: azure/p2s-and-s2s/s2s.md
     - Infrastructure as code:
       - Introduction: azure/infrastructure-as-code/introduction.md
       - Azure resources: azure/infrastructure-as-code/azure-resources.md
