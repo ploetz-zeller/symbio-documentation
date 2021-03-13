@@ -7,7 +7,7 @@ To set up the **Reporting Console** you will need a machine with a current versi
 ## Installation on a Windows machine
 
 1. Create a directory to host the files of the console application, e.g. _C:\SymbioServices\Reporting\Console_
-2. Copy all files and folders of the application into this directory
+2. After building the reporting project, which contains the Console Service, Copy all the debug/release files and folders of the service into this directory.
 
 ## Configuration
 
