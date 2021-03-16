@@ -6,7 +6,7 @@ The following picture illustrates the comparison of the standard permission main
 
 For the general understanding of Symbio Application roles and Permissions sets, please refer to [Permissions - Introduction](https://docs.symbioworld.com/admin/administration/permissions/permissions/).
 
-## How to maintain permissions with the extension feature
+## Ho to maintain permissions with the extension feature
 
 ### 1. Select process or object
 
