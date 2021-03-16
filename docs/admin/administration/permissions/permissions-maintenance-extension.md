@@ -39,21 +39,15 @@ granted from scratch. The Symbio standard application roles will not be consider
 
 ![screen](./media/permissions_otherusers.png)
 
-Regarding the effect on other users, there are two possibilities to set inside the attribute "Permission of other users":
+Regarding the effect on other users, there are two possibilities:
 
-- __permission set without any permissions__: In this case you may select a permission set without any mermissions, see image below; which means the permissions on the selected process/object are exclusively set for a specific user or user group. Other users have no access to the selected process/object.
+- __Other users have no permissions__: These permissions are exclusively set for a specific user or user group. Other users have no access to the selected process or object.
 
     Example: A new branch in the process structure should only be available for a newly set up project team (user group). The remaining employees of the company should not have access, not even Viewer rights.
 
-![screen](./media/no_permissionsset.png)
-
-- __no permission sets at all__: Already granted permissions of other users remain unaffected.
+- __Permissions of other users unchanged__: Already granted permissions of other users remain unaffected.
 
     Example: The permissions of a new branch in the process structure should be differentiated for specific users or user groups. The existing access rights (e.g. Viewer rights) of the remaining employees remain unchanged.
-
-In other words, based on the "Inherit permissions" selection, the Permission of other users is:
-* either a limitation of other users permissions if "Inherit from parent" or "Starting from default permissions" is selected,
-* or an exact prescription of permissions if "Starting without any permissions" is selected.
 
 ### 3. Create specific permission types
 
@@ -81,7 +75,7 @@ Please proceed as follows:
 
 3. Navigate to __Process House__ and set up a new Category or Main Process "HR" (or just select, if existent). 
 
-4. Select __Change permissions__ in the Toolbar; choose "Inherit from parent" from dropdown and select a permission set without any permissions (please create if not existing).
+4. Select __Change permissions__ in the Toolbar; choose "Inherit from parent" and "Other users have no permissions" from dropdown.
 
 5. Create new __Permission types__, e.g. "Author permissions", and go to Detail Content to assign corresponding HR permission set as well as HR user or user group.
 
@@ -100,7 +94,7 @@ Please proceed as follows:
 
 3. Navigate to __Process House__ and set up a new Category "Project XY" (or just select, if existent). 
 
-4. Select __Change permissions__ in the Toolbar; choose "Inherit from parent" from dropdown and do not select any permissions set at all.
+4. Select __Change permissions__ in the Toolbar; choose "Inherit from parent" and "Permissions of other users unchanged" from dropdown.
 
 5. Create new __Permission types__, e.g. "External Viewer permissions", and go to Detail Content to assign corresponding External permission set as well as External user or user group.
 
