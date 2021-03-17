@@ -5,7 +5,7 @@ Activating this feature enables the Author to create a customized table widget u
 To see further information regarding fact sheets, refer to the  [fact sheets documentation](../../../administration/fact-sheets/creating-factsheets.md).
 
 ## Activate feature
-To see how you can activate a feature in general, please refer to the general documentation for [activating features](../../../administration/storage-configuration/storage-configuration.md/#features).
+To see how you can activate a feature in general, please refer to the general documentation for [activating features](http://symbio-documentation-public-preview.azurewebsites.net/admin/administration/storage-configuration/storage-configuration/#features).
 
 In this case, search for the feature with the name **'Add custom views for table widget'** as you can see in the screenshot below.
 
