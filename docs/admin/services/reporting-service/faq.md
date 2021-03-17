@@ -76,36 +76,36 @@ If error messages indicate a connection problem, try the following (depending on
 #### Symbio Core
 
 - Can Symbio Core access the Reporting Connector? Try to open the configured *Service Endpoint URL* of the Report Pool (External System in Symbio SysAdmin) in a browser on the server machine hosting Symbio Core.
-  - Can the account that is running under Symbio Core do the same?
+  - Can the account that is running Symbio Core do the same?
   - Does the time update on refresh?
   - Is the version number correct?
 
 - Can Symbio Core access the targeted SSRS instance (see Reporting Connector configuration)? Try to open the ReportPortal URL in a browser on the server machine hosting Symbio Core.
-  - Can the account that is running under Symbio Core do the same?
+  - Can the account that is running Symbio Core do the same?
 
 - Can the Reporting Connector access Symbio Core? Try to open the Symbio Core URL in a browser on the server machine hosting the Reporting Connector.
-  - Can the account that is running under the Reporting Connector do the same?
+  - Can the account that is running the Reporting Connector do the same?
 
 #### Reporting Connector
 
 - Can the Reporting Connector access the targeted SSRS instance (see Reporting Connector configuration)? Try to open the ReportServer URL in a browser on the server machine hosting the Reporting Connector.
-  - Can the account that is running under the Reporting Connector do the same?
+  - Can the account that is running the Reporting Connector do the same?
 
 - Can the Reporting Connector access the ODS database? Try to connect to the ODS database using a command line tool or SQL Server Management Studio on the server machine hosting the Reporting Connector. (One requirement that you should be aware of is that under Security in the Server Properties, SQL Sever and Windows Authentication mode should be selected)
-  - Can the account that is running under the Reporting Connector do the same?
+  - Can the account that is running the Reporting Connector do the same?
 
 #### Reporting Console
 
 - Can the Reporting Console access Symbio Core? Try to open the Symbio Core URL in a browser on the machine running scheduled Reporting Console tasks.
-  - Can the account that is running under scheduled tasks do the same?
+  - Can the account that is running scheduled tasks do the same?
 
 - Can the Reporting Console access the Reporting Connector? Try to open the configured *Service Endpoint URL* of the Report Pool (External System in Symbio SysAdmin) in a browser on the machine running scheduled Reporting Console tasks.
-  - Can the account that is running under scheduled tasks do the same?
+  - Can the account that is running scheduled tasks do the same?
   - Does the time update on refresh?
   - Is the version number correct?
 
 - Can the Reporting Console access the ODS database? Try to connect to the ODS database using a command line tool or SQL Server Management Studio on the machine running scheduled Reporting Console tasks.
-  - Can the account that is running under scheduled tasks do the same?
+  - Can the account that is running scheduled tasks do the same?
 
 *The fullfetch-open-list command of the Reporting Console is non-modifying and can be used to test the connectivity to Symbio Core and the ODS database.*
 
