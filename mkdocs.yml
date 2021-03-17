@@ -191,6 +191,7 @@ nav:
         - "Method: RASCI vs. RACI in detail content": admin/features/process-design/raci_instead_rasci/raci-instead-of-rasci.md
         - "Method: Changed evaluation groups for processes": admin/features/process-design/changed-evaluation-groups-processes/changed-evaluation-groups-processes.md
         - "Fact Sheets: Global related objects": admin/features/process-design/fact_sheet_related-global-objects/fact-sheet_related-global-objects.md
+        - "Fact Sheets: Custom views for table widget": admin/features/process-design/custom-views-for-table-widget/custom-views-for-table-widget.md
         - Graphical version comparison: admin/features/process-design/graphical_comparison/graphical-comparison.md
         - "Diagram mode: Application Swimlane": admin/features/process-design/swimlane-for-applications/swimlane-for-applications.md
         - "Method: Global responsible role for sub processes": admin/features/process-design/global-responsible-role/global-responsible-role.md
