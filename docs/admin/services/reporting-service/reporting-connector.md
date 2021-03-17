@@ -9,12 +9,12 @@ To set up the **Reporting Connector** you will need either an IIS installation w
 
 #### Reporting Connector on IIS
 1. Create a directory to host the files of the connector service, e.g. _C:\SymbioServices\Reporting\Connector_
-2. After building the reporting project, which contains Conector Service, Copy all the debug/release files and folders of the service into this directory.
+2. After building the reporting project, which contains Conector Service, Copy all files and folders of the service into this directory.
 3. In IIS Manager:
     1. Create a new Application pool (No Managed Code/Integrated) and assign a user account with appropriate rights (Full Control) to the created directory in step 1.
     2. Create a new Application (Web Site) using the created pool and selecting the created directory.
     3. Note the resulting URL (composed of website binding URL and the selected alias/path of the new application).
-4. Configure the Connector by editing its appsettings.config files (can be found among the resulting build files). 
+4. Configure the Connector by editing its appsettings.config files (can be found among the copied files in step 2). 
 5. Test connection to service by navigating to the noted URL.
 
 #### Reporting Connector as Azure App Service
