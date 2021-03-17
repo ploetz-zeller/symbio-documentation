@@ -62,8 +62,12 @@ The read-only connection string will be used for read access by reports. Only re
   - "Could not establish connection..." may indicate a problem with connecting to SSRS, details following. This might indicate wrong credentials or URL in "global:ssrs..." settings in the appsettings.config file of the Reporting Connector.
 - Reporting Console Logs: Are there any errors (marked as [FTL] or [ERR]) in the log?
   - CommandLineParser errors indicate wrong usage of the console's command line parameters. Based on the given details and the console help command, ensure that correct arguments are provided.
-  - "ODS database connection string not found" indicates that the Symbio storage is not correctly connected to the report pool: disconnect any existing pool and the reconnect it.
+  - "ODS database connection string not found" indicates that the Symbio storage is not correctly connected to the report pool: disconnect any existing pool and then reconnect it.
   - Schema/Column-related error messages may normally be solved by running the ApplySchema command.
+  - "The SSL connection could not be established" can be caused because the certificate of the website should be enabled. Therefore you may navigate to computer sertificates, copy the certificate from Personl Certificates folder into 'Trusted Root Authentication Authorities' and 'Web Hosting'.
+  ![](media/certificates.png)
+  - "Could not create SSRS workspace" can be caused by unappropriate assignment of rights to the user that have full access to the root folder of SSRS Reports; therfore, you can assign this user System Administrator Rights as well as System User Rights.
+  ![](media/PermissionsSSRS.png)
 
 ### Check connectivity
 
@@ -72,36 +76,36 @@ If error messages indicate a connection problem, try the following (depending on
 #### Symbio Core
 
 - Can Symbio Core access the Reporting Connector? Try to open the configured *Service Endpoint URL* of the Report Pool (External System in Symbio SysAdmin) in a browser on the server machine hosting Symbio Core.
-  - Can the account Symbio Core is running under do the same?
+  - Can the account that is running Symbio Core do the same?
   - Does the time update on refresh?
   - Is the version number correct?
 
 - Can Symbio Core access the targeted SSRS instance (see Reporting Connector configuration)? Try to open the ReportPortal URL in a browser on the server machine hosting Symbio Core.
-  - Can the account Symbio Core is running under do the same?
+  - Can the account that is running Symbio Core do the same?
 
 - Can the Reporting Connector access Symbio Core? Try to open the Symbio Core URL in a browser on the server machine hosting the Reporting Connector.
-  - Can the account the Reporting Connector is running under do the same?
+  - Can the account that is running the Reporting Connector do the same?
 
 #### Reporting Connector
 
 - Can the Reporting Connector access the targeted SSRS instance (see Reporting Connector configuration)? Try to open the ReportServer URL in a browser on the server machine hosting the Reporting Connector.
-  - Can the account the Reporting Connector is running under do the same?
+  - Can the account that is running the Reporting Connector do the same?
 
-- Can the Reporting Connector access the ODS database? Try to connect to the ODS database using a command line tool or SQL Server Management Studio on the server machine hosting the Reporting Connector.
-  - Can the account the Reporting Connector is running under do the same?
+- Can the Reporting Connector access the ODS database? Try to connect to the ODS database using a command line tool or SQL Server Management Studio on the server machine hosting the Reporting Connector. (One requirement that you should be aware of is that under Security in the Server Properties, SQL Sever and Windows Authentication mode should be selected)
+  - Can the account that is running the Reporting Connector do the same?
 
 #### Reporting Console
 
 - Can the Reporting Console access Symbio Core? Try to open the Symbio Core URL in a browser on the machine running scheduled Reporting Console tasks.
-  - Can the account scheduled tasks are running under do the same?
+  - Can the account that is running scheduled tasks do the same?
 
 - Can the Reporting Console access the Reporting Connector? Try to open the configured *Service Endpoint URL* of the Report Pool (External System in Symbio SysAdmin) in a browser on the machine running scheduled Reporting Console tasks.
-  - Can the account scheduled tasks are running under do the same?
+  - Can the account that is running scheduled tasks do the same?
   - Does the time update on refresh?
   - Is the version number correct?
 
 - Can the Reporting Console access the ODS database? Try to connect to the ODS database using a command line tool or SQL Server Management Studio on the machine running scheduled Reporting Console tasks.
-  - Can the account scheduled tasks are running under do the same?
+  - Can the account that is running scheduled tasks do the same?
 
 *The fullfetch-open-list command of the Reporting Console is non-modifying and can be used to test the connectivity to Symbio Core and the ODS database.*
 

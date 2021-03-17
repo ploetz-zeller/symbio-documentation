@@ -4,12 +4,13 @@
 
 [Reporting Connector](reporting-connector.md) is already set up.
 
-## Configuration steps
+## Short Overview of Configuration steps
 
 1. Create and configure a report pool if it does not exist. You may reuse an existing report pool for different storages.
 1. Assign a report pool to a storage. After successful assignment, you can find the authorization token on the admin page's 'Automation' tile.
-1. Enable those reports from the report set you want to use in your connected storage.
+1. Activate those reports from the report set you want to use in your connected storage.
 
+## Explanation
 ### Report Pool
 
 In Symbio follow these steps to create and configure a report pool:
@@ -25,11 +26,11 @@ In Symbio follow these steps to create and configure a report pool:
 | ------- | ------- |
 | Service endpoint url | Enter the URL of the connector service as noted during its setup. |
 | Authentication token | Enter the security:authToken that was defined in the connector service's settings. |
-| Administrative connection string | Enter a connection string to the ODS database that allows full access to the database. |
-| Read-only connection string | Enter a connection string the the ODS database that allows read-only access to the database. |
+| Administrative connection string | Enter a connection string to the ODS database that allows full access to the database. e.g. _Server=localhost;Database=ODS;User ID=ODSWriter;Password=ODSWriterPwd_|
+| Read-only connection string | Enter a connection string the the ODS database that allows read-only access to the database. e.g. _Server=localhost;Database=ODS;User ID=ODSReader;Password=ODSReaderPwd_|
 | SSRS root folder path | The SSRS root folder path for this connector instance as noted during SSRS worksapce template setup, e.g. SymbioReporting. |
 | Report template folder | The name of the template folder in the root path given above as noted during SSRS workspace template setup, e.g. Template. |
-| SSRS enabled | This is not supported yet. |
+| SSRS enabled | check this option |
 
 ### Connecting a storage to a report pool
 
