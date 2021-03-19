@@ -171,8 +171,10 @@ nav:
         - Permissions for facets: admin/features/general-design/facet-permissions/facet-permissions.md
         - Permissions directly on process/object: admin/features/general-design/permissions-more-flexible/permissions-more-flexible.md
         - Permissions get copied from comparable user instead of recalculated: admin/features/general-design/permissions-copied/permissions-copied.md
+        - "Consolidation of extended configurations": admin/features/general-design/consolidation-of-extended-configurations/consolidation-of-extended-configurations.md
         - Document digitalization: admin/features/general-design/document-digitalization/document-digitalization.md
         - Document digitalization on all facets: admin/features/general-design/document-digitalization-on-all-facets/document-digitalization-all-facets.md
+        - "Fact Sheets: Custom views for table widget": admin/features/general-design/custom-views-for-table-widget/custom-views-for-table-widget.md
         - "Favorite management: Grouping favorites": admin/features/general-design/group-management-for-favorites/group-management-for-favorites.md
         - "Favorite management: Sharing favorites": admin/features/general-design/group-management-for-favorites-sharing/group-management-for-favorites-sharing.md
         - Multiselect in Lists: admin/features/general-design/multiselect-list-feature/multiselect-list-feature.md
