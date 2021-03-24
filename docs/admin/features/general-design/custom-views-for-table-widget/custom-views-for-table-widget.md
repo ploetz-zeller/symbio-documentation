@@ -56,7 +56,14 @@ Here you can select the properties of the the related type you would like to see
 ### Inverted properties
 Similar to properties, you can see the properties of the related type you would like to see. With the difference, that values of the property are listed as columns.
 
-Once you have configured all the values inside of your cusomization, please remember to activate the customization and to click on **'Apply changes'** in the toolbar.
+### Inverted Properties Width
+Set a fixed width of each of the **inverted properties** columns and align them to the right side of the table widget. We suggest a starting value of 50 to 100 and adjust accordingly.
+If this value is set to 0, both properties and inverted properties columns will be spaced evenly.
+
+### Personalized Data
+This setting allows you to utilize your scope filters.
+
+Once you have configured all the values inside of your customization, please remember to activate the customization and to click on **'Apply changes'** in the toolbar.
 
 ## Configure the fact sheet
 
