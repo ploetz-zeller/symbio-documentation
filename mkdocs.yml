@@ -47,7 +47,7 @@ nav:
       - Atlassian Connector:
         - Administration guide: admin/services/atlassian-connector/administration_guide.md
         - Using Symbio to Atlassian: admin/services/atlassian-connector/using_symbioatlassian.md
-        - Using Symbio to Atlassian: admin/services/atlassian-connector/manual_jira_configuration.md
+        - Manual Jira Configuration: admin/services/atlassian-connector/manual_jira_configuration.md
       - Celonis Importer:
         - Installation manual: admin/services/celonis-importer/install-service-manual.md
         - Configuration: admin/services/celonis-importer/configuration.md
