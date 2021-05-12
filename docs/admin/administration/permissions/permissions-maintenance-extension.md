@@ -79,7 +79,7 @@ Please proceed as follows:
 
 2. Navigate to __Permission sets__ tile and create HR specific permission sets (e.g. "HR Architect", "HR Author" etc.), defining for each set how elements can be edited.
 
-3. Navigate to __Process House__ and set up a new Category or Main Process "HR" (or just select, if existent). 
+3. Assign defined permission sets to a process by navigating to __Process House__ and set up a new Category or Main Process "HR" (or just select, if existent). 
 
 4. Select __Change permissions__ in the Toolbar; choose "Inherit from parent" from dropdown and select a permission set without any permissions (please create if not existing).
 
@@ -98,7 +98,7 @@ Please proceed as follows:
 
 2. Navigate to __Permission sets__ tile and create an External user-specific permission set, allowing just to open and to show an element.
 
-3. Navigate to __Process House__ and set up a new Category "Project XY" (or just select, if existent). 
+3. Assign defined permission sets to a new project by navigating to __Process House__ and set up a new Category "Project XY" (or just select, if existent). 
 
 4. Select __Change permissions__ in the Toolbar; choose "Inherit from parent" from dropdown and do not select any permissions set at all.
 
@@ -109,11 +109,20 @@ Please proceed as follows:
 7. Create __Permalink__ of Category "Project XY" and send it to External user or user group, who may now open and see Category "Project XY" by click on this link. 
 
 
+### Department experts (responsible for a particular facet)
 
+In this scenario it will be explained how experts of a department are authorised for one specific facet, e.g. the IT experts should be authorised for the creation and maintenance of repository objects of the SYSTEMS facet. These (released) objects are then used by the process modellers of other departments, whereby the IT experts are not authorised to work on other facets, as they do not perform any process modelling.
 
+1 Navigate to the __Features__ tile and activate all available __Permissions features__ (will probably be combined into one feature in the future). 
 
+2. Navigate to the __User groups__ tile and create new IT experts User groups, one group per role to be granted, e.g. one group for Authors and one for Architects.
 
+3. Make sure that __Users__ of these groups have Author or Architect role, but set their default Permission set to „Viewers“ (ReadOnly)
 
+4. To assign permissions to a specific facet, navigate the the __Facets__ tile, search for the SYSTEMS facet and select __Change permissions__ in the Toolbar.
 
+5. Navigate to the lower part of the dialogue window and create the corresponding permission __Types__, e.g. Authors, Architects, etc. and assign their Permission sets as well as the corresponding User groups of the IT department.  
 
+6. Navigate to the upper part of the dialogue window and select "Starting from default permissions" for the __inheritance__ as well as the Permission set that applies to the other users, in this case „Viewers“. By doing this, process modellers can only see objects oft he SYSTEM facets and link them to their processes. 
 
+7. After click on __OK__ button, changes are applied; and because standard permissions remain unchanged, the Admin has full access to the SYSTEMS facet.
