@@ -55,7 +55,10 @@ nav:
         - Configuration: admin/services/celonis-process-mining-connector/configuration.md
         - Push to Celonis: admin/services/celonis-process-mining-connector/usage_push.md
         - Pull from Celonis: admin/services/celonis-process-mining-connector/usage_pull.md
-      - Import of vsdx files: admin/services/import-of-vsdx-files/import-of-vsdx-files.md
+      - Visio Importer:
+        - Generate Upload Token: admin/services/visio-importer/setup.md
+        - Login and Registration: admin/services/visio-importer/login.md
+        - Using the Visio Importer: admin/services/visio-importer/usage.md
       - Intrafind Indexer:
         - Introduction: admin/services/intrafind-indexer/index.md
         - Installation: admin/services/intrafind-indexer/installation.md
