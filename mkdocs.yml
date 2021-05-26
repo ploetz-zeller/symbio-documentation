@@ -193,7 +193,7 @@ nav:
         - BPMN Icons on process flow objects: admin/features/process-design/bpmn2.0-icons/bpmn-icons.md
         - "Performance: Accelerated loading time of process graphics": admin/features/process-design/enhancement-detailed-modeling/enhancement-of-detailed-modeling.md
         - "Method: Best Practice Tasks": admin/features/process-design/best-practice-tasks/best-practice-tasks.md
-        - "Method: RASCI vs. RACI in detail content": admin/features/process-design/raci_instead_rasci/raci-instead-of-rasci.md
+        - "Method: RACI instead of RASCI": admin/features/process-design/raci_instead_rasci/raci-instead-of-rasci.md
         - "Method: Changed evaluation groups for processes": admin/features/process-design/changed-evaluation-groups-processes/changed-evaluation-groups-processes.md
         - "Fact Sheets: Global related objects": admin/features/process-design/fact_sheet_related-global-objects/fact-sheet_related-global-objects.md
         - Graphical version comparison: admin/features/process-design/graphical_comparison/graphical-comparison.md
