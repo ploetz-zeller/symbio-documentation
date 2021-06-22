@@ -11,9 +11,10 @@ Symbio supports several permission levels. Some of them are available as feature
 * __Delete element__: If this permission level is granted, a user can delete existing elements.
 * __Approve element__: If this permission level is granted, a user can approve changes to an element.
 
+
 These permission levels are context-sensitive, e.g. you need to be able to switch into "Editor" mode (i.e. you also need at least the role "Editor") to utilize granted Edit/New/Delete/Approve permissions, and they only affect non-architectural elements.
 
-To affect architectural elements you either need to be at least assigned to the role "Architect", or have the feature "Architectural Permissions" activated _and_ and appropriate permission levels assigned (see below).
+To affect architectural elements you either need to be at least assigned to the role "Architect", or have the feature "Permissions for architectures" activated _and_ appropriate permission levels assigned (see below).
 
 ### Included Permissions
 
@@ -26,7 +27,8 @@ To affect architectural elements you either need to be at least assigned to the 
 | Delete element   | show, open       |
 | Approve element  | show, open       |
 
-## Architectural Permissions
+
+## Permissions for architectures
 
 These permissions affect architectural elements, e.g. Process House, Sub Categories, Main Processes, Risk Domains, etc.
 
@@ -42,14 +44,14 @@ These permissions affect architectural elements, e.g. Process House, Sub Categor
 | New architectural element    | edit                   | show, open, edit, new |
 | Delete architectural element | -                      | show, open, delete    |
 
-### Activating the Feature "Architectural Permissions"
+### Activating the Feature "Permissions for architectures"
 
 __You need to be an Administrator to activate this feature.__
 
 * Go to the Admin area in Symbio and click on "Features":
   ![](media/activating-feature-architectural-permissions-1.png)
 
-* Select "Architectural Permissions" and change "Activation" to "Activated":
+* Select "Permissions for architectures" and change "Activation" to "Activated":
   ![](media/activating-feature-architectural-permissions-2.png)
 
 _Please note the consequences of activating this feature; read the explanation under "Activation" carefully._
