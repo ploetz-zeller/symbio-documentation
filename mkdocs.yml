@@ -212,6 +212,7 @@ nav:
         - "Method: KPI and Inputs/Outputs to Interface Placeholders": admin/features/repository-design/kpi-inoutput-interface/method-inoutput-interface.md
         - "Method: Requirements for Main Processes": admin/features/repository-design/requirements-main-processes/requirements-main-processes.md
         - "Method: Assignment of processes to documents": admin/features/repository-design/assignment-of-processes-to-document/assignment-of-processes-to-document.md
+        - "Method: Method: Documents as a list (instead of architecture)": admin/features/repository-design/list-view-documents/list-view-documents.md
   - Developer:
     - Introduction: developer/index.md
     - Getting Started: developer/getting-started.md
