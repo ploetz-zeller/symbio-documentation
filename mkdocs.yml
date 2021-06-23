@@ -187,6 +187,7 @@ nav:
         - Subscriptions for categories: admin/features/general-design/subscriptions-for-categories/subscriptions-for-categories.md
         - "Extended filter bar: individual scope filter selection": admin/features/general-design/extension-of-statusbar/extension-of-statusbar.md
         - "Method: show technical IDs": admin/features/general-design/technical-id/technical-id.md
+        - "Method: Method: Documents as a list (instead of architecture)": admin/features/general-design/list-view-documents/list-view-documents.md
         - Extensions for process analysis on projects: admin/features/general-design/extension-process-analysis/extension-process-analysis.md
       - Process design:
         - "Modeling: Exclusive process editing": admin/features/process-design/activate-exclusive-process-editing/activate-exclusive-process-editing.md
