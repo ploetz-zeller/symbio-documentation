@@ -47,6 +47,7 @@ nav:
       - Atlassian Connector:
         - Administration guide: admin/services/atlassian-connector/administration_guide.md
         - Using Symbio to Atlassian: admin/services/atlassian-connector/using_symbioatlassian.md
+        - Manual Jira Configuration: admin/services/atlassian-connector/manual_jira_configuration.md
       - Celonis Importer:
         - Installation manual: admin/services/celonis-importer/install-service-manual.md
         - Configuration: admin/services/celonis-importer/configuration.md
@@ -55,7 +56,10 @@ nav:
         - Configuration: admin/services/celonis-process-mining-connector/configuration.md
         - Push to Celonis: admin/services/celonis-process-mining-connector/usage_push.md
         - Pull from Celonis: admin/services/celonis-process-mining-connector/usage_pull.md
-      - Import of vsdx files: admin/services/import-of-vsdx-files/import-of-vsdx-files.md
+      - Visio Importer:
+        - Generate Upload Token: admin/services/visio-importer/setup.md
+        - Login and Registration: admin/services/visio-importer/login.md
+        - Using the Visio Importer: admin/services/visio-importer/usage.md
       - Intrafind Indexer:
         - Introduction: admin/services/intrafind-indexer/index.md
         - Installation: admin/services/intrafind-indexer/installation.md
@@ -137,7 +141,7 @@ nav:
         - Permission levels explained: admin/administration/permissions/permission-levels-explained.md
         - Creating and assigning permission sets: admin/administration/permissions/create-assign-permissionsets.md
         - Permissions for facets feature: admin/administration/permissions/facet-permission-feature.md
-        - Permissions for objects made more flexible: admin/administration/permissions/permissions-maintenance-extension.md
+        - Permissions directly on process/object: admin/administration/permissions/permissions-maintenance-extension.md
       - Storage configuration:
         - Settings: admin/administration/storage-settings/storage-settings.md
         - Services: admin/administration/storage-services/storage-services.md
@@ -171,8 +175,10 @@ nav:
         - Permissions for facets: admin/features/general-design/facet-permissions/facet-permissions.md
         - Permissions directly on process/object: admin/features/general-design/permissions-more-flexible/permissions-more-flexible.md
         - Permissions get copied from comparable user instead of recalculated: admin/features/general-design/permissions-copied/permissions-copied.md
+        - "Consolidation of extended configurations": admin/features/general-design/consolidation-of-extended-configurations/consolidation-of-extended-configurations.md
         - Document digitalization: admin/features/general-design/document-digitalization/document-digitalization.md
         - Document digitalization on all facets: admin/features/general-design/document-digitalization-on-all-facets/document-digitalization-all-facets.md
+        - "Fact Sheets: Custom views for table widget": admin/features/general-design/custom-views-for-table-widget/custom-views-for-table-widget.md
         - "Favorite management: Grouping favorites": admin/features/general-design/group-management-for-favorites/group-management-for-favorites.md
         - "Favorite management: Sharing favorites": admin/features/general-design/group-management-for-favorites-sharing/group-management-for-favorites-sharing.md
         - Multiselect in Lists: admin/features/general-design/multiselect-list-feature/multiselect-list-feature.md
@@ -181,20 +187,22 @@ nav:
         - Subscriptions for categories: admin/features/general-design/subscriptions-for-categories/subscriptions-for-categories.md
         - "Extended filter bar: individual scope filter selection": admin/features/general-design/extension-of-statusbar/extension-of-statusbar.md
         - "Method: show technical IDs": admin/features/general-design/technical-id/technical-id.md
+        - "Method: Method: Documents as a list (instead of architecture)": admin/features/general-design/list-view-documents/list-view-documents.md
+        - Extensions for process analysis on projects: admin/features/general-design/extension-process-analysis/extension-process-analysis.md
       - Process design:
         - "Modeling: Exclusive process editing": admin/features/process-design/activate-exclusive-process-editing/activate-exclusive-process-editing.md
         - "Modeling: Copy and move process flow objects": admin/features/process-design/copy-move-shapes/copy-and-move-shapes.md
         - BPMN Icons on process flow objects: admin/features/process-design/bpmn2.0-icons/bpmn-icons.md
         - "Performance: Accelerated loading time of process graphics": admin/features/process-design/enhancement-detailed-modeling/enhancement-of-detailed-modeling.md
         - "Method: Best Practice Tasks": admin/features/process-design/best-practice-tasks/best-practice-tasks.md
-        - "Method: RASCI vs. RACI in detail content": admin/features/process-design/raci_instead_rasci/raci-instead-of-rasci.md
+        - "Method: RACI instead of RASCI": admin/features/process-design/raci_instead_rasci/raci-instead-of-rasci.md
         - "Method: Changed evaluation groups for processes": admin/features/process-design/changed-evaluation-groups-processes/changed-evaluation-groups-processes.md
         - "Fact Sheets: Global related objects": admin/features/process-design/fact_sheet_related-global-objects/fact-sheet_related-global-objects.md
         - Graphical version comparison: admin/features/process-design/graphical_comparison/graphical-comparison.md
         - "Diagram mode: Application Swimlane": admin/features/process-design/swimlane-for-applications/swimlane-for-applications.md
         - "Method: Global responsible role for sub processes": admin/features/process-design/global-responsible-role/global-responsible-role.md
-        - "Method: Hide secondary application connections as inputs and outputs": admin/features/process-design/hide-secondary-application-connections/hide-secondary-application-connections.md
-        - "Method: Assign Documents on process house level": admin/features/process-design/documents-on-processhouse-level/documents-on-processhouse-level.md
+        - "Method: hide secondary application connections as inputs and outputs": admin/features/process-design/hide-secondary-application-connections/hide-secondary-application-connections.md
+        - Mass data editing: admin/features/process-design/massdata-editing/massdata-editing.md
       - Repository design:
         - "Method: Additional relationships for documents": admin/features/repository-design/additional-relations-documents/additional-relations-documents.md
         - "Method: System ArchiMate Converting": admin/features/repository-design/archimate-conversions/archimate-conversions.md
@@ -266,12 +274,7 @@ nav:
     - Services:
       - External Systems: developer/services/external-systems.md
       - External System Types: developer/services/external-system-types.md
-  - Azure:
-    - Introduction: azure/index.md
-    - Runbooks: azure/runbooks.md
-    - Infrastructure as code:
-      - Introduction: azure/infrastructure-as-code/introduction.md
-      - Azure resources: azure/infrastructure-as-code/azure-resources.md
-      - Azure resource templates: azure/infrastructure-as-code/azure-resource-templates.md
-      - Azure IaC Deployments: azure/infrastructure-as-code/azure-deployments.md
-      - Creating a project in Visual Studio: azure/infrastructure-as-code/creating-vs-project.md
+  - Power Users:
+    - Microsoft Power Platform Integration:
+      - Power Automate: 
+        - Connector Configuration and Usage: power-users/microsoft-platform-integration/power-automate/power-automate-symbio-connector-(coming-soon).md

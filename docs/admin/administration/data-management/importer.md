@@ -52,7 +52,7 @@ Feature to import Microsoft Word documents which require specific config files.
 
 ## Visio import
 
-Feature to import Microsoft Visio files. Default converter for BPMN/EPC exist but specific config files are required to import customer’s Visio files. The data type of for migration must be in VSDX.
+Importing Microsoft Visio files is done via the [Visio Importer](../../services/visio-importer/usage.md).
 
 ## Excel import 
 
