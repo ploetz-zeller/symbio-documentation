@@ -202,7 +202,7 @@ nav:
         - "Diagram mode: Application Swimlane": admin/features/process-design/swimlane-for-applications/swimlane-for-applications.md
         - "Method: Global responsible role for sub processes": admin/features/process-design/global-responsible-role/global-responsible-role.md
         - "Method: Hide secondary application connections as inputs and outputs": admin/features/process-design/hide-secondary-application-connections/hide-secondary-application-connections.md
-        - "Method: Assign documents on process house level": admin/features/process-design/documents-on-processhouse-level/documents-on-process-house-level.md
+        - "Method: Assign documents on process house and category level": admin/features/process-design/documents-on-processstructure/documents-on-processstructure.md
         - Mass data editing: admin/features/process-design/massdata-editing/massdata-editing.md
       - Repository design:
         - "Method: Additional relationships for documents": admin/features/repository-design/additional-relations-documents/additional-relations-documents.md
