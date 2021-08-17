@@ -189,6 +189,7 @@ nav:
         - "Method: show technical IDs": admin/features/general-design/technical-id/technical-id.md
         - "Method: Method: Documents as a list (instead of architecture)": admin/features/general-design/list-view-documents/list-view-documents.md
         - Extensions for process analysis on projects: admin/features/general-design/extension-process-analysis/extension-process-analysis.md
+        - Additional column 'Reason for revision' in 'News' Lists: admin/features/general-design/additional-column-reason-for-revision/additional-column-reason-for-revision.md
       - Process design:
         - "Modeling: Exclusive process editing": admin/features/process-design/activate-exclusive-process-editing/activate-exclusive-process-editing.md
         - "Modeling: Copy and move process flow objects": admin/features/process-design/copy-move-shapes/copy-and-move-shapes.md
