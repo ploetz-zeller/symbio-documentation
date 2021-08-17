@@ -113,7 +113,7 @@ Please proceed as follows:
 
 In this scenario it will be explained how experts of a department are authorised for one specific facet, e.g. the IT experts should be authorised for the creation and maintenance of repository objects of the SYSTEMS facet. These (released) objects are then used by the process modellers of other departments, whereby the IT experts are not authorised to work on other facets, as they do not perform any process modelling.
 
-1 Navigate to the __Features__ tile and activate all available __Permissions features__ (will probably be combined into one feature in the future). 
+1. Navigate to the __Features__ tile and activate all available __Permissions features__ (will probably be combined into one feature in the future). 
 
 2. Navigate to the __User groups__ tile and create new IT experts User groups, one group per role to be granted, e.g. one group for Authors and one for Architects.
 
