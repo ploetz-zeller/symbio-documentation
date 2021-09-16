@@ -40,6 +40,9 @@ nav:
       - Symbio Apps Authentication:
         - Azure AD: admin/installation-guide/symbio-apps-auth/azure-ad.md
         - OneLogin: admin/installation-guide/symbio-apps-auth/onelogin.md
+      - Symbio AuthService Authentication:
+        - Azure AD: admin/installation-guide/symbio-authservice-auth/azure-ad.md
+        - OneLogin: admin/installation-guide/symbio-authservice-auth/onelogin.md
       - OAuth Configuration:
         - Setting Up OAuth: admin/installation-guide/oauth-configuration/setting-up-oauth.md
     - Services:
