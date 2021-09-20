@@ -155,9 +155,20 @@ If error messages indicate a connection problem, try the following (depending on
   - Does the "Report" dropdown contain the activated reports?
 
 ### Which versions are compatible?
-Symbio should be compatible with Symbio Reporting.
-#### Breaking changes:
+1. Symbio should be compatible with Symbio Reporting Service.
+2. The Symbio Reporting Service respectively the ODS database created by it has to be compatible with the reports deployed.
+
+To learn which versions are compatible, see the tables below. The given versions are the first versions after a breaking change, i.e. all versions equal or higher than that mentioned in a breaking change row are compatible until the next breaking change. 
+
+#### Breaking changes in the interface between Symbio and the Reporting Service:
  
 | no. | Symbio version | Symbio release number | Reporting version | Reporting release number | Description |
 | ------- | ------- | ------- | ------- | ------- | ------- |
 | 1 | R52 (11th October 2020) | 6bcf71f | R264 (8th October 2020) | 8658a6f | New lastVersions parameter was introduced |
+
+#### Breaking changes in the interface between the Reporting Service / ODS database and the reports:
+With "reports" here we address standard reports as well as customer reports. That means if you deploy a new version of the reporting service including a breaking change you have to deploy all used reports as well. And vice versa, if you deploy a report (e.g. a bugfix in one report) including a breaking change, you have to (re-)deploy the reporting service and all other reports in that systaddem, too.
+ 
+| no. | Reporting version | Reports Date | Standard Reports Commit | Description |
+| ------- | ------- | ------- | ------- | ------- | 
+| 1 |20210906.f023b3b8 | 31st August 2021 | 884228a | Capability for Variants |
