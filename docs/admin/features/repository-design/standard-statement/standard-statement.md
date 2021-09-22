@@ -3,4 +3,4 @@ The feature "Method: standard statement attribute" provides a multiline input fi
 
 The feature is disabled by default.
 
-![screen](../standard-statement.PNG)
+![screen](../media/standard-statement.PNG)
