@@ -209,7 +209,6 @@ nav:
         - "Method: Assignment of documents on process house and sub category level": admin/features/process-design/documents-on-processstructure/documents-on-processstructure.md
         - Mass data editing: admin/features/process-design/massdata-editing/massdata-editing.md
         - "Method: Location assignment to main processes, scenarios and documents": admin/features/process-design/locations-to-processes-and-documents/locations-to-processes-and-documents.md
-
       - Repository design:
         - "Method: Additional relationships for documents": admin/features/repository-design/additional-relations-documents/additional-relations-documents.md
         - "Method: System ArchiMate Converting": admin/features/repository-design/archimate-conversions/archimate-conversions.md
