@@ -219,7 +219,6 @@ nav:
         - "Method: KPI and Inputs/Outputs to Interface Placeholders": admin/features/repository-design/kpi-inoutput-interface/method-inoutput-interface.md
         - "Method: Requirements for Main Processes": admin/features/repository-design/requirements-main-processes/requirements-main-processes.md
         - "Method: Assignment of processes to documents": admin/features/repository-design/assignment-of-processes-to-document/assignment-of-processes-to-document.md
-        - "Method: Standard statement attribute": admin/features/repository-design/standard-statement/standard-statement.md
 
   - Developer:
     - Introduction: developer/index.md
