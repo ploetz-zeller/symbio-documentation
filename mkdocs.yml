@@ -27,6 +27,7 @@ nav:
     - Installation Guide:
       - Installation:
         - Preparation: admin/installation-guide/installation/Requirements.md
+        - SQL Server: admin/installation-guide/installation/SQL-Server-Installation.md
         - Scripted Installation: admin/installation-guide/installation/Installation-Skripted.md
         - Manual Installation: admin/installation-guide/installation/Installation-Manual.md
         - First Steps: admin/installation-guide/installation/Finishing.md
