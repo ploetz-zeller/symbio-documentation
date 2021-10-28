@@ -2,30 +2,28 @@
 
 ## Common information
 
-When an Symbio's Intrafind microservice is connected to a storage, any changes, creations or deletions of object in Symbio will be transmitted to 
-the microservice and then to Intrafind. But sometimes, you want to do a full snapshot (full-fetch) of all storage's data from scratch with a complete update of Intrafind.
-For this case exists the console application.
+When Symbio's Intrafind Connector service is connected to a storage, any changes, creations or deletions of elements in Symbio will be transmitted to the service and then to Intrafind.
+Sometimes, you want to do a full snapshot (full-fetch) of all storage data from scratch with a complete update of Intrafind.
+That's the use case of the console application.
 
-To be able to use the console application, you need to have a fully setup Intrafind Indexer microservice, connected to at least one storage.
+To be able to use the console application, you need to have a fully setup Intrafind Connector service, connected to at least one storage.
+
+_The full-fetch operation of the console application is usually an operational aspect managed by Symbioworld._
 
 ### How to use the console application
 
-For doing a full-fetch , you can use the commandline tool, which you get by the same way you received your II installation package. 
-You must adapt its appsettings.json like you did for the II microservice. You can also use the microservice's appsettings.json for the full-fetch commandline tool.
+For doing a full-fetch, you will use the console application. 
+Its appsettings.json needs to reflect the basic settings applying to the Intrafind Connector instance you want to manage.
 
-The full-fetch command can then be executed like this (from commandline):
+The full-fetch command can then be executed like this:
 
     dotnet.exe Symbio.Service.Intrafind.Console.dll fullfetch -t [database tenant id]
 
-The database tenant id is shown in Symbio's 'storage collection administrative area', select the storage under 'Storages', and press CTRL-ALT-D.
-Or you can grab it from the log file.
+The database tenant id is shown in Symbio's 'storage collection administrative area':
+select the storage under 'Storages', and press CTRL-ALT-D.
 
-You must also check Symbio's log files. In case of an unreachable, not running microservice, there will be no entry about this in microservice's log file, of course.
-On Symbio's side, log file checking for errors is done in the same way. You check for errors of type ERR or FTL. E.g., the error for a non-reachable microservice would look like this:
-
-    [Error] "Event HTTP request call: The remote server returned an error: (502) Bad Gateway. for URL 'https://localhost:44316/'" [...]
-
-The given URL has to be replaced with the microservice URL, of course. You can filter for this microservice URL to find out errors regarding the microservice in Symbio's logs.
+Any connection issues will be either logged in the console application or in Symbio.
+Please contact Symbio Support if you encounter any problems.
 
 ### Sample fullfetch log entries
 
@@ -45,7 +43,7 @@ Each Symbio element eligible for indexing in Intrafind is logged by 'Found valid
 
 #####  "Crawling session is already running"
 
-Another full-fetch was started while a previously started is still running. There is only one full-fetch per Symbio-tenant allowed.
+Another full-fetch was started while a previously started one is still running. There is only one full-fetch per Symbio-tenant allowed.
 
 ##### "Starting a crawl session, but no valid SymbioUrl or ApiToken given"
 
@@ -66,7 +64,7 @@ Try to unlink and re-link again. Check for previous errors in log file.
 
 ##### "Unexpected exception during crawling occurred, stopping."
 
-An unrecoverable fatal error occured during a full-fetch session.
+An unrecoverable fatal error occurred during a full-fetch session.
 Processing was interrupted, and Intrafind documents and Symbio elements are not in-sync.
 Information may be deleted from Intrafind document store, until another full-fetch run completed successfully.
 
