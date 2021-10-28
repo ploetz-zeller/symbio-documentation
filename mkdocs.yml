@@ -64,15 +64,12 @@ nav:
         - Generate Upload Token: admin/services/visio-importer/setup.md
         - Login and Registration: admin/services/visio-importer/login.md
         - Using the Visio Importer: admin/services/visio-importer/usage.md
-      - Intrafind Indexer:
-        - Introduction: admin/services/intrafind-indexer/index.md
-        - Installation: admin/services/intrafind-indexer/installation.md
-        - Configuration: admin/services/intrafind-indexer/configuration.md
-        - Console Application: admin/services/intrafind-indexer/consoleapplication.md
-        - About Logging: admin/services/intrafind-indexer/logging.md
-      - Intrafind Search Proxy:
-        - Installation: admin/services/intrafind-search-proxy/installation.md
-        - Configuration: admin/services/intrafind-search-proxy/configuration.md
+      - Intrafind Connector:
+        - Introduction: admin/services/intrafind-connector/index.md
+        - Installation: admin/services/intrafind-connector/installation.md
+        - Configuration: admin/services/intrafind-connector/configuration.md
+        - Console Application: admin/services/intrafind-connector/consoleapplication.md
+        - About Logging: admin/services/intrafind-connector/logging.md
       - Process Portal Exporter:
         - Installation manual: admin/services/process-portal-exporter/install-service-manual.md
         - Configuration: admin/services/process-portal-exporter/configuration.md
