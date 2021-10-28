@@ -69,8 +69,7 @@ nav:
         - Installation: admin/services/intrafind-connector/installation.md
         - Configuration: admin/services/intrafind-connector/configuration.md
         - Console Application: admin/services/intrafind-connector/consoleapplication.md
-      - Intrafind Indexer:
-        - About Logging: admin/services/intrafind-indexer/logging.md
+        - About Logging: admin/services/intrafind-connector/logging.md
       - Process Portal Exporter:
         - Installation manual: admin/services/process-portal-exporter/install-service-manual.md
         - Configuration: admin/services/process-portal-exporter/configuration.md

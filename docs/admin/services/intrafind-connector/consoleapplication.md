@@ -47,7 +47,7 @@ Another full-fetch was started while a previously started one is still running. 
 
 ##### "Starting a crawl session, but no valid SymbioUrl or ApiToken given"
 
-Please check IntrafindIndexer installation and configuration.
+Please check Intrafind Connector service installation and configuration.
 Provide valid Symbio URL.
 Try to unlink and link again to storage.
 Check microservice's database settings.
@@ -70,7 +70,7 @@ Information may be deleted from Intrafind document store, until another full-fet
 
 ##### "Trying to access SymbioApi with invalid connection data"
 
-Please check IntrafindIndexer installation and configuration. Try to unlink and link again to storage.
+Please check Intrafind Connector service installation and configuration. Try to unlink and link again to storage.
 Check microservice's database settings.
 
 ##### "Token role invalid, please check Symbio configuration"
