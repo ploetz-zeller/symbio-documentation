@@ -64,8 +64,9 @@ nav:
         - Generate Upload Token: admin/services/visio-importer/setup.md
         - Login and Registration: admin/services/visio-importer/login.md
         - Using the Visio Importer: admin/services/visio-importer/usage.md
+      - Intrafind Connector:
+        - Introduction: admin/services/intrafind-connector/index.md
       - Intrafind Indexer:
-        - Introduction: admin/services/intrafind-indexer/index.md
         - Installation: admin/services/intrafind-indexer/installation.md
         - Configuration: admin/services/intrafind-indexer/configuration.md
         - Console Application: admin/services/intrafind-indexer/consoleapplication.md
