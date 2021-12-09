@@ -4,12 +4,13 @@
 
 Serilog is used for logging. Configuration is done in appsettings.json. 
 See Serilog's [documentation](https://github.com/serilog/serilog/wiki/Configuration-Basics) for further information.
-The default settings will create a Logs sub-folder in IntrafindIndexer's application path and store there 
-log-files on a per-day file basis. The default log file name pattern is 'symbio-service-intrafindindexer-log-YYYYMMDD.txt'.
+
+The default settings will create a Logs sub-folder in the Connector service's application path and store there 
+log-files on a per-day file basis. The default log file name pattern is 'symbio-service-intrafind-connector-log-YYYYMMDD.txt'.
 Default log level is INFORMATION.
-Log level DEBUG gives a detailed information in case of problems.
-Log level VERBOSE is really for tracing down problems and may slow down the hosting system
- and flood the storage device containing the log files for large databases. You should not leave it enabled on a customer's machine unsupervised.
+Log level DEBUG gives detailed information in case of problems.
+Log level VERBOSE is really for tracing down problems and may slow down the hosting system.
+It should not be left at that value without good reason.
 
 A live-view of today's current log file is possible by
 
@@ -35,7 +36,7 @@ Information may be deleted from Intrafind document store, until another full-fet
 
 ##### "Trying to access SymbioApi with invalid connection data"
 
-Please check IntrafindIndexer installation and configuration. Try to unlink and link again to storage.
+Please check Intrafind Connector service installation and configuration. Try to unlink and link again to storage.
 Check microservice's database settings.
 
 ##### "Token role invalid, please check Symbio configuration"
