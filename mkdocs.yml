@@ -60,6 +60,8 @@ nav:
         - Configuration: admin/services/celonis-process-mining-connector/configuration.md
         - Push to Celonis: admin/services/celonis-process-mining-connector/usage_push.md
         - Pull from Celonis: admin/services/celonis-process-mining-connector/usage_pull.md
+      - Favorite Service:
+        - Configuration: admin/services/favorite-service/installation-manual.md
       - Visio Importer:
         - Generate Upload Token: admin/services/visio-importer/setup.md
         - Login and Registration: admin/services/visio-importer/login.md
