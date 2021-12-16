@@ -30,3 +30,10 @@
 
 
 **Note**: Connecting the system to the storage transmits the current favorites of each user to the service. **This can take more than one hour** depending on the amount of users and favorites in the storage.
+
+# Maintain the authentication token validity 
+
+The service uses a Symbio **authentication token** to communicate with the storage. It's initial validity ends after one year and needs to be regularly maintained.
+
+1. Maintain the authentication token validity date within the connected storage's automation facet. 
+2. Token name: **Favorite-Service-Token-EXTERNAL_SYSTEM_ID** 
