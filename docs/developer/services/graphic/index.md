@@ -4,15 +4,19 @@
 
 The *Symbio-Graphic-Service* combines a layouter and a renderer for the generation of BPMN and process flow graphics. The service expects the request as a JSON file and delivers the graphic as an HTML or SVG file.
 
-## Events
+## The request JSON
+
+The request to calculate a layout and render a graphic is provided as a JSON file.
+
+For details see [Request JSON](request_json.md)
+
+## The events
 
 Events can occur at different locations, with different continuations and with different types.
 
 For details see [Events](elements_events.md)
 
-
-
-## Task
+## The task
 
 Tasks can accure with different types and with different markers.
 
