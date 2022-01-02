@@ -16,8 +16,14 @@ Events can occur at different locations, with different continuations and with d
 
 For details see [Events](elements_events.md)
 
-## The task
+## The tasks
 
 Tasks can accure with different types and with different markers.
 
 For details see [Tasks](elements_tasks.md)
+
+## The sub-processes
+
+Sub-processes can accure with different types and with different markers.
+
+For details see [Sub-processes](elements_subprocesses.md)
