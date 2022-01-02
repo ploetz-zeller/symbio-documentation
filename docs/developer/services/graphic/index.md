@@ -24,6 +24,6 @@ For details see [Tasks](elements_tasks.md)
 
 ## The sub-processes
 
-Sub-processes can accure with different types and with different markers.
+Sub-processes can accure with different types.
 
 For details see [Sub-processes](elements_subprocesses.md)
