@@ -25,19 +25,19 @@ The rendered graphic, that is returned as a result of the service request, may c
 
 BPMN sub-processes can accure with different types.
 
-For details see [Sub-processes](elements_subprocesses.md).
+For details see [BPMN sub-processes and call activities](elements_subprocesses.md).
 
 ## BPMN tasks
 
 BPMN tasks can accure with different types and with different markers.
 
-For details see [Tasks](elements_tasks.md).
+For details see [BPMN tasks](elements_tasks.md).
 
 ## BPMN events
 
 BPMN events can occur at different locations, with different continuations and with different types.
 
-For details see [Events](elements_events.md).
+For details see [BPMN events](elements_events.md).
 
 ## BPMN gateways
 
