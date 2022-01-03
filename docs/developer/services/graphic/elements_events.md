@@ -1,6 +1,6 @@
-# Events
+# BPMN eventss
 
-# Introduction
+### Introduction
 Events can occur with different continuations, at different locations and with different types.
 
 ### Event continuations, that are defined by BPMN are:
