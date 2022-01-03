@@ -2,6 +2,8 @@
 
 ## Introduction
 
+Tasks are atomic pieces of *work* within a *business process*. They are - besides the *sub-processes* and *call activities* - a graphical representation of **Activities**.
+
 Tasks can accure with different types and with different markers.
 
 All task types can be combined with all task markers.
