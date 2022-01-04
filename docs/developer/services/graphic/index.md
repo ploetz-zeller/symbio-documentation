@@ -41,4 +41,8 @@ For details see [BPMN events](elements_events.md).
 
 ## BPMN gateways
 
+*Do be done.*
+
 ## BPMN pools and lanes
+
+*Do be done.*
