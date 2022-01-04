@@ -281,6 +281,7 @@ nav:
     - Services:
       - External Systems: developer/services/external-systems.md
       - External System Types: developer/services/external-system-types.md
+      - Graphic: developer/services/graphic/index.md
   - Power Users:
     - Microsoft Power Platform Integration:
       - Power Automate: 
