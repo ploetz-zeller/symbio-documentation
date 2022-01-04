@@ -13,18 +13,18 @@
 <code>&nbsp;&nbsp;}]
 }</code>
 
-## The <code>result</code> definition
+## The <code>result</code> property
 
 *Do be done.*
 
-## The <code>calculation</code> definition
+## The <code>calculation</code> property
 
 *To be done.*
 
-## The <code>cfg</code> definition
+## The <code>cfg</code> property
 
 *To be done.*
 
-## The <code>elements</code> definition
+## The <code>elements</code> property
 
 *To be done.*
