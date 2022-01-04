@@ -1,3 +1,3 @@
 # Services
 
-* [Graphic](graphic)
+* [Graphic](graphic) (layouting and renering of flows)
