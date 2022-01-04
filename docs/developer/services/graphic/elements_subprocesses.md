@@ -27,7 +27,7 @@ A *transaction* is a *sub-process* that is supported by a special protocol that 
 
 ### BPMN call activity
 
-A *call activity* identifies a point in the *business process* where a global *sub-process* or a global *task* is used. The *call activity* acts as a wrapper for the invocation of a global *sub-process* or a global *task* within the *business process*. 
+A *call activity* identifies a point in the *business process* where a global (re-used) *sub-process* or a global (re-used) *task* is used. The *call activity* acts as a wrapper for the invocation of a global *sub-process* or a global *task* within the *business process*. 
 
 | No. | JSON&nbsp;request&nbsp;/&nbsp;definition | JSON&nbsp;request&nbsp;/&nbsp;shape | Graphic display | BPMN definition | BPMN display |
 |-----|---------------------------|----------------------|-----------------|-----------------|--------------|
