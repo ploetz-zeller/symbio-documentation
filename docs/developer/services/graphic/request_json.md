@@ -15,7 +15,7 @@
 
 ## The <code>result</code> property
 
-*Do be done.*
+*To be done.*
 
 ## The <code>calculation</code> property
 
@@ -27,4 +27,10 @@
 
 ## The <code>elements</code> property
 
-*To be done.*
+The <code>elements</code> property contains all elements, that make up a diagram. This includes:
+
+- The **diagram** itself - as the container of all shapes.
+- All **shapes**, that are to be displayed within the *diagram*.
+- The **items** ...
+
+...
