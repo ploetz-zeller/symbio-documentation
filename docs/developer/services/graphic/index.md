@@ -13,6 +13,7 @@ For details see [Request JSON](request_json.md).
 ## The result graphic
 
 The rendered graphic, that is returned as a result of the service request, may contain several BPMN elements, that can be of:
+
 - **Activities** are used to define an atomic or non-atomic piece of *work* within a *business process*. The graphical representation of **Activities** can be bealized by:
   - **Sub-Processes** and **Call Activities** are non-atomic pieces of *work* within a *business process*.
   - **Tasks** are atomic pieces of *work* within a *business process*.
@@ -41,8 +42,8 @@ For details see [BPMN events](elements_events.md).
 
 ## BPMN gateways
 
-*Do be done.*
+*To be done.*
 
 ## BPMN pools and lanes
 
-*Do be done.*
+*To be done.*
