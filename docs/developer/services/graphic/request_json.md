@@ -19,12 +19,12 @@
 
 ## The <code>calculation</code> definition
 
-*Do be done.*
+*To be done.*
 
 ## The <code>cfg</code> definition
 
-*Do be done.*
+*To be done.*
 
 ## The <code>elements</code> definition
 
-*Do be done.*
+*To be done.*
