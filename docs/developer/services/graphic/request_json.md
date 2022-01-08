@@ -2,16 +2,48 @@
 
 ## General structure
 
-<code>{</code><br />
-<code>&nbsp;&nbsp;"result": "sesvg",</code><br />
-<code>&nbsp;&nbsp;"calculation": "flow",</code><br />
-<code>&nbsp;&nbsp;"cfg": [{</code><br />
-<code>&nbsp;&nbsp;&nbsp;&nbsp;...</code><br />
-<code>&nbsp;&nbsp;}],</code><br />
-<code>&nbsp;&nbsp;"elements": [{</code><br />
-<code>&nbsp;&nbsp;&nbsp;&nbsp;...</code><br />
-<code>&nbsp;&nbsp;}]
-}</code>
+<table>
+<tr><th>The file structure</th><th>Compared to BPMN</th><th>Comments</th></tr>
+<tr>
+<td>
+
+```
+{
+    "result": "sesvg",
+    "calculation": "flow",
+    "cfg": [{
+	...
+    }],
+    "elements": [{
+	...
+    }]
+}
+```
+
+</td>
+<td>
+
+```
+
+	
+
+
+
+<bpmn:definitions> 
+    ...
+</bpmn:definitions>
+```
+
+</td>
+<td>
+The JSON format has to support layout and rendering requests for multiple purposes.
+<br/><br/>
+Thus it provides some meta-information like the requested  <b>"result"</b>, the type of  <b>"calculation"</b> to apply and details regarding layout and rendering configuration <b>"cfg"</b>.
+<br/><br/>
+Beside taht, the JSON holds the data in the "elements" section just like the BPMN does it in the <b>&lt;bpmn:definitions/&gt;</b> tag.
+</td>
+</tr>
+</table>
 
 ## The <code>result</code> property
 
