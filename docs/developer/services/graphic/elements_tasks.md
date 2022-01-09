@@ -40,8 +40,8 @@ All task types can be combined with all task markers.
 - compensation
 - compensation loop
 
-| No. | JSON&nbsp;request&nbsp;/&nbsp;definition | JSON&nbsp;request&nbsp;/&nbsp;shape | Graphic display | BPMN definition | BPMN&nbsp;sdisplay |
-|-----|---------------------------|----------------------|-----------------|-----------------|--------------|
+| No. | JSON&nbsp;request&nbsp;/&nbsp;definition | JSON&nbsp;request&nbsp;/&nbsp;shape | Graphic&nbsp;sdisplay | BPMN definition | BPMN&nbsp;sdisplay |
+|-----|------------------------------------------|-------------------------------------|-----------------------|-----------------|--------------------|
 | A | <code>"properties": {</code><br /><code>&nbsp;&nbsp;"type": "func",</code><br /><code>&nbsp;&nbsp;"kind": "OBJ"</code><br /><code>}</code><br /> | <code>"properties": {</code><br /><code>&nbsp;&nbsp;"type": "func"</code><br /><code>}</code><br /> | ![GRAPHIC-task](media/GRAPHIC-task.png) | </code>&lt;task&gt; ... &lt;/task&gt;</code><br /> | ![BPMN-task](media/BPMN-task.png) |
 | B | <code>"properties": {</code><br /><code>&nbsp;&nbsp;"type": "func",</code><br /><code>&nbsp;&nbsp;"kind": "OBJ",</code><br /><code>&nbsp;&nbsp;"funcMarker": "loop"</code><br /><code>}</code><br /> | <code>"properties": {</code><br /><code>&nbsp;&nbsp;"type": "func"</code><br /><code>}</code><br /> | ![GRAPHIC-taskWithLoop](media/GRAPHIC-taskWithLoop.png) | </code>&lt;task&gt; ...<br />&lt;standard- <br />LoopCharacteristics /&gt;<br /> ... &lt;/task</code><br /> | ![BPMN-taskWithLoop](media/BPMN-taskWithLoop.png) |
 | C | <code>"properties": {</code><br /><code>&nbsp;&nbsp;"type": "func",</code><br /><code>&nbsp;&nbsp;"kind": "OBJ",</code><br /><code>&nbsp;&nbsp;"funcMarker": "parallelMultiple"</code><br /><code>}</code><br /> | <code>"properties": {</code><br /><code>&nbsp;&nbsp;"type": "func"</code><br /><code>}</code><br /> | ![GRAPHIC-taskWithParallelMultiple](media/GRAPHIC-taskWithParallelMultiple.png) | </code>&lt;task&gt; ...<br />&lt;multiInstance-<br />LoopCharacteristics /&gt;<br /> ... &lt;/task&gt;</code><br /> | ![BPMN-taskWithParallelMultiple](media/BPMN-taskWithParallelMultiple.png) |
