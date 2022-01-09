@@ -1,6 +1,6 @@
 # Graphic
 
-# Introduction
+## Introduction
 
 The *Symbio-Graphic-Service* combines a layouter and a renderer for the generation of BPMN and process flow graphics.
 
