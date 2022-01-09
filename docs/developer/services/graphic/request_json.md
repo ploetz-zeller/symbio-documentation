@@ -110,7 +110,8 @@ It is recommended that the **diagram** is the first element within the array and
 
 ```
 [{
-  "id": "e8b07127331a4bae8135c5c8af381b12",
+  "id":
+    "e8b07127331a4bae8135c5c8af381b12",
   "properties": {
     "type": "subProcess"
   },
@@ -122,157 +123,170 @@ It is recommended that the **diagram** is the first element within the array and
     ]
   }],
 
-  "content": [{
-    "id":
-      "E571B6CA71B63D5B0733C3029F49BB32",
-    "properties": {
-      "itemId":
-        "CCA71B63D5B0733302E571B69F49BB32"
-    }
-  },
-  ...
-
-
-
-
-
-  {
-    "id":
-      "549FCE902F71B671BE5695B07CCA9FF2",
-    "properties": {
-      "itemId":
-        "B63F2971E571B69F49AAD5B0733302FA",
-      "poolId":
-        "CCA71B63D5B0733302E571B69F49BB32"
-    }
-  },
-  ...
-
-
-
-
-
-
-
-  ],
-},
+  "content": [
 ...
-```
 
+```
 </td>
 <td>
 
 ```
 <bpmndi:BPMNDiagram
  id="BPMNDiagram_1">
-
-
-
-
-
-
-
-
-
-
-  <bpmndi:BPMNShape
-   id="StartEvent_0034tgy_di"
-   bpmnElement="StartEvent_0034tgy">
-    <dc:Bounds
-     x="178" y="635"
-     width="36" height="36" />
-    <bpmndi:BPMNLabel>
-      <dc:Bounds
-       x="196" y="675"
-       width="0" height="12"
-    />
-    </bpmndi:BPMNLabel>
-  </bpmndi:BPMNShape>
   ...
 
-  <bpmndi:BPMNEdge
-   id="SequenceFlow_0pern26_di"
-   bpmnElement="SequenceFlow_0pern26">
-    <di:waypoint
-     xsi:type="dc:Point"
-     x="214" y="653"
-    />
-    <di:waypoint
-     xsi:type="dc:Point"
-     x="245" y="653"
-    />
-    <bpmndi:BPMNLabel>
-      <dc:Bounds
-       x="229.5" y="632"
-       width="0" height="12" />
-    </bpmndi:BPMNLabel>
-  </bpmndi:BPMNEdge>
-  ...
-</bpmndi:BPMNDiagram>
+
+
+
+
+
+
+
+
+  <bpmndi:BPMNPlane
+   id="BPMNPlane_1"
+   bpmnElement=
+     "Collaboration_0q51prl">
   ...
 ```
-
 </td>
 <td>
-<b>First</b> element in the request JSON file should be the <b>diagram</b>. It can be recognized by the fact that its <b>"type"</b> is <b>"subProcess"</b>.<br/>
-The request JSON <b>diagram</b> typically contains also <b>attributes</b> while the BPMN <b>diagram</b> dypically doesn't.<br/><br/><br/>
-Both, request JSON <b>diagram</b> within the <b>content</b> property and  BPMN <b>diagram</b> within child nodes, contain the <b>shapes</b> and <b>edges</b> that are to be displayed.<br/><br/>
-<b>Second</b> the JSON and BPMN files first show an example of a <b>shape</b>, then an example of an <b>edge</b>. 
+&#x25B6; <b>First</b> element in the request JSON file should be the <b>diagram</b>. It can be recognized by the fact that its <b><i>"type"</i></b> is <b><i>"subProcess"</i></b>.<br/>
+The request JSON <b><i>diagram</i></b> typically contains also <b><i>attributes</i></b> while the BPMN <b><i>diagram</i></b> dypically doesn't.<br/><br/>
+The BPMN <b><i>diagram</i></b> might contain a <b><i>lane</i></b> node as primary child node of the <b><i>diagram</i></b> node.<br/><br/><br/>
 </td>
 </tr>
 <tr>
 <td>
 
 ```
-{
-  "id": "CCA71B63D5B0733302E571B69F49BB32",
-  "properties": {
-    "type": "pool",
-    "kind": "OBJ",
-    "servity": "source"
-  },
-  "attributes": [{
-    "key": "name",
-    "values": [
-      { "lcid": 1033,
-        "value": "Data source" }
-    ]
-  }]
-},
-{
-  "id": "B63F2971E571B69F49AAD5B0733302FA",
-  "properties": {
-    "type": "evStart",
-    "kind": "OBJ",
-    "evType": "throwSignal"
-  },
-  "attributes": [{
-    "key": "name",
-    "values": [
-      { "lcid": 1033,
-        "value": "Start" }
-    ]
-  }]
-},
-...
-{
-  "id": "D4B07549771B2932CFEE51B63969502F",
-  "properties": {
-    "type": "activ1",
-    "kind": "CXN"
-  },
-  "attributes": [{
-    "key": "cxnRole",
-    "values": [
-      { "lcid": 1033,
-        "value": "01" }
-    ]
-  }]
-},
-...
-]
+    {
+      "id":
+        "E571B6CA71B63D5B0733C3029F49BB32",
+      "properties": {
+        "itemId":
+          "CCA71B63D5B0733302E571B69F49BB32"
+      }
+    },
+    ...
+
+
+
+
+
+
 ```
 
+</td>
+<td>
+
+```
+    <bpmndi:BPMNShape
+     id="StartEvent_0034tgy_di"
+       bpmnElement=
+         "StartEvent_0034tgy">
+      <dc:Bounds
+       x="178" y="635"
+       width="36" height="36" />
+      <bpmndi:BPMNLabel>
+        <dc:Bounds
+         x="196" y="675"
+         width="0" height="12"
+      />
+      </bpmndi:BPMNLabel>
+    </bpmndi:BPMNShape>
+    ...
+```
+</td>
+<td>
+Both, the request JSON <b><i>diagram</i></b> within the <b><i>content</i></b> property and the BPMN <b><i>diagram</i></b> within child nodes, contain the <b><i>shapes</i></b> and <b><i>edges</i></b> that are to be displayed.<br/><br/>
+&#x25B6; <b>Second</b> element in the request JSON file should be the list of <b><i>shapes</i></b> within the <b><i>content</i></b> property of the <b></i>diagram</i></b>. The list of <b><i>shapes</i></b> should contain all <b><i>shapes</i></b> to display.<br/><br/>
+</td>
+</tr>
+<tr>
+<td>
+
+```
+    {
+      "id":
+        "549FCE902F71B671BE5695B07CCA9FF2",
+      "properties": {
+        "itemId":
+          "B63F2971E571B69F49AAD5B0733302FA",
+        "poolId":
+          "CCA71B63D5B0733302E571B69F49BB32"
+      }
+    },
+    ...
+
+
+
+
+
+
+
+
+    ],
+  },
+...
+```
+</td>
+<td>
+
+```
+    <bpmndi:BPMNEdge
+     id="SequenceFlow_0pern26_di"
+     bpmnElement=
+       "SequenceFlow_0pern26">
+      <di:waypoint
+       xsi:type="dc:Point"
+       x="214" y="653"
+      />
+      <di:waypoint
+       xsi:type="dc:Point"
+       x="245" y="653"
+      />
+      <bpmndi:BPMNLabel>
+        <dc:Bounds
+         x="229.5" y="632"
+         width="0" height="12" />
+      </bpmndi:BPMNLabel>
+    </bpmndi:BPMNEdge>
+    ...
+  </bpmndi:BPMNPlane>
+</bpmndi:BPMNDiagram>
+  ...
+```
+
+</td>
+<td>
+&#x25B6; <b>Third</b> element in the request JSON file should be the list of <b><i>edges</i></b> within the <b><i>content</i></b> property of the <b></i>diagram</i></b>. The list of <b><i>edges</i></b> should contain all <b><i>edges</i></b> to display. <br/><br/>
+The following applies to both <b><i>shapes</i></b> and <b><i>edges</i></b>:<br/>
+Both, the request JSON <b><i>shapes</i></b>/<b><i>edges</i></b> and the BPMN <b><i>shapes</i></b>/<b><i>edges</i></b>, provide an identifier <code>"id:"</code> (for request JSON) or <code>id</code> (for BPMN) and areference to the underlaying item <code>"itemId:"</code> (for request JSON) or  <code>bpmnElement</code><br/> (for BPMN).<br/><br/>
+</td>
+</tr>
+<tr>
+<td>
+
+```
+  {
+    "id":
+      "CCA71B63D5B0733302E571B69F49BB32",
+    "properties": {
+      "type": "pool",
+      "kind": "OBJ",
+      "servity": "source"
+    },
+    "attributes": [{
+      "key": "name",
+      "values": [
+        { "lcid": 1033,
+          "value": "Data source" }
+      ]
+    }]
+  },
+  ...
+```
 </td>
 <td>
 
@@ -280,11 +294,71 @@ Both, request JSON <b>diagram</b> within the <b>content</b> property and  BPMN <
 <bpmn:collaboration
  id="Collaboration_0q51prl">
   <bpmn:participant
+   name="Data source"
    id="Participant_0zj6ka6"
    processRef="Process_0g17fhl"
-/>
+  />
     ...
 </bpmn:collaboration>
+
+
+
+
+
+
+
+
+```
+
+</td>
+<td>
+&#x25B6; <b>Fourth</b> element in the request JSON file should be the list of <b><i>pools</i></b> within the <b><i>elements</i></b> property of the request JSON (the <b></i>diagram</i></b> property has been finished already at tis point). The list of <b><i>pools</i></b> should contain all <b><i>pools</i></b> that are used to hold <b><i>lanes</i></b> or <b><i>shapes</i></b>.<br/><br/><br/><br/><br/><br/>
+</td>
+</tr>
+<tr>
+<td>
+
+```
+  {
+    "id":
+      "B63F2971E571B69F49AAD5B0733302FA",
+    "properties": {
+      "type": "evStart",
+      "kind": "OBJ",
+      "evType": "throwSignal"
+    },
+    "attributes": [{
+      "key": "name",
+      "values": [
+        { "lcid": 1033,
+          "value": "Start" }
+      ]
+    }]
+  },
+  ...
+  {
+    "id":
+      "D4B07549771B2932CFEE51B63969502F",
+    "properties": {
+      "type": "activ1",
+      "kind": "CXN"
+    },
+    "attributes": [{
+      "key": "cxnRole",
+      "values": [
+        { "lcid": 1033,
+          "value": "01" }
+      ]
+    }]
+  },
+  ...
+]
+```
+
+</td>
+<td>
+
+```
 <bpmn:process
  id="Process_0g17fhl"
  isExecutable="false">
@@ -295,6 +369,10 @@ Both, request JSON <b>diagram</b> within the <b>content</b> property and  BPMN <
     </bpmn:outgoing>
   </bpmn:startEvent>
   ...
+
+
+
+
   <bpmn:sequenceFlow
    id="SequenceFlow_0pern26"
    sourceRef="StartEvent_0034tgy"
@@ -306,11 +384,13 @@ Both, request JSON <b>diagram</b> within the <b>content</b> property and  BPMN <
 
 </td>
 <td>
+&#x25B6; <b>Fifth</b> element in the request JSON file should be the list of <b><i>pools</i></b> within the <b><i>elements</i></b> property of the request JSON (the <b></i>diagram</i></b> property has been finished already at tis point). The list of <b><i>pools</i></b> should contain all <b><i>pools</i></b> that are used to hold <b><i>lanes</i></b> or <b><i>shapes</i></b>.<br/><br/>
 Thus it provides some meta-information like the requested  <b>"result"</b>, the type of  <b>"calculation"</b> to apply and details regarding layout and rendering configuration <b>"cfg"</b>.
 <br/><br/>
 Beside taht, the JSON holds the data in the <b>"elements"</b> property just like the BPMN does it in the <b>&lt;bpmn:definitions/&gt;</b> tag.
 </td>
-</tr></table>
+</tr>
+</table>
 
 ## Pool items
 In the case that the **diagram** is to be laid out and rendered with **pools**, the **pools** *should* be the first **items** and *must* be contained in the order in which they are expected in the final layout/rendering. This is an exoample with three **pools**:
