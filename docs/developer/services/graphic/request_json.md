@@ -1,4 +1,7 @@
 # Request JSON
+The request JSON is used for the **CalculateLayout** endpoint of the *Symbio-Graphic-Service*. Layout calculation can be requested
+* for calculation type 'cxn' and
+* for calculation type 'flow'.
 
 ## General structure
 
@@ -46,12 +49,21 @@ Beside taht, the JSON holds the data in the "elements" section just like the BPM
 </table>
 
 ## The <code>result</code> property
-
-*To be done.*
+The supported *result* types are:
+1. <code>sesvg</code> (standalone enriched SVG) - used in case the resulting SVG hast to be embedded into a custom HTML page and log messages are desired
+2. <code>ssvg</code> (standalone SVG) - used in case the resulting SVG hast to be embedded into a custom HTML page and log messages are not desired
+3. <code>esvg</code> (HTML embedded enriched SVG) - used in case the resulting HTML hast to be displayed directly (e. g. in a test app) and log messages are desired
+4. <code>svg</code> (HTML embedded SVG) - used in case the resulting HTML hast to be displayed directly (e. g. in a test app) and log messages are not desired
+5. <code>ejson</code> (enriched JSON) - used in case the resulting JSON should be parsed to post-process the calculation result and log messages are desired
+6. <code>json</code> (JSON) - used in case the resulting JSON should be parsed to post-process the calculation result and log messages are not desired
 
 ## The <code>calculation</code> property
+The supported *calculation* types are:
+* <code>cxn</code> (connection) - used to calculate a shape-to-shape connection
+* <code>flow</code> (process flow) - used to calculate a directed graph, that represents a process flow
 
-*To be done.*
+The *calculation* type <code>cxn</code> supports all *result* types.<br/>
+The *calculation* type <code>flow</code> supports the *result* types 1. ... 4. only.
 
 ## The <code>cfg</code> property
 
