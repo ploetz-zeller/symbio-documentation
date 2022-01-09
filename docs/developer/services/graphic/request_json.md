@@ -428,11 +428,87 @@ Both, the request JSON connection <b><i>items</i></b> and the BPMN <b><i>process
 </tr>
 </table>
 
-### Shapes
-Do be done.
+### Shapes and shape items
+The design of ***shape*** content elements is intended to be minimalistic.<br/>
+E.g. ***shape*** content elements do not contain a ***type*** specification. Here is an example:
 
-### Edges
-Do be done.
+```
+{
+  "id": "A71B63D5B0302E571BA733A69F4CCC",
+  "properties": {
+    "itemId": "B63F2971E571B69F49AAD5B0733302FA",
+    "poolId": "CCA71B63D5B0733302E571B69F49BB32"
+}
+```
+
+The referencing of the ***shape*** underlying ***item*** is done with <code>"itemId" : "B63F2971E571B69F49AAD5B0733302FA"</code>.<br/>
+The (optional) second reference, <code>"poolId": "CCA71B63D5B0733302E571B69F49BB32"</code>, defines membership of the ***shape*** in a ***pool***.<br/>
+The ***type*** is always identical to the type of the underlying ***item*** and can be determined via the ***item***.<br/>
+
+Here is the ***shape*** underlying ***item***:
+
+```
+{
+  "id": "AAA71B63D5B0733302E571B69F4CCC",
+  "properties": {
+    "type": "evStart",
+    "kind": "OBJ",
+    "evType": "throwSignal"
+  },
+  "attributes": [{
+    "key": "name",
+    "values": [
+      { "lcid": 1033, "value": "recognize hunger" }
+    ]
+  }]
+}
+```
+
+The ***type*** is provided via the <code>"properties"</code> property array property <code>"type"</code>.<br/>
+In addition to that the kind (which determines whether it is a ***shape*** or a ***edge***) is provided via the <code>"properties"</code> property array property <code>"kind"</code>.<br/>
+In case the ***item*** (and thus the ***shape*** as well) is defined more specifically, the <code>"properties"</code> property array might contain a property <code>"evType"</code> or <code>"funcType"</code> ore <code>"funcMarker"</code>.<br/>
+The text to display is defined within the <code>"attributes"</code> property array object with the <code>"key": "name"</code>. Since the request JSON supports multiple languages, the name value is provided by the <code>"values"</code> property array, that can hold distinct value objects for different cultures.
+
+### Edges and edge items
+The design of ***edge*** content elements is intended to be minimalistic.<br/>
+E.g. ***edge*** content elements do not contain a ***type*** specification. Here is an example:
+
+```
+{
+  "id": "569C971905B0754EB7163F4932F2D2EB",
+  "properties": {
+    "itemId": "D4B07549771B2932CFEE51B63969502F",
+    "sourceId": "549FCE902F71B671BE5695B07CCA9FF2",
+    "targetId": "1B695B0754977E513902F2CEF2D4B693"
+}
+```
+
+The referencing of the ***edge*** underlaying ***item*** is done with <code>"itemId" : "B63F2971E571B69F49AAD5B0733302FA"</code>.<br/>
+The is no reference to a ***pool***, since ***edges*** can cross ***lanes*** and ***pools***.<br/>
+The referencing of the *source* and *target* ***shapes*** is done with <code>"sourceId": "549FCE902F71B671BE5695B07CCA9FF2"</code> and <code>"targetId": "1B695B0754977E513902F2CEF2D4B693"</code>. An ***edge*** must always hold a *source* and a *target* ***shape*** reference.<br/>
+The ***type*** is always identical to the type of the underlying ***item*** and can be determined via the ***item***.<br/>
+
+Here is the ***edge*** underlying ***item***:
+
+```
+{
+  "id": "D4B07549771B2932CFEE51B63969502F",
+  "properties": {
+    "type": "activ1",
+    "kind": "CXN"
+  },
+  "attributes": [{
+    "key": "cxnRole",
+    "values": [
+      { "lcid": 1033, "value": "yes" }
+    ]
+  }]
+}
+```
+
+The ***type*** is provided via the <code>"properties"</code> property array property <code>"type"</code>.<br/>
+In addition to that the kind (which determines whether it is a ***shape*** or a ***edge***) is provided via the <code>"properties"</code> property array property <code>"kind"</code>.<br/>
+The text to display is defined within the <code>"attributes"</code> property array object with the <code>"key": "cxnRole"</code>. Since the request JSON supports multiple languages, the name value is provided by the <code>"values"</code> property array, that can hold distinct value objects for different cultures.
 
 ### Pool items
 In the case that the **diagram** is to be laid out and rendered with **pools**, the **pools** *should* be the first **items** and *must* be contained in the order in which they are expected in the final layout/rendering. This is an exoample with three **pools**:
@@ -494,12 +570,6 @@ It must be designated that the **pools** are of **item** type "pool" (see <code>
 It is highly recommended to define names for all **pools** (see <code>"attributes"</code> with <code>"key": "name"</code>).
 
 In the case that a **pool** should contain multiple **lanes** and the **lanes** should be in a defined order, it is recommended to define the **lanes** as a list of children (see <code>"children"</code>). The **ids**, specified in the list of children, must refer to existing **items**, that are typically *roles*, *groups*, *application systems* or *application services*.
-
-### Shape items
-Do be done.
-
-### Edge items
-Do be done.
 
 ### Lane items
 In the case that the **diagram** is to be laid out and rendered with **lanes**, the **lanes** are *automatically* recognized by the fact, that they are *related* to structure building  **items** via the configured *laneRelevant* relation (see <code>"laneRelevant": "responsible"</code> within **<code>cfg</code> property**). The  **lanes** must not be of any of any specific **item** type (see <code>"type": "..."</code>), but they must be of **item** kind "OBJ" (see <code>"kind": "OBJ"</code>) and must not be of any of the structure building  **item** types (like <code>"type": "func"</code>, <code>"type": "evStart"</code>, <code>"type": "evIntermediate"</code>, <code>"type": "evEnd"</code>, <code>"type": "ruleXor"</code>, <code>"type": "ruleOr"</code>, <code>"type": "ruleAnd"</code> or <code>"type": "condition"</code>).
