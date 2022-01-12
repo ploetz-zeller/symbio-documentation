@@ -16,7 +16,7 @@ While the *request JSON* contains only the necessary information for automatic l
 </bpmndi:BPMNShape>
 ```
 
-**BPMN sample forinterpolation points of an edge**
+**BPMN sample for interpolation points of an edge**
 ```
 <bpmndi:BPMNEdge id="SequenceFlow_1vmk1br_di" bpmnElement="SequenceFlow_1vmk1br">
   <di:waypoint xsi:type="dc:Point" x="209" y="331" />
@@ -152,7 +152,7 @@ It is recommended that the **diagram** is the first element within the array and
 ```
 </td>
 <td>
-&#x25B6; <b>First</b> element in the request JSON file should be the <b>diagram</b>. It can be recognized by the fact that its <b><i>"type"</i></b> is <b><i>"subProcess"</i></b>.<br/>
+&#x25B6; The <b>first</b> bunch of data in the request JSON file should be the <b>diagram</b>. It can be recognized by the fact that its <b><i>"type"</i></b> is <b><i>"subProcess"</i></b>.<br/>
 The request JSON <b><i>diagram</i></b> typically contains also <b><i>attributes</i></b> while the BPMN <b><i>diagram</i></b> dypically doesn't.<br/><br/>
 The BPMN <b><i>diagram</i></b> might contain a <b><i>lane</i></b> node as primary child node of the <b><i>diagram</i></b> node.<br/><br/><br/>
 </td>
@@ -201,7 +201,7 @@ The BPMN <b><i>diagram</i></b> might contain a <b><i>lane</i></b> node as primar
 </td>
 <td>
 Both, the request JSON <b><i>diagram</i></b> within the <b><i>content</i></b> property and the BPMN <b><i>diagram</i></b> within child nodes, contain the <b><i>shapes</i></b> and <b><i>edges</i></b> that are to be displayed.<br/><br/>
-&#x25B6; <b>Second</b> element in the request JSON file should be the list of <b><i>shapes</i></b> within the <b><i>content</i></b> property of the <b></i>diagram</i></b>. The list of <b><i>shapes</i></b> should contain all <b><i>shapes</i></b> to display.<br/><br/>
+&#x25B6; The <b>second</b> bunch of data in the request JSON file should be the sequence of <b><i>shapes</i></b> within the <b><i>content</i></b> property of the <b></i>diagram</i></b>. The list of <b><i>shapes</i></b> should contain all <b><i>shapes</i></b> to display.<br/><br/>
 </td>
 </tr>
 <tr>
@@ -261,7 +261,7 @@ Both, the request JSON <b><i>diagram</i></b> within the <b><i>content</i></b> pr
 
 </td>
 <td>
-&#x25B6; <b>Third</b> element in the request JSON file should be the list of <b><i>edges</i></b> within the <b><i>content</i></b> property of the <b></i>diagram</i></b>. The list of <b><i>edges</i></b> should contain all <b><i>edges</i></b> to display. <br/><br/>
+&#x25B6; The <b>third</b> bunch of data in the request JSON file should be the sequence of <b><i>edges</i></b> within the <b><i>content</i></b> property of the <b></i>diagram</i></b>. The list of <b><i>edges</i></b> should contain all <b><i>edges</i></b> to display. <br/><br/>
 The following applies to both <b><i>shapes</i></b> and <b><i>edges</i></b>:<br/>
 Both, the request JSON <b><i>shapes</i></b>/<b><i>edges</i></b> and the BPMN <b><i>shapes</i></b>/<b><i>edges</i></b>, provide an identifier <code>"id:"</code> (for request JSON) or <code>id</code> (for BPMN) and areference to the underlaying item <code>"itemId:"</code> (for request JSON) or <code>bpmnElement</code><br/> (for BPMN).<br/><br/>
 </td>
@@ -317,7 +317,7 @@ Both, the request JSON <b><i>shapes</i></b>/<b><i>edges</i></b> and the BPMN <b>
 
 </td>
 <td>
-&#x25B6; <b>Fourth</b> element in the request JSON file should be the list of <b><i>pools</i></b> within the <b><i>elements</i></b> property of the request JSON (the <b><i>diagram</i></b> property has been finished already at tis point). The list of <b><i>pools</i></b> should contain all <b><i>pools</i></b> that are used to hold <b><i>lanes</i></b> or <b><i>shapes</i></b>.<br/><br/>
+&#x25B6; The <b>fourth</b> bunch of data in the request JSON file should be the sequence of <b><i>pools</i></b> within the <b><i>elements</i></b> property of the request JSON (the <b><i>diagram</i></b> property has been finished already at tis point). The list of <b><i>pools</i></b> should contain all <b><i>pools</i></b> that are used to hold <b><i>lanes</i></b> or <b><i>shapes</i></b>.<br/><br/>
 Both, the request JSON <b><i>pools</i></b> and the BPMN <b><i>participants</i></b>, provide an identifier <code>"id:"</code> (for request JSON) or <code>id</code> (for BPMN) and a name <code>"key": "name"</code> (object within the <code>"attributes"</code> property for request JSON) or <code>name</code><br/> (for BPMN).
 </td>
 </tr>
@@ -370,7 +370,7 @@ Both, the request JSON <b><i>pools</i></b> and the BPMN <b><i>participants</i></
 
 </td>
 <td>
-&#x25B6; <b>Fifth</b> element in the request JSON file should be the list of shape <b><i>items</i></b>, referenced by <b><i>shapes</i></b>.<br/><br/>
+&#x25B6; The <b>fifth</b> bunch of data in the request JSON file should be the sequence of shape <b><i>items</i></b>, referenced by <b><i>shapes</i></b>.<br/><br/>
 Both, the request JSON <b><i>items</i></b> and the BPMN <b><i>process</i></b> child nodes, provide an identifier <code>"id:"</code> (for request JSON) or <code>id</code> (for BPMN).<br/><br/><br/><br/><br/><br/>
 </td>
 </tr>
@@ -422,7 +422,7 @@ Both, the request JSON <b><i>items</i></b> and the BPMN <b><i>process</i></b> ch
 
 </td>
 <td>
-&#x25B6; <b>Sixth</b> element in the request JSON file should be the list of connection <b><i>items</i></b>, referenced by <b><i>edges</i></b>.<br/><br/>
+&#x25B6; The <b>sixth</b> bunch of data in the request JSON file should be the sequence of connection <b><i>items</i></b>, referenced by <b><i>edges</i></b>.<br/><br/>
 Both, the request JSON connection <b><i>items</i></b> and the BPMN <b><i>process</i></b> child nodes, provide an identifier <code>"id:"</code> (for request JSON) or <code>id</code> (for BPMN).<br/><br/><br/><br/>
 </td>
 </tr>
