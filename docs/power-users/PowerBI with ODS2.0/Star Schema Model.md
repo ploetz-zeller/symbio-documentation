@@ -5,15 +5,30 @@ The structure of our Datawarehouse model is a star-schema structure. And this sc
 ## What is meant by star schema?
 A star schema is  **a database organizational structure optimized for use in a data warehouse or business intelligence**  that uses a single large **fact table** to store transactional or measured data, and one or more smaller dimensional tables that store attributes about the data. Figure below shows an example from our datawarehouse:
 
-![Star Schema for processes in english culture](media/StarSchema.png)
+|![Star Schema for processes in english culture](media/StarSchema.png)|
+|:--:|
+| <b>Fig.1 - Star-schema for schema name TestCollection_Showcase_processes_en_US</b>|
 
-With a star schema, the Fields list is  **much easier to navigate**. Star schemas make your data model much cleaner and easier to use. Simpler DAX: The code for DAX will be much simpler against a star schema compared to a wide flat table. It will be shorter, easier to write, easier to read, and easier to maintain.
+With a star schema, the Fields list is  **much easier to navigate**. Star schemas make your data model much cleaner and easier to use. Star-schema also makes DAX expressions much simpler compared to DAX expressions made for a schema with one wide flat table. It will be shorter, easier to write, easier to read, and easier to maintain.
 
 ## Models used in our star-schema
 
-Each star-schema used in our Datawarehouse has a fact table (the main table) and a number of dimensions related to this fact table. Therefore, these tables can be categorized as follows:
+Before going through the details of our star-schema, it  is important to know that we have a number of schemas in our Datawarehouse, these can be categorized under the following schema names:
+- CollectionName__StorageName_processes: includes all processes whether in english or german culture and whether released or not
+- CollectionName__StorageName_processes_en_US: includes processes **only in english** culture and whether released or not
+- CollectionName__StorageName_processes_de_DE: includes processes **only in german** culture and whether released or not
+- CollectionName__StorageName_released_processes: includes **only released** processes whether in english or german culture
+- CollectionName__StorageName_released_processes_en_US: includes **only released** processes and **only in english**
+- CollectionName__StorageName_released_processes_de_DE: includes **only released** processes and **only in german**
 
-- Fact table for processes (main table at the center of star)
+So if, for example, we wanted to build a report based on processes **only in english** culture and whether they were released or not and the Collection name was TestCollection and the storage name was Showcase, then the full name of schema will be:
+TestCollection_Showcase_processes_en_US
+
+see Fig. 1 above.
+
+Each star-schema from above listed schemas has a fact table (the main table) and a number of dimensions related to this fact table. Therefore, these tables can be categorized as follows:
+
+- Fact table for processes (main table at the center of star) and is called fact\_Processes
 - Date Dimension tables (dim\_CreationDates, dim\_ChangeDates, dim\_ReleaseDates, dim\_ValidFromDates, dim\_ValidUntilDates)
 - Contributor Dimension tables (dim\_Creators, dim\_Changers, dim\_Responsibles, dim\_Authors)
 - Other Attributes Dimension tables (e.g. dim\_Stereotypes, dim\_States, dim\_Types)
