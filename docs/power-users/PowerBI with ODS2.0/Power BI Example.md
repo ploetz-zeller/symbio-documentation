@@ -1,7 +1,7 @@
 
-#Report Example within Power BI
+# Report Example within Power BI
 
-##Load Data
+## Load Data
 At first load data to a blank file.
 1. Open Power BI Desktop. (The web application is not able to import data from a SQL Server.)
 2. Select *Import data from SQL Server* to add data to your report.
@@ -32,7 +32,7 @@ If the connection is created, you find all loaded tables in the section ```Field
 
 
 
-##Navigation in Power BI
+## Navigation in Power BI
 On the right there are three areas with different kinds of tools to work with. These areas, which also can be hidden, are called sections in the following (```Filter```, ```Visualizations``` and ```Fields```): 
 
 ![Navigation: Sections](media\Picture5.png)
@@ -46,7 +46,7 @@ Beside that you will find two or three different panes in the ```Visualizations`
 
 
 
-##Add Visualization
+## Add Visualization
 Now let's add a visualization to the report.
 1. In the section ```Visualizations``` on the right you can choose between different kinds. If you hover over the icons, you can see the name of the diagrams in the tooltip.
 To understand how Power BI works, let's start with a simple visualization, for example select *Table*.
@@ -70,7 +70,7 @@ By drag and drop you can change the order of the fields. Depending on the chosen
 
 
 
-##Filter Data
+## Filter Data
 To show only particular and not all contained data, you can filter the data in the ```Filter```-Section. In the following example there are two versions of each process, one in English and one in German; the different languages are filtered based on the column CultureId.
 
 > **Filter Area**
@@ -91,7 +91,7 @@ Drag the column you want to filter into the ```Filter```-Section and choose *Bas
 
 
 
-##Calculated Values
+## Calculated Values
 To display not only the values your tables provide you, but also calculated values, let’s create a measure with DAX.
 
 >*Data Analysis Expressions (DAX) is a programming language that is used throughout Microsoft Power BI for creating calculated columns, measures, and custom tables. It is a collection of functions, operators, and constants that can be used in a formula, or expression, to calculate and return one or more values. You can use DAX to solve a number of calculations and data analysis problems, which can help you create new information from data that is already in your model.* [Detailed Tutorial](media\https://docs.microsoft.com/en-us/learn/modules/create-measures-dax-power-bi/)
@@ -132,7 +132,7 @@ After formatting the column header, the table looks like this:
 
 
 
-##Format Visualization
+## Format Visualization
 Next let's format the visualizations to give the report an expressive look. There are nearly endless options to customize the look of visualizations. For an individual design you can change parameters as color, font or size. But some units as the title can also be hidden. In the following you'll find an overview of the most important formatting options.
 
 1. In order to change the format of a visualization select it in the page on the left and change to the ```Format```-Pane in the ```Visualizations```-Section on the right.
@@ -169,7 +169,7 @@ Which data is shown in the legend, you determine in the ```Fields```-Pane, for e
 
 
 
-##Page Formatting
+## Page Formatting
 To complete the look of the report at last let’s change the formatting of the whole page.
 
 1. If no visualization is selected, go to the ```Format```-Pane, and expand ```Page Background```. Here you can edit the color of the background. There is also the option to select a background picture.
