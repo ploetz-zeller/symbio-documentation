@@ -9,12 +9,12 @@ A star schema is  **a database organizational structure optimized for use in a d
 |:--:|
 | <b>Fig.1 - Star-schema for schema name TestCollection_Showcase_processes_en_US</b>|
 
-With a star schema, the Fields list is  **much easier to navigate**. Star schemas make your data model much cleaner and easier to use. Star-schema also makes DAX expressions much simpler compared to DAX expressions made for a schema with one wide flat table. It will be shorter, easier to write, easier to read, and easier to maintain.
+With a star schema, the fields list is  **much easier to navigate**. Star schemas make your data model much cleaner and easier to use. Star-schema also makes DAX expressions much simpler compared to DAX expressions made for a schema with one wide flat table. It will be shorter, easier to write, easier to read, and easier to maintain.
 
 ## Models used in our star-schema
 
 Before going through the details of our star-schema, it  is important to know that we have a number of schemas in our Datawarehouse, these can be categorized under the following schema names:
-- CollectionName__StorageName_processes: includes all processes whether in english or german culture and whether released or not
+- CollectionName__StorageName_processes: includes **all processes** whether in english or german culture and whether released or not
 - CollectionName__StorageName_processes_en_US: includes processes **only in english** culture and whether released or not
 - CollectionName__StorageName_processes_de_DE: includes processes **only in german** culture and whether released or not
 - CollectionName__StorageName_released_processes: includes **only released** processes whether in english or german culture
@@ -50,9 +50,9 @@ The fields contained in these tables are described in detail as follows:
 | **\_VersionId** | Text | Uniqueidentifier of the current process version Id |
 | **Author** | Text | Uniqueidentifier to relate with dim\_Authors table |
 | **ChnagedBy** | Text | Uniqueidentifier to relate with dim\_Changers table |
-| ChangedOn | Date | Long Date to refer to the day of latest change performed on process |
+| **ChangedOn** | Date | Long Date to refer to the date of latest change performed on process |
 | **CreatedBy** | Text | Uniqueidentifier to relate with dim\_Creators table |
-| **CreatedOn** | Date | Long Date to refer to the day of creating the process |
+| **CreatedOn** | Date | Long Date to refer to the date of creating the process |
 | **Description** | Text | Description of current process (English or German depending on the selected schema) |
 | **Id** | Text | Id attribute of process (can be bull) |
 | **MajorVersion** | Whole Number | Example: if the process version is 3.2 then MajorVersion is 3 (digit before dot) |
