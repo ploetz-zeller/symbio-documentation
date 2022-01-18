@@ -5,7 +5,7 @@ The structure of our Datawarehouse model is a star-schema structure. And this sc
 ## What is meant by star schema?
 A star schema is  **a database organizational structure optimized for use in a data warehouse or business intelligence**  that uses a single large **fact table** to store transactional or measured data, and one or more smaller dimensional tables that store attributes about the data. Figure below shows an example from our datawarehouse:
 
-|![Star Schema for processes in english culture](media/StarSchema.png)|
+|![Star-Schema-for-processes-in-english-culture](media/StarSchema.png)|
 |:--:|
 | <b>Fig.1 - Star-schema for schema name TestCollection_Showcase_processes_en_US</b>|
 
