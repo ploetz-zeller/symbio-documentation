@@ -3,25 +3,25 @@
 
 ## Load Data
 At first load data to a blank file.
-1. Open Power BI Desktop. (The web application is not able to import data from a SQL Server.)
+1. Open Power BI Desktop. (The web application is not able to import data from an SQL Server.)
 2. Select *Import data from SQL Server* to add data to your report.
 
 ![Data Source](media/Picture1.png)
 
-Enter the Server name and the name of the Database. You can find this information in the email with your access data. At next select *DirectQuery* and click *OK*.
+Enter the Server name and the name of the database. You can find this information in the email with your access data. At next select *DirectQuery* and click *OK*.
 > **Connection Mode**
-> *DirectQuery*: Creates a direct connection to the data base. The data is always up to date because it comes directly from the source and is not a copy. If the data in the original source is changing also the used data is changing.
+> *DirectQuery*: Creates a direct connection to the database. The data is always up to date because it comes directly from the source and is not a copy. If the data in the original source is changing also the used data is changing.
 > *Import*: Stores the data from the source to the Power BI file. The used data gets old because it's only a copy of the original data. This mode can be faster in performance, but is not recommended to be used for a report, also caused by the huge file size.
 
 ![Connect to SQL Server database](media/Picture2.png)
 
 3. In the Navigator select all the tables you need to create your report and click on *Load*.
 Only select the needed tables to keep your file clear.
-If you put the name of the schema (for example *processes.*) into the search bar, only the tables of the regarding models are suggested. (Your access data send in the email contains the name of the SQL Schema.) There is the option to just check the main table (here: *DWH__Demo_released_processes.fact_Processes*) of a model and auto-select all related tables of this model by using the *Select Related Tables*-Button.
+If you put the name of the schema (for example *processes*) into the search bar, only the tables of the regarding models are suggested. (Your access data are sent in the email containing the name of the SQL Schema.) There is an option to check just the main table (here: *DWH__Demo_released_processes.fact_Processes*) of a model and auto-select all related tables of this model by using the *Select Related Tables*-Button.
 
 ![Search for SQL Schema in Navigator](media/Picture3.png)
 
-If the connection is created, you find all loaded tables in the section ```Fields``` on the right:
+If the connection is created, you will find all loaded tables in the section ```Fields``` on the right panel:
 
 ![Tables in Field Section](media/Picture4.png)
 
@@ -33,7 +33,7 @@ If the connection is created, you find all loaded tables in the section ```Field
 
 
 ## Navigation in Power BI
-On the right there are three areas with different kinds of tools to work with. These areas, which also can be hidden, are called sections in the following (```Filter```, ```Visualizations``` and ```Fields```): 
+On the right side there are three areas with different kinds of tools to work with. These areas, which also can be hidden, are called sections in the following (```Filter```, ```Visualizations``` and ```Fields```): 
 
 ![Navigation: Sections](media/Picture5.png)
 
@@ -48,18 +48,18 @@ Beside that you will find two or three different panes in the ```Visualizations`
 
 ## Add Visualization
 Now let's add a visualization to the report.
-1. In the section ```Visualizations``` on the right you can choose between different kinds. If you hover over the icons, you can see the name of the diagrams in the tooltip.
+1. In the section ```Visualizations``` on the right side you can choose between different kinds. If you hover over the icons, you can see the name of the diagrams in the tooltip.
 To understand how Power BI works, let's start with a simple visualization, for example select *Table*.
 
-![Add Visualization](media/Picture7.png)
+   ![Add Visualization](media/Picture7.png)
 
-Now a blank table is part of your report. At next populate it with data.
+   Now a blank table is part of your report. At next populate it with data.
 
-2. Select the new created table in the page on the left. And, on the right, change in the ```Visualizations```-Section to the ```Fields```-Pane. Whether you select the data from the ```Fields```-Section on the right or you drag the data fields and drop it to the *Values*.
+2. Select the new created table in the page on the left. And, on the right, change in the ```Visualizations```-Section to the ```Fields```-Pane. You can select the data from the ```Fields```-Section on the right or drag the data field and drop it to the *Values*.
 
-![Add Data to Visualization](media/Picture8.png)
+   ![Add Data to Visualization](media/Picture8.png)
 
-By drag and drop you can change the order of the fields. Depending on the chosen visualization there can be additional information where you need to add fields, for example for the legend.
+   By drag and drop you can change the order of the fields. Depending on the chosen visualization there can be additional information where you need to add fields, for example for the legend.
 
 3. Do it the same way for other visualizations.
 
@@ -74,15 +74,15 @@ By drag and drop you can change the order of the fields. Depending on the chosen
 To show only particular and not all contained data, you can filter the data in the ```Filter```-Section. In the following example there are two versions of each process, one in English and one in German; the different languages are filtered based on the column CultureId.
 
 > **Filter Area**
-> You can apply the filter only on the current visualization, on the whole page or on all pages. If you filter by language it makes sense to filter on the whole page and not only for one visualization.
+> You can apply the filter only on the current visualization, on the whole page or on all pages. If you filter by language it makes sense to filter on the whole page and not only on one visualization.
 
 Drag the column you want to filter into the ```Filter```-Section and choose *Basic filtering* as *Filter type*.
 
 ![Filter Example](media/Picture21.png)
 
 > **Filter types**
-> *Basic filtering*: Select from available values.
-> *Advanced filtering*: Filter with operators and individual values.
+> *Basic filtering*: Selects from available values.
+> *Advanced filtering*: Filters with operators and individual values.
 
 
 
@@ -104,7 +104,7 @@ To display not only the values your tables provide you, but also calculated valu
 
 ![Navigation: New Measure](media/Picture14.png)
 
-3. An input appears on the top. Here you can name the measure and put in your DAX.
+3. An input appears on the top. Here you can name the measure and use it in your DAX.
 Select an expressive name, so you know what the measure is there for.
 
 ![Measure Creation](media/Picture15.png)
@@ -137,7 +137,7 @@ Next let's format the visualizations to give the report an expressive look. Ther
 
 1. In order to change the format of a visualization select it in the page on the left and change to the ```Format```-Pane in the ```Visualizations```-Section on the right.
 
-![Navigation: Format Pane](media/Picture9.png)
+   ![Navigation: Format Pane](media/Picture9.png)
 
 > **Visualization Designs**
 > General: You can change the position and add a description.
@@ -158,7 +158,7 @@ Next let's format the visualizations to give the report an expressive look. Ther
 
 ![Example for Axis Formatting](media/Picture11.png)
 
-Which data is shown in the legend, you determine in the ```Fields```-Pane, for example there is shown the state of a process in this pie chart:
+Which data is shown in the legend, you determine in the ```Fields```-Pane, for example you can show the state of a process in this pie chart:
 
 ![Example for Legend Formatting](media/Picture12.png)
 
@@ -170,16 +170,16 @@ Which data is shown in the legend, you determine in the ```Fields```-Pane, for e
 
 
 ## Page Formatting
-To complete the look of the report at last let’s change the formatting of the whole page.
+To refine the outlooking of the report at last let’s change the formatting of the whole page.
 
 1. If no visualization is selected, go to the ```Format```-Pane, and expand ```Page Background```. Here you can edit the color of the background. There is also the option to select a background picture.
 
-![Formatting of Page Background](media/Picture20.png)
+   ![Formatting of Page Background](media/Picture20.png)
 
 2. Go to the ```Insert```-Tab on the top in order to add elements as text boxes or pictures.
 
-![Navigation: Insert-Tab](media/Picture22.png)
+   ![Navigation: Insert-Tab](media/Picture22.png)
 
-For example you can add a text box with a title or a logo of a company to the report:
+   For example you can add a text box with a title or a logo of a company to the report:
 
-![Example for Report with Title and Logo](media/Picture23.png)
+   ![Example for Report with Title and Logo](media/Picture23.png)
