@@ -6,7 +6,7 @@ SAML has to be set up on the Identity Provider (IdP) and the Service Provider (S
 
 ### Basic requirements
 
-The following basic requirements must be fullfilled to consider SAML-based SSO at all:
+The following basic requirements must be fulfilled to consider SAML-based SSO at all:
 
 * SAML 2.0-compliant IdP with
   * SSO-REDIRECT endpoint
@@ -73,7 +73,7 @@ The most important part to set up Symbio as the SP is the Metadata XML file of t
 
 ### Advanced Setup Topics
 
-#### Explict SP Host URL
+#### Explicit SP Host URL
 
 In some scenarios Symbio might be accessed via another URL than the one of the host Symbio is installed on (e.g. when accessed via a proxy server). In such a case the host URL of Symbio needs to be adjusted for the SAML authentication flow so the IdP can direct the browser back to an address it can access (the proxy instead of Symbio's host).
 
@@ -81,11 +81,21 @@ In such a case provide a corresponding "SP Host URL" in Symbio's SAML configurat
 
 #### Request Signing
 
-Symbio supports request signing but does not use it by default. To enable request signing you need to provide a certificate to Symbio via its SAML configuration. This certificate must provided as a file which fullfills the following requirements:
+Symbio supports request signing but does not use it by default. To enable request signing you need to provide a certificate to Symbio via its SAML configuration. This certificate must provided as a file which fulfills the following requirements:
 
 * Base64-encoded PFX file
 * containing the private key
 * without password protection
+
+#### Response Encryption
+
+Symbio supports receiving encrypted responses but does not use it by default. To enable this feature the same certificate as for Request Signing (see above) is used.
+
+The public key part of this certificate must be made available to the IdP to enable it to encrypt responses/tokens/claims for Symbio. You can retrieve it by requesting the Symbio Service Provider Metadata Endpoint for your configured authentication provider:
+
+`https://[symbio.company.tld]/[collection]/[storage]/viewer/[1033]/Auth/ServiceProviderFederationMetaData/[AuthProviderId]`
+
+Replace the square brackets with appropriate values.
 
 #### Custom Claims Mapping
 
