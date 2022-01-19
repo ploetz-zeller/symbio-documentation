@@ -1,4 +1,5 @@
 # Synchronizing documents
+
 ---
 
 # Synchronizing documents to SAP Solution Manager

@@ -23,13 +23,12 @@ Please open the **Parameter.json** with a text editor and adjust the contained p
 | --- | --- | --- |
 | **Symbio - allgemein** |   |   |
 | SourcePath | https://www.symbioworld.com/download/symbio/symbio-master.zip | The path to the installation files. Can be an URL to the installation package, a path to the local installation package or a path to a local folder containing the already extracted installation package. |
-| BaseTargetPath | C:\\SymbioWeb\\Test | Target directory for the Symbio application. Please note the double backslashes. |
-| BaseBackupPath | C:\\Backups | Compressed backups of an instance are stored in this directory. |
+| BaseTargetPath | C:\\\\SymbioWeb\\\\Test | Target directory for the Symbio application. Please note the double backslashes. |
+| BaseBackupPath | C:\\\\Backups | Compressed backups of an instance are stored in this directory. |
 | InstanceName | SymbioTest | The name of the Symbio instance. This name is used as a subfolder in the backup and destination path. |
-| CertificatesPath | C:\\Certificates | The path to the SAML certificates. These are copied into the App\_Data directory. |
+| CertificatesPath | C:\\\\Certificates | The path to the SAML certificates. These are copied into the App\_Data directory. |
 | LicenseKey | 12345678 | The license key for Symbio will be provided by our team.This license key will be added to the registry. Please also refer to server settings/license key chapter. |
 | **Symbio - Web.config** |   |   |
-| SYMBIO\_STORAGE\_LOCATION | Server=MSSQLSERVER;IntegratedSecurity=true | This parameter is only required **until** Symbio 1807:MS SQL Server instance nameif you do not know the server name, please use the following SQL query: SELECT @@SERVERNAME |
 | SYMBIO\_STORAGE\_SETTINGS | Database=Database;Server=MSSQLSERVER;Integrated Security=true;common.cachingenabled=true;common.objectcachingenabled=true;common.tenant=Default;MultipleActiveResultSets=True;App=Symbio | This is the connection string of the MS SQL Server.Please adjust database name and SQL server accordingly.if you do not know the server name, please use the following SQL query: SELECT @@SERVERNAME |
 | Symbio.RestrictRelease WorkflowDatabase NameRegex | ^sandbox- | In databases beginning with &quot;sandbox-&quot; no release cycle is available, so called FreeDBs. This setting is disabled in the Web.config as per default. |
 | PngRenderingServiceEndpunktUrl | https://localhost:1234/png | This parameter is required **since** Symbio 1807:The endpoint for the rendering service. Enter the URL configured in the rendering service here. |

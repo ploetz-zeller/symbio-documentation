@@ -2,7 +2,7 @@
 
 ## System requirements
 
-Make sure all system requirements from http://documents.symbioworld.com are fullfilled.
+Make sure all system requirements from https://www.symbioworld.com/en/resources/downloads/ are fullfilled.
 
 ## Software Requirements
 
@@ -12,11 +12,9 @@ For further information about installing MS SQL Server please see here: https://
 
 Additionally Symbio requires the following software which will be automatically installed by the installation script (###LINK###).
 
-* Internet Information Service
-* Net Framework
+* Internet Information Services
+* NET Framework
 * Symbio
-
-For version numbers consult http://documents.symbioworld.com.
 
 The following Symbio services are recommended but optional only:
 

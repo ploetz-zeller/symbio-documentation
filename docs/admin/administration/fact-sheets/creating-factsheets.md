@@ -59,6 +59,21 @@ In **List widget settings** you can set
 
 ![List widget options](./media/ListWidget.PNG "List widget options")
 
+### Table Widget
+A table widget allows you to create dynamic tables for your data. Its content is based on which facet view you choose from. If you want a more customized experience, the facet view table customization allows you to create even more custom facet views to choose from. More [information about the customization here.](../../features/general-design/custom-views-for-table-widget/custom-views-for-table-widget.md)  
+In the **Table widget settings** you can select:
+
+- **Limit**: The maximal number of table rows. Some facet views might ignore this setting. 
+- **Wrap text**: If not set, the row content will always be in one line without any line breaks.                                              
+- **Alternating row style**: Set this if you want gray highlighting of every second row.
+- **Table type**: Select a table type, then configure the corresponding table type setting.
+     
+**Facet view settings**
+- **Facets**: The facet for which your facet view is valid for.
+- **Facet views**: The facet view contains your dynamic data.
+
+![Table widget options](./media/tablewidget.png "Table widget options")
+
 ### Diagramm Widget
 
 A diagram widget shows a specified diagram of the current element. In **Diagram widget settings** you can select:

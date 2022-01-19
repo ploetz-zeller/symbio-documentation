@@ -1,0 +1,2 @@
+# Method: Location assignment to main processes, scenarios and documents
+In addition to the standard assignment of locations to sub processes, the activation of this feature enables the assignment of locations to main processes, scenarios and documents. The direct assignment of locations is independent of the location attributes set in the scope filter.
