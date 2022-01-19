@@ -279,7 +279,7 @@ nav:
       - Power Automate: 
          - Connector Configuration and Usage: power-users/microsoft-platform-integration/power-automate/power-automate-symbio-connector-(coming-soon).md
       - Power BI with ODS2.0:
-         - Prerequisites: power-users/PowerBI with ODS2.0/Prerequisites.md
-         - Star Schema Model: power-users/PowerBI with ODS2.0/Star Schema Model.md
-         - Power BI Example: power-users/PowerBI with ODS2.0/Power BI Example.md
-         - Excel Example: power-users/PowerBI with ODS2.0/Excel Example.md
+         - Prerequisites: power-users/power-bi-with-ods2/prerequisites.md
+         - Star Schema Model: power-users/power-bi-with-ods2/star-schema-model.md
+         - Power BI Example: power-users/power-bi-with-ods2/power-bi-example.md
+         - Excel Example: power-users/power-bi-with-ods2/excel-example.md
