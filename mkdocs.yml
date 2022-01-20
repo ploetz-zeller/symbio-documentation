@@ -286,8 +286,8 @@ nav:
     - Microsoft Power Platform Integration:
       - Power Automate: 
          - Connector Configuration and Usage: power-users/microsoft-platform-integration/power-automate/power-automate-symbio-connector-(coming-soon).md
-      - Power BI with ODS2.0:
-         - Prerequisites: power-users/power-bi-with-ods2/prerequisites.md
-         - Star Schema Model: power-users/power-bi-with-ods2/star-schema-model.md
-         - Power BI Example: power-users/power-bi-with-ods2/power-bi-example.md
-         - Excel Example: power-users/power-bi-with-ods2/excel-example.md
+      - Power B:
+         - Prerequisites: power-users/power-bi/prerequisites.md
+         - Star Schema Model: power-users/power-bi/star-schema-model.md
+         - Power BI Example: power-users/power-bi/power-bi-example.md
+         - Excel Example: power-users/power-bi/excel-example.md
