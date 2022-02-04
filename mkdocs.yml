@@ -282,11 +282,12 @@ nav:
       - External System Types: developer/services/external-system-types.md
       - Graphic: developer/services/graphic/index.md
   - Power Users:
+    - Datawarehouse: 
+         - Overview: power-users/datawarehouse/overview.md
+         - Prerequisites: power-users/datawarehouse/prerequisites.md
+         - Star Schema Model: power-users/datawarehouse/star-schema-model.md
+         - Power BI Example: power-users/datawarehouse/power-bi-example.md
+         - Excel Example: power-users/datawarehouse/excel-example.md
     - Microsoft Power Platform Integration:
       - Power Automate: 
          - Connector Configuration and Usage: power-users/microsoft-platform-integration/power-automate/power-automate-symbio-connector-(coming-soon).md
-      - Power BI:
-         - Prerequisites: power-users/power-bi/prerequisites.md
-         - Star Schema Model: power-users/power-bi/star-schema-model.md
-         - Power BI Example: power-users/power-bi/power-bi-example.md
-         - Excel Example: power-users/power-bi/excel-example.md
