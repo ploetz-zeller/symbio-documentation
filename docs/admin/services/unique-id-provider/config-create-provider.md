@@ -16,7 +16,7 @@ name for your ID provider.
 
 Click on "New" to create it. In the next step, please select the
 provider you have created and enter the URL of the deployed app service and token you have created in the database
-on the right side of the detail content. In this example the Url of the deployed appservice is https://IDProvider.com and the token is myToken.
+on the right side of the detail content. In this example the URL of the deployed appservice is https://IDProvider.com and the token is myToken.
 
 ![See created ID provider](media/image6.png)
 
