@@ -116,13 +116,7 @@ nav:
             - Troubleshooting: admin/services/rendering-service/troubleshooting.md
         - Deinstallation: admin/services/rendering-service/deinstallation-manual.md
       - Unique ID Provider:
-        - Installation:
-          - Intro: admin/services/unique-id-provider/install-intro.md
-          - General conditions: admin/services/unique-id-provider/install-conditions.md
-          - Scripted installation: admin/services/unique-id-provider/install-scripted.md
-          - Manual installation: admin/services/unique-id-provider/install-manual.md
-          - Create token: admin/services/unique-id-provider/install-create-token.md
-          - Gotchas: admin/services/unique-id-provider/install-gotchas.md
+        - Introduction: admin/services/unique-id-provider/install-intro.md
         - Configuration:
           - Before Start: admin/services/unique-id-provider/config-before-start.md
           - Create ID Provider: admin/services/unique-id-provider/config-create-provider.md
