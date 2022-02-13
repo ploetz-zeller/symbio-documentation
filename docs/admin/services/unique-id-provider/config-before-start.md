@@ -19,6 +19,6 @@ like this:
 insert into IDProvider.Subscribers (subscriber, token) values (NEWID
 (),'myToken')
 ```
-URL = ``url of deployed app service``
+URL = ``Url of deployed app service``
 
 Token = `myToken`
