@@ -115,7 +115,7 @@ nav:
             - Verification: admin/services/rendering-service/verification.md
             - Troubleshooting: admin/services/rendering-service/troubleshooting.md
         - Deinstallation: admin/services/rendering-service/deinstallation-manual.md
-      - Unique ID Provider:
+      - Unique ID Generator:
         - Introduction: admin/services/unique-id-provider/install-intro.md
         - Configuration:
           - Before Start: admin/services/unique-id-provider/config-before-start.md
