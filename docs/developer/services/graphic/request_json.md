@@ -3,7 +3,7 @@ The request JSON is used for the **CalculateLayout** endpoint of the *Symbio-Gra
 * the calculation type <code>cxn</code> (connection) and
 * the calculation type <code>flow</code> (process flow).
 
-**Disclaimer:** The following comparison between the *request JSON* and *BPMN* is made not because the two formats perform a similar task, but because they convey similar content: **process flows**<br/>
+**Disclaimer:** The following comparison between the *request JSON* and *BPMN* is made not because the two formats perform a similar task, but because they convey similar content: **Process flows**.<br/><br/>
 While the *request JSON* contains only the necessary information for automatic layout calculation and rendering, the BPMN also already contains all information for rendering - like position and size of shapes or the interpolation points of edges.
 
 **BPMN sample for position and size of a shape**
@@ -37,7 +37,7 @@ While the *request JSON* contains only the necessary information for automatic l
 {
     "result": "sesvg",
     "calculation": "flow",
-    "cfg": [{
+    "configurations": [{
 	...
     }],
     "elements": [{
@@ -64,18 +64,18 @@ While the *request JSON* contains only the necessary information for automatic l
 <td>
 The JSON format has to support layout and rendering requests for multiple purposes (<code>cxn</code> and <code>flow</code>) as well as multiple configurations.
 <br/>
-Thus it provides some meta-information like the requested  <b>"result"</b>, the type of  <b>"calculation"</b> to apply and details regarding layout and rendering configuration <b>"cfg"</b>.<br/>
-Beside taht, the JSON holds the data in the <b>"elements"</b> property just like the BPMN does it in the <b>&lt;bpmn:definitions/&gt;</b> tag.
+Thus it provides some meta-information like the requested  <b>"result"</b>, the type of  <b>"calculation"</b> to apply and details regarding layout and rendering configurations <b>"configurations"</b>.<br/>
+Besides that, the JSON holds the data in the <b>"elements"</b> property just like the BPMN does it in the <b>&lt;bpmn:definitions/&gt;</b> tag.
 </td>
 </tr>
 </table>
 
 ## The <code>result</code> property
 The supported *result* types are:
-1. <code>sesvg</code> (standalone enriched SVG) - used in case the resulting SVG hast to be embedded into a custom HTML page and log messages are desired
-2. <code>ssvg</code> (standalone SVG) - used in case the resulting SVG hast to be embedded into a custom HTML page and log messages are not desired
-3. <code>esvg</code> (HTML embedded enriched SVG) - used in case the resulting HTML hast to be displayed directly (e. g. in a test app) and log messages are desired
-4. <code>svg</code> (HTML embedded SVG) - used in case the resulting HTML hast to be displayed directly (e. g. in a test app) and log messages are not desired
+1. <code>sesvg</code> (standalone enriched SVG) - used in case the resulting SVG has to be embedded into a custom HTML page and log messages are desired
+2. <code>ssvg</code> (standalone SVG) - used in case the resulting SVG has to be embedded into a custom HTML page and log messages are not desired
+3. <code>esvg</code> (HTML embedded enriched SVG) - used in case the resulting HTML has to be displayed directly (e. g. in a test app) and log messages are desired
+4. <code>svg</code> (HTML embedded SVG) - used in case the resulting HTML has to be displayed directly (e. g. in a test app) and log messages are not desired
 5. <code>ejson</code> (enriched JSON) - used in case the resulting JSON should be parsed to post-process the calculation result and log messages are desired
 6. <code>json</code> (JSON) - used in case the resulting JSON should be parsed to post-process the calculation result and log messages are not desired
 
@@ -87,7 +87,7 @@ The supported *calculation* types are:
 The *calculation* type <code>cxn</code> supports all *result* types.<br/>
 The *calculation* type <code>flow</code> supports the *result* types 1. ... 4. only.
 
-## The <code>cfg</code> property
+## The <code>configurations</code> property
 
 *To be done.*
 
@@ -96,7 +96,7 @@ The *calculation* type <code>flow</code> supports the *result* types 1. ... 4. o
 The <code>elements</code> property contains all elements, that make up a diagram. This includes:
 
 - The **diagram** itself - as the container of all **shapes**.
-  - All **shapes**, that are to be displayed within the *diagram*.
+  - All structure building **shapes** (and their edges), that are to be displayed within the *diagram*.
 - The **items**, that are the basis to the **shapes**.
 
 The <code>elements</code> property is designed to hold an *array* of elements.
@@ -122,9 +122,6 @@ It is recommended that the **diagram** is the first element within the array and
           "value": "Sub process" }
     ]
   }],
-
-
-
   "content": [
 ...
 ```
@@ -153,7 +150,7 @@ It is recommended that the **diagram** is the first element within the array and
 </td>
 <td>
 &#x25B6; The <b>first</b> bunch of data in the request JSON file should be the <b>diagram</b>. It can be recognized by the fact that its <b><i>"type"</i></b> is <b><i>"subProcess"</i></b>.<br/>
-The request JSON <b><i>diagram</i></b> typically contains also <b><i>attributes</i></b> while the BPMN <b><i>diagram</i></b> dypically doesn't.<br/><br/>
+The request JSON <b><i>diagram</i></b> typically contains also <b><i>attributes</i></b> while the BPMN <b><i>diagram</i></b> typically doesn't.<br/><br/>
 The BPMN <b><i>diagram</i></b> might contain a <b><i>lane</i></b> node as primary child node of the <b><i>diagram</i></b> node.<br/><br/><br/>
 </td>
 </tr>
@@ -163,10 +160,14 @@ The BPMN <b><i>diagram</i></b> might contain a <b><i>lane</i></b> node as primar
 ```
     {
       "id":
-        "E571B6CA71B63D5B0733C3029F49BB32",
+        "a6743dd3-8881-4d22-bfe7-0b7f703097c8",
       "properties": {
         "itemId":
-          "CCA71B63D5B0733302E571B69F49BB32"
+          "9bc5994a-f64f-431f-a631-1ff405f22643",
+        "type":
+          "evStart",
+        "poolId":
+          "b0907b38-e8e4-42f3-bc0a-d3e83ae2a1a7"
       }
     },
     ...
@@ -201,7 +202,7 @@ The BPMN <b><i>diagram</i></b> might contain a <b><i>lane</i></b> node as primar
 </td>
 <td>
 Both, the request JSON <b><i>diagram</i></b> within the <b><i>content</i></b> property and the BPMN <b><i>diagram</i></b> within child nodes, contain the <b><i>shapes</i></b> and <b><i>edges</i></b> that are to be displayed.<br/><br/>
-&#x25B6; The <b>second</b> bunch of data in the request JSON file should be the sequence of <b><i>shapes</i></b> within the <b><i>content</i></b> property of the <b></i>diagram</i></b>. The list of <b><i>shapes</i></b> should contain all <b><i>shapes</i></b> to display.<br/><br/>
+&#x25B6; The <b>second</b> bunch of data in the request JSON file should be the sequence of <b><i>shapes</i></b> within the <b><i>content</i></b> property of the <b></i>diagram</i></b>. The list of <b><i>shapes</i></b> should contain all structure building <b><i>shapes</i></b> to display.<br/><br/>
 </td>
 </tr>
 <tr>
@@ -210,12 +211,18 @@ Both, the request JSON <b><i>diagram</i></b> within the <b><i>content</i></b> pr
 ```
     {
       "id":
-        "549FCE902F71B671BE5695B07CCA9FF2",
+        "a6743dd3-8881-4d22-bfe7-0b7f703097c8",
       "properties": {
         "itemId":
-          "B63F2971E571B69F49AAD5B0733302FA",
+          "9bc5994a-f64f-431f-a631-1ff405f22643",
+        "sourceId":
+          "a6743dd3-8881-4d22-bfe7-0b7f703097c8",
+        "targetId":
+          "75397704-e829-49b3-a40c-02379fb0b393",
+        "type":
+          "activ1",
         "poolId":
-          "CCA71B63D5B0733302E571B69F49BB32"
+          "b0907b38-e8e4-42f3-bc0a-d3e83ae2a1a7"
       }
     },
     ...
@@ -263,7 +270,8 @@ Both, the request JSON <b><i>diagram</i></b> within the <b><i>content</i></b> pr
 <td>
 &#x25B6; The <b>third</b> bunch of data in the request JSON file should be the sequence of <b><i>edges</i></b> within the <b><i>content</i></b> property of the <b></i>diagram</i></b>. The list of <b><i>edges</i></b> should contain all <b><i>edges</i></b> to display. <br/><br/>
 The following applies to both <b><i>shapes</i></b> and <b><i>edges</i></b>:<br/>
-Both, the request JSON <b><i>shapes</i></b>/<b><i>edges</i></b> and the BPMN <b><i>shapes</i></b>/<b><i>edges</i></b>, provide an identifier <code>"id:"</code> (for request JSON) or <code>id</code> (for BPMN) and areference to the underlaying item <code>"itemId:"</code> (for request JSON) or <code>bpmnElement</code><br/> (for BPMN).<br/><br/>
+Both, the request JSON <b><i>shapes</i></b>/<b><i>edges</i></b> and the BPMN <b><i>shapes</i></b>/<b><i>edges</i></b>, provide an identifier <code>"id:"</code> (for request JSON) or <code>id</code> (for BPMN).
+While the <code>itemId:</code> (for request JSON) refers to the underlying item id, as <code>id:</code> for <code>bpmnElement</code>, the <code>sourceId:</code> and <code>targetId:</code> hold the <code>id</code> of the connected shapes, as they are stated in the <b><i>diagram</i></b>'s <b><i>content</i></b> section.<br/><br/>
 </td>
 </tr>
 <tr>
@@ -272,7 +280,7 @@ Both, the request JSON <b><i>shapes</i></b>/<b><i>edges</i></b> and the BPMN <b>
 ```
   {
     "id":
-      "CCA71B63D5B0733302E571B69F49BB32",
+      "b0907b38-e8e4-42f3-bc0a-d3e83ae2a1a7",
     "properties": {
       "type": "pool",
       "kind": "OBJ",
@@ -317,7 +325,7 @@ Both, the request JSON <b><i>shapes</i></b>/<b><i>edges</i></b> and the BPMN <b>
 
 </td>
 <td>
-&#x25B6; The <b>fourth</b> bunch of data in the request JSON file should be the sequence of <b><i>pools</i></b> within the <b><i>elements</i></b> property of the request JSON (the <b><i>diagram</i></b> property has been finished already at tis point). The list of <b><i>pools</i></b> should contain all <b><i>pools</i></b> that are used to hold <b><i>lanes</i></b> or <b><i>shapes</i></b>.<br/><br/>
+&#x25B6; The <b>fourth</b> bunch of data in the request JSON file should be the sequence of <b><i>pools</i></b> within the <b><i>elements</i></b> property of the request JSON (the <b><i>diagram</i></b> property has been finished already at this point). The list of <b><i>pools</i></b> should contain all <b><i>pools</i></b> that are used to hold <b><i>lanes</i></b> or <b><i>shapes</i></b>.<br/><br/>
 Both, the request JSON <b><i>pools</i></b> and the BPMN <b><i>participants</i></b>, provide an identifier <code>"id:"</code> (for request JSON) or <code>id</code> (for BPMN) and a name <code>"key": "name"</code> (object within the <code>"attributes"</code> property for request JSON) or <code>name</code><br/> (for BPMN).
 </td>
 </tr>
@@ -430,26 +438,27 @@ Both, the request JSON connection <b><i>items</i></b> and the BPMN <b><i>process
 
 ### Shapes and shape items
 The design of ***shape*** content elements is intended to be minimalistic.<br/>
-E.g. ***shape*** content elements do not contain a ***type*** specification. Here is an example:
 
 ```
 {
-  "id": "A71B63D5B0302E571BA733A69F4CCC",
-  "properties": {
-    "itemId": "B63F2971E571B69F49AAD5B0733302FA",
-    "poolId": "CCA71B63D5B0733302E571B69F49BB32"
+	"id": "a6743dd3-8881-4d22-bfe7-0b7f703097c8",
+	"properties": {
+            "itemId": "9bc5994a-f64f-431f-a631-1ff405f22643",
+            "type": "evStart",
+            "poolId": "6496cb0f-8763-4e27-a8dd-77870be94fd5"
+	}
 }
 ```
 
-The referencing of the ***shape*** underlying ***item*** is done with <code>"itemId" : "B63F2971E571B69F49AAD5B0733302FA"</code>.<br/>
-The (optional) second reference, <code>"poolId": "CCA71B63D5B0733302E571B69F49BB32"</code>, defines membership of the ***shape*** in a ***pool***.<br/>
-The ***type*** is always identical to the type of the underlying ***item*** and can be determined via the ***item***.<br/>
+Referencing the ***shape***'s underlying ***item*** is done with <code>"itemId" : "9bc5994a-f64f-431f-a631-1ff405f22643"</code>.<br/>
+The (optional) second reference, <code>"poolId": "6496cb0f-8763-4e27-a8dd-77870be94fd5"</code>, defines membership of the ***shape*** in a ***pool***.<br/>
+<br/>
 
 Here is the ***shape*** underlying ***item***:
 
 ```
 {
-  "id": "AAA71B63D5B0733302E571B69F4CCC",
+  "id": "9bc5994a-f64f-431f-a631-1ff405f22643",
   "properties": {
     "type": "evStart",
     "kind": "OBJ",
@@ -471,38 +480,41 @@ The text to display is defined within the <code>"attributes"</code> property arr
 
 ### Edges and edge items
 The design of ***edge*** content elements is intended to be minimalistic.<br/>
-E.g. ***edge*** content elements do not contain a ***type*** specification. Here is an example:
+Here is an example:
 
 ```
 {
-  "id": "569C971905B0754EB7163F4932F2D2EB",
-  "properties": {
-    "itemId": "D4B07549771B2932CFEE51B63969502F",
-    "sourceId": "549FCE902F71B671BE5695B07CCA9FF2",
-    "targetId": "1B695B0754977E513902F2CEF2D4B693"
+	"id": "e5dfd46e-8720-408e-b760-171038da9f6d",
+	"properties": {
+		"itemId": "6496cb0f-8763-4e27-a8dd-77870be94fd5",
+		"sourceId": "a6743dd3-8881-4d22-bfe7-0b7f703097c8",
+		"targetId": "75397704-e829-49b3-a40c-02379fb0b393",
+		"type": "activ1"
+	}
 }
 ```
 
-The referencing of the ***edge*** underlaying ***item*** is done with <code>"itemId" : "B63F2971E571B69F49AAD5B0733302FA"</code>.<br/>
+Referencing the ***edge***'s underlying ***item*** is done with <code>"itemId" : "6496cb0f-8763-4e27-a8dd-77870be94fd5"</code>.<br/>
 The is no reference to a ***pool***, since ***edges*** can cross ***lanes*** and ***pools***.<br/>
-The referencing of the *source* and *target* ***shapes*** is done with <code>"sourceId": "549FCE902F71B671BE5695B07CCA9FF2"</code> and <code>"targetId": "1B695B0754977E513902F2CEF2D4B693"</code>. An ***edge*** must always hold a *source* and a *target* ***shape*** reference.<br/>
-The ***type*** is always identical to the type of the underlying ***item*** and can be determined via the ***item***.<br/>
+The referencing of the *source* and *target* ***shapes*** is done with <code>"sourceId": "a6743dd3-8881-4d22-bfe7-0b7f703097c8"</code> and <code>"targetId": "75397704-e829-49b3-a40c-02379fb0b393"</code>. An ***edge*** must always hold a *source* and a *target* ***shape*** reference.<br/><br/>
 
 Here is the ***edge*** underlying ***item***:
 
 ```
 {
-  "id": "D4B07549771B2932CFEE51B63969502F",
-  "properties": {
-    "type": "activ1",
-    "kind": "CXN"
-  },
-  "attributes": [{
-    "key": "cxnRole",
-    "values": [
-      { "lcid": 1033, "value": "yes" }
-    ]
-  }]
+    "id": "6496cb0f-8763-4e27-a8dd-77870be94fd5",
+    "properties": {
+        "kind": "CXN",
+        "sourceId": "9bc5994a-f64f-431f-a631-1ff405f22643",
+        "targetId": "b0907b38-e8e4-42f3-bc0a-d3e83ae2a1a7",
+        "type": "activ1"
+	},
+    "attributes": [{
+        "key": "cxnRole",
+        "values": [
+        { "lcid": 1033, "value": "yes" }
+        ]
+    }]
 }
 ```
 
@@ -515,7 +527,7 @@ In the case that the **diagram** is to be laid out and rendered with **pools**, 
 
 ```
 {
-	"id": "CCA71B63D5B0733302E571B69F49BB32",
+	"id": "d5d7ce44-c18f-4119-aa18-8f9e8aa69e85",
 	"properties": {
 		"type": "pool",
 		"kind": "OBJ",
@@ -529,7 +541,7 @@ In the case that the **diagram** is to be laid out and rendered with **pools**, 
 	}]
 },
 {
-	"id": "AAA71B63D5B0733302E571B69F4CCC",
+	"id": "03c092c9-b723-4a38-befd-f6f54aef42d6",
 	"properties": {
 		"type": "pool",
 		"kind": "OBJ"
@@ -541,12 +553,12 @@ In the case that the **diagram** is to be laid out and rendered with **pools**, 
 		]
 	}],
 	"children": [
-		"D886BBB12CE11D664AEF9197FA08B97D",
-		"2CE1AAA11A664ADF9197FB08B97DD886"
+		"467cbfa4-ff43-49fe-ac0d-49beda2e07f6",
+		"c989af38-3e9e-4693-a284-3801da7696de"
 	]
 },
 {
-	"id": "C1271B63D5B0733302E571B69F4AAF",
+	"id": "63cf252b-ed7f-458e-97c3-3b557786eb52",
 	"properties": {
 		"type": "pool",
 		"kind": "OBJ",
@@ -572,6 +584,6 @@ It is highly recommended to define names for all **pools** (see <code>"attribute
 In the case that a **pool** should contain multiple **lanes** and the **lanes** should be in a defined order, it is recommended to define the **lanes** as a list of children (see <code>"children"</code>). The **ids**, specified in the list of children, must refer to existing **items**, that are typically *roles*, *groups*, *application systems* or *application services*.
 
 ### Lane items
-In the case that the **diagram** is to be laid out and rendered with **lanes**, the **lanes** are *automatically* recognized by the fact, that they are *related* to structure building  **items** via the configured *laneRelevant* relation (see <code>"laneRelevant": "responsible"</code> within **<code>cfg</code> property**). The  **lanes** must not be of any of any specific **item** type (see <code>"type": "..."</code>), but they must be of **item** kind "OBJ" (see <code>"kind": "OBJ"</code>) and must not be of any of the structure building  **item** types (like <code>"type": "func"</code>, <code>"type": "evStart"</code>, <code>"type": "evIntermediate"</code>, <code>"type": "evEnd"</code>, <code>"type": "ruleXor"</code>, <code>"type": "ruleOr"</code>, <code>"type": "ruleAnd"</code> or <code>"type": "condition"</code>).
+In the case that the **diagram** is to be laid out and rendered with **lanes**, the **lanes** are *automatically* recognized by the fact, that they are *related* to structure building  **items** via the configured *laneRelevant* relation (see <code>"laneRelevant": "responsible"</code> within **<code>configurations</code> property**). The  **lanes** must not be of any of any specific **item** type (see <code>"type": "..."</code>), but they must be of **item** kind "OBJ" (see <code>"kind": "OBJ"</code>) and must not be of any of the structure building  **item** types (like <code>"type": "func"</code>, <code>"type": "evStart"</code>, <code>"type": "evIntermediate"</code>, <code>"type": "evEnd"</code>, <code>"type": "ruleXor"</code>, <code>"type": "ruleOr"</code>, <code>"type": "ruleAnd"</code> or <code>"type": "condition"</code>).
 
 In the case that multiple **lanes** should be contained in a **pool** and the **lanes** should be in a defined order, it is recommended to define the **lanes** as a list of children (see <code>"children"</code>) within the **pool**. The **ids**, specified in the list of children, must refer to existing **lane** (**items**), that are typically *roles*, *groups*, *application systems* or *application services*.
