@@ -277,7 +277,7 @@ nav:
       - Graphic:
         - Introduction: developer/services/graphic/index.md
         - Request JSON: developer/services/graphic/request_json.md
-        - BPMN sub-processes: developer/services/graphic/elements_events.md
+        - BPMN sub-processes: developer/services/graphic/elements_subprocesses.md
         - BPMN tasks: developer/services/graphic/elements_tasks.md
         - BPMN events: developer/services/graphic/elements_events.md
   - Power Users:
