@@ -274,7 +274,12 @@ nav:
     - Services:
       - External Systems: developer/services/external-systems.md
       - External System Types: developer/services/external-system-types.md
-      - Graphic: developer/services/graphic/index.md
+      - Graphic:
+        - Introduction: developer/services/graphic/index.md
+        - Request JSON: developer/services/graphic/request_json.md
+        - BPMN sub-processes: developer/services/graphic/elements_events.md
+        - BPMN tasks: developer/services/graphic/elements_tasks.md
+        - BPMN events: developer/services/graphic/elements_events.md
   - Power Users:
     - Data Warehouse:
          - Overview: power-users/datawarehouse/overview.md
