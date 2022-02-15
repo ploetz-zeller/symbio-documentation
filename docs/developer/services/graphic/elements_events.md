@@ -1,4 +1,4 @@
-# BPMN eventss
+# BPMN events
 
 ### Introduction
 Events can occur with different continuations, at different locations and with different types.
