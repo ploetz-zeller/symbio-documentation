@@ -98,105 +98,105 @@ namespace symbio_rest_client
 
    You should see something like this on the console:
 
-   ```json
-   {
-       "count": 19,
-       "values": [
-           {
-               "name": "globaltasks",
-               "displayName": "Tasks",
-               "views": "https://localhost/SYMBIO/1803/REST/_api/rest/facets/globaltasks/views"
-           },
-           {
-               "name": "inputsoutputs",
-               "displayName": "Inputs/Outputs",
-               "views": "https://localhost/SYMBIO/1803/REST/_api/rest/facets/inputsoutputs/views"
-           },
-           {
-               "name": "it",
-               "displayName": "IT",
-               "views": "https://localhost/SYMBIO/1803/REST/_api/rest/facets/it/views"
-           },
-           {
-               "name": "knowledge",
-               "displayName": "Guidelines",
-               "views": "https://localhost/SYMBIO/1803/REST/_api/rest/facets/knowledge/views"
-           },
-           {
-               "name": "kpi",
-               "displayName": "Key Performance Indicators",
-               "views": "https://localhost/SYMBIO/1803/REST/_api/rest/facets/kpi/views"
-           },
-           {
-               "name": "locations",
-               "displayName": "Locations",
-               "views": "https://localhost/SYMBIO/1803/REST/_api/rest/facets/locations/views"
-           },
-           {
-               "name": "measures",
-               "displayName": "Measures",
-               "views": "https://localhost/SYMBIO/1803/REST/_api/rest/facets/measures/views"
-           },
-           {
-               "name": "milestones",
-               "displayName": "Milestones",
-               "views": "https://localhost/SYMBIO/1803/REST/_api/rest/facets/milestones/views"
-           },
-           {
-               "name": "organization",
-               "displayName": "Organization",
-               "views": "https://localhost/SYMBIO/1803/REST/_api/rest/facets/organization/views"
-           },
-           {
-               "name": "processes",
-               "displayName": "Processes",
-               "views": "https://localhost/SYMBIO/1803/REST/_api/rest/facets/processes/views"
-           },
-           {
-               "name": "requirements",
-               "displayName": "Demands/ideas",
-               "views": "https://localhost/SYMBIO/1803/REST/_api/rest/facets/requirements/views"
-           },
-           {
-               "name": "risks",
-               "displayName": "Risks",
-               "views": "https://localhost/SYMBIO/1803/REST/_api/rest/facets/risks/views"
-           },
-           {
-               "name": "roles",
-               "displayName": "Roles",
-               "views": "https://localhost/SYMBIO/1803/REST/_api/rest/facets/roles/views"
-           },
-           {
-               "name": "standards",
-               "displayName": "Standards",
-               "views": "https://localhost/SYMBIO/1803/REST/_api/rest/facets/standards/views"
-           },
-           {
-               "name": "standardtypes",
-               "displayName": "Standard Types",
-               "views": "https://localhost/SYMBIO/1803/REST/_api/rest/facets/standardtypes/views"
-           },
-           {
-               "name": "tags",
-               "displayName": "Tags",
-               "views": "https://localhost/SYMBIO/1803/REST/_api/rest/facets/tags/views"
-           },
-           {
-               "name": "trainings",
-               "displayName": "Trainings",
-               "views": "https://localhost/SYMBIO/1803/REST/_api/rest/facets/trainings/views"
-           },
-           {
-               "name": "transactions",
-               "displayName": "Transactions/Services",
-               "views": "https://localhost/SYMBIO/1803/REST/_api/rest/facets/transactions/views"
-           },
-           {
-               "name": "users",
-               "displayName": "User",
-               "views": "https://localhost/SYMBIO/1803/REST/_api/rest/facets/users/views"
-           }
-       ]
-   }
-   ```
+```json
+{
+    "count": 19,
+    "values": [
+        {
+            "name": "globaltasks",
+            "displayName": "Tasks",
+            "views": "https://localhost/SYMBIO/1803/REST/_api/rest/facets/globaltasks/views"
+        },
+        {
+            "name": "inputsoutputs",
+            "displayName": "Inputs/Outputs",
+            "views": "https://localhost/SYMBIO/1803/REST/_api/rest/facets/inputsoutputs/views"
+        },
+        {
+            "name": "it",
+            "displayName": "IT",
+            "views": "https://localhost/SYMBIO/1803/REST/_api/rest/facets/it/views"
+        },
+        {
+            "name": "knowledge",
+            "displayName": "Guidelines",
+            "views": "https://localhost/SYMBIO/1803/REST/_api/rest/facets/knowledge/views"
+        },
+        {
+            "name": "kpi",
+            "displayName": "Key Performance Indicators",
+            "views": "https://localhost/SYMBIO/1803/REST/_api/rest/facets/kpi/views"
+        },
+        {
+            "name": "locations",
+            "displayName": "Locations",
+            "views": "https://localhost/SYMBIO/1803/REST/_api/rest/facets/locations/views"
+        },
+        {
+            "name": "measures",
+            "displayName": "Measures",
+            "views": "https://localhost/SYMBIO/1803/REST/_api/rest/facets/measures/views"
+        },
+        {
+            "name": "milestones",
+            "displayName": "Milestones",
+            "views": "https://localhost/SYMBIO/1803/REST/_api/rest/facets/milestones/views"
+        },
+        {
+            "name": "organization",
+            "displayName": "Organization",
+            "views": "https://localhost/SYMBIO/1803/REST/_api/rest/facets/organization/views"
+        },
+        {
+            "name": "processes",
+            "displayName": "Processes",
+            "views": "https://localhost/SYMBIO/1803/REST/_api/rest/facets/processes/views"
+        },
+        {
+            "name": "requirements",
+            "displayName": "Demands/ideas",
+            "views": "https://localhost/SYMBIO/1803/REST/_api/rest/facets/requirements/views"
+        },
+        {
+            "name": "risks",
+            "displayName": "Risks",
+            "views": "https://localhost/SYMBIO/1803/REST/_api/rest/facets/risks/views"
+        },
+        {
+            "name": "roles",
+            "displayName": "Roles",
+            "views": "https://localhost/SYMBIO/1803/REST/_api/rest/facets/roles/views"
+        },
+        {
+            "name": "standards",
+            "displayName": "Standards",
+            "views": "https://localhost/SYMBIO/1803/REST/_api/rest/facets/standards/views"
+        },
+        {
+            "name": "standardtypes",
+            "displayName": "Standard Types",
+            "views": "https://localhost/SYMBIO/1803/REST/_api/rest/facets/standardtypes/views"
+        },
+        {
+            "name": "tags",
+            "displayName": "Tags",
+            "views": "https://localhost/SYMBIO/1803/REST/_api/rest/facets/tags/views"
+        },
+        {
+            "name": "trainings",
+            "displayName": "Trainings",
+            "views": "https://localhost/SYMBIO/1803/REST/_api/rest/facets/trainings/views"
+        },
+        {
+            "name": "transactions",
+            "displayName": "Transactions/Services",
+            "views": "https://localhost/SYMBIO/1803/REST/_api/rest/facets/transactions/views"
+        },
+        {
+            "name": "users",
+            "displayName": "User",
+            "views": "https://localhost/SYMBIO/1803/REST/_api/rest/facets/users/views"
+        }
+    ]
+}
+```
