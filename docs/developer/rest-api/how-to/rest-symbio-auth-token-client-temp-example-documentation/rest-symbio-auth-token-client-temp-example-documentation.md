@@ -26,20 +26,20 @@ This application showcases the use of Symbio REST authentication tokens to acces
 
 6. Review the provided samples for accessing the REST endpoints, e.g. C#:
 
-   ```csharp
-   var uri = "<Base URL>/<Collection>/<Database>/_api/rest/facets";
+```c#
+var uri = "<Base URL>/<Collection>/<Database>/_api/rest/facets";
 
-   var request = System.Net.WebRequest.CreateHttp(uri);
-   request.Method = "POST";
-   request.AllowAutoRedirect = false;
-   request.Headers.Add("symbio-auth-token", "9bxgy988g6snz350m25n72yk01");
-   request.ContentLength = 0;
+var request = System.Net.WebRequest.CreateHttp(uri);
+request.Method = "POST";
+request.AllowAutoRedirect = false;
+request.Headers.Add("symbio-auth-token", "9bxgy988g6snz350m25n72yk01");
+request.ContentLength = 0;
 
-   using (var response = request.GetResponse())
-   {
-       //...
-   }
-   ```
+using (var response = request.GetResponse())
+{
+    //...
+}
+```
 
 ## Creating a first REST Client Application
 
@@ -57,40 +57,40 @@ To get started with your full-fledged REST client application we demonstrate the
 
 4. Expand the `Program.cs` file to read:
 
-   ```csharp
-   using System;
-   using System.IO;
-   using System.Net;
-   using System.Threading.Tasks;
+```c#
+using System;
+using System.IO;
+using System.Net;
+using System.Threading.Tasks;
 
-   namespace symbio_rest_client
-   {
-       class Program
-       {
-           static void Main(string[] args)
-           {
-               Task
-                   .Run(async () => await CallSymbio())
-                   .Wait();
-           }
+namespace symbio_rest_client
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Task
+                .Run(async () => await CallSymbio())
+                .Wait();
+        }
 
-           static async Task CallSymbio()
-           {
-               var uri = "https://localhost/SYMBIO/1803/REST/_api/rest/facets";
+        static async Task CallSymbio()
+        {
+            var uri = "https://localhost/SYMBIO/1803/REST/_api/rest/facets";
 
-               var request = System.Net.WebRequest.CreateHttp(uri) as HttpWebRequest;
-               request.Method = "POST";
-               request.Headers["symbio-auth-token"] = "9bxgy988g6snz350m25n72yk01";
+            var request = System.Net.WebRequest.CreateHttp(uri) as HttpWebRequest;
+            request.Method = "POST";
+            request.Headers["symbio-auth-token"] = "9bxgy988g6snz350m25n72yk01";
 
-               using (var response = await request.GetResponseAsync())
-               using (var reader = new StreamReader(response.GetResponseStream()))
-               {
-                   Console.WriteLine(reader.ReadToEnd());
-               }
-           }
-       }
-   }
-   ```
+            using (var response = await request.GetResponseAsync())
+            using (var reader = new StreamReader(response.GetResponseStream()))
+            {
+                Console.WriteLine(reader.ReadToEnd());
+            }
+        }
+    }
+}
+```
 
 5. Save your files and run the following command
 
