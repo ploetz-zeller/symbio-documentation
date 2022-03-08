@@ -26,20 +26,20 @@ This application showcases the use of Symbio REST authentication tokens to acces
 
 6. Review the provided samples for accessing the REST endpoints, e.g. C#:
 
-   ```csharp
-   var uri = "<Base URL>/<Collection>/<Database>/_api/rest/facets";
+```csharp
+var uri = "<Base URL>/<Collection>/<Database>/_api/rest/facets";
 
-   var request = System.Net.WebRequest.CreateHttp(uri);
-   request.Method = "POST";
-   request.AllowAutoRedirect = false;
-   request.Headers.Add("symbio-auth-token", "9bxgy988g6snz350m25n72yk01");
-   request.ContentLength = 0;
+var request = System.Net.WebRequest.CreateHttp(uri);
+request.Method = "POST";
+request.AllowAutoRedirect = false;
+request.Headers.Add("symbio-auth-token", "9bxgy988g6snz350m25n72yk01");
+request.ContentLength = 0;
 
-   using (var response = request.GetResponse())
-   {
-       //...
-   }
-   ```
+using (var response = request.GetResponse())
+{
+    //...
+}
+```
 
 ## Creating a first REST Client Application
 
