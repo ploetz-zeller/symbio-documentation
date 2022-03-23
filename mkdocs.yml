@@ -1,6 +1,6 @@
 site_name: Symbio Documentation
 repo_url: https://github.com/ploetz-zeller/symbio-documentation
-copyright: Ploetz + Zeller GmbH
+copyright: Symbioworld GmbH
 
 theme:
   name: 'material'
@@ -48,7 +48,7 @@ nav:
         - Setting Up OAuth: admin/installation-guide/oauth-configuration/setting-up-oauth.md
     - Services:
       - Introduction: admin/services/introduction/introduction.md
-      - Atlassian Connector:
+      - Atlassian Connector (Obsolete):
         - Administration guide: admin/services/atlassian-connector/administration_guide.md
         - Using Symbio to Atlassian: admin/services/atlassian-connector/using_symbioatlassian.md
         - Manual Jira Configuration: admin/services/atlassian-connector/manual_jira_configuration.md
@@ -72,6 +72,12 @@ nav:
         - Configuration: admin/services/intrafind-connector/configuration.md
         - Console Application: admin/services/intrafind-connector/consoleapplication.md
         - About Logging: admin/services/intrafind-connector/logging.md
+      - Jira Connector:
+        - Installation Preparation: admin/services/jira-connector/1-installation-preparation.md
+        - Installation Installation Symbio Connector (Jira): admin/services/jira-connector/2-installation-jira.md
+        - Configuration Symbio Connector (Jira): admin/services/jira-connector/3-configuration-symbio-connector-jira.md
+        - Configuration Symbio Connector: admin/services/jira-connector/4-configuraiton-symbio-connector.md
+        - Configuration Jira Project: admin/services/jira-connector/5-configuration-jira-project.md
       - Process Portal Exporter:
         - Installation manual: admin/services/process-portal-exporter/install-service-manual.md
         - Configuration: admin/services/process-portal-exporter/configuration.md
