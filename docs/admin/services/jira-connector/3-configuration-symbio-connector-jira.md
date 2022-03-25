@@ -1,7 +1,14 @@
 # Configuration Symbio Connector (Jira)
 
 ## Licensing
-You can start with a free trial license after the trial period you can contact jira@symbioworld.com for a full license.
+For licensing please contact jira@symbioworld.com.
+
+Please specify the following parameters:
+- Symbio Storage URL
+- License period
+- Test / Productive license
+
+Free license keys are provided for testing purposes. 
 
 ## Connection
 Enter the following attributes and enter **Submit** 

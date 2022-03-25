@@ -74,7 +74,7 @@ nav:
         - About Logging: admin/services/intrafind-connector/logging.md
       - Jira Connector:
         - Installation Preparation: admin/services/jira-connector/1-installation-preparation.md
-        - Installation Installation Symbio Connector (Jira): admin/services/jira-connector/2-installation-jira.md
+        - Installation Symbio Connector (Jira): admin/services/jira-connector/2-installation-jira.md
         - Configuration Symbio Connector (Jira): admin/services/jira-connector/3-configuration-symbio-connector-jira.md
         - Configuration Symbio Connector: admin/services/jira-connector/4-configuraiton-symbio-connector.md
         - Configuration Jira Project: admin/services/jira-connector/5-configuration-jira-project.md
