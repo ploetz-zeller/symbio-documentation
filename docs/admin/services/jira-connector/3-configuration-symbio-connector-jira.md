@@ -1,6 +1,7 @@
 # Configuration Symbio Connector (Jira)
 
 ## Licensing
+
 For licensing please contact jira@symbioworld.com.
 
 Please specify the following parameters:
