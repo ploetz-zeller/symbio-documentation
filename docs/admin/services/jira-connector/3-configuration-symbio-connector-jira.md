@@ -13,10 +13,10 @@ Free license keys are provided for testing purposes.
 
 ## Connection
 Enter the following attributes and enter **Submit** 
-* Symbio Base-Url
-* Symbio Collection
-* Symbio Tenant (Storage)
-* Symbio Token (You created this in the previous step.)
+- Symbio Base-Url
+- Symbio Collection
+- Symbio Tenant (Storage)
+- Symbio Token (You created this in the previous step.)
  
 
  ![screen](./media/configuration-symbio-connector-jira-1.png)
