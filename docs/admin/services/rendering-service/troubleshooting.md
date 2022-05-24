@@ -14,3 +14,9 @@
 7. Go to Start > Run > and type services.msc to run the Services control panel
 8. Select the SymbioRenderingService and start it
 9. If the service is running now, switch back to verification and export a process manual
+
+**If the rendering service cannot be started after this Registry fix, please check in EventViewer whether FileNotFound exception occurred
+
+**Solution**
+1. Install missing Microsoft Visual C++ from https://docs.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170
+2. Start SymbioRenderingService via Services.msc
