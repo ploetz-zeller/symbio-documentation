@@ -38,7 +38,7 @@ If any connections are missing or elements do not appear, check the original Vis
 
 ## Step 4: Import
 
-Start by entering the import token provided to you by your Symbio administrator and click "**Upload**". You can choose to save the mapping by checking the checkbox above the upload button. That mapping will then be tied to your PIN and suggested the next time you map.
+Start by entering the import token provided to you by your Symbio administrator and click "**Upload**". You can choose to save the mapping by checking the checkbox above the upload button. That mapping will then be tied to your account and suggested the next time you map.
 
 Once you started the upload the importer will load a selection of languages your Symbio instance uses. Select the languages for which you want the importer to add descriptions and titles. For languages not selected, the importer will insert the default names (e.g. "Task"). At least one language must be selected.
 
