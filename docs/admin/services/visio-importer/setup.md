@@ -19,7 +19,7 @@ Go to your Symbio installation and create a new category/main process or select 
 
 Select the 'ContextKey' GUID from there and copy it.
 
-The Token, the URL and GUID are added to the Tool using the [Website](https://visio.symbioweb.com/pzdebug).
+The Token, the URL and GUID are added to the Tool using the [Website](https://visio.symbio.cloud/pzdebug).
 
 ![guidGeneration](media/guidGeneration.png)
 
