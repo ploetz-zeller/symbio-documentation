@@ -366,11 +366,11 @@ Several default manuals are available. Customized manual templates and additiona
 
 Create a new entry named for example "Process description_DE_EN" and click "New" 
 Maintain document export template settings:
-* Facet: Processes
-* Type: Sub process (SubProcessDiagram)
-* Languages: German, English
-* Template file path: seilect from the data tab the file "temlates - symbiodocument_processmanual_de_en.rtf"
-* Content flags: gives you the possibility to show additional evaluations or hide existing ones from the template. See following list for more informations
+- Facet: Processes
+- Type: Sub process (SubProcessDiagram)
+- Languages: German, English
+- Template file path: seilect from the data tab the file "temlates - symbiodocument_processmanual_de_en.rtf"
+- Content flags: gives you the possibility to show additional evaluations or hide existing ones from the template. See following list for more informations
 
 | Content flag | Explanation |
 |--------------|-------------|
@@ -398,7 +398,7 @@ Maintain document export template settings:
 |Document Content - Hide Fact Sheet For Selected Processes|	If selected, fact sheet chapter will be hidden.|
 |Document Content - Hide Fact Sheets For Referenced Sub Processes|	If selected, chapter "Referenced sub-processes" will be hidden in the generated manual. The chapter provides a fact sheet for every process.|
 |Document Content - Execute Debug Code|	If selected, more detailed information for handbook developer will be shown.|
-* Logo image: add your company logo (eg. .png or .jpg), it will replace the Symbio logo when generating the manual.
+- Logo image: add your company logo (eg. .png or .jpg), it will replace the Symbio logo when generating the manual.
 
 ## Reporting
 
