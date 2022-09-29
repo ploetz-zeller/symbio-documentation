@@ -238,6 +238,11 @@ The administrator can use this configuiration type to extend Validation Rules wi
 
 ![screen](../media/Picture1.png)
 
+2. In Detail Content, the administrator can select the relations that have to be mandatory maintained. Multiple selections are possible.
+
+![screen](../media/Picture2.png)
+
+
 #### Make an attribute informative
 
 The administrator can use this extension to store certain content as informative and thus define it as read-only. This means that these contents cannot be edited. For example, systems can be set as write-protected by this configuration and the content can be retrieved from the BCM interface.
