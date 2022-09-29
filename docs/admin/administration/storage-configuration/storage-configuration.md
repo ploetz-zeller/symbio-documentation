@@ -230,6 +230,14 @@ The admin can make any attribute mandatory. For this, the type 'make an attribut
 
 ![screen](../media/make_mandatory.png)
 
+#### Make relations mandatory
+
+The administrator can use this configuiration type to extend Validation Rules with relations that must be maintained to Change the State (Release) of a Process. 
+
+1. Select the type Make relations mandatory and provide a name for the configuration.
+
+![screen](../media/Picture1.png)
+
 #### Make an attribute informative
 
 The administrator can use this extension to store certain content as informative and thus define it as read-only. This means that these contents cannot be edited. For example, systems can be set as write-protected by this configuration and the content can be retrieved from the BCM interface.
