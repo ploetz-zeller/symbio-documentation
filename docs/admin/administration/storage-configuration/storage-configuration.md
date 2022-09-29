@@ -236,15 +236,15 @@ The administrator can use this configuiration type to extend Validation Rules wi
 
 1. Select the type Make relations mandatory and provide a name for the configuration.
 
-![screen](../media/Picture1.png)
+ ![screen](../media/Picture1.png)
 
 2. In Detail Content, the administrator can select the relations that have to be mandatory maintained. Multiple selections are possible.
 
-![screen](../media/Picture2.png)
+ ![screen](../media/Picture2.png)
 
 After applying the changes, the Validation Rule “All mandatory information have to be maintained” will consider also the mandatory relations. 
 
-![screen](../media/Picture3.png)
+ ![screen](../media/Picture3.png)
 
 #### Make an attribute informative
 
