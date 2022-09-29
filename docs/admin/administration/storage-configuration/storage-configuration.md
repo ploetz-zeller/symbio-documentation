@@ -242,6 +242,9 @@ The administrator can use this configuiration type to extend Validation Rules wi
 
 ![screen](../media/Picture2.png)
 
+After applying the changes, the Validation Rule “All mandatory information have to be maintained” will consider also the mandatory relations. 
+
+![screen](../media/Picture3.png)
 
 #### Make an attribute informative
 
