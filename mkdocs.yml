@@ -63,7 +63,6 @@ nav:
       - Favorite Service:
         - Configuration: admin/services/favorite-service/installation-manual.md
       - Visio Importer:
-        - Generate Upload Token: admin/services/visio-importer/setup.md
         - Using the Visio Importer: admin/services/visio-importer/usage.md
       - Intrafind Connector:
         - Introduction: admin/services/intrafind-connector/index.md
