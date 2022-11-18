@@ -5,7 +5,7 @@
 
 1. Go to the **_sysadmin** page's "Extended Configuration"
 2. Create a new external system type for the Favorite Service 
-3. **The syex file is now provided by the service via this url**: https://api.favorites.symbio.cloud/api/configuration 
+3. **The syex file is now provided by the service via this url**: https://api.favorites.symbioweb.com/api/configuration 
 4. Enter the configuration url in the settings menu and press OK: 
 ![system-type-settings](media/favorite-service-system-type.png)
 5. Activate the external system type
