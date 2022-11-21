@@ -240,7 +240,7 @@ The administrator can use this configuiration type to extend Validation Rules wi
 
 2. In Detail Content, the administrator can select the relations that have to be mandatory maintained. Multiple selections are possible.
 
- ![screen](../media/Picture2.png)
+ ![screen](../media/MakeRelationsMandatory_Settings.png)
 
 After applying the changes, the Validation Rule “All mandatory information have to be maintained” will consider also the mandatory relations. 
 
