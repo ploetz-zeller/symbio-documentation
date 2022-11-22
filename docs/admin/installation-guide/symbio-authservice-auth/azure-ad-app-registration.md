@@ -1,4 +1,4 @@
-# Configuring Azure AD for use with the Symbio AuthService
+# Configuring Azure App Registration for use with the Symbio AuthService
 
 Please follow the instructions in [Configuring Azure AD for use with Symbio Apps](../symbio-apps-auth/azure-ad.md) but adjust the _Redirect URI_ as follows:
 
