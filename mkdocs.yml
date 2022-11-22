@@ -1,6 +1,6 @@
 site_name: Symbio Documentation
 repo_url: https://github.com/ploetz-zeller/symbio-documentation
-copyright: Ploetz + Zeller GmbH
+copyright: Symbioworld GmbH
 
 theme:
   name: 'material'
@@ -49,7 +49,7 @@ nav:
         - Setting Up OAuth: admin/installation-guide/oauth-configuration/setting-up-oauth.md
     - Services:
       - Introduction: admin/services/introduction/introduction.md
-      - Atlassian Connector:
+      - Atlassian Connector (Obsolete):
         - Administration guide: admin/services/atlassian-connector/administration_guide.md
         - Using Symbio to Atlassian: admin/services/atlassian-connector/using_symbioatlassian.md
         - Manual Jira Configuration: admin/services/atlassian-connector/manual_jira_configuration.md
@@ -64,8 +64,6 @@ nav:
       - Favorite Service:
         - Configuration: admin/services/favorite-service/installation-manual.md
       - Visio Importer:
-        - Generate Upload Token: admin/services/visio-importer/setup.md
-        - Login and Registration: admin/services/visio-importer/login.md
         - Using the Visio Importer: admin/services/visio-importer/usage.md
       - Intrafind Connector:
         - Introduction: admin/services/intrafind-connector/index.md
@@ -73,6 +71,12 @@ nav:
         - Configuration: admin/services/intrafind-connector/configuration.md
         - Console Application: admin/services/intrafind-connector/consoleapplication.md
         - About Logging: admin/services/intrafind-connector/logging.md
+      - Jira Connector:
+        - Installation Preparation: admin/services/jira-connector/1-installation-preparation.md
+        - Installation Symbio Connector (Jira): admin/services/jira-connector/2-installation-jira.md
+        - Configuration Symbio Connector (Jira): admin/services/jira-connector/3-configuration-symbio-connector-jira.md
+        - Configuration Symbio Connector: admin/services/jira-connector/4-configuraiton-symbio-connector.md
+        - Configuration Jira Project: admin/services/jira-connector/5-configuration-jira-project.md
       - Process Portal Exporter:
         - Installation manual: admin/services/process-portal-exporter/install-service-manual.md
         - Configuration: admin/services/process-portal-exporter/configuration.md
@@ -185,6 +189,7 @@ nav:
         - "Extended filter bar: individual scope filter selection": admin/features/general-design/extension-of-statusbar/extension-of-statusbar.md
         - "Method: show technical IDs": admin/features/general-design/technical-id/technical-id.md
         - "Method: Documents as a list (instead of architecture)": admin/features/general-design/list-view-documents/list-view-documents.md
+        - "Method: Inputs/Outputs as a list (instead of architecture)": admin/features/general-design/list-view-inputsoutputs/list-view-inputsoutputs.md
         - Extensions for process analysis on projects: admin/features/general-design/extension-process-analysis/extension-process-analysis.md
         - Additional column 'Reason for revision' in 'News' Lists: admin/features/general-design/additional-column-reason-for-revision/additional-column-reason-for-revision.md
       - Process design:
