@@ -1,4 +1,4 @@
-# Configuring Azure Enterprise Application (Single Sign-On) for use with the Symbio AuthService
+# Configuring Azure Enterprise Application (Single Sign-On) or external IdP for use with the Symbio AuthService
 
 Before you start align with the Symbioworld Team to provide you with the correct Assertion Consumer Service URL.
 
@@ -6,16 +6,16 @@ Please follow the instructions in [Worked Example: Symbio & Azure AD](../5_examp
 
 `https://auth.symbio.cloud/<customer>-saml/Acs`
 
-Example: https://auth.symbio.cloud/symbio-saml/Acs
+Example: https://auth.symbio.cloud/symbioworld-saml/Acs
 
 ## Claims
 
-The following claims are required and must be sent by the Azure Enterprise Application.
+The following claims are required and must be sent by the Azure Enterprise Application or external IdP.
 
 - email (contains the email address of the user)
 - given_name (contains the given, e.g. first name of the user)
 - family_name (contains the family, e.g. last name of the user)
 
-If the Azure Enterprise Application uses different claim types, make sure to provide a set of claim types (names) that contain the required data. Deviating claim types can then be mapped to the corresponding required claim types in the Symbio AuthService.
+If the Azure Enterprise Application or external IdP uses different claim types, make sure to provide a set of claim types (names) that contain the required data. Deviating claim types can then be mapped to the corresponding required claim types in the Symbio AuthService.
 
 After the Setup is done send the Metadata Url or File to [Symbioworld Support](support@symbioworld.com) for further configuration on their side. 
