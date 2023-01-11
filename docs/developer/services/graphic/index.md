@@ -2,7 +2,10 @@
 
 ## Introduction
 
-The *Symbio-Graphic-Service* combines a layouter and a renderer for the generation of BPMN and process flow graphics.
+* The *Symbio-Graphic-Service* combines a layouter and a renderer for the generation of BPMN and process flow graphics.
+* The *Symbio-Graphic-Service* is intended to be callable from *Symbio.Manager* as well as from any other application, that supports HTTP requests.
+* In order to support a wide range of requestors, the *Symbio-Graphic-Service* is designed to be as open as possible.
+* The *Symbio-Graphic-Service* expects the data to layout (and render) as a JSON (within the request body) and the functionality of the *Symbio-Graphic-Service* can be controlled by the ```configurations``` section at the top of the request JSON (see chapter **The request JSON** below).
 
 ## Endpoints
 Currently the *Symbio-Graphic-Service* provides two endpoints:
@@ -19,7 +22,7 @@ Currently the *Symbio-Graphic-Service* provides two endpoints:
 
 ### CalculateLayout
 * **POST** on <code>&lt;base-url&gt;:&lt;port&gt;/api/CalculateLayout</code> with a body, containing a request JSON (see chapter **The request JSON** below).
-* Sample result on success: *Status:* 200 (OK); *Body:* calculation type 'cxn' and calculation type 'esvg' (embedded enriched SVG)
+* Sample result on success: *Status:* 200 (OK); *Body:* ```calculation``` type 'cxn' and ```result``` type 'esvg' (embedded enriched SVG)
   ```html
   <!-- Bounding: Width="410" Height="410" -->
   <!-- Created: By="Symbio.Service.Graphic.Managed" On="09.01.2022 05:13:49" -->
@@ -44,23 +47,33 @@ The service expects the request as a JSON file and delivers the graphic as an HT
 
 ## The request JSON
 
-The request to calculate a layout and render a graphic is provided as a JSON file.
+* The request to calculate a layout (and render a graphic) is provided as a JSON (within the request body).
+* The currently suported ```calculation``` types are ```cxn``` (route for a single connection path from a source node to a target node) and ```flow``` (directed graph with any number of nodes and edges).
+* The currently suported ```result``` types are ```json``` (JSON, the recommended result type), ```ejson``` (JSON, enhanced with additional information), ```esvg``` (embedded SVG, enhanced with additional information), ```svg``` (embedded SVG, without additional information), ```sesvg``` (stand-alone SVG, enhanced with additional information) and ```ssvg``` (stand-alone SVG, without additional information).
 
 For details see [Request JSON](request_json.md).
 
-## The result graphic
+## The result
 
-The rendered graphic, that is returned as a result of the service request, may contain several BPMN elements, that can be of:
+According to the requested ```calculation``` type (```cxn``` or ```flow```) the result can be
+* the route for a single connection path or
+* the layout (and rendering) of a directed graph
 
-- **Activities** are used to define an atomic or non-atomic piece of *work* within a *business process*. The graphical representation of **Activities** can be bealized by:
-  - **Sub-Processes** and **Call Activities** are non-atomic pieces of *work* within a *business process*.
-  - **Tasks** are atomic pieces of *work* within a *business process*.
-- **Events** represent something that *happens* during the course of a *business process*. They affect the flow of the *business process* and usually have a *cause* or an *impact* and in general require or allow for a reaction.
-- **Gateways** provide the graphical representation of execution semantics, used to control how pieces of *work* within a *business process* interact as they converge and diverge within a *business process*.
-- **Pools** provide the graphical representation of *participants* (either a *partner entity* like a company, or a *partner role* like a buyer, a seller, or a manufacturer) in a *collaboration*. A **Pool** *may* or *may not* reference a *business process* - it can also serve as a *black box*.
-- **Lanes** are sub-partitions within a *business process* (often within a **Pool**) and will extend the entire length of the *business process*. **Lanes** are used to organize and categorize **Activities** within a Pool. The meaning of the **Lanes** is up to the modeler.
+### The resulting connection path
+The connection path represents a single route from a source node to a target node. This route hast at least a start point (2D coordinates) and an end point (2D coordinates) and can have up to four additional interpolation points (each with 2D coordinates). The sections of the path are always orthogonal (either exact vertical or exact horizontal).
 
-## BPMN sub-processes and call activities
+### The result graph
+The layed out (and rendered) graphic (directed graph), that is returned as a result of the service request, may contain several nodes (similar/comparable to BPMN elements), that can be of type:
+
+- **Activity**: It is used to define an atomic or non-atomic piece of *work* within a *business process*. The graphical representation of an **Activity** can be bealized by:
+  - **Sub-Process** and **Call Activity** as non-atomic pieces of *work* within a *business process*.
+  - **Task** as atomic piece of *work* within a *business process*.
+- **Event**: It represents something that *happens* during the course of a *business process*. It affects the flow of the *business process* and usually has a *cause* or an *impact* and in general requires or allows for a reaction.
+- **Gateway**: It provides the graphical representation of execution semantics, used to control how pieces of *work* within a *business process* interact as they converge and diverge within a *business process*.
+- **Pool**: It provides the graphical representation of *participants* (either a *partner entity* like a company, or a *partner role* like a buyer, a seller, or a manufacturer) in a *collaboration*. A **Pool** *may* or *may not* reference a *business process* - it can also serve as a *black box*.
+- **Lane**: It is a sub-partition within a *business process* (often within a **Pool**) and will extend the entire length of the *business process*. A **Lane** is used to organize and categorize **Activities** within a Pool. The meaning of the **Lane** is up to the modeler.
+
+## BPMN sub-process and call activity
 
 BPMN sub-processes can accure with different types.
 
