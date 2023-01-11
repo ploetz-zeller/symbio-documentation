@@ -1,12 +1,230 @@
 # Request JSON
 The request JSON is used for the **CalculateLayout** endpoint of the *Symbio-Graphic-Service*. Layout calculation can be requested for
-* the calculation type <code>cxn</code> (connection) and
-* the calculation type <code>flow</code> (process flow).
+* the ```calculation``` type ```cxn``` (connection; route for a single connection path from a source node to a target node) and
+* the ```calculation``` type ```flow``` (process flow; directed graph with any number of nodes and edges).
 
-**Disclaimer:** The following comparison between the *request JSON* and *BPMN* is made not because the two formats perform a similar task, but because they convey similar content: **Process flows**.<br/><br/>
-While the *request JSON* contains only the necessary information for automatic layout calculation and rendering, the BPMN also already contains all information for rendering - like position and size of shapes or the interpolation points of edges.
+From now on the description refers to the ```calculation``` type ```flow```.
+The currently suported ```result``` types for the ```calculation``` type ```flow``` are ```json``` (JSON, the recommended result type), ```ejson``` (JSON, enhanced with additional information), ```esvg``` (embedded SVG, enhanced with additional information), ```svg``` (embedded SVG, without additional information), ```sesvg``` (stand-alone SVG, enhanced with additional information) and ```ssvg``` (stand-alone SVG, without additional information)
 
-**BPMN sample for position and size of a shape**
+## General structure
+The request JSON (for ```calculation``` type ```flow```) must provide all necessary information to calculate a layout (and optionally render a graphic, in the case the ```result``` type is not ```json``` or ```ejson```) of a process flow (directed graph with any number of nodes and edges).
+
+**Disclaimer:** The following comparison between the *Request JSON* and *BPMN* is made not because the two formats perform a similar task, but because they convey similar content: **Process flows**.
+
+<table>
+<tr><th>The file structure</th><th>Compared to BPMN</th><th>Comments</th></tr>
+<tr>
+<td>
+
+```
+{
+  "result": "json",
+  "calculation": "flow",
+  "configurations": [
+    ...
+  ],
+  "context": {
+    ...
+  },
+  "content": {
+    "nodes": [
+      {
+        ...
+      },
+      ...
+    ],
+    "edges": [
+      {
+        ...
+      },
+      ...
+    ]
+  },
+
+  "pools": [
+    ...
+  ],
+  "elements": [
+    ...
+  ]
+}
+```
+
+</td>
+<td>
+
+```
+<definitions>
+
+
+
+
+
+  <bpmndi:BPMNDiagram>
+    ...
+    ...
+    <bpmndi:BPMNPlane>
+
+      <bpmndi:BPMNShape>
+      ...
+      </bpmndi:BPMNShape>
+      ...
+
+
+      <bpmndi:BPMNEdge>
+      ...
+      </bpmndi:BPMNEdge>
+      ...
+
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+  <collaboration>
+      ...
+  </collaboration>
+  <process>
+      ...
+  </process>
+</definitions>
+```
+
+</td>
+<td>
+<b>Diagram meta-information</b><br/>
+The JSON format has to support layout and rendering requests for multiple purposes (<code>cxn</code> and <code>flow</code>) as well as multiple configurations.
+<br/>
+Thus it provides some meta-information like the requested <b><i>"result"</i></b> and the type of <b><i>"calculation"</i></b> as well as details regarding layout and rendering <b><i>"configurations"</i></b>.<br/><br/>
+<b><u>Diagram content - Commonalities</u></b><br/>
+Besides that, the Request JSON and BPMN hold directly comparable data:<br/>
+- JSON <b><i>"nodes"</i></b> / <b>"<i>edges"</i></b> and the BPMN <b><i>&lt;bpmndi:BPMNPlain&gt;</i></b> contain the collection of node-shapes and edge-shapes.<br/>
+- JSON <b><i>"pools"</i></b> and the BPMN <b><i>&lt;collaboration&gt;</i></b> contain the collection of pools.<br/>
+- JSON <b><i>"elements"</i></b> and the BPMN <b><i>&lt;process&gt;</i></b> contain the collection of node-definitions and edge-definitions.<br/><br/>
+<b><u>Diagram content - Differences</u></b><br/>
+- While JSON provides diagram information as sub-nodes (e.g.: <i>"id": "1",</i>), BPMN provides diagram information as attributes (e.g.: <i>&lt;bpmn:process id="1"&gt;</i>).<br/>
+- While JSON distinguishes the <b><i>"nodes"</i></b> collection and the <b>"<i>edges"</i></b> collection, BPMN doesn't.<br/>
+
+</td>
+</tr>
+</table>
+
+## The diagram meta-information part of the Request JSON
+### The requested result type
+The currently suported ```result``` types are ```json``` (JSON, the recommended result type), ```ejson``` (JSON, enhanced with additional information), ```esvg``` (embedded SVG, enhanced with additional information), ```svg``` (embedded SVG, without additional information), ```sesvg``` (stand-alone SVG, enhanced with additional information) and ```ssvg``` (stand-alone SVG, without additional information).
+### The requested calculation type
+The currently suported ```calculation``` types are ```cxn``` (route for a single connection path from a source node to a target node) and ```flow``` (directed graph with any number of nodes and edges).
+### The configurations
+The ```configurations``` collection can currently contain one or six configuration(s).<br/>
+One configuration is provided, of only one of the following layouts hast to be calculated:
+- The ```layoutType``` set to ```flow``` (layout without pools / lanes) and ```vertical``` set to ```true```.
+- The ```layoutType``` set to ```flow``` (layout without pools / lanes) and ```vertical``` set to ```false```.
+- The ```layoutType``` set to ```swimlane-roles``` (layout with pools / lanes, lanes are based on roles or organizational units) and ```vertical``` set to ```true```.
+- The ```layoutType``` set to ```swimlane-roles``` (wlayout ith pools / lanes, lanes are based on roles or organizational units) and ```vertical``` set to ```false```.
+- The ```layoutType``` set to ```swimlane-apps``` (layout with pools / lanes, lanes are based on application systems and fall back to roles or organizational units) and ```vertical``` set to ```true```.
+- The ```layoutType``` set to ```swimlane-apps``` (layout with pools / lanes, lanes are based on application systems and fall back to roles or organizational units) and ```vertical``` set to ```false```.
+
+Six configurations are provided, of all of the above listed layouts have to be calculated.
+
+## The context of the Request JSON
+...
+
+## The content part of the Request JSON (containing the nodes and edges collections)
+...
+(see chapter **Understanding the nodes and edges collections of the request JSON by examples** below).
+
+## The pools part of the Request JSON
+...
+
+## The elements part of the Request JSON
+...
+
+## Understanding the nodes and edges collections of the request JSON by examples
+The biggest part of the necessary information is the description of the nodes and edges. In order to understand the nodes and edges within the **Request JSON**, comparing their data to **BPMN** and the expected outcome **Result JSON** could be helpful.
+
+**Disclaimer:** The following comparison between the *Request JSON*, *BPMN* and the *Result JSON* is made not because the two formats perform a similar task, but because they convey similar content: **Process flows**.<br/><br/>While the *Request JSON* contains only the necessary information for automatic layout calculation and rendering, the BPMN also already contains all information for rendering (like position and size of shapes or the interpolation points of edges), which comes closer to the *Result JSON*.
+
+### Sample 1 (a node)
+
+**Request JSON sample of a shape and the underlaying element - no position and no size**
+```
+{
+  "shapeId": "fd4e1872-8742-4bfa-9c4f-b271ec81c73f",
+  "elementId": "ab99ac91-be7d-43c4-955d-04324360fbdf",
+  "properties": {
+    "type": "evStart"
+  },
+  "laneRelevantRelated": [
+    {
+      "elementId": "c61aaf77-5d75-4ff6-a567-d9662715c46d",
+      "layoutTypes": [
+        "swimlane-roles",
+        "swimlane-apps"
+      ]
+    }
+  ]
+}
+```
+```
+{
+  "id": "ab99ac91-be7d-43c4-955d-04324360fbdf",
+  "properties": {
+    "kind": "object",
+    "type": "evStart",
+    "typeDisplayName": "Start"
+  },
+  "attributes": [
+    {
+      "key": "description",
+      "type": "singleLineText",
+      "values": [
+        {
+          "lcid": 1031,
+          "value": "Goods arrived"
+        }
+      ]
+    },
+    {
+      "key": "evStartTrigger",
+      "type": "selectionValue",
+      "values": [
+        {
+          "lcid": 127,
+          "value": "evTriggerNoneIntSub"
+        }
+      ]
+    },
+    {
+      "key": "evType",
+      "type": "selectionValue",
+      "values": [
+        {
+          "lcid": 127,
+          "value": "evTypeMessage"
+        }
+      ]
+    },
+    {
+      "key": "name",
+      "type": "multiLineText",
+      "values": [
+        {
+          "lcid": 1031,
+          "value": "Start-01"
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "key": "executiveRole",
+      "shortKey": "R",
+      "versionIds": [
+        "9700e981-1c36-4536-a05b-592aa2fd6219"
+      ]
+    }
+  ]
+},
+```
+
+**BPMN sample of a shape - including position and size**
 ```
 <bpmndi:BPMNShape id="IntermediateThrowEvent_0iyvpzm_di" bpmnElement="IntermediateThrowEvent_0iyvpzm">
   <dc:Bounds x="458" y="313" width="36" height="36" />
@@ -15,6 +233,84 @@ While the *request JSON* contains only the necessary information for automatic l
   </bpmndi:BPMNLabel>
 </bpmndi:BPMNShape>
 ```
+
+**BPMN sample of a shape - including position and size (and the rendering objects: rect, path and text)**
+```
+<g>
+  <!-- evStart(evStart) /ID:fd4e1872-8742-4bfa-9c4f-b271ec81c73f /ItemID:ab99ac91-be7d-43c4-955d-04324360fbdf -->
+  <!-- evStart /W:160 /H:160 -->
+  <ellipse cx="124.7244" cy="63.49606" rx="22.677164" ry="22.677164"
+    style="shape-rendering:auto; stroke:#808080; stroke-width:1px; stroke-linecap:round;
+    stroke-dasharray:; stroke-opacity:1; fill:#FFFFFF; fill-opacity:1;"></ellipse>
+  <!-- ##ATS##_evTypeShapeCatchMessage /W:80 /H:80 -->
+  <rect x="113.5" y="55.5" rx="2.2677164" ry="2.2677164" width="22" height="16"
+    style="stroke:#000000; stroke-width:1px; stroke-linecap:round; stroke-dasharray:;
+    stroke-opacity:1; fill:#FFFFFF; fill-opacity:1;"></rect>
+  <path d="M113.224396,57.66535L122.295265,65.602356C124.56298,66.73621 124.56298,66.73621 
+    126.830696,65.602356L135.90157,57.66535" style="shape-rendering:auto; stroke:#000000;
+    stroke-width:1px; stroke-linecap:round; stroke-dasharray:; stroke-opacity:1;
+    fill:transparent; fill-opacity:0.0;"></path>
+  <text class="" x="124.5" y="99.92084" text-anchor="middle"
+    style="fill:#444444;font-family:Segoe UI;font-weight:400;font-style:normal;font-size:9pt;text-decoration:none;">
+    <tspan class="" x="124.5" dy="0">Goods</tspan><tspan class="" x="124.5" dy="15">arrived</tspan></text>
+</g>
+```
+
+**Result JSON of a shape - including position and size (and the attribute display position and size)**
+```
+{
+  "id": "ab99ac91-be7d-43c4-955d-04324360fbdf",
+  "properties": {
+    "column": 0.0,
+    "evType": "evTypeCatchMessage",
+    "height": 50,
+    "kind": "shape",
+    "row": 0.0,
+    "type": "evStart",
+    "typeDisplayName": "Start",
+    "width": 50,
+    "x": 112.5,
+    "y": 45.0
+  },
+  "attributes": [
+    {
+      "key": "evStartTrigger",
+      "values": [
+        { "lcid": 127, "value": "evTriggerStd" }
+      ]
+    },
+    {
+      "key": "name",
+      "values": [
+        { "lcid": 1033, "value": "Goods arrived" }
+      ]
+    }
+  ],
+  "attributeDisplays": [
+    {
+      "key": "name",
+      "width": 70.0,
+      "height": 34.0625,
+      "xOffset": -10.0,
+      "yOffset": 60.0,
+      "rotation": 0.0,
+      "horizontalAlignment": "center",
+      "verticalAlignment": "top"
+    }
+  ],
+  "related": [
+    {
+      "key": "executiveRole",
+      "shortKey": "R",
+      "ids": [
+        "4c71d84e-2084-4dc1-bda4-dd2ff664aba4"
+      ]
+    }
+  ]
+}
+```
+
+### Sample 2 (an edge)
 
 **BPMN sample for interpolation points of an edge**
 ```
@@ -26,49 +322,6 @@ While the *request JSON* contains only the necessary information for automatic l
   </bpmndi:BPMNLabel>
 </bpmndi:BPMNEdge>
 ```
-
-## General structure
-<table>
-<tr><th>The file structure</th><th>Compared to BPMN</th><th>Comments</th></tr>
-<tr>
-<td>
-
-```
-{
-    "result": "sesvg",
-    "calculation": "flow",
-    "configurations": [{
-	...
-    }],
-    "elements": [{
-	...
-    }]
-}
-```
-
-</td>
-<td>
-
-```
-
-	
-
-
-
-<bpmn:definitions> 
-    ...
-</bpmn:definitions>
-```
-
-</td>
-<td>
-The JSON format has to support layout and rendering requests for multiple purposes (<code>cxn</code> and <code>flow</code>) as well as multiple configurations.
-<br/>
-Thus it provides some meta-information like the requested  <b>"result"</b>, the type of  <b>"calculation"</b> to apply and details regarding layout and rendering configurations <b>"configurations"</b>.<br/>
-Besides that, the JSON holds the data in the <b>"elements"</b> property just like the BPMN does it in the <b>&lt;bpmn:definitions/&gt;</b> tag.
-</td>
-</tr>
-</table>
 
 ## The <code>result</code> property
 The supported *result* types are:
