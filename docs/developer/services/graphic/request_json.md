@@ -1,34 +1,36 @@
 # Request JSON
-The request JSON is used for the **CalculateLayout** endpoint of the *Symbio-Graphic-Service*. Layout calculation can be requested for
+The **Request JSON** is used for the **CalculateLayout** endpoint of the *Symbio-Graphic-Service*. Layout calculation can be requested for
 * the ```calculation``` type ```cxn``` (connection; route for a single connection path from a source node to a target node) and
 * the ```calculation``` type ```flow``` (process flow; directed graph with any number of nodes and edges).
 
 From now on the description refers to the ```calculation``` type ```flow```.<br/>
 
 ## Table of contents
-* [General structure of the Request JSON](#gen-struct)
-* [The diagram meta-information part of the Request JSON](#dgm-meta)
-  * [How it typically looks like](#dgm-meta-typic)
-  * [The requested <code>result</code> type](#dgm-meta-result)
-  * [The requested <code>calculation</code> type](#dgm-meta-calc)
-  * [The <code>configurations</code> ](#dgm-meta-conf)
-* [The context part of the Request JSON (diagram as a whole)](#context-part)
-  * [How it typically looks like](#context-part-typic)
-  * [Context informations](#context-part-info)
-* [The <code>content</code> part of the Request JSON (containing the nodes and edges collections)](#content-part)
-  * [How it typically looks like](#content-part-typic)
-  * [The <code>nodes</code> collection](#content-part-nodes)
+* [1.0 - General structure of the Request JSON](#gen-struct)
+* [2.0 - The diagram meta-information part of the Request JSON](#dgm-meta)
+  * [2.1 - How it typically looks like](#dgm-meta-typic)
+  * [2.2 - The requested <code>result</code> type](#dgm-meta-result)
+  * [2.3 - The requested <code>calculation</code> type](#dgm-meta-calc)
+  * [2.4 - The <code>configurations</code> ](#dgm-meta-conf)
+* [3.0 - The context part of the Request JSON (diagram as a whole)](#context-part)
+  * [3.1 - How it typically looks like](#context-part-typic)
+  * [3.2 - Context informations](#context-part-info)
+* [4.0 - The <code>content</code> part of the Request JSON (containing the nodes and edges collections)](#content-part)
+  * [4.1 - How it typically looks like](#content-part-typic)
+  * [4.2 - The <code>nodes</code> collection](#content-part-nodes)
     * [The <code>laneRelevantRelated</code> collection](#content-part-nodes-lane-relevance)
-  * [The <code>edges</code> collection](#content-part-edges)
-* [The <code>pools</code> part of the Request JSON ](#pools-part)
-  * [How it typically looks like](#pools-part-typic) --- REWORK STOPED HERE
-* [The <code>elements</code> part of the Request JSON](#elements-part)
+  * [4.3 - The <code>edges</code> collection](#content-part-edges)
+* [5.0 - The <code>pools</code> part of the Request JSON ](#pools-part)
+  * [5.1 - How it typically looks like](#pools-part-typic)
+  * [5.2 - The <code>pool</code> tuning](#pools-part-tune)
+* [6.0 - The <code>elements</code> part of the Request JSON](#elements-part)
+  * [6.1 - How it typically looks like](#elements-part-typic) --- REWORK STOPED HERE
 
 * [Understanding the correlation of <code>nodes</code> / <code>edges</code>  and <code>elements</code> by examples](#correlation)
   * [Sample 1 (a node/shape and the underlaying element vs. the BPMN equivalent)](#correlation-sample1)
 
-## <a name="gen-struct">General structure of the Request JSON</a>
-The request JSON (for ```calculation``` type ```flow```) must provide all necessary information to calculate a layout (and optionally render a graphic, in the case the ```result``` type is ```esvg```, ```svg```, ```sesvg``` or ```ssvg```) of a process flow (directed graph with any number of nodes and edges).
+## <a name="gen-struct">1. - General structure of the Request JSON</a>
+The **Request JSON** (for ```calculation``` type ```flow```) must provide all necessary information to calculate a layout (and optionally render a graphic, in the case the ```result``` type is ```esvg```, ```svg```, ```sesvg``` or ```ssvg```) of a process flow (directed graph with any number of nodes and edges).
 
 **Disclaimer:** The following comparison between the *Request JSON* and *BPMN* is made not because the two formats perform a similar task, but because they convey similar content: **Process flows**.
 
@@ -175,8 +177,8 @@ The Request JSON and BPMN hold a collection elements. Each node referres to an e
 </tr>
 </table>
 
-## <a name="dgm-meta">The diagram meta-information part of the Request JSON</a>
-### <a name="dgm-meta-typic">How it typically looks like</a>
+## <a name="dgm-meta">2.0 - The diagram meta-information part of the Request JSON</a>
+### <a name="dgm-meta-typic">2.1 - How it typically looks like</a>
 <table>
 <tr><th>Example with request for one layout</th><th>Example with request for six layouts</th><th>Comments</th></tr>
 <tr>
@@ -279,7 +281,7 @@ In addition to that the <b><i>"lcid"</i></b> defines the language, that is used 
 </tr>
 </table>
 
-### <a name="dgm-meta-result">The requested <code>result</code> type</a>
+### <a name="dgm-meta-result">2.2 - The requested <code>result</code> type</a>
 The currently suported ```result``` types for the ```calculation``` type ```flow``` are
 * ```json``` (JSON, the recommended result type) - used in case the resulting JSON should be parsed to post-process the calculation result and log messages are not desired,
 * ```ejson``` (JSON, enhanced with additional information) - used in case the resulting JSON should be parsed to post-process the calculation result and log messages are desired,
@@ -288,7 +290,7 @@ The currently suported ```result``` types for the ```calculation``` type ```flow
 * ```sesvg``` (stand-alone SVG, enhanced with additional information) - used in case the resulting SVG has to be embedded into a custom HTML page and log messages are desired and
 * ```ssvg``` (stand-alone SVG, without additional information) - used in case the resulting SVG has to be embedded into a custom HTML page and log messages are not desired
 
-### <a name="dgm-meta-calc">The requested <code>calculation</code> type</a>
+### <a name="dgm-meta-calc">2.3 - The requested <code>calculation</code> type</a>
 The currently suported ```calculation``` types are
 - ```cxn``` (route for a single connection path from a source node to a target node)- used to calculate one single shape-to-shape connection path and
 - ```flow``` (directed graph with any number of nodes and edges)- used to calculate a directed graph, that represents a process flow.
@@ -296,7 +298,7 @@ The currently suported ```calculation``` types are
 The ```calculation``` type <code>cxn</code> supports all ```result``` types.<br/>
 The ```calculation``` type <code>flow</code> supports the ```result``` types 1. ... 4. only.
 
-### <a name="dgm-meta-conf">The <code>configurations</code></a>
+### <a name="dgm-meta-conf">2.4 - The <code>configurations</code></a>
 The ```configurations``` collection can currently contain one or six configuration(s).<br/>
 One configuration is provided, of only one of the following layouts hast to be calculated:
 - The ```layoutType``` set to ```flow``` (layout without pools / lanes) and ```vertical``` set to ```true```.
@@ -308,10 +310,10 @@ One configuration is provided, of only one of the following layouts hast to be c
 
 All six configurations (three ```layoutType``` values multiplied with two ```vertical``` direction values) are provided, if all of the above listed layouts have to be calculated.
 
-## <a name="context-part">The context part of the Request JSON (diagram as a whole)</a>
+## <a name="context-part">3.0 - The context part of the Request JSON (diagram as a whole)</a>
 The ```context``` represents the diagram (process) to layout as a whole. BPMN contains this data within the ```<bpmndi:BPMNDiagram>``` tag.
 
-### <a name="context-part-typic">How it typically looks like</a>
+### <a name="context-part-typic">3.1 - How it typically looks like</a>
 ```
   "context": {
     "id": "3783f2a0-99c0-4120-a639-4acfd59a8021",
@@ -375,16 +377,16 @@ The ```context``` represents the diagram (process) to layout as a whole. BPMN co
   }
 ```
 
-### <a name="context-part-info">Context informations</a>
+### <a name="context-part-info">3.2 - Context informations</a>
 Typical information provided for the diagran (process) are:
 * The ```id``` contains the unique identity of the diagram, it is provided for informational purposes only and is passed on to the **Result JSON**.
 * The ```properties``` contains a collection of optional information.
 * The ```attributes``` contains a collection of information, that are used to be displayed when the diagram is rendered. Therefore these informations are passed on to the **Result JSON**. Typically the text attributes are provided in multiple languages.
 
-## <a name="content-part">The <code>content</code> part of the Request JSON (containing the nodes and edges collections)</a>
+## <a name="content-part">4.0 - The <code>content</code> part of the Request JSON (containing the nodes and edges collections)</a>
 The ```content``` contains the nodes and edges (in the meaning of nodes and edges within a directed graph) of the diagram (process). Typically the nodes and edges are displayed as soon als the layout is rendered. Therefore the nodes require the calculation of their positions and the edges require the calculation of their routes in order to be written to the **Result JSON** including the positions and routes.
 
-### <a name="content-part-typic">How it typically looks like</a>
+### <a name="content-part-typic">4.1 - How it typically looks like</a>
 ```
   "content": {
     "nodes": [
@@ -425,7 +427,7 @@ The ```content``` contains the nodes and edges (in the meaning of nodes and edge
 ```
 (see chapter **Understanding the nodes and edges collections of the request JSON by examples** below).
 
-### <a name="content-part-nodes">The <code>nodes</code> collection</a>
+### <a name="content-part-nodes">4.2 - The <code>nodes</code> collection</a>
 Nodes represent the shapes, comparable to BPMN ```<startEvent>``` or ```<task>```.
 ```
       {
@@ -462,7 +464,7 @@ Since the **Request JSON** has to support multiple layouts at once, it is requir
 **Putting it all together**
 For a sample, that shows the correlation between ```node``` and ```element``` in the Request JSON and in the Result JSON and also in comparison to BPMN see chapter [Understanding the correlation of <code>nodes</code> / <code>edges</code>  and <code>elements</code> by examples](#correlation) and section [Sample 1 (a node/shape and the underlaying element vs. the BPMN equivalent)](#correlation-sample1).
 
-### <a name="content-part-edges">The <code>edges</code> collection</a>
+### <a name="content-part-edges">4.3 - The <code>edges</code> collection</a>
 Edges represent the connection between shapes, comparable to BPMN ```<sequenceFlow>```.
 ```
     {
@@ -484,7 +486,7 @@ Typical information provided for an edge are:
 * The ```elementId``` contains the unique identity of the element, the edge is based on, it is passed on to the **Result JSON**.
 * The ```properties``` contains a collection of information, which are processed by the layouter. Every edge must contain a ```source``` ```shapeId``` and a ```target``` ```shapeId``` in order to connect two nodes.
 
-## <a name="pools-part">The <code>pools</code> part of the Request JSON</a>
+## <a name="pools-part">5.0 - The <code>pools</code> part of the Request JSON</a>
 Pools can be automatically recognized from the nodes collection.
 
 But either if empty pools are to be added or if pools shall be sorted in a distict order the automatic pool recognition is insufficient and the pools must be listed explicitly.
@@ -495,19 +497,20 @@ So we have these cases:
 * The diagram is to be laid out (and optionally rendered) with pools and an empty pool hast to be added: The <code>pools</code> part *must* contain the pools in the desired sort order.
 * The diagram is to be laid out (and optionally rendered) with pools and the order of the pool has to be distinct: The <code>pools</code> part *must* contain the pools in the desired sort order.
 
-### <a name="pools-part-typic">How it typically looks like</a>
-This is an exoample with three pools:
+### <a name="pools-part-typic">5.1 - How it typically looks like</a>
+This is an example with three pools:
 
 ```
 {
   "id": "d5d7ce44-c18f-4119-aa18-8f9e8aa69e85",
   "properties": {
-    "type": "pool",
-    "kind": "OBJ",
+    "type": "bpmnPool",
+    "kind": "object",
     "servity": "source"
   },
   "attributes": [{
     "key": "name",
+    "type": "multiLineText",
     "values": [
       { "lcid": 1033, "value": "Data source" }
     ]
@@ -516,11 +519,12 @@ This is an exoample with three pools:
 {
   "id": "03c092c9-b723-4a38-befd-f6f54aef42d6",
   "properties": {
-    "type": "pool",
-    "kind": "OBJ"
+    "type": "bpmnPool",
+    "kind": "object"
   },
   "attributes": [{
     "key": "name",
+    "type": "multiLineText",
     "values": [
       { "lcid": 1033, "value": "Processing" }
     ]
@@ -533,12 +537,13 @@ This is an exoample with three pools:
 {
   "id": "63cf252b-ed7f-458e-97c3-3b557786eb52",
   "properties": {
-    "type": "pool",
-    "kind": "OBJ",
+    "type": "bpmnPool",
+    "kind": "object",
     "servity": "target"
   },
   "attributes": [{
     "key": "name",
+    "type": "multiLineText",
     "values": [
       { "lcid": 1033, "value": "Data target" }
     ]
@@ -546,259 +551,29 @@ This is an exoample with three pools:
 },
 ...
 ```
-It must be designated that the **pools** are of **item** type "pool" (see <code>"type": "pool"</code>) and of **item** kind "OBJ" (see <code>"kind": "OBJ"</code>). One **pool** should be designated as the default **pool** so that **shapes** can be attached to the default **pool** without explicitly assigning a **pool** to **shapes**. This creates a fail-safe and makes the JSON code shorter. To identify the default **pool** you can:
-
-- Mark all **pools** except the default **pool** as "source" (see <code>"servity": "source"</code>) or "target" (see <code>"servity": "target"</code>). In case of multiple matches, the last one wins.
-- Mark the default **pool** (see <code>"servity": "default"</code>). In case of multiple matches, the last one wins.
-- In case no pool is designated as the default **pool**, the centre **pool** (count / 2) is used.
+The ```"pools"``` are of **item** type ```"bpmnPool"``` and of **item** kind ```"object"```.
 
 It is highly recommended to define names for all **pools** (see <code>"attributes"</code> with <code>"key": "name"</code>).
 
+### <a name="pools-part-tune">5.2 - The <code>pool</code> tuning</a>
+One **pool** should be designated as the default **pool** so that **shapes** can be automatically (fall- back) attached to the default **pool** without explicitly assigning a **pool** to **shapes**. This creates a fail-safe behavior and makes the JSON code shorter. To identify the default **pool** you can:
+
+- Mark all **pools** except the default **pool** as "source" (<code>"servity": "source"</code>) or "target" (<code>"servity": "target"</code>). In case of multiple matches, the last one wins.
+- Mark the default **pool** (<code>"servity": "default"</code>). In case of multiple matches, the last one wins.
+- In case no pool is designated as the default **pool**, the centre **pool** (count / 2) is used.
+
 In the case that a **pool** should contain multiple **lanes** and the **lanes** should be in a defined order, it is recommended to define the **lanes** as a list of children (see <code>"children"</code>). The **ids**, specified in the list of children, must refer to existing **items**, that are typically *roles*, *groups*, *application systems* or *application services*.
 
+Nevertheless, it is possible to provide the **pools** without any tuning at all and let the *Symbio-Graphic-Service* do all the tuning.
 
-## <a name="elements-part">The <code>elements</code> part of the Request JSON</a>
-...
-
-
-## The <code>elements</code> property
-
-The <code>elements</code> property contains all elements, that make up a diagram. This includes:
-
-- The **diagram** itself - as the container of all **shapes**.
-  - All structure building **shapes** (and their edges), that are to be displayed within the *diagram*.
-- The **items**, that are the basis to the **shapes**.
-
-The <code>elements</code> property is designed to hold an *array* of elements.
-
-It is recommended that the **diagram** is the first element within the array and the **items** are the elements following the **diagram** in the array. The **shapes** are included in the **diagram**.
+## <a name="elements-part">6.0 - The <code>elements</code> part of the Request JSON</a>
+### <a name="elements-part-typic">6.1 - How it typically looks like</a>
+The <code>elements</code> collection contains all elements, that
+* underlay a shape or
+* are connected to shapes as repository objects. 
 
 <table>
-<tr><th>The request JSON <i>elements</i> property</th><th>Compared to the BPMN <i>&lt;bpmn:definitions/&gt;</i> tag</th><th>Comments</th></tr>
-<tr>
-<td>
-
-```
-[{
-  "id":
-    "e8b07127331a4bae8135c5c8af381b12",
-  "properties": {
-    "type": "subProcess"
-  },
-  "attributes": [{
-    "key": "name",
-    "values": [
-        { "lcid": 1033,
-          "value": "Sub process" }
-    ]
-  }],
-  "content": [
-...
-```
-</td>
-<td>
-
-```
-<bpmndi:BPMNDiagram
- id="BPMNDiagram_1">
-  ...
-
-
-
-
-
-
-
-
-
-  <bpmndi:BPMNPlane
-   id="BPMNPlane_1"
-   bpmnElement=
-     "Collaboration_0q51prl">
-  ...
-```
-</td>
-<td>
-&#x25B6; The <b>first</b> bunch of data in the request JSON file should be the <b>diagram</b>. It can be recognized by the fact that its <b><i>"type"</i></b> is <b><i>"subProcess"</i></b>.<br/>
-The request JSON <b><i>diagram</i></b> typically contains also <b><i>attributes</i></b> while the BPMN <b><i>diagram</i></b> typically doesn't.<br/><br/>
-The BPMN <b><i>diagram</i></b> might contain a <b><i>lane</i></b> node as primary child node of the <b><i>diagram</i></b> node.<br/><br/><br/>
-</td>
-</tr>
-<tr>
-<td>
-
-```
-    {
-      "id":
-        "a6743dd3-8881-4d22-bfe7-0b7f703097c8",
-      "properties": {
-        "itemId":
-          "9bc5994a-f64f-431f-a631-1ff405f22643",
-        "type":
-          "evStart",
-        "poolId":
-          "b0907b38-e8e4-42f3-bc0a-d3e83ae2a1a7"
-      }
-    },
-    ...
-
-
-
-
-
-
-```
-
-</td>
-<td>
-
-```
-    <bpmndi:BPMNShape
-     id="StartEvent_0034tgy_di"
-       bpmnElement=
-         "StartEvent_0034tgy">
-      <dc:Bounds
-       x="178" y="635"
-       width="36" height="36" />
-      <bpmndi:BPMNLabel>
-        <dc:Bounds
-         x="196" y="675"
-         width="0" height="12"
-      />
-      </bpmndi:BPMNLabel>
-    </bpmndi:BPMNShape>
-    ...
-```
-</td>
-<td>
-Both, the request JSON <b><i>diagram</i></b> within the <b><i>content</i></b> property and the BPMN <b><i>diagram</i></b> within child nodes, contain the <b><i>shapes</i></b> and <b><i>edges</i></b> that are to be displayed.<br/><br/>
-&#x25B6; The <b>second</b> bunch of data in the request JSON file should be the sequence of <b><i>shapes</i></b> within the <b><i>content</i></b> property of the <b></i>diagram</i></b>. The list of <b><i>shapes</i></b> should contain all structure building <b><i>shapes</i></b> to display.<br/><br/>
-</td>
-</tr>
-<tr>
-<td>
-
-```
-    {
-      "id":
-        "a6743dd3-8881-4d22-bfe7-0b7f703097c8",
-      "properties": {
-        "itemId":
-          "9bc5994a-f64f-431f-a631-1ff405f22643",
-        "sourceId":
-          "a6743dd3-8881-4d22-bfe7-0b7f703097c8",
-        "targetId":
-          "75397704-e829-49b3-a40c-02379fb0b393",
-        "type":
-          "activ1",
-        "poolId":
-          "b0907b38-e8e4-42f3-bc0a-d3e83ae2a1a7"
-      }
-    },
-    ...
-
-
-
-
-
-
-
-
-    ],
-  },
-...
-```
-</td>
-<td>
-
-```
-    <bpmndi:BPMNEdge
-     id="SequenceFlow_0pern26_di"
-     bpmnElement=
-       "SequenceFlow_0pern26">
-      <di:waypoint
-       xsi:type="dc:Point"
-       x="214" y="653"
-      />
-      <di:waypoint
-       xsi:type="dc:Point"
-       x="245" y="653"
-      />
-      <bpmndi:BPMNLabel>
-        <dc:Bounds
-         x="229.5" y="632"
-         width="0" height="12" />
-      </bpmndi:BPMNLabel>
-    </bpmndi:BPMNEdge>
-    ...
-  </bpmndi:BPMNPlane>
-</bpmndi:BPMNDiagram>
-  ...
-```
-
-</td>
-<td>
-&#x25B6; The <b>third</b> bunch of data in the request JSON file should be the sequence of <b><i>edges</i></b> within the <b><i>content</i></b> property of the <b></i>diagram</i></b>. The list of <b><i>edges</i></b> should contain all <b><i>edges</i></b> to display. <br/><br/>
-The following applies to both <b><i>shapes</i></b> and <b><i>edges</i></b>:<br/>
-Both, the request JSON <b><i>shapes</i></b>/<b><i>edges</i></b> and the BPMN <b><i>shapes</i></b>/<b><i>edges</i></b>, provide an identifier <code>"id:"</code> (for request JSON) or <code>id</code> (for BPMN).
-While the <code>itemId:</code> (for request JSON) refers to the underlying item id, as <code>id:</code> for <code>bpmnElement</code>, the <code>sourceId:</code> and <code>targetId:</code> hold the <code>id</code> of the connected shapes, as they are stated in the <b><i>diagram</i></b>'s <b><i>content</i></b> section.<br/><br/>
-</td>
-</tr>
-<tr>
-<td>
-
-```
-  {
-    "id":
-      "b0907b38-e8e4-42f3-bc0a-d3e83ae2a1a7",
-    "properties": {
-      "type": "pool",
-      "kind": "OBJ",
-      "servity": "source"
-    },
-    "attributes": [{
-      "key": "name",
-      "values": [
-        { "lcid": 1033,
-          "value": "Data source" }
-      ]
-    }]
-  },
-  ...
-
-
-```
-</td>
-<td>
-
-```
-<bpmn:collaboration
- id="Collaboration_0q51prl">
-  <bpmn:participant
-   name="Data source"
-   id="Participant_0zj6ka6"
-   processRef="Process_0g17fhl"
-  />
-    ...
-</bpmn:collaboration>
-
-
-
-
-
-
-
-
-
-
-```
-
-</td>
-<td>
-&#x25B6; The <b>fourth</b> bunch of data in the request JSON file should be the sequence of <b><i>pools</i></b> within the <b><i>elements</i></b> property of the request JSON (the <b><i>diagram</i></b> property has been finished already at this point). The list of <b><i>pools</i></b> should contain all <b><i>pools</i></b> that are used to hold <b><i>lanes</i></b> or <b><i>shapes</i></b>.<br/><br/>
-Both, the request JSON <b><i>pools</i></b> and the BPMN <b><i>participants</i></b>, provide an identifier <code>"id:"</code> (for request JSON) or <code>id</code> (for BPMN) and a name <code>"key": "name"</code> (object within the <code>"attributes"</code> property for request JSON) or <code>name</code><br/> (for BPMN).
-</td>
-</tr>
+<tr><th>An <b>event<b> sample request JSON <i>elements</i></th><th>Compared to the BPMN <i>&lt;bpmn:definitions/&gt;</i> tag</th><th>Comments</th></tr>
 <tr>
 <td>
 
@@ -852,56 +627,59 @@ Both, the request JSON <b><i>pools</i></b> and the BPMN <b><i>participants</i></
 Both, the request JSON <b><i>items</i></b> and the BPMN <b><i>process</i></b> child nodes, provide an identifier <code>"id:"</code> (for request JSON) or <code>id</code> (for BPMN).<br/><br/><br/><br/><br/><br/>
 </td>
 </tr>
+
+</table>
+<table>
+<tr><th>A <b>task<b> sample request JSON <i>elements</i></th><th>Compared to the BPMN <i>&lt;bpmn:definitions/&gt;</i> tag</th><tr>
 <tr>
 <td>
 
 ```
-  {
-    "id":
-      "D4B07549771B2932CFEE51B63969502F",
-    "properties": {
-      "type": "activ1",
-      "kind": "CXN"
-    },
-    "attributes": [{
-      "key": "cxnRole",
-      "values": [
-        { "lcid": 1033,
-          "value": "01" }
-      ]
-    }]
-  },
+  
   ...
-]
+	
 ```
 
 </td>
 <td>
 
 ```
-  <bpmn:sequenceFlow
-   id="SequenceFlow_0pern26"
-   sourceRef="StartEvent_0034tgy"
-   targetRef="Task_1di8scb"
-  />
+
   ...
 
-
-
-
-
-
-
-
-
-
-</bpmn:process>
 ```
 
 </td>
 <td>
-&#x25B6; The <b>sixth</b> bunch of data in the request JSON file should be the sequence of connection <b><i>items</i></b>, referenced by <b><i>edges</i></b>.<br/><br/>
-Both, the request JSON connection <b><i>items</i></b> and the BPMN <b><i>process</i></b> child nodes, provide an identifier <code>"id:"</code> (for request JSON) or <code>id</code> (for BPMN).<br/><br/><br/><br/>
+&#x25B6; The ...
+</td>
+</tr>
+</table>
+
+</table>
+<table>
+<tr><th>A <b>role<b> sample request JSON <i>elements</i></th><th>Compared to the BPMN <i>&lt;bpmn:definitions/&gt;</i> tag</th><tr>
+<tr>
+<td>
+
+```
+  
+  ...
+	
+```
+
+</td>
+<td>
+
+```
+
+  ...
+
+```
+
+</td>
+<td>
+&#x25B6; The ...
 </td>
 </tr>
 </table>
