@@ -287,7 +287,7 @@ nav:
         - BPMN events: developer/services/graphic/elements_events.md
   - Power Users:
     - Data Warehouse:
-         - Overview: power-users/datawarehouse/overview.md
+         - Overview: power-users/datawarehouse/index.md
          - Prerequisites: power-users/datawarehouse/prerequisites.md
          - Star Schema Model: power-users/datawarehouse/star-schema-model.md
          - Power BI Example: power-users/datawarehouse/power-bi-example.md
