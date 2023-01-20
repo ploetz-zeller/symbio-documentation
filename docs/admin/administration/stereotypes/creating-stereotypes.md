@@ -9,7 +9,9 @@ Go to the dropdown to select the process or object to which a stereotype should 
 From the drop-down list, select the desired __Type__ for which the stereotype should be applicable.
 Assign a name and click the New button or confirm with the Enter key.
 
-![Screenshot](../media/stereotypes_new.png)
+**Important**: Then click on **Apply Changes** button so that your changes can take place.
+
+![Screenshot](../media/stereotypes_new_with_applychanges.png)
 
 Now you can enter a description on the right side like an image.
 
