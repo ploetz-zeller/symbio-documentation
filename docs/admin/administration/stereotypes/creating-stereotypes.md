@@ -13,7 +13,8 @@ Assign a name and click the New button or confirm with the Enter key.
 
 ![Screenshot](../media/stereotypes_new_with_applychanges.png)
 
-Now you can enter a description on the right side like an image.
+Now you can enter a description on the right side.
+Also you can add an image like a symbol for the stereotype.
 
 ![Fill the Detailcontent](./media/stereotypes-dc.PNG "Fill the Detailcontent") ![Fill the Detailcontent](./media/stereotypes-dc-red.PNG "Fill the Detailcontent")
 
