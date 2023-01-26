@@ -24,9 +24,12 @@ From now on the description refers to the ```calculation``` type ```flow```.<br/
   * [5.1 - How it typically looks like](#pools-part-typic)
   * [5.2 - The <code>pool</code> tuning](#pools-part-tune)
 * [6.0 - The <code>elements</code> part of the Request JSON](#elements-part)
-  * [6.1 - How it typically looks like](#elements-part-typic) --- REWORK STOPED HERE
+  * [6.1 - How it typically looks like for events](#elements-part-typic-events)
+  * [6.2 - How it typically looks like for tasks](#elements-part-typic-tasks)
+  * [6.3 - How it typically looks like for roles](#elements-part-typic-roles)
+  * [6.4 - How it typically looks like for data](#elements-part-typic-data) --- REWORK STOPED HERE
 
-* [Understanding the correlation of <code>nodes</code> / <code>edges</code>  and <code>elements</code> by examples](#correlation)
+* [7.0 Understanding the correlation of <code>nodes</code> / <code>edges</code>  and <code>elements</code> by examples](#correlation)
   * [Sample 1 (a node/shape and the underlaying element vs. the BPMN equivalent)](#correlation-sample1)
 
 ## <a name="gen-struct">1. - General structure of the Request JSON</a>
@@ -425,7 +428,7 @@ The ```content``` contains the nodes and edges (in the meaning of nodes and edge
       ...
     ],
 ```
-(see chapter **Understanding the nodes and edges collections of the request JSON by examples** below).
+(see chapter [7.0 Understanding the correlation of <code>nodes</code> / <code>edges</code>  and <code>elements</code> by examples](#correlation) below).
 
 ### <a name="content-part-nodes">4.2 - The <code>nodes</code> collection</a>
 Nodes represent the shapes, comparable to BPMN ```<startEvent>``` or ```<task>```.
@@ -434,7 +437,10 @@ Nodes represent the shapes, comparable to BPMN ```<startEvent>``` or ```<task>``
         "shapeId": "e85e124a-86aa-4fe6-aaaf-4c5707215461",
         "elementId": "5dd9be26-b592-4e02-b4b0-e508a7844e27",
         "properties": {
-          "type": "evStart"
+          "pool": {
+            "poolId": "c84c7e2e-ea39-4fc8-b2dd-10df2b7c766a"
+          },
+	  "type": "evStart"
         },
         "laneRelevantRelated": [
           {
@@ -447,14 +453,17 @@ Nodes represent the shapes, comparable to BPMN ```<startEvent>``` or ```<task>``
         ]
       }
 ```
-Typical information provided for a node are:
+**Typical information provided for a node are:**
 * The ```shapeId``` contains the unique identity of the node.
 * The ```elementId``` contains the unique identity of the element, the node is based on, it is passed on to the **Result JSON**.
 * The ```properties``` contains a collection of optional information, which are passed on to the **Result JSON**.
+  * The optional ```pool``` contains the assignment of this node to a pool (this assignment is the same for all layouts).
+  * The optional ```type``` contains the type of the node.
 * The ```laneRelevantRelated``` contains a collection of elements, that are used to determine the lane the shape is to be assigned to.
 
-??? pool assignment<br/>
-...
+**The pool assignment**
+
+A node can optionally be assigned to a pool. The ```poolId``` must refer to an existing pool within the [The <code>pools</code> part of the Request JSON ](#pools-part).
 
 #### <a name="content-part-nodes-lane-relevance">The <code>laneRelevantRelated</code> collection</a>
 Since the **Request JSON** has to support multiple layouts at once, it is required to provide information about the lane assignment ***per layout***. Therefore the  ```laneRelevantRelated``` element collection includes for each lane relevant element the information which ```layoutTypes``` are supported by a lane relevant element. The values used for the ```layoutTypes``` here match the values used for the ```layoutType``` within the configurations.
@@ -462,7 +471,7 @@ Since the **Request JSON** has to support multiple layouts at once, it is requir
 (For details regarding the ```layoutType``` values see chapter [The <code>configurations</code> ](#dgm-meta-conf) above).
 
 **Putting it all together**
-For a sample, that shows the correlation between ```node``` and ```element``` in the Request JSON and in the Result JSON and also in comparison to BPMN see chapter [Understanding the correlation of <code>nodes</code> / <code>edges</code>  and <code>elements</code> by examples](#correlation) and section [Sample 1 (a node/shape and the underlaying element vs. the BPMN equivalent)](#correlation-sample1).
+For a sample, that shows the correlation between ```node``` and ```element``` in the Request JSON and in the Result JSON and also in comparison to BPMN see chapter [7.0 Understanding the correlation of <code>nodes</code> / <code>edges</code>  and <code>elements</code> by examples](#correlation) and section [Sample 1 (a node/shape and the underlaying element vs. the BPMN equivalent)](#correlation-sample1).
 
 ### <a name="content-part-edges">4.3 - The <code>edges</code> collection</a>
 Edges represent the connection between shapes, comparable to BPMN ```<sequenceFlow>```.
@@ -555,7 +564,7 @@ The ```"pools"``` are of **item** type ```"bpmnPool"``` and of **item** kind ```
 
 It is highly recommended to define names for all **pools** (see <code>"attributes"</code> with <code>"key": "name"</code>).
 
-### <a name="pools-part-tune">5.2 - The <code>pool</code> tuning</a>
+### <a name="pools-part-tune">5.2 - The <code>pool</code> servity</a>
 One **pool** should be designated as the default **pool** so that **shapes** can be automatically (fall- back) attached to the default **pool** without explicitly assigning a **pool** to **shapes**. This creates a fail-safe behavior and makes the JSON code shorter. To identify the default **pool** you can:
 
 - Mark all **pools** except the default **pool** as "source" (<code>"servity": "source"</code>) or "target" (<code>"servity": "target"</code>). In case of multiple matches, the last one wins.
@@ -567,51 +576,139 @@ In the case that a **pool** should contain multiple **lanes** and the **lanes** 
 Nevertheless, it is possible to provide the **pools** without any tuning at all and let the *Symbio-Graphic-Service* do all the tuning.
 
 ## <a name="elements-part">6.0 - The <code>elements</code> part of the Request JSON</a>
-### <a name="elements-part-typic">6.1 - How it typically looks like</a>
 The <code>elements</code> collection contains all elements, that
-* underlay a shape or
-* are connected to shapes as repository objects. 
+* underlay a <code>node</code> or
+* are connected to <code>nodes</code> as <code>related</code> or <code>laneRelevantRelated</code> <code>elements</code>. 
 
+### <a name="elements-part-typic-events">6.1 - How it typically looks like for events</a>
 <table>
-<tr><th>An <b>event<b> sample request JSON <i>elements</i></th><th>Compared to the BPMN <i>&lt;bpmn:definitions/&gt;</i> tag</th><th>Comments</th></tr>
+<tr><th>An <b>event<b> sample request JSON <i>element</i></th><th>Compared to the BPMN <i>&lt;bpmn:process/&gt;</i> tag</th><th>Comments</th></tr>
 <tr>
 <td>
 
 ```
-  {
-    "id":
-      "B63F2971E571B69F49AAD5B0733302FA",
-    "properties": {
-      "type": "evStart",
-      "kind": "OBJ",
-      "evType": "throwSignal"
-    },
-    "attributes": [{
+{
+  "id":
+    "B63F2971E571B69F49AAD5B0733302FA",
+  "properties": {
+    "type": "evStart",
+    "kind": "OBJ",
+    "evType": "throwSignal"
+  },
+  "attributes": [
+    {
       "key": "name",
       "values": [
         { "lcid": 1033,
           "value": "Start" }
       ]
-    }]
+    },
+      ...
+  ]
+}
+```
+
+</td>
+<td>
+
+```
+<bpmn:startEvent
+ id="StartEvent_0034tgy"
+ name="Goods arrived">
+  <bpmn:outgoing>
+    SequenceFlow_0pern26
+  </bpmn:outgoing>
+</bpmn:startEvent>
+...
+
+
+
+
+
+
+
+
+
+
+
+```
+
+</td>
+<td>
+The request JSON <i>elements</i> and the BPMN <i>&lt;bpmn:process/&gt;</i> nodes provide very similar information:<br/>
+- The type, either <code>"evStart"</code> or <code>&lt;bpmn:startEvent&gt;</code>, and<br/>
+- the name, either <code>"attributes"</code>/<code>"key": "name"</code> or <code>name</code> attribute.<br/><br/>
+But there are also differences:<br/>
+- While BPMN provides also the structure defining edges <code>&lt;bpmn:incoming&gt;</code> and <code>&lt;bpmn:outgoing&gt;</code>,<br/>
+- the request JSON doesn't. This is because elements can be re-used within one request JSON and therefore a definition of incoming and outgoing edges can be ambiguous and is realized via the <code>edges</code> collection.
+</td>
+</tr>
+</table>
+
+### <a name="elements-part-typic-tasks">6.2 - How it typically looks like for tasks</a>
+<table>
+<tr><th>A <b>task<b> sample request JSON <i>element</i></th><th>Compared to the BPMN <i>&lt;bpmn:process/&gt;</i> tag</th><th>Comments</th></tr>
+<tr>
+<td>
+
+```
+{
+  "id":
+    "bcf7ab71d86145919a5a0a570fa2beed",
+  "properties": {
+    "type": "task",
+    "kind": "OBJ",
+    "typeDisplayName": "Task"
   },
-  ...
-]
+  "attributes": [
+    {
+      "key": "name",
+      "values": [
+        { "lcid": 1033,
+          "value": "Task-01" }
+      ]
+    },
+    ...
+  ],
+  "related": [
+    {
+      "key": "accountableRole",
+      "shortKey": "A",
+      "versionIds": [
+    "35f4cfb5437e4f1d8fd072859648e183"
+      ]
+    },
+    ...
+  ]
+}
 ```
 
 </td>
 <td>
 
 ```
-<bpmn:process
- id="Process_0g17fhl"
- isExecutable="false">
-  <bpmn:startEvent
-   id="StartEvent_0034tgy">
-    <bpmn:outgoing>
-      SequenceFlow_0pern26
-    </bpmn:outgoing>
-  </bpmn:startEvent>
-  ...
+<bpmn:task
+ id="Activity_16oto7s"
+ name="Process goods">
+  <bpmn:incoming>
+    SequenceFlow_0pern26
+  </bpmn:incoming>
+  <bpmn:outgoing>
+    SequenceFlow_1vdst1y
+  </bpmn:outgoing>
+</bpmn:task>
+...
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -623,67 +720,195 @@ The <code>elements</code> collection contains all elements, that
 
 </td>
 <td>
-&#x25B6; The <b>fifth</b> bunch of data in the request JSON file should be the sequence of shape <b><i>items</i></b>, referenced by <b><i>shapes</i></b>.<br/><br/>
-Both, the request JSON <b><i>items</i></b> and the BPMN <b><i>process</i></b> child nodes, provide an identifier <code>"id:"</code> (for request JSON) or <code>id</code> (for BPMN).<br/><br/><br/><br/><br/><br/>
+The request JSON <i>elements</i> and the BPMN <i>&lt;bpmn:process/&gt;</i> nodes provide very similar information:<br/>
+- The type, either <code>"task"</code> or <code>&lt;bpmn:task&gt;</code>, and<br/>
+- the name, either <code>"attributes"</code>/<code>"key": "name"</code> or <code>name</code> attribute.<br/><br/>
+But there are also differences:<br/>
+- While BPMN provides also the structure defining edges <code>&lt;bpmn:incoming&gt;</code> and <code>&lt;bpmn:outgoing&gt;</code>,<br/>
+- the request JSON doesn't. This is because elements can be re-used within one request JSON and therefore a definition of incoming and outgoing edges can be ambiguous and is realized via the <code>edges</code> collection.<br/><br/>
+On the other hand the request JSON can connect a task to all types of repository <i>elements</i> via <code>"related"</code>, e. g. milestones, requirements, KPIs, documents (guidelines, directives), standards, organizational units, projects, products, objectices <i>and so on</i>.
 </td>
 </tr>
+</table>
 
+### <a name="elements-part-typic-roles">6.3 - How it typically looks like for roles</a>
 </table>
 <table>
-<tr><th>A <b>task<b> sample request JSON <i>elements</i></th><th>Compared to the BPMN <i>&lt;bpmn:definitions/&gt;</i> tag</th><tr>
+<tr><th>A <b>role<b> sample request JSON <i>element</i></th><th>Compared to the BPMN <i>&lt;bpmn:process/&gt;</i> tag</th><th>Comments</th></tr>
 <tr>
 <td>
 
 ```
+{
+  "id":
+    "ed6645df50804e6f9ab235121c5ea567",
+  "versionId":
+    "a2a8e8e8090f464fac78bec8b851c963",
+  "properties": {
+    "kind": "OBJ",
+    "stereoType": "extern",
+    "type": "role",
+    "typeDisplayName": "Role"
+  },
+  "attributes": [
+    {
+      "key": "name",
+      "values": [
+        { "lcid": 1033,
+          "value": "DP officer" }
+      ]
+    },
+    ...
+  ]
+}
+```
+
+</td>
+<td>
+
+```
+<bpmn:laneSet
+  id="LaneSet_1n0pzhw">
+  <bpmn:lane
+    id="Lane_0w5mswf"
+    name="MyLane-01">
+    ...
+  </bpmn:lane>
+</bpmn:laneSet>
   
-  ...
-	
+
+
+
+
+
+
+
+
+
+
+
+
+
 ```
 
 </td>
 <td>
-
-```
-
-  ...
-
-```
-
-</td>
-<td>
-&#x25B6; The ...
+There is no general BPMN equivalent for the <i>repository</i> <code>elements</code> in request JSON.<br/><br/>
+While request JSON <code>nodes</code> can refer to various types of <i>repository</i> <code>elements</code> via <code>related</code> or <code>laneRelevantRelated</code>, BPMN can only organize <code>elements</code> in swimlanes (which is equivalent to request JSON's <code>laneRelevantRelated</code>) and connect <code>elements</code> to data stores and data objects.<br/><br/>
+Typically roles are used to define swimlanes - that is realizes via <code>laneRelevantRelated</code> in request JSON and <code>&lt;bpmn:laneset/&gt;</code>/<code>&lt;bpmn:lane/&gt;</code> in BPMN.<br/><br/><br/><br/>
 </td>
 </tr>
 </table>
 
+### <a name="elements-part-typic-data">6.4 - How it typically looks like for data</a>
 </table>
 <table>
-<tr><th>A <b>role<b> sample request JSON <i>elements</i></th><th>Compared to the BPMN <i>&lt;bpmn:definitions/&gt;</i> tag</th><tr>
+<tr><th>A <b>data<b> sample request JSON <i>elements</i></th><th>Compared to the BPMN <i>&lt;bpmn:process/&gt;</i> tag</th><th>Comments</th></tr>
 <tr>
 <td>
 
 ```
+{
+  "id":
+    "480439511168499d8bc5a1fda3285542",
+  "versionId":
+    "1129e2af0a174064a79849002e1ceb56",
+  "properties": {
+    "kind": "OBJ",
+    "type": "system",
+    "typeDisplayName": "Application"
+  },
+  "attributes": [
+    {
+      "key": "name",
+      "values": [
+        { "lcid": 1033,
+          "value": "Accounting portal" }
+      ]
+    },
+    ...
+  ]
+},
+{
+  "id":
+    "9487278f25464394aff9e68bef9b2535",
+  "versionId":
+    "f1c69f8d04ad4e9e82f11f0465f536a6",
+  "properties": {
+    "kind": "OBJ",
+    "type": "inOut",
+    "typeDisplayName": "Input/Output"
+  },
+  "attributes": [
+    {
+      "key": "name",
+      "values": [
+        { "lcid": 1033,
+          "value": "Inbound quotation" }
+      ]
+    },
+    ...
+  ]
+}
+```
+
+</td>
+<td>
+
+```
+<bpmn:dataStoreReference
+  id=
+    "DataStoreReference_07dozvu"
+  name=
+    "Data-Store" />
   
-  ...
-	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<bpmn:dataObjectReference
+  id=
+    "DataObjectReference_1unf7qz"
+  name=
+    "Data-Object"
+  dataObjectRef=
+    "DataObject_1lq9toa" />
+<bpmn:dataObject
+  id=
+    "DataObject_1lq9toa" />
+
+
+
+
+
+
+
+
+
+
+
 ```
 
 </td>
 <td>
-
-```
-
-  ...
-
-```
-
-</td>
-<td>
-&#x25B6; The ...
+There is no general BPMN equivalent for the <i>repository</i> <code>elements</code> in request JSON.<br/><br/>
+While request JSON <code>nodes</code> can refer to various types of <i>repository</i> <code>elements</code> via <code>related</code> or <code>laneRelevantRelated</code>, BPMN can only organize <code>elements</code> in swimlanes (which is equivalent to request JSON's <code>laneRelevantRelated</code>) and connect <code>elements</code> to data stores and data objects.<br/><br/>
+Typically data stores and data objects are connected via <code>related</code> in request JSON and implemented as <code>"type": "system"</code> respectively <code>"type": "inOut"</code> in request JSON and implemented as <code>&lt;bpmn:dataStoreReference/&gt;</code> respectively <code>&lt;bpmn:dataObjectReference/&gt;</code> in BPMN.
 </td>
 </tr>
 </table>
-
+	
 ### Shapes and shape items
 The design of ***shape*** content elements is intended to be minimalistic.<br/>
 
