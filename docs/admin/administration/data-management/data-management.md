@@ -12,6 +12,12 @@ In the architecture view of the process house, there is an additional function f
 
 Administrators are also able to consolidate released or expired objects. Architects can only do this for objects in processing. Consolidation should not be carried out by several users at the same time for each facet.
 
+### Warning
+
+!For hierarchical facets, the administrative consolidation should always be started from the architecture!<br />
+!Otherwise there is a chance for child elements to be deleted!<br />
+If it is started from the architecture, the child elements are moved one level up if possible or are moved to the orphaned view otherwise.
+
 ![screen](./media/consolidate_objects.png)
 
 To consolidate objects, e.g. roles, please select the target element and click the administration button of the toolbar.
