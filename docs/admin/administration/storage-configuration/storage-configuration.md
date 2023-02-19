@@ -176,7 +176,7 @@ This is to add a multiline text attribute that allows HTML formating, similiar t
 
 #### Add link attribute
 
-This allows to add links, similar to the "Attachments" section. We recommend to activate "Language independent".
+This allows to add links, similar to the "Attachments" section. We recommend to activate "Language independent". Please note that uploaded files do not exceed 10 MB.
 
 #### Add check-box attribute
 
