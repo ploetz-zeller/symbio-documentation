@@ -38,7 +38,7 @@ If any connections are missing or elements do not appear, check the original Vis
 
 ## Step 4: Import
 
-Start by selecting the Symbio storage you want to import into and click "**Use selected storage**". The page will then load and present the languages your Symbio storage uses. Select the languages for which you want the importer to add descriptions and titles. For languages not selected, Symbio will insert the default names (e.g. "Task"). At least one language must be selected. After selecting the languages you want to use, click "**Use selected languages**". Finally, before starting the actual import, you can choose to save the mapping by checking the checkbox above the upload button. That mapping will then be tied to your account and suggested the next time you map.
+Start by selecting the Symbio storage you want to import into. The page will then load and present the languages your Symbio storage uses. Select the languages for which you want the importer to add descriptions and titles. For languages not selected, Symbio will insert the default names (e.g. "Task"). At least one language must be selected. After selecting the languages you want to use, you can choose whether you want to save the mapping by checking the checkbox above the upload button. That mapping will then be tied to your account and suggested the next time you map.
 
 ![import](media/import.png)
 
