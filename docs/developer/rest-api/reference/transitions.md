@@ -2,7 +2,7 @@
 
 **api-version**: 1.0
 
-Retrieves transitions of a specific element which is in "InProcess" state.
+Retrieves transitions of a specific element.
 
 ```
 GET /{collectionId}/{storageId}/_api/release/{elementId}/transitions
@@ -75,6 +75,25 @@ GET https://demo.symbioworld.com/pz/showcase/_api/rest/release/f2f5c58e-8624-416
             "transitionId": "InProcessToReleasedExternal",
             "sourceState": "inProcess",
             "targetState": "released"
+        }
+    ]
+}
+```
+
+#### Request
+```
+POST https://demo.symbioworld.com/pz/showcase/_api/rest/release/664fd624-d341-4521-b430-897bb16399f4/transitions
+```
+
+#### Response (200 OK)
+```json
+{
+    "count": 1,
+    "transitions": [
+        {
+            "transitionId": "ReleasedToRequestToExpire",
+            "sourceState": "released",
+            "targetState": "requestToExpire"
         }
     ]
 }

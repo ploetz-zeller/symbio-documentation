@@ -267,9 +267,7 @@ nav:
         - Content:
           - Get: developer/rest-api/reference/content.md
           - Create: developer/rest-api/reference/content-create.md
-        - Transitions:
-          - InProcess transitions: developer/rest-api/reference/transitions-inprocess.md
-          - Release transitions: developer/rest-api/reference/transitions-release.md
+        - Transitions: developer/rest-api/reference/transitions.md
         - Release:
           - Create Version: developer/rest-api/reference/release-create-version.md
           - Change State: developer/rest-api/reference/release-change-state.md
