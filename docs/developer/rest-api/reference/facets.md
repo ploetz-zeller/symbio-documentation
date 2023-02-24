@@ -5,7 +5,7 @@
 Retrieves the list of facets.
 
 ```
-POST  /{collectionId}/{storageId}/_api/rest/facets
+GET  /{collectionId}/{storageId}/_api/rest/facets
 ```
 
 ## Parameters
@@ -39,7 +39,7 @@ POST  /{collectionId}/{storageId}/_api/rest/facets
 
 #### Request
 ```
-POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/
+GET https://demo.symbioworld.com/pz/showcase/_api/rest/facets/
 ```
 
 #### Response (200 OK)

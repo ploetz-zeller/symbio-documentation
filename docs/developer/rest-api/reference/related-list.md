@@ -5,13 +5,13 @@
 Retrieves the list of related contexts.
 
 ```
-POST /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/elements/{elementId}/related
+GET /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/elements/{elementId}/related
 ```
 
 With optional parameters
 
 ```
-POST /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/elements/{elementId}/related?$filter={filter}&$select={select}&$expandRelated={expand}
+GET /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/elements/{elementId}/related?$filter={filter}&$select={select}&$expandRelated={expand}
 ```
 
 ## Parameters
@@ -51,7 +51,7 @@ POST /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/eleme
 
 #### Request
 ```
-POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/detail/elements/f4f3943d-6b3b-42a9-8a3a-30acf42ce7d5/related
+GET https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/detail/elements/f4f3943d-6b3b-42a9-8a3a-30acf42ce7d5/related
 ```
 
 #### Response (200 OK)
@@ -359,7 +359,7 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/d
 
 #### Request
 ```
-POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/detail/elements/f4f3943d-6b3b-42a9-8a3a-30acf42ce7d5/related?$select=author,requirements
+GET https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/detail/elements/f4f3943d-6b3b-42a9-8a3a-30acf42ce7d5/related?$select=author,requirements
 ```
 
 #### Response (200 OK)
@@ -402,7 +402,7 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/d
 
 #### Request
 ```
-POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/detail/elements/f4f3943d-6b3b-42a9-8a3a-30acf42ce7d5/related?$select=author,requirements&$expandRelated=author,requirements
+GET https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/detail/elements/f4f3943d-6b3b-42a9-8a3a-30acf42ce7d5/related?$select=author,requirements&$expandRelated=author,requirements
 ```
 
 #### Response (200 OK)

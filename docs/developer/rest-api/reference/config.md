@@ -5,7 +5,7 @@
 Retrieves the configuration of possible elements in a view.
 
 ```
-POST /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/config/{type}
+GET /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/config/{type}
 ```
 
 ## Parameters
@@ -42,7 +42,7 @@ POST /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/confi
 
 #### Request
 ```
-POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/tree/config/processhouse
+GET https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/tree/config/processhouse
 ```
 
 #### Response (200 OK)
@@ -359,7 +359,7 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/t
 
 #### Request
 ```
-POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/tree/config
+GET https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/tree/config
 ```
 
 #### Response (200 OK)
@@ -371,7 +371,7 @@ The code is not displayed because over 50000 lines long.
 
 #### Request
 ```
-POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/diagram/config
+GET https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/diagram/config
 ```
 
 #### Reponse (200 OK)
