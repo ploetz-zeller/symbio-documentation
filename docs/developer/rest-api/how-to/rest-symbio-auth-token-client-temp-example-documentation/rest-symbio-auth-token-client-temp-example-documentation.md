@@ -1,9 +1,3 @@
-# rest-symbio-auth-token-client
-
-This application showcases the use of Symbio REST authentication tokens to access Symbio data.
-
----
-
 # Symbio REST: Authentication Tokens - How To
 
 ## Configuring REST Authentication Tokens

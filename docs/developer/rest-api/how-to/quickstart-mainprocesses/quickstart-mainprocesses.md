@@ -14,17 +14,6 @@ uid: qsMainProcesses
 ### New Project
 
 In this example, a post request is made in the context of a C# console application, which returns JSON as the result. This JSON can be converted into objects and reused as required.
-<!--
-> [!NOTE]
-
-> [!WARNING]
-
-> [!IMPORTANT]
-
-> [!Caution]
--->
-!!! info
-    A Post Request is required at the beginning. Here is an example:
 
 ```c#
 private static Facets SendPost(Uri baseUri, string requestUri = null)
@@ -53,7 +42,7 @@ This example also shows a token that you need to be authenticated. It is appende
 hc.DefaultRequestHeaders.Add("symbio-auth-token", "token key");
 ```
 ### Add or create new Token
-The above mentioned token is created in Symbio by an administrator. For more information see [Authentication mit Tokens](xref:authtoken)
+The above mentioned token is created in Symbio by an administrator. For more information see [Authentication mit Tokens](../rest-symbio-auth-token-client-temp-example-documentation/rest-symbio-auth-token-client-temp-example-documentation.md)
 ### Build Uri
 The construction of all valid uris can be found in the Reference category.This example we starts with an overview of all facets. A request is sent and JSON creates a new faceted object from the response.
 
@@ -145,4 +134,4 @@ private static void Main(string[] args)
 
 #### Errors
 
-Read more here: [Rest API error handling](xref:error)
+Read more here: [Rest API error handling](../error.md)

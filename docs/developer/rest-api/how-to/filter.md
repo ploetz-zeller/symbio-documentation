@@ -1,7 +1,3 @@
-
-| Status: March 2019   | ©2019 Ploetz + Zeller GmbH   |
-|--------------------|------------------------------|
-
 # Symbio API Filter
 
 Filters can be part of the Uri and cause the server to return a filtered amount of data. For example, you can query all elements with a specific name specified in the filter.
@@ -59,8 +55,3 @@ https://Server/Collection/Database/_api/rest/facets/processes/views/tree/element
 ```
 
 Other combinations are also possible.
-
-# FAQ's
-
-More information about the correct construction of the uri's can be found here:
-[API References](xref:refrenceindex)
