@@ -5,13 +5,13 @@
 Retrieves the list of elements.
 
 ```
-POST /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/elements
+GET /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/elements
 ```
 
 With optional parameters
 
 ```
-POST /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/elements?$filter={filter}&$select={select}&$expandRelated={expand}&$page={page}&$pageSize={pageSize}&$pageSelectionKey={pageSelectionKey}
+GET /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/elements?$filter={filter}&$select={select}&$expandRelated={expand}&$page={page}&$pageSize={pageSize}&$pageSelectionKey={pageSelectionKey}
 ```
 
 ## Parameters
@@ -55,7 +55,7 @@ POST /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/eleme
 
 #### Request
 ```
-POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/tree/elements
+GET https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/tree/elements
 ```
 
 #### Response (200 OK)
@@ -235,7 +235,7 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/t
 
 #### Request
 ```
-POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/tree/elements?$resources=attributes,children
+GET https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/tree/elements?$resources=attributes,children
 ```
 
 #### Response (200 OK)
@@ -332,7 +332,7 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/t
 
 #### Request
 ```
-POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/products/views/detail/elements?$page=1&$pageSize=5
+GET https://demo.symbioworld.com/pz/showcase/_api/rest/facets/products/views/detail/elements?$page=1&$pageSize=5
 ```
 
 #### Response (200 OK)
@@ -711,7 +711,7 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/products/views/de
 
 #### Request
 ```
-POST https://demo.symbioworld.com/_sysadmin/_admin/_api/rest/facets/collections/views/list/elements
+GET https://demo.symbioworld.com/_sysadmin/_admin/_api/rest/facets/collections/views/list/elements
 ```
 
 #### Response (200 OK)
@@ -743,7 +743,7 @@ POST https://demo.symbioworld.com/_sysadmin/_admin/_api/rest/facets/collections/
 
 #### Request
 ```
-POST https://demo.symbioworld.com/pz/_admin/_api/rest/facets/storages/views/detail/elements
+GET https://demo.symbioworld.com/pz/_admin/_api/rest/facets/storages/views/detail/elements
 ```
 
 #### Response (200 OK)

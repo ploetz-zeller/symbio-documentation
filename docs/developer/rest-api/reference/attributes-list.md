@@ -5,13 +5,13 @@
 Retrieves the list of attributes.
 
 ```
-POST /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/elements/{elementId}/attributes
+GET /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/elements/{elementId}/attributes
 ```
 
 With optional parameters
 
 ```
-POST /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/elements/{elementId}/attributes?$filter={filter}&$select={select}
+GET /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/elements/{elementId}/attributes?$filter={filter}&$select={select}
 ```
 
 ## Parameters
@@ -50,7 +50,7 @@ POST /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/eleme
 
 #### Request
 ```
-POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/detail/elements/f4f3943d-6b3b-42a9-8a3a-30acf42ce7d5/attributes
+GET https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/detail/elements/f4f3943d-6b3b-42a9-8a3a-30acf42ce7d5/attributes
 ```
 
 #### Response (200 OK)
@@ -122,7 +122,7 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/d
 
 #### Request
 ```
-POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/detail/elements/f4f3943d-6b3b-42a9-8a3a-30acf42ce7d5/attributes?$select=name,description
+GET https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/detail/elements/f4f3943d-6b3b-42a9-8a3a-30acf42ce7d5/attributes?$select=name,description
 ```
 
 #### Response (200 OK)

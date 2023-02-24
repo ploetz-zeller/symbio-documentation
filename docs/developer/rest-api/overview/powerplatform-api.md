@@ -2,7 +2,7 @@
 
 Use these APIs to work with Symbio elements inside of the Microsoft Power Platform. This API have a flat response format optimized for the Microsoft environment.
 
-You can access the Swagger definition of these APIs using this URL: https://pz.symbioweb.com/swagger/index.html?url=/swagger/v1/swagger.json - replace "pz.symbioweb.com" with the hostname (and port) of your Symbio instance.
+You can access the Swagger definition of these APIs using this URL: `https://pz.symbioweb.com/swagger/index.html?url=/swagger/v1/swagger.json` - replace "pz.symbioweb.com" with the hostname (and port) of your Symbio instance.
 
 ## Format
 

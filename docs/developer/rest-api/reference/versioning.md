@@ -404,7 +404,7 @@ GET https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/de
 
 #### Request
 ```
-POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/tree/elements/1b154523-68ad-4138-9a24-9076062a51b7/versions?$select=name,author
+GET https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/tree/elements/1b154523-68ad-4138-9a24-9076062a51b7/versions?$select=name,author
 ```
 
 #### Response (200 OK)

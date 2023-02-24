@@ -234,7 +234,6 @@ nav:
         - Storages API: developer/rest-api/overview/storages-api.md
       - How To:
         - Authentication Tokens: developer/rest-api/how-to/rest-symbio-auth-token-client-temp-example-documentation/rest-symbio-auth-token-client-temp-example-documentation.md
-        - How to get all released mainprocesses: developer/rest-api/how-to/quickstart-mainprocesses/quickstart-mainprocesses.md
         - Filter: developer/rest-api/how-to/filter.md
         - Errors: developer/rest-api/how-to/error.md
         - Symbio REST using Powershell: developer/rest-api/how-to/powershell/rest-using-powershell.md
@@ -267,9 +266,7 @@ nav:
         - Content:
           - Get: developer/rest-api/reference/content.md
           - Create: developer/rest-api/reference/content-create.md
-        - Transitions:
-          - InProcess transitions: developer/rest-api/reference/transitions-inprocess.md
-          - Release transitions: developer/rest-api/reference/transitions-release.md
+        - Transitions: developer/rest-api/reference/transitions.md
         - Release:
           - Create Version: developer/rest-api/reference/release-create-version.md
           - Change State: developer/rest-api/reference/release-change-state.md

@@ -5,7 +5,7 @@
 Retrieves the list of views.
 
 ```
-POST  /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views
+GET  /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views
 ```
 
 ## Parameters
@@ -40,7 +40,7 @@ POST  /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views
 
 #### Request
 ```
-POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views
+GET https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views
 ```
 
 #### Response (200 OK)

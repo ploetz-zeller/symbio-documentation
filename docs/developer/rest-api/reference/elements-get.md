@@ -5,13 +5,13 @@
 Retrieves a specific element.
 
 ```
-POST /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/elements/{elementId}
+GET /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/elements/{elementId}
 ```
 
 With optional parameters
 
 ```
-POST /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/elements/{elementId}?$filter={filter}&$select={select}&$expandRelated={expand}
+GET /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/elements/{elementId}?$filter={filter}&$select={select}&$expandRelated={expand}
 ```
 
 ## Parameters
@@ -53,7 +53,7 @@ POST /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/eleme
 
 #### Request
 ```
-POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/detail/elements/a2d5b2ae-8c41-424f-aca1-9710b3d9f2bf
+GET https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/detail/elements/a2d5b2ae-8c41-424f-aca1-9710b3d9f2bf
 ```
 
 #### Response (200 OK)
@@ -165,7 +165,7 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/d
 
 #### Request
 ```
-POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/detail/elements/f4f3943d-6b3b-42a9-8a3a-30acf42ce7d5
+GET https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/detail/elements/f4f3943d-6b3b-42a9-8a3a-30acf42ce7d5
 ```
 
 #### Response (200 OK)
@@ -723,7 +723,7 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/d
 
 #### Request
 ```
-POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/tree/elements/f4f3943d-6b3b-42a9-8a3a-30acf42ce7d5?$select=name,author
+GET https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/tree/elements/f4f3943d-6b3b-42a9-8a3a-30acf42ce7d5?$select=name,author
 ```
 
 #### Response (200 OK)
@@ -946,7 +946,7 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/t
 
 #### Request
 ```
-POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/tree/elements/f4f3943d-6b3b-42a9-8a3a-30acf42ce7d5?$select=requirements&$expandRelated=requirements
+GET https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/tree/elements/f4f3943d-6b3b-42a9-8a3a-30acf42ce7d5?$select=requirements&$expandRelated=requirements
 ```
 
 #### Response (200 OK)
@@ -1170,7 +1170,7 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/t
 
 #### Request
 ```
-POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/tree/elements/cd5e6ffa-53fd-4167-97e0-a7f9a974d00a?$resources=rootPath
+GET https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/tree/elements/cd5e6ffa-53fd-4167-97e0-a7f9a974d00a?$resources=rootPath
 ```
 
 #### Response (200 OK)
@@ -1221,7 +1221,7 @@ POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/t
 
 #### Request
 ```
-POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/it/views/tree/elements/7c9b6b04-2a73-4557-97b6-d9b1e490bd5a?$resources=stereotype
+GET https://demo.symbioworld.com/pz/showcase/_api/rest/facets/it/views/tree/elements/7c9b6b04-2a73-4557-97b6-d9b1e490bd5a?$resources=stereotype
 ```
 
 #### Response (200 OK)
