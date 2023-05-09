@@ -6,6 +6,10 @@ The Console application is already [set up](reporting-console.md).
 
 ## Using the Console application on the command line
 
+### Breaking changes
+
+- 2023-05-10: The default timeout for API calls has been changed from 86400 seconds (24 hours) to 600 seconds (10 minutes). If you want to use a larger timeout, please specify it using the `--timeout` command line parameter.
+
 ### General Usage
 
 Open a command line interface (e.g. _PowerShell_) and type ```Symbio.Service.Reporting.Console.exe help``` and press _Enter_ to get a general list of commands:
