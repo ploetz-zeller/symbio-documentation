@@ -334,7 +334,7 @@ For individual configuration, the following options are available:
 
 __Option 1: Valid from day span__
 
-Set the number of days after which the process finally has the state 'Valid' (after release). So the state changes from "Released" to "Valid". 
+In the release workflow, the automatic setting of the "Don't set "Valid form" can be deactivated. 
 
 __Option 2: Prohibit direct release__
 
@@ -344,7 +344,7 @@ __Option 3: Approver users / Approver user groups__
 
 This functionality allows to add further single Approver users or Approver user groups to the release cycle. Furthermore, the state 'Ready for Approval' is added to the dialog window.
 
-![screen](../media/approver_workflow.png)
+![screen](../media/MicrosoftTeams-image.png)
 
 The new order of participants of the release cycle will then be: Author - QA (if set) – Approver/Approver group – Responsible.
 
