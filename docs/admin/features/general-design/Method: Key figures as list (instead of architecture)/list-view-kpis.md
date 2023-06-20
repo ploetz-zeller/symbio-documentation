@@ -20,8 +20,8 @@ Requirements
     
 ![screen](../media/KPI.png)
 
-         Reports consist of multiple report chapters
-         Report chapters are connected to KPIs
+      Reports consist of multiple report chapters
+       Report chapters are connected to KPIs
          Reports and report chapters can have their own attributes, like name, description, status (no customer requirement)
          The report chapter "0. Cockpit" contains an overview of the content (names of chapters and kpi ) of the report chapters below will be replaced with the graphical representation on the report node
          
