@@ -1,77 +1,22 @@
 # Method: Key figures as a list (instead of architecture)
 
 
-Requirements
 
-  DB KeMa Project:
-    
-    KPIs can be defined centrally and decentrally
-    Decentralized KPIs inherit attributes from central KPIs, which can only be changed on the central KPIs.
-    Decentralized KPIs contain additional editable attributes.
-    The relation between central and decentral KPI is 1-to-many.
-    Central KPI and it's related decentral KPIs can be in different categories or under different KPIs in the hierarchy.
-    Centralized defined attributes are shown on decentral attributes.
-    The publishing/approval workflows of centralized and decentralized KPIs are independent. They can be released independently.
-    
-    Assumptions/Comments to KPIs:
-        Central KPIs are defined by DB AG.
-        Decentral KPIS are defined in communities ("Geschäfts-spezifisch").
-    Reports and report chapters:
-    
-![screen](../media/KPI.png)
+With this feature (activated by default), KPI's are - as usual - accessible as a list view in the strategy facet. Deactivating this feature leads to KPI's being available as a separate navigation facet entry "KPIS" in Symbio's navigation bar by removing the existing key figures in the strategy facet from the strategy viewpoint. It also brings an extension of the key figure management and the administration possibility as architecture.
 
-      Reports consist of multiple report chapters
-       Report chapters are connected to KPIs
-         Reports and report chapters can have their own attributes, like name, description, status (no customer requirement)
-         The report chapter "0. Cockpit" contains an overview of the content (names of chapters and kpi ) of the report chapters below will be replaced with the graphical representation on the report node
-         
-         
-     Default values (e. g. "not maintained", "N/A") for not maintained attributes (filled at the object creation). Behavior like "recommended" attribute. (see #30207)
-     KPI attributes (see also PBI method extension):
-         Add Formel
-         "Einheit" needs to be a customizable DropDown
-         see attributes/method excel below or referenced in the PBI #30162.
-        
-   General Symbio:
-   
-          KPIs are shown in a hierarchy (DB NETZ, Satair, DB KeMa)
-          The hierarchy consists of categories and KPIs with the structure rule: category -> KPI -> KPI
-          In Detail Content it is also possible to link KPIs. KPI -> KPI (related KPI)
-          KPIs need to be moved to an own main facet (KPIs today are part of the strategy facet)
-          KPIs can be managed with and without a hierarchy (architecture) - this will be controlled by an feature flag
-          If possible, keep the object type KPI unchanged. 
-          New attributes are implemented as extensions of the existing object type
-          (otherwise already existing KPIs need to be converted - ! complexity on connected objects, manuals, fact sheets, etc. !)
-          
-          
-Remarks:
-          Need to pay attention to a clear meaning of the terms (Report/Bericht, etc.) Proposal: Use the terms Journal/Buch instead of "report".
-          (alternatively rename the report section and objects regarding reporting to business intelligence)
-          
-Solution Proposal:
+![screen](../media/KPI as a list.png)
 
-    KPIs will have 3 relations
-          Hierarchy (parent-relation)
-          Derived from (central/decentral)
-          In relation to (general independent KPI connections)
-    Visualization of the derived from relation: decentral KPI contains a group with the connection to the central KPI (single object only). 
-          Detail information of the central KPI only be clicking on the link in the detail content. 
-          The group needs to be hiddenable.
-          The group should be placed in the detail content directly below the name group.
-    New Object types with relation to KPIs
-          Report -> Report Chapter (hierarchy)
-          Report chapter -> KPIs (assignment in detail content)
+With the new Symbio key figure system an even better control of the company is possible. The new key figure system offers the possibility to map key figures in driver trees (key figure architecture). In a first step, the corporate goals and strategy should be developed in Symbio. The strategy should then be linked to the top KPIs, because top KPIs are connected. By linking the strategy view and the KPI system, customers can establish a balance score card in Symbio and then continuously communicate this to the organization. By continuously measuring the key performance indicators, the achievement of targets is checked and the company can then react to changes at an early stage. Furthermore, the key figures can then be linked to the processes, IT application systems and other views in Symbio. The connection between the goals (the strategy), the key figures and the processes ensures the fastest possible implementation in the organization and for each employee.
 
-Further documentation:
+The key figures can also be displayed as a profile and linked to the source systems from the IT architecture (IT application systems). Additional objects and new attributes are available.
 
-Requirement documentation can be found here:
-Kick-Off presentation with time schedule and high level requirements:
-https://ploetzzeller.sharepoint.com/sites/projects/Freigegebene%20Dokumente/Deutsche%20Bahn/DB%20AG%20-%20Performance%20Management%20ET1/01_Project%20Management/2020-05-07_Kick-Off-Kennzahlen-Master_Planung.pptx?web=1
-Attributes-Excel:
-https://ploetzzeller.sharepoint.com/:x:/s/projects/EcLxRm2NQAFOjnt5ZB2cYGQB8GBJaktGkwIqWpNMdSOPBA?e=8yHDIR
+In addition to the key figure driver tree, reports with report chapters can be displayed. This enables companies to map the business report chapter structure, for example, and link the necessary key figures in the various report chapters. This means that companies will also be able to generate company reports from Symbio in the future. Symbio is thus increasingly digitalizing corporate management.
 
-Demo-Environment:
-https://pz.symbioweb.com/Customer/KPIFeatureTest
-Old: https://pz-sales.symbioweb.com/pzs-Zeller/KennzahlenMaster
-
-   
+Our recommendation:
+1. Map company goals
+2. Derive and define the most important key performance indicators according to the company's goals (strategy) and other company characteristics
+3. Then break down the financial figures, e.g. along the structure of the contribution margin calculation
+4. Then define the value drivers at the lowest level, which influence the financial key figures
+5. The key figures should then be defined as a profile and a responsible person in the company should release this profile
+6. It is now important that the key figures are linked to the processes in order to ensure that they can be implemented and measured in everyday life
+7. It is important that the goals and key figures are further optimised every 3-6 months and then the processes in the company are also adjusted accordingly.
