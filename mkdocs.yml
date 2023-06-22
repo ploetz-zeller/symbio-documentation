@@ -205,6 +205,8 @@ nav:
         - "Fact Sheets: Global related objects": admin/features/process-design/fact_sheet_related-global-objects/fact-sheet_related-global-objects.md
         - Graphical version comparison: admin/features/process-design/graphical_comparison/graphical-comparison.md
         - "Diagram mode: Application Swimlane": admin/features/process-design/swimlane-for-applications/swimlane-for-applications.md
+        - "Diagram: External Layouting": admin/features/process-design/external-layouting/external-layouting.md
+        - "Method: BPMN Pools": admin/features/process-design/bpmn-pools/bpmn-pools.md
         - "Method: Global responsible role for sub processes": admin/features/process-design/global-responsible-role/global-responsible-role.md
         - "Method: Hide secondary application connections as inputs and outputs": admin/features/process-design/hide-secondary-application-connections/hide-secondary-application-connections.md
         - "Method: Assignment of documents on process house and sub category level": admin/features/process-design/documents-on-processstructure/documents-on-processstructure.md
