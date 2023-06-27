@@ -4,7 +4,7 @@
 
 With this feature (activated by default), KPI's are - as usual - accessible as a list view in the strategy facet. Deactivating this feature leads to KPI's being available as a separate navigation facet entry "KPIS" in Symbio's navigation bar by removing the existing key figures in the strategy facet from the strategy viewpoint. It also brings an extension of the key figure management and the administration possibility as architecture.
 
-![screen](../media/KPI as a list.png)
+![screen](../media/KPI_as_a_list.png)
 
 With the new Symbio key figure system an even better control of the company is possible. The new key figure system offers the possibility to map key figures in driver trees (key figure architecture). In a first step, the corporate goals and strategy should be developed in Symbio. The strategy should then be linked to the top KPIs, because top KPIs are connected. By linking the strategy view and the KPI system, customers can establish a balance score card in Symbio and then continuously communicate this to the organization. By continuously measuring the key performance indicators, the achievement of targets is checked and the company can then react to changes at an early stage. Furthermore, the key figures can then be linked to the processes, IT application systems and other views in Symbio. The connection between the goals (the strategy), the key figures and the processes ensures the fastest possible implementation in the organization and for each employee.
 
