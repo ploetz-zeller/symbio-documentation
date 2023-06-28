@@ -191,6 +191,7 @@ nav:
         - "Method: show technical IDs": admin/features/general-design/technical-id/technical-id.md
         - "Method: Documents as a list (instead of architecture)": admin/features/general-design/list-view-documents/list-view-documents.md
         - "Method: Inputs/Outputs as a list (instead of architecture)": admin/features/general-design/list-view-inputsoutputs/list-view-inputsoutputs.md
+        - "Method: Tags as a list (instead of architecture)": admin/features/general-design/list-view-tags/list-view-tags.md
         - Extensions for process analysis on projects: admin/features/general-design/extension-process-analysis/extension-process-analysis.md
         - Additional column 'Reason for revision' in 'News' Lists: admin/features/general-design/additional-column-reason-for-revision/additional-column-reason-for-revision.md
         - "Release cycle: Reason for change and attachments when editing attributes": admin/features/general-design/edit-attributes-and-relaese-cycle/edit-attributes-and-reason-for-change-and-release-cycle.md
