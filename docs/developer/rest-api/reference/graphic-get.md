@@ -40,7 +40,7 @@ GET /{collectionId}/{storageId}/_api/rest/diagram/{diagramId}/render/{cultureId}
 
 #### Request
 ```
-POST https://demo.symbioworld.com/pz/showcase/_api/rest/diagram/fa596aef-fa06-4f5c-9b55-e7c36a478c2a/render/1033/detailed
+GET https://demo.symbioworld.com/pz/showcase/_api/rest/diagram/fa596aef-fa06-4f5c-9b55-e7c36a478c2a/render/1033/detailed
 ```
 
 #### Reponse (200 OK)

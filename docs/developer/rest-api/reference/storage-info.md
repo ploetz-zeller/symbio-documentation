@@ -5,7 +5,7 @@
 Retrieves the information about the current storage.
 
 ```
-POST  /{collectionId}/{storageId}/_api/rest/info
+GET  /{collectionId}/{storageId}/_api/rest/info
 ```
 
 ## Parameters
@@ -46,7 +46,7 @@ POST  /{collectionId}/{storageId}/_api/rest/info
 
 #### Request
 ```
-POST https://demo.symbioworld.com/pz/showcase/_api/rest/info/
+GET https://demo.symbioworld.com/pz/showcase/_api/rest/info/
 ```
 
 #### Response (200 OK)

@@ -176,7 +176,7 @@ This is to add a multiline text attribute that allows HTML formating, similiar t
 
 #### Add link attribute
 
-This allows to add links, similar to the "Attachments" section. We recommend to activate "Language independent".
+This allows to add links, similar to the "Attachments" section. We recommend to activate "Language independent". Please note that uploaded files do not exceed 10 MB.
 
 #### Add check-box attribute
 
@@ -229,6 +229,22 @@ By configuring 'Change', the administrator can change settings in Symbio. To app
 The admin can make any attribute mandatory. For this, the type 'make an attribute mandatory' needs to be selected and in detail content the settings can be defined. After applying this, all user has to manage the mandatory fields. For example you can set a description to mandatory so any author has to fill in a description for the process.
 
 ![screen](../media/make_mandatory.png)
+
+#### Make relations mandatory
+
+The administrator can use this configuiration type to extend Validation Rules with relations that must be maintained to Change the State (Release) of a Process. 
+
+1. Select the type Make relations mandatory and provide a name for the configuration.
+
+ ![screen](../media/MakeRelationsMandatory_Create.png)
+
+2. In Detail Content, the administrator can select the relations that have to be mandatory maintained. Multiple selections are possible.
+
+ ![screen](../media/MakeRelationsMandatory_Settings.png)
+
+After applying the changes, the Validation Rule “All mandatory information have to be maintained” will consider also the mandatory relations. 
+
+ ![screen](../media/MakeRelationsMandatory_Validation.png)
 
 #### Make an attribute informative
 
@@ -318,7 +334,7 @@ For individual configuration, the following options are available:
 
 __Option 1: Valid from day span__
 
-Set the number of days after which the process finally has the state 'Valid' (after release). So the state changes from "Released" to "Valid". 
+In the release workflow, the automatic setting of the "Don't set "Valid form" can be deactivated. 
 
 __Option 2: Prohibit direct release__
 
@@ -328,7 +344,7 @@ __Option 3: Approver users / Approver user groups__
 
 This functionality allows to add further single Approver users or Approver user groups to the release cycle. Furthermore, the state 'Ready for Approval' is added to the dialog window.
 
-![screen](../media/approver_workflow.png)
+![screen](../media/MicrosoftTeams-image.png)
 
 The new order of participants of the release cycle will then be: Author - QA (if set) – Approver/Approver group – Responsible.
 
@@ -358,9 +374,49 @@ Please navigate to Stereotypes [here](https://docs.symbioworld.com/admin/adminis
 
 ## Manuals
 
-Default manuals are available. Customized manual templates can be added here.
+Several default manuals are available. Customized manual templates and additional standard manuals can be added here.
 
 ![screen](../media/manuals.png)
+
+### Adding the new Sub Process Manual
+
+Create a new entry named for example "Process description_DE_EN" and click "New" 
+Maintain document export template settings:
+
+- Facet: Processes
+- Type: Sub process (SubProcessDiagram)
+- Languages: German, English
+- Template file path: seilect from the data tab the file "temlates - symbiodocument_processmanual_de_en.rtf"
+- Content flags: gives you the possibility to show additional evaluations or hide existing ones from the template. See following list for more informations
+
+| Content flag | Explanation |
+|--------------|-------------|
+| Processes - Evaluate Released Only | If selected, the generated manual will printout on the first page following in red: "The originally selected process is NOT released!" |
+| Processes - Evaluate Expired Along With Unreleased | If selected, the generated manual will printout on the first page following in red: "The originally selected process is EXPIRED!" |
+| Processes - Evaluate Events In Detail | If selected, the Detail tables will include also Events with their description. |
+| Processes - Evaluate Conditions In Detail | If selected, the Detail tables will include also Conditions with their description. |
+| Processes - Evaluate Gateways In Detail | If selected, the Detail tables will include also Gateways with their description. |
+|Processes - Evaluate Structure Element Details In Just One Table|If selected, the detailed information will be present in one table. Providing a better view of the content.|
+|Document Content - Show Detailed Type Information| If selected, the generated manual will printout in the detail tables informations like task type, task mark.|
+|Document Content - Show Detailed Information About The Relation To Interface Processes| If selected, the manual will include in the Analyses chapter the name of the processes that are referred by start or end events.|
+|Document Content - Hide Default Graphic (Horizontal Role Swimlane)| If selected, Default Graphic will not be displayed. Can be used as a substitute for adding or replacing Graphics from the below options.|
+|Document Content - Show Alternative Graphic (Horizontal Application Swimlane)| If selected, a Horizontal Application Swimlane will be displayed. Can be combined with other graphs (Matrix or Horizontal Swimlane).|
+|Document Content - Show Alternative Graphic (Matrix)| If selected, Process Matrix will be displayed as an  additional graphic|
+|Document Content - Hide Process Interaction Tables| If selected, interaction table between processes and business objects will be hidden.|
+|Document Content - Hide RASCI Matrix| When selected the RASCI role/group matrix will not be included in the generated manual.|
+|Document Content - Hide Application Matrix|When selected the application/transaction matrix will not be included in the generated manual.|
+|Document Content - Hide Documents Matrix| When selected the Document Matrix will not be included in the generated manual.|
+|Document Content - Hide Standard Matrix| When selected the new matrix for assigned standards/standard chapters will not be included in the generated manual.|
+|Document Content - Hide Risk Matrix|	When selected the new matrix for assigned risks/controls/opportunities will not be included in the generated manual.|
+|Document Content - Show Glossary| If selected, Glossary Section will be displayed and contain Glossary entries assigned to a process. Prerequisite: usage of the [Glossary Feature](https://docs.symbioworld.com/admin/features/general-design/method-glossary/method-glossary/). |
+|Document Content - Show Requirements Table| When selected the annex chapters regarding the structured and prioritized requirements will be included in the generated manual.|
+|Document Content - Show Analysis Result| When selected the new annex sub chapter "Analysis Result" will be included in the generated manual. The here evaluated attributes are the ones that are activated by the Feature "Method: Extensions for process analysis on projects".|
+|Document Content - Show Performance Calculation|	When selected the new annex sub chapter "Process performance analysis" will be included in the generated manual. When included this chapter evaluates following topics: <ul><li>Start conditions</li><li>Performance of the process elements</li><li>Resource commitments human resources</li><li>Resource consumption technology resources</li><li>Summary of results</li></ul>|
+|Document Content - Hide Fact Sheet For Selected Processes|	If selected, fact sheet chapter will be hidden.|
+|Document Content - Hide Fact Sheets For Referenced Sub Processes|	If selected, chapter "Referenced sub-processes" will be hidden in the generated manual. The chapter provides a fact sheet for every process.|
+|Document Content - Execute Debug Code|	If selected, more detailed information for handbook developer will be shown.|
+
+- Logo image: add your company logo (eg. .png or .jpg), it will replace the Symbio logo when generating the manual.
 
 ## Reporting
 

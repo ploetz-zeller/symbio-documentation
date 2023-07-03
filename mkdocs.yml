@@ -1,6 +1,6 @@
 site_name: Symbio Documentation
 repo_url: https://github.com/ploetz-zeller/symbio-documentation
-copyright: Ploetz + Zeller GmbH
+copyright: Symbioworld GmbH
 
 theme:
   name: 'material'
@@ -42,13 +42,14 @@ nav:
         - Azure AD: admin/installation-guide/symbio-apps-auth/azure-ad.md
         - OneLogin: admin/installation-guide/symbio-apps-auth/onelogin.md
       - Symbio AuthService Authentication:
-        - Azure AD: admin/installation-guide/symbio-authservice-auth/azure-ad.md
+        - Azure AD App Registration: admin/installation-guide/symbio-authservice-auth/azure-ad-app-registration.md
+        - Azure AD Enterprise App: admin/installation-guide/symbio-authservice-auth/azure-ad-enterprise-application.md
         - OneLogin: admin/installation-guide/symbio-authservice-auth/onelogin.md
       - OAuth Configuration:
         - Setting Up OAuth: admin/installation-guide/oauth-configuration/setting-up-oauth.md
     - Services:
       - Introduction: admin/services/introduction/introduction.md
-      - Atlassian Connector:
+      - Atlassian Connector (Obsolete):
         - Administration guide: admin/services/atlassian-connector/administration_guide.md
         - Using Symbio to Atlassian: admin/services/atlassian-connector/using_symbioatlassian.md
         - Manual Jira Configuration: admin/services/atlassian-connector/manual_jira_configuration.md
@@ -60,9 +61,10 @@ nav:
         - Configuration: admin/services/celonis-process-mining-connector/configuration.md
         - Push to Celonis: admin/services/celonis-process-mining-connector/usage_push.md
         - Pull from Celonis: admin/services/celonis-process-mining-connector/usage_pull.md
+      - Favorite Service:
+        - Configuration: admin/services/favorite-service/installation-manual.md
       - Visio Importer:
-        - Generate Upload Token: admin/services/visio-importer/setup.md
-        - Login and Registration: admin/services/visio-importer/login.md
+        - Prerequisites: admin/services/visio-importer/prerequisites.md
         - Using the Visio Importer: admin/services/visio-importer/usage.md
       - Intrafind Connector:
         - Introduction: admin/services/intrafind-connector/index.md
@@ -70,6 +72,12 @@ nav:
         - Configuration: admin/services/intrafind-connector/configuration.md
         - Console Application: admin/services/intrafind-connector/consoleapplication.md
         - About Logging: admin/services/intrafind-connector/logging.md
+      - Jira Connector:
+        - Installation Preparation: admin/services/jira-connector/1-installation-preparation.md
+        - Installation Symbio Connector (Jira): admin/services/jira-connector/2-installation-jira.md
+        - Configuration Symbio Connector (Jira): admin/services/jira-connector/3-configuration-symbio-connector-jira.md
+        - Configuration Symbio Connector: admin/services/jira-connector/4-configuraiton-symbio-connector.md
+        - Configuration Jira Project: admin/services/jira-connector/5-configuration-jira-project.md
       - Process Portal Exporter:
         - Installation manual: admin/services/process-portal-exporter/install-service-manual.md
         - Configuration: admin/services/process-portal-exporter/configuration.md
@@ -92,7 +100,6 @@ nav:
         - Installation:
           - Service installation: admin/services/sap-solution-manager-connector/Installation_ServiceInstallation.md
           - Configuration: admin/services/sap-solution-manager-connector/Installation_Configuration.md
-          - Versioning: admin/services/sap-solution-manager-connector/Installation_Versioning.md
           - Scheduled Library synchronization: admin/services/sap-solution-manager-connector/Installation_ScheduledLibrarySync.md
         - SAP Solution Manager to Symbio synchronization:
           - Process structure synchronization: admin/services/sap-solution-manager-connector/SolManToSymbio_ProcessSync.md
@@ -114,14 +121,8 @@ nav:
             - Verification: admin/services/rendering-service/verification.md
             - Troubleshooting: admin/services/rendering-service/troubleshooting.md
         - Deinstallation: admin/services/rendering-service/deinstallation-manual.md
-      - Unique ID Provider:
-        - Installation:
-          - Intro: admin/services/unique-id-provider/install-intro.md
-          - General conditions: admin/services/unique-id-provider/install-conditions.md
-          - Scripted installation: admin/services/unique-id-provider/install-scripted.md
-          - Manual installation: admin/services/unique-id-provider/install-manual.md
-          - Create token: admin/services/unique-id-provider/install-create-token.md
-          - Gotchas: admin/services/unique-id-provider/install-gotchas.md
+      - Unique ID Generator:
+        - Introduction: admin/services/unique-id-provider/install-intro.md
         - Configuration:
           - Before Start: admin/services/unique-id-provider/config-before-start.md
           - Create ID Provider: admin/services/unique-id-provider/config-create-provider.md
@@ -189,8 +190,11 @@ nav:
         - "Extended filter bar: individual scope filter selection": admin/features/general-design/extension-of-statusbar/extension-of-statusbar.md
         - "Method: show technical IDs": admin/features/general-design/technical-id/technical-id.md
         - "Method: Documents as a list (instead of architecture)": admin/features/general-design/list-view-documents/list-view-documents.md
+        - "Method: Inputs/Outputs as a list (instead of architecture)": admin/features/general-design/list-view-inputsoutputs/list-view-inputsoutputs.md
+        - "Method: Tags as a list (instead of architecture)": admin/features/general-design/list-view-tags/list-view-tags.md
         - Extensions for process analysis on projects: admin/features/general-design/extension-process-analysis/extension-process-analysis.md
         - Additional column 'Reason for revision' in 'News' Lists: admin/features/general-design/additional-column-reason-for-revision/additional-column-reason-for-revision.md
+        - "Release cycle: Reason for change and attachments when editing attributes": admin/features/general-design/edit-attributes-and-relaese-cycle/edit-attributes-and-reason-for-change-and-release-cycle.md
       - Process design:
         - "Modeling: Exclusive process editing": admin/features/process-design/activate-exclusive-process-editing/activate-exclusive-process-editing.md
         - "Modeling: Copy and move process flow objects": admin/features/process-design/copy-move-shapes/copy-and-move-shapes.md
@@ -202,6 +206,8 @@ nav:
         - "Fact Sheets: Global related objects": admin/features/process-design/fact_sheet_related-global-objects/fact-sheet_related-global-objects.md
         - Graphical version comparison: admin/features/process-design/graphical_comparison/graphical-comparison.md
         - "Diagram mode: Application Swimlane": admin/features/process-design/swimlane-for-applications/swimlane-for-applications.md
+        - "Diagram: External Layouting": admin/features/process-design/external-layouting/external-layouting.md
+        - "Method: BPMN Pools": admin/features/process-design/bpmn-pools/bpmn-pools.md
         - "Method: Global responsible role for sub processes": admin/features/process-design/global-responsible-role/global-responsible-role.md
         - "Method: Hide secondary application connections as inputs and outputs": admin/features/process-design/hide-secondary-application-connections/hide-secondary-application-connections.md
         - "Method: Assignment of documents on process house and sub category level": admin/features/process-design/documents-on-processstructure/documents-on-processstructure.md
@@ -232,8 +238,6 @@ nav:
         - Storages API: developer/rest-api/overview/storages-api.md
       - How To:
         - Authentication Tokens: developer/rest-api/how-to/rest-symbio-auth-token-client-temp-example-documentation/rest-symbio-auth-token-client-temp-example-documentation.md
-        - Authentication Token IsPermittedEverywhere: developer/is-permitted-everywhere.md
-        - How to get all released mainprocesses: developer/rest-api/how-to/quickstart-mainprocesses/quickstart-mainprocesses.md
         - Filter: developer/rest-api/how-to/filter.md
         - Errors: developer/rest-api/how-to/error.md
         - Symbio REST using Powershell: developer/rest-api/how-to/powershell/rest-using-powershell.md
@@ -266,9 +270,7 @@ nav:
         - Content:
           - Get: developer/rest-api/reference/content.md
           - Create: developer/rest-api/reference/content-create.md
-        - Transitions:
-          - InProcess transitions: developer/rest-api/reference/transitions-inprocess.md
-          - Release transitions: developer/rest-api/reference/transitions-release.md
+        - Transitions: developer/rest-api/reference/transitions.md
         - Release:
           - Create Version: developer/rest-api/reference/release-create-version.md
           - Change State: developer/rest-api/reference/release-change-state.md
@@ -279,7 +281,19 @@ nav:
     - Services:
       - External Systems: developer/services/external-systems.md
       - External System Types: developer/services/external-system-types.md
+      - Graphic:
+        - Introduction: developer/services/graphic/index.md
+        - Request JSON: developer/services/graphic/request_json.md
+        - BPMN sub-processes: developer/services/graphic/elements_subprocesses.md
+        - BPMN tasks: developer/services/graphic/elements_tasks.md
+        - BPMN events: developer/services/graphic/elements_events.md
   - Power Users:
+    - Data Warehouse:
+         - Overview: power-users/datawarehouse/index.md
+         - Prerequisites: power-users/datawarehouse/prerequisites.md
+         - Star Schema Model: power-users/datawarehouse/star-schema-model.md
+         - Power BI Example: power-users/datawarehouse/power-bi-example.md
+         - Excel Example: power-users/datawarehouse/excel-example.md
     - Microsoft Power Platform Integration:
       - Power Automate: 
-        - Connector Configuration and Usage: power-users/microsoft-platform-integration/power-automate/power-automate-symbio-connector-(coming-soon).md
+         - Connector Configuration and Usage: power-users/microsoft-platform-integration/power-automate/power-automate-symbio-connector-(coming-soon).md

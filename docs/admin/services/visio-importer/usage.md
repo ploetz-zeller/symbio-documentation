@@ -38,10 +38,8 @@ If any connections are missing or elements do not appear, check the original Vis
 
 ## Step 4: Import
 
-Start by entering the import token provided to you by your Symbio administrator and click "**Upload**". You can choose to save the mapping by checking the checkbox above the upload button. That mapping will then be tied to your PIN and suggested the next time you map.
-
-Once you started the upload the importer will load a selection of languages your Symbio instance uses. Select the languages for which you want the importer to add descriptions and titles. For languages not selected, the importer will insert the default names (e.g. "Task"). At least one language must be selected.
+Start by selecting the Symbio storage you want to import into. The page will then load and present the languages your Symbio storage uses. Select the languages for which you want the importer to add descriptions and titles. For languages not selected, Symbio will insert the default names (e.g. "Task"). At least one language must be selected. After selecting the languages you want to use, you can choose whether you want to save the mapping by checking the checkbox above the upload button. That mapping will then be tied to your account and suggested the next time you map.
 
 ![import](media/import.png)
 
-After selecting the language press "**Upload**" once again and the Visio files will be imported. You can close the page (there is no need to log out) and view your processes in Symbio now. In case you want to import further Visio files, use the "**Reset**" button in the bottom left to return to the first page and start the import process anew.
+Press "**Start the import**" to start the import of the Visio files. Once the page says that the import was successful, you can close the page (there is no need to log out) and view your processes in Symbio. In case you want to import further Visio files, use the "**Reset**" button in the bottom left to return to the first page and start the import process anew.

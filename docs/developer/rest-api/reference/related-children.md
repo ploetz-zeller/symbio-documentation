@@ -5,7 +5,7 @@
 Retrieves the children of an element.
 
 ```
-POST /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/elements/{elementId}/children
+GET /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/elements/{elementId}/children
 ```
 
 ## Parameters
@@ -42,7 +42,7 @@ POST /{collectionId}/{storageId}/_api/rest/facets/{facetId}/views/{viewId}/eleme
 
 #### Request
 ```
-POST https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/tree/elements/81a90000-84e3-4eef-9248-d62fd3bc8f62/children
+GET https://demo.symbioworld.com/pz/showcase/_api/rest/facets/processes/views/tree/elements/81a90000-84e3-4eef-9248-d62fd3bc8f62/children
 ```
 
 #### Response (200 OK)

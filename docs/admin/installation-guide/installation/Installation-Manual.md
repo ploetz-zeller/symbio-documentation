@@ -198,17 +198,17 @@ If images are not displayed in browser (e.g. IE 11) or external sites cannot be 
 
 Now you can install the additional Microservices
 
-## Installation Rendering Service (required since Symbio 1807)
+## Installation Rendering Service (optional service)
 
-The installation of the Rendering service can be found [here](../RenderingService/install-intro.md)
+The installation of the Rendering service can be found [here](../../services/rendering-service/installation-scripted.md)
 
 ## Installation UniqueID Service (optional service)
 
-The installation of the UniqueID service can be found [here](../UniqueID/install-intro.md)
+The installation of the UniqueID service can be found [here](../../services/unique-id-provider/install-intro.md)
 
 ## Installation Reporting Service (optional service)
 
-The installation of the Reporting service can be found [here](../ReportingService/installation.md)
+The installation of the Reporting service can be found [here](../../services/reporting-service/overview.md)
 
 ---
 

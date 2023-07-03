@@ -8,11 +8,16 @@ SAML has to be set up on the Identity Provider (IdP) and the Service Provider (S
 
 The following basic requirements must be fulfilled to consider SAML-based SSO at all:
 
-* SAML 2.0-compliant IdP with
-  * SSO-REDIRECT endpoint
-  * ability to POST to an ACS endpoint
-  * SHA-256 signature support
-  * IdP Metadata XML file
+* SAML 2.0-compliant IdP, Symbio supports the following Identity Providers (IdP): 
+   *   Microsoft Active Directory Federation Services (MS ADFS) 
+   *   Microsoft Azure Active Directory (MS AAD) 
+   *   Ping Identity 
+   *   OneLogin.com 
+   *   Other Identity Providers might work because of SAML 2.0 but need to be treated as a separate project if out-of-the-box configuration does not work. 
+* IdP with SSO-REDIRECT endpoint
+* IdP with ability to POST to an ACS endpoint
+* IdP with SHA-256 signature support
+* IdP Metadata XML file
   * a trustworthy (in respect to your organization) certificate contained in the Metadata file
 * Symbio installed on a HTTPS/SSL/TLS binding
 * IdP and Symbio reachable by browsers in the company networking scenario
