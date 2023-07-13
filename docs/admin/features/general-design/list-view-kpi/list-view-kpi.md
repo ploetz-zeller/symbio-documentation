@@ -1,6 +1,5 @@
 # Method: Key figures as a list (instead of architecture)
 
-
 With this feature (activated by default), KPI's are - as usual - accessible as a list view in the strategy facet. Deactivating this feature leads to KPI's being available as a separate navigation facet entry "KPIS" in Symbio's navigation bar by removing the existing key figures in the strategy facet from the strategy viewpoint. It also brings an extension of the key figure management and the administration possibility as architecture.
 
 ![screen](../media/KPI_as_a_list.png)
@@ -19,3 +18,4 @@ Our recommendation:
 5. The key figures should then be defined as a profile and a responsible person in the company should release this profile
 6. It is now important that the key figures are linked to the processes in order to ensure that they can be implemented and measured in everyday life
 7. It is important that the goals and key figures are further optimised every 3-6 months and then the processes in the company are also adjusted accordingly.
+
