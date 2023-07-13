@@ -1,6 +1,5 @@
 # Method: Key figures as a list (instead of architecture)
 
-
 With this feature (activated by default), KPI's are - as usual - accessible as a list view in the strategy facet. Deactivating this feature leads to KPI's being available as a separate navigation facet entry "KPIS" in Symbio's navigation bar by removing the existing key figures in the strategy facet from the strategy viewpoint. It also brings an extension of the key figure management and the administration possibility as architecture.
 
 ![screen](../media/KPI_as_a_list.png)
@@ -12,6 +11,7 @@ The key figures can also be displayed as a profile and linked to the source syst
 In addition to the key figure driver tree, reports with report chapters can be displayed. This enables companies to map the business report chapter structure, for example, and link the necessary key figures in the various report chapters. This means that companies will also be able to generate company reports from Symbio in the future. Symbio is thus increasingly digitalizing corporate management.
 
 Our recommendation:
+
 1. Map company goals
 1. Derive and define the most important key performance indicators according to the company's goals (strategy) and other company characteristics
 1. Then break down the financial figures, e.g. along the structure of the contribution margin calculation
