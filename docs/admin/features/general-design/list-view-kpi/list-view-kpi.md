@@ -13,9 +13,9 @@ In addition to the key figure driver tree, reports with report chapters can be d
 
 Our recommendation:
 1. Map company goals
-2. Derive and define the most important key performance indicators according to the company's goals (strategy) and other company characteristics
-3. Then break down the financial figures, e.g. along the structure of the contribution margin calculation
-4. Then define the value drivers at the lowest level, which influence the financial key figures
-5. The key figures should then be defined as a profile and a responsible person in the company should release this profile
-6. It is now important that the key figures are linked to the processes in order to ensure that they can be implemented and measured in everyday life
-7. It is important that the goals and key figures are further optimised every 3-6 months and then the processes in the company are also adjusted accordingly.
+1. Derive and define the most important key performance indicators according to the company's goals (strategy) and other company characteristics
+1. Then break down the financial figures, e.g. along the structure of the contribution margin calculation
+1. Then define the value drivers at the lowest level, which influence the financial key figures
+1. The key figures should then be defined as a profile and a responsible person in the company should release this profile
+1. It is now important that the key figures are linked to the processes in order to ensure that they can be implemented and measured in everyday life
+1. It is important that the goals and key figures are further optimised every 3-6 months and then the processes in the company are also adjusted accordingly.
