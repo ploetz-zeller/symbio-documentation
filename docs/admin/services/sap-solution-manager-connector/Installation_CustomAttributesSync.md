@@ -7,7 +7,7 @@ The configuration of custom attributes is set in a JSON file, and can be set in 
 The following information is needed:
 
 - SAP Solution Manager attribute technical ID
-- Symbio attribute id
+- Symbio attribute id (**CASE SENSITIVE!!!**)
 - Type of attribute (see types below)
 - Is attribute language independent
 - Symbio element types on which the custom attribute is activated
@@ -31,7 +31,7 @@ The given example represents how the structure should look for the following **t
   "customAttributeMappings": [
     {
       "solmanAttributeTechnicalId": "{SOLMAN_TECHNICAL_ID}",
-      "symbioAttributeId": "{symbio_attribute_id}",
+      "symbioAttributeId": "{symbio_attribute_id}", //CASE SENSITIVE!!!
       "attributeType": "{type}",
       "isLanguageIndependent": true or false,
       "availableOn": [
@@ -51,7 +51,7 @@ The given example represents how the structure should look for the **dropdown** 
   "customAttributeMappings": [
     {
       "solmanAttributeTechnicalId": "{SOLMAN_TECHNICAL_ID}",
-      "symbioAttributeId": "{symbio_attribute_id}",
+      "symbioAttributeId": "{symbio_attribute_id}", //CASE SENSITIVE!!!
       "attributeType": "dropdown",
       "isLanguageIndependent": true or false,
       "availableOn": [
@@ -82,7 +82,7 @@ The given example represents how the structure should look for the **multiselect
   "customAttributeMappings": [
     {
       "solmanAttributeTechnicalId": "{SOLMAN_TECHNICAL_ID}",
-      "symbioAttributeId": "{symbio_attribute_id}",
+      "symbioAttributeId": "{symbio_attribute_id}", //CASE SENSITIVE!!!
       "attributeType": "multiselection",
       "isLanguageIndependent": true or false,
       "availableOn": [
@@ -122,7 +122,7 @@ The given example represents how the structure should look for the **related** e
   "customAttributeMappings": [
     {
       "solmanAttributeTechnicalId": "{SOLMAN_TECHNICAL_ID}",
-      "symbioAttributeId": "{symbio_related_id}",
+      "symbioAttributeId": "{symbio_related_id}", //CASE SENSITIVE!!!
       "attributeType": "related",
       "isLanguageIndependent": true or false,
       "availableOn": [
