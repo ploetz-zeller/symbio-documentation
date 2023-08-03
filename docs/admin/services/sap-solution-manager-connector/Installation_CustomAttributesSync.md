@@ -5,6 +5,7 @@ This document contains information on how to configure synchronization of custom
 
 The configuration of custom attributes is set in a JSON file, and can be set in the External System settings for the Solman external system.
 The following information is needed:
+
 - SAP Solution Manager attribute technical ID
 - Symbio attribute id
 - Type of attribute (see types below)
