@@ -10,11 +10,58 @@ It applies to the standard version of Symbio. Personlized customer configuration
 
 ## Before you start
 
-All documents such as the system requirements and the operations manual can be found at <https://www.symbioworld.com/en/services/wissen-2/>. 
+This section provides minimum system requirements that have to be met in order to make use of the Symbio products.
+OnPrem installation is only available on request.
+All user manuals and other assets regarding our products can be found at https://www.symbioworld.com/ressources
+
+### Symbio system requirements
+
+#### Minimum requirements for client computers
+
+This section provides minimum software requirements for a client computer to work with Symbio.
+
+##### Browser support matrix
+
+We are continuously working on providing the best experience to our users. Using the newest
+technology available on the market sometimes requires dropping support for some older browser
+versions. The following browsers are currently fully supported:
+
+|Browser | Version|
+|--------|--------|
+|  Microsoft Edge   |Last two released versions|
+|  Mozilla Firefox | Last two released ESR versions|
+|  Google Chrome  | Last two released versions|
+
+Symbio also runs on the **Safari/iOS** browser, but this is not tested explicitly.
+In August 2020 Microsoft has announced the timeline for the ending support for Internet Explorer 11
+(IE 11) across the 365 apps and services. We will follow this procedure and discontinue supporting
+**Microsoft's IE 11**.
+
+### Recommended bandwidth ranges
+
+This section provides generally recommended bandwidth ranges.
+Bandwidth ranges of 3 megabits per second (Mbps) (dual T1) and greater with latencies no greater
+than 250 milliseconds (ms)
+
+### Single Sign-On/SAML 2.0
+
+Symbio supports SAML 2.0 and the following Identity Providers (IdP):
+
+- Microsoft Active Directory Federation Services (MS ADFS)
+- Microsoft Azure Active Directory (MS AAD)
+- Ping Identity
+- OneLogin.com
+  
+Other Identity Providers might work because of SAML 2.0 but need to be treated as a separate
+project if out-of-the-box configuration does not work.
+
+Please also refer to our online help here:
+
+https://docs.symbioworld.com/admin/installation-guide/saml-configuration/1_introduction/
 
 ## Support
 
-Please visit our support website <http://support.symbioworld.com/hc/de> in case of questions, demands and issues.
+Please visit our support website <http://support.symbioworld.com/hc> in case of questions, demands and issues.
 
 ## Dos and Don'ts in Symbio
 
