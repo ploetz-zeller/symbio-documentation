@@ -11,6 +11,7 @@ It applies to the standard version of Symbio. Personlized customer configuration
 ## Before you start
 
 This section provides minimum system requirements that have to be met in order to make use of the Symbio products.
+OnPrem installation is only available on request.
 All user manuals and other assets regarding our products can be found at https://www.symbioworld.com/ressources
 
 ### Symbio system requirements
